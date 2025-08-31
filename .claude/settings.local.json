@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:buildermethods.com)"
+      "WebFetch(domain:buildermethods.com)",
+      "WebSearch"
     ],
     "deny": [],
     "ask": []
