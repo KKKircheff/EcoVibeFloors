@@ -12,7 +12,7 @@
 - [ ] Multilingual Architecture - Implement next-intl for English/Bulgarian localization with SEO optimization `L`
 - [ ] Material UI Luxury Theme - Create premium design system with Bulgarian/English typography support `M`
 - [ ] Homepage Design - Hero section, product categories showcase, company story integration `L`
-- [ ] Product Catalog Pages - Natural oak, hybrid wood, laminate sections with pricing and specifications `L`
+- [ ] Collections Pages - Natural oak, hybrid wood, laminate sections with pricing and specifications `L`
 - [ ] Contact & Inquiry System - Firebase-powered forms for customer inquiries and order requests `M`
 
 ### Dependencies

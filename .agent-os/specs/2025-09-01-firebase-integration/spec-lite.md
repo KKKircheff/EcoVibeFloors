@@ -1,0 +1,3 @@
+# Spec Summary (Lite)
+
+Establish comprehensive Firebase backend integration for EcoVibeFloors luxury Dutch flooring platform, providing authentication, Firestore database, and storage services to support the Bulgarian market with bilingual capabilities. The integration enables secure product management, user authentication, and file storage infrastructure essential for the platform's core functionality.

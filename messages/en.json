@@ -1,73 +1,79 @@
 {
-  "common": {
-    "loading": "Loading...",
-    "error": "An error occurred",
-    "contactUs": "Contact Us",
-    "learnMore": "Learn More",
-    "getQuote": "Get Quote",
-    "viewProducts": "View Products"
-  },
-  "navigation": {
-    "home": "Home",
-    "products": "Products",
-    "naturalOak": "Natural Oak",
-    "hybridWood": "Hybrid Wood", 
-    "laminate": "Laminate",
-    "about": "About",
-    "blog": "Blog",
-    "contact": "Contact",
-    "language": "Language"
-  },
-  "home": {
-    "hero": {
-      "title": "Premium Dutch Flooring for Bulgarian Homes",
-      "subtitle": "Discover luxury natural wood and laminate floors with extended guarantees and exceptional quality.",
-      "cta": "Explore Collection"
+    "common": {
+        "loading": "Loading...",
+        "error": "An error occurred",
+        "contactUs": "Contact Us",
+        "learnMore": "Learn More",
+        "getQuote": "Get Quote",
+        "viewProducts": "View Products"
     },
-    "features": {
-      "quality": {
-        "title": "Premium Quality",
-        "description": "Authentic Dutch manufacturing with superior materials and craftsmanship"
-      },
-      "guarantee": {
-        "title": "Extended Guarantees",
-        "description": "Comprehensive warranty coverage for peace of mind"
-      },
-      "local": {
-        "title": "Local Expertise",
-        "description": "Bulgarian team providing personalized service and support"
-      }
-    }
-  },
-  "products": {
-    "title": "Our Premium Flooring Collection",
-    "naturalOak": {
-      "title": "Natural Oak Floors",
-      "description": "Authentic solid oak flooring with natural beauty and durability"
+    "navigation": {
+        "home": "Home",
+        "collections": "Collections",
+        "about": "About",
+        "blog": "Blog",
+        "contact": "Contact",
+        "language": "Language",
+        "naturalOak": "Natural Oak",
+        "hybridWood": "Hybrid Wood",
+        "laminate": "Laminate"
     },
-    "hybridWood": {
-      "title": "Hybrid Wood Floors", 
-      "description": "Innovative wood-based flooring combining beauty with enhanced performance"
+    "NavbarLinks": {
+        "Home": "Home",
+        "Collections": "Collections",
+        "Contact": "Contact",
+        "Blog": "Blog"
     },
-    "laminate": {
-      "title": "Premium Laminate",
-      "description": "High-end laminate flooring with realistic wood appearance"
+    "home": {
+        "hero": {
+            "title": "Premium Dutch Flooring for Bulgarian Homes",
+            "subtitle": "Discover luxury natural wood and laminate floors with extended guarantees and exceptional quality.",
+            "cta": "Explore Collection"
+        },
+        "features": {
+            "quality": {
+                "title": "Premium Quality",
+                "description": "Authentic Dutch manufacturing with superior materials and craftsmanship"
+            },
+            "guarantee": {
+                "title": "Extended Guarantees",
+                "description": "Comprehensive warranty coverage for peace of mind"
+            },
+            "local": {
+                "title": "Local Expertise",
+                "description": "Bulgarian team providing personalized service and support"
+            }
+        }
+    },
+    "collections": {
+        "title": "Our Premium Flooring Collection",
+        "naturalOak": {
+            "title": "Natural Oak Floors",
+            "description": "Authentic solid oak flooring with natural beauty and durability"
+        },
+        "hybridWood": {
+            "title": "Hybrid Wood Floors",
+            "description": "Innovative wood-based flooring combining beauty with enhanced performance"
+        },
+        "laminate": {
+            "title": "Premium Laminate",
+            "description": "High-end laminate flooring with realistic wood appearance"
+        }
+    },
+    "contact": {
+        "title": "Contact EcoVibeFloors",
+        "subtitle": "Get in touch for pricing and consultation",
+        "form": {
+            "name": "Full Name",
+            "email": "Email Address",
+            "phone": "Phone Number",
+            "message": "Your Message",
+            "submit": "Send Inquiry"
+        }
+    },
+    "notFound": {
+        "title": "Page Not Found",
+        "description": "The page you're looking for doesn't exist or has been moved.",
+        "backHome": "Back to Home"
     }
-  },
-  "contact": {
-    "title": "Contact EcoVibeFloors",
-    "subtitle": "Get in touch for pricing and consultation",
-    "form": {
-      "name": "Full Name",
-      "email": "Email Address",
-      "phone": "Phone Number",
-      "message": "Your Message",
-      "submit": "Send Inquiry"
-    }
-  },
-  "notFound": {
-    "title": "Page Not Found",
-    "description": "The page you're looking for doesn't exist or has been moved.",
-    "backHome": "Back to Home"
-  }
 }

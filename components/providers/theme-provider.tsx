@@ -2,7 +2,7 @@
 import { ThemeProvider } from '@mui/material/styles';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
 import { CssBaseline } from '@mui/material';
-import luxuryTheme from '@/lib/theme';
+import luxuryTheme from '@/lib/styles/theme';
 
 type Props = {
     children: React.ReactNode;

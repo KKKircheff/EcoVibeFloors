@@ -4,7 +4,8 @@ import {NextIntlClientProvider} from 'next-intl';
 import {getMessages, setRequestLocale} from 'next-intl/server';
 import {notFound} from 'next/navigation';
 import {routing, Locale} from '@/i18n/routing';
-import ClientThemeProvider from '@/components/theme-provider';
+import ClientThemeProvider from '@/components/providers/theme-provider';
+import Navbar from '@/components/layout/navbar/Navbar.component';
 import '@fontsource/roboto/300.css';
 import '@fontsource/roboto/400.css';
 import '@fontsource/roboto/500.css';
@@ -57,6 +58,7 @@ export default async function LocaleLayout(props: Props) {
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <ClientThemeProvider>
+            <Navbar locale={locale} />
             {children}
           </ClientThemeProvider>
         </NextIntlClientProvider>
