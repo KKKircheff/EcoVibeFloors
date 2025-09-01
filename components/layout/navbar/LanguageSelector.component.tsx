@@ -40,7 +40,7 @@ export const LanguageSelector = ({ locale }: Props) => {
     };
 
     return (
-        <Stack direction='row' alignItems={'center'} spacing={0}>
+        <Stack direction='row' alignItems={'center'} spacing={0} px={1}>
             <Select
                 variant="standard"
                 size="medium"
@@ -51,7 +51,7 @@ export const LanguageSelector = ({ locale }: Props) => {
                 onClose={handleClose}
                 open={open}
                 sx={{
-                    border: 'none !important',
+                    // border: 'none !important',
                     maxWidth: flagSize + 2,
                     overflow: 'hidden',
 
@@ -68,7 +68,7 @@ export const LanguageSelector = ({ locale }: Props) => {
                         maxWidth: flagSize,
                         background: 'transparent',
                         // background: c.neutral[200],
-                        borderRadius: br.md,
+                        borderRadius: 0,
                         transition: 'background-color 0.3s ease',
 
                         '&:hover': {
@@ -99,7 +99,7 @@ export const LanguageSelector = ({ locale }: Props) => {
                         sx: {
                             mt: isMobile ? -1.5 : 1,
                             ml: -1.3,
-                            borderRadius: br.md,
+                            borderRadius: br.sm,
                             backgroundColor: palette.info[400],
                             '& .MuiMenuItem-root': {
                                 padding: '2px 16px',
@@ -128,13 +128,31 @@ export const LanguageSelector = ({ locale }: Props) => {
                     disableScrollLock: true,
                 }}
             >
-                <MenuItem value='en'>
+                <MenuItem value='bg' sx={{ mb: .5 }}>
+                    <Image
+                        src={`/images/flags/bg.png`}
+                        alt="Bulgarian Flag"
+                        width={flagSize}
+                        height={flagSize}
+                    // style={{ borderRadius: flagSize, border: `.5px solid ${palette.info[100]}` }}
+                    // style={{ borderRadius: br.sm, border: `.5px solid ${palette.info[100]}` }}
+                    />
+                    <Typography
+                        color='info.contrastText'
+                        display={'inline-block'}
+                        sx={{ fontSize: '16px !important' }}
+                        pl={1}>
+                        Български
+                    </Typography>
+                </MenuItem>
+                <MenuItem value='en' >
                     <Image
                         src={`/images/flags/gb.png`}
                         alt="UK flag"
                         width={flagSize}
                         height={flagSize}
-                        style={{ borderRadius: flagSize, border: `1px solid ${palette.info[400]}` }}
+                    // style={{ borderRadius: flagSize, border: `.5px solid ${palette.info[100]}` }}
+                    // style={{ borderRadius: br.sm, border: `.5px solid ${palette.info[100]}` }}
                     />
                     <Typography
                         color='info.contrastText'
@@ -143,22 +161,6 @@ export const LanguageSelector = ({ locale }: Props) => {
                         pl={1}
                     >
                         English
-                    </Typography>
-                </MenuItem>
-                <MenuItem value='bg'>
-                    <Image
-                        src={`/images/flags/bg.png`}
-                        alt="Bulgarian Flag"
-                        width={flagSize}
-                        height={flagSize}
-                        style={{ borderRadius: flagSize }}
-                    />
-                    <Typography
-                        color='info.contrastText'
-                        display={'inline-block'}
-                        sx={{ fontSize: '16px !important' }}
-                        pl={1}>
-                        Български
                     </Typography>
                 </MenuItem>
             </Select>

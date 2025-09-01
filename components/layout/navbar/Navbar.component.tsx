@@ -18,7 +18,7 @@ type Props = {
     locale: Locale
 }
 
-const maxNavHeight = '61px'
+const maxNavHeight = '120px'
 
 export default function Navbar({ locale }: Props) {
     const pathName = usePathname();
@@ -30,20 +30,19 @@ export default function Navbar({ locale }: Props) {
     return (
         <Box
             position='fixed' width='100%'
-            left={0} top={{ xs: '10px', md: '30px' }}
-            px={layoutPaddings}
+            left={0} top={0}
             zIndex='10' >
             <Stack
                 component="nav" aria-label="My site"
                 direction='row' justifyContent='space-between' alignItems='center'
-                width='100%' mx={0} py={0.6} px={2} pr={{ lg: 1 }}
-                borderRadius={borderRadius.pill}
+                width='100%' mx={0} py={4} px={layoutPaddings} pr={{ lg: 1 }}
+                borderRadius={borderRadius.no}
                 bgcolor={menuBgColor}
                 sx={{
                     backdropFilter: 'blur(5px)',
                     maxHeight: maxNavHeight,
-                    border: '.5px solid',
-                    borderColor: alpha(palette.info.main, .25),
+                    // border: '.5px solid',
+                    // borderColor: alpha(palette.info.main, .25),
                 }}>
 
                 <Link href={`/`}>
@@ -52,8 +51,10 @@ export default function Navbar({ locale }: Props) {
                     </Button>
                 </Link>
 
-                <List
+                <Stack
                     component="ul"
+                    direction={'row'}
+                    spacing={8}
                     sx={{
                         display: { xs: 'none', lg: 'flex' },
                         justifyContent: 'center',
@@ -64,19 +65,19 @@ export default function Navbar({ locale }: Props) {
                 >
                     {navRoutes
                         .filter(route => route.visible)
-                        .map((route, index) => (
+                        .map((route) => (
                             <React.Fragment key={route.path}>
                                 <ListMenuItem
                                     route={route}
                                     setIsDrawerOpen={setIsDrawerOpen}
                                 />
-                                {(index < navRoutes.filter(route => route.visible).length - 1) && (
+                                {/* {(index < navRoutes.filter(route => route.visible).length - 1) && (
                                     <Divider orientation="vertical" sx={{ mx: 2, my: 1 }} flexItem />
-                                )}
+                                )} */}
                             </React.Fragment>
                         ))
                     }
-                </List>
+                </Stack>
 
                 <Stack display={{ xs: 'none', lg: 'flex' }} alignSelf='flex-start' >
                     <LanguageSelector locale={locale} />

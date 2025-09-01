@@ -27,10 +27,10 @@ const SideDrawer = ({
 
     // Use viewport height for mobile drawer
     const [viewportHeight, setViewportHeight] = React.useState(typeof window !== 'undefined' ? window.innerHeight : 800);
-    
+
     React.useEffect(() => {
         if (typeof window === 'undefined') return;
-        
+
         const updateHeight = () => setViewportHeight(window.innerHeight);
         window.addEventListener('resize', updateHeight);
         return () => window.removeEventListener('resize', updateHeight);
@@ -48,17 +48,19 @@ const SideDrawer = ({
             variant="temporary"
             open={isDrawerOpen}
             onClose={handleDrawerClose}
-            PaperProps={{
-                sx: {
-                    width: '100%',
-                    backgroundColor: 'transparent',
-                    boxShadow: 'none',
-                    hheight: `${viewportHeight}px`,
-                    overflowY: 'auto',
+            slotProps={{
+                paper: {
+                    sx: {
+                        width: '100%',
+                        backgroundColor: 'transparent',
+                        boxShadow: 'none',
+                        height: `${viewportHeight}px`,
+                        overflowY: 'auto',
+                    },
                 },
-            }}
-            SlideProps={{
-                timeout: 300, // Adjust animation duration
+                transition: {
+                    timeout: 300,
+                },
             }}
         >
             <Stack

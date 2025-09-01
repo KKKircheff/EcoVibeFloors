@@ -22,7 +22,7 @@ const ListMenuItem = ({ route, setIsDrawerOpen }: ItemProps) => {
     return (
         <ListItem onClick={handleClick} sx={{ paddingX: 0 }} >
             <Link href={route.path} key={route.path} style={{ textDecoration: 'none' }} aria-label={t(`${route.name.replace(' ', '_')}` as keyof Messages['NavbarLinks'])}>
-                <Typography variant='body2' >
+                <Typography variant='h6' fontWeight={400}>
                     {t(`${route.name.replace(' ', '_')}` as keyof Messages['NavbarLinks'])}
                 </Typography>
             </Link>
