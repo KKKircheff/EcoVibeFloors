@@ -10,12 +10,10 @@ import {
   updatePassword,
   sendEmailVerification,
   User as FirebaseUser,
-  UserCredential,
   AuthError,
   onAuthStateChanged,
   GoogleAuthProvider,
   signInWithPopup,
-  FacebookAuthProvider,
   deleteUser,
   reauthenticateWithCredential,
   EmailAuthProvider
@@ -75,7 +73,7 @@ export class AuthService {
         role: 'customer' as const,
         preferences: {
           language,
-          currency: language === 'bg' ? 'BGN' : 'EUR' as const
+          currency: language === 'bg' ? 'BGN' as const : 'EUR' as const
         },
         profile: {
           firstName,
@@ -238,12 +236,12 @@ export class AuthService {
       }
 
       // Update Firestore user document
-      const firestoreUpdates: any = {};
+      const firestoreUpdates: Record<string, unknown> = {};
       if (data.displayName) firestoreUpdates.displayName = data.displayName;
       if (data.photoURL !== undefined) firestoreUpdates.photoURL = data.photoURL;
       
       if (data.firstName || data.lastName || data.phone !== undefined || data.company !== undefined) {
-        const profileUpdates: any = {};
+        const profileUpdates: Record<string, unknown> = {};
         if (data.firstName) profileUpdates['profile.firstName'] = data.firstName;
         if (data.lastName) profileUpdates['profile.lastName'] = data.lastName;
         if (data.phone !== undefined) profileUpdates['profile.phone'] = data.phone;

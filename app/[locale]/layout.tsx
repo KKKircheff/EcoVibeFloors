@@ -33,15 +33,18 @@ export function generateStaticParams() {
 
 type Props = {
   children: React.ReactNode;
-  params: Promise<{locale: Locale}>;
+  params: Promise<{locale: string}>;
 };
 
 export default async function LocaleLayout(props: Props) {
   const params = await props.params;
-  const {locale} = params;
+  const {locale: localeParam} = params;
+  
+  // Type-safe locale with runtime validation
+  const locale = localeParam as Locale;
   
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale)) {
     notFound();
   }
 

@@ -10,10 +10,9 @@ import {
   getMetadata,
   updateMetadata,
   StorageReference,
-  UploadResult,
-  UploadTask,
   UploadTaskSnapshot,
-  StorageError
+  StorageError,
+  TaskState
 } from 'firebase/storage';
 
 import { storage } from '../firebase';
@@ -23,7 +22,7 @@ export interface UploadProgress {
   bytesTransferred: number;
   totalBytes: number;
   percentage: number;
-  state: 'running' | 'paused' | 'success' | 'canceled' | 'error';
+  state: TaskState;
 }
 
 export interface FileUploadOptions {
@@ -70,7 +69,7 @@ export class StorageService {
             bytesTransferred: snapshot.bytesTransferred,
             totalBytes: snapshot.totalBytes,
             percentage: (snapshot.bytesTransferred / snapshot.totalBytes) * 100,
-            state: snapshot.state as any
+            state: snapshot.state
           };
           options?.onProgress?.(progress);
         },
@@ -248,7 +247,7 @@ export class StorageService {
   }
 
   // Get file metadata
-  static async getFileMetadata(path: string): Promise<FirebaseResult<any>> {
+  static async getFileMetadata(path: string): Promise<FirebaseResult<object>> {
     try {
       const storageRef = ref(storage, path);
       const metadata = await getMetadata(storageRef);
@@ -469,7 +468,7 @@ export const ProductStorage = {
     }, options);
   },
 
-  uploadDocument: (productId: string, file: File, options?: FileUploadOptions) => {
+  uploadDocument: (productId: string, file: File, _options?: FileUploadOptions) => {
     const path = StorageService.generatePath(STORAGE_PATHS.PRODUCT_DOCUMENTS, file.name, productId);
     return StorageService.uploadFileSimple(path, file);
   },
@@ -495,7 +494,7 @@ export const UserStorage = {
     }, options);
   },
 
-  uploadDocument: (userId: string, file: File, options?: FileUploadOptions) => {
+  uploadDocument: (userId: string, file: File, _options?: FileUploadOptions) => {
     const path = StorageService.generatePath(STORAGE_PATHS.USER_DOCUMENTS, file.name, userId);
     return StorageService.uploadFileSimple(path, file);
   }

@@ -1,11 +1,37 @@
 {
     "common": {
-        "loading": "Loading...",
-        "error": "An error occurred",
+        "loading": "Loading..."
+    },
+    "buttons": {
         "contactUs": "Contact Us",
         "learnMore": "Learn More",
         "getQuote": "Get Quote",
-        "viewProducts": "View Products"
+        "viewProducts": "View Products",
+        "submit": "Submit",
+        "cancel": "Cancel",
+        "save": "Save",
+        "delete": "Delete",
+        "edit": "Edit",
+        "exploreCollection": "Explore Collection",
+        "sendInquiry": "Send Inquiry",
+        "backHome": "Back to Home"
+    },
+    "errors": {
+        "general": "An error occurred",
+        "network": "Network connection failed",
+        "validation": "Please check your input",
+        "notFound": "Item not found",
+        "unauthorized": "Access denied",
+        "serverError": "Server error occurred",
+        "timeout": "Request timed out",
+        "contact": {
+            "invalidEmail": "Please enter a valid email address",
+            "nameRequired": "Full name is required",
+            "emailRequired": "Email address is required",
+            "phoneRequired": "Phone number is required",
+            "messageRequired": "Message cannot be empty",
+            "sendFailed": "Failed to send your message. Please try again."
+        }
     },
     "navigation": {
         "home": "Home",
@@ -16,9 +42,8 @@
         "language": "Language",
         "naturalOak": "Natural Oak",
         "hybridWood": "Hybrid Wood",
-        "laminate": "Laminate"
-    },
-    "NavbarLinks": {
+        "laminate": "Laminate",
+        "burgerMenuButton": "Menu",
         "Home": "Home",
         "Collections": "Collections",
         "Contact": "Contact",
@@ -27,8 +52,7 @@
     "home": {
         "hero": {
             "title": "Premium Dutch Flooring for Bulgarian Homes",
-            "subtitle": "Discover luxury natural wood and laminate floors with extended guarantees and exceptional quality.",
-            "cta": "Explore Collection"
+            "subtitle": "Discover luxury natural wood and laminate floors with extended guarantees and exceptional quality."
         },
         "features": {
             "quality": {
@@ -67,13 +91,11 @@
             "name": "Full Name",
             "email": "Email Address",
             "phone": "Phone Number",
-            "message": "Your Message",
-            "submit": "Send Inquiry"
+            "message": "Your Message"
         }
     },
     "notFound": {
         "title": "Page Not Found",
-        "description": "The page you're looking for doesn't exist or has been moved.",
-        "backHome": "Back to Home"
+        "description": "The page you're looking for doesn't exist or has been moved."
     }
 }

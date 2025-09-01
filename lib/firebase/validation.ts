@@ -2,7 +2,6 @@
 
 import { ErrorHandler, ERROR_CODES } from './errors';
 import { 
-  User, 
   Product, 
   Order, 
   ConsultationRequest,
@@ -49,7 +48,7 @@ export class BaseValidator {
   }
 
   // Common validation helpers
-  protected isRequired(value: any, field: string): boolean {
+  protected isRequired(value: unknown, field: string): boolean {
     if (value === null || value === undefined || value === '') {
       this.addError(field, ERROR_CODES.VALIDATION.REQUIRED_FIELD);
       return false;
@@ -371,7 +370,7 @@ export class OrderValidator extends BaseValidator {
     return this.getResult();
   }
 
-  private validateAddress(address: any, fieldPrefix: string): void {
+  private validateAddress(address: Record<string, unknown> | { street?: unknown; city?: unknown; postalCode?: unknown; country?: unknown }, fieldPrefix: string): void {
     this.isRequired(address.street, `${fieldPrefix}.street`);
     this.isRequired(address.city, `${fieldPrefix}.city`);
     this.isRequired(address.postalCode, `${fieldPrefix}.postalCode`);
@@ -380,7 +379,7 @@ export class OrderValidator extends BaseValidator {
     // Bulgarian postal code validation
     if (address.postalCode && address.country === 'Bulgaria') {
       const postalCodeRegex = /^[0-9]{4}$/;
-      if (!postalCodeRegex.test(address.postalCode)) {
+      if (!postalCodeRegex.test(address.postalCode as string)) {
         this.addError(`${fieldPrefix}.postalCode`, 'validation/invalid-postal-code');
       }
     }
@@ -561,8 +560,7 @@ export const validators = {
 };
 
 // Utility function for quick validation
-export function validateData<T>(
-  data: T,
+export function validateData(
   validatorFn: (validator: BaseValidator) => ValidationResult,
   language: 'en' | 'bg' = 'en'
 ): ValidationResult {
@@ -570,48 +568,62 @@ export function validateData<T>(
   return validatorFn(validator);
 }
 
+// Field validator class for public access to validation methods
+class FieldValidator extends BaseValidator {
+  public validateFieldValue(
+    value: unknown,
+    rules: Array<{
+      type: 'required' | 'email' | 'phone' | 'password' | 'number' | 'positive' | 'url';
+      message?: string;
+    }>
+  ): string | null {
+    this.clearErrors();
+    
+    for (const rule of rules) {
+      switch (rule.type) {
+        case 'required':
+          if (!this.isRequired(value, 'field')) return this.errors[this.errors.length - 1].message;
+          break;
+        case 'email':
+          if (value && !this.isValidEmail(value as string, 'field')) return this.errors[this.errors.length - 1].message;
+          break;
+        case 'phone':
+          if (value && !this.isValidPhone(value as string, 'field')) return this.errors[this.errors.length - 1].message;
+          break;
+        case 'password':
+          if (value && !this.isValidPassword(value as string, 'field')) return this.errors[this.errors.length - 1].message;
+          break;
+        case 'number':
+          if (value && (isNaN(Number(value)))) {
+            this.addError('field', 'validation/invalid-number');
+            return this.errors[this.errors.length - 1].message;
+          }
+          break;
+        case 'positive':
+          if (value && !this.isPositiveNumber(Number(value), 'field')) return this.errors[this.errors.length - 1].message;
+          break;
+        case 'url':
+          if (value && !this.isValidUrl(value as string, 'field')) return this.errors[this.errors.length - 1].message;
+          break;
+      }
+    }
+    
+    return null;
+  }
+}
+
 // Form validation helpers
 export const formValidation = {
   // Real-time field validation
   validateField: (
-    value: any,
+    value: unknown,
     rules: Array<{
       type: 'required' | 'email' | 'phone' | 'password' | 'number' | 'positive' | 'url';
       message?: string;
     }>,
     language: 'en' | 'bg' = 'en'
   ): string | null => {
-    const validator = new BaseValidator(language);
-    
-    for (const rule of rules) {
-      switch (rule.type) {
-        case 'required':
-          if (!validator.isRequired(value, 'field')) return validator.errors[validator.errors.length - 1].message;
-          break;
-        case 'email':
-          if (value && !validator.isValidEmail(value, 'field')) return validator.errors[validator.errors.length - 1].message;
-          break;
-        case 'phone':
-          if (value && !validator.isValidPhone(value, 'field')) return validator.errors[validator.errors.length - 1].message;
-          break;
-        case 'password':
-          if (value && !validator.isValidPassword(value, 'field')) return validator.errors[validator.errors.length - 1].message;
-          break;
-        case 'number':
-          if (value && (isNaN(Number(value)))) {
-            validator.addError('field', 'validation/invalid-number');
-            return validator.errors[validator.errors.length - 1].message;
-          }
-          break;
-        case 'positive':
-          if (value && !validator.isPositiveNumber(Number(value), 'field')) return validator.errors[validator.errors.length - 1].message;
-          break;
-        case 'url':
-          if (value && !validator.isValidUrl(value, 'field')) return validator.errors[validator.errors.length - 1].message;
-          break;
-      }
-    }
-    
-    return null;
+    const validator = new FieldValidator(language);
+    return validator.validateFieldValue(value, rules);
   }
 };

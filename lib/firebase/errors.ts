@@ -5,7 +5,7 @@ export interface AppError {
     code: string;
     message: string;
     type: 'auth' | 'firestore' | 'storage' | 'validation' | 'network' | 'unknown';
-    originalError?: any;
+    originalError?: unknown;
 }
 
 // Error message translations
@@ -281,11 +281,11 @@ const ERROR_MESSAGES: Record<string, ErrorMessages> = {
 
 export class ErrorHandler {
     // Convert Firebase errors to AppError
-    static handleFirebaseError(error: any): AppError {
+    static handleFirebaseError(error: unknown): AppError {
         let errorType: AppError['type'] = 'unknown';
         let errorCode = 'unknown/error';
 
-        if (error?.code) {
+        if (error && typeof error === 'object' && 'code' in error && typeof error.code === 'string') {
             errorCode = error.code;
 
             // Determine error type based on code prefix
@@ -304,7 +304,7 @@ export class ErrorHandler {
 
         return {
             code: errorCode,
-            message: error?.message || 'Unknown error',
+            message: (error && typeof error === 'object' && 'message' in error && typeof error.message === 'string') ? error.message : 'Unknown error',
             type: errorType,
             originalError: error,
         };
@@ -447,7 +447,7 @@ export class ErrorHandler {
 // Utility function for error handling in components
 export function useErrorHandler(language: 'en' | 'bg' = 'en') {
     return {
-        handleError: (error: any, context?: string) => {
+        handleError: (error: unknown, context?: string) => {
             const appError = ErrorHandler.handleFirebaseError(error);
             ErrorHandler.logError(appError, context);
             return ErrorHandler.getErrorMessage(appError.code, language);
@@ -491,6 +491,10 @@ export const ERROR_CODES = {
         INVALID_EMAIL: 'validation/invalid-email',
         INVALID_PHONE: 'validation/invalid-phone',
         PASSWORD_TOO_SHORT: 'validation/password-too-short',
+        PASSWORDS_NOT_MATCH: 'validation/passwords-not-match',
+        INVALID_QUANTITY: 'validation/invalid-quantity',
+        INVALID_PRICE: 'validation/invalid-price',
+        INVALID_DATE: 'validation/invalid-date',
         FILE_TOO_LARGE: 'validation/file-too-large',
     },
     BUSINESS: {

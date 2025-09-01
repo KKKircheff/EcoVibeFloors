@@ -1,14 +1,15 @@
-import { getTranslations, getLocale } from 'next-intl/server';
+import { getTranslations } from 'next-intl/server';
 import { Container, Typography, Box, Button, Grid, Card, CardContent } from '@mui/material';
 import { HomeOutlined, VerifiedOutlined, SupportAgentOutlined } from '@mui/icons-material';
 
 export default async function HomePage() {
 
     const t = await getTranslations('home')
+    const tButtons = await getTranslations('buttons')
 
     return (
-        <Container maxWidth="lg">
-            <Box sx={{ py: 8 }}>
+        <Container maxWidth="lg" >
+            <Box sx={{ pt: 24, pb: 8 }}>
                 <Box textAlign="center" sx={{ mb: 8 }}>
                     <Typography
                         variant="h1"
@@ -32,7 +33,7 @@ export default async function HomePage() {
                         size="large"
                         sx={{ px: 4, py: 2, fontSize: '1.1rem' }}
                     >
-                        {t('hero.cta')}
+                        {tButtons('exploreCollection')}
                     </Button>
                 </Box>
 

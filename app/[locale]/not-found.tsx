@@ -6,6 +6,7 @@ import {Box, Typography, Button, Container} from '@mui/material';
 
 export default function NotFound() {
   const t = useTranslations('notFound');
+  const tButtons = useTranslations('buttons');
 
   return (
     <Container>
@@ -34,7 +35,7 @@ export default function NotFound() {
           color="primary"
           size="large"
         >
-          {t('backHome')}
+          {tButtons('backHome')}
         </Button>
       </Box>
     </Container>

@@ -1,6 +1,6 @@
 'use client'
 export const dynamic = 'force-dynamic';
-import { alpha, Box, Button, Divider, List, Stack, Typography, useTheme } from "@mui/material";
+import { Box, Button, Stack, Typography, useTheme } from "@mui/material";
 import { Link, usePathname } from '@/i18n/navigation';
 import { Locale, navRoutes } from '@/i18n/routing';
 import React, { useState } from "react";
@@ -21,9 +21,9 @@ type Props = {
 const maxNavHeight = '120px'
 
 export default function Navbar({ locale }: Props) {
-    const pathName = usePathname();
-    const c = useTheme().palette;
-    const t = useTranslations('NavbarLinks')
+    const _pathName = usePathname();
+    const _c = useTheme().palette;
+    const t = useTranslations('navigation')
 
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 

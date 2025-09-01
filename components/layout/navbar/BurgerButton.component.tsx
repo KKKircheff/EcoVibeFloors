@@ -2,7 +2,7 @@
 import { borderRadius } from '@/lib/styles/borderRadius';
 import CloseIcon from '@mui/icons-material/Close';
 import Menu from '@mui/icons-material/Menu';
-import { ButtonProps, IconButton, IconButtonOwnProps } from "@mui/material";
+import { ButtonProps, IconButton } from "@mui/material";
 
 type Props = {
     isDrawerOpen: boolean,

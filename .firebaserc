@@ -1,5 +1,11 @@
 {
   "projects": {
     "default": "ecovibe-floors"
+  },
+  "targets": {},
+  "etags": {
+    "ecovibe-floors": {
+      "extensionInstances": {}
+    }
   }
 }

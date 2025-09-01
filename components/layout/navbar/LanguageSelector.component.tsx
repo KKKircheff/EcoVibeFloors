@@ -1,8 +1,7 @@
-// components/navigation/LanguageSelector.component.tsx
 "use client"
 import React, { useState } from 'react'
 import { borderRadius } from '@/lib/styles/borderRadius';
-import { alpha, MenuItem, Select, SelectChangeEvent, Stack, Typography, useMediaQuery, useTheme } from '@mui/material'
+import { alpha, MenuItem, Select, SelectChangeEvent, Stack, Typography, useMediaQuery } from '@mui/material'
 import Image from 'next/image';
 import { RiArrowDownSLine } from 'react-icons/ri';
 import { Locale } from '@/i18n/routing';
@@ -16,7 +15,7 @@ type Props = {
 const flagSize = 22
 
 export const LanguageSelector = ({ locale }: Props) => {
-    const t = useTranslations('navigation');
+    const _t = useTranslations('navigation');
     const pathname = usePathname()
     const router = useRouter();
 

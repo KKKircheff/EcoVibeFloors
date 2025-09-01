@@ -20,7 +20,8 @@ import {
   onSnapshot,
   QueryConstraint,
   DocumentSnapshot,
-  FirestoreError
+  FirestoreError,
+  Transaction
 } from 'firebase/firestore';
 
 import { db } from '../firebase';
@@ -31,6 +32,7 @@ import {
   QueryOptions,
   COLLECTIONS 
 } from './types';
+import { User, Product, Order, ConsultationRequest } from '../../types';
 
 // Generic CRUD operations
 export class FirebaseDB {
@@ -278,7 +280,7 @@ export class FirebaseDB {
       type: 'create' | 'update' | 'delete';
       collection: string;
       id?: string;
-      data?: any;
+      data?: Record<string, unknown>;
     }>
   ): Promise<FirebaseResult<void>> {
     try {
@@ -323,7 +325,7 @@ export class FirebaseDB {
 
   // Transaction
   static async runTransaction<T>(
-    transactionFn: (transaction: any) => Promise<T>
+    transactionFn: (transaction: Transaction) => Promise<T>
   ): Promise<FirebaseResult<T>> {
     try {
       const result = await runTransaction(db, transactionFn);
@@ -408,8 +410,8 @@ export class FirebaseDB {
 export const ProductsDB = {
   getAll: (options?: QueryOptions) => FirebaseDB.getAll(COLLECTIONS.PRODUCTS, options),
   getById: (id: string) => FirebaseDB.getById(COLLECTIONS.PRODUCTS, id),
-  create: (data: any) => FirebaseDB.create(COLLECTIONS.PRODUCTS, data),
-  update: (id: string, data: any) => FirebaseDB.update(COLLECTIONS.PRODUCTS, id, data),
+  create: (data: Omit<Product, 'id' | 'createdAt' | 'updatedAt'>) => FirebaseDB.create(COLLECTIONS.PRODUCTS, data),
+  update: (id: string, data: Partial<Product>) => FirebaseDB.update(COLLECTIONS.PRODUCTS, id, data),
   delete: (id: string) => FirebaseDB.delete(COLLECTIONS.PRODUCTS, id),
   
   // Product-specific methods
@@ -441,17 +443,17 @@ export const ProductsDB = {
 export const UsersDB = {
   getAll: (options?: QueryOptions) => FirebaseDB.getAll(COLLECTIONS.USERS, options),
   getById: (id: string) => FirebaseDB.getById(COLLECTIONS.USERS, id),
-  create: (data: any) => FirebaseDB.create(COLLECTIONS.USERS, data),
-  createWithId: (id: string, data: any) => FirebaseDB.createWithId(COLLECTIONS.USERS, id, data),
-  update: (id: string, data: any) => FirebaseDB.update(COLLECTIONS.USERS, id, data),
+  create: (data: Omit<User, 'id' | 'createdAt' | 'updatedAt'>) => FirebaseDB.create(COLLECTIONS.USERS, data),
+  createWithId: (id: string, data: Omit<User, 'id' | 'createdAt' | 'updatedAt'>) => FirebaseDB.createWithId(COLLECTIONS.USERS, id, data),
+  update: (id: string, data: Partial<User>) => FirebaseDB.update(COLLECTIONS.USERS, id, data),
   delete: (id: string) => FirebaseDB.delete(COLLECTIONS.USERS, id),
 };
 
 export const OrdersDB = {
   getAll: (options?: QueryOptions) => FirebaseDB.getAll(COLLECTIONS.ORDERS, options),
   getById: (id: string) => FirebaseDB.getById(COLLECTIONS.ORDERS, id),
-  create: (data: any) => FirebaseDB.create(COLLECTIONS.ORDERS, data),
-  update: (id: string, data: any) => FirebaseDB.update(COLLECTIONS.ORDERS, id, data),
+  create: (data: Omit<Order, 'id' | 'createdAt' | 'updatedAt'>) => FirebaseDB.create(COLLECTIONS.ORDERS, data),
+  update: (id: string, data: Partial<Order>) => FirebaseDB.update(COLLECTIONS.ORDERS, id, data),
   delete: (id: string) => FirebaseDB.delete(COLLECTIONS.ORDERS, id),
   
   // Order-specific methods
@@ -469,8 +471,8 @@ export const OrdersDB = {
 export const ConsultationsDB = {
   getAll: (options?: QueryOptions) => FirebaseDB.getAll(COLLECTIONS.CONSULTATIONS, options),
   getById: (id: string) => FirebaseDB.getById(COLLECTIONS.CONSULTATIONS, id),
-  create: (data: any) => FirebaseDB.create(COLLECTIONS.CONSULTATIONS, data),
-  update: (id: string, data: any) => FirebaseDB.update(COLLECTIONS.CONSULTATIONS, id, data),
+  create: (data: Omit<ConsultationRequest, 'id' | 'createdAt' | 'updatedAt'>) => FirebaseDB.create(COLLECTIONS.CONSULTATIONS, data),
+  update: (id: string, data: Partial<ConsultationRequest>) => FirebaseDB.update(COLLECTIONS.CONSULTATIONS, id, data),
   delete: (id: string) => FirebaseDB.delete(COLLECTIONS.CONSULTATIONS, id),
   
   // Consultation-specific methods

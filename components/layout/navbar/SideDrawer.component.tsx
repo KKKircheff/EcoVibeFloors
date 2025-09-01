@@ -1,11 +1,11 @@
 'use client'
-import { Divider, Drawer, List, Stack, Typography } from '@mui/material';
+import { Drawer, List, Stack, Typography } from '@mui/material';
 import ListMenuItem from './ListMenuItem.component';
 import { NavRoute, Locale } from '@/i18n/routing';
 import { borderRadius } from '@/lib/styles/borderRadius';
 import React from 'react';
 import BurgerButton from './BurgerButton.component';
-import { layoutPaddings } from '@/lib/styles/layoutPaddings';
+import { layoutPaddings as _layoutPaddings } from '@/lib/styles/layoutPaddings';
 import { LanguageSelector } from './LanguageSelector.component';
 
 type Props = {
@@ -106,7 +106,7 @@ const SideDrawer = ({
                 >
                     {routes
                         .filter(route => route.visible)
-                        .map((route, index) => (
+                        .map((route, _index) => (
                             <React.Fragment key={route.path}>
                                 <ListMenuItem
                                     route={route}

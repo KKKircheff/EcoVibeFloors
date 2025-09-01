@@ -13,7 +13,7 @@ type ItemProps = {
 
 const ListMenuItem = ({ route, setIsDrawerOpen }: ItemProps) => {
 
-    const t = useTranslations("NavbarLinks");
+    const t = useTranslations("navigation");
 
     const handleClick = () => {
         setIsDrawerOpen(false);
@@ -21,9 +21,9 @@ const ListMenuItem = ({ route, setIsDrawerOpen }: ItemProps) => {
 
     return (
         <ListItem onClick={handleClick} sx={{ paddingX: 0 }} >
-            <Link href={route.path} key={route.path} style={{ textDecoration: 'none' }} aria-label={t(`${route.name.replace(' ', '_')}` as keyof Messages['NavbarLinks'])}>
+            <Link href={route.path} key={route.path} style={{ textDecoration: 'none' }} aria-label={t(`${route.name.replace(' ', '_')}` as keyof Messages['navigation'])}>
                 <Typography variant='h6' fontWeight={400}>
-                    {t(`${route.name.replace(' ', '_')}` as keyof Messages['NavbarLinks'])}
+                    {t(`${route.name.replace(' ', '_')}` as keyof Messages['navigation'])}
                 </Typography>
             </Link>
         </ListItem >
