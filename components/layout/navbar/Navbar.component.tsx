@@ -48,13 +48,13 @@ export default function Navbar({ locale }: Props) {
 
                 <Link href={`/`}>
                     <Button variant='text' color='secondary' sx={{ '&:hover': { color: palette.info[300] } }} aria-label="Logo">
+                        <Typography variant='h3' fontWeight={400} color='text.primary' pr={1.5}>EcoVibe Floors</Typography>
                         <Image
                             src={`/images/logos/logo-sx.png`}
                             alt="EcoVibe Floors logo"
-                            width={30}
-                            height={18}
+                            width={34}
+                            height={25}
                         />
-                        <Typography variant='h6' fontWeight={700} color='text.primary' pl={1}>EcoVibeFloors</Typography>
                     </Button>
                 </Link>
 
@@ -73,15 +73,11 @@ export default function Navbar({ locale }: Props) {
                     {navRoutes
                         .filter(route => route.visible)
                         .map((route) => (
-                            <React.Fragment key={route.path}>
-                                <ListMenuItem
-                                    route={route}
-                                    setIsDrawerOpen={setIsDrawerOpen}
-                                />
-                                {/* {(index < navRoutes.filter(route => route.visible).length - 1) && (
-                                    <Divider orientation="vertical" sx={{ mx: 2, my: 1 }} flexItem />
-                                )} */}
-                            </React.Fragment>
+                            <ListMenuItem
+                                key={route.path}
+                                route={route}
+                                setIsDrawerOpen={setIsDrawerOpen}
+                            />
                         ))
                     }
                     <Stack display={{ xs: 'none', lg: 'flex' }} pt={1}>
