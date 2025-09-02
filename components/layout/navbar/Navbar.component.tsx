@@ -13,6 +13,7 @@ import BurgerButton from "./BurgerButton.component";
 import SideDrawer from "./SideDrawer.component";
 import { LanguageSelector } from "./LanguageSelector.component";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
 type Props = {
     locale: Locale
@@ -47,7 +48,13 @@ export default function Navbar({ locale }: Props) {
 
                 <Link href={`/`}>
                     <Button variant='text' color='secondary' sx={{ '&:hover': { color: palette.info[300] } }} aria-label="Logo">
-                        <Typography variant='h6' fontWeight={700} color='text.primary'>EcoVibeFloors</Typography>
+                        <Image
+                            src={`/images/logos/logo-sx.png`}
+                            alt="EcoVibe Floors logo"
+                            width={30}
+                            height={18}
+                        />
+                        <Typography variant='h6' fontWeight={700} color='text.primary' pl={1}>EcoVibeFloors</Typography>
                     </Button>
                 </Link>
 
@@ -77,11 +84,13 @@ export default function Navbar({ locale }: Props) {
                             </React.Fragment>
                         ))
                     }
+                    <Stack display={{ xs: 'none', lg: 'flex' }} pt={1}>
+                        <LanguageSelector locale={locale} />
+                    </Stack>
                 </Stack>
 
-                <Stack display={{ xs: 'none', lg: 'flex' }} alignSelf='flex-start' >
-                    <LanguageSelector locale={locale} />
-                </Stack>
+
+
                 <Stack role="button" display={{ xs: 'block', lg: 'none' }}>
                     <BurgerButton isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} aria-label={t('burgerMenuButton')} />
                 </Stack>
