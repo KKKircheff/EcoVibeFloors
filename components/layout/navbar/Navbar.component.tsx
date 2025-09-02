@@ -8,6 +8,7 @@ import { layoutPaddings } from "@/lib/styles/layoutPaddings";
 import { borderRadius } from "@/lib/styles/borderRadius";
 import { palette } from "@/lib/styles/pallete";
 import { menuBgColor } from "@/lib/styles/colors";
+import { navbarHeight } from "@/lib/styles/navbarHeight";
 import ListMenuItem from "./ListMenuItem.component";
 import BurgerButton from "./BurgerButton.component";
 import SideDrawer from "./SideDrawer.component";
@@ -19,7 +20,6 @@ type Props = {
     locale: Locale
 }
 
-const maxNavHeight = '120px'
 
 export default function Navbar({ locale }: Props) {
     const _pathName = usePathname();
@@ -39,9 +39,10 @@ export default function Navbar({ locale }: Props) {
                 width='100%' mx={0} py={4} px={layoutPaddings} pr={{ lg: 1 }}
                 borderRadius={borderRadius.no}
                 bgcolor={menuBgColor}
+                // bgcolor={'transparent'}
                 sx={{
                     backdropFilter: 'blur(5px)',
-                    maxHeight: maxNavHeight,
+                    maxHeight: navbarHeight,
                     // border: '.5px solid',
                     // borderColor: alpha(palette.info.main, .25),
                 }}>

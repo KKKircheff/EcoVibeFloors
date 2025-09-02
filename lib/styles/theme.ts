@@ -83,33 +83,19 @@ const luxuryTheme = createTheme({
         },
     },
     components: {
-        // MuiButton: {
-        //     styleOverrides: {
-        //         root: {
-        //             borderRadius: 8,
-        //             padding: '12px 24px',
-        //             fontSize: '1rem',
-        //             boxShadow: '0 2px 8px rgba(0,0,0,0.1)',
-        //             '&:hover': {
-        //                 boxShadow: '0 4px 12px rgba(0,0,0,0.15)',
-        //             },
-        //         },
-        //         contained: {
-        //             background: 'linear-gradient(45deg, #8B4513 30%, #A0522D 90%)',
-        //             '&:hover': {
-        //                 background: 'linear-gradient(45deg, #654321 30%, #8B4513 90%)',
-        //             },
-        //         },
-        //     },
-        // },
+        MuiButton: {
+            styleOverrides: {
+                root: {
+                    borderRadius: 1,
+                    padding: '12px 24px',
+                    fontSize: '1rem',
+                },
+            },
+        },
         MuiCard: {
             styleOverrides: {
                 root: {
-                    borderRadius: 12,
-                    boxShadow: '0 4px 20px rgba(0,0,0,0.08)',
-                    '&:hover': {
-                        boxShadow: '0 8px 30px rgba(0,0,0,0.12)',
-                    },
+                    borderRadius: 0,
                 },
             },
         },
