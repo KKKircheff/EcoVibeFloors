@@ -11,7 +11,7 @@ export async function HomeHero() {
         <Box
             sx={{
                 position: 'relative',
-                minHeight: { xs: `75vh`, md: `70vh` },
+                minHeight: { xs: `75vh`, md: `80vh` },
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',

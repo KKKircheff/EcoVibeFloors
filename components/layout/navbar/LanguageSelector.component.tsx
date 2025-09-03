@@ -10,11 +10,12 @@ import { palette } from '@/lib/styles/pallete';
 import { useTranslations } from 'next-intl';
 
 type Props = {
-    locale: Locale
+    locale: Locale,
+    isScrolled?: boolean
 }
 const flagSize = 22
 
-export const LanguageSelector = ({ locale }: Props) => {
+export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
     const _t = useTranslations('navigation');
     const pathname = usePathname()
     const router = useRouter();
@@ -163,7 +164,15 @@ export const LanguageSelector = ({ locale }: Props) => {
                     </Typography>
                 </MenuItem>
             </Select>
-            <RiArrowDownSLine fontSize={'20px'} color='neutral.600' onClick={handleOpen} />
+            <RiArrowDownSLine 
+                fontSize={'20px'} 
+                color={isScrolled ? 'neutral.600' : '#ffffff'} 
+                onClick={handleOpen}
+                style={{ 
+                    transition: 'color 0.3s ease-in-out',
+                    cursor: 'pointer'
+                }}
+            />
         </Stack>
     )
 }

@@ -8,10 +8,11 @@ import { NavRoute } from '@/i18n/routing';
 
 type ItemProps = {
     route: NavRoute,
-    setIsDrawerOpen: React.Dispatch<React.SetStateAction<boolean>>
+    setIsDrawerOpen: React.Dispatch<React.SetStateAction<boolean>>,
+    isScrolled?: boolean
 }
 
-const ListMenuItem = ({ route, setIsDrawerOpen }: ItemProps) => {
+const ListMenuItem = ({ route, setIsDrawerOpen, isScrolled = true }: ItemProps) => {
 
     const t = useTranslations("navigation");
 
@@ -24,7 +25,13 @@ const ListMenuItem = ({ route, setIsDrawerOpen }: ItemProps) => {
             <Link href={route.path} key={route.path} style={{ textDecoration: 'none' }} aria-label={t(`${route.name.replace(' ', '_')}` as keyof Messages['navigation'])}>
                 <Typography
                     variant='h6'
-                    sx={{ '&:hover': { color: 'primary.700' } }}
+                    color={isScrolled ? 'text.primary' : 'white'}
+                    sx={{ 
+                        '&:hover': { 
+                            color: isScrolled ? 'primary.700' : 'rgba(255, 255, 255, 0.8)' 
+                        },
+                        transition: 'color 0.3s ease-in-out'
+                    }}
                 >
                     {t(`${route.name.replace(' ', '_')}` as keyof Messages['navigation'])}
                 </Typography>

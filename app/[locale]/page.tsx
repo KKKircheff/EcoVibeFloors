@@ -8,7 +8,7 @@ import { navbarHeight } from '@/lib/styles/navbarHeight';
 
 export default async function HomePage() {
     return (
-        <Stack mt={navbarHeight}>
+        <Stack>
             <HomeHero />
             <PageLayoutContainer bgcolor='primary.contrastText' pb={{ xs: 8, md: 12 }} pt={{ xs: 6, md: 12 }}>
                 <HomeFeatures />
