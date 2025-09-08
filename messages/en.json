@@ -14,7 +14,9 @@
         "edit": "Edit",
         "exploreCollection": "Explore Collection",
         "sendInquiry": "Send Inquiry",
-        "backHome": "Back to Home"
+        "backHome": "Back to Home",
+        "contactNow": "Contact Now",
+        "readArticles": "Read Articles"
     },
     "errors": {
         "general": "An error occurred",
@@ -60,16 +62,16 @@
             "privacy_policy": "Privacy Policy",
             "gdpr": "GDPR",
             "accessibility": "Accessibility",
-            "templates": "Templates",
-            "resume_ai_writer": "Resumer AI Writer",
-            "docExtractor": "PDF / Image Data Extractor",
-            "create_new_profile": "Create New Profile",
+            "home": "Home",
+            "collections": " Collections",
+            "contact": " Colntact",
+            "blog": "Blog",
             "account": "Account & Settings",
             "pricing": "Pricing",
             "log_in": "Log in",
             "sign_up": "Sign Up",
-            "support_email": "contact@easyletters.ai",
-            "trademark": "Easyletters - a trade mark of Estrella Toro",
+            "support_email": "contact@ecovibefloors.com",
+            "trademark": "EcoVibe Floors - a trade mark of Estrella Toro",
             "kvk": "KVK 59343931",
             "address": "Enschede, Netherlands",
             "group_title_policies": "Policies",
@@ -106,6 +108,10 @@
     },
     "collections": {
         "title": "Our Premium Flooring Collection",
+        "hero": {
+            "title": "Collections",
+            "subtitle": "Discover our premium flooring collections"
+        },
         "naturalOak": {
             "title": "Natural Oak Floors",
             "description": "Authentic solid oak flooring with natural beauty and durability"
@@ -122,11 +128,21 @@
     "contact": {
         "title": "Contact EcoVibeFloors",
         "subtitle": "Get in touch for pricing and consultation",
+        "hero": {
+            "title": "Contact Us",
+            "subtitle": "Get in touch with our flooring experts"
+        },
         "form": {
             "name": "Full Name",
             "email": "Email Address",
             "phone": "Phone Number",
             "message": "Your Message"
+        }
+    },
+    "blog": {
+        "hero": {
+            "title": "Blog",
+            "subtitle": "Insights and inspiration for your flooring journey"
         }
     },
     "notFound": {

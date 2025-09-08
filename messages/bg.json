@@ -14,7 +14,9 @@
         "edit": "Редактирай",
         "exploreCollection": "Разгледайте колекцията",
         "sendInquiry": "Изпратете запитване",
-        "backHome": "Обратно към началото"
+        "backHome": "Обратно към началото",
+        "contactNow": "Свържете се сега",
+        "readArticles": "Четете статии"
     },
     "errors": {
         "general": "Възникна грешка",
@@ -49,6 +51,41 @@
         "Contact": "Контакти",
         "Blog": "Блог"
     },
+    "footer": {
+        "policies": "ПОЛИТИКИ",
+        "resources": "РЕСУРСИ",
+        "userShortcuts": "ПРЕЧКИ ЗА ПОТРЕБИТЕЛЯ",
+        "support": "ПОДДРЪЖКА",
+        "allRightsReserved": "Всички права запазени.",
+        "links": {
+            "terms_of_service": "Общи условия",
+            "privacy_policy": "Политика за поверителност",
+            "gdpr": "GDPR",
+            "accessibility": "Достъпност",
+            "home": "Начало",
+            "collections": " Колекции",
+            "contact": " Контакт",
+            "blog": "Блог",
+            "account": "Акаунт и настройки",
+            "pricing": "Цени",
+            "log_in": "Вход",
+            "sign_up": "Регистрация",
+            "support_email": "contact@ecovibefloors.com",
+            "trademark": "EcoVibe Floors - търговска марка на Estrella Toro",
+            "kvk": "KVK 59343931",
+            "address": "Енсхеде, Нидерландия",
+            "group_title_policies": "Политики",
+            "group_title_resources": "Ресурси",
+            "group_title_shortcuts": "Преки пътища",
+            "group_title_support": "Поддръжка"
+        },
+        "social": {
+            "followUs": "ПОСЛЕДВАЙТЕ НИ:",
+            "facebook": "FB",
+            "instagram": "In",
+            "linkedin": "Ln"
+        }
+    },
     "home": {
         "hero": {
             "title": "Премиум паркети от дъб, хибридно дърво и винил внос от Нидерландия",
@@ -71,6 +108,10 @@
     },
     "collections": {
         "title": "Нашата премиум колекция подови настилки",
+        "hero": {
+            "title": "Колекции",
+            "subtitle": "Открийте нашите премиум колекции подови настилки"
+        },
         "naturalOak": {
             "title": "Подове от натурален дъб",
             "description": "Автентични масивни дъбови подове с естествена красота и издръжливост"
@@ -87,11 +128,21 @@
     "contact": {
         "title": "Свържете се с EcoVibeFloors",
         "subtitle": "Свържете се с нас за цени и консултация",
+        "hero": {
+            "title": "Свържете се с нас",
+            "subtitle": "Свържете се с нашите експерти по подови настилки"
+        },
         "form": {
             "name": "Пълно име",
             "email": "Имейл адрес",
             "phone": "Телефонен номер",
             "message": "Вашето съобщение"
+        }
+    },
+    "blog": {
+        "hero": {
+            "title": "Блог",
+            "subtitle": "Прозрения и вдъхновение за вашето пътуване с подови настилки"
         }
     },
     "notFound": {

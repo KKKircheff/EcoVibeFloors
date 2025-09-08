@@ -21,38 +21,20 @@ export const footerData = {
     ],
     resources: [
         {
-            title: 'templates' as FooterLinkKeys,
-            link: '/templates',
+            title: 'home' as FooterLinkKeys,
+            link: '/',
         },
         {
-            title: 'resume_ai_writer' as FooterLinkKeys,
-            link: '/ai-writer',
+            title: 'collections' as FooterLinkKeys,
+            link: '/collections',
         },
         {
-            title: 'docExtractor' as FooterLinkKeys,
-            link: '/profile',
+            title: 'contact' as FooterLinkKeys,
+            link: '/contact',
         },
         {
-            title: 'create_new_profile' as FooterLinkKeys,
-            link: '/sign-up',
-        },
-    ],
-    shortcuts: [
-        {
-            title: 'log_in' as FooterLinkKeys,
-            link: '/login',
-        },
-        {
-            title: 'sign_up' as FooterLinkKeys,
-            link: '/signup',
-        },
-        {
-            title: 'pricing' as FooterLinkKeys,
-            link: '/pricing',
-        },
-        {
-            title: 'account' as FooterLinkKeys,
-            link: '/account',
+            title: 'blog' as FooterLinkKeys,
+            link: '/blog',
         },
     ],
     support: [

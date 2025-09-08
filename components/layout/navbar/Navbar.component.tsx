@@ -15,7 +15,6 @@ import BurgerButton from "./BurgerButton.component";
 import SideDrawer from "./SideDrawer.component";
 import { LanguageSelector } from "./LanguageSelector.component";
 import { useTranslations } from "next-intl";
-import Image from "next/image";
 import { layoutPaddings } from "@/lib/styles/layoutPaddings";
 
 type Props = {
@@ -59,7 +58,7 @@ export default function Navbar({ locale }: Props) {
                 borderRadius={borderRadius.no}
                 bgcolor={isScrolled ? menuBgColor : 'transparent'}
                 sx={{
-                    // backdropFilter: 'blur(6px)',
+                    backdropFilter: isScrolled ? 'blur(6px)' : 'none',
                     height: navbarHeight,
                     maxHeight: navbarHeight,
                     transition: 'background-color 0.3s ease-in-out',
