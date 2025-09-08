@@ -49,6 +49,41 @@
         "Contact": "Contact",
         "Blog": "Blog"
     },
+    "footer": {
+        "policies": "POLICIES",
+        "resources": "RESOURCES",
+        "userShortcuts": "USER SHORTCUTS",
+        "support": "SUPPORT",
+        "allRightsReserved": "All rights reserved.",
+        "links": {
+            "terms_of_service": "Terms of service",
+            "privacy_policy": "Privacy Policy",
+            "gdpr": "GDPR",
+            "accessibility": "Accessibility",
+            "templates": "Templates",
+            "resume_ai_writer": "Resumer AI Writer",
+            "docExtractor": "PDF / Image Data Extractor",
+            "create_new_profile": "Create New Profile",
+            "account": "Account & Settings",
+            "pricing": "Pricing",
+            "log_in": "Log in",
+            "sign_up": "Sign Up",
+            "support_email": "contact@easyletters.ai",
+            "trademark": "Easyletters - a trade mark of Estrella Toro",
+            "kvk": "KVK 59343931",
+            "address": "Enschede, Netherlands",
+            "group_title_policies": "Policies",
+            "group_title_resources": "Resources",
+            "group_title_shortcuts": "Shortcuts",
+            "group_title_support": "Support"
+        },
+        "social": {
+            "followUs": "FOLLOW US:",
+            "facebook": "FB",
+            "instagram": "In",
+            "linkedin": "Ln"
+        }
+    },
     "home": {
         "hero": {
             "title": "Premium Dutch Flooring for Bulgarian Homes",

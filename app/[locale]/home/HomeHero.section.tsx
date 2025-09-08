@@ -2,30 +2,32 @@ import 'server-only';
 import { getTranslations } from 'next-intl/server';
 import { Box, Typography, Button, Stack } from '@mui/material';
 import Image from 'next/image';
+import { navbarHeight } from "@/lib/styles/navbarHeight";
+import { palette } from '@/lib/styles/pallete';
 
 export async function HomeHero() {
     const t = await getTranslations('home');
     const tButtons = await getTranslations('buttons');
 
     return (
-        <Box
+        <Stack
             sx={{
                 position: 'relative',
-                minHeight: { xs: `75vh`, md: `80vh` },
+                minHeight: { xs: `90vh`, md: `90vh` },
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
-                overflow: 'hidden',
-            }}
+            }
+            }
         >
             <Image
-                src="/images/home-page/hero-b.webp"
+                src="/images/home-page/hero.webp"
                 alt="Premium wooden flooring showcase"
                 fill
                 priority
                 style={{
                     objectFit: 'cover',
-                    objectPosition: 'center',
+                    objectPosition: 'bottom',
                 }}
                 sizes="100vw"
             />
@@ -36,7 +38,7 @@ export async function HomeHero() {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    backgroundColor: 'rgba(0, 0, 0, 0.45)',
+                    backgroundColor: 'rgba(0, 0, 0, 0.20)',
                     zIndex: 1,
                 }}
             />
@@ -44,6 +46,7 @@ export async function HomeHero() {
                 spacing={{ xs: 2, lg: 5 }}
                 alignItems={'center'}
                 // justifyContent={'center'}
+                pt={{ xs: 0, md: 12 }}
                 sx={{
                     position: 'relative',
                     zIndex: 2,
@@ -55,10 +58,8 @@ export async function HomeHero() {
             >
                 <Typography
                     variant="h1"
-                    component="h1"
                     sx={{
                         fontWeight: 700,
-                        fontSize: { xs: '2.5rem', md: '3.5rem', lg: '4rem' },
                     }}
                 >
                     {t('hero.title')}
@@ -68,26 +69,31 @@ export async function HomeHero() {
                     component="p"
                     pb={3}
                     sx={{
-                        fontSize: { xs: '1.1rem', md: '1.3rem' },
                         lineHeight: 1.6,
                     }}
                 >
                     {t('hero.subtitle')}
                 </Typography>
                 <Button
-                    variant="contained"
+                    variant='text'
                     size="large"
                     sx={{
+                        border: `2px solid ${palette.info[200]}`,
                         px: 4,
-                        py: 2,
+                        py: 2.5,
                         fontSize: '1.1rem',
                         fontWeight: 600,
-                        maxWidth: '400px'
+                        maxWidth: '400px',
+                        color: palette.info[50],
+                        '&:hover': {
+                            bgcolor: 'primary.700',
+                            // border: `2px solid ${palette.primary[700]}`,
+                        }
                     }}
                 >
                     {tButtons('exploreCollection')}
                 </Button>
             </Stack>
-        </Box>
+        </ Stack>
     );
 }

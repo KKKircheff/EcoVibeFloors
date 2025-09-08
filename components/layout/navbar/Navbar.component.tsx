@@ -1,21 +1,22 @@
 'use client'
 export const dynamic = 'force-dynamic';
 import { Box, Button, Stack, Typography } from "@mui/material";
-import { Link } from '@/i18n/navigation';
+import { Link, useRouter } from '@/i18n/navigation';
 import { Locale, navRoutes } from '@/i18n/routing';
 import React, { useState } from "react";
-import { layoutPaddings } from "@/lib/styles/layoutPaddings";
 import { borderRadius } from "@/lib/styles/borderRadius";
 import { palette } from "@/lib/styles/pallete";
 import { menuBgColor } from "@/lib/styles/colors";
 import { navbarHeight } from "@/lib/styles/navbarHeight";
 import { useScrollPosition } from "@/hooks/useScrollPosition";
+import { useScreenWidth } from "@/hooks/useScreenWidth";
 import ListMenuItem from "./ListMenuItem.component";
 import BurgerButton from "./BurgerButton.component";
 import SideDrawer from "./SideDrawer.component";
 import { LanguageSelector } from "./LanguageSelector.component";
 import { useTranslations } from "next-intl";
 import Image from "next/image";
+import { layoutPaddings } from "@/lib/styles/layoutPaddings";
 
 type Props = {
     locale: Locale
@@ -24,9 +25,24 @@ type Props = {
 
 export default function Navbar({ locale }: Props) {
 
+    const screenWidth = useScreenWidth();
     const t = useTranslations('navigation')
     const isScrolled = useScrollPosition(30);
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+
+    const getLogoSize = () => {
+        if (screenWidth < 600) return { width: 32 };
+        if (screenWidth < 900) return { width: 40 };
+        if (screenWidth < 1200) return { width: 48 }
+        if (screenWidth < 1536) return { width: 54 };
+        return { width: 60 };
+    };
+
+
+    const router = useRouter()
+    const navigateHome = () => router.push('/')
+    const logoSize = getLogoSize()
+
 
     return (
         <Box
@@ -34,41 +50,50 @@ export default function Navbar({ locale }: Props) {
             left={0} top={0}
             zIndex='10' >
             <Stack
-                component="nav" aria-label="My site"
-                direction='row' justifyContent='space-between' alignItems='center'
-                width='100%' mx={0} py={4} px={layoutPaddings} pr={{ lg: 1 }}
+                component="nav" aria-label="EcoVibeFloors.com"
+                direction='row' justifyContent='space-between'
+                alignItems='center'
+                width='100%'
+                mx={0}
+                px={layoutPaddings}
                 borderRadius={borderRadius.no}
                 bgcolor={isScrolled ? menuBgColor : 'transparent'}
                 sx={{
                     // backdropFilter: 'blur(6px)',
+                    height: navbarHeight,
                     maxHeight: navbarHeight,
                     transition: 'background-color 0.3s ease-in-out',
                     '&.MuiStack-root': {
-                        backgroundColor: isScrolled ? menuBgColor : 'transparent !important',
+                        background: isScrolled ? menuBgColor : 'linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0))',
+                        transition: 'all 0.3s ease-in-out'
                     }
                 }}>
 
-                <Link href={`/`}>
-                    <Button variant='text' color='secondary' sx={{ '&:hover': { color: palette.info[300] } }} aria-label="Logo">
-                        <Typography
-                            variant='h3'
-                            fontWeight={400}
-                            color={isScrolled ? 'text.primary' : 'white'}
-                            pr={1.5}
-                            sx={{
-                                transition: 'color 0.3s ease-in-out'
-                            }}
-                        >
-                            EcoVibe Floors
-                        </Typography>
-                        <Image
-                            src={`/images/logos/logo-sx.png`}
+                <Stack direction={'row'} alignItems={'center'} spacing={2} onClick={navigateHome} sx={{ cursor: 'pointer' }}>
+                    <Box pt={{ xs: .6, sm: 1 }}>
+                        <img
+                            src={`/images/logos/logo-new-c.png`}
                             alt="EcoVibe Floors logo"
-                            width={34}
-                            height={25}
+                            style={{
+                                width: logoSize.width,
+                                aspectRatio: 2,
+                                objectFit: 'fill',
+                                filter: isScrolled ? 'none' : 'brightness(0) invert(1)',
+                                transition: 'filter 0.3s ease-in-out'
+                            }}
                         />
-                    </Button>
-                </Link>
+                    </Box>
+                    <Typography
+                        variant='h3'
+                        fontWeight={400}
+                        color={isScrolled ? 'text.primary' : 'white'}
+                        sx={{
+                            transition: 'color 0.3s ease-in-out'
+                        }}
+                    >
+                        EcoVibe Floors
+                    </Typography>
+                </Stack>
 
                 <Stack
                     component="ul"

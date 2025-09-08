@@ -45,7 +45,6 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                 variant="standard"
                 size="medium"
                 value={locale}
-                color="primary"
                 onChange={(e) => handleLanguageChange(e)}
                 onOpen={handleOpen}
                 onClose={handleClose}
@@ -151,8 +150,6 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                         alt="UK flag"
                         width={flagSize}
                         height={flagSize}
-                    // style={{ borderRadius: flagSize, border: `.5px solid ${palette.info[100]}` }}
-                    // style={{ borderRadius: br.sm, border: `.5px solid ${palette.info[100]}` }}
                     />
                     <Typography
                         color='info.contrastText'
@@ -164,11 +161,11 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                     </Typography>
                 </MenuItem>
             </Select>
-            <RiArrowDownSLine 
-                fontSize={'20px'} 
-                color={isScrolled ? 'neutral.600' : '#ffffff'} 
+            <RiArrowDownSLine
+                fontSize={'20px'}
+                color={isScrolled ? palette.info[600] : '#ffffff'}
                 onClick={handleOpen}
-                style={{ 
+                style={{
                     transition: 'color 0.3s ease-in-out',
                     cursor: 'pointer'
                 }}
