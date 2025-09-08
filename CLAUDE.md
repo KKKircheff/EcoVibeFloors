@@ -40,7 +40,7 @@ EcoVibeFloors is a luxury flooring import platform for Bulgarian homeowners and 
 - **Custom luxury theme**: `lib/theme.ts` with wood-inspired color palette
 - **Primary color**: #8B4513 (Saddle Brown) representing premium wood
 - **Secondary color**: #2E7D32 (Forest Green) representing eco-friendly nature  
-- **Font**: Roboto with Latin and Cyrillic subsets for Bulgarian support
+- **Font**:   Montserrat, Poiret-one, Zen kaku gothic-new
 - **App Router integration**: Uses `@mui/material-nextjs/v15-appRouter` for SSR
 - **Theme provider**: Configured in locale layout with `AppRouterCacheProvider`
 

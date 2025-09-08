@@ -14,6 +14,7 @@ const BurgerButton = ({ isDrawerOpen, setIsDrawerOpen, ...otherProps }: Props) =
 
     return (
         <IconButton
+            size='small'
             {...otherProps}
             sx={{
                 alignItems: 'center',
@@ -22,8 +23,8 @@ const BurgerButton = ({ isDrawerOpen, setIsDrawerOpen, ...otherProps }: Props) =
             }}
 
             onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
-            {isDrawerOpen ? <CloseIcon sx={{ color: 'neutral.main' }}
-            /> : <Menu sx={{ color: 'neutral.main' }} />}
+            {isDrawerOpen ? <CloseIcon sx={{ color: 'info.300' }}
+            /> : <Menu sx={{ color: 'info.300' }} />}
         </IconButton >
     )
 }
