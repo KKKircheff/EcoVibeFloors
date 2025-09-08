@@ -1,7 +1,8 @@
 import {palette} from './pallete';
 
 // export const menuBgColor = 'rgba(255, 255, 255, 0.95)'; // Semi-transparent white for glass effect
-export const menuBgColor = palette.primary[100];
+export const menuBgColor = 'rgba(255, 255, 255, 1)';
+// export const menuBgColor = '#FFF';
 
 export const colors = {
     menuBackground: menuBgColor,

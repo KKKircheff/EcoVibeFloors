@@ -1,18 +1,16 @@
 import 'server-only';
-import { Stack } from '@mui/material';
+import { Stack, Typography } from '@mui/material';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
-import { HomeHero } from './home/HomeHero.section';
-import { HomeFeatures } from './home/HomeFeatures.section';
-import { navbarHeight } from '@/lib/styles/navbarHeight';
+import { CollectionsHero } from './CollectionsHero.section';
 import Footer from '@/components/layout/footer/Footer.component';
 
-export default async function HomePage() {
+export default async function CollectionsPage() {
     return (
         <Stack>
-            <HomeHero />
+            <CollectionsHero />
             <PageLayoutContainer bgcolor='primary.contrastText' pb={{ xs: 8, md: 12 }} pt={{ xs: 6, md: 12 }}>
-                <HomeFeatures />
+                <Typography>Collections</Typography>
             </PageLayoutContainer>
             <PageLayoutContainer pt={10} bgcolor='info.800'>
                 <Footer />
