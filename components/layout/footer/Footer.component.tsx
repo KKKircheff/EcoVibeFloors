@@ -11,7 +11,7 @@ const Footer = async () => {
 
     return (
         <Box>
-            <Stack direction={'row'} justifyContent={'space-between'} spacing={4}>
+            <Stack direction={{ xs: 'column', md: 'row' }} justifyContent={'space-between'} spacing={4}>
                 <FooterLinkGroup groupTitle={t('policies')} group={footerData.policies} />
                 <FooterLinkGroup groupTitle={t('resources')} group={footerData.resources} />
                 <FooterLinkGroup groupTitle={t('support')} group={footerData.support} />

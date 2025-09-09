@@ -36,7 +36,8 @@ const ContactForm = () => {
 
     const contactTemplate = (formValues: ContactInfo, created: Date, time_stamp: number) => {
         return ({
-            to: ["kircheff@protonmail.com"],
+            to: ["kircheff@protonmail.com", "georgievgancho@gmail.com"],
+            // to: "kircheff@protonmail.com",
             message: {
                 subject: "Запитване EcoVibe Floors",
                 text: "Some text that maybe is needed",

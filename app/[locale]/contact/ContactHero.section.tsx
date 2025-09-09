@@ -35,7 +35,8 @@ export function ContactHero() {
                 priority
                 style={{
                     objectFit: 'cover',
-                    objectPosition: 'bottom',
+                    // objectPosition: 'bottom',
+                    objectPosition: '100% 100%',
                 }}
                 sizes="100vw"
             />
