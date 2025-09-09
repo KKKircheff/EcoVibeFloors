@@ -1,4 +1,5 @@
 
+import { useScrollPosition } from '@/hooks/useScrollPosition';
 import { borderRadius } from '@/lib/styles/borderRadius';
 import CloseIcon from '@mui/icons-material/Close';
 import Menu from '@mui/icons-material/Menu';
@@ -10,7 +11,7 @@ type Props = {
 } & ButtonProps
 
 const BurgerButton = ({ isDrawerOpen, setIsDrawerOpen, ...otherProps }: Props) => {
-
+    const isScrolled = useScrollPosition(30);
 
     return (
         <IconButton
@@ -24,7 +25,7 @@ const BurgerButton = ({ isDrawerOpen, setIsDrawerOpen, ...otherProps }: Props) =
 
             onClick={() => setIsDrawerOpen(!isDrawerOpen)}>
             {isDrawerOpen ? <CloseIcon sx={{ color: 'info.300' }}
-            /> : <Menu sx={{ color: 'info.300' }} />}
+            /> : <Menu sx={{ color: isScrolled ? 'info.300' : 'info.50' }} />}
         </IconButton >
     )
 }

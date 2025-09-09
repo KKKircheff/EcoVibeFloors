@@ -1,9 +1,10 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
-import { Box, Typography, Button, Stack } from '@mui/material';
+import { Box, Button, Stack } from '@mui/material';
 import Image from 'next/image';
-import { navbarHeight } from "@/lib/styles/navbarHeight";
 import { palette } from '@/lib/styles/pallete';
+import { HeroTitle } from '../../../components/ui/typography/HeroTitle';
+import { HeroSubtitle } from '../../../components/ui/typography/HeroSubtitle';
 
 export async function HomeHero() {
     const t = await getTranslations('home');
@@ -27,7 +28,7 @@ export async function HomeHero() {
                 priority
                 style={{
                     objectFit: 'cover',
-                    objectPosition: 'bottom',
+                    objectPosition: '0% 100%',
                 }}
                 sizes="100vw"
             />
@@ -38,7 +39,7 @@ export async function HomeHero() {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    backgroundColor: 'rgba(0, 0, 0, 0.20)',
+                    backgroundColor: { xs: 'rgba(0, 0, 0, 0.40)', md: 'rgba(0, 0, 0, 0.20)' },
                     zIndex: 1,
                 }}
             />
@@ -56,24 +57,12 @@ export async function HomeHero() {
                     px: { xs: 3, md: 6 },
                 }}
             >
-                <Typography
-                    variant="h1"
-                    sx={{
-                        fontWeight: 700,
-                    }}
-                >
+                <HeroTitle>
                     {t('hero.title')}
-                </Typography>
-                <Typography
-                    variant="h5"
-                    component="p"
-                    pb={3}
-                    sx={{
-                        lineHeight: 1.6,
-                    }}
-                >
+                </HeroTitle>
+                <HeroSubtitle>
                     {t('hero.subtitle')}
-                </Typography>
+                </HeroSubtitle>
                 <Button
                     variant='text'
                     size="large"

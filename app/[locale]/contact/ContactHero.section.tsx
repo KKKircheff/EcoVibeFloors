@@ -1,12 +1,21 @@
-import 'server-only';
-import { getTranslations } from 'next-intl/server';
-import { Box, Typography, Button, Stack } from '@mui/material';
+'use client';
+import { useTranslations } from 'next-intl';
+import { Box, Button, Stack } from '@mui/material';
 import Image from 'next/image';
 import { palette } from '@/lib/styles/pallete';
+import { HeroTitle } from '../../../components/ui/typography/HeroTitle';
+import { HeroSubtitle } from '../../../components/ui/typography/HeroSubtitle';
 
-export async function ContactHero() {
-    const t = await getTranslations('contact');
-    const tButtons = await getTranslations('buttons');
+export function ContactHero() {
+    const t = useTranslations('contact');
+    const tButtons = useTranslations('buttons');
+
+    const scrollToForm = () => {
+        const formElement = document.getElementById('contact-form');
+        if (formElement) {
+            formElement.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
 
     return (
         <Stack
@@ -20,7 +29,7 @@ export async function ContactHero() {
             }
         >
             <Image
-                src="/images/home-page/hero.webp"
+                src="/images/home-page/hero-b.webp"
                 alt="Premium wooden flooring showcase"
                 fill
                 priority
@@ -54,27 +63,16 @@ export async function ContactHero() {
                     px: { xs: 3, md: 6 },
                 }}
             >
-                <Typography
-                    variant="h1"
-                    sx={{
-                        fontWeight: 700,
-                    }}
-                >
+                <HeroTitle>
                     {t('hero.title')}
-                </Typography>
-                <Typography
-                    variant="h5"
-                    component="p"
-                    pb={3}
-                    sx={{
-                        lineHeight: 1.6,
-                    }}
-                >
+                </HeroTitle>
+                <HeroSubtitle>
                     {t('hero.subtitle')}
-                </Typography>
+                </HeroSubtitle>
                 <Button
                     variant='text'
                     size="large"
+                    onClick={scrollToForm}
                     sx={{
                         border: `2px solid ${palette.info[200]}`,
                         px: 4,

@@ -43,16 +43,16 @@ export const footerData = {
             link: '',
         },
         {
-            title: 'trademark' as FooterLinkKeys,
-            link: '/gdpr',
+            title: 'phone' as FooterLinkKeys,
+            link: '/',
         },
         {
-            title: 'kvk' as FooterLinkKeys,
-            link: '/gdpr',
+            title: 'trademark' as FooterLinkKeys,
+            link: '/',
         },
         {
             title: 'address' as FooterLinkKeys,
-            link: '/gdpr',
+            link: '/',
         },
     ],
 };

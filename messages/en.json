@@ -16,7 +16,8 @@
         "sendInquiry": "Send Inquiry",
         "backHome": "Back to Home",
         "contactNow": "Contact Now",
-        "readArticles": "Read Articles"
+        "readArticles": "Read Articles",
+        "submitButton": "Submit"
     },
     "errors": {
         "general": "An error occurred",
@@ -27,12 +28,31 @@
         "serverError": "Server error occurred",
         "timeout": "Request timed out",
         "contact": {
-            "invalidEmail": "Please enter a valid email address",
-            "nameRequired": "Full name is required",
-            "emailRequired": "Email address is required",
-            "phoneRequired": "Phone number is required",
-            "messageRequired": "Message cannot be empty",
-            "sendFailed": "Failed to send your message. Please try again."
+            "validation": {
+                "name": {
+                    "required": "Name is required",
+                    "invalid": "Please enter a valid name (letters and spaces only)"
+                },
+                "email": {
+                    "required": "Email address is required",
+                    "invalid": "Please enter a valid email address"
+                },
+                "phone": {
+                    "required": "Phone number is required",
+                    "invalid": "Please enter a valid phone number"
+                },
+                "message": {
+                    "required": "Message is required",
+                    "tooLong": "Message is too long (maximum 400 characters)"
+                },
+                "company": {
+                    "invalid": "Please enter a valid company name"
+                }
+            },
+            "submission": {
+                "success": "Thank you for your inquiry. We will contact you as soon as possible.",
+                "error": "An error occurred while sending. Please try again."
+            }
         }
     },
     "navigation": {
@@ -73,6 +93,7 @@
             "support_email": "contact@ecovibefloors.com",
             "trademark": "EcoVibe Floors - a trade mark of Estrella Toro",
             "kvk": "KVK 59343931",
+            "phone": "Phone number: +359 876 962 484",
             "address": "Enschede, Netherlands",
             "group_title_policies": "Policies",
             "group_title_resources": "Resources",
@@ -129,13 +150,14 @@
         "title": "Contact EcoVibeFloors",
         "subtitle": "Get in touch for pricing and consultation",
         "hero": {
-            "title": "Contact Us",
-            "subtitle": "Get in touch with our flooring experts"
+            "title": "It is time for your dream, beautiful and luxurious floor",
+            "subtitle": "Premium quality is our passion. We'll gladly select the perfect solution with extended warranty for your home. Write or call us!"
         },
         "form": {
-            "name": "Full Name",
-            "email": "Email Address",
-            "phone": "Phone Number",
+            "name": "Name",
+            "email": "Email",
+            "phone": "Phone",
+            "company": "Company (optional)",
             "message": "Your Message"
         }
     },

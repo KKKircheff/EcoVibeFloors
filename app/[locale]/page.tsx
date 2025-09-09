@@ -1,10 +1,9 @@
 import 'server-only';
 import { Stack } from '@mui/material';
 
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import { HomeHero } from './home/HomeHero.section';
 import { HomeFeatures } from './home/HomeFeatures.section';
-import { navbarHeight } from '@/lib/styles/navbarHeight';
+import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import Footer from '@/components/layout/footer/Footer.component';
 
 export default async function HomePage() {

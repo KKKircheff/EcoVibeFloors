@@ -1,8 +1,10 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
-import { Box, Typography, Button, Stack } from '@mui/material';
+import { Box, Button, Stack } from '@mui/material';
 import Image from 'next/image';
 import { palette } from '@/lib/styles/pallete';
+import { HeroTitle } from '../../../components/ui/typography/HeroTitle';
+import { HeroSubtitle } from '../../../components/ui/typography/HeroSubtitle';
 
 export async function BlogHero() {
     const t = await getTranslations('blog');
@@ -54,24 +56,12 @@ export async function BlogHero() {
                     px: { xs: 3, md: 6 },
                 }}
             >
-                <Typography
-                    variant="h1"
-                    sx={{
-                        fontWeight: 700,
-                    }}
-                >
+                <HeroTitle>
                     {t('hero.title')}
-                </Typography>
-                <Typography
-                    variant="h5"
-                    component="p"
-                    pb={3}
-                    sx={{
-                        lineHeight: 1.6,
-                    }}
-                >
+                </HeroTitle>
+                <HeroSubtitle>
                     {t('hero.subtitle')}
-                </Typography>
+                </HeroSubtitle>
                 <Button
                     variant='text'
                     size="large"
