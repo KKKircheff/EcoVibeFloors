@@ -26,7 +26,13 @@ export default function Navbar({ locale }: Props) {
 
     const screenWidth = useScreenWidth();
     const t = useTranslations('navigation')
-    const isScrolled = useScrollPosition(30);
+
+    // Navbar changes on scroll
+    // const isScrolled = useScrollPosition(30);
+
+    // Navbar always visible
+    const isScrolled = true;
+
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
 
     const getLogoSize = () => {
@@ -69,7 +75,7 @@ export default function Navbar({ locale }: Props) {
                 }}>
 
                 <Stack direction={'row'} alignItems={'center'} spacing={2} onClick={navigateHome} sx={{ cursor: 'pointer' }}>
-                    <Box pt={{ xs: .6, sm: 1 }}>
+                    {/* <Box pt={{ xs: .6, sm: 1 }}>
                         <img
                             src={`/images/logos/logo-new-c.png`}
                             alt="EcoVibe Floors logo"
@@ -81,11 +87,11 @@ export default function Navbar({ locale }: Props) {
                                 transition: 'filter 0.3s ease-in-out'
                             }}
                         />
-                    </Box>
+                    </Box> */}
                     <Typography
-                        variant='h3'
+                        variant='h4'
                         fontWeight={400}
-                        color={isScrolled ? 'text.primary' : 'white'}
+                        color={isScrolled ? 'primary.600' : 'white'}
                         sx={{
                             transition: 'color 0.3s ease-in-out'
                         }}

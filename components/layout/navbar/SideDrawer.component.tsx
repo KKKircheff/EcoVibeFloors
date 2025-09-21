@@ -80,13 +80,13 @@ const SideDrawer = ({
                     // height: 'calc(100vh - 100px)', // Adjust height to prevent overflow
                 }}
             >
-                <Stack direction="row" justifyContent="space-between" alignItems="center">
+                <Stack direction="row" justifyContent="space-between" alignItems="center" pb={3}>
                     <Typography
                         component="label"
                         htmlFor="close-icon"
-                        variant="h6"
-                        fontWeight="700"
-                        color="text.primary"
+                        variant="h1"
+                        fontWeight="600"
+                        color="primary.500"
                     >
                         EcoVibeFloors
                     </Typography>

@@ -11,6 +11,8 @@
   "dependencies": {
     "@emotion/react": "^11.14.0",
     "@emotion/styled": "^11.14.1",
+    "@fontsource/bellota-text": "^5.2.8",
+    "@fontsource/caveat": "^5.2.8",
     "@fontsource/montserrat": "^5.2.6",
     "@fontsource/poiret-one": "^5.2.6",
     "@fontsource/zen-kaku-gothic-new": "^5.2.6",

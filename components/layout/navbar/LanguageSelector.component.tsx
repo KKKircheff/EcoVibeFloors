@@ -133,6 +133,7 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                         alt="Bulgarian Flag"
                         width={flagSize}
                         height={flagSize}
+                        style={{ borderRadius: flagSize }}
                     // style={{ borderRadius: flagSize, border: `.5px solid ${palette.info[100]}` }}
                     // style={{ borderRadius: br.sm, border: `.5px solid ${palette.info[100]}` }}
                     />
@@ -150,6 +151,7 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                         alt="UK flag"
                         width={flagSize}
                         height={flagSize}
+                        style={{ borderRadius: flagSize }}
                     />
                     <Typography
                         color='info.contrastText'

@@ -4,7 +4,10 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-EcoVibeFloors is a luxury flooring import platform for Bulgarian homeowners and design professionals, featuring premium Dutch flooring solutions. The platform provides bilingual (English/Bulgarian) access to high-end natural materials with extended guarantees and expert guidance.
+EcoVibeFloors is a luxury flooring import platform that helps Bulgarian homeowners discover premium Dutch flooring solutions like natural oak parquet, "Hybrid wood", vinyl floors and laminate. The platform provides bilingual (English/Bulgarian) access to high-end floors with extended guarantees and expert guidance.
+
+## Purpose:
+To create a visually compelling, high-quality website with strong design and engaging content. The site will showcase and promote premium Dutch natural oak parquet, "Hybrid Wood" floors, vinyl floors, and laminate flooring in Bulgaria.
 
 ## Commands
 

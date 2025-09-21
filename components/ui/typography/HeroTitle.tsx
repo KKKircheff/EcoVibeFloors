@@ -11,7 +11,7 @@ export function HeroTitle({ children }: HeroTitleProps) {
             variant="h1"
             sx={{
                 textShadow: '2px 2px 4px rgba(0,0,0,0.6)',
-                fontWeight: 700,
+                fontWeight: 600,
             }}
         >
             {children}

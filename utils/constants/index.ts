@@ -7,22 +7,20 @@ export const DEFAULT_LOCALE = 'en' as const;
 
 // Currency and pricing constants for EcoVibeFloors
 export const CURRENCY = {
-  BGN: 'BGN',
-  EUR: 'EUR',
-  USD: 'USD',
+    EUR: 'EUR',
 } as const;
 
 // Product categories
 export const FLOORING_CATEGORIES = {
-  NATURAL_WOOD: 'natural_wood',
-  LAMINATE: 'laminate',
-  VINYL: 'vinyl',
-  BAMBOO: 'bamboo',
+    NATURAL_WOOD: 'Natural oak',
+    LAMINATE: 'Hybrid wood',
+    VINYL: 'vinyl',
+    BAMBOO: 'bamboo',
 } as const;
 
 // API endpoints (if needed)
 export const API_ENDPOINTS = {
-  PRODUCTS: '/api/products',
-  USERS: '/api/users',
-  AUTH: '/api/auth',
+    PRODUCTS: '/api/products',
+    USERS: '/api/users',
+    AUTH: '/api/auth',
 } as const;

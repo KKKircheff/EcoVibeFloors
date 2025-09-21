@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { palette } from '@/lib/styles/pallete';
 import { HeroTitle } from '../../../components/ui/typography/HeroTitle';
 import { HeroSubtitle } from '../../../components/ui/typography/HeroSubtitle';
+import { navbarHeight } from '@/lib/styles/navbarHeight';
 
 export async function HomeHero() {
     const t = await getTranslations('home');
@@ -12,9 +13,10 @@ export async function HomeHero() {
 
     return (
         <Stack
+            pt={navbarHeight}
             sx={{
                 position: 'relative',
-                minHeight: { xs: `90vh`, md: `90vh` },
+                minHeight: { xs: `70vh`, md: `90vh` },
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
@@ -22,13 +24,13 @@ export async function HomeHero() {
             }
         >
             <Image
-                src="/images/home-page/hero.webp"
+                src="/images/home-page/hero-home.jpg"
                 alt="Premium wooden flooring showcase"
                 fill
                 priority
                 style={{
                     objectFit: 'cover',
-                    objectPosition: '0% 100%',
+                    objectPosition: '100% 100%',
                 }}
                 sizes="100vw"
             />
@@ -39,7 +41,6 @@ export async function HomeHero() {
                     left: 0,
                     right: 0,
                     bottom: 0,
-                    backgroundColor: { xs: 'rgba(0, 0, 0, 0.40)', md: 'rgba(0, 0, 0, 0.20)' },
                     zIndex: 1,
                 }}
             />
@@ -47,14 +48,15 @@ export async function HomeHero() {
                 spacing={{ xs: 2, lg: 5 }}
                 alignItems={'center'}
                 // justifyContent={'center'}
-                pt={{ xs: 0, md: 12 }}
+                py={{ xs: 8 }}
                 sx={{
+                    backgroundColor: { xs: 'rgba(0, 0, 0, 0.40)', md: 'rgba(0, 0, 0, 0.35)' },
                     position: 'relative',
                     zIndex: 2,
                     textAlign: 'center',
                     color: 'info.50',
-                    maxWidth: '1100px',
-                    px: { xs: 3, md: 6 },
+                    maxWidth: '1200px',
+                    px: { xs: 3, md: 10 },
                 }}
             >
                 <HeroTitle>
@@ -63,25 +65,48 @@ export async function HomeHero() {
                 <HeroSubtitle>
                     {t('hero.subtitle')}
                 </HeroSubtitle>
-                <Button
-                    variant='text'
-                    size="large"
-                    sx={{
-                        border: `2px solid ${palette.info[200]}`,
-                        px: 4,
-                        py: 2.5,
-                        fontSize: '1.1rem',
-                        fontWeight: 600,
-                        maxWidth: '400px',
-                        color: palette.info[50],
-                        '&:hover': {
-                            bgcolor: 'primary.700',
-                            // border: `2px solid ${palette.primary[700]}`,
-                        }
-                    }}
-                >
-                    {tButtons('exploreCollection')}
-                </Button>
+                <Stack direction={{ xs: 'column', md: 'row' }} spacing={3} width={'100%'} justifyContent={'center'} alignItems={'center'}>
+                    <Button
+                        variant='text'
+                        size="large"
+                        sx={{
+                            border: `2px solid ${palette.info[100]}`,
+                            px: 4,
+                            py: 2.5,
+                            fontSize: '1.1rem',
+                            fontWeight: 600,
+                            width: { xs: '100%', md: '50%' },
+                            maxWidth: '400px',
+                            color: palette.info[50],
+                            '&:hover': {
+                                bgcolor: 'primary.700',
+                                // border: `2px solid ${palette.primary[700]}`,
+                            }
+                        }}
+                    >
+                        {tButtons('learnMore')}
+                    </Button>
+                    <Button
+                        variant='text'
+                        size="large"
+                        sx={{
+                            border: `2px solid ${palette.info[100]}`,
+                            px: 4,
+                            py: 2.5,
+                            fontSize: '1.1rem',
+                            fontWeight: 600,
+                            width: { xs: '100%', md: '50%' },
+                            maxWidth: '400px',
+                            color: palette.info[50],
+                            '&:hover': {
+                                bgcolor: 'primary.700',
+                                // border: `2px solid ${palette.primary[700]}`,
+                            }
+                        }}
+                    >
+                        {tButtons('exploreCollection')}
+                    </Button>
+                </Stack>
             </Stack>
         </ Stack>
     );

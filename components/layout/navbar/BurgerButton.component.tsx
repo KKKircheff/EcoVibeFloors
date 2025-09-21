@@ -11,7 +11,8 @@ type Props = {
 } & ButtonProps
 
 const BurgerButton = ({ isDrawerOpen, setIsDrawerOpen, ...otherProps }: Props) => {
-    const isScrolled = useScrollPosition(30);
+    // const isScrolled = useScrollPosition(30);
+    const isScrolled = true
 
     return (
         <IconButton
