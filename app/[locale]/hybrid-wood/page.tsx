@@ -1,16 +1,19 @@
 import 'server-only';
 import { Stack, Typography } from '@mui/material';
+import { getTranslations } from 'next-intl/server';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import { HybridWoodHero } from './HybridWoodHero.section';
 import Footer from '@/components/layout/footer/Footer.component';
 
 export default async function HybridWoodPage() {
+    const t = await getTranslations('hybridWood');
+
     return (
         <Stack>
             <HybridWoodHero />
             <PageLayoutContainer bgcolor='primary.contrastText' pb={{ xs: 8, md: 12 }} pt={{ xs: 6, md: 12 }}>
-                <Typography>Hybrid Wood Collection</Typography>
+                <Typography>{t('pageTitle')}</Typography>
             </PageLayoutContainer>
             <PageLayoutContainer pt={10} bgcolor='info.800'>
                 <Footer />

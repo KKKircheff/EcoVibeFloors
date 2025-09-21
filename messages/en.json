@@ -175,5 +175,33 @@
     "notFound": {
         "title": "Page Not Found",
         "description": "The page you're looking for doesn't exist or has been moved."
+    },
+    "customOak": {
+        "pageTitle": "Premium Oak Custom Crafted Collection",
+        "hero": {
+            "title": "Premium Oak Custom Crafted",
+            "subtitle": "Bespoke oak flooring tailored to your unique vision"
+        }
+    },
+    "vinyl": {
+        "pageTitle": "Vinyl Collection",
+        "hero": {
+            "title": "Vinyl Collection",
+            "subtitle": "Durable and stylish vinyl flooring for modern living"
+        }
+    },
+    "oak": {
+        "pageTitle": "Premium Oak Collection",
+        "hero": {
+            "title": "Premium Oak Collection",
+            "subtitle": "Discover our exquisite premium oak flooring collection"
+        }
+    },
+    "hybridWood": {
+        "pageTitle": "Hybrid Wood Collection",
+        "hero": {
+            "title": "Hybrid Wood Collection",
+            "subtitle": "The perfect blend of natural beauty and modern innovation"
+        }
     }
 }

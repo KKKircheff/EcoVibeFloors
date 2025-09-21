@@ -7,6 +7,7 @@ import { HeroTitle } from '../../../components/ui/typography/HeroTitle';
 import { HeroSubtitle } from '../../../components/ui/typography/HeroSubtitle';
 
 export async function VinylHero() {
+    const t = await getTranslations('vinyl');
     const tButtons = await getTranslations('buttons');
 
     return (
@@ -45,21 +46,22 @@ export async function VinylHero() {
             <Stack
                 spacing={{ xs: 2, lg: 5 }}
                 alignItems={'center'}
-                pt={{ xs: 0, md: 12 }}
+                py={{ xs: 8 }}
                 sx={{
+                    backgroundColor: { xs: 'rgba(0, 0, 0, 0.40)', md: 'rgba(0, 0, 0, 0.35)' },
                     position: 'relative',
                     zIndex: 2,
                     textAlign: 'center',
                     color: 'info.50',
-                    maxWidth: '1100px',
-                    px: { xs: 3, md: 6 },
+                    maxWidth: '1200px',
+                    px: { xs: 3, md: 10 },
                 }}
             >
                 <HeroTitle>
-                    Vinyl Collection
+                    {t('hero.title')}
                 </HeroTitle>
                 <HeroSubtitle>
-                    Durable and stylish vinyl flooring for modern living
+                    {t('hero.subtitle')}
                 </HeroSubtitle>
                 <Button
                     variant='text'

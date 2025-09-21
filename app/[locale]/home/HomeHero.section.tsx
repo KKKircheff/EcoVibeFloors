@@ -13,7 +13,6 @@ export async function HomeHero() {
 
     return (
         <Stack
-            pt={navbarHeight}
             sx={{
                 position: 'relative',
                 minHeight: { xs: `70vh`, md: `90vh` },

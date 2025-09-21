@@ -1,10 +1,10 @@
+import { navbarHeight } from "@/lib/styles/navbarHeight"
 import { Box } from "@mui/material"
-
 const UnderNavBar = () => {
     return (
         <Box
             bgcolor='transparent'
-            height={{ xs: '70px', md: '100px' }}
+            height={navbarHeight}
         >
         </Box>
     )
