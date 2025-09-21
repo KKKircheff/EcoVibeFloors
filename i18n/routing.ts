@@ -1,6 +1,16 @@
 import {defineRouting} from 'next-intl/routing';
 
-export const navRoutes = [
+export type PathNames = '/' | '/collections' | '/contact' | '/blog' | '/oak' | '/custom-oak' | '/hybrid-wood' | '/vinyl';
+
+export type NavRoute = {
+    name: string;
+    path: PathNames;
+    icon: string | undefined;
+    visible: boolean;
+    submenu?: NavRoute[];
+};
+
+export const navRoutes: NavRoute[] = [
     {
         name: 'Home',
         path: '/',
@@ -12,6 +22,38 @@ export const navRoutes = [
         path: '/collections',
         icon: '',
         visible: true,
+        submenu: [
+            {
+                name: 'Premium Oak',
+                path: '/oak',
+                icon: '',
+                visible: true,
+            },
+            {
+                name: 'Premium Oak Custom Crafted',
+                path: '/custom-oak',
+                icon: '',
+                visible: true,
+            },
+            {
+                name: 'Hybrid Wood',
+                path: '/hybrid-wood',
+                icon: '',
+                visible: true,
+            },
+            {
+                name: 'Vinyl',
+                path: '/vinyl',
+                icon: '',
+                visible: true,
+            },
+            {
+                name: 'All Collections',
+                path: '/collections',
+                icon: '',
+                visible: true,
+            },
+        ],
     },
     {
         name: 'Contact',
@@ -37,15 +79,6 @@ export const routing = defineRouting({
     // Prefix all paths with locale
     localePrefix: 'always',
 });
-
-export type PathNames = (typeof navRoutes)[number]['path'];
-
-export type NavRoute = {
-    name: string;
-    path: PathNames;
-    icon: string | undefined;
-    visible: boolean;
-};
 
 // Type definitions for better TypeScript support
 export type Locale = (typeof routing.locales)[number];

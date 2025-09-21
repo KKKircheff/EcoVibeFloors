@@ -1,0 +1,86 @@
+import 'server-only';
+import { getTranslations } from 'next-intl/server';
+import { Box, Button, Stack } from '@mui/material';
+import Image from 'next/image';
+import { palette } from '@/lib/styles/pallete';
+import { HeroTitle } from '../../../components/ui/typography/HeroTitle';
+import { HeroSubtitle } from '../../../components/ui/typography/HeroSubtitle';
+
+export async function OakHero() {
+    const t = await getTranslations('oak');
+    const tButtons = await getTranslations('buttons');
+
+    return (
+        <Stack
+            sx={{
+                position: 'relative',
+                minHeight: { xs: `90vh`, md: `90vh` },
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+            }
+            }
+        >
+            <Image
+                src="/images/home-page/hero.webp"
+                alt="Premium oak flooring showcase"
+                fill
+                priority
+                style={{
+                    objectFit: 'cover',
+                    objectPosition: 'bottom',
+                }}
+                sizes="100vw"
+            />
+            <Box
+                sx={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    backgroundColor: 'rgba(0, 0, 0, 0.20)',
+                    zIndex: 1,
+                }}
+            />
+            <Stack
+                spacing={{ xs: 2, lg: 5 }}
+                alignItems={'center'}
+                pt={{ xs: 0, md: 12 }}
+                sx={{
+                    position: 'relative',
+                    zIndex: 2,
+                    textAlign: 'center',
+                    color: 'info.50',
+                    maxWidth: '1100px',
+                    px: { xs: 3, md: 6 },
+                }}
+            >
+                <HeroTitle>
+                    Premium Oak Collection
+                </HeroTitle>
+                <HeroSubtitle>
+                    Discover our exquisite premium oak flooring collection
+                </HeroSubtitle>
+                <Button
+                    variant='text'
+                    size="large"
+                    sx={{
+                        border: `2px solid ${palette.info[200]}`,
+                        px: 4,
+                        py: 2.5,
+                        fontSize: '1.1rem',
+                        fontWeight: 600,
+                        maxWidth: '400px',
+                        color: palette.info[50],
+                        '&:hover': {
+                            bgcolor: 'primary.700',
+                        }
+                    }}
+                >
+                    {tButtons('exploreCollection')}
+                </Button>
+            </Stack>
+        </Stack>
+    );
+}

@@ -1,6 +1,6 @@
 'use client'
 import { Drawer, List, Stack, Typography } from '@mui/material';
-import ListMenuItem from './ListMenuItem.component';
+import MobileListMenuItem from './MobileListMenuItem.component';
 import { NavRoute, Locale } from '@/i18n/routing';
 import { borderRadius } from '@/lib/styles/borderRadius';
 import React from 'react';
@@ -101,25 +101,17 @@ const SideDrawer = ({
                     sx={{
                         flex: 'none',
                         overflowY: 'auto',
-                        height: '300px',
+                        height: '400px',
                     }}
                 >
                     {routes
                         .filter(route => route.visible)
                         .map((route, _index) => (
-                            <React.Fragment key={route.path}>
-                                <ListMenuItem
-                                    route={route}
-                                    setIsDrawerOpen={setIsDrawerOpen}
-                                />
-                                {/* {index < routes.filter(route => route.visible).length - 1 && (
-                                    <Divider
-                                        orientation="horizontal"
-                                        sx={{ mx: 0, my: 0 }}
-                                        flexItem
-                                    />
-                                )} */}
-                            </React.Fragment>
+                            <MobileListMenuItem
+                                key={route.path}
+                                route={route}
+                                setIsDrawerOpen={setIsDrawerOpen}
+                            />
                         ))
                     }
                 </List>
