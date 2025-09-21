@@ -7,7 +7,6 @@ import { HeroTitle } from '../../../components/ui/typography/HeroTitle';
 import { HeroSubtitle } from '../../../components/ui/typography/HeroSubtitle';
 
 export async function CustomOakHero() {
-    const t = await getTranslations('customOak');
     const tButtons = await getTranslations('buttons');
 
     return (

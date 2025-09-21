@@ -1,7 +1,7 @@
 'use client'
 import { useRouter } from "@/i18n/navigation";
-import { Grid, Stack, Typography } from "@mui/material";
-import { useLocale, useTranslations } from "next-intl";
+import { Stack, Typography } from "@mui/material";
+import { useTranslations } from "next-intl";
 
 
 export type FooterLinkKeys = Exclude<

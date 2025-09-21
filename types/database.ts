@@ -1,5 +1,5 @@
 // Database and Firebase infrastructure types
-import { Timestamp } from 'firebase/firestore';
+import { Timestamp, DocumentSnapshot } from 'firebase/firestore';
 
 // Base interface for all documents
 export interface BaseDocument {
@@ -31,7 +31,7 @@ export interface PaginatedResult<T> {
   items: T[];
   total: number;
   hasMore: boolean;
-  lastDoc?: any;
+  lastDoc?: DocumentSnapshot;
 }
 
 // Query options
@@ -44,7 +44,7 @@ export interface QueryOptions {
   where?: {
     field: string;
     operator: '==' | '!=' | '<' | '<=' | '>' | '>=' | 'array-contains' | 'in' | 'not-in';
-    value: any;
+    value: unknown;
   }[];
-  startAfter?: any;
+  startAfter?: DocumentSnapshot;
 }

@@ -15,7 +15,6 @@ const ContactFormTextField = <T extends FieldValues>({
     variant = 'standard',
     fullWidth = true,
     autoComplete = 'off',
-    sx = { mb: 2 },
     ...textFieldProps
 }: CustomTextFieldProps<T>) => {
     return (
@@ -32,7 +31,7 @@ const ContactFormTextField = <T extends FieldValues>({
                     autoComplete={autoComplete}
                     error={!!fieldState.error}
                     helperText={fieldState.error?.message}
-                    sx={{ ...textFieldProps }}
+                    sx={{ mb: 2, ...textFieldProps.sx }}
                 />
             )}
         />

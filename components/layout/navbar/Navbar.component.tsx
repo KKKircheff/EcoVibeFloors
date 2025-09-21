@@ -1,15 +1,12 @@
 'use client'
 export const dynamic = 'force-dynamic';
-import { Box, Button, Stack, Typography } from "@mui/material";
-import { Link, useRouter } from '@/i18n/navigation';
+import { Box, Stack, Typography } from "@mui/material";
+import { useRouter } from '@/i18n/navigation';
 import { Locale, navRoutes } from '@/i18n/routing';
 import React, { useState } from "react";
 import { borderRadius } from "@/lib/styles/borderRadius";
-import { palette } from "@/lib/styles/pallete";
 import { menuBgColor } from "@/lib/styles/colors";
 import { navbarHeight } from "@/lib/styles/navbarHeight";
-import { useScrollPosition } from "@/hooks/useScrollPosition";
-import { useScreenWidth } from "@/hooks/useScreenWidth";
 import ListMenuItem from "./ListMenuItem.component";
 import BurgerButton from "./BurgerButton.component";
 import SideDrawer from "./SideDrawer.component";
@@ -24,7 +21,7 @@ type Props = {
 
 export default function Navbar({ locale }: Props) {
 
-    const screenWidth = useScreenWidth();
+    // const screenWidth = useScreenWidth();
     const t = useTranslations('navigation')
 
     // Navbar changes on scroll
@@ -34,19 +31,20 @@ export default function Navbar({ locale }: Props) {
     const isScrolled = true;
 
     const [isDrawerOpen, setIsDrawerOpen] = useState(false);
+    const [openSubmenu, setOpenSubmenu] = useState<string | null>(null);
 
-    const getLogoSize = () => {
-        if (screenWidth < 600) return { width: 32 };
-        if (screenWidth < 900) return { width: 40 };
-        if (screenWidth < 1200) return { width: 48 }
-        if (screenWidth < 1536) return { width: 54 };
-        return { width: 60 };
-    };
+    // const getLogoSize = () => {
+    //     if (screenWidth < 600) return { width: 32 };
+    //     if (screenWidth < 900) return { width: 40 };
+    //     if (screenWidth < 1200) return { width: 48 }
+    //     if (screenWidth < 1536) return { width: 54 };
+    //     return { width: 60 };
+    // };
 
+    // const logoSize = getLogoSize()
 
     const router = useRouter()
     const navigateHome = () => router.push('/')
-    const logoSize = getLogoSize()
 
 
     return (
@@ -120,6 +118,8 @@ export default function Navbar({ locale }: Props) {
                                 route={route}
                                 setIsDrawerOpen={setIsDrawerOpen}
                                 isScrolled={isScrolled}
+                                openSubmenu={openSubmenu}
+                                setOpenSubmenu={setOpenSubmenu}
                             />
                         ))
                     }

@@ -39,7 +39,7 @@ export interface OrderItem {
   unit: 'sqm' | 'boxes' | 'pieces';
   unitPrice: number;
   total: number;
-  specifications?: any;
+  specifications?: Record<string, unknown>;
 }
 
 export interface OrderTotals {

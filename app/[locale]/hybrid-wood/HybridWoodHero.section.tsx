@@ -7,7 +7,6 @@ import { HeroTitle } from '../../../components/ui/typography/HeroTitle';
 import { HeroSubtitle } from '../../../components/ui/typography/HeroSubtitle';
 
 export async function HybridWoodHero() {
-    const t = await getTranslations('hybridWood');
     const tButtons = await getTranslations('buttons');
 
     return (

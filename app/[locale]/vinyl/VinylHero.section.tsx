@@ -7,7 +7,6 @@ import { HeroTitle } from '../../../components/ui/typography/HeroTitle';
 import { HeroSubtitle } from '../../../components/ui/typography/HeroSubtitle';
 
 export async function VinylHero() {
-    const t = await getTranslations('vinyl');
     const tButtons = await getTranslations('buttons');
 
     return (

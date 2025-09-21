@@ -1,5 +1,5 @@
 import 'server-only'
-import { Box, Grid, Stack, Typography } from "@mui/material"
+import { Box, Stack, Typography } from "@mui/material"
 import { footerData } from './footer.data'
 import FooterLinkGroup from "./footer-link-group/FooterLinkGroup.component"
 import FooterSocialGroup from "./footer-social-group/FooterSocialGroup.component"
