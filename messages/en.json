@@ -152,6 +152,32 @@
         "quotes": {
             "beautiful_floor": "Beautiful flooring brings mood, comfort and coziness.",
             "energizing_feeling": "An energizing feeling every day in your home, office or store"
+        },
+        "cards": {
+            "premiumOak": {
+                "title": "Premium Oak",
+                "text": "Discover Dutch premium oak parquet with 2- and 3-layer construction, 3–5 mm wear layers, and birch plywood cores for exceptional stability. Available in widths from 150–320 mm and grades from knot-free to light rustic. Optimized for underfloor heating, finished with Dutch oils for extra hardness, durability, and timeless beauty built to last for decades.",
+                "learnMore": "Learn More",
+                "viewCollection": "View Collection"
+            },
+            "premiumOakCustom": {
+                "title": "Premium Oak Custom Crafted",
+                "text": "Experience 100% Dutch craftsmanship with oak collections made entirely in the Netherlands. From FSC-certified oak to UV oil finish, every step is controlled. Designed for underfloor heating with custom colors like White Wash, Smoked Brown, Natural Grey, Chocolate Brown, and Black Wash. WINTERSTEIGER and TRC systems ensure stability, efficiency, and renewable durability for decades of comfort.",
+                "learnMore": "Learn More",
+                "viewCollection": "View Collection"
+            },
+            "hybridWood": {
+                "title": "Hybrid Wood",
+                "text": "Hybrid Wood blends real oak aesthetics with vinyl practicality through Wood-Powder technology. Thin lacquered oak tops fuse with dense HDF cores made from recycled wood, without chemicals. The result: extreme hardness, 24-hour water resistance, and natural looks. Offered in XL planks and herringbone, in Natural, White, Black, and Brown Oak. REACH certified, with 25-year warranty.",
+                "learnMore": "Learn More",
+                "viewCollection": "View Collection"
+            },
+            "vinyl": {
+                "title": "Vinyl",
+                "text": "Premium vinyl for homes, offices, and retail spaces. Village Vinyl offers oak aesthetics, while Forest Vinyl delivers extra-wide 24.1 cm planks. Dryback features 0.55 mm commercial wear layers. Rigid Click uses i4F systems and mineral cores for stability. Easy DIY install with rubber mallet. Includes stone-look tiles and herringbone. REACH certified, phthalate-free, and FloorScore compliant.",
+                "learnMore": "Learn More",
+                "viewCollection": "View Collection"
+            }
         }
     },
     "collections": {
