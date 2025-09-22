@@ -32,7 +32,7 @@ const baseTheme = createTheme({
         fontFamily: `${zenKakuGothicNew.style.fontFamily}, ${montserrat.style.fontFamily}, sans-serif`,
         h1: {
             fontFamily: `${caveat.style.fontFamily}, ${poiretOne.style.fontFamily}, ${montserrat.style.fontFamily}, serif`,
-            fontSize: '4rem',
+            fontSize: '4.2rem',
             '@media (max-width:600px)': {
                 fontSize: '4rem',
             },

@@ -5,7 +5,9 @@
   "targets": {},
   "etags": {
     "ecovibe-floors": {
-      "extensionInstances": {}
+      "extensionInstances": {
+        "firestore-send-email": "91acfd01dff1ff892970d21ae1e264918b0c6a29dddb4d625e33a49e33016426"
+      }
     }
   }
 }

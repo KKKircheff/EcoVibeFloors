@@ -1,10 +1,10 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
-import { Box, Button, Stack } from '@mui/material';
+import { Box, Stack } from '@mui/material';
 import Image from 'next/image';
-import { palette } from '@/lib/styles/pallete';
 import { HeroTitle } from '../../../components/ui/typography/HeroTitle';
 import { HeroSubtitle } from '../../../components/ui/typography/HeroSubtitle';
+import { HeroButton } from '../../../components/ui/buttons/HeroButton';
 
 export async function CustomOakHero() {
     const t = await getTranslations('customOak');
@@ -63,24 +63,14 @@ export async function CustomOakHero() {
                 <HeroSubtitle>
                     {t('hero.subtitle')}
                 </HeroSubtitle>
-                <Button
-                    variant='text'
-                    size="large"
+                <HeroButton
+                    borderColor='light'
                     sx={{
-                        border: `2px solid ${palette.info[200]}`,
-                        px: 4,
-                        py: 2.5,
-                        fontSize: '1.1rem',
-                        fontWeight: 600,
                         maxWidth: '400px',
-                        color: palette.info[50],
-                        '&:hover': {
-                            bgcolor: 'primary.700',
-                        }
                     }}
                 >
                     {tButtons('exploreCollection')}
-                </Button>
+                </HeroButton>
             </Stack>
         </Stack>
     );

@@ -113,23 +113,45 @@
         }
     },
     "home": {
+        "dutchOrigin": "Dutch Origin",
+        "certified": "Certified Products",
+        "innovative": "Innovative Engineering",
+        "luxury": "Luxury Design",
+        "diverse": "Diverse Quality Floor Systems",
+        "ecoFriendly": "Eco-Friendly Natural Materials",
         "hero": {
             "title": "Premium Dutch Flooring for Bulgarian Homes",
             "subtitle": "Discover luxury natural wood and laminate floors with extended guarantees and exceptional quality."
         },
         "features": {
-            "quality": {
-                "title": "Premium Quality",
-                "description": "Authentic Dutch manufacturing with superior materials and craftsmanship"
+            "dutchOrigin": {
+                "title": "Dutch Origin",
+                "description": "Premium Quality from The Netherlands"
             },
-            "guarantee": {
-                "title": "Extended Guarantees",
-                "description": "Comprehensive warranty coverage for peace of mind"
+            "certified": {
+                "title": "Certified Products",
+                "description": "More than fifteen certifications from recognized European and international institutions"
             },
-            "local": {
-                "title": "Local Expertise",
-                "description": "Bulgarian team providing personalized service and support"
+            "innovative": {
+                "title": "Innovative Engineering",
+                "description": "Get the latest advanced technologies for production and finishing natural wooden floors"
+            },
+            "luxury": {
+                "title": "Luxury Design",
+                "description": "Elegant and classy flooring solutions"
+            },
+            "diverse": {
+                "title": "Diverse Quality Floor Systems",
+                "description": "High Quality and Durable floors with extended guarantees"
+            },
+            "ecoFriendly": {
+                "title": "Eco-Friendly Natural Materials",
+                "description": "Authentic wood and natural fiber composition. Sustainable and environmentally conscious materials"
             }
+        },
+        "quotes": {
+            "beautiful_floor": "Beautiful flooring brings mood, comfort and coziness.",
+            "energizing_feeling": "An energizing feeling every day in your home, office or store"
         }
     },
     "collections": {

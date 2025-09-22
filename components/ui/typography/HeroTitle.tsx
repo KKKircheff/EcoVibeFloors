@@ -10,7 +10,7 @@ export function HeroTitle({ children }: HeroTitleProps) {
         <Typography
             variant="h1"
             sx={{
-                textShadow: '2px 2px 4px rgba(0,0,0,0.6)',
+                textShadow: '2px 2px 4px rgba(0,0,0,0.4)',
                 fontWeight: 600,
             }}
         >
