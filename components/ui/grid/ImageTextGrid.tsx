@@ -35,7 +35,7 @@ export function ImageTextGrid({ title, text, images, button1, button2, mirror = 
                 <Box
                     sx={{
                         backgroundColor: 'info.50',
-                        padding: 4,
+                        padding: { xs: 2.5, md: 4 },
                         py: 3,
                         flex: 1,
                         display: 'flex',
@@ -100,7 +100,7 @@ export function ImageTextGrid({ title, text, images, button1, button2, mirror = 
     );
 
     return (
-        <Grid container spacing={3} py={6}>
+        <Grid container spacing={3} py={{ xs: 1, md: 6 }}>
             {LargeImageSection}
             {TextAndSmallImagesSection}
         </Grid>
