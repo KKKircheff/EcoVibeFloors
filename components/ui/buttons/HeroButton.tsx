@@ -4,19 +4,16 @@ import { palette } from '@/lib/styles/pallete'
 
 interface HeroButtonProps extends ButtonProps {
     children: React.ReactNode
-    borderColor?: 'light' | 'lighter'
 }
 
-const HeroButton = ({ children, borderColor = 'lighter', ...otherProps }: HeroButtonProps) => {
-    const borderColorValue = borderColor === 'light' ? palette.info[200] : palette.info[100]
-
+const HeroButton = ({ children, ...otherProps }: HeroButtonProps) => {
     return (
         <Button
             variant='text'
             size="large"
             {...otherProps}
             sx={{
-                border: `2px solid ${borderColorValue}`,
+                border: `2px solid ${palette.info[100]}`,
                 px: 4,
                 py: 2.5,
                 fontSize: '1.1rem',

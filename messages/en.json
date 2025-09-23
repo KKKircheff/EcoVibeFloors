@@ -234,8 +234,149 @@
     "vinyl": {
         "pageTitle": "Vinyl Collection",
         "hero": {
-            "title": "Vinyl Collection",
-            "subtitle": "Durable and stylish vinyl flooring for modern living"
+            "title": "Premium Floer Vinyl Collection",
+            "subtitle": "Discover 5 exceptional vinyl collections combining Dutch quality with 100% waterproof performance"
+        },
+        "overview": {
+            "title": "Premium Dutch Vinyl Flooring",
+            "subtitle": "Floer's comprehensive vinyl collection offers unmatched quality and variety",
+            "description": "From the renowned Dutch flooring manufacturer Floer, these 5 distinct vinyl collections deliver exceptional performance, stunning aesthetics, and innovative features. Each collection is 100% waterproof, phthalate-free, and backed by a 20-year warranty, making them perfect for modern homes and commercial spaces."
+        },
+        "collections": {
+            "title": "Five Exceptional Collections",
+            "subtitle": "Each collection designed for specific needs and aesthetic preferences",
+            "keyFeatures": "Key Features",
+            "tileVinyl": {
+                "name": "Tile Vinyl",
+                "description": "Large format stone and concrete looks, specifically designed for damp areas with excellent underfloor heating compatibility.",
+                "thickness": "2.0-3.0mm",
+                "warranty": "20-year warranty"
+            },
+            "herringboneVinyl": {
+                "name": "Herringbone Vinyl",
+                "description": "Elegant herringbone patterns in standard and XL sizes, featuring ceramic bead technology for enhanced durability.",
+                "thickness": "2.0-3.5mm",
+                "warranty": "20-year warranty"
+            },
+            "natureRigid": {
+                "name": "Nature Rigid Click",
+                "description": "Commercial-grade vinyl with rigid mineral core providing superior stability and scratch resistance.",
+                "thickness": "4.0-5.0mm",
+                "warranty": "20-year warranty"
+            },
+            "villageVinyl": {
+                "name": "Village Vinyl",
+                "description": "Realistic oak aesthetics with strong wearing surface, perfect for various interior design preferences.",
+                "thickness": "2.5-3.5mm",
+                "warranty": "20-year warranty"
+            },
+            "forestVinyl": {
+                "name": "Forest Vinyl",
+                "description": "Extra-wide planks creating unique spatial effects with realistic oak structures and luxurious microbevel.",
+                "thickness": "3.0-4.0mm",
+                "warranty": "20-year warranty"
+            },
+            "features": {
+                "waterproof": "100% Waterproof",
+                "underfloorHeating": "Underfloor Heating",
+                "dampAreas": "Damp Areas",
+                "elegantPattern": "Elegant Pattern",
+                "commercialGrade": "Commercial Grade",
+                "clickSystem": "Click System",
+                "rigidCore": "Rigid Core",
+                "commercialUse": "Commercial Use",
+                "scratchResistant": "Scratch Resistant",
+                "realisticOak": "Realistic Oak",
+                "versatile": "Versatile",
+                "durable": "Durable",
+                "extraWide": "Extra Wide",
+                "uniqueEffect": "Unique Effect",
+                "premiumLook": "Premium Look"
+            }
+        },
+        "features": {
+            "title": "Shared Premium Benefits",
+            "subtitle": "Every Floer vinyl collection delivers exceptional quality and performance",
+            "waterproof": {
+                "title": "100% Waterproof",
+                "description": "Complete moisture protection for kitchens, bathrooms, and commercial spaces with confidence."
+            },
+            "warranty": {
+                "title": "20-Year Warranty",
+                "description": "Comprehensive coverage for residential, commercial, and industrial applications."
+            },
+            "ecoFriendly": {
+                "title": "Eco-Friendly",
+                "description": "Phthalate-free production with bio-organic plasticizers and top environmental certifications."
+            },
+            "durability": {
+                "title": "Superior Durability",
+                "description": "Usage classes from 23/33 to 42, suitable for intensive residential and commercial use."
+            },
+            "installation": {
+                "title": "Flexible Installation",
+                "description": "Multiple installation methods including DIY-friendly click systems and professional glue-down options."
+            },
+            "soundInsulation": {
+                "title": "Sound Insulation",
+                "description": "10dB certified underlayment options available for enhanced acoustic performance."
+            }
+        },
+        "comparison": {
+            "title": "Collection Comparison",
+            "subtitle": "Compare specifications across all five Floer vinyl collections",
+            "feature": "Feature",
+            "note": "All collections include FloorScore, GreenGuard, and REACH certifications",
+            "features": {
+                "thickness": "Thickness",
+                "plankSize": "Plank/Tile Size",
+                "installation": "Installation Method",
+                "usageClass": "Usage Class",
+                "priceRange": "Price Range"
+            }
+        },
+        "installation": {
+            "title": "Installation Methods",
+            "subtitle": "Professional and DIY-friendly options to suit every project and skill level",
+            "timeRequired": "Time Required",
+            "suitableFor": "Suitable Collections",
+            "professionalInstallation": "Professional Installation",
+            "recommended": "Recommended",
+            "optional": "Optional",
+            "methods": {
+                "clickSystem": {
+                    "title": "Click System (Floating)",
+                    "description": "Easy DIY installation with interlocking planks that float over the subfloor. No adhesive required, perfect for beginners."
+                },
+                "glueDown": {
+                    "title": "Glue-Down (Dryback)",
+                    "description": "Permanent installation using specialized vinyl adhesive. Provides maximum stability and is ideal for commercial applications."
+                }
+            },
+            "steps": {
+                "title": "Installation Process",
+                "preparation": {
+                    "title": "Subfloor Preparation",
+                    "description": "Ensure clean, level, and dry subfloor meeting manufacturer specifications"
+                },
+                "measurement": {
+                    "title": "Accurate Measurement",
+                    "description": "Plan layout and calculate materials needed with 5-10% extra for cuts"
+                },
+                "installation": {
+                    "title": "Install Flooring",
+                    "description": "Follow chosen method with proper tools and techniques for best results"
+                },
+                "finishing": {
+                    "title": "Finishing Touches",
+                    "description": "Install transitions, baseboards, and final cleanup for professional appearance"
+                }
+            }
+        },
+        "cta": {
+            "title": "Ready to Transform Your Space?",
+            "description": "Discover the perfect Floer vinyl collection for your project. Our experts are ready to help you choose the ideal flooring solution.",
+            "contact": "Contact us today for personalized consultation and quotes"
         }
     },
     "oak": {
@@ -250,6 +391,175 @@
         "hero": {
             "title": "Hybrid Wood Collection",
             "subtitle": "The perfect blend of natural beauty and modern innovation"
+        },
+        "overview": {
+            "title": "Revolutionary Flooring Technology",
+            "subtitle": "Experience the future of flooring with hybrid wood - where authentic oak meets advanced engineering",
+            "description": "Hybrid Wood flooring represents a breakthrough in flooring technology, combining the natural beauty of real oak with innovative engineering. Using 90% less oak than traditional parquet while maintaining authentic wood appearance and superior performance characteristics."
+        },
+        "features": {
+            "title": "Superior Performance Features",
+            "waterResistance": {
+                "title": "Water Resistant",
+                "description": "24-hour water resistance protects against spills and moisture"
+            },
+            "scratchResistance": {
+                "title": "Scratch Resistant",
+                "description": "Extremely durable surface perfect for high-traffic areas"
+            },
+            "warranty": {
+                "title": "Long Warranty",
+                "description": "Up to 35-year warranty for long-term peace of mind"
+            }
+        },
+        "sustainability": {
+            "title": "Eco-Friendly Innovation",
+            "description": "Hybrid Wood flooring leads the way in sustainable flooring solutions, dramatically reducing environmental impact while delivering premium quality and performance.",
+            "benefit1": "Uses 90% less oak wood compared to traditional parquet",
+            "benefit2": "Made with recycled HDF core from sustainable wood chips",
+            "benefit3": "Chemical-free production process protects indoor air quality",
+            "imageCaption": "[Image: Sustainability certifications and eco-friendly production process]"
+        },
+        "specifications": {
+            "title": "Technical Specifications",
+            "technical": {
+                "title": "Technical Details",
+                "thickness": "Thickness",
+                "thermalResistance": "Thermal Resistance",
+                "wearLayer": "Wear Layer",
+                "realOak": "Real Oak",
+                "core": "Core Material"
+            },
+            "installation": {
+                "title": "Installation Options",
+                "method": "Installation Method",
+                "clickSystem": "Click System",
+                "underfloorHeating": "Underfloor Heating",
+                "floating": "Floating Installation",
+                "glued": "Glued Installation"
+            }
+        },
+        "styles": {
+            "title": "Available Styles & Formats",
+            "xlPlanks": {
+                "title": "XL Planks",
+                "dimensions": "237cm × 27cm",
+                "description": "Extra-long planks create a spacious, modern aesthetic perfect for contemporary interiors and open-plan living spaces.",
+                "imageCaption": "[Image: Room showcasing XL plank hybrid wood flooring]"
+            },
+            "herringbone": {
+                "title": "Herringbone Pattern",
+                "dimensions": "70cm × 14cm",
+                "description": "Classic herringbone pattern adds elegance and sophistication to any space, perfect for traditional and modern interiors.",
+                "imageCaption": "[Image: Herringbone pattern hybrid wood flooring installation]"
+            }
+        },
+        "cta": {
+            "title": "Ready to Transform Your Space?",
+            "description": "Discover the perfect balance of natural beauty, durability, and sustainability with our Hybrid Wood flooring collection. Experience premium Dutch quality with extended warranties and expert guidance.",
+            "contact": "Contact us today for a personalized consultation and quote."
+        }
+    },
+    "whatIsHybridWood": {
+        "hero": {
+            "title": "What is Hybrid Wood Flooring?",
+            "subtitle": "Discover the revolutionary flooring technology that combines natural oak beauty with advanced engineering for superior durability and sustainability."
+        },
+        "introduction": {
+            "title": "A Revolutionary Flooring Solution",
+            "content": "Hybrid Wood floors represent the next evolution in flooring technology, combining the authentic beauty of real wood with advanced engineering to create an extremely durable and functional flooring solution. This innovative approach uses 10 times less oak wood than traditional parquet while maintaining the genuine wood appearance and feel that homeowners love.",
+            "imageCaption": "[Image: Close-up view of hybrid wood floor planks showing natural oak texture and grain]"
+        },
+        "innovation": {
+            "title": "The Science Behind Hybrid Wood",
+            "content": "At the heart of hybrid wood technology lies an ultra-thin layer of lacquered oak wood combined with a high-density HDF (High Density Fiberboard) core made from recycled wood chips. This unique construction method uses chemical-free Wood Powder technology to create a flooring product that outperforms traditional materials.",
+            "benefits": {
+                "title": "Key Innovations:",
+                "woodPowder": "Chemical-free Wood Powder technology for sustainable production",
+                "ultraThin": "Ultra-thin oak layer provides authentic wood appearance with minimal resource use",
+                "hdfCore": "High-density core made from recycled wood chips for enhanced stability",
+                "engineering": "Advanced engineering combines traditional craftsmanship with modern technology"
+            }
+        },
+        "features": {
+            "title": "Superior Performance Features",
+            "durability": {
+                "title": "Exceptional Durability",
+                "waterResistant": {
+                    "title": "24-Hour Water Resistance",
+                    "description": "Superior moisture protection that withstands spills and humidity"
+                },
+                "scratchResistant": {
+                    "title": "Extremely Scratch Resistant",
+                    "description": "Perfect for high-traffic areas and homes with pets and children"
+                },
+                "warranty": {
+                    "title": "15-35 Year Warranty",
+                    "description": "Long-term reliability guarantee for peace of mind"
+                }
+            },
+            "compatibility": {
+                "title": "Versatile Compatibility",
+                "underfloorHeating": {
+                    "title": "Underfloor Heating Compatible",
+                    "description": "Low thermal resistance (0.07 m2K/W) ensures efficient heat transfer"
+                },
+                "subfloors": {
+                    "title": "Multiple Subfloor Options",
+                    "description": "Flexible installation on various subfloor types"
+                }
+            }
+        },
+        "sustainability": {
+            "title": "Environmental Responsibility",
+            "intro": "Hybrid Wood flooring represents a significant step forward in sustainable flooring solutions, dramatically reducing environmental impact while maintaining premium quality and appearance.",
+            "lessWood": "Uses 90% less oak wood compared to traditional parquet flooring",
+            "recycled": "HDF core constructed from recycled wood chips and sustainable materials",
+            "chemicalFree": "Chemical-free production process protects both environment and indoor air quality",
+            "responsibleSourcing": "Sustainably sourced oak from responsibly managed forests",
+            "imageCaption": "[Image: Infographic showing environmental benefits and sustainability certifications]"
+        },
+        "installation": {
+            "title": "Easy Installation Options",
+            "intro": "Hybrid Wood flooring is designed for both professional installation and DIY enthusiasts, offering multiple installation methods to suit different needs and skill levels.",
+            "methods": {
+                "title": "Installation Methods:",
+                "floating": {
+                    "title": "Floating Installation",
+                    "description": "No adhesive required, perfect for DIY installation with quick and easy results"
+                },
+                "glued": {
+                    "title": "Glued Installation",
+                    "description": "Permanent fixing to subfloor for maximum stability in high-traffic areas"
+                },
+                "professional": {
+                    "title": "Professional Installation",
+                    "description": "Expert fitting available for complex layouts and optimal results"
+                }
+            }
+        },
+        "maintenance": {
+            "title": "Simple Maintenance & Care",
+            "intro": "One of the greatest advantages of Hybrid Wood flooring is its incredibly low maintenance requirements, making it perfect for busy households and commercial spaces.",
+            "dos": {
+                "title": "Recommended Care",
+                "vacuum": "Regular vacuuming or sweeping to remove dirt and debris",
+                "dampMop": "Damp mopping with mild household cleaners for deeper cleaning",
+                "spills": "Immediate cleanup of spills to prevent staining",
+                "furniture": "Use protective pads under furniture legs to prevent scratches"
+            },
+            "donts": {
+                "title": "Avoid These Practices",
+                "excessWater": "Excessive water exposure or standing water",
+                "harsh": "Harsh chemical cleaners or abrasive cleaning tools",
+                "steam": "Steam cleaning which can damage the wood surface",
+                "wax": "Wax or polish products that can create slippery surfaces"
+            }
+        },
+        "conclusion": {
+            "title": "The Future of Flooring is Here",
+            "content": "Hybrid Wood flooring represents the perfect balance of natural beauty, advanced technology, and environmental responsibility. Whether you're renovating your home or designing a new space, Hybrid Wood offers the durability, aesthetics, and sustainability that modern living demands.",
+            "cta": "Ready to experience the benefits of Hybrid Wood flooring in your home?"
         }
     }
 }

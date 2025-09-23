@@ -69,6 +69,7 @@ To create a visually compelling, high-quality website with strong design and eng
 - `lib/` - Shared utilities (Firebase, Theme)
 - `i18n/` - Internationalization configuration
 - `messages/` - Translation JSON files
+- `docs/products/` - Comprehensive product documentation for development reference
 - `.agent-os/` - Agent OS product and development standards
 
 ## Development Notes
@@ -76,6 +77,31 @@ To create a visually compelling, high-quality website with strong design and eng
 - Material UI components follow luxury design system in `lib/theme.ts`
 - Firebase integration ready for Firestore collections and Storage buckets
 - TypeScript path aliasing configured with `@/*` pointing to project root
+
+## Product Documentation Reference
+
+### Location & Structure
+- **Primary location**: `docs/products/` contains detailed product guides
+- **Current products**: `hybrid-wood.md` (comprehensive guide with technical specs, features, benefits)
+- **Future products**: Oak, vinyl, laminate documentation following same structure
+
+### Usage in Development
+- **Content Creation**: Reference for accurate product descriptions and copy
+- **Feature Development**: Understanding product categories, specifications, and target markets
+- **Translation Content**: Detailed product information for multilingual content
+- **SEO & Blog Content**: Educational content for product-focused pages
+- **Component Development**: Product-specific requirements and display needs
+
+### Content Structure
+Each product doc includes:
+- **Overview & Definition**: What the product is and key innovations
+- **Technical Specifications**: Detailed specs for filtering and comparison features
+- **Benefits & Features**: Marketing content and value propositions
+- **Installation & Maintenance**: Practical information for customer guidance
+- **Sustainability**: Environmental benefits and certifications
+- **Market Positioning**: Target customers and competitive advantages
+- **Image Placeholders**: Strategic placement indicators for visual content
+- **Development Tags**: Content categorization for technical implementation
 
 ### Next.js 15 Async Dynamic APIs
 - **CRITICAL**: All `params` in layouts and pages must be awaited before accessing properties
@@ -90,9 +116,9 @@ To create a visually compelling, high-quality website with strong design and eng
 - **Given the cutting-edge stack**: This project uses latest versions (Next.js 15, React 19, MUI v7) - checking current best practices may be helpful when encountering issues
 
 
-IMPORTANT NOTES:
+## IMPORTANT NOTES:
 
-1. We use MUI 7.x so Grid component has new API. Here is example for new Grid component usage: 
+### We use MUI 7.x so Grid component has new API. Here is example for new Grid component usage: 
 
 <Grid container spacing={2}>
   <Grid size={{ xs: 6, md: 8 }}>
@@ -111,4 +137,23 @@ IMPORTANT NOTES:
 
 Please stick to this syntax when you use Grid. Also alsways evaluate if MUI Stack component or MUI Grid component is better to be used in different scenarios 
 
-2. Never try to run server as I run it manually every time. Never try to run lint for testing. If you need to test app use playwright mcp
+### Avoid using the Box component with display='flex' for flexbox layouts. Instead, use the native Stack component from MUI, as it is specifically designed for flexbox-based layouts and provides better built-in alignment, spacing, and responsiveness.
+Why?
+
+Stack is optimized for flexbox and simplifies common use cases (e.g., spacing, direction, and alignment).
+It reduces boilerplate code and improves readability.
+
+Example:
+// ❌ Avoid
+<Box display="flex" gap={2}>
+  <Item>1</Item>
+  <Item>2</Item>
+</Box>
+
+// ✅ Prefer
+<Stack direction="row" spacing={2}>
+  <Item>1</Item>
+  <Item>2</Item>
+</Stack>
+
+### Never try to run server as I run it manually every time. Never try to run lint for testing. If you need to test app use playwright mcp
