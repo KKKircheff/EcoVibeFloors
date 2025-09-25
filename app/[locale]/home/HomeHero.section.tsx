@@ -17,10 +17,14 @@ export async function HomeHero() {
             overlayOpacity={0}
             buttons={[
                 {
-                    text: tButtons('learnMore')
+                    text: tButtons('learnMore'),
+                    action: 'scroll',
+                    target: 'features'
                 },
                 {
-                    text: tButtons('exploreCollection')
+                    text: tButtons('exploreCollection'),
+                    action: 'navigate',
+                    target: '/collections'
                 }
             ]}
         />

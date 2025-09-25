@@ -1,7 +1,7 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
-import { Grid, Card, CardContent, Typography, Stack } from '@mui/material';
-import Image from 'next/image';
+import { Grid } from '@mui/material';
+import { FeatureImageCard } from '@/components/ui/card/FeatureImageCard';
 
 export async function HomeFeatures() {
     const t = await getTranslations('home');
@@ -40,24 +40,14 @@ export async function HomeFeatures() {
     ];
 
     return (
-        <Grid container spacing={2} rowGap={{ xs: 8, md: 16 }}>
+        <Grid id="features" container spacing={2} rowGap={{ xs: 8, md: 16 }}>
             {featuresConfig.map((feature, index) => (
                 <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }}>
-                    <Stack justifyContent={'center'} alignItems={'center'}>
-                        <Image
-                            src={feature.image}
-                            alt={t(feature.titleKey)}
-                            width={130}
-                            height={60}
-                            style={{ marginBottom: 16 }}
-                        />
-                        <Typography variant="h3" component="h3" gutterBottom textAlign={'center'}>
-                            {t(`features.${feature.titleKey}.title`)}
-                        </Typography>
-                        <Typography variant="body1" color="text.secondary" textAlign={'center'}>
-                            {t(`features.${feature.textKey}.description`)}
-                        </Typography>
-                    </Stack>
+                    <FeatureImageCard
+                        image={feature.image}
+                        title={t(`features.${feature.titleKey}.title`)}
+                        description={t(`features.${feature.textKey}.description`)}
+                    />
                 </Grid>
             ))}
         </Grid>

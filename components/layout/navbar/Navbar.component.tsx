@@ -7,6 +7,7 @@ import React, { useState } from "react";
 import { borderRadius } from "@/lib/styles/borderRadius";
 import { menuBgColor } from "@/lib/styles/colors";
 import { navbarHeight } from "@/lib/styles/navbarHeight";
+import { caveat } from "@/lib/styles/theme";
 import ListMenuItem from "./ListMenuItem.component";
 import BurgerButton from "./BurgerButton.component";
 import SideDrawer from "./SideDrawer.component";
@@ -87,8 +88,8 @@ export default function Navbar({ locale }: Props) {
                         />
                     </Box> */}
                     <Typography
-                        variant='h4'
-                        fontWeight={400}
+                        variant='h3'
+                        fontFamily={caveat.style.fontFamily}
                         color={isScrolled ? 'primary.600' : 'white'}
                         sx={{
                             transition: 'color 0.3s ease-in-out'

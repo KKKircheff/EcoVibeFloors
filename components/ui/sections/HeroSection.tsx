@@ -7,8 +7,9 @@ import { HeroButton } from '../buttons/HeroButton';
 
 interface HeroButtonConfig {
     text: string;
-    onClick?: () => void;
     href?: string;
+    action?: 'scroll' | 'navigate';
+    target?: string;
     sx?: SxProps<Theme>;
 }
 
@@ -109,7 +110,8 @@ export const HeroSection = ({
                         {buttons.map((button, index) => (
                             <HeroButton
                                 key={index}
-                                onClick={button.onClick}
+                                action={button.action}
+                                target={button.target}
                                 href={button.href}
                                 sx={{
                                     width: buttons.length > 1 ? { xs: '100%', md: '50%' } : 'auto',

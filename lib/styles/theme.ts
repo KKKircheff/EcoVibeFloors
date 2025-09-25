@@ -19,19 +19,21 @@ const montserrat = Montserrat({
     subsets: ['latin', 'cyrillic'],
     display: 'swap',
 });
-const caveat = Caveat({
+export const caveat = Caveat({
     weight: ['400', '500', '600'],
     subsets: ['latin', 'cyrillic'],
     display: 'swap',
 });
 
-// Luxury color palette inspired by premium flooring
 const baseTheme = createTheme({
     palette: palette,
     typography: {
-        fontFamily: `${zenKakuGothicNew.style.fontFamily}, ${montserrat.style.fontFamily}, sans-serif`,
+        // fontFamily: `${zenKakuGothicNew.style.fontFamily}, ${montserrat.style.fontFamily}, sans-serif`,
+        // fontFamily: `${poiretOne.style.fontFamily}, ${montserrat.style.fontFamily}, serif`,
+        fontFamily: `${montserrat.style.fontFamily}, sans-serif`,
         h1: {
-            fontFamily: `${caveat.style.fontFamily}, ${poiretOne.style.fontFamily}, ${montserrat.style.fontFamily}, serif`,
+            // fontFamily: `${caveat.style.fontFamily}, ${poiretOne.style.fontFamily}, ${montserrat.style.fontFamily}, serif`,
+            fontFamily: `${montserrat.style.fontFamily}, sans-serif`,
             fontSize: '4.2rem',
             '@media (max-width:600px)': {
                 fontSize: '4rem',
@@ -41,7 +43,8 @@ const baseTheme = createTheme({
             letterSpacing: '0.02em',
         },
         h2: {
-            fontFamily: `${caveat.style.fontFamily}, ${poiretOne.style.fontFamily}, ${montserrat.style.fontFamily}, serif`,
+            // fontFamily: `${caveat.style.fontFamily}, ${poiretOne.style.fontFamily}, ${montserrat.style.fontFamily}, serif`,
+            fontFamily: `${montserrat.style.fontFamily}, sans-serif`,
             fontSize: '2.75rem',
             '@media (max-width:600px)': {
                 fontSize: '2rem',
@@ -51,7 +54,8 @@ const baseTheme = createTheme({
             letterSpacing: '0.01em',
         },
         h3: {
-            fontFamily: `${caveat.style.fontFamily}, ${poiretOne.style.fontFamily}, ${montserrat.style.fontFamily}, serif`,
+            // fontFamily: `${caveat.style.fontFamily}, ${poiretOne.style.fontFamily}, ${montserrat.style.fontFamily}, serif`,
+            fontFamily: `${montserrat.style.fontFamily}, sans-serif`,
             fontSize: '2.25rem',
             '@media (max-width:600px)': {
                 fontSize: '1.75rem',
@@ -60,7 +64,8 @@ const baseTheme = createTheme({
             lineHeight: 1.3,
         },
         h4: {
-            fontFamily: `${caveat.style.fontFamily}, ${poiretOne.style.fontFamily}, ${montserrat.style.fontFamily}, serif`,
+            // fontFamily: `${caveat.style.fontFamily}, ${poiretOne.style.fontFamily}, ${montserrat.style.fontFamily}, serif`,
+            fontFamily: `${montserrat.style.fontFamily}, sans-serif`,
             fontSize: '1.75rem',
             '@media (max-width:600px)': {
                 fontSize: '1.5rem',
@@ -69,6 +74,7 @@ const baseTheme = createTheme({
             lineHeight: 1.3,
         },
         h5: {
+            // fontFamily: `${montserrat.style.fontFamily}, sans-serif`,
             fontFamily: `${zenKakuGothicNew.style.fontFamily}, ${montserrat.style.fontFamily}, sans-serif`,
             fontSize: '1.5rem',
             '@media (max-width:600px)': {

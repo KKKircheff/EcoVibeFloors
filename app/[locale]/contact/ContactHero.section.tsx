@@ -1,17 +1,10 @@
-'use client';
-import { useTranslations } from 'next-intl';
+import 'server-only';
+import { getTranslations } from 'next-intl/server';
 import { HeroSection } from '../../../components/ui/sections/HeroSection';
 
-export function ContactHero() {
-    const t = useTranslations('contact');
-    const tButtons = useTranslations('buttons');
-
-    const scrollToForm = () => {
-        const formElement = document.getElementById('contact-form');
-        if (formElement) {
-            formElement.scrollIntoView({ behavior: 'smooth' });
-        }
-    };
+export async function ContactHero() {
+    const t = await getTranslations('contact');
+    const tButtons = await getTranslations('buttons');
 
     return (
         <HeroSection
@@ -23,7 +16,8 @@ export function ContactHero() {
             buttons={[
                 {
                     text: tButtons('contactNow'),
-                    onClick: scrollToForm
+                    action: 'scroll',
+                    target: 'contact-form'
                 }
             ]}
         />
