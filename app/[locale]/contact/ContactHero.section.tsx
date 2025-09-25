@@ -16,7 +16,7 @@ export async function ContactHero() {
             buttons={[
                 {
                     text: tButtons('contactNow'),
-                    action: 'scroll',
+                    actionType: 'scroll',
                     target: 'contact-form'
                 }
             ]}

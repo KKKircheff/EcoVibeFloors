@@ -1,38 +1,35 @@
 import React, { ReactNode } from 'react';
-import { Box, Stack, SxProps, Theme } from '@mui/material';
+import { Box, Stack, StackProps, SxProps, Theme } from '@mui/material';
 import Image from 'next/image';
 import { HeroTitle } from '../typography/HeroTitle';
 import { HeroSubtitle } from '../typography/HeroSubtitle';
 import { HeroButton } from '../buttons/HeroButton';
 
-interface HeroButtonConfig {
+interface HeroButtonConfig extends StackProps {
     text: string;
     href?: string;
-    action?: 'scroll' | 'navigate';
+    actionType?: 'scroll' | 'navigate';
     target?: string;
     sx?: SxProps<Theme>;
 }
 
 interface HeroSectionProps {
-    // Content
+    id?: string;
     title: string | ReactNode;
     subtitle: string | ReactNode;
 
-    // Image
     imageSrc: string;
     imageAlt: string;
     imagePosition?: string;
 
-    // Buttons (flexible configuration)
     buttons?: HeroButtonConfig[];
-
-    // Customization
     minHeight?: { xs: string; md?: string };
     overlayOpacity?: number;
     contentBackgroundOpacity?: { xs: number; md: number };
 }
 
 export const HeroSection = ({
+    id = 'hero-section',
     title,
     subtitle,
     imageSrc,
@@ -45,6 +42,7 @@ export const HeroSection = ({
 }: HeroSectionProps) => {
     return (
         <Stack
+            id={id}
             sx={{
                 position: 'relative',
                 minHeight: minHeight,
@@ -110,7 +108,7 @@ export const HeroSection = ({
                         {buttons.map((button, index) => (
                             <HeroButton
                                 key={index}
-                                action={button.action}
+                                actionType={button.actionType}
                                 target={button.target}
                                 href={button.href}
                                 sx={{

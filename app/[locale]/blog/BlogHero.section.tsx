@@ -14,7 +14,9 @@ export async function BlogHero() {
             imageAlt="Premium wooden flooring showcase"
             buttons={[
                 {
-                    text: tButtons('readArticles')
+                    text: tButtons('readArticles'),
+                    actionType: 'scroll',
+                    target: 'hero-section'
                 }
             ]}
         />

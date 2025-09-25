@@ -8,6 +8,7 @@ export async function HomeHero() {
 
     return (
         <HeroSection
+            id='home-hero'
             title={t('hero.title')}
             subtitle={t('hero.subtitle')}
             imageSrc="/images/home-page/hero-home.jpg"
@@ -18,12 +19,12 @@ export async function HomeHero() {
             buttons={[
                 {
                     text: tButtons('learnMore'),
-                    action: 'scroll',
-                    target: 'features'
+                    actionType: 'scroll',
+                    target: 'home-hero'
                 },
                 {
                     text: tButtons('exploreCollection'),
-                    action: 'navigate',
+                    actionType: 'navigate',
                     target: '/collections'
                 }
             ]}

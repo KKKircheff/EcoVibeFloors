@@ -40,7 +40,7 @@ export async function HomeFeatures() {
     ];
 
     return (
-        <Grid id="features" container spacing={2} rowGap={{ xs: 8, md: 16 }}>
+        <Grid id='features' container spacing={2} rowGap={{ xs: 8, md: 16 }}>
             {featuresConfig.map((feature, index) => (
                 <Grid key={index} size={{ xs: 12, sm: 6, md: 4 }}>
                     <FeatureImageCard
