@@ -14,7 +14,9 @@ export async function VinylHero() {
             imageAlt="Premium vinyl flooring showcase"
             buttons={[
                 {
-                    text: tButtons('exploreCollection')
+                    text: tButtons('exploreCollection'),
+                    actionType: 'scroll',
+                    target: 'hero-section'
                 }
             ]}
         />

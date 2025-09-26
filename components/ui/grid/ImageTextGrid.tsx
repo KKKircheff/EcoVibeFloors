@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { Link } from '@/i18n/navigation';
 import GrayActionButton from '@/components/ui/buttons/GrayActionButton';
 import PrimaryActionButton from '@/components/ui/buttons/PrimaryActionButton';
+import { caveat } from '@/lib/styles/theme';
 
 interface ImageTextGridProps {
     title: string;
@@ -48,7 +49,7 @@ export function ImageTextGrid({ title, text, images, button1, button2, mirror = 
 
                         sx={{ p: 0, flex: 1 }}
                     >
-                        <Typography variant="h2" component="h2" sx={{ fontWeight: 600 }}>
+                        <Typography variant="h1" component="h2" fontFamily={caveat.style.fontFamily} color='info.500'>
                             {title}
                         </Typography>
                         <Stack justifyContent="center" sx={{ flex: 1 }} >

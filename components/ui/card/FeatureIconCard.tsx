@@ -1,5 +1,6 @@
-import { Stack, Typography, Box } from '@mui/material';
-import React, { ReactNode, ReactElement } from 'react';
+import React, { ReactNode } from 'react';
+import { Stack, Typography } from '@mui/material';
+import { caveat } from '@/lib/styles/theme';
 
 export interface FeatureIconCardProps {
     icon: ReactNode;
@@ -28,7 +29,7 @@ export function FeatureIconCard({
 
                 {icon}
             </Typography>
-            <Typography variant="h2" component="h3" gutterBottom textAlign={'center'}>
+            <Typography variant="h2" component="h3" textAlign={'center'} fontFamily={caveat.style.fontFamily} color='info.500' pb={2}>
                 {title}
             </Typography>
             <Typography variant="body1" color="text.secondary" textAlign={'center'}>

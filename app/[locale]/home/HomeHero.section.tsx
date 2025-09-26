@@ -14,7 +14,7 @@ export async function HomeHero() {
             imageSrc="/images/home-page/hero-home.jpg"
             imageAlt="Premium wooden flooring showcase"
             imagePosition="100% 100%"
-            minHeight={{ xs: '70vh', md: '90vh' }}
+            minHeight={{ xs: '75vh', md: '90vh' }}
             overlayOpacity={0}
             buttons={[
                 {

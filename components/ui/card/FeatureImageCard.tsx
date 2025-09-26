@@ -1,3 +1,4 @@
+import { caveat } from '@/lib/styles/theme';
 import { Stack, Typography } from '@mui/material';
 import Image from 'next/image';
 
@@ -17,7 +18,7 @@ export function FeatureImageCard({
     imageHeight = 60
 }: FeatureCardProps) {
     return (
-        <Stack justifyContent={'center'} alignItems={'center'}>
+        <Stack justifyContent={'center'} alignItems={'center'} spacing={1}>
             {image && (
                 <Image
                     src={image}
@@ -27,10 +28,10 @@ export function FeatureImageCard({
                     style={{ marginBottom: 16 }}
                 />
             )}
-            <Typography variant="h2" component="h3" gutterBottom textAlign={'center'}>
+            <Typography variant="h2" component="h3" textAlign={'center'} fontFamily={caveat.style.fontFamily} color='info.500' pb={2}>
                 {title}
             </Typography>
-            <Typography variant="body1" color="text.secondary" textAlign={'center'}>
+            <Typography variant="body1" textAlign={'center'} color='info.300'>
                 {description}
             </Typography>
         </Stack>

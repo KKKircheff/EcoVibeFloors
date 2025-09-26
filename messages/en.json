@@ -64,12 +64,11 @@
         "language": "Language",
         "naturalOak": "Natural Oak",
         "hybridWood": "Hybrid Wood",
-        "laminate": "Laminate",
-        "burgerMenuButton": "Menu",
-        "Premium_Oak": "Premium Oak",
-        "Premium_Oak_Custom_Crafted": "Premium Oak Custom Crafted",
         "Hybrid_Wood": "Hybrid Wood",
-        "Vinyl": "Vinyl",
+        "burgerMenuButton": "Menu",
+        "Premium_Oak": "Quality Natural Oak",
+        "Premium_Oak_Custom_Crafted": "Premium Natural Oak",
+        "Vinyl": "High quality Vinyl",
         "All_Collections": "All Collections",
         "Home": "Home",
         "Collections": "Collections",
@@ -153,28 +152,32 @@
             "beautiful_floor": "Beautiful flooring brings mood, comfort and coziness.",
             "energizing_feeling": "An energizing feeling every day in your home, office or store"
         },
+
+        "Hybrid_Wood": "Premium Hybrid Wood ",
+        "Vinyl": "High quality Vinyl",
+
         "cards": {
             "premiumOak": {
-                "title": "Premium Oak",
-                "text": "Discover Dutch premium oak parquet with 2- and 3-layer construction, 3–5 mm wear layers, and birch plywood cores for exceptional stability. Available in widths from 150–320 mm and grades from knot-free to light rustic. Optimized for underfloor heating, finished with Dutch oils for extra hardness, durability, and timeless beauty built to last for decades.",
+                "title": "Natural Oak Parquet",
+                "text": "Dutch high-quality solid oak parquet, as well as 2- and 3-layer systems designed to resist deformation caused by heat and humidity. Finished with Dutch oils for hardness, durability, UV protection, and decades of beauty.",
                 "learnMore": "Learn More",
                 "viewCollection": "View Collection"
             },
             "premiumOakCustom": {
-                "title": "Premium Oak Custom Crafted",
-                "text": "Experience 100% Dutch craftsmanship with oak collections made entirely in the Netherlands. From FSC-certified oak to UV oil finish, every step is controlled. Designed for underfloor heating with custom colors like White Wash, Smoked Brown, Natural Grey, Chocolate Brown, and Black Wash. WINTERSTEIGER and TRC systems ensure stability, efficiency, and renewable durability for decades of comfort.",
+                "title": "Premium Oak Floors",
+                "text": "100% Dutch quality. Multi-layer oak parquet with customizable colors, textures, dimensions, and installation systems. WINTERSTEIGER and TRC technology ensure minimal movement. Finished with top-class UV oil coatings.",
                 "learnMore": "Learn More",
                 "viewCollection": "View Collection"
             },
             "hybridWood": {
-                "title": "Hybrid Wood",
-                "text": "Hybrid Wood blends real oak aesthetics with vinyl practicality through Wood-Powder technology. Thin lacquered oak tops fuse with dense HDF cores made from recycled wood, without chemicals. The result: extreme hardness, 24-hour water resistance, and natural looks. Offered in XL planks and herringbone, in Natural, White, Black, and Brown Oak. REACH certified, with 25-year warranty.",
+                "title": "Hybrid Wood Floors",
+                "text": "Hybrid wood floors combine oak aesthetics with practicality. Natural wood, free of chemicals, compressed for exceptional hardness and 24-hour water resistance. Certified by REACH, FloorScore, and GreenGuard Gold.",
                 "learnMore": "Learn More",
                 "viewCollection": "View Collection"
             },
             "vinyl": {
-                "title": "Vinyl",
-                "text": "Premium vinyl for homes, offices, and retail spaces. Village Vinyl offers oak aesthetics, while Forest Vinyl delivers extra-wide 24.1 cm planks. Dryback features 0.55 mm commercial wear layers. Rigid Click uses i4F systems and mineral cores for stability. Easy DIY install with rubber mallet. Includes stone-look tiles and herringbone. REACH certified, phthalate-free, and FloorScore compliant.",
+                "title": "Premium Vinyl Floors",
+                "text": "Premium vinyl for homes and offices. Dryback system for commercial spaces. Anti-Glare technology. Rigid Click with i4F system and mineral particles for stability. Easy installation. REACH certified. Phthalate-free!",
                 "learnMore": "Learn More",
                 "viewCollection": "View Collection"
             }

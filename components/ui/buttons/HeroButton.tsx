@@ -35,7 +35,7 @@ const HeroButton = ({ children, actionType, target, href, ...otherProps }: HeroB
             onClick={handleClick}
             sx={{
                 border: `2px solid ${palette.info[100]}`,
-                px: 4,
+                px: { xs: 2.5, md: 4 },
                 py: 2.5,
                 fontSize: '1.1rem',
                 fontWeight: 600,

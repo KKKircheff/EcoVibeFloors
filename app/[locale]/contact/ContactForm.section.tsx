@@ -87,7 +87,7 @@ const ContactForm = () => {
         <Stack spacing={5} py={3}>
             <form onSubmit={handleSubmit(submit)} noValidate>
                 <Stack direction={{ xs: 'column', md: 'row' }} spacing={8} pb={8}>
-                    <Stack width={{ xs: '100%', md: '50%' }} spacing={8}>
+                    <Stack width={{ xs: '100%', md: '50%' }} spacing={{ xs: 4, md: 8 }}>
                         <ContactFormTextField
                             name="name"
                             control={control}

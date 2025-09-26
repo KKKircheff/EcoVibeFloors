@@ -14,7 +14,9 @@ export async function OakHero() {
             imageAlt="Premium oak flooring showcase"
             buttons={[
                 {
-                    text: tButtons('exploreCollection')
+                    text: tButtons('exploreCollection'),
+                    actionType: 'scroll',
+                    target: 'hero-section'
                 }
             ]}
         />

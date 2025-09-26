@@ -76,7 +76,7 @@ export const HeroSection = ({
             <Stack
                 spacing={{ xs: 2, lg: 5 }}
                 alignItems="center"
-                py={{ xs: 8 }}
+                py={{ xs: 6, sm: 8 }}
                 sx={{
                     backgroundColor: {
                         xs: `rgba(0, 0, 0, ${contentBackgroundOpacity.xs})`,

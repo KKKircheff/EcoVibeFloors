@@ -35,7 +35,8 @@ const MobileListMenuItem = ({ route, setIsDrawerOpen }: ItemProps) => {
                 <ListItem
                     onClick={handleExpandClick}
                     sx={{
-                        paddingX: 0,
+                        px: 0,
+                        py: .5,
                         cursor: 'pointer',
                         display: 'flex',
                         justifyContent: 'space-between',
@@ -65,7 +66,7 @@ const MobileListMenuItem = ({ route, setIsDrawerOpen }: ItemProps) => {
                                 onClick={handleClick}
                                 sx={{
                                     paddingX: 0,
-                                    py: 1
+                                    py: .5
                                 }}
                             >
                                 <Link
@@ -96,7 +97,7 @@ const MobileListMenuItem = ({ route, setIsDrawerOpen }: ItemProps) => {
     }
 
     return (
-        <ListItem onClick={handleClick} sx={{ paddingX: 0 }} >
+        <ListItem onClick={handleClick} sx={{ px: 0, py: .5 }} >
             <Link href={route.path} key={route.path} style={{ textDecoration: 'none' }} aria-label={t(`${route.name.replace(' ', '_')}` as keyof Messages['navigation'])}>
                 <Typography
                     variant='subtitle2'

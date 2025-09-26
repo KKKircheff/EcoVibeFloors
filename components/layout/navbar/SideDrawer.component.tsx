@@ -7,6 +7,7 @@ import React from 'react';
 import BurgerButton from './BurgerButton.component';
 import { layoutPaddings as _layoutPaddings } from '@/lib/styles/layoutPaddings';
 import { LanguageSelector } from './LanguageSelector.component';
+import { caveat } from '@/lib/styles/theme';
 
 type Props = {
     routes: NavRoute[],
@@ -87,6 +88,7 @@ const SideDrawer = ({
                         variant="h1"
                         fontWeight="600"
                         color="primary.500"
+                        fontFamily={caveat.style.fontFamily}
                     >
                         EcoVibeFloors
                     </Typography>
@@ -101,7 +103,7 @@ const SideDrawer = ({
                     sx={{
                         flex: 'none',
                         overflowY: 'auto',
-                        height: '400px',
+                        height: '300px',
                     }}
                 >
                     {routes
