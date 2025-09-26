@@ -36,7 +36,7 @@ export default async function WhatIsHybridWoodPage() {
 
             {/* Introduction Section */}
             <PageLayoutContainer bgcolor='background.paper' py={{ xs: 6, md: 10 }}>
-                <Container maxWidth="md">
+                <Container maxWidth="lg">
                     <Stack spacing={4}>
                         <Typography variant="h3" color="primary.main" fontWeight={600}>
                             {t('introduction.title')}
@@ -61,7 +61,7 @@ export default async function WhatIsHybridWoodPage() {
 
             {/* Key Innovation Section */}
             <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }}>
-                <Container maxWidth="md">
+                <Container maxWidth="lg">
                     <Stack spacing={4}>
                         <Typography variant="h3" color="primary.main" fontWeight={600}>
                             {t('innovation.title')}
@@ -86,7 +86,7 @@ export default async function WhatIsHybridWoodPage() {
 
             {/* Features Section */}
             <PageLayoutContainer bgcolor='background.paper' py={{ xs: 6, md: 10 }}>
-                <Container maxWidth="md">
+                <Container maxWidth="lg">
                     <Stack spacing={4}>
                         <Typography variant="h3" color="primary.main" fontWeight={600}>
                             {t('features.title')}
@@ -132,7 +132,7 @@ export default async function WhatIsHybridWoodPage() {
 
             {/* Sustainability Section */}
             <PageLayoutContainer bgcolor='secondary.main' py={{ xs: 6, md: 10 }}>
-                <Container maxWidth="md">
+                <Container maxWidth="lg">
                     <Stack spacing={4}>
                         <Typography variant="h3" color="secondary.contrastText" fontWeight={600}>
                             {t('sustainability.title')}
@@ -170,7 +170,7 @@ export default async function WhatIsHybridWoodPage() {
 
             {/* Installation Section */}
             <PageLayoutContainer bgcolor='background.paper' py={{ xs: 6, md: 10 }}>
-                <Container maxWidth="md">
+                <Container maxWidth="lg">
                     <Stack spacing={4}>
                         <Typography variant="h3" color="primary.main" fontWeight={600}>
                             {t('installation.title')}
@@ -201,7 +201,7 @@ export default async function WhatIsHybridWoodPage() {
 
             {/* Maintenance Section */}
             <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }}>
-                <Container maxWidth="md">
+                <Container maxWidth="lg">
                     <Stack spacing={4}>
                         <Typography variant="h3" color="primary.main" fontWeight={600}>
                             {t('maintenance.title')}
@@ -243,7 +243,7 @@ export default async function WhatIsHybridWoodPage() {
 
             {/* Conclusion Section */}
             <PageLayoutContainer bgcolor='primary.main' py={{ xs: 6, md: 10 }}>
-                <Container maxWidth="md">
+                <Container maxWidth="lg">
                     <Stack spacing={4} textAlign="center">
                         <Typography variant="h3" color="primary.contrastText" fontWeight={600}>
                             {t('conclusion.title')}

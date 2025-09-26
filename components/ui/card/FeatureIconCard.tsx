@@ -15,7 +15,6 @@ export function FeatureIconCard({
     title,
     description,
     iconColor = 'primary',
-    iconSize = 60
 }: FeatureIconCardProps) {
 
     return (
@@ -24,12 +23,11 @@ export function FeatureIconCard({
                 gutterBottom textAlign={'center'}
                 sx={{
                     color: `${iconColor}.500`,
-                    fontSize: `${iconSize}px`
                 }}>
 
                 {icon}
             </Typography>
-            <Typography variant="h2" component="h3" textAlign={'center'} fontFamily={caveat.style.fontFamily} color='info.500' pb={2}>
+            <Typography variant="h2" component="h3" textAlign={'center'} fontFamily={caveat.style.fontFamily} color='info.500' pb={{ xs: 1, md: 2 }}>
                 {title}
             </Typography>
             <Typography variant="body1" color="text.secondary" textAlign={'center'}>

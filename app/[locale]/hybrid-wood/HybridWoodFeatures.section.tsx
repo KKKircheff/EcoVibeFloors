@@ -5,25 +5,27 @@ import { Ri24HoursLine } from "react-icons/ri";
 import { BiLayerPlus } from "react-icons/bi";
 import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { FeatureIconCard } from '@/components/ui/card/FeatureIconCard';
+import { LuShieldCheck } from 'react-icons/lu';
+import { HiOutlineBadgeCheck } from 'react-icons/hi';
 
 export async function HybridWoodFeatures() {
     const t = await getTranslations('hybridWood');
 
     const featuresConfig = [
         {
-            icon: <Ri24HoursLine />,
+            icon: <Ri24HoursLine size={52} />,
             titleKey: 'features.waterResistance.title',
             descriptionKey: 'features.waterResistance.description',
             iconColor: 'primary' as const
         },
         {
-            icon: <BiLayerPlus />,
+            icon: <BiLayerPlus size={60} />,
             titleKey: 'features.scratchResistance.title',
             descriptionKey: 'features.scratchResistance.description',
             iconColor: 'primary' as const
         },
         {
-            icon: <AiOutlineSafetyCertificate />,
+            icon: <HiOutlineBadgeCheck size={60} />,
             titleKey: 'features.warranty.title',
             descriptionKey: 'features.warranty.description',
             iconColor: 'primary' as const
@@ -36,7 +38,7 @@ export async function HybridWoodFeatures() {
                 {t('features.title')}
             </Typography>
 
-            <Grid container spacing={4}>
+            <Grid container spacing={{ xs: 6, md: 4 }}>
                 {featuresConfig.map((feature, index) => (
                     <Grid key={index} size={{ xs: 12, md: 4 }}>
                         <FeatureIconCard

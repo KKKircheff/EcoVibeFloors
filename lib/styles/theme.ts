@@ -189,7 +189,7 @@ const baseTheme = createTheme({
 
 const luxuryTheme = responsiveFontSizes(baseTheme, {
     breakpoints: ['xs', 'sm', 'md', 'lg', 'xl'],
-    factor: 4,
+    factor: 3,
 });
 
 export default luxuryTheme;

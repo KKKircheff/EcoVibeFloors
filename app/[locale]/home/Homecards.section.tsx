@@ -28,7 +28,7 @@ const HomecardsSection = async () => {
             title: t('hybridWood.title'),
             text: t('hybridWood.text'),
             images: ['hw-2.jpg', 'hw-1.jpg', 'hw-3.jpg'] as [string, string, string],
-            button1: { text: t('hybridWood.learnMore'), route: "/collections/hybrid-wood/info" },
+            button1: { text: t('hybridWood.learnMore'), route: "/hybrid-wood/what-is-hybrid-wood" },
             button2: { text: t('hybridWood.viewCollection'), route: "/hybrid-wood" },
             mirror: true
         },
