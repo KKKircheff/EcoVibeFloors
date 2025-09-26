@@ -20,7 +20,15 @@ export default async function HomePage() {
                 <HomeFeatures />
             </PageLayoutContainer>
 
-            <PageLayoutContainer py={{ xs: 4, md: 6 }}>
+            <PageLayoutContainer
+                py={{ xs: 4, md: 6 }}
+                sx={{
+                    backgroundImage: 'url(/images/tree-bg-1.webp)',
+                    backgroundSize: 'auto',
+                    backgroundPosition: 'left center',
+                    backgroundRepeat: 'repeat-y',
+                }}
+            >
                 <QuotesSection />
                 <HomecardsSection />
             </PageLayoutContainer>

@@ -103,7 +103,7 @@ const SideDrawer = ({
                     sx={{
                         flex: 'none',
                         overflowY: 'auto',
-                        height: '300px',
+                        height: '350px',
                     }}
                 >
                     {routes

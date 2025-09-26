@@ -23,6 +23,7 @@ export function ImageTextGrid({ title, text, images, button1, button2, mirror = 
                 <Image
                     src={`/images/home-page/${mirror ? image3 : image1}`}
                     alt="Large featured image"
+                    loading='lazy'
                     fill
                     style={{ objectFit: 'cover' }}
                 />

@@ -77,6 +77,8 @@ To create a visually compelling, high-quality website with strong design and eng
 - Material UI components follow luxury design system in `lib/theme.ts`
 - Firebase integration ready for Firestore collections and Storage buckets
 - TypeScript path aliasing configured with `@/*` pointing to project root
+- **ALWAYS use `@/` alias for imports instead of relative paths** (e.g., `import { Component } from '@/components/...'`)
+- **Images from public folder**: Import as `import imageName from '../../../public/images/path/image.webp'` from `app/[locale]/page/` directories (use relative paths for images, not `@/` alias)
 
 ## Product Documentation Reference
 

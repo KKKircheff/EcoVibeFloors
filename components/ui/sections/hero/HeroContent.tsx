@@ -1,9 +1,8 @@
 import React, { ReactNode } from 'react';
 import { Box, Stack, StackProps, SxProps, Theme } from '@mui/material';
-import Image from 'next/image';
-import { HeroTitle } from '../typography/HeroTitle';
-import { HeroSubtitle } from '../typography/HeroSubtitle';
-import { HeroButton } from '../buttons/HeroButton';
+import { HeroTitle } from '../../typography/HeroTitle';
+import { HeroSubtitle } from '../../typography/HeroSubtitle';
+import { HeroButton } from '../../buttons/HeroButton';
 
 interface HeroButtonConfig extends StackProps {
     text: string;
@@ -13,55 +12,23 @@ interface HeroButtonConfig extends StackProps {
     sx?: SxProps<Theme>;
 }
 
-interface HeroSectionProps {
-    id?: string;
+interface HeroContentProps {
     title: string | ReactNode;
     subtitle: string | ReactNode;
-
-    imageSrc: string;
-    imageAlt: string;
-    imagePosition?: string;
-
     buttons?: HeroButtonConfig[];
-    minHeight?: { xs: string; md?: string };
     overlayOpacity?: number;
     contentBackgroundOpacity?: { xs: number; md: number };
 }
 
-export const HeroSection = ({
-    id = 'hero-section',
+export const HeroContent = ({
     title,
     subtitle,
-    imageSrc,
-    imageAlt,
-    imagePosition = 'bottom',
     buttons = [],
-    minHeight = { xs: '90vh', md: '90vh' },
     overlayOpacity = 0.20,
     contentBackgroundOpacity = { xs: 0.40, md: 0.35 }
-}: HeroSectionProps) => {
+}: HeroContentProps) => {
     return (
-        <Stack
-            id={id}
-            sx={{
-                position: 'relative',
-                minHeight: minHeight,
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-            }}
-        >
-            <Image
-                src={imageSrc}
-                alt={imageAlt}
-                fill
-                priority
-                style={{
-                    objectFit: 'cover',
-                    objectPosition: imagePosition,
-                }}
-                sizes="100vw"
-            />
+        <>
             <Box
                 sx={{
                     position: 'absolute',
@@ -123,6 +90,6 @@ export const HeroSection = ({
                     </Stack>
                 )}
             </Stack>
-        </Stack>
+        </>
     );
 };

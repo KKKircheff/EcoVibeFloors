@@ -11,7 +11,7 @@ const HomecardsSection = async () => {
         {
             title: t('premiumOak.title'),
             text: t('premiumOak.text'),
-            images: ['hw-2.jpg', 'hw-1.jpg', 'hw-3.jpg'] as [string, string, string],
+            images: ['no-small1.jpg', 'no-small2.jpg', 'no-large.jpg'] as [string, string, string],
             button1: { text: t('premiumOak.learnMore'), route: "/collections/oak/info" },
             button2: { text: t('premiumOak.viewCollection'), route: "/oak" },
             mirror: true
@@ -19,7 +19,7 @@ const HomecardsSection = async () => {
         {
             title: t('premiumOakCustom.title'),
             text: t('premiumOakCustom.text'),
-            images: ['hw-2.jpg', 'hw-1.jpg', 'hw-3.jpg'] as [string, string, string],
+            images: ['premium-large.jpg', 'premium-small2.jpg', 'premium-small1.jpg'] as [string, string, string],
             button1: { text: t('premiumOakCustom.learnMore'), route: "/collections/custom-oak/info" },
             button2: { text: t('premiumOakCustom.viewCollection'), route: "/custom-oak" },
             mirror: false
@@ -35,7 +35,7 @@ const HomecardsSection = async () => {
         {
             title: t('vinyl.title'),
             text: t('vinyl.text'),
-            images: ['hw-2.jpg', 'hw-1.jpg', 'hw-3.jpg'] as [string, string, string],
+            images: ['vn-large.jpg', 'vn-small2.jpg', 'vn-small1.jpg'] as [string, string, string],
             button1: { text: t('vinyl.learnMore'), route: "/collections/vinyl/info" },
             button2: { text: t('vinyl.viewCollection'), route: "/vinyl" },
             mirror: false
@@ -43,7 +43,7 @@ const HomecardsSection = async () => {
     ];
 
     return (
-        <Stack spacing={{ xs: 8, md: 24 }}>
+        <Stack spacing={{ xs: 6, md: 18 }}>
             {cardsConfig.map((card, index) => (
                 <ImageTextGrid
                     key={index}

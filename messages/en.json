@@ -64,9 +64,9 @@
         "language": "Language",
         "naturalOak": "Natural Oak",
         "hybridWood": "Hybrid Wood",
-        "Hybrid_Wood": "Hybrid Wood",
         "burgerMenuButton": "Menu",
         "Premium_Oak": "Quality Natural Oak",
+        "Hybrid_Wood": "Premium Hybrid Wood",
         "Premium_Oak_Custom_Crafted": "Premium Natural Oak",
         "Vinyl": "High quality Vinyl",
         "All_Collections": "All Collections",
@@ -227,18 +227,99 @@
         "title": "Page Not Found",
         "description": "The page you're looking for doesn't exist or has been moved."
     },
+    "oak": {
+        "pageTitle": "Premium Oak Collection",
+        "hero": {
+            "title": "Premium Oak Collection",
+            "subtitle": "Discover our natural oak cozy flooring collection"
+        }
+    },
     "customOak": {
         "pageTitle": "Premium Oak Custom Crafted Collection",
         "hero": {
-            "title": "Premium Oak Custom Crafted",
-            "subtitle": "Bespoke oak flooring tailored to your unique vision"
+            "title": "Premium Oak Natural Floors",
+            "subtitle": "Premium quality oak floors, crafted especially for your vision."
+        }
+    },
+    "hybridWood": {
+        "pageTitle": "Hybrid Wood Collection",
+        "hero": {
+            "title": "Hybrid Wood Collection",
+            "subtitle": "The perfect blend of natural beauty and modern innovations"
+        },
+        "overview": {
+            "title": "Revolutionary Flooring Technology",
+            "subtitle": "Experience the future of flooring with hybrid wood - where authentic oak meets advanced engineering",
+            "description": "Hybrid Wood flooring represents a breakthrough in flooring technology, combining the natural beauty of real oak with innovative engineering. Using 90% less oak than traditional parquet while maintaining authentic wood appearance and superior performance characteristics."
+        },
+        "features": {
+            "title": "Superior Performance Features",
+            "waterResistance": {
+                "title": "Water Resistant",
+                "description": "24-hour water resistance protects against spills and moisture"
+            },
+            "scratchResistance": {
+                "title": "Scratch Resistant",
+                "description": "Extremely durable,  AC5 rating, surface perfect for high-traffic areas."
+            },
+            "warranty": {
+                "title": "Long Warranty",
+                "description": "Up to 35-year warranty for long-term peace of mind"
+            }
+        },
+        "sustainability": {
+            "title": "Eco-Friendly Innovation",
+            "description": "Hybrid Wood flooring leads the way in sustainable flooring solutions, dramatically reducing environmental impact while delivering premium quality and performance.",
+            "benefit1": "Uses 90% less oak wood compared to traditional parquet",
+            "benefit2": "Made with recycled HDF core from sustainable wood chips",
+            "benefit3": "Chemical-free production process protects indoor air quality",
+            "imageCaption": "[Image: Sustainability certifications and eco-friendly production process]"
+        },
+        "specifications": {
+            "title": "Technical Specifications",
+            "technical": {
+                "title": "Technical Details",
+                "thickness": "Thickness",
+                "thermalResistance": "Thermal Resistance",
+                "wearLayer": "Wear Layer",
+                "realOak": "Real Oak",
+                "core": "Core Material"
+            },
+            "installation": {
+                "title": "Installation Options",
+                "method": "Installation Method",
+                "clickSystem": "Click System",
+                "underfloorHeating": "Underfloor Heating",
+                "floating": "Floating Installation",
+                "glued": "Glued Installation"
+            }
+        },
+        "styles": {
+            "title": "Available Styles & Formats",
+            "xlPlanks": {
+                "title": "XL Planks",
+                "dimensions": "237cm × 27cm",
+                "description": "Extra-long planks create a spacious, modern aesthetic perfect for contemporary interiors and open-plan living spaces.",
+                "imageCaption": "[Image: Room showcasing XL plank hybrid wood flooring]"
+            },
+            "herringbone": {
+                "title": "Herringbone Pattern",
+                "dimensions": "70cm × 14cm",
+                "description": "Classic herringbone pattern adds elegance and sophistication to any space, perfect for traditional and modern interiors.",
+                "imageCaption": "[Image: Herringbone pattern hybrid wood flooring installation]"
+            }
+        },
+        "cta": {
+            "title": "Ready to Transform Your Space?",
+            "description": "Discover the perfect balance of natural beauty, durability, and sustainability with our Hybrid Wood flooring collection. Experience premium Dutch quality with extended warranties and expert guidance.",
+            "contact": "Contact us today for a personalized consultation and quote."
         }
     },
     "vinyl": {
         "pageTitle": "Vinyl Collection",
         "hero": {
-            "title": "Premium Floer Vinyl Collection",
-            "subtitle": "Discover 5 exceptional vinyl collections combining Dutch quality with 100% waterproof performance"
+            "title": "Premium Vinyl Collection",
+            "subtitle": "Discover оур exceptional vinyl collections combining Dutch quality with 100% waterproof performance"
         },
         "overview": {
             "title": "Premium Dutch Vinyl Flooring",
@@ -380,87 +461,6 @@
             "title": "Ready to Transform Your Space?",
             "description": "Discover the perfect Floer vinyl collection for your project. Our experts are ready to help you choose the ideal flooring solution.",
             "contact": "Contact us today for personalized consultation and quotes"
-        }
-    },
-    "oak": {
-        "pageTitle": "Premium Oak Collection",
-        "hero": {
-            "title": "Premium Oak Collection",
-            "subtitle": "Discover our exquisite premium oak flooring collection"
-        }
-    },
-    "hybridWood": {
-        "pageTitle": "Hybrid Wood Collection",
-        "hero": {
-            "title": "Hybrid Wood Collection",
-            "subtitle": "The perfect blend of natural beauty and modern innovation"
-        },
-        "overview": {
-            "title": "Revolutionary Flooring Technology",
-            "subtitle": "Experience the future of flooring with hybrid wood - where authentic oak meets advanced engineering",
-            "description": "Hybrid Wood flooring represents a breakthrough in flooring technology, combining the natural beauty of real oak with innovative engineering. Using 90% less oak than traditional parquet while maintaining authentic wood appearance and superior performance characteristics."
-        },
-        "features": {
-            "title": "Superior Performance Features",
-            "waterResistance": {
-                "title": "Water Resistant",
-                "description": "24-hour water resistance protects against spills and moisture"
-            },
-            "scratchResistance": {
-                "title": "Scratch Resistant",
-                "description": "Extremely durable,  AC5 rating, surface perfect for high-traffic areas."
-            },
-            "warranty": {
-                "title": "Long Warranty",
-                "description": "Up to 35-year warranty for long-term peace of mind"
-            }
-        },
-        "sustainability": {
-            "title": "Eco-Friendly Innovation",
-            "description": "Hybrid Wood flooring leads the way in sustainable flooring solutions, dramatically reducing environmental impact while delivering premium quality and performance.",
-            "benefit1": "Uses 90% less oak wood compared to traditional parquet",
-            "benefit2": "Made with recycled HDF core from sustainable wood chips",
-            "benefit3": "Chemical-free production process protects indoor air quality",
-            "imageCaption": "[Image: Sustainability certifications and eco-friendly production process]"
-        },
-        "specifications": {
-            "title": "Technical Specifications",
-            "technical": {
-                "title": "Technical Details",
-                "thickness": "Thickness",
-                "thermalResistance": "Thermal Resistance",
-                "wearLayer": "Wear Layer",
-                "realOak": "Real Oak",
-                "core": "Core Material"
-            },
-            "installation": {
-                "title": "Installation Options",
-                "method": "Installation Method",
-                "clickSystem": "Click System",
-                "underfloorHeating": "Underfloor Heating",
-                "floating": "Floating Installation",
-                "glued": "Glued Installation"
-            }
-        },
-        "styles": {
-            "title": "Available Styles & Formats",
-            "xlPlanks": {
-                "title": "XL Planks",
-                "dimensions": "237cm × 27cm",
-                "description": "Extra-long planks create a spacious, modern aesthetic perfect for contemporary interiors and open-plan living spaces.",
-                "imageCaption": "[Image: Room showcasing XL plank hybrid wood flooring]"
-            },
-            "herringbone": {
-                "title": "Herringbone Pattern",
-                "dimensions": "70cm × 14cm",
-                "description": "Classic herringbone pattern adds elegance and sophistication to any space, perfect for traditional and modern interiors.",
-                "imageCaption": "[Image: Herringbone pattern hybrid wood flooring installation]"
-            }
-        },
-        "cta": {
-            "title": "Ready to Transform Your Space?",
-            "description": "Discover the perfect balance of natural beauty, durability, and sustainability with our Hybrid Wood flooring collection. Experience premium Dutch quality with extended warranties and expert guidance.",
-            "contact": "Contact us today for a personalized consultation and quote."
         }
     },
     "whatIsHybridWood": {

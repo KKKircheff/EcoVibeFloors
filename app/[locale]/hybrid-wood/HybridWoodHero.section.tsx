@@ -1,24 +1,39 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
-import { HeroSection } from '../../../components/ui/sections/HeroSection';
+import Image from 'next/image';
+import { HeroWrapper } from '@/components/ui/sections/hero/HeroWrapper';
+import { HeroContent } from '@/components/ui/sections/hero/HeroContent';
+import heroImage from '../../../public/images/home-page/hero.webp';
 
 export async function HybridWoodHero() {
     const t = await getTranslations('hybridWood');
     const tButtons = await getTranslations('buttons');
 
     return (
-        <HeroSection
-            title={t('hero.title')}
-            subtitle={t('hero.subtitle')}
-            imageSrc="/images/home-page/hero.webp"
-            imageAlt="Hybrid wood flooring showcase"
-            buttons={[
-                {
-                    text: tButtons('exploreCollection'),
-                    actionType: 'scroll',
-                    target: 'hero-section'
-                }
-            ]}
-        />
+        <HeroWrapper>
+            <Image
+                src={heroImage}
+                alt="Hybrid wood flooring showcase"
+                fill
+                priority
+                placeholder="blur"
+                style={{
+                    objectFit: 'cover',
+                    objectPosition: 'center',
+                }}
+                sizes="100vw"
+            />
+            <HeroContent
+                title={t('hero.title')}
+                subtitle={t('hero.subtitle')}
+                buttons={[
+                    {
+                        text: tButtons('exploreCollection'),
+                        actionType: 'scroll',
+                        target: 'hero-section'
+                    }
+                ]}
+            />
+        </HeroWrapper>
     );
 }
