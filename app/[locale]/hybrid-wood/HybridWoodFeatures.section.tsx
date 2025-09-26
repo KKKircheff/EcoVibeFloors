@@ -3,9 +3,7 @@ import { Stack, Typography, Container, Grid } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
 import { Ri24HoursLine } from "react-icons/ri";
 import { BiLayerPlus } from "react-icons/bi";
-import { AiOutlineSafetyCertificate } from "react-icons/ai";
 import { FeatureIconCard } from '@/components/ui/card/FeatureIconCard';
-import { LuShieldCheck } from 'react-icons/lu';
 import { HiOutlineBadgeCheck } from 'react-icons/hi';
 
 export async function HybridWoodFeatures() {

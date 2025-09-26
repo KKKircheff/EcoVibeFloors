@@ -20,52 +20,50 @@ export async function HybridWoodSpecs() {
     ];
 
     return (
-        <Container maxWidth="lg">
-            <Stack spacing={6}>
-                <Typography variant="h3" color="primary.main" fontWeight={600} textAlign="center">
-                    {t('specifications.title')}
-                </Typography>
+        <Stack spacing={6}>
+            <Typography variant="h3" color="primary.main" fontWeight={600} textAlign="center">
+                {t('specifications.title')}
+            </Typography>
 
-                <Grid container spacing={4}>
-                    <Grid size={{ xs: 12, md: 6 }}>
-                        <Card sx={{ p: 3 }}>
-                            <Typography variant="h6" color="secondary.main" fontWeight={500} gutterBottom>
-                                {t('specifications.technical.title')}
-                            </Typography>
-                            <Stack spacing={2}>
-                                {technicalSpecs.map((spec, index) => (
-                                    <Stack key={index} spacing={2}>
-                                        <Stack direction="row" justifyContent="space-between">
-                                            <Typography variant="body2">{spec.label}</Typography>
-                                            <Typography variant="body2" fontWeight={500}>{spec.value}</Typography>
-                                        </Stack>
-                                        {index < technicalSpecs.length - 1 && <Divider />}
+            <Grid container spacing={4}>
+                <Grid size={{ xs: 12, md: 6 }}>
+                    <Card sx={{ p: 3 }}>
+                        <Typography variant="h6" color="secondary.main" fontWeight={500} gutterBottom>
+                            {t('specifications.technical.title')}
+                        </Typography>
+                        <Stack spacing={2}>
+                            {technicalSpecs.map((spec, index) => (
+                                <Stack key={index} spacing={2}>
+                                    <Stack direction="row" justifyContent="space-between">
+                                        <Typography variant="body2">{spec.label}</Typography>
+                                        <Typography variant="body2" fontWeight={500}>{spec.value}</Typography>
                                     </Stack>
-                                ))}
-                            </Stack>
-                        </Card>
-                    </Grid>
-
-                    <Grid size={{ xs: 12, md: 6 }}>
-                        <Card sx={{ p: 3 }}>
-                            <Typography variant="h6" color="secondary.main" fontWeight={500} gutterBottom>
-                                {t('specifications.installation.title')}
-                            </Typography>
-                            <Stack spacing={2}>
-                                {installationSpecs.map((spec, index) => (
-                                    <Stack key={index} spacing={2}>
-                                        <Stack direction="row" justifyContent="space-between">
-                                            <Typography variant="body2">{spec.label}</Typography>
-                                            <Typography variant="body2" fontWeight={500}>{spec.value}</Typography>
-                                        </Stack>
-                                        {index < installationSpecs.length - 1 && <Divider />}
-                                    </Stack>
-                                ))}
-                            </Stack>
-                        </Card>
-                    </Grid>
+                                    {index < technicalSpecs.length - 1 && <Divider />}
+                                </Stack>
+                            ))}
+                        </Stack>
+                    </Card>
                 </Grid>
-            </Stack>
-        </Container>
+
+                <Grid size={{ xs: 12, md: 6 }}>
+                    <Card sx={{ p: 3 }}>
+                        <Typography variant="h6" color="secondary.main" fontWeight={500} gutterBottom>
+                            {t('specifications.installation.title')}
+                        </Typography>
+                        <Stack spacing={2}>
+                            {installationSpecs.map((spec, index) => (
+                                <Stack key={index} spacing={2}>
+                                    <Stack direction="row" justifyContent="space-between">
+                                        <Typography variant="body2">{spec.label}</Typography>
+                                        <Typography variant="body2" fontWeight={500}>{spec.value}</Typography>
+                                    </Stack>
+                                    {index < installationSpecs.length - 1 && <Divider />}
+                                </Stack>
+                            ))}
+                        </Stack>
+                    </Card>
+                </Grid>
+            </Grid>
+        </Stack>
     );
 }
