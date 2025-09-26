@@ -1,96 +1,56 @@
 import 'server-only';
-import { Stack, Typography, Container, Grid, Card, CardContent } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
+import { Typography } from '@mui/material';
+import { MdWaterDrop, MdShield, MdEco, MdConstruction, MdBuild, MdVolumeDown } from 'react-icons/md';
+import { ProductFeatures } from '@/components/ui/sections/product';
 
 export async function VinylFeatures() {
     const t = await getTranslations('vinyl');
 
     const featuresConfig = [
         {
-            icon: '100%',
+            icon: <MdWaterDrop size={52} />,
             titleKey: 'features.waterproof.title',
             descriptionKey: 'features.waterproof.description',
-            iconColor: 'primary'
+            iconColor: 'primary' as const
         },
         {
-            icon: '20Y',
+            icon: <MdShield size={52} />,
             titleKey: 'features.warranty.title',
             descriptionKey: 'features.warranty.description',
-            iconColor: 'secondary'
+            iconColor: 'secondary' as const
         },
         {
-            icon: 'ECO',
+            icon: <MdEco size={52} />,
             titleKey: 'features.ecoFriendly.title',
             descriptionKey: 'features.ecoFriendly.description',
-            iconColor: 'primary'
+            iconColor: 'primary' as const
         },
         {
-            icon: 'AC5',
+            icon: <MdConstruction size={52} />,
             titleKey: 'features.durability.title',
             descriptionKey: 'features.durability.description',
-            iconColor: 'secondary'
+            iconColor: 'secondary' as const
         },
         {
-            icon: 'DIY',
+            icon: <MdBuild size={52} />,
             titleKey: 'features.installation.title',
             descriptionKey: 'features.installation.description',
-            iconColor: 'primary'
+            iconColor: 'primary' as const
         },
         {
-            icon: '10dB',
+            icon: <MdVolumeDown size={52} />,
             titleKey: 'features.soundInsulation.title',
             descriptionKey: 'features.soundInsulation.description',
-            iconColor: 'secondary'
+            iconColor: 'secondary' as const
         }
     ];
 
     return (
-        <Container maxWidth="lg">
-            <Stack spacing={6}>
-                <Stack spacing={2} textAlign="center">
-                    <Typography variant="h3" color="primary.main" fontWeight={600}>
-                        {t('features.title')}
-                    </Typography>
-                    <Typography variant="h6" color="text.secondary" maxWidth="600px" mx="auto">
-                        {t('features.subtitle')}
-                    </Typography>
-                </Stack>
-
-                <Grid container spacing={4}>
-                    {featuresConfig.map((feature, index) => (
-                        <Grid key={index} size={{ xs: 12, md: 6, lg: 4 }}>
-                            <Card sx={{ height: '100%', textAlign: 'center', p: 2 }}>
-                                <CardContent>
-                                    <Stack spacing={3} alignItems="center">
-                                        <Stack
-                                            sx={{
-                                                bgcolor: `${feature.iconColor}.main`,
-                                                color: `${feature.iconColor}.contrastText`,
-                                                borderRadius: 2,
-                                                p: 2,
-                                                width: 80,
-                                                height: 80
-                                            }}
-                                            justifyContent="center"
-                                            alignItems="center"
-                                        >
-                                            <Typography variant="h5" fontWeight={600}>
-                                                {feature.icon}
-                                            </Typography>
-                                        </Stack>
-                                        <Typography variant="h6" color="primary.main" fontWeight={500}>
-                                            {t(feature.titleKey)}
-                                        </Typography>
-                                        <Typography variant="body2" color="text.secondary" lineHeight={1.6}>
-                                            {t(feature.descriptionKey)}
-                                        </Typography>
-                                    </Stack>
-                                </CardContent>
-                            </Card>
-                        </Grid>
-                    ))}
-                </Grid>
-            </Stack>
-        </Container>
+        <ProductFeatures
+            translationKey="vinyl"
+            features={featuresConfig}
+            subtitle={t('features.subtitle')}
+        />
     );
 }
