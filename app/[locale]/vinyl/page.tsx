@@ -1,5 +1,6 @@
 import 'server-only';
 import { alpha, Stack } from '@mui/material';
+import { setRequestLocale } from 'next-intl/server';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import { VinylHero } from './VinylHero.section';
@@ -12,7 +13,20 @@ import { VinylCta } from './VinylCta.section';
 import Footer from '@/components/layout/footer/Footer.component';
 import { palette } from '@/lib/styles/pallete';
 
-export default async function VinylPage() {
+// Force static generation
+export const dynamic = 'error';
+
+interface VinylPageProps {
+    params: Promise<{
+        locale: string;
+    }>;
+}
+
+export default async function VinylPage({ params }: VinylPageProps) {
+    const { locale } = await params;
+
+    // Enable static rendering
+    setRequestLocale(locale);
     const overviewBgcolor = alpha(palette.info[50], .4);
 
     return (

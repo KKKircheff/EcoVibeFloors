@@ -11,7 +11,7 @@ export async function HybridWoodFeatures() {
 
     const featuresConfig = [
         {
-            icon: <Ri24HoursLine size={52} />,
+            icon: <Ri24HoursLine size={60} />,
             titleKey: 'features.waterResistance.title',
             descriptionKey: 'features.waterResistance.description',
             iconColor: 'primary' as const

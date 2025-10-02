@@ -1,5 +1,6 @@
 import 'server-only';
 import { alpha, Stack } from '@mui/material';
+import { setRequestLocale } from 'next-intl/server';
 
 import { HomeHero } from './home/HomeHero.section';
 import { HomeFeatures } from './home/HomeFeatures.section';
@@ -10,7 +11,20 @@ import QuotesSection from './home/Quotes.section';
 import { palette } from '@/lib/styles/pallete';
 import HomecardsSection from './home/Homecards.section';
 
-export default async function HomePage() {
+// Force static generation
+export const dynamic = 'error';
+
+interface HomePageProps {
+    params: Promise<{
+        locale: string;
+    }>;
+}
+
+export default async function HomePage({ params }: HomePageProps) {
+    const { locale } = await params;
+
+    // Enable static rendering
+    setRequestLocale(locale);
     const bgcolor = alpha(palette.info[50], .4)
     return (
         <Stack width={'100%'}>

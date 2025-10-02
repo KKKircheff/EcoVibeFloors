@@ -1,12 +1,18 @@
 'use client';
 
 import {useTranslations} from 'next-intl';
-import {Link} from '@/i18n/navigation';
-import {Box, Typography, Button, Container} from '@mui/material';
+import {useRouter} from '@/i18n/navigation';
+import {Box, Typography, Container} from '@mui/material';
+import PrimaryActionButton from '@/components/ui/buttons/PrimaryActionButton';
 
 export default function NotFound() {
   const t = useTranslations('notFound');
   const tButtons = useTranslations('buttons');
+  const router = useRouter();
+
+  const handleBackHome = () => {
+    router.push('/');
+  };
 
   return (
     <Container>
@@ -28,15 +34,14 @@ export default function NotFound() {
         <Typography variant="body1" color="text.secondary" maxWidth={600}>
           {t('description')}
         </Typography>
-        <Button 
-          component={Link} 
-          href="/" 
-          variant="contained" 
+        <PrimaryActionButton
+          onClick={handleBackHome}
+          variant="contained"
           color="primary"
           size="large"
         >
           {tButtons('backHome')}
-        </Button>
+        </PrimaryActionButton>
       </Box>
     </Container>
   );

@@ -30,7 +30,7 @@ export function FeatureIconCard({
             <Typography variant="h2" component="h3" textAlign={'center'} fontFamily={caveat.style.fontFamily} color='info.500' pb={{ xs: 1, md: 2 }}>
                 {title}
             </Typography>
-            <Typography variant="body1" color="text.secondary" textAlign={'center'}>
+            <Typography variant="subtitle2" color="text.secondary" textAlign={'center'}>
                 {description}
             </Typography>
         </Stack>

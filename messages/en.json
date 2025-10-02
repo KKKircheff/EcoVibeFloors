@@ -189,6 +189,13 @@
             "title": "Collections",
             "subtitle": "Discover our premium flooring collections"
         },
+        "names": {
+            "hybridWood": "Hybrid Wood",
+            "hybrid-wood": "Hybrid Wood",
+            "vinyl": "Vinyl",
+            "oak": "Natural Oak",
+            "customOak": "Premium Oak"
+        },
         "naturalOak": {
             "title": "Natural Oak Floors",
             "description": "Authentic solid oak flooring with natural beauty and durability"
@@ -197,10 +204,42 @@
             "title": "Hybrid Wood Floors",
             "description": "Innovative wood-based flooring combining beauty with enhanced performance"
         },
+        "hybrid-wood": {
+            "title": "Hybrid Wood Floors",
+            "description": "Innovative wood-based flooring combining beauty with enhanced performance"
+        },
         "laminate": {
             "title": "Premium Laminate",
             "description": "High-end laminate flooring with realistic wood appearance"
         }
+    },
+    "patterns": {
+        "plank": "Plank",
+        "plankDescription": "Classic plank flooring offers timeless elegance with contemporary versatility, perfect for any interior design style.",
+        "fishbone": "Herringbone",
+        "fishboneDescription": "Sophisticated herringbone pattern creates visual impact and elegant texture, transforming any space into a luxurious setting."
+    },
+    "installationSystems": {
+        "click": "Click System",
+        "glue": "Glue-Down"
+    },
+    "products": {
+        "filterBy": "Filter by",
+        "priceFrom": "from",
+        "viewDetails": "View Details",
+        "addToCart": "Add to Cart",
+        "specifications": "Specifications",
+        "features": "Features",
+        "keyFeatures": "Key Features",
+        "allProducts": "All Products",
+        "productsAvailable": "products available",
+        "noProductsFound": "No products found",
+        "pricePerSquareMeter": "per square meter",
+        "requestQuote": "Request Quote",
+        "contactUs": "Contact Us",
+        "dimensions": "Dimensions",
+        "appearance": "Appearance",
+        "warranty": "Warranty"
     },
     "contact": {
         "title": "Contact EcoVibeFloors",
@@ -308,6 +347,10 @@
                 "description": "Classic herringbone pattern adds elegance and sophistication to any space, perfect for traditional and modern interiors.",
                 "imageCaption": "[Image: Herringbone pattern hybrid wood flooring installation]"
             }
+        },
+        "patterns": {
+            "title": "Browse by Pattern",
+            "description": "Explore our Hybrid Wood collection organized by flooring pattern. Each pattern offers unique aesthetic possibilities and installation options."
         },
         "cta": {
             "title": "Ready to Transform Your Space?",

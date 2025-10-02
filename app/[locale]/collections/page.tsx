@@ -1,18 +1,38 @@
 import 'server-only';
-import { Stack, Typography } from '@mui/material';
+import { Stack } from '@mui/material';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import { CollectionsHero } from './CollectionsHero.section';
+import { CollectionsGrid } from './CollectionsGrid.section';
 import Footer from '@/components/layout/footer/Footer.component';
 
-export default async function CollectionsPage() {
+// Force static generation
+export const dynamic = 'error';
+
+interface CollectionsPageProps {
+    params: Promise<{
+        locale: string;
+    }>;
+}
+
+export default async function CollectionsPage({ params }: CollectionsPageProps) {
+    const { locale } = await params;
+
+    // Enable static rendering
+    setRequestLocale(locale);
+
+    const t = await getTranslations('collections');
+
     return (
         <Stack>
             <CollectionsHero />
-            <PageLayoutContainer bgcolor='primary.contrastText' pb={{ xs: 8, md: 12 }} pt={{ xs: 6, md: 12 }}>
-                <Typography>Collections</Typography>
+
+            <PageLayoutContainer bgcolor="primary.contrastText" pb={{ xs: 8, md: 12 }} pt={{ xs: 6, md: 12 }}>
+                <CollectionsGrid title={t('title')} />
             </PageLayoutContainer>
-            <PageLayoutContainer pt={10} bgcolor='info.800'>
+
+            <PageLayoutContainer pt={10} bgcolor="info.800">
                 <Footer />
             </PageLayoutContainer>
         </Stack>

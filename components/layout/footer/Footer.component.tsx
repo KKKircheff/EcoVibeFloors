@@ -3,11 +3,17 @@ import { Box, Stack, Typography } from "@mui/material"
 import { footerData } from './footer.data'
 import FooterLinkGroup from "./footer-link-group/FooterLinkGroup.component"
 import FooterSocialGroup from "./footer-social-group/FooterSocialGroup.component"
-import { getTranslations } from 'next-intl/server'
+import { getTranslations, getLocale } from 'next-intl/server'
 
-const Footer = async () => {
+interface FooterProps {
+    locale?: string;
+}
 
-    const t = await getTranslations('footer')
+const Footer = async ({ locale: localeParam }: FooterProps = {}) => {
+    // Use provided locale (for static pages) or get from context (for dynamic pages)
+    const locale = localeParam || await getLocale();
+
+    const t = await getTranslations({ locale, namespace: 'footer' })
 
     return (
         <Box>

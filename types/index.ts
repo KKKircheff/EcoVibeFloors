@@ -5,7 +5,7 @@
 export * from './database';
 
 // Product related types (for EcoVibeFloors)
-export * from './product';
+export * from './products';
 
 // User related types
 export * from './user';

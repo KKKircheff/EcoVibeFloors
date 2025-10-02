@@ -1,13 +1,45 @@
 // Validation utilities for Firebase data and forms
 
 import { ErrorHandler, ERROR_CODES } from './errors';
-import { 
-  Product, 
-  Order, 
-  ConsultationRequest,
-  ProductCategory,
-  OrderStatus 
-} from './types';
+// TODO: These types need to be defined when e-commerce features are implemented
+// import {
+//   Product,
+//   Order,
+//   ConsultationRequest,
+//   ProductCategory,
+//   OrderStatus
+// } from './types';
+
+// Temporary type placeholders for validation
+type ProductCategory = 'hardwood' | 'engineered-wood' | 'luxury-vinyl' | 'laminate' | 'bamboo' | 'cork' | 'accessories';
+type OrderStatus = 'draft' | 'pending' | 'confirmed' | 'processing' | 'shipping' | 'delivered' | 'completed' | 'cancelled' | 'refunded';
+
+interface Product {
+  name?: { en?: string; bg?: string };
+  description?: { en?: string; bg?: string };
+  category?: ProductCategory;
+  brand?: string;
+  origin?: string;
+  pricing?: any;
+  specifications?: any;
+  availability?: any;
+  images?: any[];
+}
+
+interface Order {
+  userId?: string;
+  items?: any[];
+  shipping?: any;
+  billing?: any;
+  status?: OrderStatus;
+}
+
+interface ConsultationRequest {
+  userId?: string;
+  type?: string;
+  projectDetails?: any;
+  preferredContact?: any;
+}
 
 // Validation result interface
 export interface ValidationResult {

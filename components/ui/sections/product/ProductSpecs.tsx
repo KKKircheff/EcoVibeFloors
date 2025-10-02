@@ -27,15 +27,15 @@ export async function ProductSpecs({
 
     return (
         <Stack spacing={6}>
-            <Typography variant="h3" color="primary.main" fontWeight={600} textAlign="center">
+            {/* <Typography variant="h3" color="primary.main" fontWeight={600} textAlign="center">
                 {title || t('specifications.title')}
-            </Typography>
+            </Typography> */}
 
             <Grid container spacing={4}>
                 {specCategories.map((category, categoryIndex) => (
                     <Grid key={categoryIndex} size={{ xs: 12, md: 6 }}>
-                        <Card sx={{ p: 3 }}>
-                            <Typography variant="h6" color="secondary.main" fontWeight={500} gutterBottom>
+                        <Stack sx={{ p: 3 }}>
+                            <Typography variant="h5" color="secondary.main" fontWeight={600} pb={3}>
                                 {t(category.titleKey)}
                             </Typography>
                             <Stack spacing={2}>
@@ -48,15 +48,15 @@ export async function ProductSpecs({
                                     return (
                                         <Stack key={specIndex} spacing={2}>
                                             <Stack direction="row" justifyContent="space-between">
-                                                <Typography variant="body2">{specItem.label}</Typography>
-                                                <Typography variant="body2" fontWeight={500}>{specItem.value}</Typography>
+                                                <Typography variant="body1" fontWeight={400}>{specItem.label}</Typography>
+                                                <Typography variant="body1" fontWeight={400}>{specItem.value}</Typography>
                                             </Stack>
                                             {specIndex < category.specs.length - 1 && <Divider />}
                                         </Stack>
                                     );
                                 })}
                             </Stack>
-                        </Card>
+                        </Stack>
                     </Grid>
                 ))}
             </Grid>

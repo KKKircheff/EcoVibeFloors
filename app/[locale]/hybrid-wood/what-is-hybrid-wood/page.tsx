@@ -1,11 +1,25 @@
 import 'server-only';
 import { Stack, Typography, Box, Container, Divider } from '@mui/material';
-import { getTranslations } from 'next-intl/server';
+import { getTranslations, setRequestLocale } from 'next-intl/server';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import Footer from '@/components/layout/footer/Footer.component';
 
-export default async function WhatIsHybridWoodPage() {
+// Force static generation
+export const dynamic = 'error';
+
+interface WhatIsHybridWoodPageProps {
+    params: Promise<{
+        locale: string;
+    }>;
+}
+
+export default async function WhatIsHybridWoodPage({ params }: WhatIsHybridWoodPageProps) {
+    const { locale } = await params;
+
+    // Enable static rendering
+    setRequestLocale(locale);
+
     const t = await getTranslations('whatIsHybridWood');
 
     return (
