@@ -40,7 +40,7 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
     };
 
     return (
-        <Stack direction='row' alignItems={'center'} spacing={0} px={1}>
+        <Stack direction='row' alignItems={'center'} spacing={0} px={{ xs: 0, md: 1 }}>
             <Select
                 variant="standard"
                 size="medium"
@@ -50,11 +50,9 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                 onClose={handleClose}
                 open={open}
                 sx={{
-                    // border: 'none !important',
-                    maxWidth: flagSize + 2,
+                    maxWidth: `${flagSize + 10}px !important`,
+                    width: `${flagSize + 10}px !important`,
                     overflow: 'hidden',
-
-                    // Remove underline and border effects
                     '&::before, &::after': {
                         display: 'none !important',
                         border: 'none !important',
@@ -64,7 +62,9 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                         marginTop: .6,
                         padding: '0px 0px',
                         overflow: 'hidden',
-                        maxWidth: flagSize,
+                        maxWidth: `${flagSize + 2}px !important`,
+                        minWidth: `${flagSize + 2}px !important`,
+                        width: `${flagSize + 2}px !important`,
                         background: 'transparent',
                         // background: c.neutral[200],
                         borderRadius: 0,
@@ -96,8 +96,9 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                 MenuProps={{
                     PaperProps: {
                         sx: {
-                            mt: isMobile ? -1.5 : 1,
-                            ml: -1.3,
+                            mt: isMobile ? .5 : 1,
+                            ml: 0,
+                            py: .2,
                             borderRadius: br.sm,
                             backgroundColor: palette.info[400],
                             '& .MuiMenuItem-root': {
@@ -117,23 +118,27 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                         },
                     },
                     anchorOrigin: {
-                        vertical: isMobile ? 'top' : 'bottom',
+                        vertical: 'bottom',
                         horizontal: 'left',
                     },
                     transformOrigin: {
-                        vertical: isMobile ? 'bottom' : 'top',
+                        vertical: 'top',
                         horizontal: 'left',
                     },
                     disableScrollLock: true,
                 }}
             >
-                <MenuItem value='bg' sx={{ mb: .5 }}>
+                <MenuItem value='bg' sx={{ mb: .5, }}>
                     <Image
                         src={`/images/flags/bg.png`}
                         alt="Bulgarian Flag"
                         width={flagSize}
                         height={flagSize}
-                        style={{ borderRadius: flagSize }}
+                        style={{
+                            width: `${flagSize}px`,
+                            height: `${flagSize - 6}px`,
+                            objectFit: 'fill'
+                        }}
                     // style={{ borderRadius: flagSize, border: `.5px solid ${palette.info[100]}` }}
                     // style={{ borderRadius: br.sm, border: `.5px solid ${palette.info[100]}` }}
                     />
@@ -151,7 +156,11 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                         alt="UK flag"
                         width={flagSize}
                         height={flagSize}
-                        style={{ borderRadius: flagSize }}
+                        style={{
+                            width: `${flagSize}px`,
+                            height: `${flagSize - 6}px`,
+                            objectFit: 'fill'
+                        }}
                     />
                     <Typography
                         color='info.contrastText'
@@ -168,6 +177,7 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                 color={isScrolled ? palette.info[600] : '#ffffff'}
                 onClick={handleOpen}
                 style={{
+                    paddingTop: '4px',
                     transition: 'color 0.3s ease-in-out',
                     cursor: 'pointer'
                 }}

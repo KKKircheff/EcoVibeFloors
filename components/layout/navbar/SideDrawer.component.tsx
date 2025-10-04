@@ -85,8 +85,8 @@ const SideDrawer = ({
                     <Typography
                         component="label"
                         htmlFor="close-icon"
-                        variant="h1"
-                        fontWeight="600"
+                        variant="h2"
+                        fontWeight="500"
                         color="primary.500"
                         fontFamily={caveat.style.fontFamily}
                     >
@@ -96,6 +96,9 @@ const SideDrawer = ({
                         isDrawerOpen={isDrawerOpen}
                         setIsDrawerOpen={setIsDrawerOpen}
                     />
+                </Stack>
+                <Stack spacing={2}>
+                    <LanguageSelector locale={locale} />
                 </Stack>
 
                 <List
@@ -118,9 +121,6 @@ const SideDrawer = ({
                     }
                 </List>
 
-                <Stack spacing={2} mt='auto'>
-                    <LanguageSelector locale={locale} />
-                </Stack>
             </Stack>
         </Drawer>
     );

@@ -75,7 +75,7 @@ const MobileListMenuItem = ({ route, setIsDrawerOpen }: ItemProps) => {
                                     aria-label={t(`${submenuItem.name.replace(/\s/g, '_')}` as keyof Messages['navigation'])}
                                 >
                                     <Typography
-                                        variant='body1'
+                                        variant='subtitle2'
                                         color='info.600'
                                         sx={{
                                             fontWeight: 400,

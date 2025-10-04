@@ -1,96 +1,148 @@
 'use client';
-
-import React from 'react';
-import { Card, CardContent, CardMedia, Stack, Typography, Chip } from '@mui/material';
-import { useTranslations } from 'next-intl';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import { Stack, Typography, Box } from '@mui/material';
+import { useLocale, useTranslations } from 'next-intl';
 import { Product } from '@/types/products';
 import { useRouter } from '@/i18n/navigation';
-import { Messages } from '@/global';
+import { borderRadius } from '@/lib/styles/borderRadius';
+import { ProductCardSkeleton } from './ProductCardSkeleton';
+import { getStorageUrl } from '@/lib/utils/getStorageUrl';
 
 export interface ProductCardProps {
     product: Product;
-    locale: string;
-    baseImageUrl: string; // Firebase Storage base URL from env
 }
-
-/**
- * ProductCard component for displaying product in grid/list view
- * Shows thumbnail, name, pattern, price with hover effect
- */
-export function ProductCard({ product, locale, baseImageUrl }: ProductCardProps) {
+export function ProductCard({ product }: ProductCardProps) {
     const t = useTranslations();
+    const locale = useLocale();
     const router = useRouter();
-    const [isHovered, setIsHovered] = React.useState(false);
 
-    // Get localized content
+    const [isHovered, setIsHovered] = useState(false);
+    const [isLoading, setIsLoading] = useState(true);
+    const [hoverImageLoaded, setHoverImageLoaded] = useState(false);
+
     const localizedContent = product.i18n[locale as keyof typeof product.i18n];
 
-    // Build Firebase Storage URLs
     const mainImage = product.images[0];
-    const hoverImage = product.images[1] || mainImage;
-    const storageBucket = process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET;
+    const hoverImage = product.images[product.images.length - 1] || mainImage;
 
-    // Construct Firebase Storage URL with proper encoding
-    const getStorageUrl = (imageName: string) => {
-        const path = `products/${product.collection}/${product.pattern}/${product.sku}/thumbnail/${imageName}`;
-        const encodedPath = encodeURIComponent(path);
-        return `https://firebasestorage.googleapis.com/v0/b/${storageBucket}/o/${encodedPath}?alt=media`;
-    };
+    const mainImageUrls = getStorageUrl(
+        product.collection,
+        product.pattern,
+        product.sku,
+        mainImage
+    );
 
-    const mainImageUrl = getStorageUrl(mainImage);
-    const hoverImageUrl = getStorageUrl(hoverImage);
+    const hoverImageUrls = getStorageUrl(
+        product.collection,
+        product.pattern,
+        product.sku,
+        hoverImage
+    );
 
-    // Get pattern translation
-    const patternKey = product.pattern as keyof Messages['patterns'];
-    const patternLabel = t(`patterns.${patternKey}`);
+    const mainImageUrl = mainImageUrls.full;
+    const hoverImageUrl = hoverImageUrls.full;
 
     const handleClick = () => {
         router.push(`/${product.collection}/${product.pattern}/${product.slug}`);
     };
 
+    const handleMainImageLoad = () => {
+        setIsLoading(false);
+    };
+
+    const handleHoverImageLoad = () => {
+        setHoverImageLoaded(true);
+    };
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+
     return (
-        <Card
-            onClick={handleClick}
-            onMouseEnter={() => setIsHovered(true)}
-            onMouseLeave={() => setIsHovered(false)}
-            sx={{
-                cursor: 'pointer',
-                textDecoration: 'none',
-                transition: 'transform 0.2s, box-shadow 0.2s',
-                '&:hover': {
-                    transform: 'translateY(-4px)',
-                    boxShadow: 4,
-                },
-                height: '100%',
-                display: 'flex',
-                flexDirection: 'column',
-            }}
-        >
-            <CardMedia
-                component="img"
-                height="280"
-                image={isHovered ? hoverImageUrl : mainImageUrl}
-                alt={product.imageAlt[locale as keyof typeof product.imageAlt]}
+        <Box sx={{ position: 'relative', height: '100%' }}>
+            {/* Skeleton overlay */}
+            <Box
                 sx={{
-                    objectFit: 'cover',
-                    transition: 'opacity 0.3s',
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    right: 0,
+                    bottom: 0,
+                    zIndex: isLoading ? 2 : -1,
+                    opacity: isLoading ? 1 : 0,
+                    transition: 'opacity 0.3s ease-in-out',
+                    pointerEvents: isLoading ? 'auto' : 'none',
                 }}
-            />
-            <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                <Stack direction="row" spacing={1} mb={1}>
-                    <Chip label={patternLabel} size="small" color="primary" variant="outlined" />
-                </Stack>
+            >
+                <ProductCardSkeleton />
+            </Box>
 
-                <Typography variant="h6" component="h3" gutterBottom sx={{ flexGrow: 1 }}>
-                    {localizedContent.name}
-                </Typography>
+            {/* Actual card content */}
+            <Stack
+                onClick={handleClick}
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={() => setIsHovered(false)}
+                spacing={1}
+                sx={{
+                    cursor: 'pointer',
+                    transition: 'transform 0.2s',
+                    height: '100%',
+                    opacity: isLoading ? 0 : 1,
+                }}
+            >
+                <Box
+                    borderRadius={borderRadius.sm}
+                    sx={{ position: 'relative', width: '100%', paddingBottom: '150%' }}>
+                    <Image
+                        src={mainImageUrl}
+                        alt={product.imageAlt[locale as keyof typeof product.imageAlt]}
+                        fill
+                        loading="lazy"
+                        // sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        onLoad={handleMainImageLoad}
+                        style={{
+                            borderRadius: borderRadius.md,
+                            objectFit: 'cover',
+                            opacity: isHovered && hoverImageLoaded ? 0 : 1,
+                            transition: 'opacity 0.3s ease-in-out',
+                        }}
+                    />
 
-                <Stack direction="row" justifyContent="space-between" alignItems="center">
-                    <Typography variant="h6" color="primary.900" fontWeight="bold" >
-                        {t('products.priceFrom')} €{product.price.toFixed(2)}
+                    {/* Hover image - only load when needed */}
+                    {(isHovered || hoverImageLoaded) && mainImage !== hoverImage && (
+                        <Image
+                            src={hoverImageUrl}
+                            alt={product.imageAlt[locale as keyof typeof product.imageAlt]}
+                            fill
+                            loading="lazy"
+                            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw"
+                            onLoad={handleHoverImageLoad}
+                            style={{
+                                borderRadius: borderRadius.md,
+                                objectFit: 'cover',
+                                opacity: isHovered && hoverImageLoaded ? 1 : 0,
+                                transition: 'opacity 0.3s ease-in-out',
+                            }}
+                        />
+                    )}
+                </Box>
+
+                <Stack spacing={1} sx={{ flexGrow: 1, p: 2 }}>
+                    <Typography variant="h4" component="h3" gutterBottom sx={{ flexGrow: 1 }}>
+                        {localizedContent.name}
                     </Typography>
+
+                    <Stack direction="column" spacing={1}>
+                        <Typography variant="h5" component="h3" gutterBottom sx={{ flexGrow: 1 }}>
+                            {t('collections.names.hybridWood')}
+                        </Typography>
+                        <Typography variant="h6" color="primary.900" fontWeight="bold" >
+                            {t('products.priceFrom')} €{product.price.toFixed(2)}
+                        </Typography>
+                    </Stack>
                 </Stack>
-            </CardContent>
-        </Card>
+            </Stack>
+        </Box>
     );
 }

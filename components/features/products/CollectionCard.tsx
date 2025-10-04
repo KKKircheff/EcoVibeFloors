@@ -52,23 +52,24 @@ export function CollectionCard({
                 component="img"
                 height="240"
                 image={imageSrc}
-                alt={t(nameKey as any)}
+                alt={t(nameKey)}
                 sx={{
                     objectFit: 'cover',
                 }}
             />
             <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column' }}>
-                <Typography variant="h4" component="h2" gutterBottom color="primary.main">
-                    {t(nameKey as any)}
-                </Typography>
-
                 <Typography
                     variant="body1"
                     color="text.secondary"
                     sx={{ flexGrow: 1 }}
                 >
-                    {t(descriptionKey as any)}
+                    {t(descriptionKey)}
                 </Typography>
+
+                <Typography variant="h4" component="h2" gutterBottom color="primary.main">
+                    {t(nameKey)}
+                </Typography>
+
 
                 {productCount !== undefined && (
                     <Typography variant="body2" color="text.secondary" mb={2}>

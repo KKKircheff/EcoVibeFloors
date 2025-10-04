@@ -6,7 +6,14 @@ const withNextIntl = createNextIntlPlugin('./i18n/request.ts');
 const nextConfig: NextConfig = {
     allowedDevOrigins: ['127.0.0.1'],
     images: {
-        qualities: [75, 85, 90],
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'firebasestorage.googleapis.com',
+                pathname: '/v0/b/*/o/**',
+            },
+        ],
+        qualities: [75, 85, 100],
         formats: ['image/webp', 'image/avif'],
     },
     modularizeImports: {

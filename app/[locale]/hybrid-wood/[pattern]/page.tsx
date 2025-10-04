@@ -8,9 +8,9 @@ import PageLayoutContainer from '@/components/layout/page-container/PageLayoutCo
 import Footer from '@/components/layout/footer/Footer.component';
 import { isValidPattern, ProductPattern } from '@/types/products';
 import { getProductsByCollectionAndPattern } from '@/utils/products';
-import { ProductGrid } from '@/components/features/products';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
+import { ProductGrid } from '@/components/features/products/ProductGrid';
 
 // Force static generation
 export const dynamic = 'error';
@@ -85,19 +85,15 @@ export default async function HybridWoodPatternPage({ params }: PatternPageProps
 
     return (
         <Stack>
-            {/* Hero Section */}
-            <PageLayoutContainer bgcolor="primary.main" py={{ xs: 8, md: 12 }}>
+            <PageLayoutContainer bgcolor="white" pt={{ xs: 3, md: 8 }} pb={0}>
                 <Stack spacing={3} alignItems="center" textAlign="center">
-                    <Typography variant="h1" color="primary.contrastText">
+                    <Typography variant="h1" fontWeight={600}>
                         {tHybrid('title')} - {tPatterns(patternKey)}
                     </Typography>
-                    <Typography variant="h5" color="primary.contrastText" maxWidth="800px">
+                    <Typography variant="h5" maxWidth="800px">
                         {tPatterns(patternDescKey, {
                             defaultValue: tPatterns(patternKey)
                         })}
-                    </Typography>
-                    <Typography variant="body1" color="primary.contrastText">
-                        {products.length} {tProducts('productsAvailable')}
                     </Typography>
                 </Stack>
             </PageLayoutContainer>
@@ -106,8 +102,6 @@ export default async function HybridWoodPatternPage({ params }: PatternPageProps
             <PageLayoutContainer bgcolor="primary.contrastText" py={{ xs: 6, md: 10 }}>
                 <ProductGrid
                     products={products}
-                    locale={locale}
-                    baseImageUrl={baseImageUrl}
                     emptyMessage={tProducts('noProductsFound')}
                 />
             </PageLayoutContainer>

@@ -42,7 +42,6 @@ const IconLink = ({
                 src={iconUrl}
                 fill
                 sizes={`(max-width: ${mdBreak}) 100vw, 50vw`}
-                quality={90}
                 alt='social media icon'
                 style={{
                     borderRadius: borderRadius.md,
