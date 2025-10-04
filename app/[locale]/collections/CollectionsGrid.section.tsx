@@ -1,8 +1,8 @@
 import { Stack, Typography, Grid } from '@mui/material';
 
-import { CollectionCard } from '@/components/features/products';
 import { getAllCollections } from '@/utils/products';
 import { getProductCountByCollection } from '@/utils/products';
+import { CollectionCard } from '@/components/features/products/CollectionCard';
 
 interface CollectionsGridProps {
     title: string;

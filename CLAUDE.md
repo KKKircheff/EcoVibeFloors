@@ -53,6 +53,14 @@ To create a visually compelling, high-quality website with strong design and eng
 - **Services**: Firestore for data, Storage for assets, Auth for authentication
 - **Security**: Client-side configuration uses public environment variables
 
+#### Firebase App Hosting Secret Management
+- **apphosting.yaml**: Contains Firebase App Hosting deployment configuration with environment variables
+- **Security pattern**: `apphosting.yaml` is in `.gitignore` (kept local only, never committed)
+- **Deployment**: `firebase deploy` reads from local `apphosting.yaml` file
+- **Environment variables**: Firebase config stored in both `.env.local` (for Next.js) and `apphosting.yaml` (for deployment)
+- **Why local-only**: Prevents API keys from being exposed in GitHub repository
+- **Note**: Firebase client-side API keys are meant to be public and work with Security Rules, but keeping them out of git history is best practice
+
 ### App Router Structure
 - **Root layout**: Removed in favor of locale-specific layout
 - **Locale layout**: `app/[locale]/layout.tsx` handles internationalization and MUI setup

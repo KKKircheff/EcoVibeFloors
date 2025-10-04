@@ -134,9 +134,19 @@ export function ProductCard({ product }: ProductCardProps) {
                     </Typography>
 
                     <Stack direction="column" spacing={1}>
-                        <Typography variant="h5" component="h3" gutterBottom sx={{ flexGrow: 1 }}>
-                            {t('collections.names.hybridWood')}
-                        </Typography>
+                        <Stack direction='row'>
+                            <Typography variant="h5" gutterBottom sx={{ flexGrow: 1 }}>
+                                {t('collections.names.hybridWood')}
+
+                            </Typography>
+                            <Typography>
+                                {localizedContent.specifications?.dimensions && (
+                                    <>
+                                        {localizedContent.specifications.dimensions.length?.replace(' cm', '')} × {localizedContent.specifications.dimensions.width?.replace(' cm', '')} × {localizedContent.specifications.dimensions.thickness?.replace(' cm', '')} cm
+                                    </>
+                                )}
+                            </Typography>
+                        </Stack>
                         <Typography variant="h6" color="primary.900" fontWeight="bold" >
                             {t('products.priceFrom')} €{product.price.toFixed(2)}
                         </Typography>

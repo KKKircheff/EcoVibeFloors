@@ -98,7 +98,6 @@ export default async function HybridWoodPatternPage({ params }: PatternPageProps
                 </Stack>
             </PageLayoutContainer>
 
-            {/* Products Grid */}
             <PageLayoutContainer bgcolor="primary.contrastText" py={{ xs: 6, md: 10 }}>
                 <ProductGrid
                     products={products}
