@@ -65,7 +65,6 @@ export function CollectionCard({
                 <Typography
                     variant="body1"
                     color="text.secondary"
-                    paragraph
                     sx={{ flexGrow: 1 }}
                 >
                     {t(descriptionKey as any)}

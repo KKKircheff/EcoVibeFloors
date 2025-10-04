@@ -17,11 +17,12 @@ export async function HomeHero() {
                 alt="Premium wooden flooring showcase"
                 fill
                 priority
+                fetchPriority="high"
                 style={{
                     objectFit: 'cover',
                     objectPosition: '100% 100%',
                 }}
-                sizes="100vw"
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
             />
             <HeroContent
                 title={t('hero.title')}

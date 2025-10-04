@@ -86,7 +86,7 @@ export function ProductCard({ product, locale, baseImageUrl }: ProductCardProps)
                 </Typography>
 
                 <Stack direction="row" justifyContent="space-between" alignItems="center">
-                    <Typography variant="h6" color="primary.main" fontWeight="bold">
+                    <Typography variant="h6" color="primary.900" fontWeight="bold" >
                         {t('products.priceFrom')} €{product.price.toFixed(2)}
                     </Typography>
                 </Stack>

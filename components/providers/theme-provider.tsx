@@ -1,7 +1,7 @@
 'use client';
 import { ThemeProvider } from '@mui/material/styles';
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v15-appRouter';
-import { CssBaseline } from '@mui/material';
+import { CssBaseline, GlobalStyles } from '@mui/material';
 import luxuryTheme from '@/lib/styles/theme';
 
 type Props = {
@@ -10,11 +10,12 @@ type Props = {
 
 export default function ClientThemeProvider({ children }: Props) {
     return (
-        <AppRouterCacheProvider >
+        <AppRouterCacheProvider>
+            <GlobalStyles styles="@layer base,mui,components,utilities;" />
             <ThemeProvider theme={luxuryTheme}>
                 <CssBaseline />
                 {children}
             </ThemeProvider>
         </AppRouterCacheProvider>
     );
-}
+} ``

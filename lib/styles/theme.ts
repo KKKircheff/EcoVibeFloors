@@ -1,28 +1,31 @@
 import {createTheme, responsiveFontSizes} from '@mui/material/styles';
-import {Zen_Kaku_Gothic_New, Poiret_One, Montserrat, Caveat} from 'next/font/google';
+import {Zen_Kaku_Gothic_New, Montserrat, Caveat} from 'next/font/google';
 import {palette} from './pallete';
 
 const zenKakuGothicNew = Zen_Kaku_Gothic_New({
-    weight: ['300', '400', '500', '700'],
+    weight: ['400', '500'],
     subsets: ['latin', 'cyrillic'],
-    display: 'swap',
+    display: 'optional',
+    preload: true,
 });
 
-const poiretOne = Poiret_One({
-    weight: ['400'],
-    subsets: ['latin', 'cyrillic'],
-    display: 'swap',
-});
+// const poiretOne = Poiret_One({
+//     weight: ['400'],
+//     subsets: ['latin', 'cyrillic'],
+//     display: 'swap',
+// });
 
 const montserrat = Montserrat({
-    weight: ['300', '400', '500', '600', '700'],
-    subsets: ['latin', 'cyrillic'],
-    display: 'swap',
-});
-export const caveat = Caveat({
     weight: ['400', '500', '600'],
     subsets: ['latin', 'cyrillic'],
+    display: 'optional',
+    preload: true,
+});
+export const caveat = Caveat({
+    weight: ['400', '500'],
+    subsets: ['latin', 'cyrillic'],
     display: 'swap',
+    preload: false,
 });
 
 const baseTheme = createTheme({

@@ -1,15 +1,17 @@
 import 'server-only';
-import { alpha, Stack } from '@mui/material';
+import dynamicImport from 'next/dynamic';
+import { Suspense } from 'react';
+import { alpha, Stack, Box, Skeleton } from '@mui/material';
 import { setRequestLocale } from 'next-intl/server';
 
 import { HomeHero } from './home/HomeHero.section';
-import { HomeFeatures } from './home/HomeFeatures.section';
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
-import Footer from '@/components/layout/footer/Footer.component';
-import { ImageTextGrid } from '@/components/ui/grid/ImageTextGrid';
-import QuotesSection from './home/Quotes.section';
 import { palette } from '@/lib/styles/pallete';
-import HomecardsSection from './home/Homecards.section';
+
+const HomeFeatures = dynamicImport(() => import('./home/HomeFeatures.section').then(mod => ({ default: mod.HomeFeatures })));
+const QuotesSection = dynamicImport(() => import('./home/Quotes.section'));
+const HomecardsSection = dynamicImport(() => import('./home/Homecards.section'));
+const Footer = dynamicImport(() => import('@/components/layout/footer/Footer.component'));
 
 // Force static generation
 export const dynamic = 'error';
@@ -25,31 +27,58 @@ export default async function HomePage({ params }: HomePageProps) {
 
     // Enable static rendering
     setRequestLocale(locale);
+
     const bgcolor = alpha(palette.info[50], .4)
     return (
         <Stack width={'100%'}>
             <HomeHero />
 
-            <PageLayoutContainer pb={{ xs: 8, md: 20 }} pt={{ xs: 6, md: 20 }} width='100%' bgcolor={bgcolor} >
-                <HomeFeatures />
-            </PageLayoutContainer>
+            <Suspense fallback={
+                <PageLayoutContainer pb={{ xs: 8, md: 20 }} pt={{ xs: 6, md: 20 }} width='100%' bgcolor={bgcolor}>
+                    <Box sx={{ py: 4 }}>
+                        <Skeleton variant="rectangular" height={200} sx={{ mb: 2 }} />
+                        <Skeleton variant="rectangular" height={200} />
+                    </Box>
+                </PageLayoutContainer>
+            }>
+                <PageLayoutContainer pb={{ xs: 8, md: 20 }} pt={{ xs: 6, md: 20 }} width='100%' bgcolor={bgcolor} >
+                    <HomeFeatures />
+                </PageLayoutContainer>
+            </Suspense>
 
-            <PageLayoutContainer
-                py={{ xs: 4, md: 6 }}
-                sx={{
-                    backgroundImage: 'url(/images/tree-bg-1.webp)',
-                    backgroundSize: 'auto',
-                    backgroundPosition: 'left center',
-                    backgroundRepeat: 'repeat-y',
-                }}
-            >
-                <QuotesSection />
-                <HomecardsSection />
-            </PageLayoutContainer>
+            <Suspense fallback={
+                <PageLayoutContainer py={{ xs: 4, md: 6 }}>
+                    <Box sx={{ py: 4 }}>
+                        <Skeleton variant="rectangular" height={300} sx={{ mb: 2 }} />
+                        <Skeleton variant="rectangular" height={400} />
+                    </Box>
+                </PageLayoutContainer>
+            }>
+                <PageLayoutContainer
+                    py={{ xs: 4, md: 6 }}
+                    sx={{
+                        backgroundImage: 'url(/images/tree-bg-1.webp)',
+                        backgroundSize: 'auto',
+                        backgroundPosition: 'left center',
+                        backgroundRepeat: 'repeat-y',
+                    }}
+                >
+                    <QuotesSection />
+                    <HomecardsSection />
+                </PageLayoutContainer>
+            </Suspense>
 
-            <PageLayoutContainer pt={10} bgcolor='info.800'>
-                <Footer />
-            </PageLayoutContainer>
+            <Suspense fallback={
+                <PageLayoutContainer pt={10} bgcolor='info.800'>
+                    <Box sx={{ py: 8 }}>
+                        <Skeleton variant="rectangular" height={200} sx={{ bgcolor: 'rgba(255,255,255,0.1)' }} />
+                    </Box>
+                </PageLayoutContainer>
+            }>
+                <PageLayoutContainer pt={10} bgcolor='info.800'>
+                    <Footer />
+                </PageLayoutContainer>
+            </Suspense>
 
         </Stack>
     );

@@ -25,6 +25,7 @@ export function ImageTextGrid({ title, text, images, button1, button2, mirror = 
                     alt="Large featured image"
                     loading='lazy'
                     fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
                     style={{ objectFit: 'cover' }}
                 />
             </Box>
@@ -81,7 +82,9 @@ export function ImageTextGrid({ title, text, images, button1, button2, mirror = 
                             <Image
                                 src={`/images/home-page/${mirror ? image1 : image2}`}
                                 alt="Small image 1"
+                                loading='lazy'
                                 fill
+                                sizes="(max-width: 768px) 0px, 25vw"
                                 style={{ objectFit: 'cover' }}
                             />
                         </Box>
@@ -91,7 +94,9 @@ export function ImageTextGrid({ title, text, images, button1, button2, mirror = 
                             <Image
                                 src={`/images/home-page/${mirror ? image2 : image3}`}
                                 alt="Small image 2"
+                                loading='lazy'
                                 fill
+                                sizes="(max-width: 768px) 0px, 25vw"
                                 style={{ objectFit: 'cover' }}
                             />
                         </Box>

@@ -25,6 +25,8 @@ export function FeatureImageCard({
                     alt={title}
                     width={imageWidth}
                     height={imageHeight}
+                    sizes="130px"
+                    loading="lazy"
                     style={{ marginBottom: 16 }}
                 />
             )}
