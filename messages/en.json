@@ -240,10 +240,14 @@
         "noProductsFound": "No products found",
         "pricePerSquareMeter": "per square meter",
         "requestQuote": "Request Quote",
+        "orderSamples": "Order Samples",
         "contactUs": "Contact Us",
         "dimensions": "Dimensions",
         "appearance": "Appearance",
-        "warranty": "Warranty"
+        "warranty": "Warranty",
+        "width": "Width",
+        "length": "Length",
+        "thickness": "Thickness"
     },
     "contact": {
         "title": "Contact EcoVibeFloors",

@@ -7,13 +7,14 @@ interface HeroButtonProps extends ButtonProps {
     borderColor?: 'light' | 'lighter'
 }
 
-const PrimaryActionButton = ({ children, borderColor = 'lighter', ...otherProps }: HeroButtonProps) => {
-    // const borderColorValue = borderColor === 'light' ? palette.info[200] : palette.info[100]
+const PrimaryActionButton = ({ children, borderColor = 'lighter', variant = 'contained', ...otherProps }: HeroButtonProps) => {
+
+    const isOutlined = variant === 'outlined'
     const borderColorValue = palette.primary[500]
 
     return (
         <Button
-            variant='contained'
+            variant={variant}
             color='primary'
             size="large"
             {...otherProps}
@@ -22,10 +23,12 @@ const PrimaryActionButton = ({ children, borderColor = 'lighter', ...otherProps 
                 py: 2.5,
                 fontSize: '1.1rem',
                 fontWeight: 600,
-                color: palette.primary[50],
+                color: isOutlined ? palette.primary[500] : palette.primary[50],
                 border: `2px solid ${borderColorValue}`,
                 '&:hover': {
-                    border: `2px solid ${palette.primary[700]}`,
+                    border: isOutlined ? `2px solid ${palette.primary[700]}` : `2px solid ${palette.primary[700]}`,
+                    backgroundColor: isOutlined ? palette.primary[700] : palette.primary[700],
+                    color: isOutlined ? palette.primary[50] : palette.primary[50],
                 },
                 ...otherProps.sx
             }}

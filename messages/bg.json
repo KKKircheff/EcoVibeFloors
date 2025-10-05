@@ -236,10 +236,14 @@
         "noProductsFound": "Няма намерени продукти",
         "pricePerSquareMeter": "на квадратен метър",
         "requestQuote": "Поискайте оферта",
+        "orderSamples": "Поръчайте мостри",
         "contactUs": "Свържете се с нас",
         "dimensions": "Размери",
         "appearance": "Външен вид",
-        "warranty": "Гаранция"
+        "warranty": "Гаранция",
+        "width": "Ширина",
+        "length": "Дължина",
+        "thickness": "Дебелина"
     },
     "contact": {
         "title": "Свържете се с EcoVibeFloors",

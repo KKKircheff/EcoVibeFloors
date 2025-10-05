@@ -6,6 +6,8 @@ import type { Metadata } from 'next';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import Footer from '@/components/layout/footer/Footer.component';
+import ProductImageGallery from '@/components/products/product-image-gallery/ProductImageGallery.component';
+import ProductActions from '@/components/products/product-actions/ProductActions.component';
 import { isValidPattern, ProductPattern } from '@/types/products';
 import { getProductBySlug, getProductsByCollection } from '@/utils/products';
 import { routing } from '@/i18n/routing';
@@ -106,75 +108,108 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
     const patternName = tPatterns(patternKey);
     const installationSystemName = tInstallation(installationKey);
 
+    // Generate image URLs
+    const imageUrls = product.images.map((image) =>
+        getStorageUrl(product.collection, product.pattern, product.sku, image).full
+    );
+
+    // Get dimensions from specifications
+    const dimensions = localizedContent.specifications?.dimensions;
+
     return (
         <Stack>
-            {/* Hero Section with Product Name */}
-            <PageLayoutContainer bgcolor="primary.main" py={{ xs: 6, md: 8 }}>
-                <Stack spacing={2} alignItems="center" textAlign="center">
-                    <Typography variant="h1" color="primary.contrastText">
-                        {localizedContent.name}
-                    </Typography>
-                    <Stack direction="row" spacing={1} flexWrap="wrap" justifyContent="center">
-                        <Chip label={patternName} color="secondary" />
-                        <Chip label={installationSystemName} color="secondary" variant="outlined" />
-                    </Stack>
-                </Stack>
-            </PageLayoutContainer>
-
             {/* Product Details */}
-            <PageLayoutContainer bgcolor="background.paper" py={{ xs: 6, md: 10 }}>
-                <Grid container spacing={4}>
+            <PageLayoutContainer bgcolor="background.paper" py={{ xs: 4, md: 8 }}>
+                <Grid container spacing={{ xs: 4, md: 12 }}>
                     {/* Product Images */}
                     <Grid size={{ xs: 12, md: 6 }}>
-                        <Stack spacing={2}>
-                            {product.images.map((image, index) => (
-                                <Box
-                                    key={index}
-                                    sx={{
-                                        position: 'relative',
-                                        width: '100%',
-                                        aspectRatio: '4/3',
-                                        borderRadius: 2,
-                                        overflow: 'hidden',
-                                    }}
-                                >
-                                    <img
-                                        src={getStorageUrl(product.collection, product.pattern, product.sku, image).full}
-                                        alt={`${product.imageAlt[locale as keyof typeof product.imageAlt]} - ${index + 1}`}
-                                        style={{
-                                            width: '100%',
-                                            height: '100%',
-                                            objectFit: 'cover',
-                                        }}
-                                    />
-                                </Box>
-                            ))}
-                        </Stack>
+                        <ProductImageGallery
+                            images={imageUrls}
+                            productName={localizedContent.name}
+                        />
                     </Grid>
 
                     {/* Product Info */}
                     <Grid size={{ xs: 12, md: 6 }}>
                         <Stack spacing={3}>
-                            <Typography variant="h4" color="primary.main">
-                                {tProducts('priceFrom')} €{product.price.toFixed(2)}
-                            </Typography>
-
-                            {localizedContent.description && (
-                                <>
-                                    <Typography variant="body1">
-                                        {localizedContent.description}
+                            {/* Title and Price Row */}
+                            <Stack spacing={2}>
+                                <Stack
+                                    direction={{ xs: 'column', sm: 'row' }}
+                                    spacing={{ xs: 1, sm: 2 }}
+                                    alignItems={{ xs: 'flex-start', sm: 'baseline' }}
+                                    justifyContent="space-between"
+                                >
+                                    <Typography variant="h3" component="h1" color="text.primary">
+                                        {localizedContent.name}
                                     </Typography>
-                                    <Divider />
-                                </>
+                                    <Typography
+                                        variant="h4"
+                                        color="primary.main"
+                                        sx={{ fontWeight: 600, whiteSpace: 'nowrap' }}
+                                    >
+                                        €{product.price.toFixed(2)}
+                                    </Typography>
+                                </Stack>
+
+                                <Stack direction="row" spacing={1} flexWrap="wrap">
+                                    <Chip label={patternName} color="secondary" size="small" />
+                                    <Chip label={installationSystemName} color="secondary" variant="outlined" size="small" />
+                                </Stack>
+                            </Stack>
+
+                            <Divider />
+
+                            {/* Dimensions */}
+                            {dimensions && (
+                                <Stack spacing={1.5}>
+                                    <Typography variant="h6" color="text.primary">
+                                        {tProducts('dimensions')}
+                                    </Typography>
+                                    <Stack spacing={0.5}>
+                                        {dimensions.width && (
+                                            <Typography variant="body2" color="text.secondary">
+                                                <strong>{tProducts('width')}:</strong> {dimensions.width}
+                                            </Typography>
+                                        )}
+                                        {dimensions.length && (
+                                            <Typography variant="body2" color="text.secondary">
+                                                <strong>{tProducts('length')}:</strong> {dimensions.length}
+                                            </Typography>
+                                        )}
+                                        {dimensions.thickness && (
+                                            <Typography variant="body2" color="text.secondary">
+                                                <strong>{tProducts('thickness')}:</strong> {dimensions.thickness}
+                                            </Typography>
+                                        )}
+                                    </Stack>
+                                </Stack>
                             )}
+
+                            <Divider />
+
+                            {/* Description */}
+                            {localizedContent.description && (
+                                <Typography variant="body1" color="text.secondary">
+                                    {localizedContent.description}
+                                </Typography>
+                            )}
+
+                            {/* Action Buttons */}
+                            <ProductActions
+                                orderSamplesText={tProducts('orderSamples')}
+                                contactUsText={tProducts('contactUs')}
+                            />
+
+                            <Divider />
 
                             {/* Features */}
                             {localizedContent.features && localizedContent.features.length > 0 && (
                                 <Stack spacing={2}>
-                                    <Typography variant="h5">{tProducts('features')}</Typography>
+                                    <Typography variant="h6">{tProducts('keyFeatures')}</Typography>
                                     <Stack spacing={1}>
-                                        {localizedContent.features.map((feature, index) => (
-                                            <Typography key={index} variant="body2">
+                                        {localizedContent.features.slice(0, 5).map((feature, index) => (
+                                            <Typography key={index} variant="body2" color="text.secondary">
                                                 • {feature}
                                             </Typography>
                                         ))}
@@ -182,17 +217,15 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
                                 </Stack>
                             )}
 
-                            <Divider />
-
                             {/* Specifications */}
-                            <Stack spacing={2}>
-                                <Typography variant="h5">{tProducts('specifications')}</Typography>
+                            <Stack spacing={1}>
+                                <Typography variant="h6">{tProducts('specifications')}</Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    SKU: {product.sku}
+                                    <strong>SKU:</strong> {product.sku}
                                 </Typography>
                                 {product.gtin && (
                                     <Typography variant="body2" color="text.secondary">
-                                        GTIN: {product.gtin}
+                                        <strong>GTIN:</strong> {product.gtin}
                                     </Typography>
                                 )}
                             </Stack>
