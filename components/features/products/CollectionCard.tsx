@@ -95,7 +95,7 @@ export function CollectionCard({
                     sx={{
                         position: 'relative',
                         width: '100%',
-                        paddingBottom: '60%', // 5:3 aspect ratio for collections
+                        paddingBottom: { xs: '100%', sm: '80%', md: '60%' },
                         overflow: 'hidden'
                     }}
                 >

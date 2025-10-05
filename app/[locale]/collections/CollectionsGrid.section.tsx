@@ -13,7 +13,13 @@ export function CollectionsGrid({ title }: CollectionsGridProps) {
     const collections = getAllCollections();
 
     return (
-        <Stack spacing={6} bgcolor={'grey.100'} px={6} pb={{ xs: 8, md: 12 }} pt={{ xs: 6, md: 12 }}>
+        <Stack spacing={6}
+            bgcolor={{ xs: 'grey.50', md: "info.50" }}
+            mx={0}
+            px={{ xs: 0, md: 6 }}
+            pb={{ xs: 8, md: 12 }}
+            pt={{ xs: 6, md: 12 }}
+        >
             <Typography variant="h2" fontWeight={600} textAlign={'center'} pb={3}>
                 {title}
             </Typography>

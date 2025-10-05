@@ -132,7 +132,7 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                         height={flagSize}
                         style={{
                             width: `${flagSize}px`,
-                            height: `${flagSize - 6}px`,
+                            height: `${flagSize - 4}px`,
                             objectFit: 'fill'
                         }}
                     />
@@ -152,7 +152,7 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                         height={flagSize}
                         style={{
                             width: `${flagSize}px`,
-                            height: `${flagSize - 6}px`,
+                            height: `${flagSize - 4}px`,
                             objectFit: 'fill'
                         }}
                     />
