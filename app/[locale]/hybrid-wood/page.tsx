@@ -34,15 +34,11 @@ export default async function HybridWoodPage({ params }: HybridWoodPageProps) {
             <HybridWoodHero />
 
             <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }}>
-                <HybridWoodStyles />
-            </PageLayoutContainer>
-
-            <PageLayoutContainer bgcolor={overviewBgcolor} py={{ xs: 6, md: 10 }}>
-                <HybridWoodOverview />
+                <HybridWoodFeatures />
             </PageLayoutContainer>
 
             <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }}>
-                <HybridWoodFeatures />
+                <HybridWoodStyles />
             </PageLayoutContainer>
 
             <PageLayoutContainer bgcolor='secondary.main' py={{ xs: 6, md: 10 }}>

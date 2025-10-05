@@ -4,18 +4,29 @@
 
 import {CollectionType, ProductPattern} from '@/types/products';
 
+export interface CollectionCardImageConfig {
+    main: {
+        sku: string; // Product SKU for main image
+        imageIndex?: number; // Index of image (default: 0)
+        full?: boolean; // Whether to use full or thumbnail (default: false)
+    };
+    hover: {
+        sku: string; // Product SKU for hover image
+        imageIndex?: number; // Index of image (default: 0)
+        full?: boolean; // Whether to use full or thumbnail (default: false)
+    };
+}
+
 export interface CollectionMetadata {
     id: CollectionType;
     slug: string;
     nameKey: string; // Translation key for collection name
     descriptionKey: string; // Translation key for description
     patterns: ProductPattern[]; // Available patterns for this collection
-    heroImage?: string; // Optional hero image path
+    heroImage?: string; // Optional hero image path (deprecated - use cardImages instead)
+    cardImages?: CollectionCardImageConfig; // Images for collection card
 }
 
-/**
- * Get metadata for all collections
- */
 export function getAllCollections(): CollectionMetadata[] {
     return [
         {
@@ -24,6 +35,18 @@ export function getAllCollections(): CollectionMetadata[] {
             nameKey: 'collections.names.hybridWood',
             descriptionKey: 'collections.hybridWood.description',
             patterns: ['plank', 'fishbone'],
+            cardImages: {
+                main: {
+                    sku: 'FLR-5015',
+                    imageIndex: 0,
+                    full: true,
+                },
+                hover: {
+                    sku: 'FLR-5002',
+                    imageIndex: 0,
+                    full: true,
+                },
+            },
         },
         // Future collections to be added:
         // {

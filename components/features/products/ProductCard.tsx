@@ -62,6 +62,12 @@ export function ProductCard({ product }: ProductCardProps) {
         setIsHovered(true);
     };
 
+    const formatDimensions = (dimensions: { length?: string; width?: string; thickness?: string }): string => {
+        if (!dimensions.length || !dimensions.width || !dimensions.thickness) {
+            return '';
+        }
+        return `${dimensions.length.replace(' cm', '')} × ${dimensions.width.replace(' cm', '')} × ${dimensions.thickness.replace(' cm', '')} cm`;
+    };
     return (
         <Box sx={{ position: 'relative', height: '100%' }}>
             {/* Skeleton overlay */}
@@ -140,16 +146,12 @@ export function ProductCard({ product }: ProductCardProps) {
                     </Typography>
 
                     <Stack direction="column" spacing={1}>
-                        <Stack direction={{ xs: 'column', lg: 'row' }} alignItems={'çenter'}>
-                            <Typography variant="h5" gutterBottom sx={{ flexGrow: 1 }}>
+                        <Stack direction={{ xs: 'column', xl: 'row' }} alignItems={'çenter'} justifyContent={'space-between'}>
+                            <Typography variant="subtitle2">
                                 {t('collections.names.hybridWood')}
                             </Typography>
-                            <Typography>
-                                {localizedContent.specifications?.dimensions && (
-                                    <>
-                                        {localizedContent.specifications.dimensions.length?.replace(' cm', '')} × {localizedContent.specifications.dimensions.width?.replace(' cm', '')} × {localizedContent.specifications.dimensions.thickness?.replace(' cm', '')} cm
-                                    </>
-                                )}
+                            <Typography variant='subtitle2'>
+                                {localizedContent.specifications?.dimensions && formatDimensions(localizedContent.specifications.dimensions)}
                             </Typography>
                         </Stack>
                         <Typography variant="h6" color="primary.900" fontWeight="bold" >

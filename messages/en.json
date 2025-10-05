@@ -307,7 +307,19 @@
             },
             "warranty": {
                 "title": "Long Warranty",
-                "description": "Up to 35-year warranty for long-term peace of mind"
+                "description": "Up to 25-year warranty for long-term peace of mind"
+            },
+            "revolutionaryTech": {
+                "title": "Revolutionary Tech",
+                "description": "Chemical-free Wood Powder technology combining real oak with advanced engineering"
+            },
+            "underfloorHeating": {
+                "title": "Floor Heating Compatible",
+                "description": "Low thermal resistance (0.07 m²K/W) perfect for underfloor heating systems"
+            },
+            "ecoFriendly": {
+                "title": "Eco-Friendly",
+                "description": "Uses 90% less oak with HDF core from sustainable wood chips"
             }
         },
         "sustainability": {
@@ -340,7 +352,7 @@
         "styles": {
             "title": "Available Styles & Formats",
             "xlPlanks": {
-                "title": "XL Planks",
+                "title": "Planks",
                 "dimensions": "237cm × 27cm",
                 "description": "Extra-long planks create a spacious, modern aesthetic perfect for contemporary interiors and open-plan living spaces.",
                 "imageCaption": "[Image: Room showcasing XL plank hybrid wood flooring]"

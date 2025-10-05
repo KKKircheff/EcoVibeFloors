@@ -10,9 +10,9 @@ export interface ProductStylesProps {
 export function ProductStyles({ title, styles }: ProductStylesProps) {
     return (
         <Stack spacing={6}>
-            <Typography variant="h3" color="primary.main" fontWeight={600} textAlign="center">
+            {/* <Typography variant="h3" color="primary.main" fontWeight={600} textAlign="center">
                 {title}
-            </Typography>
+            </Typography> */}
 
             <Grid container spacing={8}>
                 {styles.map((style, index) => (

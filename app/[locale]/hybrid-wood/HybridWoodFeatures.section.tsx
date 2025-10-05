@@ -12,6 +12,12 @@ export async function HybridWoodFeatures() {
     const featuresConfig = [
         {
             icon: <Ri24HoursLine size={60} />,
+            titleKey: 'features.revolutionaryTech.title',
+            descriptionKey: 'features.revolutionaryTech.description',
+            iconColor: 'primary' as const
+        },
+        {
+            icon: <Ri24HoursLine size={60} />,
             titleKey: 'features.waterResistance.title',
             descriptionKey: 'features.waterResistance.description',
             iconColor: 'primary' as const
@@ -27,27 +33,33 @@ export async function HybridWoodFeatures() {
             titleKey: 'features.warranty.title',
             descriptionKey: 'features.warranty.description',
             iconColor: 'primary' as const
+        },
+        {
+            icon: <BiLayerPlus size={60} />,
+            titleKey: 'features.underfloorHeating.title',
+            descriptionKey: 'features.underfloorHeating.description',
+            iconColor: 'primary' as const
+        },
+        {
+            icon: <HiOutlineBadgeCheck size={60} />,
+            titleKey: 'features.ecoFriendly.title',
+            descriptionKey: 'features.ecoFriendly.description',
+            iconColor: 'primary' as const
         }
     ];
 
     return (
-        <Stack spacing={6}>
-            <Typography variant="h3" color="primary.main" fontWeight={600} textAlign="center">
-                {t('features.title')}
-            </Typography>
-
-            <Grid container spacing={{ xs: 6, md: 4 }}>
-                {featuresConfig.map((feature, index) => (
-                    <Grid key={index} size={{ xs: 12, md: 4 }}>
-                        <FeatureIconCard
-                            icon={feature.icon}
-                            title={t(feature.titleKey)}
-                            description={t(feature.descriptionKey)}
-                            iconColor={feature.iconColor}
-                        />
-                    </Grid>
-                ))}
-            </Grid>
-        </Stack>
+        <Grid container spacing={{ xs: 6, md: 4 }}>
+            {featuresConfig.map((feature, index) => (
+                <Grid key={index} size={{ xs: 12, md: 6, lg: 4 }}>
+                    <FeatureIconCard
+                        icon={feature.icon}
+                        title={t(feature.titleKey)}
+                        description={t(feature.descriptionKey)}
+                        iconColor={feature.iconColor}
+                    />
+                </Grid>
+            ))}
+        </Grid>
     );
 }

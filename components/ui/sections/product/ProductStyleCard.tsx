@@ -122,18 +122,21 @@ export function ProductStyleCard({
                 </Box>
 
                 <CardContent>
-                    <Stack spacing={2}>
-                        <Typography variant="h6" color="primary.main" fontWeight={500}>
+                    <Stack spacing={1} sx={{ p: 2 }}>
+                        <Typography variant="h4" component="h3" gutterBottom sx={{ flexGrow: 1 }}>
                             {title}
                         </Typography>
-                        {dimensions && (
-                            <Typography variant="body2" color="text.secondary">
-                                {dimensions}
+
+                        <Stack spacing={1}>
+                            {dimensions && (
+                                <Typography>
+                                    {dimensions} × 1.1 cm
+                                </Typography>
+                            )}
+                            <Typography variant="body1">
+                                {description}
                             </Typography>
-                        )}
-                        <Typography variant="body2">
-                            {description}
-                        </Typography>
+                        </Stack>
                     </Stack>
                 </CardContent>
             </Card>
