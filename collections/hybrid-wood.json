@@ -3,7 +3,8 @@
         "generatedAt": "2025-10-01T06:31:24.059Z",
         "totalProducts": 18,
         "collection": "hybrid-wood",
-        "description": "Enhanced product data with collection/pattern structure and i18n (array format)"
+        "description": "Enhanced product data with collection/pattern structure and i18n (array format)",
+        "lastSorted": "2025-10-05T10:29:27.422Z"
     },
     "products": [
         {
@@ -24,6 +25,7 @@
                 "Floer-Hybride-Hout-Natuur-Eiken-Subtiel-sfeer-3.webp",
                 "Floer-Hybride-Hout-Natuur-Eiken-Subtiel-sfeer-4.webp"
             ],
+            "displayImages": [2, 4],
             "imageAlt": {
                 "en": "Hybrid Wood - Natural Oak Subtle - Premium plank flooring example",
                 "bg": "Hybrid Wood - Natural Oak Subtle - Премиум право редене пример"
@@ -148,6 +150,148 @@
                 "createdAt": "2025-10-01T06:31:18.847Z",
                 "updatedAt": "2025-10-01T06:31:24.041Z"
             }
+        },
+        {
+            "sku": "FLR-5001",
+            "slug": "hybrid-wood-natural-oak-rustic",
+            "collection": "hybrid-wood",
+            "pattern": "plank",
+            "installationSystem": "click",
+            "price": 79.95,
+            "gtin": 8719425248202,
+            "categories": "Hybrid Wood",
+            "images": [
+                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-product-detail.webp",
+                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-product-perspectief.webp",
+                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-product-topdown.webp",
+                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-sfeer-1.webp",
+                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-sfeer-2.webp",
+                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-sfeer-3.webp",
+                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-sfeer-4.webp"
+            ],
+            "imageAlt": {
+                "en": "Hybrid Wood - Natural Oak Rustic - Premium plank flooring example",
+                "bg": "Hybrid Wood - Natural Oak Rustic - Премиум право редене пример"
+            },
+            "i18n": {
+                "bg": {
+                    "name": " Естествен Дъб Рустик",
+                    "description": "Премиум хибридно дърво - естествен дъб рустик с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
+                    "features": [
+                        "водоустойчив",
+                        "устойчив на драскотини",
+                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
+                        "лесна поддръжка",
+                        "клик закрепваща система",
+                        "подово отопление",
+                        "Естествен дъбов горен слой",
+                        "Усъвършенствано PU лаково покритие",
+                        "Лесен клик монтаж"
+                    ],
+                    "seo": {
+                        "title": "Хибридно дърво - Естествен Дъб Рустик | Премиум Право редене Подове | Eco Vibe Floors",
+                        "description": "Хибридно дърво - Естествен Дъб Рустик - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
+                        "keywords": [
+                            "хибридни дървени подове",
+                            "право редене под",
+                            "дъбов под българия",
+                            "естествен дъбов паркет",
+                            "водоустойчив под",
+                            "под за подово отопление",
+                            "хибридни настилки",
+                            "подови настилки",
+                            "дървени настилки",
+                            "устойчиви на драскотини настилки"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "237.5 cm",
+                            "width": "27 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "appearance": {
+                            "color": "Кафяв",
+                            "structure": "Леко структуриран"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "Fastclick"
+                        },
+                        "performance": {
+                            "waterResistance": "Добра",
+                            "thermalResistance": "0\\,07m2K/W",
+                            "underfloorHeating": "Подходящ"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel, Emission A+ Certification",
+                            "warranty": "25 Years",
+                            "countryOfProduction": "Произведено в Германия"
+                        }
+                    }
+                },
+                "en": {
+                    "name": "Natural Oak Rustic",
+                    "description": "The Hybrid Wood floor in Rustic Natural Oak combines the best features of vinyl, laminate, and parquet floors into one unique product. This floor boasts a remarkably wide and long plank size, and each plank with its authentic oak top layer is truly stunning. But above all, the floor is also water-re...",
+                    "features": [
+                        "water-resistant",
+                        "scratch-resistant",
+                        "moisture and dirt-repellent, pressure-resistant, and scratch-resistant",
+                        "low-maintenance",
+                        "click fastening system",
+                        "underfloor heating",
+                        "Real oak top layer",
+                        "Advanced PU lacquer coating",
+                        "Easy click installation"
+                    ],
+                    "seo": {
+                        "title": "Hybrid Wood - Natural Oak Rustic | Premium Plank Flooring | Eco Vibe Floors",
+                        "description": "Hybrid Wood - Natural Oak Rustic: The Hybrid Wood floor in Rustic Natural Oak combines the best features of vinyl, laminate, and parquet floors into one u... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
+                        "keywords": [
+                            "hybrid wood flooring",
+                            "plank flooring",
+                            "oak flooring bulgaria",
+                            "water resistant flooring",
+                            "scratch resistant flooring",
+                            "underfloor heating compatible",
+                            "click system flooring",
+                            "brown flooring"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "237.5 cm",
+                            "width": "27 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "Fastclick"
+                        },
+                        "performance": {
+                            "underfloorHeating": "Suitable",
+                            "waterResistance": "Good",
+                            "thermalResistance": "0\\,07m2K/W"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel, Emission A+ Certification",
+                            "warranty": "25 Years",
+                            "countryOfProduction": "Made in Germany"
+                        },
+                        "appearance": {
+                            "color": "Brown",
+                            "structure": "Ligthly brushed"
+                        }
+                    }
+                }
+            },
+            "metadata": {
+                "totalImages": 7,
+                "imageSizes": ["thumbnail", "full"],
+                "createdAt": "2025-10-01T06:31:18.845Z",
+                "updatedAt": "2025-10-01T06:31:24.054Z"
+            },
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5002",
@@ -304,7 +448,296 @@
                 "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.851Z",
                 "updatedAt": "2025-10-01T06:31:24.044Z"
-            }
+            },
+            "displayImages": [0, 20]
+        },
+        {
+            "sku": "FLR-5003",
+            "slug": "hybrid-wood-puur-oak-rustic",
+            "collection": "hybrid-wood",
+            "pattern": "plank",
+            "installationSystem": "click",
+            "price": 79.95,
+            "gtin": 8719425248226,
+            "categories": "Hybrid Wood",
+            "images": [
+                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-product-detail.webp",
+                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-product-perspectief.webp",
+                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-product-topdown.webp",
+                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-sfeer-1.webp",
+                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-sfeer-2.webp",
+                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-sfeer-3.webp",
+                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-sfeer-4.webp"
+            ],
+            "imageAlt": {
+                "en": "Hybrid Wood - Pure Oak Rustic - Premium plank flooring example",
+                "bg": "Hybrid Wood - Pure Oak Rustic - Премиум право редене пример"
+            },
+            "i18n": {
+                "bg": {
+                    "name": " Чист Дъб Рустик",
+                    "description": "Премиум хибридно дърво - чист дъб рустик с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
+                    "features": [
+                        "водоустойчив",
+                        "устойчив на драскотини",
+                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
+                        "лесна поддръжка",
+                        "клик закрепваща система",
+                        "истински дъб",
+                        "подово отопление",
+                        "Естествен дъбов горен слой",
+                        "Усъвършенствано PU лаково покритие",
+                        "Лесен клик монтаж"
+                    ],
+                    "seo": {
+                        "title": "Хибридно дърво - Чист Дъб Рустик | Премиум Право редене Подове | Eco Vibe Floors",
+                        "description": "Хибридно дърво - Чист Дъб Рустик - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
+                        "keywords": [
+                            "хибридни дървени подове",
+                            "право редене под",
+                            "дъбов под българия",
+                            "естествен дъбов паркет",
+                            "водоустойчив под",
+                            "под за подово отопление",
+                            "хибридни настилки",
+                            "подови настилки",
+                            "дървени настилки",
+                            "устойчиви на драскотини настилки"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "237.5 cm",
+                            "width": "27 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "appearance": {
+                            "color": "Кафяв",
+                            "structure": "Леко структуриран"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "Fastclick"
+                        },
+                        "performance": {
+                            "waterResistance": "Добра",
+                            "thermalResistance": "0\\,07m2K/W",
+                            "underfloorHeating": "Подходящ"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel, Emission A+ Certification",
+                            "warranty": "25 Years",
+                            "countryOfProduction": "Произведено в Германия"
+                        }
+                    }
+                },
+                "en": {
+                    "name": "Pure Oak Rustic",
+                    "description": "Experience the best of all worlds with Hybrid Wood in the Rustic Pure Oak colour. This stunning floor combines the advantages of vinyl, laminate, and parquet into one beautiful design. Plus, it comes in an unprecedentedly wide and long plank size. Each plank features a real oak top layer that is exc...",
+                    "features": [
+                        "water-resistant",
+                        "scratch-resistant",
+                        "moisture and dirt-repellent, pressure-resistant, scratch-resistant",
+                        "low-maintenance",
+                        "click fastening system",
+                        "real oak",
+                        "underfloor heating",
+                        "Real oak top layer",
+                        "Advanced PU lacquer coating",
+                        "Easy click installation"
+                    ],
+                    "seo": {
+                        "title": "Hybrid Wood - Pure Oak Rustic | Premium Plank Flooring | Eco Vibe Floors",
+                        "description": "Hybrid Wood - Pure Oak Rustic: Experience the best of all worlds with Hybrid Wood in the Rustic Pure Oak colour. This stunning floor combines the advan... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
+                        "keywords": [
+                            "hybrid wood flooring",
+                            "plank flooring",
+                            "oak flooring bulgaria",
+                            "water resistant flooring",
+                            "scratch resistant flooring",
+                            "underfloor heating compatible",
+                            "click system flooring",
+                            "brown flooring"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "237.5 cm",
+                            "width": "27 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "Fastclick"
+                        },
+                        "performance": {
+                            "underfloorHeating": "Suitable",
+                            "waterResistance": "Good",
+                            "thermalResistance": "0\\,07m2K/W"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel, Emission A+ Certification",
+                            "warranty": "25 Years",
+                            "countryOfProduction": "Made in Germany"
+                        },
+                        "appearance": {
+                            "color": "Brown",
+                            "structure": "Ligthly brushed"
+                        }
+                    }
+                }
+            },
+            "metadata": {
+                "totalImages": 7,
+                "imageSizes": ["thumbnail", "full"],
+                "createdAt": "2025-10-01T06:31:18.849Z",
+                "updatedAt": "2025-10-01T06:31:24.055Z"
+            },
+            "displayImages": [0, 6]
+        },
+        {
+            "sku": "FLR-5010",
+            "slug": "hybrid-wood-white-oak-subtle",
+            "collection": "hybrid-wood",
+            "pattern": "plank",
+            "installationSystem": "click",
+            "price": 80.95,
+            "gtin": 8719425248295,
+            "categories": "Hybrid Wood",
+            "images": [
+                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-product-detail.webp",
+                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-product-perspectief.webp",
+                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-product-topdown.webp",
+                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-sfeer-1.webp",
+                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-sfeer-2.webp",
+                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-sfeer-3.webp",
+                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-sfeer-4.webp"
+            ],
+            "imageAlt": {
+                "en": "Hybrid Wood - White Oak Subtle - Premium plank flooring example",
+                "bg": "Hybrid Wood - White Oak Subtle - Премиум право редене пример"
+            },
+            "i18n": {
+                "bg": {
+                    "name": " Бял Дъб Фин",
+                    "description": "Премиум хибридно дърво - бял дъб фин с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
+                    "features": [
+                        "водоустойчив",
+                        "устойчив на драскотини",
+                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
+                        "лесна поддръжка",
+                        "клик закрепваща система",
+                        "истински дъб",
+                        "подово отопление",
+                        "Естествен дъбов горен слой",
+                        "Усъвършенствано PU лаково покритие",
+                        "Лесен клик монтаж"
+                    ],
+                    "seo": {
+                        "title": "Хибридно дърво - Бял Дъб Фин | Премиум Право редене Подове | Eco Vibe Floors",
+                        "description": "Хибридно дърво - Бял Дъб Фин - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
+                        "keywords": [
+                            "хибридни дървени подове",
+                            "право редене под",
+                            "дъбов под българия",
+                            "естествен дъбов паркет",
+                            "водоустойчив под",
+                            "под за подово отопление",
+                            "хибридни настилки",
+                            "подови настилки",
+                            "дървени настилки",
+                            "устойчиви на драскотини настилки"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "237.5 cm",
+                            "width": "27 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "appearance": {
+                            "color": "Бял",
+                            "structure": "Леко структуриран"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "Fastclick"
+                        },
+                        "performance": {
+                            "waterResistance": "Добра",
+                            "thermalResistance": "0\\,07m2K/W",
+                            "underfloorHeating": "Подходящ"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel, Emission A+ Certification",
+                            "warranty": "25 Years",
+                            "countryOfProduction": "Произведено в Германия"
+                        }
+                    }
+                },
+                "en": {
+                    "name": "White Oak Subtle",
+                    "description": "Experience the perfect combination of beauty and functionality with our Hybrid Wood floor in the colour Subtle White Oak. This floor combines all the benefits of vinyl, laminate, and parquet in one beautiful design. With an exceptionally wide and long plank size, each plank features a real oak top l...",
+                    "features": [
+                        "water-resistant",
+                        "scratch-resistant",
+                        "moisture and dirt-repellent, pressure-resistant, scratch-resistant",
+                        "low-maintenance",
+                        "click fastening system",
+                        "real oak",
+                        "underfloor heating",
+                        "Real oak top layer",
+                        "Advanced PU lacquer coating",
+                        "Easy click installation"
+                    ],
+                    "seo": {
+                        "title": "Hybrid Wood - White Oak Subtle | Premium Plank Flooring | Eco Vibe Floors",
+                        "description": "Hybrid Wood - White Oak Subtle: Experience the perfect combination of beauty and functionality with our Hybrid Wood floor in the colour Subtle White Oak... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
+                        "keywords": [
+                            "hybrid wood flooring",
+                            "plank flooring",
+                            "oak flooring bulgaria",
+                            "water resistant flooring",
+                            "scratch resistant flooring",
+                            "underfloor heating compatible",
+                            "click system flooring",
+                            "white flooring"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "237.5 cm",
+                            "width": "27 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "Fastclick"
+                        },
+                        "performance": {
+                            "underfloorHeating": "Suitable",
+                            "waterResistance": "Good",
+                            "thermalResistance": "0\\,07m2K/W"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel, Emission A+ Certification",
+                            "warranty": "25 Years",
+                            "countryOfProduction": "Made in Germany"
+                        },
+                        "appearance": {
+                            "color": "White",
+                            "structure": "Ligthly brushed"
+                        }
+                    }
+                }
+            },
+            "metadata": {
+                "totalImages": 7,
+                "imageSizes": ["thumbnail", "full"],
+                "createdAt": "2025-10-01T06:31:18.852Z",
+                "updatedAt": "2025-10-01T06:31:24.047Z"
+            },
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5004",
@@ -447,7 +880,8 @@
                 "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.844Z",
                 "updatedAt": "2025-10-01T06:31:24.044Z"
-            }
+            },
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5006",
@@ -590,7 +1024,152 @@
                 "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.840Z",
                 "updatedAt": "2025-10-01T06:31:24.045Z"
-            }
+            },
+            "displayImages": [0, 6]
+        },
+        {
+            "sku": "FLR-5007",
+            "slug": "hybrid-wood-cream-oak-rustic",
+            "collection": "hybrid-wood",
+            "pattern": "plank",
+            "installationSystem": "click",
+            "price": 79.95,
+            "gtin": 8719425248264,
+            "categories": "Hybrid Wood",
+            "images": [
+                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-product-detail.webp",
+                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-product-perspectief.webp",
+                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-product-topdown.webp",
+                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-sfeer-1.webp",
+                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-sfeer-2.webp",
+                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-sfeer-3.webp",
+                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-sfeer-4.webp"
+            ],
+            "imageAlt": {
+                "en": "Hybrid Wood - Cream Oak Rustic - Premium plank flooring example",
+                "bg": "Hybrid Wood - Cream Oak Rustic - Премиум право редене пример"
+            },
+            "i18n": {
+                "bg": {
+                    "name": " Крем Дъб Рустик",
+                    "description": "Премиум хибридно дърво - крем дъб рустик с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
+                    "features": [
+                        "водоустойчив",
+                        "устойчив на драскотини",
+                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
+                        "лесна поддръжка",
+                        "клик закрепваща система",
+                        "истински дъб",
+                        "подово отопление",
+                        "Естествен дъбов горен слой",
+                        "Усъвършенствано PU лаково покритие",
+                        "Лесен клик монтаж"
+                    ],
+                    "seo": {
+                        "title": "Хибридно дърво - Крем Дъб Рустик | Премиум Право редене Подове | Eco Vibe Floors",
+                        "description": "Хибридно дърво - Крем Дъб Рустик - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
+                        "keywords": [
+                            "хибридни дървени подове",
+                            "право редене под",
+                            "дъбов под българия",
+                            "естествен дъбов паркет",
+                            "водоустойчив под",
+                            "под за подово отопление",
+                            "хибридни настилки",
+                            "подови настилки",
+                            "дървени настилки",
+                            "устойчиви на драскотини настилки"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "237.5 cm",
+                            "width": "27 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "appearance": {
+                            "color": "Кафяв",
+                            "structure": "Леко структуриран"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "Fastclick"
+                        },
+                        "performance": {
+                            "waterResistance": "Добра",
+                            "thermalResistance": "0\\,07m2K/W",
+                            "underfloorHeating": "Подходящ"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel, Emission A+ Certification",
+                            "warranty": "25 Years",
+                            "countryOfProduction": "Произведено в Германия"
+                        }
+                    }
+                },
+                "en": {
+                    "name": "Cream Oak Rustic",
+                    "description": "The Hybrid Wood floor in Rustic Cream Oak color combines the best features of vinyl, laminate, and parquet floors into one beautiful design. Its wide and long plank size is unprecedented. Each plank features a real oak top layer that is exceptional to look at. Thanks to unique techniques, the floor ...",
+                    "features": [
+                        "water-resistant",
+                        "scratch-resistant",
+                        "moisture and dirt-repellent, pressure-resistant, and scratch-resistant",
+                        "low-maintenance",
+                        "click fastening system",
+                        "real oak",
+                        "underfloor heating",
+                        "Real oak top layer",
+                        "Advanced PU lacquer coating",
+                        "Easy click installation"
+                    ],
+                    "seo": {
+                        "title": "Hybrid Wood - Cream Oak Rustic | Premium Plank Flooring | Eco Vibe Floors",
+                        "description": "Hybrid Wood - Cream Oak Rustic: The Hybrid Wood floor in Rustic Cream Oak color combines the best features of vinyl, laminate, and parquet floors into o... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
+                        "keywords": [
+                            "hybrid wood flooring",
+                            "plank flooring",
+                            "oak flooring bulgaria",
+                            "water resistant flooring",
+                            "scratch resistant flooring",
+                            "underfloor heating compatible",
+                            "click system flooring",
+                            "brown flooring"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "237.5 cm",
+                            "width": "27 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "Fastclick"
+                        },
+                        "performance": {
+                            "underfloorHeating": "Suitable",
+                            "waterResistance": "Good",
+                            "thermalResistance": "0\\,07m2K/W"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel, Emission A+ Certification",
+                            "warranty": "25 Years",
+                            "countryOfProduction": "Made in Germany"
+                        },
+                        "appearance": {
+                            "color": "Brown",
+                            "structure": "Ligthly brushed"
+                        }
+                    }
+                }
+            },
+            "metadata": {
+                "totalImages": 7,
+                "imageSizes": ["thumbnail", "full"],
+                "createdAt": "2025-10-01T06:31:18.839Z",
+                "updatedAt": "2025-10-01T06:31:24.054Z"
+            },
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5008",
@@ -735,38 +1314,40 @@
                 "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.843Z",
                 "updatedAt": "2025-10-01T06:31:24.046Z"
-            }
+            },
+            "displayImages": [0, 6]
         },
         {
-            "sku": "FLR-5010",
-            "slug": "hybrid-wood-white-oak-subtle",
+            "sku": "FLR-5009",
+            "slug": "hybrid-wood-smoked-naturel-oak-rustic",
             "collection": "hybrid-wood",
             "pattern": "plank",
             "installationSystem": "click",
-            "price": 80.95,
-            "gtin": 8719425248295,
+            "price": 79.95,
+            "gtin": 8719425248288,
             "categories": "Hybrid Wood",
             "images": [
-                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-product-detail.webp",
-                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-product-perspectief.webp",
-                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-product-topdown.webp",
-                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-sfeer-1.webp",
-                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-sfeer-2.webp",
-                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-sfeer-3.webp",
-                "Floer-Hybride-Hout-Wit-Eiken-Subtiel-sfeer-4.webp"
+                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-product-detail.webp",
+                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-product-perspectief.webp",
+                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-product-topdown.webp",
+                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-sfeer-1.webp",
+                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-sfeer-2.webp",
+                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-sfeer-3.webp",
+                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-sfeer-4.webp"
             ],
             "imageAlt": {
-                "en": "Hybrid Wood - White Oak Subtle - Premium plank flooring example",
-                "bg": "Hybrid Wood - White Oak Subtle - Премиум право редене пример"
+                "en": "Hybrid Wood - Smoked Naturel Oak Rustic - Premium plank flooring example",
+                "bg": "Hybrid Wood - Smoked Naturel Oak Rustic - Премиум право редене пример"
             },
             "i18n": {
                 "bg": {
-                    "name": " Бял Дъб Фин",
-                    "description": "Премиум хибридно дърво - бял дъб фин с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
+                    "name": " Опушен Naturel Дъб Рустик",
+                    "description": "Премиум хибридно дърво - опушен naturel дъб рустик с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
-                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
+                        "dirt &amp; scratch-resistant",
+                        "устойчив на натиск",
                         "лесна поддръжка",
                         "клик закрепваща система",
                         "истински дъб",
@@ -776,8 +1357,8 @@
                         "Лесен клик монтаж"
                     ],
                     "seo": {
-                        "title": "Хибридно дърво - Бял Дъб Фин | Премиум Право редене Подове | Eco Vibe Floors",
-                        "description": "Хибридно дърво - Бял Дъб Фин - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
+                        "title": "Хибридно дърво - Опушен Naturel Дъб Рустик | Премиум Право редене Подове | Eco Vibe Floors",
+                        "description": "Хибридно дърво - Опушен Naturel Дъб Рустик - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
                         "keywords": [
                             "хибридни дървени подове",
                             "право редене под",
@@ -798,7 +1379,7 @@
                             "thickness": "1.1 cm"
                         },
                         "appearance": {
-                            "color": "Бял",
+                            "color": "Кафяв",
                             "structure": "Леко структуриран"
                         },
                         "installation": {
@@ -818,12 +1399,13 @@
                     }
                 },
                 "en": {
-                    "name": "White Oak Subtle",
-                    "description": "Experience the perfect combination of beauty and functionality with our Hybrid Wood floor in the colour Subtle White Oak. This floor combines all the benefits of vinyl, laminate, and parquet in one beautiful design. With an exceptionally wide and long plank size, each plank features a real oak top l...",
+                    "name": "Smoked Naturel Oak Rustic",
+                    "description": "The Hybrid Wood floor in Rustic Smoked Natural Oak is the best of all worlds, combining the advantages of vinyl, laminate, and parquet in a single, beautiful floor. It features an unprecedentedly wide and long plank size, with each plank featuring a real oak top layer that is exceptional to look at....",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
-                        "moisture and dirt-repellent, pressure-resistant, scratch-resistant",
+                        "dirt &amp; scratch-resistant",
+                        "pressure-resistant",
                         "low-maintenance",
                         "click fastening system",
                         "real oak",
@@ -833,8 +1415,8 @@
                         "Easy click installation"
                     ],
                     "seo": {
-                        "title": "Hybrid Wood - White Oak Subtle | Premium Plank Flooring | Eco Vibe Floors",
-                        "description": "Hybrid Wood - White Oak Subtle: Experience the perfect combination of beauty and functionality with our Hybrid Wood floor in the colour Subtle White Oak... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
+                        "title": "Hybrid Wood - Smoked Naturel Oak Rustic | Premium Plank Flooring | Eco Vibe Floors",
+                        "description": "Hybrid Wood - Smoked Naturel Oak Rustic: The Hybrid Wood floor in Rustic Smoked Natural Oak is the best of all worlds, combining the advantages of vinyl, laminat... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
                         "keywords": [
                             "hybrid wood flooring",
                             "plank flooring",
@@ -843,7 +1425,7 @@
                             "scratch resistant flooring",
                             "underfloor heating compatible",
                             "click system flooring",
-                            "white flooring"
+                            "brown flooring"
                         ]
                     },
                     "specifications": {
@@ -867,7 +1449,7 @@
                             "countryOfProduction": "Made in Germany"
                         },
                         "appearance": {
-                            "color": "White",
+                            "color": "Brown",
                             "structure": "Ligthly brushed"
                         }
                     }
@@ -876,9 +1458,293 @@
             "metadata": {
                 "totalImages": 7,
                 "imageSizes": ["thumbnail", "full"],
-                "createdAt": "2025-10-01T06:31:18.852Z",
-                "updatedAt": "2025-10-01T06:31:24.047Z"
-            }
+                "createdAt": "2025-10-01T06:31:18.842Z",
+                "updatedAt": "2025-10-01T06:31:24.053Z"
+            },
+            "displayImages": [0, 6]
+        },
+        {
+            "sku": "FLR-5013",
+            "slug": "hybrid-wood-bruin-oak-rustic",
+            "collection": "hybrid-wood",
+            "pattern": "plank",
+            "installationSystem": "click",
+            "price": 79.95,
+            "gtin": 8719425248325,
+            "categories": "Hybrid Wood",
+            "images": [
+                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-product-detail.webp",
+                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-product-perspectief.webp",
+                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-product-topdown.webp",
+                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-sfeer-1.webp",
+                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-sfeer-2.webp",
+                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-sfeer-3.webp",
+                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-sfeer-4.webp",
+                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-sfeer-5.webp"
+            ],
+            "imageAlt": {
+                "en": "Hybrid Wood - Brown Oak Rustic - Premium plank flooring example",
+                "bg": "Hybrid Wood - Brown Oak Rustic - Премиум право редене пример"
+            },
+            "i18n": {
+                "bg": {
+                    "name": " Кафяв Дъб Рустик",
+                    "description": "Премиум хибридно дърво - кафяв дъб рустик с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
+                    "features": [
+                        "водоустойчив",
+                        "устойчив на драскотини",
+                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
+                        "лесна поддръжка",
+                        "клик система",
+                        "Естествен дъбов горен слой",
+                        "Усъвършенствано PU лаково покритие",
+                        "Лесен клик монтаж"
+                    ],
+                    "seo": {
+                        "title": "Хибридно дърво - Кафяв Дъб Рустик | Премиум Право редене Подове | Eco Vibe Floors",
+                        "description": "Хибридно дърво - Кафяв Дъб Рустик - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
+                        "keywords": [
+                            "хибридни дървени подове",
+                            "право редене под",
+                            "дъбов под българия",
+                            "естествен дъбов паркет",
+                            "водоустойчив под",
+                            "под за подово отопление",
+                            "хибридни настилки",
+                            "подови настилки",
+                            "дървени настилки",
+                            "устойчиви на драскотини настилки"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "237.5 cm",
+                            "width": "27 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "appearance": {
+                            "color": "Кафяв",
+                            "structure": "Леко структуриран"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "Fastclick"
+                        },
+                        "performance": {
+                            "waterResistance": "Добра",
+                            "thermalResistance": "0\\,07m2K/W",
+                            "underfloorHeating": "Подходящ"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel, Emission A+ Certification",
+                            "warranty": "25 Years",
+                            "countryOfProduction": "Произведено в Германия"
+                        }
+                    }
+                },
+                "en": {
+                    "name": "Brown Oak Rustic",
+                    "description": "Have you ever wished for a floor that combines the best features of laminate, parquet, and vinyl? Look no further than Floer Hybrid Wood in the Brown Oak Rustic version! This rustic brown floor offers the benefits of all three types of flooring, combined into one unique product. Each plank features ...",
+                    "features": [
+                        "water-resistant",
+                        "scratch-resistant",
+                        "moisture and dirt-repellent, pressure-resistant, and scratch-resistant",
+                        "low-maintenance",
+                        "click click system",
+                        "Real oak top layer",
+                        "Advanced PU lacquer coating",
+                        "Easy click installation"
+                    ],
+                    "seo": {
+                        "title": "Hybrid Wood - Brown Oak Rustic | Premium Plank Flooring | Eco Vibe Floors",
+                        "description": "Hybrid Wood - Brown Oak Rustic: Have you ever wished for a floor that combines the best features of laminate, parquet, and vinyl? Look no further than F... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
+                        "keywords": [
+                            "hybrid wood flooring",
+                            "plank flooring",
+                            "oak flooring bulgaria",
+                            "water resistant flooring",
+                            "scratch resistant flooring",
+                            "underfloor heating compatible",
+                            "click system flooring",
+                            "brown flooring"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "237.5 cm",
+                            "width": "27 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "Fastclick"
+                        },
+                        "performance": {
+                            "underfloorHeating": "Suitable",
+                            "waterResistance": "Good",
+                            "thermalResistance": "0\\,07m2K/W"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel, Emission A+ Certification",
+                            "warranty": "25 Years",
+                            "countryOfProduction": "Made in Germany"
+                        },
+                        "appearance": {
+                            "color": "Brown",
+                            "structure": "Ligthly brushed"
+                        }
+                    }
+                }
+            },
+            "metadata": {
+                "totalImages": 8,
+                "imageSizes": ["thumbnail", "full"],
+                "createdAt": "2025-10-01T06:31:18.837Z",
+                "updatedAt": "2025-10-01T06:31:24.057Z"
+            },
+            "displayImages": [0, 7]
+        },
+        {
+            "sku": "FLR-5012",
+            "slug": "hybrid-wood-black-oak-rustic",
+            "collection": "hybrid-wood",
+            "pattern": "plank",
+            "installationSystem": "click",
+            "price": 79.95,
+            "gtin": 8719425248318,
+            "categories": "Hybrid Wood",
+            "images": [
+                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-product-detail.webp",
+                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-product-perspectief.webp",
+                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-product-topdown.webp",
+                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-sfeer-1.webp",
+                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-sfeer-2.webp",
+                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-sfeer-3.webp",
+                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-sfeer-4.webp"
+            ],
+            "imageAlt": {
+                "en": "Hybrid Wood - Black Oak Rustic - Premium plank flooring example",
+                "bg": "Hybrid Wood - Black Oak Rustic - Премиум право редене пример"
+            },
+            "i18n": {
+                "bg": {
+                    "name": " Черен Дъб Рустик",
+                    "description": "Премиум хибридно дърво - черен дъб рустик с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
+                    "features": [
+                        "водоустойчив",
+                        "устойчив на драскотини",
+                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
+                        "лесна поддръжка",
+                        "клик закрепваща система",
+                        "подово отопление",
+                        "Естествен дъбов горен слой",
+                        "Усъвършенствано PU лаково покритие",
+                        "Лесен клик монтаж"
+                    ],
+                    "seo": {
+                        "title": "Хибридно дърво - Черен Дъб Рустик | Премиум Право редене Подове | Eco Vibe Floors",
+                        "description": "Хибридно дърво - Черен Дъб Рустик - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
+                        "keywords": [
+                            "хибридни дървени подове",
+                            "право редене под",
+                            "дъбов под българия",
+                            "естествен дъбов паркет",
+                            "водоустойчив под",
+                            "под за подово отопление",
+                            "хибридни настилки",
+                            "подови настилки",
+                            "дървени настилки",
+                            "устойчиви на драскотини настилки"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "237.5 cm",
+                            "width": "27 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "appearance": {
+                            "color": "Кафяв",
+                            "structure": "Леко структуриран"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "Fastclick"
+                        },
+                        "performance": {
+                            "waterResistance": "Добра",
+                            "thermalResistance": "0\\,07m2K/W",
+                            "underfloorHeating": "Подходящ"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel, Emission A+ Certification",
+                            "warranty": "25 Years",
+                            "countryOfProduction": "Произведено в Германия"
+                        }
+                    }
+                },
+                "en": {
+                    "name": "Black Oak Rustic",
+                    "description": "The Hybrid Wood floor in Rustic Black Oak offers the best of laminate, parquet, and vinyl in a single unique floor. It boasts an extremely wide and long plank size, with a beautiful oak top layer on each plank. Additionally, thanks to unique techniques, this rustic floor is water-resistant, moisture...",
+                    "features": [
+                        "water-resistant",
+                        "scratch-resistant",
+                        "moisture and dirt-repellent, pressure-resistant, scratch-resistant",
+                        "low-maintenance",
+                        "click fastening system",
+                        "underfloor heating",
+                        "Real oak top layer",
+                        "Advanced PU lacquer coating",
+                        "Easy click installation"
+                    ],
+                    "seo": {
+                        "title": "Hybrid Wood - Black Oak Rustic | Premium Plank Flooring | Eco Vibe Floors",
+                        "description": "Hybrid Wood - Black Oak Rustic: The Hybrid Wood floor in Rustic Black Oak offers the best of laminate, parquet, and vinyl in a single unique floor. It b... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
+                        "keywords": [
+                            "hybrid wood flooring",
+                            "plank flooring",
+                            "oak flooring bulgaria",
+                            "water resistant flooring",
+                            "scratch resistant flooring",
+                            "underfloor heating compatible",
+                            "click system flooring",
+                            "brown flooring"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "237.5 cm",
+                            "width": "27 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "Fastclick"
+                        },
+                        "performance": {
+                            "underfloorHeating": "Suitable",
+                            "waterResistance": "Good",
+                            "thermalResistance": "0\\,07m2K/W"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel, Emission A+ Certification",
+                            "warranty": "25 Years",
+                            "countryOfProduction": "Made in Germany"
+                        },
+                        "appearance": {
+                            "color": "Brown",
+                            "structure": "Ligthly brushed"
+                        }
+                    }
+                }
+            },
+            "metadata": {
+                "totalImages": 7,
+                "imageSizes": ["thumbnail", "full"],
+                "createdAt": "2025-10-01T06:31:18.853Z",
+                "updatedAt": "2025-10-01T06:31:24.056Z"
+            },
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5016",
@@ -1015,7 +1881,144 @@
                 "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.834Z",
                 "updatedAt": "2025-10-01T06:31:24.048Z"
-            }
+            },
+            "displayImages": [0, 6]
+        },
+        {
+            "sku": "FLR-5014",
+            "slug": "hybrid-wood-herringbone-cream-oak",
+            "collection": "hybrid-wood",
+            "pattern": "fishbone",
+            "installationSystem": "click",
+            "price": 86.95,
+            "gtin": 8719425248332,
+            "categories": "Hybrid Wood, Hybrid Wood Herringbone",
+            "images": [
+                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-product-1.webp",
+                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-sfeer-1.webp",
+                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-sfeer-2.webp",
+                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-sfeer-3.webp",
+                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-sfeer-4.webp",
+                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-sfeer-5.webp",
+                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-product.webp"
+            ],
+            "imageAlt": {
+                "en": "Hybrid Wood Herringbone - Cream Oak - Premium herringbone flooring example",
+                "bg": "Hybrid Wood Herringbone - Cream Oak - Премиум рибена кост пример"
+            },
+            "i18n": {
+                "bg": {
+                    "name": "Крем Дъб",
+                    "description": "Премиум хибридно дърво рибена кост - крем дъб с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
+                    "features": [
+                        "устойчив на драскотини",
+                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
+                        "истински дъб",
+                        "подово отопление",
+                        "Естествен дъбов горен слой",
+                        "Усъвършенствано PU лаково покритие",
+                        "Лесен клик монтаж"
+                    ],
+                    "seo": {
+                        "title": "Хибридно дърво Рибена кост - Крем Дъб | Премиум Рибена кост Подове | Eco Vibe Floors",
+                        "description": "Хибридно дърво Рибена кост - Крем Дъб - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
+                        "keywords": [
+                            "хибридни дървени подове",
+                            "рибена кост под",
+                            "дъбов под българия",
+                            "естествен дъбов паркет",
+                            "водоустойчив под",
+                            "под за подово отопление",
+                            "хибридни настилки",
+                            "подови настилки",
+                            "дървени настилки",
+                            "устойчиви на драскотини настилки"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "70 cm",
+                            "width": "14 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "appearance": {
+                            "color": "Кафяв",
+                            "structure": "Леко структуриран"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "UniZip"
+                        },
+                        "performance": {
+                            "thermalResistance": "0\\,075m2K/W",
+                            "underfloorHeating": "Подходящ"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel",
+                            "warranty": "20 Years",
+                            "countryOfProduction": "Произведено в Германия"
+                        }
+                    }
+                },
+                "en": {
+                    "name": "Cream Oak",
+                    "description": "Experience the perfect combination of beauty and functionality with a Hybrid Wood Herringbone floor in Cream Oak. This wooden floor combines the benefits of vinyl, laminate, and parquet in one stunning design.The extra-large herringbone size and the real oak top layer of each plank make it exception...",
+                    "features": [
+                        "scratch-resistant",
+                        "moisture and dirt-repellent, pressure-resistant, scratch-resistant",
+                        "real oak",
+                        "underfloor heating",
+                        "Real oak top layer",
+                        "Advanced PU lacquer coating",
+                        "Easy click installation"
+                    ],
+                    "seo": {
+                        "title": "Hybrid Wood Herringbone - Cream Oak | Premium Herringbone Flooring | Eco Vibe Floors",
+                        "description": "Hybrid Wood Herringbone - Cream Oak: Experience the perfect combination of beauty and functionality with a Hybrid Wood Herringbone floor in Cream Oak. This w... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
+                        "keywords": [
+                            "hybrid wood flooring",
+                            "herringbone flooring",
+                            "oak flooring bulgaria",
+                            "water resistant flooring",
+                            "scratch resistant flooring",
+                            "underfloor heating compatible",
+                            "click system flooring",
+                            "brown flooring"
+                        ]
+                    },
+                    "specifications": {
+                        "dimensions": {
+                            "length": "70 cm",
+                            "width": "14 cm",
+                            "thickness": "1.1 cm"
+                        },
+                        "installation": {
+                            "vGroove": "4-MV",
+                            "clickSystem": "UniZip"
+                        },
+                        "performance": {
+                            "underfloorHeating": "Suitable",
+                            "thermalResistance": "0\\,075m2K/W"
+                        },
+                        "certifications": {
+                            "qualityMark": "Blue Angel",
+                            "warranty": "20 Years",
+                            "countryOfProduction": "Made in Germany"
+                        },
+                        "appearance": {
+                            "color": "Brown",
+                            "structure": "Ligthly brushed"
+                        }
+                    }
+                }
+            },
+            "metadata": {
+                "totalImages": 7,
+                "imageSizes": ["thumbnail", "full"],
+                "createdAt": "2025-10-01T06:31:18.823Z",
+                "updatedAt": "2025-10-01T06:31:24.052Z"
+            },
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5015",
@@ -1150,7 +2153,8 @@
                 "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.831Z",
                 "updatedAt": "2025-10-01T06:31:24.049Z"
-            }
+            },
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5017",
@@ -1296,995 +2300,8 @@
                 "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.828Z",
                 "updatedAt": "2025-10-01T06:31:24.051Z"
-            }
-        },
-        {
-            "sku": "FLR-5014",
-            "slug": "hybrid-wood-herringbone-cream-oak",
-            "collection": "hybrid-wood",
-            "pattern": "fishbone",
-            "installationSystem": "click",
-            "price": 86.95,
-            "gtin": 8719425248332,
-            "categories": "Hybrid Wood, Hybrid Wood Herringbone",
-            "images": [
-                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-product-1.webp",
-                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-sfeer-1.webp",
-                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-sfeer-2.webp",
-                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-sfeer-3.webp",
-                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-sfeer-4.webp",
-                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-sfeer-5.webp",
-                "Floer-Hybride-Hout-Visgraat-Creme-Eiken-product.webp"
-            ],
-            "imageAlt": {
-                "en": "Hybrid Wood Herringbone - Cream Oak - Premium herringbone flooring example",
-                "bg": "Hybrid Wood Herringbone - Cream Oak - Премиум рибена кост пример"
             },
-            "i18n": {
-                "bg": {
-                    "name": "Крем Дъб",
-                    "description": "Премиум хибридно дърво рибена кост - крем дъб с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
-                    "features": [
-                        "устойчив на драскотини",
-                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
-                        "истински дъб",
-                        "подово отопление",
-                        "Естествен дъбов горен слой",
-                        "Усъвършенствано PU лаково покритие",
-                        "Лесен клик монтаж"
-                    ],
-                    "seo": {
-                        "title": "Хибридно дърво Рибена кост - Крем Дъб | Премиум Рибена кост Подове | Eco Vibe Floors",
-                        "description": "Хибридно дърво Рибена кост - Крем Дъб - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
-                        "keywords": [
-                            "хибридни дървени подове",
-                            "рибена кост под",
-                            "дъбов под българия",
-                            "естествен дъбов паркет",
-                            "водоустойчив под",
-                            "под за подово отопление",
-                            "хибридни настилки",
-                            "подови настилки",
-                            "дървени настилки",
-                            "устойчиви на драскотини настилки"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "thermalResistance": "0\\,075m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Произведено в Германия"
-                        }
-                    }
-                },
-                "en": {
-                    "name": "Cream Oak",
-                    "description": "Experience the perfect combination of beauty and functionality with a Hybrid Wood Herringbone floor in Cream Oak. This wooden floor combines the benefits of vinyl, laminate, and parquet in one stunning design.The extra-large herringbone size and the real oak top layer of each plank make it exception...",
-                    "features": [
-                        "scratch-resistant",
-                        "moisture and dirt-repellent, pressure-resistant, scratch-resistant",
-                        "real oak",
-                        "underfloor heating",
-                        "Real oak top layer",
-                        "Advanced PU lacquer coating",
-                        "Easy click installation"
-                    ],
-                    "seo": {
-                        "title": "Hybrid Wood Herringbone - Cream Oak | Premium Herringbone Flooring | Eco Vibe Floors",
-                        "description": "Hybrid Wood Herringbone - Cream Oak: Experience the perfect combination of beauty and functionality with a Hybrid Wood Herringbone floor in Cream Oak. This w... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "hybrid wood flooring",
-                            "herringbone flooring",
-                            "oak flooring bulgaria",
-                            "water resistant flooring",
-                            "scratch resistant flooring",
-                            "underfloor heating compatible",
-                            "click system flooring",
-                            "brown flooring"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "0\\,075m2K/W"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
-                        }
-                    }
-                }
-            },
-            "metadata": {
-                "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
-                "createdAt": "2025-10-01T06:31:18.823Z",
-                "updatedAt": "2025-10-01T06:31:24.052Z"
-            }
-        },
-        {
-            "sku": "FLR-5009",
-            "slug": "hybrid-wood-smoked-naturel-oak-rustic",
-            "collection": "hybrid-wood",
-            "pattern": "plank",
-            "installationSystem": "click",
-            "price": 79.95,
-            "gtin": 8719425248288,
-            "categories": "Hybrid Wood",
-            "images": [
-                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-product-detail.webp",
-                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-product-perspectief.webp",
-                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-product-topdown.webp",
-                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-sfeer-1.webp",
-                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-sfeer-2.webp",
-                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-sfeer-3.webp",
-                "Floer-Hybride-Hout-Gerookt-Naturel-Eiken-Rustiek-sfeer-4.webp"
-            ],
-            "imageAlt": {
-                "en": "Hybrid Wood - Smoked Naturel Oak Rustic - Premium plank flooring example",
-                "bg": "Hybrid Wood - Smoked Naturel Oak Rustic - Премиум право редене пример"
-            },
-            "i18n": {
-                "bg": {
-                    "name": " Опушен Naturel Дъб Рустик",
-                    "description": "Премиум хибридно дърво - опушен naturel дъб рустик с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
-                    "features": [
-                        "водоустойчив",
-                        "устойчив на драскотини",
-                        "dirt &amp; scratch-resistant",
-                        "устойчив на натиск",
-                        "лесна поддръжка",
-                        "клик закрепваща система",
-                        "истински дъб",
-                        "подово отопление",
-                        "Естествен дъбов горен слой",
-                        "Усъвършенствано PU лаково покритие",
-                        "Лесен клик монтаж"
-                    ],
-                    "seo": {
-                        "title": "Хибридно дърво - Опушен Naturel Дъб Рустик | Премиум Право редене Подове | Eco Vibe Floors",
-                        "description": "Хибридно дърво - Опушен Naturel Дъб Рустик - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
-                        "keywords": [
-                            "хибридни дървени подове",
-                            "право редене под",
-                            "дъбов под българия",
-                            "естествен дъбов паркет",
-                            "водоустойчив под",
-                            "под за подово отопление",
-                            "хибридни настилки",
-                            "подови настилки",
-                            "дървени настилки",
-                            "устойчиви на драскотини настилки"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0\\,07m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
-                        }
-                    }
-                },
-                "en": {
-                    "name": "Smoked Naturel Oak Rustic",
-                    "description": "The Hybrid Wood floor in Rustic Smoked Natural Oak is the best of all worlds, combining the advantages of vinyl, laminate, and parquet in a single, beautiful floor. It features an unprecedentedly wide and long plank size, with each plank featuring a real oak top layer that is exceptional to look at....",
-                    "features": [
-                        "water-resistant",
-                        "scratch-resistant",
-                        "dirt &amp; scratch-resistant",
-                        "pressure-resistant",
-                        "low-maintenance",
-                        "click fastening system",
-                        "real oak",
-                        "underfloor heating",
-                        "Real oak top layer",
-                        "Advanced PU lacquer coating",
-                        "Easy click installation"
-                    ],
-                    "seo": {
-                        "title": "Hybrid Wood - Smoked Naturel Oak Rustic | Premium Plank Flooring | Eco Vibe Floors",
-                        "description": "Hybrid Wood - Smoked Naturel Oak Rustic: The Hybrid Wood floor in Rustic Smoked Natural Oak is the best of all worlds, combining the advantages of vinyl, laminat... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "hybrid wood flooring",
-                            "plank flooring",
-                            "oak flooring bulgaria",
-                            "water resistant flooring",
-                            "scratch resistant flooring",
-                            "underfloor heating compatible",
-                            "click system flooring",
-                            "brown flooring"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0\\,07m2K/W"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
-                        }
-                    }
-                }
-            },
-            "metadata": {
-                "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
-                "createdAt": "2025-10-01T06:31:18.842Z",
-                "updatedAt": "2025-10-01T06:31:24.053Z"
-            }
-        },
-        {
-            "sku": "FLR-5007",
-            "slug": "hybrid-wood-cream-oak-rustic",
-            "collection": "hybrid-wood",
-            "pattern": "plank",
-            "installationSystem": "click",
-            "price": 79.95,
-            "gtin": 8719425248264,
-            "categories": "Hybrid Wood",
-            "images": [
-                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-product-detail.webp",
-                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-product-perspectief.webp",
-                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-product-topdown.webp",
-                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-sfeer-1.webp",
-                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-sfeer-2.webp",
-                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-sfeer-3.webp",
-                "Floer-Hybride-Hout-Crème-Eiken-Rustiek-sfeer-4.webp"
-            ],
-            "imageAlt": {
-                "en": "Hybrid Wood - Cream Oak Rustic - Premium plank flooring example",
-                "bg": "Hybrid Wood - Cream Oak Rustic - Премиум право редене пример"
-            },
-            "i18n": {
-                "bg": {
-                    "name": " Крем Дъб Рустик",
-                    "description": "Премиум хибридно дърво - крем дъб рустик с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
-                    "features": [
-                        "водоустойчив",
-                        "устойчив на драскотини",
-                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
-                        "лесна поддръжка",
-                        "клик закрепваща система",
-                        "истински дъб",
-                        "подово отопление",
-                        "Естествен дъбов горен слой",
-                        "Усъвършенствано PU лаково покритие",
-                        "Лесен клик монтаж"
-                    ],
-                    "seo": {
-                        "title": "Хибридно дърво - Крем Дъб Рустик | Премиум Право редене Подове | Eco Vibe Floors",
-                        "description": "Хибридно дърво - Крем Дъб Рустик - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
-                        "keywords": [
-                            "хибридни дървени подове",
-                            "право редене под",
-                            "дъбов под българия",
-                            "естествен дъбов паркет",
-                            "водоустойчив под",
-                            "под за подово отопление",
-                            "хибридни настилки",
-                            "подови настилки",
-                            "дървени настилки",
-                            "устойчиви на драскотини настилки"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0\\,07m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
-                        }
-                    }
-                },
-                "en": {
-                    "name": "Cream Oak Rustic",
-                    "description": "The Hybrid Wood floor in Rustic Cream Oak color combines the best features of vinyl, laminate, and parquet floors into one beautiful design. Its wide and long plank size is unprecedented. Each plank features a real oak top layer that is exceptional to look at. Thanks to unique techniques, the floor ...",
-                    "features": [
-                        "water-resistant",
-                        "scratch-resistant",
-                        "moisture and dirt-repellent, pressure-resistant, and scratch-resistant",
-                        "low-maintenance",
-                        "click fastening system",
-                        "real oak",
-                        "underfloor heating",
-                        "Real oak top layer",
-                        "Advanced PU lacquer coating",
-                        "Easy click installation"
-                    ],
-                    "seo": {
-                        "title": "Hybrid Wood - Cream Oak Rustic | Premium Plank Flooring | Eco Vibe Floors",
-                        "description": "Hybrid Wood - Cream Oak Rustic: The Hybrid Wood floor in Rustic Cream Oak color combines the best features of vinyl, laminate, and parquet floors into o... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "hybrid wood flooring",
-                            "plank flooring",
-                            "oak flooring bulgaria",
-                            "water resistant flooring",
-                            "scratch resistant flooring",
-                            "underfloor heating compatible",
-                            "click system flooring",
-                            "brown flooring"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0\\,07m2K/W"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
-                        }
-                    }
-                }
-            },
-            "metadata": {
-                "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
-                "createdAt": "2025-10-01T06:31:18.839Z",
-                "updatedAt": "2025-10-01T06:31:24.054Z"
-            }
-        },
-        {
-            "sku": "FLR-5001",
-            "slug": "hybrid-wood-natural-oak-rustic",
-            "collection": "hybrid-wood",
-            "pattern": "plank",
-            "installationSystem": "click",
-            "price": 79.95,
-            "gtin": 8719425248202,
-            "categories": "Hybrid Wood",
-            "images": [
-                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-product-detail.webp",
-                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-product-perspectief.webp",
-                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-product-topdown.webp",
-                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-sfeer-1.webp",
-                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-sfeer-2.webp",
-                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-sfeer-3.webp",
-                "Floer-Hybride-Hout-Natuur-Eiken-Rustiek-sfeer-4.webp"
-            ],
-            "imageAlt": {
-                "en": "Hybrid Wood - Natural Oak Rustic - Premium plank flooring example",
-                "bg": "Hybrid Wood - Natural Oak Rustic - Премиум право редене пример"
-            },
-            "i18n": {
-                "bg": {
-                    "name": " Естествен Дъб Рустик",
-                    "description": "Премиум хибридно дърво - естествен дъб рустик с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
-                    "features": [
-                        "водоустойчив",
-                        "устойчив на драскотини",
-                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
-                        "лесна поддръжка",
-                        "клик закрепваща система",
-                        "подово отопление",
-                        "Естествен дъбов горен слой",
-                        "Усъвършенствано PU лаково покритие",
-                        "Лесен клик монтаж"
-                    ],
-                    "seo": {
-                        "title": "Хибридно дърво - Естествен Дъб Рустик | Премиум Право редене Подове | Eco Vibe Floors",
-                        "description": "Хибридно дърво - Естествен Дъб Рустик - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
-                        "keywords": [
-                            "хибридни дървени подове",
-                            "право редене под",
-                            "дъбов под българия",
-                            "естествен дъбов паркет",
-                            "водоустойчив под",
-                            "под за подово отопление",
-                            "хибридни настилки",
-                            "подови настилки",
-                            "дървени настилки",
-                            "устойчиви на драскотини настилки"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0\\,07m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
-                        }
-                    }
-                },
-                "en": {
-                    "name": "Natural Oak Rustic",
-                    "description": "The Hybrid Wood floor in Rustic Natural Oak combines the best features of vinyl, laminate, and parquet floors into one unique product. This floor boasts a remarkably wide and long plank size, and each plank with its authentic oak top layer is truly stunning. But above all, the floor is also water-re...",
-                    "features": [
-                        "water-resistant",
-                        "scratch-resistant",
-                        "moisture and dirt-repellent, pressure-resistant, and scratch-resistant",
-                        "low-maintenance",
-                        "click fastening system",
-                        "underfloor heating",
-                        "Real oak top layer",
-                        "Advanced PU lacquer coating",
-                        "Easy click installation"
-                    ],
-                    "seo": {
-                        "title": "Hybrid Wood - Natural Oak Rustic | Premium Plank Flooring | Eco Vibe Floors",
-                        "description": "Hybrid Wood - Natural Oak Rustic: The Hybrid Wood floor in Rustic Natural Oak combines the best features of vinyl, laminate, and parquet floors into one u... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "hybrid wood flooring",
-                            "plank flooring",
-                            "oak flooring bulgaria",
-                            "water resistant flooring",
-                            "scratch resistant flooring",
-                            "underfloor heating compatible",
-                            "click system flooring",
-                            "brown flooring"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0\\,07m2K/W"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
-                        }
-                    }
-                }
-            },
-            "metadata": {
-                "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
-                "createdAt": "2025-10-01T06:31:18.845Z",
-                "updatedAt": "2025-10-01T06:31:24.054Z"
-            }
-        },
-        {
-            "sku": "FLR-5003",
-            "slug": "hybrid-wood-puur-oak-rustic",
-            "collection": "hybrid-wood",
-            "pattern": "plank",
-            "installationSystem": "click",
-            "price": 79.95,
-            "gtin": 8719425248226,
-            "categories": "Hybrid Wood",
-            "images": [
-                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-product-detail.webp",
-                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-product-perspectief.webp",
-                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-product-topdown.webp",
-                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-sfeer-1.webp",
-                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-sfeer-2.webp",
-                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-sfeer-3.webp",
-                "Floer-Hybride-Hout-Puur-Eiken-Rustiek-sfeer-4.webp"
-            ],
-            "imageAlt": {
-                "en": "Hybrid Wood - Pure Oak Rustic - Premium plank flooring example",
-                "bg": "Hybrid Wood - Pure Oak Rustic - Премиум право редене пример"
-            },
-            "i18n": {
-                "bg": {
-                    "name": " Чист Дъб Рустик",
-                    "description": "Премиум хибридно дърво - чист дъб рустик с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
-                    "features": [
-                        "водоустойчив",
-                        "устойчив на драскотини",
-                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
-                        "лесна поддръжка",
-                        "клик закрепваща система",
-                        "истински дъб",
-                        "подово отопление",
-                        "Естествен дъбов горен слой",
-                        "Усъвършенствано PU лаково покритие",
-                        "Лесен клик монтаж"
-                    ],
-                    "seo": {
-                        "title": "Хибридно дърво - Чист Дъб Рустик | Премиум Право редене Подове | Eco Vibe Floors",
-                        "description": "Хибридно дърво - Чист Дъб Рустик - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
-                        "keywords": [
-                            "хибридни дървени подове",
-                            "право редене под",
-                            "дъбов под българия",
-                            "естествен дъбов паркет",
-                            "водоустойчив под",
-                            "под за подово отопление",
-                            "хибридни настилки",
-                            "подови настилки",
-                            "дървени настилки",
-                            "устойчиви на драскотини настилки"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0\\,07m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
-                        }
-                    }
-                },
-                "en": {
-                    "name": "Pure Oak Rustic",
-                    "description": "Experience the best of all worlds with Hybrid Wood in the Rustic Pure Oak colour. This stunning floor combines the advantages of vinyl, laminate, and parquet into one beautiful design. Plus, it comes in an unprecedentedly wide and long plank size. Each plank features a real oak top layer that is exc...",
-                    "features": [
-                        "water-resistant",
-                        "scratch-resistant",
-                        "moisture and dirt-repellent, pressure-resistant, scratch-resistant",
-                        "low-maintenance",
-                        "click fastening system",
-                        "real oak",
-                        "underfloor heating",
-                        "Real oak top layer",
-                        "Advanced PU lacquer coating",
-                        "Easy click installation"
-                    ],
-                    "seo": {
-                        "title": "Hybrid Wood - Pure Oak Rustic | Premium Plank Flooring | Eco Vibe Floors",
-                        "description": "Hybrid Wood - Pure Oak Rustic: Experience the best of all worlds with Hybrid Wood in the Rustic Pure Oak colour. This stunning floor combines the advan... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "hybrid wood flooring",
-                            "plank flooring",
-                            "oak flooring bulgaria",
-                            "water resistant flooring",
-                            "scratch resistant flooring",
-                            "underfloor heating compatible",
-                            "click system flooring",
-                            "brown flooring"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0\\,07m2K/W"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
-                        }
-                    }
-                }
-            },
-            "metadata": {
-                "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
-                "createdAt": "2025-10-01T06:31:18.849Z",
-                "updatedAt": "2025-10-01T06:31:24.055Z"
-            }
-        },
-        {
-            "sku": "FLR-5012",
-            "slug": "hybrid-wood-black-oak-rustic",
-            "collection": "hybrid-wood",
-            "pattern": "plank",
-            "installationSystem": "click",
-            "price": 79.95,
-            "gtin": 8719425248318,
-            "categories": "Hybrid Wood",
-            "images": [
-                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-product-detail.webp",
-                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-product-perspectief.webp",
-                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-product-topdown.webp",
-                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-sfeer-1.webp",
-                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-sfeer-2.webp",
-                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-sfeer-3.webp",
-                "Floer-Hybride-Hout-Zwart-Eiken-Rustiek-sfeer-4.webp"
-            ],
-            "imageAlt": {
-                "en": "Hybrid Wood - Black Oak Rustic - Premium plank flooring example",
-                "bg": "Hybrid Wood - Black Oak Rustic - Премиум право редене пример"
-            },
-            "i18n": {
-                "bg": {
-                    "name": " Черен Дъб Рустик",
-                    "description": "Премиум хибридно дърво - черен дъб рустик с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
-                    "features": [
-                        "водоустойчив",
-                        "устойчив на драскотини",
-                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
-                        "лесна поддръжка",
-                        "клик закрепваща система",
-                        "подово отопление",
-                        "Естествен дъбов горен слой",
-                        "Усъвършенствано PU лаково покритие",
-                        "Лесен клик монтаж"
-                    ],
-                    "seo": {
-                        "title": "Хибридно дърво - Черен Дъб Рустик | Премиум Право редене Подове | Eco Vibe Floors",
-                        "description": "Хибридно дърво - Черен Дъб Рустик - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
-                        "keywords": [
-                            "хибридни дървени подове",
-                            "право редене под",
-                            "дъбов под българия",
-                            "естествен дъбов паркет",
-                            "водоустойчив под",
-                            "под за подово отопление",
-                            "хибридни настилки",
-                            "подови настилки",
-                            "дървени настилки",
-                            "устойчиви на драскотини настилки"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0\\,07m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
-                        }
-                    }
-                },
-                "en": {
-                    "name": "Black Oak Rustic",
-                    "description": "The Hybrid Wood floor in Rustic Black Oak offers the best of laminate, parquet, and vinyl in a single unique floor. It boasts an extremely wide and long plank size, with a beautiful oak top layer on each plank. Additionally, thanks to unique techniques, this rustic floor is water-resistant, moisture...",
-                    "features": [
-                        "water-resistant",
-                        "scratch-resistant",
-                        "moisture and dirt-repellent, pressure-resistant, scratch-resistant",
-                        "low-maintenance",
-                        "click fastening system",
-                        "underfloor heating",
-                        "Real oak top layer",
-                        "Advanced PU lacquer coating",
-                        "Easy click installation"
-                    ],
-                    "seo": {
-                        "title": "Hybrid Wood - Black Oak Rustic | Premium Plank Flooring | Eco Vibe Floors",
-                        "description": "Hybrid Wood - Black Oak Rustic: The Hybrid Wood floor in Rustic Black Oak offers the best of laminate, parquet, and vinyl in a single unique floor. It b... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "hybrid wood flooring",
-                            "plank flooring",
-                            "oak flooring bulgaria",
-                            "water resistant flooring",
-                            "scratch resistant flooring",
-                            "underfloor heating compatible",
-                            "click system flooring",
-                            "brown flooring"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0\\,07m2K/W"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
-                        }
-                    }
-                }
-            },
-            "metadata": {
-                "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
-                "createdAt": "2025-10-01T06:31:18.853Z",
-                "updatedAt": "2025-10-01T06:31:24.056Z"
-            }
-        },
-        {
-            "sku": "FLR-5013",
-            "slug": "hybrid-wood-bruin-oak-rustic",
-            "collection": "hybrid-wood",
-            "pattern": "plank",
-            "installationSystem": "click",
-            "price": 79.95,
-            "gtin": 8719425248325,
-            "categories": "Hybrid Wood",
-            "images": [
-                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-product-detail.webp",
-                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-product-perspectief.webp",
-                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-product-topdown.webp",
-                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-sfeer-1.webp",
-                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-sfeer-2.webp",
-                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-sfeer-3.webp",
-                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-sfeer-4.webp",
-                "Floer-Hybride-Hout-Bruin-Eiken-Rustiek-sfeer-5.webp"
-            ],
-            "imageAlt": {
-                "en": "Hybrid Wood - Brown Oak Rustic - Premium plank flooring example",
-                "bg": "Hybrid Wood - Brown Oak Rustic - Премиум право редене пример"
-            },
-            "i18n": {
-                "bg": {
-                    "name": " Кафяв Дъб Рустик",
-                    "description": "Премиум хибридно дърво - кафяв дъб рустик с Водоустойчиви и устойчиви на драскотини, 25-годишна гаранция, Лесен монтаж с клик система, Истински дъбов горен слой, Подходящ за подово отопление. Изключително качествен хибриден дървен под, съчетаващ предимствата на винил, ламинат и паркет.",
-                    "features": [
-                        "водоустойчив",
-                        "устойчив на драскотини",
-                        "устойчив на влага и мръсотия, устойчив на натиск и драскотини",
-                        "лесна поддръжка",
-                        "клик система",
-                        "Естествен дъбов горен слой",
-                        "Усъвършенствано PU лаково покритие",
-                        "Лесен клик монтаж"
-                    ],
-                    "seo": {
-                        "title": "Хибридно дърво - Кафяв Дъб Рустик | Премиум Право редене Подове | Eco Vibe Floors",
-                        "description": "Хибридно дърво - Кафяв Дъб Рустик - Водоустойчиви, устойчиви на драскотини премиум дървени подове. 25-годишна гаранция, безплатна доставка. ⭐ Подходящи за подово отопление.",
-                        "keywords": [
-                            "хибридни дървени подове",
-                            "право редене под",
-                            "дъбов под българия",
-                            "естествен дъбов паркет",
-                            "водоустойчив под",
-                            "под за подово отопление",
-                            "хибридни настилки",
-                            "подови настилки",
-                            "дървени настилки",
-                            "устойчиви на драскотини настилки"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0\\,07m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
-                        }
-                    }
-                },
-                "en": {
-                    "name": "Brown Oak Rustic",
-                    "description": "Have you ever wished for a floor that combines the best features of laminate, parquet, and vinyl? Look no further than Floer Hybrid Wood in the Brown Oak Rustic version! This rustic brown floor offers the benefits of all three types of flooring, combined into one unique product. Each plank features ...",
-                    "features": [
-                        "water-resistant",
-                        "scratch-resistant",
-                        "moisture and dirt-repellent, pressure-resistant, and scratch-resistant",
-                        "low-maintenance",
-                        "click click system",
-                        "Real oak top layer",
-                        "Advanced PU lacquer coating",
-                        "Easy click installation"
-                    ],
-                    "seo": {
-                        "title": "Hybrid Wood - Brown Oak Rustic | Premium Plank Flooring | Eco Vibe Floors",
-                        "description": "Hybrid Wood - Brown Oak Rustic: Have you ever wished for a floor that combines the best features of laminate, parquet, and vinyl? Look no further than F... Water-resistant, scratch-resistant premium flooring. 25-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "hybrid wood flooring",
-                            "plank flooring",
-                            "oak flooring bulgaria",
-                            "water resistant flooring",
-                            "scratch resistant flooring",
-                            "underfloor heating compatible",
-                            "click system flooring",
-                            "brown flooring"
-                        ]
-                    },
-                    "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0\\,07m2K/W"
-                        },
-                        "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
-                        }
-                    }
-                }
-            },
-            "metadata": {
-                "totalImages": 8,
-                "imageSizes": ["thumbnail", "full"],
-                "createdAt": "2025-10-01T06:31:18.837Z",
-                "updatedAt": "2025-10-01T06:31:24.057Z"
-            }
+            "displayImages": [0, 15]
         },
         {
             "sku": "FLR-5018",
@@ -2419,7 +2436,8 @@
                 "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.826Z",
                 "updatedAt": "2025-10-01T06:31:24.058Z"
-            }
+            },
+            "displayImages": [2, 1]
         },
         {
             "sku": "FLR-5019",
@@ -2555,7 +2573,8 @@
                 "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.833Z",
                 "updatedAt": "2025-10-01T06:31:24.059Z"
-            }
+            },
+            "displayImages": [2, 4]
         }
     ]
 }

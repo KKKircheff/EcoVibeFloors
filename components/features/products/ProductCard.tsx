@@ -23,8 +23,11 @@ export function ProductCard({ product }: ProductCardProps) {
 
     const localizedContent = product.i18n[locale as keyof typeof product.i18n];
 
-    const mainImage = product.images[0];
-    const hoverImage = product.images[product.images.length - 1] || mainImage;
+    const mainImageIndex = product.displayImages?.[0] ?? 0;
+    const hoverImageIndex = product.displayImages?.[1] ?? product.images.length - 1;
+
+    const mainImage = product.images[mainImageIndex];
+    const hoverImage = product.images[hoverImageIndex] || mainImage;
 
     const mainImageUrls = getStorageUrl(
         product.collection,
@@ -89,6 +92,9 @@ export function ProductCard({ product }: ProductCardProps) {
                     transition: 'transform 0.2s',
                     height: '100%',
                     opacity: isLoading ? 0 : 1,
+                    '&:hover': {
+                        transform: 'scale(102%)',
+                    },
                 }}
             >
                 <Box
@@ -134,10 +140,9 @@ export function ProductCard({ product }: ProductCardProps) {
                     </Typography>
 
                     <Stack direction="column" spacing={1}>
-                        <Stack direction='row'>
+                        <Stack direction={{ xs: 'column', lg: 'row' }} alignItems={'çenter'}>
                             <Typography variant="h5" gutterBottom sx={{ flexGrow: 1 }}>
                                 {t('collections.names.hybridWood')}
-
                             </Typography>
                             <Typography>
                                 {localizedContent.specifications?.dimensions && (
@@ -153,6 +158,6 @@ export function ProductCard({ product }: ProductCardProps) {
                     </Stack>
                 </Stack>
             </Stack>
-        </Box>
+        </Box >
     );
 }

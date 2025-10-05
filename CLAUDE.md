@@ -17,6 +17,12 @@ To create a visually compelling, high-quality website with strong design and eng
 - `npm start` - Start production server
 - `npm run lint` - Run ESLint
 
+### Collection Management
+- `node utils/sort-products-by-sku.js [collection-name]` - Sort products by SKU in collection JSON files
+  - Example: `node utils/sort-products-by-sku.js hybrid-wood` - Sort specific collection
+  - Example: `node utils/sort-products-by-sku.js` - Sort all collections
+  - **Usage**: Run this utility after adding new products to ensure proper SKU ordering
+
 ### Environment Setup
 - Copy `.env.local.example` to `.env.local` and configure Firebase credentials
 - Firebase configuration variables are prefixed with `NEXT_PUBLIC_` for client-side access

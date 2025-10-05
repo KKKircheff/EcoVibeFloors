@@ -160,6 +160,7 @@ const baseTheme = createTheme({
             styleOverrides: {
                 root: {
                     borderRadius: 0,
+                    boxShadow: 'none',
                 },
             },
         },
