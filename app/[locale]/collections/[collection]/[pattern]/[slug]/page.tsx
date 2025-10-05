@@ -10,6 +10,7 @@ import { isValidCollection, isValidPattern, CollectionType, ProductPattern } fro
 import { getProductBySlug, getProductsByCollection } from '@/utils/products';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
+import { getStorageUrl } from '@/lib/utils/getStorageUrl';
 
 // Force static generation
 export const dynamic = 'error';
@@ -109,10 +110,6 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
 
     const localizedContent = product.i18n[locale as keyof typeof product.i18n];
 
-    // Get Firebase Storage base URL from env
-    const baseImageUrl = process.env.NEXT_PUBLIC_FIREBASE_STORAGE_URL || '';
-    const imagePath = `${baseImageUrl}/products/${product.collection}/${product.pattern}/${product.sku}/full`;
-
     const patternKey = product.pattern as keyof Messages['patterns'];
     const installationKey = product.installationSystem as keyof Messages['installationSystems'];
 
@@ -143,7 +140,7 @@ export default async function ProductDetailPage({ params }: ProductDetailPagePro
                             {product.images.slice(0, 3).map((image, index) => (
                                 <img
                                     key={index}
-                                    src={`${imagePath}/${image}`}
+                                    src={getStorageUrl(product.collection, product.pattern, product.sku, image).full}
                                     alt={product.imageAlt[locale as keyof typeof product.imageAlt]}
                                     style={{
                                         width: '100%',

@@ -51,7 +51,6 @@ This project uses Firebase as its backend platform with the following setup:
 - **Backend Name**: `ecovibe-floors-backend`
 - **Region**: `europe-west4`
 - **Root Directory**: `/`
-- **Config**: `apphosting.yaml`
 
 #### Cloud Storage
 - **Rules File**: `storage.rules`
@@ -71,8 +70,6 @@ This project uses Firebase as its backend platform with the following setup:
 ├── firestore.rules        # Firestore security rules
 ├── firestore.indexes.json # Firestore indexes
 ├── storage.rules          # Storage security rules
-├── apphosting.yaml        # App Hosting configuration
-├── apphosting.emulator.yaml # Local emulator overrides
 └── functions/             # Cloud Functions
     ├── src/index.ts
     ├── package.json
@@ -105,7 +102,7 @@ Deploy specific services:
 firebase deploy --only firestore:rules
 firebase deploy --only functions
 firebase deploy --only storage
-firebase deploy --only apphosting
+firebase deploy 
 ```
 
 ## 🌐 Internationalization
@@ -155,17 +152,28 @@ firebase deploy --only apphosting
 └── middleware.ts          # Next.js middleware for i18n
 ```
 
-## 🔐 Environment Variables
+## 🔐 Firebase Configuration
 
-All Firebase configuration uses `NEXT_PUBLIC_` prefixes for client-side access:
+Firebase configuration is embedded directly in `lib/firebase.ts` with the following exports:
 
-```env
-NEXT_PUBLIC_FIREBASE_API_KEY=
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=
-NEXT_PUBLIC_FIREBASE_APP_ID=
+- **`db`** - Firestore database instance
+- **`auth`** - Firebase Authentication instance
+- **`storage`** - Firebase Storage instance
+- **`FIREBASE_STORAGE_BUCKET`** - Storage bucket constant for URL generation
+
+### Storage URLs
+
+For generating Firebase Storage URLs, use the `getStorageUrl()` utility from `lib/utils/getStorageUrl.ts`:
+
+```typescript
+import { getStorageUrl } from '@/lib/utils/getStorageUrl';
+
+const { full, thumbnail } = getStorageUrl(
+    collection,
+    pattern,
+    sku,
+    imageName
+);
 ```
 
 ## 📝 Development Notes
@@ -173,7 +181,7 @@ NEXT_PUBLIC_FIREBASE_APP_ID=
 - All `params` in layouts/pages must be awaited (Next.js 15 requirement)
 - Use `useTranslations()` hook for all text content
 - Follow Material UI luxury design system patterns
-- Firebase client configuration uses public environment variables
+- Firebase config is embedded in code (no environment variables needed)
 
 ## 🤝 Contributing
 

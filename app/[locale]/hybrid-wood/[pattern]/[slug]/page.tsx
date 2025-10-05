@@ -10,6 +10,7 @@ import { isValidPattern, ProductPattern } from '@/types/products';
 import { getProductBySlug, getProductsByCollection } from '@/utils/products';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
+import { getStorageUrl } from '@/lib/utils/getStorageUrl';
 
 // Force static generation
 export const dynamic = 'error';
@@ -99,16 +100,6 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
 
     const localizedContent = product.i18n[locale as keyof typeof product.i18n];
 
-    // Get Firebase Storage bucket from env
-    const storageBucket = process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET;
-
-    // Construct Firebase Storage URL with proper encoding
-    const getStorageUrl = (imageName: string, size: 'thumbnail' | 'full' = 'full') => {
-        const path = `products/${product.collection}/${product.pattern}/${product.sku}/${size}/${imageName}`;
-        const encodedPath = encodeURIComponent(path);
-        return `https://firebasestorage.googleapis.com/v0/b/${storageBucket}/o/${encodedPath}?alt=media`;
-    };
-
     const patternKey = product.pattern as keyof Messages['patterns'];
     const installationKey = product.installationSystem as keyof Messages['installationSystems'];
 
@@ -148,7 +139,7 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
                                     }}
                                 >
                                     <img
-                                        src={getStorageUrl(image, 'full')}
+                                        src={getStorageUrl(product.collection, product.pattern, product.sku, image).full}
                                         alt={`${product.imageAlt[locale as keyof typeof product.imageAlt]} - ${index + 1}`}
                                         style={{
                                             width: '100%',

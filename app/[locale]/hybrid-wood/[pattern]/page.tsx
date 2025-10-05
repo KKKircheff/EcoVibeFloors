@@ -77,9 +77,6 @@ export default async function HybridWoodPatternPage({ params }: PatternPageProps
 
     const products = getProductsByCollectionAndPattern('hybrid-wood', pattern as ProductPattern);
 
-    // Firebase Storage base URL from environment
-    const baseImageUrl = process.env.NEXT_PUBLIC_FIREBASE_STORAGE_URL || '';
-
     const patternKey = pattern as keyof Messages['patterns'];
     const patternDescKey = `${pattern}Description` as keyof Messages['patterns'];
 

@@ -6,11 +6,11 @@ import type { Metadata } from 'next';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import Footer from '@/components/layout/footer/Footer.component';
-import { ProductGrid } from '@/components/features/products';
 import { isValidCollection, isValidPattern, CollectionType, ProductPattern } from '@/types/products';
 import { getProductsByCollectionAndPattern } from '@/utils/products';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
+import { ProductGrid } from '@/components/features/products/ProductGrid';
 
 // Force static generation
 export const dynamic = 'error';
@@ -89,8 +89,6 @@ export default async function PatternPage({ params }: PatternPageProps) {
         pattern as ProductPattern
     );
 
-    const baseImageUrl = process.env.NEXT_PUBLIC_FIREBASE_STORAGE_URL || '';
-
     const collectionKey = collection as keyof Messages['collections']['names'];
     const patternKey = pattern as keyof Messages['patterns'];
 
@@ -115,8 +113,6 @@ export default async function PatternPage({ params }: PatternPageProps) {
             <PageLayoutContainer bgcolor="background.paper" py={{ xs: 6, md: 10 }}>
                 <ProductGrid
                     products={products}
-                    locale={locale}
-                    baseImageUrl={baseImageUrl}
                     emptyMessage={tProducts('noProductsFound')}
                 />
             </PageLayoutContainer>

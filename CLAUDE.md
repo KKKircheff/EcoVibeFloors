@@ -48,18 +48,11 @@ To create a visually compelling, high-quality website with strong design and eng
 - **Theme provider**: Configured in locale layout with `AppRouterCacheProvider`
 
 ### Firebase Configuration
-- **Configuration**: `lib/firebase.ts` exports `db`, `auth`, `storage`
-- **Environment variables**: All Firebase config uses `process.env.NEXT_PUBLIC_*`
+- **Configuration**: `lib/firebase.ts` with embedded config values and exported constants
+- **Exports**: `db`, `auth`, `storage`, `FIREBASE_STORAGE_BUCKET`
 - **Services**: Firestore for data, Storage for assets, Auth for authentication
-- **Security**: Client-side configuration uses public environment variables
-
-#### Firebase App Hosting Secret Management
-- **apphosting.yaml**: Contains Firebase App Hosting deployment configuration with environment variables
-- **Security pattern**: `apphosting.yaml` is in `.gitignore` (kept local only, never committed)
-- **Deployment**: `firebase deploy` reads from local `apphosting.yaml` file
-- **Environment variables**: Firebase config stored in both `.env.local` (for Next.js) and `apphosting.yaml` (for deployment)
-- **Why local-only**: Prevents API keys from being exposed in GitHub repository
-- **Note**: Firebase client-side API keys are meant to be public and work with Security Rules, but keeping them out of git history is best practice
+- **Storage URLs**: Use `getStorageUrl()` utility from `lib/utils/getStorageUrl.ts`
+- **Security**: Firebase client-side API keys are meant to be public and work with Security Rules
 
 ### App Router Structure
 - **Root layout**: Removed in favor of locale-specific layout
