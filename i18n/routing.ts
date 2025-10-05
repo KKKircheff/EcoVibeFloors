@@ -1,6 +1,14 @@
 import {defineRouting} from 'next-intl/routing';
 
-export type PathNames = '/' | '/collections' | '/contact' | '/blog' | '/oak' | '/custom-oak' | '/hybrid-wood' | '/vinyl';
+export type PathNames =
+    | '/'
+    | '/collections'
+    | '/contact'
+    | '/blog'
+    | '/oak'
+    | '/custom-oak'
+    | '/hybrid-wood'
+    | '/vinyl';
 
 export type NavRoute = {
     name: string;
@@ -70,15 +78,9 @@ export const navRoutes: NavRoute[] = [
 ];
 
 export const routing = defineRouting({
-    // A list of all locales that are supported
-    locales: ['en', 'bg'],
-
-    // Used when no locale matches
+    locales: ['bg', 'en'],
     defaultLocale: 'bg',
-
-    // Prefix all paths with locale
     localePrefix: 'always',
 });
 
-// Type definitions for better TypeScript support
 export type Locale = (typeof routing.locales)[number];

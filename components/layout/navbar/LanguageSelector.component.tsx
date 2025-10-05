@@ -50,14 +50,13 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                 onClose={handleClose}
                 open={open}
                 sx={{
-                    maxWidth: `${flagSize + 10}px !important`,
-                    width: `${flagSize + 10}px !important`,
+                    maxWidth: `${flagSize + 2}px !important`,
+                    width: `${flagSize + 2}px !important`,
                     overflow: 'hidden',
                     '&::before, &::after': {
-                        display: 'none !important',
-                        border: 'none !important',
+                        display: 'none',
+                        border: 'none',
                     },
-                    // Standard variant specific styling
                     '& .MuiSelect-standard': {
                         marginTop: .6,
                         padding: '0px 0px',
@@ -69,19 +68,17 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                         // background: c.neutral[200],
                         borderRadius: 0,
                         transition: 'background-color 0.3s ease',
+                        textOverflow: 'clip',
+                        whiteSpace: 'nowrap',
 
                         '&:hover': {
                             // background: c.neutral[400],
                             outline: 'none',
                         },
                     },
-
-                    // Hide dropdown icon
                     '& .MuiSelect-icon': {
                         display: 'none',
                     },
-
-                    // Focused state
                     '&.Mui-focused': {
                         outline: 'none !important',
                         border: 'none !important',
@@ -92,7 +89,6 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                         }
                     },
                 }}
-                // Dropdown menu styles
                 MenuProps={{
                     PaperProps: {
                         sx: {
@@ -128,7 +124,7 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                     disableScrollLock: true,
                 }}
             >
-                <MenuItem value='bg' sx={{ mb: .5, }}>
+                <MenuItem value='bg' sx={{ mb: .5 }}>
                     <Image
                         src={`/images/flags/bg.png`}
                         alt="Bulgarian Flag"
@@ -139,8 +135,6 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                             height: `${flagSize - 6}px`,
                             objectFit: 'fill'
                         }}
-                    // style={{ borderRadius: flagSize, border: `.5px solid ${palette.info[100]}` }}
-                    // style={{ borderRadius: br.sm, border: `.5px solid ${palette.info[100]}` }}
                     />
                     <Typography
                         color='info.contrastText'
@@ -152,7 +146,7 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                 </MenuItem>
                 <MenuItem value='en' >
                     <Image
-                        src={`/images/flags/gb.png`}
+                        src={'/images/flags/gb.png'}
                         alt="UK flag"
                         width={flagSize}
                         height={flagSize}
@@ -172,9 +166,10 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                     </Typography>
                 </MenuItem>
             </Select>
+
             <RiArrowDownSLine
                 fontSize={'20px'}
-                color={isScrolled ? palette.info[600] : '#ffffff'}
+                color={isScrolled ? palette.info[600] : palette.info[50]}
                 onClick={handleOpen}
                 style={{
                     paddingTop: '4px',

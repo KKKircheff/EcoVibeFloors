@@ -27,10 +27,7 @@
                 "Floer-Hybride-Hout-Natuur-Eiken-Subtiel-sfeer-3.webp",
                 "Floer-Hybride-Hout-Natuur-Eiken-Subtiel-sfeer-4.webp"
             ],
-            "displayImages": [
-                2,
-                4
-            ],
+            "displayImages": [2, 4],
             "imageAlt": {
                 "en": "Hybrid Wood - Natural Oak Subtle - Premium plank flooring example",
                 "bg": "Естествен дъбов паркет с фина текстура - премиум качество"
@@ -53,7 +50,7 @@
                     ],
                     "seo": {
                         "title": "Естествен Дъбов Паркет Фин | Премиум Хибридно Дърво | Eco Vibe Floors",
-                        "description": "Елегантен естествен дъбов паркет с фина текстура. Водоустойчив, устойчив на драскотини, 25-годишна гаранция. Идеален за подово отопление. ⭐ Безплатна доставка.",
+                        "description": "Елегантен естествен дъбов паркет с фина текстура. Водоустойчив, устойчив на драскотини, 25-годишна гаранция. Идеален за подово отопление.",
                         "keywords": [
                             "хибридни дървени подове",
                             "дъбов под българия",
@@ -156,10 +153,7 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.847Z",
                 "updatedAt": "2025-10-01T06:31:24.041Z"
             }
@@ -305,17 +299,11 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.845Z",
                 "updatedAt": "2025-10-01T06:31:24.054Z"
             },
-            "displayImages": [
-                0,
-                6
-            ]
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5002",
@@ -474,17 +462,11 @@
             },
             "metadata": {
                 "totalImages": 21,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.851Z",
                 "updatedAt": "2025-10-01T06:31:24.044Z"
             },
-            "displayImages": [
-                0,
-                20
-            ]
+            "displayImages": [0, 20]
         },
         {
             "sku": "FLR-5003",
@@ -629,17 +611,11 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.849Z",
                 "updatedAt": "2025-10-01T06:31:24.055Z"
             },
-            "displayImages": [
-                0,
-                6
-            ]
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5010",
@@ -784,17 +760,11 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.852Z",
                 "updatedAt": "2025-10-01T06:31:24.047Z"
             },
-            "displayImages": [
-                0,
-                6
-            ]
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5004",
@@ -939,17 +909,11 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.844Z",
                 "updatedAt": "2025-10-01T06:31:24.044Z"
             },
-            "displayImages": [
-                0,
-                6
-            ]
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5006",
@@ -1094,17 +1058,11 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.840Z",
                 "updatedAt": "2025-10-01T06:31:24.045Z"
             },
-            "displayImages": [
-                0,
-                6
-            ]
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5007",
@@ -1249,17 +1207,11 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.839Z",
                 "updatedAt": "2025-10-01T06:31:24.054Z"
             },
-            "displayImages": [
-                0,
-                6
-            ]
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5008",
@@ -1406,17 +1358,11 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.843Z",
                 "updatedAt": "2025-10-01T06:31:24.046Z"
             },
-            "displayImages": [
-                0,
-                6
-            ]
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5009",
@@ -1563,17 +1509,11 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.842Z",
                 "updatedAt": "2025-10-01T06:31:24.053Z"
             },
-            "displayImages": [
-                0,
-                6
-            ]
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5013",
@@ -1715,17 +1655,11 @@
             },
             "metadata": {
                 "totalImages": 8,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.837Z",
                 "updatedAt": "2025-10-01T06:31:24.057Z"
             },
-            "displayImages": [
-                0,
-                7
-            ]
+            "displayImages": [0, 7]
         },
         {
             "sku": "FLR-5012",
@@ -1868,17 +1802,11 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.853Z",
                 "updatedAt": "2025-10-01T06:31:24.056Z"
             },
-            "displayImages": [
-                0,
-                6
-            ]
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5016",
@@ -2017,17 +1945,11 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.834Z",
                 "updatedAt": "2025-10-01T06:31:24.048Z"
             },
-            "displayImages": [
-                0,
-                6
-            ]
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5014",
@@ -2164,17 +2086,11 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.823Z",
                 "updatedAt": "2025-10-01T06:31:24.052Z"
             },
-            "displayImages": [
-                0,
-                6
-            ]
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5015",
@@ -2311,17 +2227,11 @@
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.831Z",
                 "updatedAt": "2025-10-01T06:31:24.049Z"
             },
-            "displayImages": [
-                0,
-                6
-            ]
+            "displayImages": [0, 6]
         },
         {
             "sku": "FLR-5017",
@@ -2469,17 +2379,11 @@
             },
             "metadata": {
                 "totalImages": 16,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.828Z",
                 "updatedAt": "2025-10-01T06:31:24.051Z"
             },
-            "displayImages": [
-                0,
-                15
-            ]
+            "displayImages": [0, 15]
         },
         {
             "sku": "FLR-5018",
@@ -2616,17 +2520,11 @@
             },
             "metadata": {
                 "totalImages": 3,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.826Z",
                 "updatedAt": "2025-10-01T06:31:24.058Z"
             },
-            "displayImages": [
-                2,
-                1
-            ]
+            "displayImages": [2, 1]
         },
         {
             "sku": "FLR-5019",
@@ -2764,17 +2662,11 @@
             },
             "metadata": {
                 "totalImages": 4,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-10-01T06:31:18.833Z",
                 "updatedAt": "2025-10-01T06:31:24.059Z"
             },
-            "displayImages": [
-                2,
-                4
-            ]
+            "displayImages": [2, 4]
         }
     ]
 }
