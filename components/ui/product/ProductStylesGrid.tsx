@@ -7,7 +7,7 @@ export interface ProductStylesProps {
     styles: ProductStyleCardProps[];
 }
 
-export function ProductStyles({ title, styles }: ProductStylesProps) {
+export function ProductStylesGrid({ title, styles }: ProductStylesProps) {
     return (
         <Stack spacing={6}>
             {/* <Typography variant="h3" color="primary.main" fontWeight={600} textAlign="center">
