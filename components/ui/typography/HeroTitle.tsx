@@ -9,12 +9,14 @@ interface HeroTitleProps {
 export function HeroTitle({ children }: HeroTitleProps) {
     return (
         <Typography
-            variant="h1"
+            component={'h1'}
+            variant="h3"
             fontFamily={caveat.style.fontFamily}
+            // maxWidth={'1200px'}
             sx={{
-                textShadow: '2px 2px 4px rgba(0,0,0,0.2)',
                 fontWeight: 400,
-                fontSize: { xs: '40px !important', md: '66px !important' },
+                fontSize: { xs: '36px !important', md: '66px !important' },
+                lineHeight: 1
             }}
         >
             {children}

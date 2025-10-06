@@ -1,7 +1,7 @@
-import { Stack, Typography } from '@mui/material';
+import { Stack, StackProps, Typography } from '@mui/material';
 import { LearnMoreLink } from '@/components/ui/links/LearnMoreLink.component';
 
-interface CollectionHeroProps {
+interface CollectionHeroProps extends Omit<StackProps, 'children'> {
     title: string;
     subtitle?: string;
     learnMoreText?: string;
@@ -12,10 +12,14 @@ export function CollectionHero({
     title,
     subtitle,
     learnMoreText,
-    learnMoreTargetId
+    learnMoreTargetId,
+    spacing = 3,
+    alignItems = "center",
+    textAlign = "center",
+    ...stackProps
 }: CollectionHeroProps) {
     return (
-        <Stack spacing={3} alignItems="center" textAlign="center">
+        <Stack spacing={spacing} alignItems={alignItems} textAlign={textAlign} {...stackProps}>
             <Typography variant="h1" fontWeight={600}>
                 {title}
             </Typography>

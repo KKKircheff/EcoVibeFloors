@@ -1,28 +1,32 @@
-import { Stack, Typography, Grid } from '@mui/material';
+import { Stack, Typography, Grid, Box } from '@mui/material';
 
 import { getAllCollections } from '@/utils/products';
 import { getProductCountByCollection } from '@/utils/products';
 import { CollectionCard } from '@/components/features/products/CollectionCard';
 import { getCollectionCardImages } from '@/lib/utils/getCollectionCardImages';
+import { CollectionHero } from '@/components/ui/sections/hero/CollectionHero.section';
 
 interface CollectionsGridProps {
     title: string;
+    subtitle?: string;
 }
 
-export function CollectionsGrid({ title }: CollectionsGridProps) {
+export function CollectionsGrid({ title, subtitle }: CollectionsGridProps) {
     const collections = getAllCollections();
 
     return (
         <Stack spacing={6}
-            bgcolor={{ xs: 'grey.50', md: "info.50" }}
+            bgcolor={{ xs: '#EFEEE5', md: "#EFEEE5" }}
             mx={0}
             px={{ xs: 0, md: 6 }}
             pb={{ xs: 8, md: 12 }}
             pt={{ xs: 6, md: 12 }}
         >
-            <Typography variant="h2" fontWeight={600} textAlign={'center'} pb={3}>
-                {title}
-            </Typography>
+            <CollectionHero
+                title={title}
+                subtitle={subtitle}
+                pb={{ xs: 2, md: 8 }}
+            />
 
             <Grid container spacing={{ xs: 3, md: 4 }}>
                 {collections.map((collection) => {

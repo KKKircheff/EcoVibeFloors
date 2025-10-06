@@ -10,12 +10,10 @@ export function HeroSubtitle({ children }: HeroSubtitleProps) {
         <Typography
             variant="h5"
             component="p"
-            pb={3}
             color='#fff'
-            sx={{
-                lineHeight: 1.6,
-                textShadow: '2px 2px 4px rgba(0,0,0,0.4)',
-            }}
+        // sx={{
+        //     textShadow: '2px 2px 4px rgba(0,0,0,0.4)',
+        // }}
         >
             {children}
         </Typography>

@@ -22,14 +22,14 @@ export default async function CollectionsPage({ params }: CollectionsPageProps) 
     // Enable static rendering
     setRequestLocale(locale);
 
-    const t = await getTranslations('collections');
+    const c = await getTranslations('collections');
+    const t = await getTranslations('home');
 
     return (
         <Stack>
             <CollectionsHero />
-
-            <PageLayoutContainer bgcolor={{ xs: 'grey.50', md: "info.100" }}>
-                <CollectionsGrid title={t('title')} />
+            <PageLayoutContainer bgcolor={{ xs: '#EFEEE5', md: "#DEDCD8" }}>
+                <CollectionsGrid title={c('title')} subtitle={t('hero.subtitle')} />
             </PageLayoutContainer>
 
             <PageLayoutContainer pt={10} bgcolor="info.800">

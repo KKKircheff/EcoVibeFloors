@@ -3,7 +3,7 @@ import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { HeroWrapper } from '@/components/ui/sections/hero/HeroWrapper';
 import { HeroContent } from '@/components/ui/sections/hero/HeroContent';
-import heroImage from '../../../public/images/home-page/hero.webp';
+import heroImage from '../../../public/images/home-page/collections-hero.webp';
 
 export async function CollectionsHero() {
     const t = await getTranslations('collections');
@@ -19,7 +19,7 @@ export async function CollectionsHero() {
                 placeholder="blur"
                 style={{
                     objectFit: 'cover',
-                    objectPosition: 'center',
+                    objectPosition: '50% 60%',
                 }}
                 sizes="100vw"
             />

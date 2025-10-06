@@ -27,7 +27,6 @@ export async function HomeHero() {
             <HeroContent
                 title={t('hero.title')}
                 subtitle={t('hero.subtitle')}
-                overlayOpacity={0}
                 buttons={[
                     {
                         text: tButtons('learnMore'),
