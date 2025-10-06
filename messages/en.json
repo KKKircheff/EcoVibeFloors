@@ -79,6 +79,10 @@
         "Contact": "Contact",
         "Blog": "Blog"
     },
+    "breadcrumb": {
+        "home": "Home",
+        "collections": "Collections"
+    },
     "footer": {
         "policies": "POLICIES",
         "resources": "RESOURCES",
@@ -247,7 +251,17 @@
         "warranty": "Warranty",
         "width": "Width",
         "length": "Length",
-        "thickness": "Thickness"
+        "thickness": "Thickness",
+        "technicalSpecifications": "Technical Specifications",
+        "performanceQuality": "Performance & Quality",
+        "thermalResistance": "Thermal Resistance",
+        "clickSystem": "Click System",
+        "color": "Color",
+        "structure": "Structure",
+        "vGroove": "V-Groove",
+        "waterResistance": "Water Resistance",
+        "underfloorHeating": "Underfloor Heating",
+        "certifications": "Certifications"
     },
     "contact": {
         "title": "Contact EcoVibeFloors",

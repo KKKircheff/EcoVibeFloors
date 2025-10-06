@@ -1,14 +1,16 @@
 import 'server-only';
 import { notFound } from 'next/navigation';
-import { Stack, Typography, Grid, Chip, Divider, Box } from '@mui/material';
+import { Stack, Typography, Grid, Chip, Divider } from '@mui/material';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import Footer from '@/components/layout/footer/Footer.component';
+import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
 import ProductImageGallery from '@/components/products/product-image-gallery/ProductImageGallery.component';
 import ProductActions from '@/components/products/product-actions/ProductActions.component';
-import { isValidPattern, ProductPattern } from '@/types/products';
+import { ProductSpecs, SpecCategory } from '@/components/ui/sections/product/ProductSpecs';
+import { isValidPattern } from '@/types/products';
 import { getProductBySlug, getProductsByCollection } from '@/utils/products';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
@@ -81,15 +83,12 @@ export async function generateMetadata({ params }: ProductDetailPageProps): Prom
 export default async function HybridWoodProductPage({ params }: ProductDetailPageProps) {
     const { pattern, slug, locale } = await params;
 
-    // Enable static rendering
     setRequestLocale(locale);
 
-    // Validate pattern
     if (!isValidPattern(pattern)) {
         notFound();
     }
 
-    // Get product by slug from hybrid-wood collection
     const product = getProductBySlug('hybrid-wood', slug);
 
     if (!product || product.pattern !== pattern) {
@@ -99,6 +98,8 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
     const tPatterns = await getTranslations('patterns');
     const tInstallation = await getTranslations('installationSystems');
     const tProducts = await getTranslations('products');
+    const tBreadcrumb = await getTranslations('breadcrumb');
+    const tNavigation = await getTranslations('navigation');
 
     const localizedContent = product.i18n[locale as keyof typeof product.i18n];
 
@@ -108,18 +109,142 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
     const patternName = tPatterns(patternKey);
     const installationSystemName = tInstallation(installationKey);
 
+    const breadcrumbItems = [
+        { label: tBreadcrumb('home'), href: '/' },
+        { label: tBreadcrumb('collections'), href: '/collections' },
+        { label: tNavigation('hybridWood'), href: '/hybrid-wood' },
+        { label: patternName, href: `/hybrid-wood/${pattern}` },
+        { label: localizedContent.name },
+    ];
+
     // Generate image URLs
     const imageUrls = product.images.map((image) =>
         getStorageUrl(product.collection, product.pattern, product.sku, image).full
     );
 
-    // Get dimensions from specifications
     const dimensions = localizedContent.specifications?.dimensions;
+    const specs = localizedContent.specifications;
+
+    // Build spec categories for ProductSpecs component
+    const specCategories: SpecCategory[] = [];
+
+    // Technical specifications
+    if (specs?.performance || specs?.installation) {
+        const technicalSpecs: { label: string; value: string }[] = [];
+
+        if (dimensions?.thickness) {
+            technicalSpecs.push({
+                label: tProducts('thickness'),
+                value: dimensions.thickness
+            });
+        }
+        if (specs.performance?.thermalResistance) {
+            technicalSpecs.push({
+                label: tProducts('thermalResistance'),
+                value: specs.performance.thermalResistance
+            });
+        }
+        if (specs.installation?.clickSystem) {
+            technicalSpecs.push({
+                label: tProducts('clickSystem'),
+                value: specs.installation.clickSystem
+            });
+        }
+
+        if (technicalSpecs.length > 0) {
+            specCategories.push({
+                titleKey: 'technicalSpecifications',
+                specs: technicalSpecs
+            });
+        }
+    }
+
+    // Dimensions
+    if (dimensions) {
+        const dimensionSpecs: { label: string; value: string }[] = [];
+
+        if (dimensions.length) {
+            dimensionSpecs.push({ label: tProducts('length'), value: dimensions.length });
+        }
+        if (dimensions.width) {
+            dimensionSpecs.push({ label: tProducts('width'), value: dimensions.width });
+        }
+        if (dimensions.thickness) {
+            dimensionSpecs.push({ label: tProducts('thickness'), value: dimensions.thickness });
+        }
+
+        if (dimensionSpecs.length > 0) {
+            specCategories.push({
+                titleKey: 'dimensions',
+                specs: dimensionSpecs
+            });
+        }
+    }
+
+    // Appearance
+    if (specs?.appearance) {
+        const appearanceSpecs: { label: string; value: string }[] = [];
+
+        if (specs.appearance.color) {
+            appearanceSpecs.push({ label: tProducts('color'), value: specs.appearance.color });
+        }
+        if (specs.appearance.structure) {
+            appearanceSpecs.push({ label: tProducts('structure'), value: specs.appearance.structure });
+        }
+        if (specs.installation?.vGroove) {
+            appearanceSpecs.push({ label: tProducts('vGroove'), value: specs.installation.vGroove });
+        }
+
+        if (appearanceSpecs.length > 0) {
+            specCategories.push({
+                titleKey: 'appearance',
+                specs: appearanceSpecs
+            });
+        }
+    }
+
+    // Performance & Certifications
+    if (specs?.performance || specs?.certifications) {
+        const performanceSpecs: { label: string; value: string }[] = [];
+
+        if (specs.performance?.waterResistance) {
+            performanceSpecs.push({
+                label: tProducts('waterResistance'),
+                value: specs.performance.waterResistance
+            });
+        }
+        if (specs.performance?.underfloorHeating) {
+            performanceSpecs.push({
+                label: tProducts('underfloorHeating'),
+                value: specs.performance.underfloorHeating
+            });
+        }
+        if (specs.certifications?.warranty) {
+            performanceSpecs.push({
+                label: tProducts('warranty'),
+                value: specs.certifications.warranty
+            });
+        }
+        if (specs.certifications?.qualityMark) {
+            performanceSpecs.push({
+                label: tProducts('certifications'),
+                value: specs.certifications.qualityMark
+            });
+        }
+
+        if (performanceSpecs.length > 0) {
+            specCategories.push({
+                titleKey: 'performanceQuality',
+                specs: performanceSpecs
+            });
+        }
+    }
 
     return (
         <Stack>
             {/* Product Details */}
             <PageLayoutContainer bgcolor="background.paper" py={{ xs: 4, md: 8 }}>
+                <Breadcrumb items={breadcrumbItems} />
                 <Grid container spacing={{ xs: 4, md: 12 }}>
                     {/* Product Images */}
                     <Grid size={{ xs: 12, md: 6 }}>
@@ -152,10 +277,10 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
                                     </Typography>
                                 </Stack>
 
-                                <Stack direction="row" spacing={1} flexWrap="wrap">
+                                {/* <Stack direction="row" spacing={1} flexWrap="wrap">
                                     <Chip label={patternName} color="secondary" size="small" />
                                     <Chip label={installationSystemName} color="secondary" variant="outlined" size="small" />
-                                </Stack>
+                                </Stack> */}
                             </Stack>
 
                             <Divider />
@@ -163,22 +288,22 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
                             {/* Dimensions */}
                             {dimensions && (
                                 <Stack spacing={1.5}>
-                                    <Typography variant="h6" color="text.primary">
+                                    {/* <Typography variant="h6" fontWeight={500} color="text.primary">
                                         {tProducts('dimensions')}
-                                    </Typography>
+                                    </Typography> */}
                                     <Stack spacing={0.5}>
                                         {dimensions.width && (
-                                            <Typography variant="body2" color="text.secondary">
+                                            <Typography variant="body1" color="info.400">
                                                 <strong>{tProducts('width')}:</strong> {dimensions.width}
                                             </Typography>
                                         )}
                                         {dimensions.length && (
-                                            <Typography variant="body2" color="text.secondary">
+                                            <Typography variant="body1" color="info.400">
                                                 <strong>{tProducts('length')}:</strong> {dimensions.length}
                                             </Typography>
                                         )}
                                         {dimensions.thickness && (
-                                            <Typography variant="body2" color="text.secondary">
+                                            <Typography variant="body1" color="info.400">
                                                 <strong>{tProducts('thickness')}:</strong> {dimensions.thickness}
                                             </Typography>
                                         )}
@@ -190,7 +315,7 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
 
                             {/* Description */}
                             {localizedContent.description && (
-                                <Typography variant="body1" color="text.secondary">
+                                <Typography variant="body1" color="info.400">
                                     {localizedContent.description}
                                 </Typography>
                             )}
@@ -206,10 +331,10 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
                             {/* Features */}
                             {localizedContent.features && localizedContent.features.length > 0 && (
                                 <Stack spacing={2}>
-                                    <Typography variant="h6">{tProducts('keyFeatures')}</Typography>
+                                    <Typography variant="h6" fontWeight={500}>{tProducts('keyFeatures')}</Typography>
                                     <Stack spacing={1}>
                                         {localizedContent.features.slice(0, 5).map((feature, index) => (
-                                            <Typography key={index} variant="body2" color="text.secondary">
+                                            <Typography key={index} variant="body1" color="info.400">
                                                 • {feature}
                                             </Typography>
                                         ))}
@@ -217,22 +342,34 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
                                 </Stack>
                             )}
 
-                            {/* Specifications */}
-                            <Stack spacing={1}>
-                                <Typography variant="h6">{tProducts('specifications')}</Typography>
-                                <Typography variant="body2" color="text.secondary">
+                            {/* Product Codes */}
+                            {/* <Stack spacing={1}>
+                                <Typography variant="body2" color="info.400">
                                     <strong>SKU:</strong> {product.sku}
                                 </Typography>
                                 {product.gtin && (
-                                    <Typography variant="body2" color="text.secondary">
+                                    <Typography variant="body2" color="info.400">
                                         <strong>GTIN:</strong> {product.gtin}
                                     </Typography>
                                 )}
-                            </Stack>
+                            </Stack> */}
+
                         </Stack>
                     </Grid>
                 </Grid>
             </PageLayoutContainer>
+
+            {/* Product Specifications Section */}
+            {specCategories.length > 0 && (
+                <PageLayoutContainer bgcolor="background.default" py={{ xs: 3, md: 6 }}>
+                    <Stack spacing={4}>
+                        <ProductSpecs
+                            translationKey="products"
+                            specCategories={specCategories}
+                        />
+                    </Stack>
+                </PageLayoutContainer>
+            )}
 
             <PageLayoutContainer pt={10} bgcolor="info.800">
                 <Footer />

@@ -6,6 +6,7 @@ import type { Metadata } from 'next';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import Footer from '@/components/layout/footer/Footer.component';
+import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
 import { isValidPattern, ProductPattern } from '@/types/products';
 import { getProductsByCollectionAndPattern } from '@/utils/products';
 import { routing } from '@/i18n/routing';
@@ -74,15 +75,25 @@ export default async function HybridWoodPatternPage({ params }: PatternPageProps
     const tHybrid = await getTranslations('hybridWood.hero');
     const tPatterns = await getTranslations('patterns');
     const tProducts = await getTranslations('products');
+    const tBreadcrumb = await getTranslations('breadcrumb');
+    const tNavigation = await getTranslations('navigation');
 
     const products = getProductsByCollectionAndPattern('hybrid-wood', pattern as ProductPattern);
 
     const patternKey = pattern as keyof Messages['patterns'];
     const patternDescKey = `${pattern}Description` as keyof Messages['patterns'];
 
+    const breadcrumbItems = [
+        { label: tBreadcrumb('home'), href: '/' },
+        { label: tBreadcrumb('collections'), href: '/collections' },
+        { label: tNavigation('hybridWood'), href: '/hybrid-wood' },
+        { label: tPatterns(patternKey) },
+    ];
+
     return (
         <Stack>
             <PageLayoutContainer bgcolor="white" pt={{ xs: 3, md: 8 }} pb={0}>
+                <Breadcrumb items={breadcrumbItems} />
                 <Stack spacing={3} alignItems="center" textAlign="center">
                     <Typography variant="h1" fontWeight={600}>
                         {tHybrid('title')} - {tPatterns(patternKey)}

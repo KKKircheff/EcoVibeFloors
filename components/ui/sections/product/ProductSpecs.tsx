@@ -26,40 +26,33 @@ export async function ProductSpecs({
     const t = await getTranslations(translationKey);
 
     return (
-        <Stack spacing={6}>
-            {/* <Typography variant="h3" color="primary.main" fontWeight={600} textAlign="center">
-                {title || t('specifications.title')}
-            </Typography> */}
+        <Grid container spacing={4}>
+            {specCategories.map((category, categoryIndex) => (
+                <Grid key={categoryIndex} size={{ xs: 12, md: 6 }}>
+                    <Stack p={3} px={{ xs: 0, md: 3 }}>
+                        <Typography variant="h6" color="info.500" fontWeight={500} pb={3}>
+                            {t(category.titleKey)}
+                        </Typography>
+                        <Stack spacing={2}>
+                            {category.specs.map((spec, specIndex) => {
+                                const specItem = typeof spec === 'string'
+                                    ? { label: t(`specifications.${spec}.label`), value: t(`specifications.${spec}.value`) }
+                                    : spec;
 
-            <Grid container spacing={4}>
-                {specCategories.map((category, categoryIndex) => (
-                    <Grid key={categoryIndex} size={{ xs: 12, md: 6 }}>
-                        <Stack sx={{ p: 3 }}>
-                            <Typography variant="h5" color="secondary.main" fontWeight={600} pb={3}>
-                                {t(category.titleKey)}
-                            </Typography>
-                            <Stack spacing={2}>
-                                {category.specs.map((spec, specIndex) => {
-                                    // Handle both pre-translated specs and translation key specs
-                                    const specItem = typeof spec === 'string'
-                                        ? { label: t(`specifications.${spec}.label`), value: t(`specifications.${spec}.value`) }
-                                        : spec;
-
-                                    return (
-                                        <Stack key={specIndex} spacing={2}>
-                                            <Stack direction="row" justifyContent="space-between">
-                                                <Typography variant="body1" fontWeight={400}>{specItem.label}</Typography>
-                                                <Typography variant="body1" fontWeight={400}>{specItem.value}</Typography>
-                                            </Stack>
-                                            {specIndex < category.specs.length - 1 && <Divider />}
+                                return (
+                                    <Stack key={specIndex} spacing={2}>
+                                        <Stack direction="row" justifyContent="space-between">
+                                            <Typography variant="body1" fontWeight={400}>{specItem.label}</Typography>
+                                            <Typography variant="body1" fontWeight={400}>{specItem.value}</Typography>
                                         </Stack>
-                                    );
-                                })}
-                            </Stack>
+                                        {specIndex < category.specs.length - 1 && <Divider />}
+                                    </Stack>
+                                );
+                            })}
                         </Stack>
-                    </Grid>
-                ))}
-            </Grid>
-        </Stack>
+                    </Stack>
+                </Grid>
+            ))}
+        </Grid>
     );
 }
