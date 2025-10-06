@@ -6,6 +6,7 @@ import PageLayoutContainer from '@/components/layout/page-container/PageLayoutCo
 import { CollectionsHero } from './CollectionsHero.section';
 import { CollectionsGrid } from './CollectionsGrid.section';
 import Footer from '@/components/layout/footer/Footer.component';
+import { palette } from '@/lib/styles/pallete';
 
 // Force static generation
 export const dynamic = 'error';
@@ -28,7 +29,8 @@ export default async function CollectionsPage({ params }: CollectionsPageProps) 
     return (
         <Stack>
             <CollectionsHero />
-            <PageLayoutContainer bgcolor={{ xs: '#EFEEE5', md: "#DEDCD8" }}>
+            {/* <PageLayoutContainer bgcolor={{ xs: palette.secondary.light, md: palette.secondary.light }}> */}
+            <PageLayoutContainer bgcolor={{ xs: 'grey.100', md: 'grey.200' }}>
                 <CollectionsGrid title={c('title')} subtitle={t('hero.subtitle')} />
             </PageLayoutContainer>
 

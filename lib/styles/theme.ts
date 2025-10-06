@@ -16,7 +16,7 @@ const zenKakuGothicNew = Zen_Kaku_Gothic_New({
 // });
 
 const montserrat = Montserrat({
-    weight: ['400', '500', '600'],
+    weight: ['300', '400', '500', '600'],
     subsets: ['latin', 'cyrillic'],
     display: 'optional',
     preload: true,

@@ -10,7 +10,7 @@ export async function CollectionsHero() {
     const tButtons = await getTranslations('buttons');
 
     return (
-        <HeroWrapper>
+        <HeroWrapper minHeight={{ xs: '75vh', md: '90vh' }}>
             <Image
                 src={heroImage}
                 alt="Premium wooden flooring showcase"

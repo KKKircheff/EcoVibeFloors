@@ -12,13 +12,11 @@ const Quote = ({ quote, size = 'full', ...otherProps }: Props) => {
             variant='h2'
             textAlign={size === 'full' ? 'left' : 'right'}
             width={size === 'full' ? '100%' : size === 'half' ? '50%' : '66.6%'}
-            fontFamily={'Montserrat'}
             fontWeight={400}
             {...otherProps}
-
-            sx={
-                { ...otherProps.sx }
-            }
+            sx={{
+                ...otherProps.sx
+            }}
         >
             {quote.toUpperCase()}
         </Typography>

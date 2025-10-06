@@ -23,6 +23,7 @@ export const HeroButtonGroup = ({ buttons }: HeroButtonGroupProps) => {
         <Stack
             direction={{ xs: 'column', md: buttons.length > 1 ? 'row' : 'column' }}
             spacing={3}
+            px={2}
             pb={6}
             width="100%"
             justifyContent="center"

@@ -3,7 +3,7 @@ import { Drawer, List, Stack, Typography } from '@mui/material';
 import MobileListMenuItem from './MobileListMenuItem.component';
 import { NavRoute, Locale } from '@/i18n/routing';
 import { borderRadius } from '@/lib/styles/borderRadius';
-import React from 'react';
+import React, { useEffect } from 'react';
 import BurgerButton from './BurgerButton.component';
 import { layoutPaddings as _layoutPaddings } from '@/lib/styles/layoutPaddings';
 import { LanguageSelector } from './LanguageSelector.component';
@@ -26,7 +26,6 @@ const SideDrawer = ({
 }: Props) => {
 
 
-    // Use viewport height for mobile drawer
     const [viewportHeight, setViewportHeight] = React.useState(typeof window !== 'undefined' ? window.innerHeight : 800);
 
     React.useEffect(() => {
@@ -36,9 +35,24 @@ const SideDrawer = ({
         window.addEventListener('resize', updateHeight);
         return () => window.removeEventListener('resize', updateHeight);
     }, []);
-    // Handle drawer close with animation
+
+    // Disable background scroll when drawer is open
+    useEffect(() => {
+        if (isDrawerOpen) {
+            const originalBodyOverflow = document.body.style.overflow;
+            const originalHtmlOverflow = document.documentElement.style.overflow;
+
+            document.body.style.overflow = 'hidden';
+            document.documentElement.style.overflow = 'hidden';
+
+            return () => {
+                // Restore original values
+                document.body.style.overflow = originalBodyOverflow;
+                document.documentElement.style.overflow = originalHtmlOverflow;
+            };
+        }
+    }, [isDrawerOpen]);
     const handleDrawerClose = () => {
-        // Add a slight delay to allow animation to complete
         setTimeout(() => {
             setIsDrawerOpen(false);
         }, 150);
@@ -78,7 +92,6 @@ const SideDrawer = ({
                 sx={{
                     backdropFilter: 'blur(5px)',
                     transition: 'all .3s ease-in-out',
-                    // height: 'calc(100vh - 100px)', // Adjust height to prevent overflow
                 }}
             >
                 <Stack direction="row" justifyContent="space-between" alignItems="center" pb={3}>

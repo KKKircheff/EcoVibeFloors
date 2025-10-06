@@ -7,6 +7,14 @@ import ClientThemeProvider from '@/components/providers/theme-provider';
 import Navbar from '@/components/layout/navbar/Navbar.component';
 import '../globals.css';
 import UnderNavBar from "@/components/layout/navbar/UnderNavBar.component";
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({
+    weight: ['400', '500', '600'],
+    subsets: ['latin', 'cyrillic'],
+    display: 'swap',
+    preload: true,
+});
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -60,7 +68,7 @@ export default async function LocaleLayout(props: Props) {
                     `
                 }} />
             </head>
-            <body>
+            <body className={montserrat.className}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <ClientThemeProvider>
                         <Navbar locale={locale} />

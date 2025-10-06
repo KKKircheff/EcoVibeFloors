@@ -41,9 +41,10 @@ const HeroButton = ({ children, actionType, target, href, buttonVariant = 'prima
 
     const secondaryStyles = {
         bgcolor: heroTextsbackground,
-        color: palette.primary[50],
-        border: `2px solid ${palette.primary[100]}`,
+        color: palette.info[50],
+        border: `2px solid ${palette.info[50]}`,
         '&:hover': {
+            color: palette.primary[50],
             bgcolor: palette.primary[500],
             borderColor: palette.primary[50],
         },

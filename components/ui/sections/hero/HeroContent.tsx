@@ -20,7 +20,7 @@ interface HeroContentProps {
     buttons?: HeroButtonConfig[];
 }
 
-export const heroTextsbackground = alpha(palette.primary[700], 0.85)
+export const heroTextsbackground = alpha(palette.primary[700], 0.8)
 
 export const HeroContent = ({
     title,

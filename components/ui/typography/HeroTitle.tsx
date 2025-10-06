@@ -3,7 +3,7 @@ import { Typography } from '@mui/material';
 import { ReactNode } from 'react';
 
 interface HeroTitleProps {
-    children: ReactNode;
+    children: string;
 }
 
 export function HeroTitle({ children }: HeroTitleProps) {
@@ -11,12 +11,13 @@ export function HeroTitle({ children }: HeroTitleProps) {
         <Typography
             component={'h1'}
             variant="h3"
-            fontFamily={caveat.style.fontFamily}
-            // maxWidth={'1200px'}
+            // fontFamily={caveat.style.fontFamily}
+            maxWidth={'1650px'}
             sx={{
-                fontWeight: 400,
-                fontSize: { xs: '36px !important', md: '66px !important' },
-                lineHeight: 1
+                fontWeight: 300,
+                // fontSize: { xs: '36px !important', md: '66px !important' },
+                fontSize: { xs: '26px !important', md: '56px !important' },
+                lineHeight: 1.3
             }}
         >
             {children}

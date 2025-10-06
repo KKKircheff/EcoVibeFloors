@@ -1,10 +1,11 @@
-import { Stack, Typography, Grid, Box } from '@mui/material';
+import { Stack, Grid } from '@mui/material';
 
 import { getAllCollections } from '@/utils/products';
 import { getProductCountByCollection } from '@/utils/products';
 import { CollectionCard } from '@/components/features/products/CollectionCard';
 import { getCollectionCardImages } from '@/lib/utils/getCollectionCardImages';
 import { CollectionHero } from '@/components/ui/sections/hero/CollectionHero.section';
+import { palette } from '@/lib/styles/pallete';
 
 interface CollectionsGridProps {
     title: string;
@@ -16,7 +17,8 @@ export function CollectionsGrid({ title, subtitle }: CollectionsGridProps) {
 
     return (
         <Stack spacing={6}
-            bgcolor={{ xs: '#EFEEE5', md: "#EFEEE5" }}
+            // bgcolor={{ xs: palette.secondary.light, md: palette.secondary.light }}
+            bgcolor={{ xs: 'grey.100', md: 'grey.100' }}
             mx={0}
             px={{ xs: 0, md: 6 }}
             pb={{ xs: 8, md: 12 }}

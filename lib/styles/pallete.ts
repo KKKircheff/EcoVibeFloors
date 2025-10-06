@@ -16,13 +16,15 @@ export const palette = {
         900: '#2f262b',
     },
     secondary: {
-        main: '#494545', // Forest Green - representing eco-friendly nature
-        light: '#827e7e',
-        dark: '#3a3636',
-        contrastText: '#FFFFFF',
+        main: '#ebdfd6',
+        light: '#efe5de',
+        dark: '#222125',
+        contrastText: '#111',
     },
     info: {
         main: '#38363f',
+        light: '#cfced1',
+        dark: '#e3d2c6',
         50: '#e7e6e8',
         100: '#cfced1',
         200: '#b7b6ba',
