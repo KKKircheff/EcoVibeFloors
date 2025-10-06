@@ -22,7 +22,7 @@ export default function Breadcrumb({ items }: BreadcrumbProps) {
     };
 
     return (
-        <Stack sx={{ py: { xs: 2, md: 3 } }}>
+        <Stack sx={{ pb: { xs: 2, md: 6 } }}>
             <Breadcrumbs
                 separator={<NavigateNextIcon fontSize="small" sx={{ color: 'text.secondary' }} />}
                 aria-label="breadcrumb"

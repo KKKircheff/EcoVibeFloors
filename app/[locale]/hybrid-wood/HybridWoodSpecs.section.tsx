@@ -10,7 +10,7 @@ export async function HybridWoodSpecs() {
             titleKey: 'specifications.technical.title',
             specs: [
                 { label: t('specifications.technical.thickness'), value: '1.1mm' },
-                { label: t('specifications.technical.thermalResistance'), value: '0.07 m²K/W' },
+                { label: t('specifications.technical.thermalResistance'), value: '0.07m² K/W' },
                 { label: t('specifications.technical.wearLayer'), value: t('specifications.technical.realOak') },
                 { label: t('specifications.technical.core'), value: 'HDF' }
             ]

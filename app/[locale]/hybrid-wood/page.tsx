@@ -1,8 +1,9 @@
 import 'server-only';
 import { alpha, Stack } from '@mui/material';
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
+import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
 import { HybridWoodHero } from './HybridWoodHero.section';
 import { HybridWoodOverview } from './HybridWoodOverview.section';
 import { HybridWoodFeatures } from './HybridWoodFeatures.section';
@@ -29,19 +30,31 @@ export default async function HybridWoodPage({ params }: HybridWoodPageProps) {
     setRequestLocale(locale);
     const overviewBgcolor = alpha(palette.info[50], .4);
 
+    const t = await getTranslations({ locale, namespace: 'breadcrumb' });
+    const tCollections = await getTranslations({ locale, namespace: 'collections.names' });
+
+    const breadcrumbItems = [
+        { label: t('home'), href: '/' },
+        { label: t('collections'), href: '/collections' },
+        { label: tCollections('hybrid-wood') }
+    ];
+
     return (
         <Stack width={'100%'}>
-            <HybridWoodHero />
+            <PageLayoutContainer bgcolor='grey.50' pt={{ xs: 2, md: 4 }}>
+                <Breadcrumb items={breadcrumbItems} />
+                <HybridWoodHero />
+            </PageLayoutContainer>
+
+            <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }} id='hybrid-wood-learn-more'>
+                <HybridWoodStyles />
+            </PageLayoutContainer>
 
             <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }}>
                 <HybridWoodFeatures />
             </PageLayoutContainer>
 
-            <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }}>
-                <HybridWoodStyles />
-            </PageLayoutContainer>
-
-            <PageLayoutContainer bgcolor='secondary.main' py={{ xs: 6, md: 10 }}>
+            <PageLayoutContainer bgcolor='secondary.main' py={{ xs: 6, md: 10 }} >
                 <HybridWoodSustainability />
             </PageLayoutContainer>
 

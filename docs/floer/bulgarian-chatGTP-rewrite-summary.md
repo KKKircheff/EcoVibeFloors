@@ -1,4 +1,4 @@
-# Bulgarian Text Rewrite Summary - hybrid-wood.json
+# Bulgarian Text Rewrite Summary
 
 **Date:** 2025-10-05
 **Approach:** Manual natural language rewriting (NO mechanical replacement)
