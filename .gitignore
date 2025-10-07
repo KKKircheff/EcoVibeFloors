@@ -3,6 +3,7 @@
 # dependencies
 /node_modules
 /.no-track
+/.VSCodeCounter
 /.pnp
 .pnp.*
 .yarn/*

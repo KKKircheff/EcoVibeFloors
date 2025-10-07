@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
                 pathname: '/v0/b/*/o/**',
             },
         ],
-        qualities: [75, 85, 100],
+        qualities: [100],
         formats: ['image/webp', 'image/avif'],
     },
     modularizeImports: {

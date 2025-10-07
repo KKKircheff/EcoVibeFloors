@@ -111,7 +111,7 @@ export function ProductCard({ product }: ProductCardProps) {
                         alt={product.imageAlt[locale as keyof typeof product.imageAlt]}
                         fill
                         loading="lazy"
-                        // sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                        sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
                         onLoad={handleMainImageLoad}
                         style={{
                             borderRadius: borderRadius.md,

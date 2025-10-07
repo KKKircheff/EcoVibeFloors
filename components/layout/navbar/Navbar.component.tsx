@@ -92,7 +92,10 @@ export default function Navbar({ locale }: Props) {
                         fontFamily={caveat.style.fontFamily}
                         color={isScrolled ? 'primary.600' : 'white'}
                         sx={{
-                            transition: 'color 0.3s ease-in-out'
+                            transition: 'color 0.3s ease-in-out',
+                            '@media (max-width:600px)': {
+                                fontSize: '1.6rem',
+                            },
                         }}
                     >
                         EcoVibe Floors

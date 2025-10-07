@@ -1,9 +1,9 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
-import heroImage from '../../../public/images/home-page/hero-home.webp';
 import { HeroWrapper } from '@/components/ui/sections/hero/HeroWrapper';
 import { HeroContent } from '@/components/ui/sections/hero/HeroContent';
+import heroImage from '../../../public/images/home-page/hero-home-new.webp';
 
 export async function HomeHero() {
     const t = await getTranslations('home');
@@ -20,9 +20,9 @@ export async function HomeHero() {
                 fetchPriority="high"
                 style={{
                     objectFit: 'cover',
-                    objectPosition: '100% 100%',
+                    objectPosition: '50% 90%',
                 }}
-                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 100vw, 100vw"
+                sizes="100vw"
             />
             <HeroContent
                 title={t('hero.title')}
