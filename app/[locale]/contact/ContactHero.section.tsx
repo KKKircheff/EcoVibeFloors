@@ -26,13 +26,13 @@ export async function ContactHero() {
             <HeroContent
                 title={t('hero.title')}
                 subtitle={t('hero.subtitle')}
-                buttons={[
-                    {
-                        text: tButtons('contactNow'),
-                        actionType: 'scroll',
-                        target: 'contact-form'
-                    }
-                ]}
+            // buttons={[
+            //     {
+            //         text: tButtons('contactNow'),
+            //         actionType: 'scroll',
+            //         target: 'contact-form'
+            //     }
+            // ]}
             />
         </HeroWrapper>
     );

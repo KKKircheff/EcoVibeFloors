@@ -30,7 +30,7 @@ export const HeroContent = ({
 
 
     return (
-        <Stack spacing={{ xs: 4, lg: 12 }} width={'100%'} pt={{ xs: 6, md: 20 }}>
+        <Stack spacing={{ xs: 4, lg: 12 }} width={'100%'} pt={{ xs: buttons.length ? 6 : 0, md: buttons.length ? 20 : 0 }}>
             <Stack
                 spacing={{ xs: 2, lg: 3 }}
                 alignItems="center"

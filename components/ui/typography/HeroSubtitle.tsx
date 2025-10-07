@@ -2,7 +2,7 @@ import { Typography } from '@mui/material';
 import { ReactNode } from 'react';
 
 interface HeroSubtitleProps {
-    children: ReactNode;
+    children: string;
 }
 
 export function HeroSubtitle({ children }: HeroSubtitleProps) {
