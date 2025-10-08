@@ -25,7 +25,7 @@ export function CollectionHero({
             </Typography>
 
             {subtitle && (
-                <Typography variant="h5" maxWidth="800px">
+                <Typography variant="h5" maxWidth="1000px">
                     {subtitle}
                 </Typography>
             )}

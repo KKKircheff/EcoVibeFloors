@@ -11,7 +11,7 @@ interface HeroButtonProps extends Omit<ButtonProps, 'variant'> {
     actionType?: 'scroll' | 'navigate';
     target?: string;
     href?: string;
-    buttonVariant?: 'primary' | 'secondary';
+    buttonVariant?: 'primary' | 'secondary' | 'outlined';
 }
 
 const HeroButton = ({ children, actionType, target, href, buttonVariant = 'primary', ...otherProps }: HeroButtonProps) => {
@@ -49,8 +49,18 @@ const HeroButton = ({ children, actionType, target, href, buttonVariant = 'prima
             borderColor: palette.primary[50],
         },
     };
+    const outlinedStyles = {
+        bgcolor: 'transparent',
+        color: palette.info[50],
+        border: `2px solid ${palette.info[50]}`,
+        '&:hover': {
+            color: palette.primary[50],
+            bgcolor: palette.primary[600],
+            borderColor: palette.primary[50],
+        },
+    };
 
-    const variantStyles = buttonVariant === 'primary' ? primaryStyles : secondaryStyles;
+    const variantStyles = buttonVariant === 'primary' ? primaryStyles : buttonVariant === 'secondary' ? secondaryStyles : outlinedStyles;
 
     return (
         <Button

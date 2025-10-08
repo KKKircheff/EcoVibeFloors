@@ -9,9 +9,9 @@ import { Features } from './sections/Features.section';
 import { Sustainability } from './sections/Sustainability.section';
 import { Installation } from './sections/Installation.section';
 import { Maintenance } from './sections/Maintenance.section';
-import { Conclusion } from './sections/Conclusion.section';
 import Footer from '@/components/layout/footer/Footer.component';
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
+import { HybridWoodCTA } from './sections/HybridWoodCTA.section';
 
 // Force static generation
 export const dynamic = 'error';
@@ -66,7 +66,7 @@ export default async function WhatIsHybridWoodPage({ params }: WhatIsHybridWoodP
             </PageLayoutContainer>
 
             <PageLayoutContainer bgcolor='primary.main' py={{ xs: 6, md: 10 }}>
-                <Conclusion />
+                <HybridWoodCTA />
             </PageLayoutContainer>
 
             <PageLayoutContainer pt={10} bgcolor='info.800'>

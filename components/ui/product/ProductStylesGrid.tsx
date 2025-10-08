@@ -1,6 +1,6 @@
 'use client';
 import { Stack, Typography, Grid } from '@mui/material';
-import { ProductStyleCard, ProductStyleCardProps } from './ProductStyleCard';
+import { ProductStyleCard, ProductStyleCardProps } from '../card/ProductStyleCard';
 
 export interface ProductStylesProps {
     title: string;

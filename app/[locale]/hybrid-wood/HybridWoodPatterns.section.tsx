@@ -1,7 +1,7 @@
 import 'server-only';
 import { Stack, Typography, Grid } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
-import PatternNavigationButton from '@/components/features/products/PatternNavigationButton';
+import PatternNavigationButton from '@/components/ui/buttons/PatternNavigationButton';
 import { Messages } from '@/global';
 
 export async function HybridWoodPatterns() {

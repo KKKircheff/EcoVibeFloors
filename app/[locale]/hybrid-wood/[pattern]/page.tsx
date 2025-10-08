@@ -11,7 +11,7 @@ import { isValidPattern, ProductPattern } from '@/types/products';
 import { getProductsByCollectionAndPattern } from '@/utils/products';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
-import { ProductGrid } from '@/components/features/products/ProductGrid';
+import { ProductGrid } from '@/components/ui/product/ProductGrid';
 
 // Force static generation
 export const dynamic = 'error';

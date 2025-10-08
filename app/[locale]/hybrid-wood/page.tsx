@@ -7,12 +7,12 @@ import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
 import { HybridWoodHero } from './HybridWoodHero.section';
 import { HybridWoodOverview } from './HybridWoodOverview.section';
 import { HybridWoodFeatures } from './HybridWoodFeatures.section';
-import { HybridWoodSustainability } from './HybridWoodSustainability.section';
 import { HybridWoodSpecs } from './HybridWoodSpecs.section';
 import { HybridWoodStyles } from './HybridWoodStyles.section';
-import { HybridWoodCta } from './HybridWoodCta.section';
 import Footer from '@/components/layout/footer/Footer.component';
 import { palette } from '@/lib/styles/pallete';
+import { Sustainability } from './what-is-hybrid-wood/sections/Sustainability.section';
+import { HybridWoodCTA } from './what-is-hybrid-wood/sections/HybridWoodCTA.section';
 
 // Force static generation
 export const dynamic = 'error';
@@ -54,16 +54,17 @@ export default async function HybridWoodPage({ params }: HybridWoodPageProps) {
                 <HybridWoodFeatures />
             </PageLayoutContainer>
 
-            <PageLayoutContainer bgcolor='secondary.main' py={{ xs: 6, md: 10 }} >
-                <HybridWoodSustainability />
-            </PageLayoutContainer>
 
             <PageLayoutContainer bgcolor='background.paper' py={{ xs: 6, md: 10 }}>
                 <HybridWoodSpecs />
             </PageLayoutContainer>
 
+            <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }} >
+                <Sustainability />
+            </PageLayoutContainer>
+
             <PageLayoutContainer bgcolor='primary.main' py={{ xs: 6, md: 10 }}>
-                <HybridWoodCta />
+                <HybridWoodCTA />
             </PageLayoutContainer>
 
             <PageLayoutContainer pt={10} bgcolor='info.800'>

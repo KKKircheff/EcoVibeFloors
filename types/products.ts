@@ -115,16 +115,22 @@ export interface Product {
 
     i18n: I18nContent;
 
-    metadata: ProductMetadata;
+    metadata?: ProductMetadata;
 }
 
 export interface ProductCollection {
     metadata: {
         generatedAt: string;
         totalProducts: number;
-        collection: string;
+        collection?: string;
         description: string;
         version?: string;
+        lastSorted?: string;
+        lastRefined?: string;
+        refinementNote?: string;
+        // Vinyl-specific metadata fields
+        vinylType?: string;
+        installationSystem?: 'click' | 'glue' | 'glue-down';
     };
     products: Product[]; // Array format for optimal performance
 }
@@ -155,9 +161,25 @@ export interface CollectionInfo {
 // Utility Types
 // ============================================================================
 
-export type CollectionType = 'hybrid-wood'; // Expandable for future collections
+export type CollectionType =
+    | 'hybrid-wood'
+    | 'glue-down-vinyl'
+    | 'click-vinyl';
 
-export type ProductPattern = 'fishbone' | 'plank';
+export type ProductPattern =
+    // Hybrid Wood patterns
+    | 'fishbone'
+    | 'plank'
+    // Glue-down vinyl patterns
+    | 'dorpen'
+    | 'hongaarse-punt'
+    | 'landhuis'
+    // Click vinyl patterns
+    | 'walvisgraat-click'
+    | 'natuur-click'
+    | 'landhuis-click'
+    | 'tegel-click'
+    | 'visgraat-click';
 
 export type ImageSize = 'thumbnail' | 'full';
 
@@ -170,11 +192,22 @@ export function isValidLocale(locale: string): locale is Locale {
 }
 
 export function isValidPattern(pattern: string): pattern is ProductPattern {
-    return pattern === 'fishbone' || pattern === 'plank';
+    return [
+        'fishbone',
+        'plank',
+        'dorpen',
+        'hongaarse-punt',
+        'landhuis',
+        'walvisgraat-click',
+        'natuur-click',
+        'landhuis-click',
+        'tegel-click',
+        'visgraat-click',
+    ].includes(pattern);
 }
 
 export function isValidCollection(collection: string): collection is CollectionType {
-    return collection === 'hybrid-wood';
+    return ['hybrid-wood', 'glue-down-vinyl', 'click-vinyl'].includes(collection);
 }
 
 export function isValidImageSize(size: string): size is ImageSize {

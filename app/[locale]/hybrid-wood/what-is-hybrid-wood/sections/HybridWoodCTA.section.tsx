@@ -5,7 +5,7 @@ import { BlogTitle } from '@/components/ui/typography/BlogTitle';
 import { BlogContent } from '@/components/ui/typography/BlogContent';
 import { HeroButton } from '@/components/ui/buttons/HeroButton';
 
-export async function Conclusion() {
+export async function HybridWoodCTA() {
     const t = await getTranslations('whatIsHybridWood.conclusion');
     const tButtons = await getTranslations('buttons');
 
@@ -21,7 +21,7 @@ export async function Conclusion() {
                 <BlogContent color="primary.contrastText" fontWeight={500}>
                     {t('cta')}
                 </BlogContent>
-                <HeroButton actionType='navigate' target='/contact' buttonVariant='secondary'>
+                <HeroButton actionType='navigate' target='/contact' buttonVariant='outlined'>
                     {tButtons('contactUs')}
                 </HeroButton>
             </Stack>
