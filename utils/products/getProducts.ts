@@ -5,6 +5,8 @@
 
 import {Product, ProductPattern, CollectionType} from '@/types/products';
 import hybridWoodData from '@/collections/hybrid-wood.json';
+import clickVinylData from '@/collections/click-vinyl.json';
+import glueDownVinylData from '@/collections/glue-down-vinyl.json';
 
 /**
  * Get all products from a specific collection
@@ -13,9 +15,11 @@ export function getProductsByCollection(collection: CollectionType): Product[] {
     switch (collection) {
         case 'hybrid-wood':
             return hybridWoodData.products as Product[];
+        case 'click-vinyl':
+            return clickVinylData.products as Product[];
+        case 'glue-down-vinyl':
+            return glueDownVinylData.products as Product[];
         // Future collections can be added here:
-        // case 'vinyl':
-        //     return vinylData.products as Product[];
         // case 'oak':
         //     return oakData.products as Product[];
         // case 'custom-oak':
@@ -40,8 +44,11 @@ export function getProductsByCollectionAndPattern(
  * Get all products (from all collections)
  */
 export function getAllProducts(): Product[] {
-    // Currently only hybrid-wood, expand as more collections are added
-    return [...(hybridWoodData.products as Product[])];
+    return [
+        ...(hybridWoodData.products as Product[]),
+        ...(clickVinylData.products as Product[]),
+        ...(glueDownVinylData.products as Product[])
+    ];
 }
 
 /**

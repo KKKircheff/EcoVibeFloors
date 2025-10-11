@@ -1,47 +1,51 @@
 import 'server-only';
-import { Stack, Typography, Container, Grid } from '@mui/material';
+import { Grid } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
-import { Ri24HoursLine } from "react-icons/ri";
-import { BiLayerPlus } from "react-icons/bi";
 import { FeatureIconCard } from '@/components/ui/card/FeatureIconCard';
-import { HiOutlineBadgeCheck } from 'react-icons/hi';
+import { TreeIcon } from '@/components/icons/TreeIcon';
+import { WaterResistantIcon } from '@/components/icons/WaterResistantIcon';
+import { ScratchIcon } from '@/components/icons/ScratchIcon';
+import { HeatingIcon } from '@/components/icons/HeatingIcon';
+import { GoShieldCheck } from "react-icons/go";
+import { SlLayers } from "react-icons/sl";
+import { TbHours24 } from "react-icons/tb";
 
 export async function HybridWoodFeatures() {
     const t = await getTranslations('hybridWood');
 
     const featuresConfig = [
         {
-            icon: <Ri24HoursLine size={60} />,
+            icon: <SlLayers size={52} />,
             titleKey: 'features.revolutionaryTech.title',
             descriptionKey: 'features.revolutionaryTech.description',
             iconColor: 'primary' as const
         },
         {
-            icon: <Ri24HoursLine size={60} />,
+            icon: <TbHours24 size={56} />,
             titleKey: 'features.waterResistance.title',
             descriptionKey: 'features.waterResistance.description',
             iconColor: 'primary' as const
         },
         {
-            icon: <BiLayerPlus size={60} />,
+            icon: <ScratchIcon size={68} />,
             titleKey: 'features.scratchResistance.title',
             descriptionKey: 'features.scratchResistance.description',
             iconColor: 'primary' as const
         },
         {
-            icon: <HiOutlineBadgeCheck size={60} />,
+            icon: <GoShieldCheck size={52} />,
             titleKey: 'features.warranty.title',
             descriptionKey: 'features.warranty.description',
             iconColor: 'primary' as const
         },
         {
-            icon: <BiLayerPlus size={60} />,
+            icon: <HeatingIcon size={50} />,
             titleKey: 'features.underfloorHeating.title',
             descriptionKey: 'features.underfloorHeating.description',
             iconColor: 'primary' as const
         },
         {
-            icon: <HiOutlineBadgeCheck size={60} />,
+            icon: <TreeIcon size={56} />,
             titleKey: 'features.ecoFriendly.title',
             descriptionKey: 'features.ecoFriendly.description',
             iconColor: 'primary' as const

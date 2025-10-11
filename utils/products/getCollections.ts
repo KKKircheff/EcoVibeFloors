@@ -48,14 +48,45 @@ export function getAllCollections(): CollectionMetadata[] {
                 },
             },
         },
+        {
+            id: 'click-vinyl',
+            slug: 'click-vinyl',
+            nameKey: 'collections.names.clickVinyl',
+            descriptionKey: 'collections.clickVinyl.description',
+            patterns: ['walvisgraat-click', 'natuur-click', 'landhuis-click', 'tegel-click', 'visgraat-click'],
+            cardImages: {
+                main: {
+                    sku: 'FLR-3911',
+                    imageIndex: 0,
+                    full: true,
+                },
+                hover: {
+                    sku: 'FLR-3912',
+                    imageIndex: 0,
+                    full: true,
+                },
+            },
+        },
+        {
+            id: 'glue-down-vinyl',
+            slug: 'glue-down-vinyl',
+            nameKey: 'collections.names.glueDownVinyl',
+            descriptionKey: 'collections.glueDownVinyl.description',
+            patterns: ['dorpen', 'hongaarse-punt', 'landhuis'],
+            cardImages: {
+                main: {
+                    sku: 'FLR-3040',
+                    imageIndex: 0,
+                    full: true,
+                },
+                hover: {
+                    sku: 'FLR-3041',
+                    imageIndex: 0,
+                    full: true,
+                },
+            },
+        },
         // Future collections to be added:
-        // {
-        //     id: 'vinyl',
-        //     slug: 'vinyl',
-        //     nameKey: 'collections.names.vinyl',
-        //     descriptionKey: 'collections.vinyl.description',
-        //     patterns: ['plank', 'fishbone'], // Adjust based on actual vinyl patterns
-        // },
         // {
         //     id: 'oak',
         //     slug: 'oak',
@@ -73,16 +104,10 @@ export function getAllCollections(): CollectionMetadata[] {
     ];
 }
 
-/**
- * Get metadata for a specific collection
- */
 export function getCollectionMetadata(collectionId: CollectionType): CollectionMetadata | null {
     return getAllCollections().find((col) => col.id === collectionId) || null;
 }
 
-/**
- * Get available patterns for a collection
- */
 export function getCollectionPatterns(collectionId: CollectionType): ProductPattern[] {
     const metadata = getCollectionMetadata(collectionId);
     return metadata?.patterns || [];

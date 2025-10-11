@@ -49,6 +49,9 @@ export function getStyleCardImages(
     }
 
     // Generate Firebase Storage URLs
+    // Note: Use the collection parameter (file-level type like 'glue-down-vinyl', 'click-vinyl')
+    // NOT product.collection (which contains sub-collection names like 'village-vinyl')
+    // Firebase Storage structure uses the file-level collection type
     const mainImageUrls = getStorageUrl(
         collection,
         product.pattern,

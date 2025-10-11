@@ -3,8 +3,8 @@ import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import { HeroWrapper } from '@/components/ui/sections/hero/HeroWrapper';
 import { HeroContent } from '@/components/ui/sections/hero/HeroContent';
-// import heroImage from '../../../../../public/images/home-page/floor-varaiety-hero.webp';
-import heroImage from '../../../../../public/images/home-page/hero-c.webp';
+// import heroImage from '../../../../public/images/home-page/floor-varaiety-hero.webp';
+import heroImage from '../../../../public/images/home-page/hero-c.webp';
 
 export async function WhatIsHybridWoodHero() {
     const t = await getTranslations('whatIsHybridWood.hero');

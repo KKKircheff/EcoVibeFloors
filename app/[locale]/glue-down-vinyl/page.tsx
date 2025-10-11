@@ -4,24 +4,22 @@ import { setRequestLocale, getTranslations } from 'next-intl/server';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
-import { HybridWoodHero } from './(sections)/HybridWoodHero.section';
-import { HybridWoodFeatures } from './(sections)/HybridWoodFeatures.section';
-import { HybridWoodSpecs } from './(sections)/HybridWoodSpecs.section';
-import { HybridWoodStyles } from './(sections)/HybridWoodStyles.section';
+import { GlueDownVinylHero } from './(sections)/GlueDownVinylHero.section';
+import { GlueDownVinylCollections } from './(sections)/GlueDownVinylCollections.section';
+import { GlueDownVinylFeatures } from './(sections)/GlueDownVinylFeatures.section';
+import { GlueDownVinylCta } from './(sections)/GlueDownVinylCta.section';
 import Footer from '@/components/layout/footer/Footer.component';
-import { Sustainability } from './(sections)/Sustainability.section';
-import { HybridWoodCTA } from './(sections)/HybridWoodCTA.section';
 
 // Force static generation
 export const dynamic = 'error';
 
-interface HybridWoodPageProps {
+interface GlueDownVinylPageProps {
     params: Promise<{
         locale: string;
     }>;
 }
 
-export default async function HybridWoodPage({ params }: HybridWoodPageProps) {
+export default async function GlueDownVinylPage({ params }: GlueDownVinylPageProps) {
     const { locale } = await params;
 
     // Enable static rendering
@@ -33,35 +31,26 @@ export default async function HybridWoodPage({ params }: HybridWoodPageProps) {
     const breadcrumbItems = [
         { label: t('home'), href: '/' },
         { label: t('collections'), href: '/collections' },
-        { label: tCollections('hybrid-wood') }
+        { label: tCollections('glue-down-vinyl') }
     ];
 
     return (
         <Stack width={'100%'}>
             <PageLayoutContainer bgcolor='grey.50' pt={{ xs: 2, md: 4 }}>
                 <Breadcrumb items={breadcrumbItems} />
-                <HybridWoodHero />
+                <GlueDownVinylHero />
             </PageLayoutContainer>
 
-            <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }} id='hybrid-wood-learn-more'>
-                <HybridWoodStyles />
+            <PageLayoutContainer bgcolor='background.paper' py={{ xs: 6, md: 10 }}>
+                <GlueDownVinylCollections />
             </PageLayoutContainer>
 
             <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }}>
-                <HybridWoodFeatures />
-            </PageLayoutContainer>
-
-
-            <PageLayoutContainer bgcolor='background.paper' py={{ xs: 6, md: 10 }}>
-                <HybridWoodSpecs />
-            </PageLayoutContainer>
-
-            <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }} >
-                <Sustainability />
+                <GlueDownVinylFeatures />
             </PageLayoutContainer>
 
             <PageLayoutContainer bgcolor='primary.main' py={{ xs: 6, md: 10 }}>
-                <HybridWoodCTA />
+                <GlueDownVinylCta />
             </PageLayoutContainer>
 
             <PageLayoutContainer pt={10} bgcolor='info.800'>

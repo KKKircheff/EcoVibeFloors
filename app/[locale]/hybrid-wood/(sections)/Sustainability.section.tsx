@@ -2,7 +2,7 @@ import 'server-only';
 import { Stack, Typography, Box, Container } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
-import hybridWoodImage from '../../../../../public/images/other/sustainable.webp';
+import hybridWoodImage from '../../../../public/images/other/sustainable.webp';
 import { BlogTitle } from '@/components/ui/typography/BlogTitle';
 import { BlogContent } from '@/components/ui/typography/BlogContent';
 

@@ -72,7 +72,8 @@
         "Premium_Oak": "Quality Natural Oak",
         "Hybrid_Wood": "Premium Hybrid Wood",
         "Premium_Oak_Custom_Crafted": "Premium Natural Oak",
-        "Vinyl": "High quality Vinyl",
+        "Click_Vinyl": "Click Vinyl",
+        "Glue-Down_Vinyl": "Glue-Down Vinyl",
         "All_Collections": "All Collections",
         "Home": "Home",
         "Collections": "Collections",
@@ -200,9 +201,19 @@
         "names": {
             "hybridWood": "Hybrid Wood",
             "hybrid-wood": "Hybrid Wood",
+            "clickVinyl": "Click Vinyl",
+            "click-vinyl": "Click Vinyl",
+            "glueDownVinyl": "Glue-Down Vinyl",
+            "glue-down-vinyl": "Glue-Down Vinyl",
             "vinyl": "Vinyl",
             "oak": "Natural Oak",
             "customOak": "Premium Oak"
+        },
+        "clickVinyl": {
+            "description": "Easy-to-install click vinyl flooring combining Dutch quality with 100% waterproof performance and DIY-friendly installation"
+        },
+        "glueDownVinyl": {
+            "description": "Professional-grade glue-down vinyl flooring offering permanent installation and commercial-grade stability"
         },
         "naturalOak": {
             "title": "Natural Oak Floors",
@@ -225,7 +236,23 @@
         "plank": "Plank",
         "plankDescription": "Classic plank flooring offers timeless elegance with contemporary versatility, perfect for any interior design style.",
         "fishbone": "Herringbone",
-        "fishboneDescription": "Sophisticated herringbone pattern creates visual impact and elegant texture, transforming any space into a luxurious setting."
+        "fishboneDescription": "Sophisticated herringbone pattern creates visual impact and elegant texture, transforming any space into a luxurious setting.",
+        "walvisgraat-click": "Whalebone Click",
+        "walvisgraatClickDescription": "Extra-wide herringbone pattern with click installation, creating dramatic visual impact with easy DIY setup.",
+        "natuur-click": "Nature Rigid Click",
+        "natuurClickDescription": "Commercial-grade rigid core vinyl with authentic wood textures and superior durability for high-traffic areas.",
+        "landhuis-click": "Manor Click",
+        "landhuisClickDescription": "Wide plank design with realistic oak aesthetics, perfect for creating spacious and elegant interiors.",
+        "tegel-click": "Tile Click",
+        "tegelClickDescription": "Large format stone and concrete looks, ideal for damp areas with excellent underfloor heating compatibility.",
+        "visgraat-click": "Herringbone Click",
+        "visgraatClickDescription": "Classic herringbone pattern in click format with ceramic bead technology for enhanced wear resistance.",
+        "dorpen": "Village",
+        "dorpenDescription": "Authentic village oak aesthetics with glue-down stability, perfect for commercial spaces requiring permanent installation.",
+        "hongaarse-punt": "Hungarian Point",
+        "hongaarsePuntDescription": "Elegant diagonal herringbone pattern creating sophisticated visual movement and timeless appeal.",
+        "landhuis": "Manor",
+        "landhuisDescription": "Wide plank manor style with glue-down installation for maximum stability in high-traffic commercial environments."
     },
     "installationSystems": {
         "click": "Click System",
@@ -391,6 +418,304 @@
             "title": "Ready to Transform Your Space?",
             "description": "Discover the perfect balance of natural beauty, durability, and sustainability with our Hybrid Wood flooring collection. Experience premium Dutch quality with extended warranties and expert guidance.",
             "contact": "Contact us today for a personalized consultation and quote."
+        }
+    },
+    "clickVinyl": {
+        "pageTitle": "Click Vinyl Collection",
+        "hero": {
+            "title": "Premium Click Vinyl Collection",
+            "subtitle": "Easy-to-install click vinyl flooring combining Dutch quality with 100% waterproof performance"
+        },
+        "overview": {
+            "title": "Premium Dutch Click Vinyl Flooring",
+            "subtitle": "Floer's click vinyl collection offers DIY-friendly installation and unmatched quality",
+            "description": "From the renowned Dutch flooring manufacturer Floer, these click vinyl collections deliver exceptional performance, stunning aesthetics, and innovative features. Each collection is 100% waterproof, phthalate-free, and backed by a 20-year warranty, making them perfect for modern homes and easy DIY installation."
+        },
+        "collections": {
+            "title": "Click Vinyl Collections",
+            "subtitle": "Each collection designed for easy installation and specific aesthetic preferences",
+            "keyFeatures": "Key Features",
+            "tileVinyl": {
+                "name": "Tile Vinyl",
+                "description": "Large format stone and concrete looks, specifically designed for damp areas with excellent underfloor heating compatibility.",
+                "thickness": "2.0-3.0mm",
+                "warranty": "20-year warranty"
+            },
+            "herringboneVinyl": {
+                "name": "Herringbone Vinyl",
+                "description": "Elegant herringbone patterns in standard and XL sizes, featuring ceramic bead technology for enhanced durability.",
+                "thickness": "2.0-3.5mm",
+                "warranty": "20-year warranty"
+            },
+            "natureRigid": {
+                "name": "Nature Rigid Click",
+                "description": "Commercial-grade vinyl with rigid mineral core providing superior stability and scratch resistance.",
+                "thickness": "4.0-5.0mm",
+                "warranty": "20-year warranty"
+            },
+            "villageVinyl": {
+                "name": "Village Vinyl",
+                "description": "Realistic oak aesthetics with strong wearing surface, perfect for various interior design preferences.",
+                "thickness": "2.5-3.5mm",
+                "warranty": "20-year warranty"
+            },
+            "forestVinyl": {
+                "name": "Forest Vinyl",
+                "description": "Extra-wide planks creating unique spatial effects with realistic oak structures and luxurious microbevel.",
+                "thickness": "3.0-4.0mm",
+                "warranty": "20-year warranty"
+            },
+            "features": {
+                "waterproof": "100% Waterproof",
+                "underfloorHeating": "Underfloor Heating",
+                "dampAreas": "Damp Areas",
+                "elegantPattern": "Elegant Pattern",
+                "commercialGrade": "Commercial Grade",
+                "clickSystem": "Click System",
+                "rigidCore": "Rigid Core",
+                "commercialUse": "Commercial Use",
+                "scratchResistant": "Scratch Resistant",
+                "realisticOak": "Realistic Oak",
+                "versatile": "Versatile",
+                "durable": "Durable",
+                "extraWide": "Extra Wide",
+                "uniqueEffect": "Unique Effect",
+                "premiumLook": "Premium Look"
+            }
+        },
+        "features": {
+            "title": "Click Vinyl Premium Benefits",
+            "subtitle": "Every Floer click vinyl collection delivers exceptional quality and easy installation",
+            "waterproof": {
+                "title": "100% Waterproof",
+                "description": "Complete moisture protection for kitchens, bathrooms, and commercial spaces with confidence."
+            },
+            "warranty": {
+                "title": "20-Year Warranty",
+                "description": "Comprehensive coverage for residential, commercial, and industrial applications."
+            },
+            "ecoFriendly": {
+                "title": "Eco-Friendly",
+                "description": "Phthalate-free production with bio-organic plasticizers and top environmental certifications."
+            },
+            "durability": {
+                "title": "Superior Durability",
+                "description": "Usage classes from 23/33 to 42, suitable for intensive residential and commercial use."
+            },
+            "installation": {
+                "title": "Easy Click Installation",
+                "description": "DIY-friendly click system makes installation quick and simple without adhesives."
+            },
+            "soundInsulation": {
+                "title": "Sound Insulation",
+                "description": "10dB certified underlayment options available for enhanced acoustic performance."
+            }
+        },
+        "comparison": {
+            "title": "Collection Comparison",
+            "subtitle": "Compare specifications across all Floer click vinyl collections",
+            "feature": "Feature",
+            "note": "All collections include FloorScore, GreenGuard, and REACH certifications",
+            "features": {
+                "thickness": "Thickness",
+                "plankSize": "Plank/Tile Size",
+                "installation": "Installation Method",
+                "usageClass": "Usage Class",
+                "priceRange": "Price Range"
+            }
+        },
+        "installation": {
+            "title": "Click Installation Method",
+            "subtitle": "DIY-friendly click system for easy installation",
+            "timeRequired": "Time Required",
+            "suitableFor": "Suitable Collections",
+            "professionalInstallation": "Professional Installation",
+            "recommended": "Recommended",
+            "optional": "Optional",
+            "methods": {
+                "clickSystem": {
+                    "title": "Click System (Floating)",
+                    "description": "Easy DIY installation with interlocking planks that float over the subfloor. No adhesive required, perfect for beginners."
+                }
+            },
+            "steps": {
+                "title": "Installation Process",
+                "preparation": {
+                    "title": "Subfloor Preparation",
+                    "description": "Ensure clean, level, and dry subfloor meeting manufacturer specifications"
+                },
+                "measurement": {
+                    "title": "Accurate Measurement",
+                    "description": "Plan layout and calculate materials needed with 5-10% extra for cuts"
+                },
+                "installation": {
+                    "title": "Install Flooring",
+                    "description": "Follow click system with proper tools and techniques for best results"
+                },
+                "finishing": {
+                    "title": "Finishing Touches",
+                    "description": "Install transitions, baseboards, and final cleanup for professional appearance"
+                }
+            }
+        },
+        "cta": {
+            "title": "Ready to Transform Your Space?",
+            "description": "Discover the perfect Floer click vinyl collection for your project. Our experts are ready to help you choose the ideal flooring solution.",
+            "contact": "Contact us today for personalized consultation and quotes"
+        },
+        "conclusion": {
+            "title": "Ready to Transform Your Space?",
+            "content": "Discover the perfect Floer click vinyl collection for your project. Our experts are ready to help you choose the ideal flooring solution.",
+            "cta": "Contact us today for personalized consultation and quotes"
+        }
+    },
+    "glueDownVinyl": {
+        "pageTitle": "Glue-Down Vinyl Collection",
+        "hero": {
+            "title": "Premium Glue-Down Vinyl Collection",
+            "subtitle": "Professional-grade glue-down vinyl flooring combining Dutch quality with maximum stability"
+        },
+        "overview": {
+            "title": "Premium Dutch Glue-Down Vinyl Flooring",
+            "subtitle": "Floer's glue-down vinyl collection offers permanent installation and commercial-grade performance",
+            "description": "From the renowned Dutch flooring manufacturer Floer, these glue-down vinyl collections deliver exceptional performance, stunning aesthetics, and maximum stability. Each collection is 100% waterproof, phthalate-free, and backed by a 20-year warranty, making them perfect for commercial spaces and high-traffic areas."
+        },
+        "collections": {
+            "title": "Glue-Down Vinyl Collections",
+            "subtitle": "Each collection designed for permanent installation and maximum durability",
+            "keyFeatures": "Key Features",
+            "tileVinyl": {
+                "name": "Tile Vinyl",
+                "description": "Large format stone and concrete looks, specifically designed for damp areas with excellent underfloor heating compatibility.",
+                "thickness": "2.0-3.0mm",
+                "warranty": "20-year warranty"
+            },
+            "herringboneVinyl": {
+                "name": "Herringbone Vinyl",
+                "description": "Elegant herringbone patterns in standard and XL sizes, featuring ceramic bead technology for enhanced durability.",
+                "thickness": "2.0-3.5mm",
+                "warranty": "20-year warranty"
+            },
+            "natureRigid": {
+                "name": "Nature Rigid",
+                "description": "Commercial-grade vinyl with rigid mineral core providing superior stability and scratch resistance.",
+                "thickness": "4.0-5.0mm",
+                "warranty": "20-year warranty"
+            },
+            "villageVinyl": {
+                "name": "Village Vinyl",
+                "description": "Realistic oak aesthetics with strong wearing surface, perfect for various interior design preferences.",
+                "thickness": "2.5-3.5mm",
+                "warranty": "20-year warranty"
+            },
+            "forestVinyl": {
+                "name": "Forest Vinyl",
+                "description": "Extra-wide planks creating unique spatial effects with realistic oak structures and luxurious microbevel.",
+                "thickness": "3.0-4.0mm",
+                "warranty": "20-year warranty"
+            },
+            "features": {
+                "waterproof": "100% Waterproof",
+                "underfloorHeating": "Underfloor Heating",
+                "dampAreas": "Damp Areas",
+                "elegantPattern": "Elegant Pattern",
+                "commercialGrade": "Commercial Grade",
+                "permanentInstall": "Permanent Installation",
+                "rigidCore": "Rigid Core",
+                "commercialUse": "Commercial Use",
+                "scratchResistant": "Scratch Resistant",
+                "realisticOak": "Realistic Oak",
+                "versatile": "Versatile",
+                "durable": "Durable",
+                "extraWide": "Extra Wide",
+                "uniqueEffect": "Unique Effect",
+                "premiumLook": "Premium Look"
+            }
+        },
+        "features": {
+            "title": "Glue-Down Vinyl Premium Benefits",
+            "subtitle": "Every Floer glue-down vinyl collection delivers commercial-grade quality and permanent stability",
+            "waterproof": {
+                "title": "100% Waterproof",
+                "description": "Complete moisture protection for kitchens, bathrooms, and commercial spaces with confidence."
+            },
+            "warranty": {
+                "title": "20-Year Warranty",
+                "description": "Comprehensive coverage for residential, commercial, and industrial applications."
+            },
+            "ecoFriendly": {
+                "title": "Eco-Friendly",
+                "description": "Phthalate-free production with bio-organic plasticizers and top environmental certifications."
+            },
+            "durability": {
+                "title": "Superior Durability",
+                "description": "Usage classes from 23/33 to 42, suitable for intensive commercial use."
+            },
+            "installation": {
+                "title": "Permanent Installation",
+                "description": "Professional glue-down installation provides maximum stability for commercial applications."
+            },
+            "soundInsulation": {
+                "title": "Sound Insulation",
+                "description": "10dB certified underlayment options available for enhanced acoustic performance."
+            }
+        },
+        "comparison": {
+            "title": "Collection Comparison",
+            "subtitle": "Compare specifications across all Floer glue-down vinyl collections",
+            "feature": "Feature",
+            "note": "All collections include FloorScore, GreenGuard, and REACH certifications",
+            "features": {
+                "thickness": "Thickness",
+                "plankSize": "Plank/Tile Size",
+                "installation": "Installation Method",
+                "usageClass": "Usage Class",
+                "priceRange": "Price Range"
+            }
+        },
+        "installation": {
+            "title": "Professional Glue-Down Installation",
+            "subtitle": "Permanent installation for commercial-grade stability",
+            "timeRequired": "Time Required",
+            "suitableFor": "Suitable Collections",
+            "professionalInstallation": "Professional Installation",
+            "recommended": "Recommended",
+            "optional": "Optional",
+            "methods": {
+                "glueDown": {
+                    "title": "Glue-Down (Dryback)",
+                    "description": "Permanent installation using specialized vinyl adhesive. Provides maximum stability and is ideal for commercial applications."
+                }
+            },
+            "steps": {
+                "title": "Installation Process",
+                "preparation": {
+                    "title": "Subfloor Preparation",
+                    "description": "Ensure clean, level, and dry subfloor meeting manufacturer specifications"
+                },
+                "measurement": {
+                    "title": "Accurate Measurement",
+                    "description": "Plan layout and calculate materials needed with 5-10% extra for cuts"
+                },
+                "installation": {
+                    "title": "Install Flooring",
+                    "description": "Follow glue-down method with proper adhesive and techniques for best results"
+                },
+                "finishing": {
+                    "title": "Finishing Touches",
+                    "description": "Install transitions, baseboards, and final cleanup for professional appearance"
+                }
+            }
+        },
+        "cta": {
+            "title": "Ready for Professional Installation?",
+            "description": "Discover the perfect Floer glue-down vinyl collection for your commercial project. Our experts are ready to help you choose the ideal flooring solution.",
+            "contact": "Contact us today for personalized consultation and quotes"
+        },
+        "conclusion": {
+            "title": "Ready for Professional Installation?",
+            "content": "Discover the perfect Floer glue-down vinyl collection for your commercial project. Our experts are ready to help you choose the ideal flooring solution.",
+            "cta": "Contact us today for personalized consultation and quotes"
         }
     },
     "vinyl": {

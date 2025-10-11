@@ -2,16 +2,16 @@ import 'server-only';
 import { Stack } from '@mui/material';
 import { setRequestLocale } from 'next-intl/server';
 
-import { WhatIsHybridWoodHero } from './sections/WhatIsHybridWoodHero.section';
-import { Introduction } from './sections/Introduction.section';
-import { KeyInnovation } from './sections/KeyInnovation.section';
-import { Features } from './sections/Features.section';
-import { Sustainability } from './sections/Sustainability.section';
-import { Installation } from './sections/Installation.section';
-import { Maintenance } from './sections/Maintenance.section';
+import { WhatIsHybridWoodHero } from './WhatIsHybridWoodHero.section';
+import { Introduction } from '../(sections)/Introduction.section';
+import { KeyInnovation } from '../(sections)/KeyInnovation.section';
+import { Features } from '../(sections)/Features.section';
+import { Sustainability } from '../(sections)/Sustainability.section';
+import { Installation } from '../(sections)/Installation.section';
+import { Maintenance } from '../(sections)/Maintenance.section';
 import Footer from '@/components/layout/footer/Footer.component';
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
-import { HybridWoodCTA } from './sections/HybridWoodCTA.section';
+import { HybridWoodCTA } from '../(sections)/HybridWoodCTA.section';
 
 // Force static generation
 export const dynamic = 'error';

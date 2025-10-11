@@ -10,7 +10,7 @@
     {
       "sku": "FLR-3911",
       "slug": "herringbone-click-whalebone-noordkaper-nature",
-      "collection": "herringbone-click-vinyl",
+      "collection": "click-vinyl",
       "pattern": "walvisgraat-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -220,7 +220,7 @@
     {
       "sku": "FLR-3910",
       "slug": "herringbone-click-whalebone-balein-beige",
-      "collection": "herringbone-click-vinyl",
+      "collection": "click-vinyl",
       "pattern": "walvisgraat-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -397,7 +397,7 @@
     {
       "sku": "FLR-3913",
       "slug": "herringbone-click-whalebone-bryde-brown",
-      "collection": "herringbone-click-vinyl",
+      "collection": "click-vinyl",
       "pattern": "walvisgraat-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -574,7 +574,7 @@
     {
       "sku": "FLR-3912",
       "slug": "herringbone-click-whalebone-narwal-nootbruin",
-      "collection": "herringbone-click-vinyl",
+      "collection": "click-vinyl",
       "pattern": "walvisgraat-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -743,7 +743,7 @@
     {
       "sku": "FLR-3914",
       "slug": "herringbone-click-whalebone-orka-untreated",
-      "collection": "herringbone-click-vinyl",
+      "collection": "click-vinyl",
       "pattern": "walvisgraat-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -915,7 +915,7 @@
     {
       "sku": "FLR-3916",
       "slug": "herringbone-click-whalebone-cetus-cream",
-      "collection": "herringbone-click-vinyl",
+      "collection": "click-vinyl",
       "pattern": "walvisgraat-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -1109,7 +1109,7 @@
     {
       "sku": "FLR-3915",
       "slug": "herringbone-click-whalebone-gaia-greybeige",
-      "collection": "herringbone-click-vinyl",
+      "collection": "click-vinyl",
       "pattern": "walvisgraat-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -1303,7 +1303,7 @@
     {
       "sku": "FLR-3726",
       "slug": "nature-garda-greybeige",
-      "collection": "nature-vinyl",
+      "collection": "click-vinyl",
       "pattern": "natuur-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -1466,7 +1466,7 @@
     {
       "sku": "FLR-3728",
       "slug": "nature-berner-brown",
-      "collection": "nature-vinyl",
+      "collection": "click-vinyl",
       "pattern": "natuur-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -1627,7 +1627,7 @@
     {
       "sku": "FLR-3727",
       "slug": "nature-ordesa-untreated",
-      "collection": "nature-vinyl",
+      "collection": "click-vinyl",
       "pattern": "natuur-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -1802,7 +1802,7 @@
     {
       "sku": "FLR-3730",
       "slug": "nature-madeira-mokka",
-      "collection": "nature-vinyl",
+      "collection": "click-vinyl",
       "pattern": "natuur-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -1963,7 +1963,7 @@
     {
       "sku": "FLR-3753",
       "slug": "country-house-country-house-nature-eik",
-      "collection": "country-house-vinyl",
+      "collection": "click-vinyl",
       "pattern": "landhuis-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -2139,7 +2139,7 @@
     {
       "sku": "FLR-3752",
       "slug": "country-house-country-house-whitete-eik",
-      "collection": "country-house-vinyl",
+      "collection": "click-vinyl",
       "pattern": "landhuis-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -2299,7 +2299,7 @@
     {
       "sku": "FLR-3750",
       "slug": "country-house-country-house-landelijke-eik",
-      "collection": "country-house-vinyl",
+      "collection": "click-vinyl",
       "pattern": "landhuis-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -2476,7 +2476,7 @@
     {
       "sku": "FLR-3751",
       "slug": "country-house-country-house-pure-eik",
-      "collection": "country-house-vinyl",
+      "collection": "click-vinyl",
       "pattern": "landhuis-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -2638,7 +2638,7 @@
     {
       "sku": "FLR-3755",
       "slug": "country-house-country-house-cream-eik",
-      "collection": "country-house-vinyl",
+      "collection": "click-vinyl",
       "pattern": "landhuis-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -2812,7 +2812,7 @@
     {
       "sku": "FLR-3754",
       "slug": "country-house-country-house-grijze-eik",
-      "collection": "country-house-vinyl",
+      "collection": "click-vinyl",
       "pattern": "landhuis-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -2985,7 +2985,7 @@
     {
       "sku": "FLR-3731",
       "slug": "nature-cilento-cream",
-      "collection": "nature-vinyl",
+      "collection": "click-vinyl",
       "pattern": "natuur-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -3149,7 +3149,7 @@
     {
       "sku": "FLR-3729",
       "slug": "nature-niederhorn-nootbruin",
-      "collection": "nature-vinyl",
+      "collection": "click-vinyl",
       "pattern": "natuur-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -3308,7 +3308,7 @@
     {
       "sku": "FLR-3805",
       "slug": "tile-betonlook-lichtgrijs",
-      "collection": "tile-vinyl",
+      "collection": "click-vinyl",
       "pattern": "tegel-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -3475,7 +3475,7 @@
     {
       "sku": "FLR-3930",
       "slug": "herringbone-click-herringbone-greige-oak",
-      "collection": "herringbone-click-vinyl",
+      "collection": "click-vinyl",
       "pattern": "visgraat-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -3629,7 +3629,7 @@
     {
       "sku": "FLR-3931",
       "slug": "herringbone-click-herringbone-beige-oak",
-      "collection": "herringbone-click-vinyl",
+      "collection": "click-vinyl",
       "pattern": "visgraat-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -3783,7 +3783,7 @@
     {
       "sku": "FLR-3932",
       "slug": "herringbone-click-herringbone-pure-oak",
-      "collection": "herringbone-click-vinyl",
+      "collection": "click-vinyl",
       "pattern": "visgraat-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -3935,7 +3935,7 @@
     {
       "sku": "FLR-3933",
       "slug": "herringbone-click-herringbone-nature-oak",
-      "collection": "herringbone-click-vinyl",
+      "collection": "click-vinyl",
       "pattern": "visgraat-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -4087,7 +4087,7 @@
     {
       "sku": "FLR-3800",
       "slug": "tile-betonlook-beige",
-      "collection": "tile-vinyl",
+      "collection": "click-vinyl",
       "pattern": "tegel-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -4239,7 +4239,7 @@
     {
       "sku": "FLR-3801",
       "slug": "tile-betonlook-grey",
-      "collection": "tile-vinyl",
+      "collection": "click-vinyl",
       "pattern": "tegel-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -4391,7 +4391,7 @@
     {
       "sku": "FLR-3802",
       "slug": "tile-betonlook-black",
-      "collection": "tile-vinyl",
+      "collection": "click-vinyl",
       "pattern": "tegel-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -4544,7 +4544,7 @@
     {
       "sku": "FLR-3803",
       "slug": "tile-betonlook-zand",
-      "collection": "tile-vinyl",
+      "collection": "click-vinyl",
       "pattern": "tegel-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -4697,7 +4697,7 @@
     {
       "sku": "FLR-3804",
       "slug": "tile-betonlook-greige",
-      "collection": "tile-vinyl",
+      "collection": "click-vinyl",
       "pattern": "tegel-click",
       "installationSystem": "click",
       "price": 43.95,
@@ -4850,7 +4850,7 @@
     {
       "sku": "FLR-3732",
       "slug": "nature-zadar-zand",
-      "collection": "nature-vinyl",
+      "collection": "click-vinyl",
       "pattern": "natuur-click",
       "installationSystem": "click",
       "price": 43.95,

@@ -7,7 +7,12 @@
       "mcp__context7__resolve-library-id",
       "mcp__context7__get-library-docs",
       "Bash(sed:*)",
-      "WebFetch(domain:firebase.google.com)"
+      "WebFetch(domain:firebase.google.com)",
+      "Bash(for file in VinylCollections.section.tsx VinylComparison.section.tsx VinylCta.section.tsx VinylFeatures.section.tsx VinylHero.section.tsx VinylInstallation.section.tsx VinylOverview.section.tsx)",
+      "Bash(do cp \"app/[locale]/vinyl/$file\" \"app/[locale]/glue-down-vinyl/$file/Vinyl/GlueDownVinyl\")",
+      "Bash(done)",
+      "Bash(for file in GlueDownVinyl*.section.tsx)",
+      "Bash(do sed -i \"s/export async function Vinyl/export async function GlueDownVinyl/g; s/export function Vinyl/export function GlueDownVinyl/g; s/getTranslations(''vinyl'')/getTranslations(''glueDownVinyl'')/g; s/translationKey=\"\"vinyl\"\"/translationKey=\"\"glueDownVinyl\"\"/g\" \"$file\")"
     ],
     "deny": [],
     "ask": []

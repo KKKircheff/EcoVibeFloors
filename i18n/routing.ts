@@ -8,7 +8,9 @@ export type PathNames =
     | '/oak'
     | '/custom-oak'
     | '/hybrid-wood'
-    | '/vinyl';
+    | '/vinyl'
+    | '/click-vinyl'
+    | '/glue-down-vinyl';
 
 export type NavRoute = {
     name: string;
@@ -50,8 +52,14 @@ export const navRoutes: NavRoute[] = [
                 visible: true,
             },
             {
-                name: 'Vinyl',
-                path: '/vinyl',
+                name: 'Click Vinyl',
+                path: '/click-vinyl',
+                icon: '',
+                visible: true,
+            },
+            {
+                name: 'Glue-Down Vinyl',
+                path: '/glue-down-vinyl',
                 icon: '',
                 visible: true,
             },

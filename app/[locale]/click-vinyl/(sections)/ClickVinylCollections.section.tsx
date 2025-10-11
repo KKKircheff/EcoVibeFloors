@@ -1,0 +1,66 @@
+import 'server-only';
+import { getTranslations } from 'next-intl/server';
+import { getStyleCardImages } from '@/lib/utils/getStyleCardImages';
+import { ProductStylesGrid } from '@/components/ui/product/ProductStylesGrid';
+
+export async function ClickVinylCollections() {
+    const t = await getTranslations('clickVinyl.collections');
+    const tPatterns = await getTranslations('patterns');
+
+    // Get images from product data by SKU for each pattern
+    const walvisgraatImages = getStyleCardImages('click-vinyl', 'FLR-3911', 0, 1);
+    const natuurImages = getStyleCardImages('click-vinyl', 'FLR-3726', 0, 1);
+    const landhuisImages = getStyleCardImages('click-vinyl', 'FLR-3753', 0, 1);
+    const tegelImages = getStyleCardImages('click-vinyl', 'FLR-3805', 0, 1);
+    const visgraatImages = getStyleCardImages('click-vinyl', 'FLR-3930', 0, 1);
+
+    const stylesConfig = [
+        {
+            title: tPatterns('walvisgraat-click'),
+            description: tPatterns('walvisgraatClickDescription'),
+            mainImage: walvisgraatImages.mainImage,
+            hoverImage: walvisgraatImages.hoverImage,
+            imageAlt: tPatterns('walvisgraat-click'),
+            navigationUrl: '/click-vinyl/walvisgraat-click'
+        },
+        {
+            title: tPatterns('natuur-click'),
+            description: tPatterns('natuurClickDescription'),
+            mainImage: natuurImages.mainImage,
+            hoverImage: natuurImages.hoverImage,
+            imageAlt: tPatterns('natuur-click'),
+            navigationUrl: '/click-vinyl/natuur-click'
+        },
+        {
+            title: tPatterns('landhuis-click'),
+            description: tPatterns('landhuisClickDescription'),
+            mainImage: landhuisImages.mainImage,
+            hoverImage: landhuisImages.hoverImage,
+            imageAlt: tPatterns('landhuis-click'),
+            navigationUrl: '/click-vinyl/landhuis-click'
+        },
+        {
+            title: tPatterns('tegel-click'),
+            description: tPatterns('tegelClickDescription'),
+            mainImage: tegelImages.mainImage,
+            hoverImage: tegelImages.hoverImage,
+            imageAlt: tPatterns('tegel-click'),
+            navigationUrl: '/click-vinyl/tegel-click'
+        },
+        {
+            title: tPatterns('visgraat-click'),
+            description: tPatterns('visgraatClickDescription'),
+            mainImage: visgraatImages.mainImage,
+            hoverImage: visgraatImages.hoverImage,
+            imageAlt: tPatterns('visgraat-click'),
+            navigationUrl: '/click-vinyl/visgraat-click'
+        }
+    ];
+
+    return (
+        <ProductStylesGrid
+            title={t('title')}
+            styles={stylesConfig}
+        />
+    );
+}

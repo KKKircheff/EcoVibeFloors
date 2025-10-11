@@ -10,7 +10,7 @@
     {
       "sku": "FLR-3040",
       "slug": "village-callantsoog-creamwit-oak",
-      "collection": "village-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "dorpen",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -180,7 +180,7 @@
     {
       "sku": "FLR-3038",
       "slug": "village-noordwijk-nature-oak",
-      "collection": "village-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "dorpen",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -333,7 +333,7 @@
     {
       "sku": "FLR-3039",
       "slug": "village-makkum-mokka-oak",
-      "collection": "village-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "dorpen",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -485,7 +485,7 @@
     {
       "sku": "FLR-3036",
       "slug": "village-bemmel-beige-oak",
-      "collection": "village-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "dorpen",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -656,7 +656,7 @@
     {
       "sku": "FLR-3037",
       "slug": "village-lisse-lichtbruin-oak",
-      "collection": "village-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "dorpen",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -810,7 +810,7 @@
     {
       "sku": "FLR-3035",
       "slug": "village-langelo-landelijk-oak",
-      "collection": "village-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "dorpen",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -989,7 +989,7 @@
     {
       "sku": "FLR-3042",
       "slug": "village-buinen-brown-oak",
-      "collection": "village-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "dorpen",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -1143,7 +1143,7 @@
     {
       "sku": "FLR-3046",
       "slug": "village-nootdorp-nootbruin",
-      "collection": "village-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "dorpen",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -1311,7 +1311,7 @@
     {
       "sku": "FLR-3041",
       "slug": "village-grolloo-greybeige-oak",
-      "collection": "village-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "dorpen",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -1463,7 +1463,7 @@
     {
       "sku": "FLR-3045",
       "slug": "village-clinge-cream-oak",
-      "collection": "village-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "dorpen",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -1614,7 +1614,7 @@
     {
       "sku": "FLR-3044",
       "slug": "village-wateringen-white-oak",
-      "collection": "village-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "dorpen",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -1762,7 +1762,7 @@
     {
       "sku": "FLR-3570",
       "slug": "hungarian-point-hungarian-point-untreated-oak",
-      "collection": "hungarian-point-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "hongaarse-punt",
       "installationSystem": "glue-down",
       "price": 44.95,
@@ -1921,7 +1921,7 @@
     {
       "sku": "FLR-3571",
       "slug": "hungarian-point-hungarian-point-nature-oak",
-      "collection": "hungarian-point-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "hongaarse-punt",
       "installationSystem": "glue-down",
       "price": 44.95,
@@ -2080,7 +2080,7 @@
     {
       "sku": "FLR-3233",
       "slug": "country-house-nature-eik",
-      "collection": "country-house-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "landhuis",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -2243,7 +2243,7 @@
     {
       "sku": "FLR-3230",
       "slug": "country-house-landelijke-eik",
-      "collection": "country-house-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "landhuis",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -2420,7 +2420,7 @@
     {
       "sku": "FLR-3235",
       "slug": "country-house-cream-eik",
-      "collection": "country-house-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "landhuis",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -2592,7 +2592,7 @@
     {
       "sku": "FLR-3234",
       "slug": "country-house-grijze-eik",
-      "collection": "country-house-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "landhuis",
       "installationSystem": "glue-down",
       "price": 39.95,
@@ -2764,7 +2764,7 @@
     {
       "sku": "FLR-3047",
       "slug": "village-zeewolde-zand-oak",
-      "collection": "village-vinyl",
+      "collection": "glue-down-vinyl",
       "pattern": "dorpen",
       "installationSystem": "glue-down",
       "price": 39.95,

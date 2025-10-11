@@ -105,12 +105,6 @@ export interface Product {
     images: ProductImages;
     imageAlt: ImageAltText;
 
-    /**
-     * Optional indices for main and hover images in ProductCard
-     * Format: [mainImageIndex, hoverImageIndex]
-     * Default: [0, images.length - 1]
-     * Example: [2, 5] - uses 3rd image as main, 6th as hover
-     */
     displayImages?: [number, number];
 
     i18n: I18nContent;
@@ -161,10 +155,7 @@ export interface CollectionInfo {
 // Utility Types
 // ============================================================================
 
-export type CollectionType =
-    | 'hybrid-wood'
-    | 'glue-down-vinyl'
-    | 'click-vinyl';
+export type CollectionType = 'hybrid-wood' | 'glue-down-vinyl' | 'click-vinyl';
 
 export type ProductPattern =
     // Hybrid Wood patterns
