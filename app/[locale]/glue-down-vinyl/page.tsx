@@ -7,8 +7,8 @@ import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
 import { GlueDownVinylHero } from './(sections)/GlueDownVinylHero.section';
 import { GlueDownVinylCollections } from './(sections)/GlueDownVinylCollections.section';
 import { GlueDownVinylFeatures } from './(sections)/GlueDownVinylFeatures.section';
-import { GlueDownVinylCta } from './(sections)/GlueDownVinylCta.section';
 import Footer from '@/components/layout/footer/Footer.component';
+import { GlueDownVinylCTA } from './(sections)/GlueDownVinylCTA.section';
 
 // Force static generation
 export const dynamic = 'error';
@@ -41,7 +41,7 @@ export default async function GlueDownVinylPage({ params }: GlueDownVinylPagePro
                 <GlueDownVinylHero />
             </PageLayoutContainer>
 
-            <PageLayoutContainer bgcolor='background.paper' py={{ xs: 6, md: 10 }}>
+            <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }} id='glue-down-vinyl-learn-more'>
                 <GlueDownVinylCollections />
             </PageLayoutContainer>
 
@@ -50,7 +50,7 @@ export default async function GlueDownVinylPage({ params }: GlueDownVinylPagePro
             </PageLayoutContainer>
 
             <PageLayoutContainer bgcolor='primary.main' py={{ xs: 6, md: 10 }}>
-                <GlueDownVinylCta />
+                <GlueDownVinylCTA />
             </PageLayoutContainer>
 
             <PageLayoutContainer pt={10} bgcolor='info.800'>

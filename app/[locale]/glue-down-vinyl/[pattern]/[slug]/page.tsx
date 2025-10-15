@@ -292,14 +292,14 @@ export default async function GlueDownVinylProductPage({ params }: ProductDetail
                                         {tProducts('dimensions')}
                                     </Typography> */}
                                     <Stack spacing={0.5}>
-                                        {dimensions.width && (
-                                            <Typography variant="body1" color="info.400">
-                                                <strong>{tProducts('width')}:</strong> {dimensions.width}
-                                            </Typography>
-                                        )}
                                         {dimensions.length && (
                                             <Typography variant="body1" color="info.400">
                                                 <strong>{tProducts('length')}:</strong> {dimensions.length}
+                                            </Typography>
+                                        )}
+                                        {dimensions.width && (
+                                            <Typography variant="body1" color="info.400">
+                                                <strong>{tProducts('width')}:</strong> {dimensions.width}
                                             </Typography>
                                         )}
                                         {dimensions.thickness && (

@@ -1,0 +1,180 @@
+[debug] [2025-10-11T06:14:10.915Z] Checked if tokens are valid: false, expires at: 1759959737493
+[debug] [2025-10-11T06:14:10.920Z] Checked if tokens are valid: false, expires at: 1759959737493
+[debug] [2025-10-11T06:14:10.920Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T06:14:10.923Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T06:14:10.923Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T06:14:10.999Z] Checked if tokens are valid: false, expires at: 1759959737493
+[debug] [2025-10-11T06:14:11.000Z] Checked if tokens are valid: false, expires at: 1759959737493
+[debug] [2025-10-11T06:14:11.000Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T06:14:11.001Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T06:14:11.001Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T06:14:11.006Z] Checked if tokens are valid: false, expires at: 1759959737493
+[debug] [2025-10-11T06:14:11.006Z] Checked if tokens are valid: false, expires at: 1759959737493
+[debug] [2025-10-11T06:14:11.006Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T06:14:11.007Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T06:14:11.007Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T06:14:11.009Z] Checked if tokens are valid: false, expires at: 1759959737493
+[debug] [2025-10-11T06:14:11.009Z] Checked if tokens are valid: false, expires at: 1759959737493
+[debug] [2025-10-11T06:14:11.010Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T06:14:11.010Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T06:14:11.010Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T06:14:11.343Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T06:14:11.343Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T06:14:11.365Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-10-11T06:14:11.365Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T06:14:11.367Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T06:14:11.367Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T06:14:11.375Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-10-11T06:14:11.375Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T06:14:11.377Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T06:14:11.378Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T06:14:11.387Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com [none]
+[debug] [2025-10-11T06:14:11.387Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T06:14:11.390Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T06:14:11.390Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T06:14:11.398Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ [none]
+[debug] [2025-10-11T06:14:11.398Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T06:14:12.572Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com 403
+[debug] [2025-10-11T06:14:12.572Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com [omitted]
+[debug] [2025-10-11T06:14:12.588Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-10-11T06:14:12.588Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-10-11T06:14:12.700Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ 200
+[debug] [2025-10-11T06:14:12.701Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ [omitted]
+[debug] [2025-10-11T06:14:12.701Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-10-11T06:14:12.701Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-10-11T15:54:09.111Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.117Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.118Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T15:54:09.124Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T15:54:09.125Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.196Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.196Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.196Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T15:54:09.197Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T15:54:09.197Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.200Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.201Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.201Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T15:54:09.201Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T15:54:09.201Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.203Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.203Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.204Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T15:54:09.204Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T15:54:09.204Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.236Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.236Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.236Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T15:54:09.237Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T15:54:09.237Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.239Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.239Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.239Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T15:54:09.239Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T15:54:09.239Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.242Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.242Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.242Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T15:54:09.242Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T15:54:09.242Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.244Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.245Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.245Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T15:54:09.245Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T15:54:09.245Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.247Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.247Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.247Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T15:54:09.248Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T15:54:09.248Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.250Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.251Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.251Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T15:54:09.251Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T15:54:09.251Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.254Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.254Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.254Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T15:54:09.254Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T15:54:09.254Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.255Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.256Z] Checked if tokens are valid: false, expires at: 1760166850390
+[debug] [2025-10-11T15:54:09.256Z] > refreshing access token with scopes: []
+[debug] [2025-10-11T15:54:09.256Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-10-11T15:54:09.256Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.336Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T15:54:09.336Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.349Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-10-11T15:54:09.349Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T15:54:09.360Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T15:54:09.360Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.370Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com [none]
+[debug] [2025-10-11T15:54:09.370Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T15:54:09.372Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T15:54:09.372Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.380Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-10-11T15:54:09.381Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T15:54:09.383Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T15:54:09.383Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.390Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ [none]
+[debug] [2025-10-11T15:54:09.391Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T15:54:09.393Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T15:54:09.393Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.402Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ [none]
+[debug] [2025-10-11T15:54:09.402Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T15:54:09.405Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T15:54:09.405Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.414Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-10-11T15:54:09.415Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T15:54:09.418Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T15:54:09.418Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.427Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com [none]
+[debug] [2025-10-11T15:54:09.427Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T15:54:09.446Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T15:54:09.446Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.456Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ [none]
+[debug] [2025-10-11T15:54:09.456Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T15:54:09.465Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T15:54:09.465Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.474Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-10-11T15:54:09.474Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T15:54:09.480Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T15:54:09.480Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.489Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com [none]
+[debug] [2025-10-11T15:54:09.489Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T15:54:09.491Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T15:54:09.491Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.499Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com [none]
+[debug] [2025-10-11T15:54:09.499Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T15:54:09.502Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2025-10-11T15:54:09.502Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-10-11T15:54:09.513Z] >>> [apiv2][query] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com [none]
+[debug] [2025-10-11T15:54:09.513Z] >>> [apiv2][(partial)header] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com x-goog-quota-user=projects/ecovibe-floors
+[debug] [2025-10-11T15:54:10.117Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com 403
+[debug] [2025-10-11T15:54:10.117Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com [omitted]
+[debug] [2025-10-11T15:54:10.242Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-10-11T15:54:10.242Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-10-11T15:54:10.243Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-10-11T15:54:10.243Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-10-11T15:54:10.460Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ 200
+[debug] [2025-10-11T15:54:10.460Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ [omitted]
+[debug] [2025-10-11T15:54:10.761Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com 403
+[debug] [2025-10-11T15:54:10.762Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com [omitted]
+[debug] [2025-10-11T15:54:10.762Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com 403
+[debug] [2025-10-11T15:54:10.762Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebaseio.com [omitted]
+[debug] [2025-10-11T15:54:11.045Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-10-11T15:54:11.045Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-10-11T15:54:11.052Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-10-11T15:54:11.052Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-10-11T15:54:11.056Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com 200
+[debug] [2025-10-11T15:54:11.056Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasecrashlytics.googleapis.com [omitted]
+[debug] [2025-10-11T15:54:11.067Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-11T15:54:11.068Z] > authorizing via signed-in user (kiretokk@gmail.com)
+[debug] [2025-10-11T15:54:11.152Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com 200
+[debug] [2025-10-11T15:54:11.152Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/firebasedataconnect.googleapis.com [omitted]
+[debug] [2025-10-11T15:54:11.493Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ 200
+[debug] [2025-10-11T15:54:11.494Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ [omitted]
+[debug] [2025-10-11T15:54:12.007Z] <<< [apiv2][status] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ 200
+[debug] [2025-10-11T15:54:12.007Z] <<< [apiv2][body] GET https://serviceusage.googleapis.com/v1/projects/ecovibe-floors/services/ [omitted]
+[debug] [2025-10-11T15:54:12.012Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-10-11T15:54:12.012Z] > authorizing via signed-in user (kiretokk@gmail.com)

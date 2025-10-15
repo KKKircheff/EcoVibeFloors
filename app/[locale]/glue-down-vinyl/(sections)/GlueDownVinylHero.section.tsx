@@ -9,6 +9,8 @@ export async function GlueDownVinylHero() {
         <CollectionHero
             title={t('title')}
             subtitle={t('subtitle')}
+            learnMoreText={t('learnMore')}
+            learnMoreTargetId="glue-down-vinyl-learn-more"
         />
     );
 }

@@ -99,7 +99,7 @@ export default async function ClickVinylPatternPage({ params }: PatternPageProps
                     <Typography variant="h1" fontWeight={600}>
                         {tClickVinyl('title')} - {tPatterns(patternKey)}
                     </Typography>
-                    <Typography variant="h5" maxWidth="800px">
+                    <Typography variant="subtitle2" maxWidth="100%" textAlign='justify'>
                         {tPatterns(patternDescKey, {
                             defaultValue: tPatterns(patternKey)
                         })}

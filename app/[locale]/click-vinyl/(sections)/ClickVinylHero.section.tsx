@@ -9,6 +9,8 @@ export async function ClickVinylHero() {
         <CollectionHero
             title={t('title')}
             subtitle={t('subtitle')}
+            learnMoreText={t('learnMore')}
+            learnMoreTargetId="click-vinyl-learn-more"
         />
     );
 }

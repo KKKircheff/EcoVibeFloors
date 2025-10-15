@@ -10,8 +10,8 @@ import { ClickVinylCollections } from './(sections)/ClickVinylCollections.sectio
 import { ClickVinylFeatures } from './(sections)/ClickVinylFeatures.section';
 import { ClickVinylComparison } from './(sections)/ClickVinylComparison.section';
 import { ClickVinylInstallation } from './(sections)/ClickVinylInstallation.section';
-import { ClickVinylCta } from './(sections)/ClickVinylCta.section';
 import Footer from '@/components/layout/footer/Footer.component';
+import { ClickVinylCTA } from './(sections)/ClickVinylCTA.section';
 
 // Force static generation
 export const dynamic = 'error';
@@ -44,11 +44,7 @@ export default async function ClickVinylPage({ params }: ClickVinylPageProps) {
                 <ClickVinylHero />
             </PageLayoutContainer>
 
-            <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }}>
-                <ClickVinylOverview />
-            </PageLayoutContainer>
-
-            <PageLayoutContainer bgcolor='background.paper' py={{ xs: 6, md: 10 }}>
+            <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }} id='click-vinyl-learn-more'>
                 <ClickVinylCollections />
             </PageLayoutContainer>
 
@@ -56,16 +52,8 @@ export default async function ClickVinylPage({ params }: ClickVinylPageProps) {
                 <ClickVinylFeatures />
             </PageLayoutContainer>
 
-            <PageLayoutContainer bgcolor='background.paper' py={{ xs: 6, md: 10 }}>
-                <ClickVinylComparison />
-            </PageLayoutContainer>
-
-            <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }}>
-                <ClickVinylInstallation />
-            </PageLayoutContainer>
-
             <PageLayoutContainer bgcolor='primary.main' py={{ xs: 6, md: 10 }}>
-                <ClickVinylCta />
+                <ClickVinylCTA />
             </PageLayoutContainer>
 
             <PageLayoutContainer pt={10} bgcolor='info.800'>

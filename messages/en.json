@@ -189,6 +189,18 @@
                 "text": "Premium vinyl for homes and offices. Dryback system for commercial spaces. Anti-Glare technology. Rigid Click with i4F system and mineral particles for stability. Easy installation. REACH certified. Phthalate-free!",
                 "learnMore": "Learn More",
                 "viewCollection": "View Collection"
+            },
+            "clickVinyl": {
+                "title": "Premium Click Vinyl Floors",
+                "text": "Easy-to-install DIY-friendly vinyl with innovative i4F click system. 100% waterproof protection perfect for kitchens and bathrooms. No adhesive needed. Phthalate-free with 20-year warranty. Five distinct collections from Floer Netherlands.",
+                "learnMore": "Learn More",
+                "viewCollection": "View Collection"
+            },
+            "glueDownVinyl": {
+                "title": "Premium Glue-Down Vinyl Floors",
+                "text": "Professional-grade dryback vinyl for permanent installation. Maximum stability ideal for commercial spaces and high-traffic areas. 100% waterproof with superior durability. Usage class up to 42. 20-year warranty from Floer Netherlands.",
+                "learnMore": "Learn More",
+                "viewCollection": "View Collection"
             }
         }
     },
@@ -384,7 +396,12 @@
                 "thermalResistance": "Thermal Resistance",
                 "wearLayer": "Wear Layer",
                 "realOak": "Real Oak",
-                "core": "Core Material"
+                "core": "Core Material",
+                "values": {
+                    "thickness": "11 mm",
+                    "thermalResistance": "0.07m² K/W",
+                    "core": "HDF"
+                }
             },
             "installation": {
                 "title": "Installation Options",
@@ -392,7 +409,10 @@
                 "clickSystem": "Click System",
                 "underfloorHeating": "Underfloor Heating",
                 "floating": "Floating Installation",
-                "glued": "Glued Installation"
+                "glued": "Glued Installation",
+                "values": {
+                    "compatible": "✓"
+                }
             }
         },
         "styles": {
@@ -424,7 +444,8 @@
         "pageTitle": "Click Vinyl Collection",
         "hero": {
             "title": "Premium Click Vinyl Collection",
-            "subtitle": "Easy-to-install click vinyl flooring combining Dutch quality with 100% waterproof performance"
+            "subtitle": "Easy-to-install click vinyl flooring combining Dutch quality with 100% waterproof performance",
+            "learnMore": "Learn more ... >"
         },
         "overview": {
             "title": "Premium Dutch Click Vinyl Flooring",
@@ -573,7 +594,8 @@
         "pageTitle": "Glue-Down Vinyl Collection",
         "hero": {
             "title": "Premium Glue-Down Vinyl Collection",
-            "subtitle": "Professional-grade glue-down vinyl flooring combining Dutch quality with maximum stability"
+            "subtitle": "Professional-grade glue-down vinyl flooring combining Dutch quality with maximum stability",
+            "learnMore": "Learn more ... >"
         },
         "overview": {
             "title": "Premium Dutch Glue-Down Vinyl Flooring",
@@ -966,6 +988,162 @@
             "title": "The Future of Flooring is Here",
             "content": "Hybrid Wood flooring represents the perfect balance of natural beauty, advanced technology, and environmental responsibility. Whether you're renovating your home or designing a new space, Hybrid Wood offers the durability, aesthetics, and sustainability that modern living demands.",
             "cta": "Ready to experience the benefits of Hybrid Wood flooring in your home?"
+        }
+    },
+    "whatIsClickVinyl": {
+        "hero": {
+            "title": "What is Click Vinyl Flooring?",
+            "subtitle": "Discover the DIY-friendly flooring solution that combines 100% waterproof protection with easy installation and Dutch premium quality."
+        },
+        "introduction": {
+            "title": "The Perfect DIY Flooring Solution",
+            "content": "Click Vinyl flooring represents a revolutionary approach to home flooring – combining the waterproof durability of vinyl with an innovative click-lock installation system that makes DIY installation quick and effortless. Manufactured by Floer in the Netherlands, these premium floors offer 100% waterproof protection, making them perfect for kitchens, bathrooms, and any moisture-prone area. The intelligent i4F click system allows planks and tiles to snap together seamlessly without adhesives, creating a floating floor that's both stable and easy to install. With phthalate-free construction using bio-organic plasticizers, REACH, FloorScore, and GreenGuard certifications, these floors are as safe as they are beautiful. The collection includes five distinct styles: large-format Tile Vinyl for modern stone aesthetics, elegant Herringbone patterns with ceramic bead technology, commercial-grade Nature Rigid Click with mineral core stability, Village Vinyl with authentic oak looks, and Forest Vinyl with extra-wide planks. Each collection comes with a comprehensive 20-year warranty and usage classifications suitable for both residential and commercial spaces, ensuring long-lasting performance and peace of mind.",
+            "imageCaption": "[Image: Close-up of click vinyl planks being installed with visible click-lock system]"
+        },
+        "technology": {
+            "title": "i4F Click Technology Innovation",
+            "content": "At the core of click vinyl flooring lies the revolutionary i4F click-lock system – a patented technology that creates stronger, more reliable connections between planks than traditional vinyl installations. This advanced locking mechanism provides perfect alignment and prevents gaps, while the rigid core construction with mineral particles ensures dimensional stability even in challenging conditions.",
+            "benefits": {
+                "title": "Key Technological Advantages:",
+                "i4fSystem": "Patented i4F click-lock system for effortless DIY installation without adhesives",
+                "rigidCore": "Rigid mineral core provides superior stability and prevents expansion or contraction",
+                "waterproof": "100% waterproof construction allows installation in bathrooms and kitchens",
+                "noAcklimation": "No acclimation period needed – install immediately upon delivery"
+            }
+        },
+        "features": {
+            "title": "Six Superior Performance Features",
+            "waterproof": {
+                "title": "100% Waterproof",
+                "description": "Complete moisture protection for kitchens, bathrooms, and basements. Spills and splashes won't damage your floor."
+            },
+            "clickInstallation": {
+                "title": "Easy Click Installation",
+                "description": "DIY-friendly click system requires no adhesive. Install an entire room in hours, not days."
+            },
+            "warranty": {
+                "title": "20-Year Warranty",
+                "description": "Comprehensive warranty coverage for residential and commercial applications provides long-term peace of mind."
+            },
+            "ecoFriendly": {
+                "title": "Eco-Friendly",
+                "description": "Phthalate-free with bio-organic plasticizers. REACH, FloorScore, and GreenGuard Gold certified for indoor air quality."
+            },
+            "durability": {
+                "title": "Superior Durability",
+                "description": "Usage classes 23/33 to 42 suitable for high-traffic residential and commercial environments."
+            },
+            "soundInsulation": {
+                "title": "Sound Insulation",
+                "description": "10dB certified underlayment options available for enhanced acoustic performance and comfort."
+            }
+        },
+        "collections": {
+            "title": "Five Premium Click Vinyl Collections",
+            "intro": "Floer's click vinyl range offers five distinct collections, each designed for specific aesthetic preferences and functional requirements. From contemporary tiles to classic herringbone patterns, there's a perfect style for every space.",
+            "tileVinyl": "Large-format stone and concrete looks (60x60cm tiles) with Anti-Glare technology. Perfect for bathrooms and damp areas with excellent underfloor heating compatibility.",
+            "herringbone": "Elegant herringbone patterns in standard and XL sizes featuring ceramic bead technology for enhanced wear resistance. Create timeless sophistication in any room.",
+            "natureRigid": "Commercial-grade rigid click vinyl with 5mm thickness and mineral-reinforced core. Exceptional scratch resistance and stability for high-traffic commercial spaces.",
+            "village": "Authentic village oak aesthetics with realistic wood grain and strong wearing surface. Versatile styling suitable for traditional and modern interiors.",
+            "forest": "Extra-wide planks (up to 24cm) with luxurious microbevel edges. Create spacious visual effects with authentic oak structures and premium appearance."
+        },
+        "installation": {
+            "title": "Simple DIY Installation Process",
+            "intro": "Click vinyl flooring is specifically designed for DIY enthusiasts and homeowners who want professional results without professional installers. The click-lock system makes installation straightforward and reversible.",
+            "method": {
+                "title": "Click System Installation",
+                "description": "The floating installation method requires no adhesive. Planks simply click together and float over the subfloor with a thin underlayment. Perfect for beginners and allows for easy removal if needed."
+            },
+            "steps": {
+                "title": "Four Simple Installation Steps",
+                "preparation": "Ensure subfloor is clean, level (within 3mm over 2m), and dry. No moisture barrier needed for most applications.",
+                "layout": "Plan your layout and measure carefully. Order 5-10% extra material for cuts and waste.",
+                "installation": "Start from one corner and work across the room. Click planks together at an angle and press down to lock.",
+                "finishing": "Install transition strips, baseboards, and clean thoroughly. Your floor is ready to use immediately."
+            }
+        },
+        "conclusion": {
+            "title": "Transform Your Space with Click Vinyl",
+            "content": "Click vinyl flooring offers the perfect combination of DIY-friendly installation, 100% waterproof protection, and premium Dutch quality. Whether you're updating a bathroom, renovating a kitchen, or transforming your entire home, click vinyl delivers professional results without professional installation costs.",
+            "cta": "Ready to experience the ease of click vinyl installation?"
+        }
+    },
+    "whatIsGlueDownVinyl": {
+        "hero": {
+            "title": "What is Glue-Down Vinyl Flooring?",
+            "subtitle": "Discover the professional-grade flooring solution that offers permanent installation, maximum stability, and commercial-grade performance."
+        },
+        "introduction": {
+            "title": "The Professional's Choice for Permanent Flooring",
+            "content": "Glue-Down Vinyl flooring, also known as Dryback vinyl, represents the premium standard for permanent floor installations in commercial and high-traffic environments. Manufactured by Floer in the Netherlands, these professional-grade floors are adhered directly to the subfloor using specialized vinyl adhesive, creating an exceptionally stable and durable surface that won't shift, move, or develop gaps over time. This permanent installation method provides superior stability compared to floating floors, making it the preferred choice for commercial spaces, retail environments, offices, and homes where maximum durability is essential. With 100% waterproof construction, phthalate-free materials using bio-organic plasticizers, and REACH, FloorScore, and GreenGuard certifications, these floors meet the highest safety and environmental standards. The collection includes five distinct styles ranging from 2mm to 5mm thickness: large-format Tile Vinyl for contemporary aesthetics, elegant Herringbone patterns with ceramic bead wear layer, Nature Rigid with reinforced core for extreme durability, Village Vinyl with authentic oak realism, and Forest Vinyl with extra-wide luxury planks. Each collection offers a comprehensive 20-year warranty with usage classifications up to class 42, ensuring exceptional performance even in the most demanding commercial environments.",
+            "imageCaption": "[Image: Professional installer applying adhesive for glue-down vinyl flooring]"
+        },
+        "technology": {
+            "title": "Dryback Adhesive Technology",
+            "content": "Glue-down vinyl utilizes advanced dryback technology – a permanent installation method where specialized pressure-sensitive or wet-set adhesive creates a chemical bond between the vinyl and subfloor. This creates a monolithic surface that's extremely stable, won't shift under heavy loads, and provides superior sound dampening compared to floating installations.",
+            "benefits": {
+                "title": "Key Technological Advantages:",
+                "permanent": "Permanent adhesive installation eliminates movement and creates maximum stability",
+                "commercial": "Commercial-grade adhesion suitable for heavy traffic, rolling loads, and intensive use",
+                "thin": "Thinner profile (2-5mm) preserves ceiling height and works with existing door clearances",
+                "stability": "Superior dimensional stability prevents expansion, contraction, and telegraph through underlayment"
+            }
+        },
+        "features": {
+            "title": "Six Professional Performance Features",
+            "waterproof": {
+                "title": "100% Waterproof",
+                "description": "Complete moisture protection suitable for commercial kitchens, medical facilities, and high-moisture environments."
+            },
+            "permanentInstall": {
+                "title": "Permanent Installation",
+                "description": "Professional glue-down installation provides maximum stability for commercial spaces with heavy traffic and equipment."
+            },
+            "warranty": {
+                "title": "20-Year Warranty",
+                "description": "Comprehensive commercial warranty with usage classes up to 42 for the most demanding environments."
+            },
+            "ecoFriendly": {
+                "title": "Eco-Friendly",
+                "description": "Phthalate-free with bio-organic plasticizers. REACH, FloorScore, and GreenGuard Gold certified."
+            },
+            "commercialGrade": {
+                "title": "Commercial-Grade Durability",
+                "description": "Enhanced wear layers and reinforced cores withstand heavy rolling loads, furniture, and intensive foot traffic."
+            },
+            "soundDampening": {
+                "title": "Superior Sound Dampening",
+                "description": "Direct adhesion to subfloor provides excellent sound reduction. Optional acoustic underlayments available for enhanced performance."
+            }
+        },
+        "collections": {
+            "title": "Five Professional Glue-Down Collections",
+            "intro": "Floer's glue-down vinyl range offers five premium collections specifically designed for permanent installation in commercial and residential spaces. Each collection combines aesthetic excellence with commercial-grade durability.",
+            "tileVinyl": "Large-format stone and concrete aesthetics (60x60cm) with 2-3mm thickness. Perfect for commercial bathrooms, hotels, and healthcare facilities with full waterproof protection.",
+            "herringbone": "Elegant herringbone patterns with ceramic bead technology for extreme wear resistance. Create sophisticated commercial interiors with timeless appeal.",
+            "natureRigid": "Commercial-grade rigid core vinyl with 4-5mm thickness and mineral reinforcement. Suitable for heavy commercial traffic including retail, hospitality, and office environments.",
+            "village": "Authentic oak realism with strong wearing surface and commercial-grade construction. Versatile styling for boutique retail, restaurants, and modern offices.",
+            "forest": "Extra-wide luxury planks with premium aesthetics and enhanced durability. Create high-end commercial spaces with residential-style warmth."
+        },
+        "installation": {
+            "title": "Professional Installation Process",
+            "intro": "Glue-down vinyl requires professional installation expertise to ensure proper adhesive application, substrate preparation, and long-term performance. While more complex than click systems, the result is a permanently installed floor with superior stability.",
+            "method": {
+                "title": "Dryback Adhesive Method",
+                "description": "Professional installers apply specialized vinyl adhesive to the prepared subfloor using notched trowels. Vinyl planks or tiles are pressed into the adhesive and rolled with a 100-pound roller to ensure full contact and proper bonding."
+            },
+            "steps": {
+                "title": "Professional Installation Steps",
+                "preparation": "Subfloor must be perfectly smooth, level (within 2mm over 2m), clean, and dry. Concrete may require moisture testing and primer.",
+                "adhesive": "Select appropriate adhesive based on subfloor type and environmental conditions. Apply with correct trowel size for proper coverage.",
+                "installation": "Install vinyl planks or tiles into wet adhesive, ensuring proper alignment and full contact. Roll immediately with heavy roller.",
+                "finishing": "Remove excess adhesive, install transitions and baseboards. Allow 24-48 hours cure time before allowing traffic."
+            }
+        },
+        "conclusion": {
+            "title": "Professional Flooring for Demanding Environments",
+            "content": "Glue-down vinyl flooring provides the permanence, stability, and commercial-grade performance required in professional environments. From hotels and restaurants to offices and retail spaces, glue-down installation delivers unmatched durability and longevity that justifies the professional installation investment.",
+            "cta": "Ready for a professional-grade flooring solution?"
         }
     }
 }

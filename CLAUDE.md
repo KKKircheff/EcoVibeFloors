@@ -162,10 +162,15 @@ export default async function Page({ params }: PageProps) {
 ```
 
 ### Translations Pattern for Section Components
-- **Page-level translations**: Call `const t = await getTranslations({ locale });` in page components
-- **Section components**: Should receive translated strings as props, NOT call `getTranslations` directly
-- **Server-only directive**: Only page components (not section components) should use `'server-only'` directive
-- **Example**:
+
+#### Locale Context via `setRequestLocale`
+- **Locale is available throughout the component tree**: The layout calls `setRequestLocale(locale)` which makes the locale available to all server components
+- **Section components can call `getTranslations` directly**: No need to pass locale as a prop - next-intl provides it via request context
+- **Both patterns are valid**:
+  1. Pass translated strings as props (simpler, recommended for small components)
+  2. Call `getTranslations` in section components (better for complex components with many translations)
+
+**Pattern 1: Pass translations as props (recommended for simple cases)**
 ```tsx
 // ✅ Page component (app/[locale]/page.tsx)
 import 'server-only';
@@ -187,6 +192,37 @@ export function SectionComponent({ title }: SectionComponentProps) {
     return <h1>{title}</h1>;
 }
 ```
+
+**Pattern 2: Section components with `getTranslations` (recommended for complex components)**
+```tsx
+// ✅ Page component (app/[locale]/page.tsx)
+import 'server-only';
+import { setRequestLocale } from 'next-intl/server';
+
+export default async function Page({ params }: PageProps) {
+    const { locale } = await params;
+    setRequestLocale(locale); // Makes locale available to child components
+
+    return <HybridWoodFeatures />;
+}
+
+// ✅ Section component with translations (HybridWoodFeatures.section.tsx)
+import 'server-only';
+import { getTranslations } from 'next-intl/server';
+
+export async function HybridWoodFeatures() {
+    // ✅ No locale parameter needed - uses locale from setRequestLocale
+    const t = await getTranslations('hybridWood');
+
+    return <div>{t('features.title')}</div>;
+}
+```
+
+**Key Points:**
+- Layout calls `setRequestLocale(locale)` once, making locale available to all descendants
+- Section components can use `getTranslations()` without passing locale explicitly
+- This is the recommended pattern for static generation with next-intl
+- See `app/[locale]/hybrid-wood/(sections)/HybridWoodFeatures.section.tsx` for real example
 
 ### Type-Safe Translation Keys
 - **Global type definition**: `global.d.ts` defines `Messages` type (auto-generated from `messages/bg.json`)

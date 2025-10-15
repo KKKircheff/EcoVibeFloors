@@ -33,11 +33,19 @@ const HomecardsSection = async () => {
             mirror: true
         },
         {
-            title: t('vinyl.title'),
-            text: t('vinyl.text'),
+            title: t('clickVinyl.title'),
+            text: t('clickVinyl.text'),
             images: ['vn-large.jpg', 'vn-small2.jpg', 'vn-small1.jpg'] as [string, string, string],
-            button1: { text: t('vinyl.learnMore'), route: "/collections/vinyl/info" },
-            button2: { text: t('vinyl.viewCollection'), route: "/vinyl" },
+            button1: { text: t('clickVinyl.learnMore'), route: "/click-vinyl/what-is-click-vinyl" },
+            button2: { text: t('clickVinyl.viewCollection'), route: "/click-vinyl" },
+            mirror: true
+        },
+        {
+            title: t('glueDownVinyl.title'),
+            text: t('glueDownVinyl.text'),
+            images: ['vn-small1.jpg', 'vn-large.jpg', 'vn-small2.jpg'] as [string, string, string],
+            button1: { text: t('glueDownVinyl.learnMore'), route: "/glue-down-vinyl/what-is-glue-down-vinyl" },
+            button2: { text: t('glueDownVinyl.viewCollection'), route: "/glue-down-vinyl" },
             mirror: false
         }
     ];

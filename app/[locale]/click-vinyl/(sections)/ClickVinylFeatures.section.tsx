@@ -1,56 +1,68 @@
 import 'server-only';
+import { Grid } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
-import { Typography } from '@mui/material';
-import { MdWaterDrop, MdShield, MdEco, MdConstruction, MdBuild, MdVolumeDown } from 'react-icons/md';
-import { ProductFeatures } from '@/components/ui/sections/product';
+import { FeatureIconCard } from '@/components/ui/card/FeatureIconCard';
+import { TbDropletCheck } from "react-icons/tb";
+import { GoShieldCheck } from 'react-icons/go';
+import { TreeIcon } from '@/components/icons/TreeIcon';
+import { BsSoundwave } from "react-icons/bs";
+import { ClickIcon } from '@/components/icons/ClickIcon';
+import { ScratchIcon } from '@/components/icons/ScratchIcon';
 
 export async function ClickVinylFeatures() {
     const t = await getTranslations('clickVinyl');
 
     const featuresConfig = [
         {
-            icon: <MdWaterDrop size={52} />,
+            icon: <TbDropletCheck size={60} />,
             titleKey: 'features.waterproof.title',
             descriptionKey: 'features.waterproof.description',
             iconColor: 'primary' as const
         },
         {
-            icon: <MdShield size={52} />,
+            icon: <GoShieldCheck size={60} />,
             titleKey: 'features.warranty.title',
             descriptionKey: 'features.warranty.description',
-            iconColor: 'secondary' as const
+            iconColor: 'primary' as const
         },
         {
-            icon: <MdEco size={52} />,
+            icon: <TreeIcon size={60} />,
             titleKey: 'features.ecoFriendly.title',
             descriptionKey: 'features.ecoFriendly.description',
             iconColor: 'primary' as const
         },
         {
-            icon: <MdConstruction size={52} />,
+            icon: <ScratchIcon size={60} />,
             titleKey: 'features.durability.title',
             descriptionKey: 'features.durability.description',
-            iconColor: 'secondary' as const
+            iconColor: 'primary' as const
         },
         {
-            icon: <MdBuild size={52} />,
+            icon: <ClickIcon size={60} />,
             titleKey: 'features.installation.title',
             descriptionKey: 'features.installation.description',
             iconColor: 'primary' as const
         },
         {
-            icon: <MdVolumeDown size={52} />,
+            icon: <BsSoundwave size={60} />,
             titleKey: 'features.soundInsulation.title',
             descriptionKey: 'features.soundInsulation.description',
-            iconColor: 'secondary' as const
+            iconColor: 'primary' as const
         }
     ];
 
     return (
-        <ProductFeatures
-            translationKey="vinyl"
-            features={featuresConfig}
-            subtitle={t('features.subtitle')}
-        />
+        <Grid container spacing={{ xs: 6, md: 4 }}>
+            {featuresConfig.map((feature, index) => (
+                <Grid key={index} size={{ xs: 12, md: 6, lg: 4 }}>
+                    <FeatureIconCard
+                        icon={feature.icon}
+                        title={t(feature.titleKey)}
+                        description={t(feature.descriptionKey)}
+                        iconColor={feature.iconColor}
+                    />
+                </Grid>
+            ))}
+        </Grid>
     );
 }
