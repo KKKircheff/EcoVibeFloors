@@ -176,7 +176,7 @@ export default function SampleBasketContent() {
                             key={item.sku}
                             item={item}
                             onRemove={handleRemoveItem}
-                            patternLabel={tPatterns(item.pattern as keyof Messages['patterns'])}
+                            patternLabel={tPatterns(item.pattern as string)}
                         />
                     ))}
                 </Stack>

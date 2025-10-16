@@ -105,7 +105,7 @@ export interface Product {
     images: ProductImages;
     imageAlt: ImageAltText;
 
-    displayImages?: [number, number];
+    displayImages?: number[];
 
     i18n: I18nContent;
 

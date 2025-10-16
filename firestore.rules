@@ -5,8 +5,8 @@ service cloud.firestore {
 
     // Contacts collection - allow public submissions with validation
     match /contacts/{contactId} {
-      // Allow anyone to create contact form submissions
-      allow create: if request.resource.data.keys().hasAll(['to', 'message', 'name', 'email', 'phone', 'userMesssage', 'time_stamp', 'created'])
+      // Allow anyone to create contact form submissions (both contact form and sample requests)
+      allow create: if request.resource.data.keys().hasAll(['to', 'message', 'name', 'email', 'phone', 'time_stamp', 'created'])
                     // Validate 'to' field (array of email recipients for Firebase extension)
                     && request.resource.data.to is list
                     && request.resource.data.to.size() > 0
@@ -25,9 +25,20 @@ service cloud.firestore {
                     && request.resource.data.phone is string
                     && request.resource.data.phone.size() >= 1
                     && request.resource.data.phone.size() <= 20
-                    && request.resource.data.userMesssage is string
-                    && request.resource.data.userMesssage.size() >= 1
-                    && request.resource.data.userMesssage.size() <= 400
+                    // Support both userMessage (correct) and userMesssage (legacy typo) - both optional
+                    && (
+                        // Either has userMessage (correct spelling)
+                        (!request.resource.data.keys().hasAny(['userMessage']) || (
+                            request.resource.data.userMessage is string
+                            && request.resource.data.userMessage.size() <= 400
+                        ))
+                        // Or has userMesssage (legacy typo)
+                        || (!request.resource.data.keys().hasAny(['userMesssage']) || (
+                            request.resource.data.userMesssage is string
+                            && request.resource.data.userMesssage.size() >= 1
+                            && request.resource.data.userMesssage.size() <= 400
+                        ))
+                    )
                     // Validate timestamps
                     && request.resource.data.time_stamp is number
                     && request.resource.data.time_stamp > 0
@@ -35,7 +46,23 @@ service cloud.firestore {
                     && request.resource.data.time_stamp < request.time.toMillis() + 300000
                     && request.resource.data.time_stamp > request.time.toMillis() - 300000
                     // Allow optional 'company' field
-                    && (!request.resource.data.keys().hasAny(['company']) || request.resource.data.company is string);
+                    && (!request.resource.data.keys().hasAny(['company']) || request.resource.data.company is string)
+                    // Allow optional 'type' field (for distinguishing contact vs sample requests)
+                    && (!request.resource.data.keys().hasAny(['type']) || request.resource.data.type is string)
+                    // Allow optional 'deliveryAddress' object for sample requests
+                    && (!request.resource.data.keys().hasAny(['deliveryAddress']) || (
+                        request.resource.data.deliveryAddress is map
+                        && request.resource.data.deliveryAddress.keys().hasAll(['street', 'city', 'postalCode'])
+                        && request.resource.data.deliveryAddress.street is string
+                        && request.resource.data.deliveryAddress.city is string
+                        && request.resource.data.deliveryAddress.postalCode is string
+                    ))
+                    // Allow optional 'samples' array for sample requests
+                    && (!request.resource.data.keys().hasAny(['samples']) || (
+                        request.resource.data.samples is list
+                        && request.resource.data.samples.size() > 0
+                        && request.resource.data.samples.size() <= 5
+                    ));
 
       // Deny all reads and updates/deletes (admin access via Firebase Console only)
       allow read, update, delete: if false;
