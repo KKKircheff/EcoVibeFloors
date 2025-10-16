@@ -1,18 +1,49 @@
-rules_version='2'
+rules_version = '2';
 
 service cloud.firestore {
   match /databases/{database}/documents {
+
+    // Contacts collection - allow public submissions with validation
+    match /contacts/{contactId} {
+      // Allow anyone to create contact form submissions
+      allow create: if request.resource.data.keys().hasAll(['to', 'message', 'name', 'email', 'phone', 'userMesssage', 'time_stamp', 'created'])
+                    // Validate 'to' field (array of email recipients for Firebase extension)
+                    && request.resource.data.to is list
+                    && request.resource.data.to.size() > 0
+                    // Validate 'message' field (object with subject, text, html for Firebase extension)
+                    && request.resource.data.message is map
+                    && request.resource.data.message.keys().hasAll(['subject', 'text', 'html'])
+                    && request.resource.data.message.subject is string
+                    && request.resource.data.message.text is string
+                    && request.resource.data.message.html is string
+                    // Validate user input fields
+                    && request.resource.data.name is string
+                    && request.resource.data.name.size() >= 2
+                    && request.resource.data.name.size() <= 100
+                    && request.resource.data.email is string
+                    && request.resource.data.email.matches('^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$')
+                    && request.resource.data.phone is string
+                    && request.resource.data.phone.size() >= 1
+                    && request.resource.data.phone.size() <= 20
+                    && request.resource.data.userMesssage is string
+                    && request.resource.data.userMesssage.size() >= 1
+                    && request.resource.data.userMesssage.size() <= 400
+                    // Validate timestamps
+                    && request.resource.data.time_stamp is number
+                    && request.resource.data.time_stamp > 0
+                    // Ensure timestamp is recent (within 5 minutes of server time)
+                    && request.resource.data.time_stamp < request.time.toMillis() + 300000
+                    && request.resource.data.time_stamp > request.time.toMillis() - 300000
+                    // Allow optional 'company' field
+                    && (!request.resource.data.keys().hasAny(['company']) || request.resource.data.company is string);
+
+      // Deny all reads and updates/deletes (admin access via Firebase Console only)
+      allow read, update, delete: if false;
+    }
+
+    // Deny all other collections by default
     match /{document=**} {
-      // This rule allows anyone with your database reference to view, edit,
-      // and delete all data in your database. It is useful for getting
-      // started, but it is configured to expire after 30 days because it
-      // leaves your app open to attackers. At that time, all client
-      // requests to your database will be denied.
-      //
-      // Make sure to write security rules for your app before that time, or
-      // else all client requests to your database will be denied until you
-      // update your rules.
-      allow read, write: if request.time < timestamp.date(2025, 10, 1);
+      allow read, write: if false;
     }
   }
 }

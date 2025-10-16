@@ -1,6 +1,7 @@
 'use client'
 export const dynamic = 'force-dynamic';
-import { Box, Stack, Typography } from "@mui/material";
+import { Box, Stack, Typography, IconButton, Badge } from "@mui/material";
+import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import { useRouter } from '@/i18n/navigation';
 import { Locale, navRoutes } from '@/i18n/routing';
 import React, { useState } from "react";
@@ -14,6 +15,9 @@ import SideDrawer from "./SideDrawer.component";
 import { LanguageSelector } from "./LanguageSelector.component";
 import { useTranslations } from "next-intl";
 import { layoutPaddings } from "@/lib/styles/layoutPaddings";
+import { useSampleBasket } from "@/lib/contexts/SampleBasketContext";
+import { PiBag } from "react-icons/pi";
+import { palette } from "@/lib/styles/pallete";
 
 type Props = {
     locale: Locale
@@ -24,6 +28,7 @@ export default function Navbar({ locale }: Props) {
 
     // const screenWidth = useScreenWidth();
     const t = useTranslations('navigation')
+    const { itemCount } = useSampleBasket();
 
     // Navbar changes on scroll
     // const isScrolled = useScrollPosition(30);
@@ -46,6 +51,7 @@ export default function Navbar({ locale }: Props) {
 
     const router = useRouter()
     const navigateHome = () => router.push('/')
+    const navigateToBasket = () => router.push('/sample-basket')
 
 
     return (
@@ -127,14 +133,27 @@ export default function Navbar({ locale }: Props) {
                             />
                         ))
                     }
-                    <Stack display={{ xs: 'none', lg: 'flex' }} pt={1}>
+                    <Stack display={{ xs: 'none', lg: 'flex' }} direction="row" alignItems="flex-start" spacing={2} pt={1}>
+                        <IconButton
+                            onClick={navigateToBasket}
+                            aria-label="Sample basket"
+                        >
+                            <Badge badgeContent={itemCount} color="primary">
+                                <PiBag
+                                    style={{
+                                        color: isScrolled ? palette.info[500] : 'white',
+                                        transition: 'color 0.3s ease-in-out',
+                                    }}
+                                />
+                            </Badge>
+                        </IconButton>
                         <LanguageSelector locale={locale} isScrolled={isScrolled} />
                     </Stack>
                 </Stack>
 
 
 
-                <Stack role="button" display={{ xs: 'block', lg: 'none' }}>
+                <Stack direction="row" alignItems="center" spacing={1} display={{ xs: 'flex', lg: 'none' }}>
                     <BurgerButton isDrawerOpen={isDrawerOpen} setIsDrawerOpen={setIsDrawerOpen} aria-label={t('burgerMenuButton')} />
                 </Stack>
 

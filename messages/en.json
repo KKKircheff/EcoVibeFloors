@@ -285,6 +285,7 @@
         "requestQuote": "Request Quote",
         "orderSamples": "Order Samples",
         "contactUs": "Contact Us",
+        "addToBasket": "Add to Basket",
         "dimensions": "Dimensions",
         "appearance": "Appearance",
         "warranty": "Warranty",
@@ -315,6 +316,38 @@
             "phone": "Phone",
             "company": "Company (optional)",
             "message": "Your Message"
+        }
+    },
+    "sampleBasket": {
+        "title": "Sample Basket",
+        "subtitle": "You have {count} of {max} samples in your basket",
+        "samplesTitle": "Samples",
+        "deliveryInfo": "Delivery Information",
+        "emptyTitle": "Your sample basket is empty",
+        "emptySubtitle": "Browse our collections and add samples to your basket",
+        "backToCollections": "Back to Collections",
+        "itemRemoved": "Sample removed from basket",
+        "orderSuccess": "Sample order submitted successfully! We will contact you soon.",
+        "emptyBasketError": "Your basket is empty. Please add samples before ordering.",
+        "form": {
+            "street": "Street Address",
+            "city": "City",
+            "postalCode": "Postal Code",
+            "notes": "Additional Notes (optional)"
+        },
+        "validation": {
+            "street": {
+                "required": "Street address is required",
+                "invalid": "Please enter a valid street address"
+            },
+            "city": {
+                "required": "City is required",
+                "invalid": "Please enter a valid city name"
+            },
+            "postalCode": {
+                "required": "Postal code is required",
+                "invalid": "Please enter a valid 4-digit postal code"
+            }
         }
     },
     "blog": {

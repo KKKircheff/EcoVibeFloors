@@ -8,6 +8,8 @@ import Navbar from '@/components/layout/navbar/Navbar.component';
 import '../globals.css';
 import UnderNavBar from "@/components/layout/navbar/UnderNavBar.component";
 import { Montserrat } from 'next/font/google';
+import { SampleBasketProvider } from '@/lib/contexts/SampleBasketContext';
+import { ToastProvider } from '@/lib/contexts/ToastContext';
 
 const montserrat = Montserrat({
     weight: ['400', '500', '600'],
@@ -71,9 +73,13 @@ export default async function LocaleLayout(props: Props) {
             <body className={montserrat.className}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <ClientThemeProvider>
-                        <Navbar locale={locale} />
-                        <UnderNavBar />
-                        {children}
+                        <SampleBasketProvider>
+                            <ToastProvider>
+                                <Navbar locale={locale} />
+                                <UnderNavBar />
+                                {children}
+                            </ToastProvider>
+                        </SampleBasketProvider>
                     </ClientThemeProvider>
                 </NextIntlClientProvider>
             </body>

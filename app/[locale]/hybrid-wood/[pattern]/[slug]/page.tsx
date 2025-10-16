@@ -322,8 +322,16 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
 
                             {/* Action Buttons */}
                             <ProductActions
+                                product={{
+                                    sku: product.sku,
+                                    productName: localizedContent.name,
+                                    collection: product.collection,
+                                    pattern: product.pattern,
+                                    price: product.price,
+                                    imageUrl: imageUrls[0],
+                                }}
+                                addToBasketText={tProducts('addToBasket')}
                                 orderSamplesText={tProducts('orderSamples')}
-                                contactUsText={tProducts('contactUs')}
                             />
 
                             <Divider />

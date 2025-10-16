@@ -1,5 +1,5 @@
 'use client'
-import { Drawer, List, Stack, Typography } from '@mui/material';
+import { Drawer, List, Stack, Typography, IconButton, Badge } from '@mui/material';
 import MobileListMenuItem from './MobileListMenuItem.component';
 import { NavRoute, Locale } from '@/i18n/routing';
 import { borderRadius } from '@/lib/styles/borderRadius';
@@ -8,6 +8,11 @@ import BurgerButton from './BurgerButton.component';
 import { layoutPaddings as _layoutPaddings } from '@/lib/styles/layoutPaddings';
 import { LanguageSelector } from './LanguageSelector.component';
 import { caveat } from '@/lib/styles/theme';
+import { useSampleBasket } from '@/lib/contexts/SampleBasketContext';
+import { useRouter } from '@/i18n/navigation';
+import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
+import { palette } from '@/lib/styles/pallete';
+import { PiBag } from 'react-icons/pi';
 
 type Props = {
     routes: NavRoute[],
@@ -25,8 +30,14 @@ const SideDrawer = ({
     locale,
 }: Props) => {
 
-
+    const { itemCount } = useSampleBasket();
+    const router = useRouter();
     const [viewportHeight, setViewportHeight] = React.useState(typeof window !== 'undefined' ? window.innerHeight : 800);
+
+    const navigateToBasket = () => {
+        setIsDrawerOpen(false);
+        router.push('/sample-basket');
+    };
 
     React.useEffect(() => {
         if (typeof window === 'undefined') return;
@@ -110,8 +121,21 @@ const SideDrawer = ({
                         setIsDrawerOpen={setIsDrawerOpen}
                     />
                 </Stack>
-                <Stack spacing={2}>
+                <Stack direction="row" alignItems="center" justifyContent='space-between' spacing={2} pr={0.5}>
                     <LanguageSelector locale={locale} />
+                    <IconButton
+                        onClick={navigateToBasket}
+                        aria-label="Sample basket"
+                    >
+                        <Badge badgeContent={itemCount} color="primary">
+                            <PiBag
+                                style={{
+                                    color: palette.info[500],
+                                    transition: 'color 0.3s ease-in-out',
+                                }}
+                            />
+                        </Badge>
+                    </IconButton>
                 </Stack>
 
                 <List
