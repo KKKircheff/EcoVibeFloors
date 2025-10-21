@@ -1,0 +1,951 @@
+{
+    "metadata": {
+        "generatedAt": "2025-10-21T10:30:00.000Z",
+        "totalTreatments": 11,
+        "collection": "oak-treatments",
+        "description": "Premium Dutch color treatments for oak parquet flooring - 11 professional finishes enhancing natural wood beauty with superior protection"
+    },
+    "treatments": [
+        {
+            "slug": "abdij",
+            "category": "warm",
+            "characteristics": {
+                "finishType": "warm-toned",
+                "intensity": "medium",
+                "styleCompatibility": ["classic", "traditional", "rustic"]
+            },
+            "images": [
+                "/images/oak/treatments/abdij.webp"
+            ],
+            "imageAlt": {
+                "en": "Abdij oak color treatment - warm, lived-in appearance with authentic character",
+                "bg": "Цветно третиране Кафяв - топъл, автентичен вид с характер"
+            },
+            "i18n": {
+                "bg": {
+                    "name": "Кафяв",
+                    "description": "Цветното третиране Abdij придава на дъбовите подове топъл, обитаван вид с автентичен характер. Това покритие подчертава естествените фибри на дървото и цветните нюанси, създавайки вечна естетика. Цветът прониква дълбоко в порите на дървото, създавайки равномерен, естествен вид, а не повърхностна обработка.",
+                    "benefits": [
+                        "Висока устойчивост на драскотини и износване",
+                        "Екологично чиста формула",
+                        "Съвместимост със системи за подово отопление",
+                        "Относително лесна поддръжка",
+                        "Подчертава естествените вариации на дървото"
+                    ],
+                    "recommendedFor": [
+                        "Класически интериори",
+                        "Традиционни пространства",
+                        "Рустични дизайни",
+                        "Жилищни и търговски приложения"
+                    ],
+                    "application": "Системата се състои от два компонента, съчетаващи цветни пигменти и защитно горно покритие. Пигментният слой се абсорбира във дървесните влакна, докато защитният лак създава издръжлив повърхностен слой, устойчив на надраскване, влага, мръсотия и интензивно използване.",
+                    "maintenance": "Редовната поддръжка включва прахосмукане няколко пъти седмично за отстраняване на прах и пясък. Дълбоко почистване с подходящи продукти трябва да се извършва минимум на всеки две седмици, като специализирани поддържащи третирания се прилагат само два пъти годишно за запазване на защитното покритие.",
+                    "seo": {
+                        "title": "Кафяв Цветно Третиране за Дъбов Паркет | Топъл Автентичен Финиш",
+                        "description": "Цветно третиране Abdij за дъбов паркет с топъл, обитаван вид. Екологично чисто, издръжливо, подходящо за подово отопление. Холандско качество.",
+                        "keywords": [
+                            "цветно третиране дъб",
+                            "кафяво третиране паркет",
+                            "abdij паркет българия",
+                            "дъбов паркет обработка",
+                            "цветно третиране софия",
+                            "холандски паркет третиране",
+                            "топъл дъбов под",
+                            "автентичен дъб",
+                            "традиционен паркет финиш"
+                        ]
+                    }
+                },
+                "en": {
+                    "name": "Abdij",
+                    "description": "The Abdij color treatment imparts wooden floors with a warm, lived-in appearance featuring authentic character. This finish emphasizes natural wood grain and color nuances, creating a timeless aesthetic. The color penetrates deeply into the wood's pores, producing an even, natural look rather than a surface-level finish.",
+                    "benefits": [
+                        "High scratch and wear resistance",
+                        "Environmentally-friendly formulation",
+                        "Compatible with floor heating systems",
+                        "Relatively simple maintenance requirements",
+                        "Enhances natural wood variations"
+                    ],
+                    "recommendedFor": [
+                        "Classic interiors",
+                        "Traditional spaces",
+                        "Rustic designs",
+                        "Residential and commercial applications"
+                    ],
+                    "application": "Consists of a two-component system combining color pigments and a protective topcoat. The pigment layer absorbs into wood fibers while the protective lacquer creates a durable surface layer resistant to scratching, moisture, dirt, and heavy wear.",
+                    "maintenance": "Regular maintenance involves vacuuming multiple times weekly to remove dust and sand. Deep cleaning with appropriate products should occur every two weeks minimum, with specialized maintenance treatments applied only twice annually to preserve the protective coating.",
+                    "seo": {
+                        "title": "Abdij Oak Color Treatment | Warm Authentic Finish",
+                        "description": "Abdij color treatment for oak parquet with warm, lived-in appearance. Eco-friendly, durable, suitable for floor heating. Premium Dutch quality.",
+                        "keywords": [
+                            "oak color treatment",
+                            "abdij parquet finish",
+                            "warm oak floor",
+                            "traditional oak treatment",
+                            "dutch oak finish",
+                            "authentic oak flooring",
+                            "classic parquet treatment",
+                            "oak floor finishing bulgaria"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "english-colour",
+            "category": "warm",
+            "characteristics": {
+                "finishType": "warm-deep",
+                "intensity": "rich",
+                "styleCompatibility": ["traditional", "classic", "elegant"]
+            },
+            "images": [
+                "/images/oak/treatments/english-colour.webp"
+            ],
+            "imageAlt": {
+                "en": "English Colour oak treatment - deep, warm undertones with elegant appearance",
+                "bg": "Цветно третиране Английски - дълбоки, топли подтонове с елегантен вид"
+            },
+            "i18n": {
+                "bg": {
+                    "name": "Английски",
+                    "description": "English Colour е традиционно покритие за дъбови подове с дълбок, топъл подтон, което осигурява елегантен и вечен вид. Третирането подобрява естествените цветови вариации на дървото по целия под, създавайки изискана визуална дълбочина при запазване на естествената естетика.",
+                    "benefits": [
+                        "Екологично чиста формула",
+                        "Висока устойчивост на драскотини и износване",
+                        "Съвместимост със системи за подово отопление",
+                        "Силен защитен слой срещу влага и мръсотия",
+                        "Подчертава естествените нюанси на дървото"
+                    ],
+                    "recommendedFor": [
+                        "Традиционни английски интериори",
+                        "Класически дизайни",
+                        "Елегантни пространства",
+                        "Жилищни и търговски инсталации"
+                    ],
+                    "application": "Тази система от два компонента съчетава пигменти, масла и защитно горно покритие. Цветът прониква дълбоко в порите на дървото за равномерно покритие, докато защитният слой създава издръжлив финиш, устойчив на влага, мръсотия и интензивно използване.",
+                    "maintenance": "Финишът изисква минимална поддръжка: редовно прахосмукане за отстраняване на прах и пясък, влажно почистване поне два пъти седмично с подходящи препарати и опционални поддържащи третирания полугодишно за допълнителна защита. Повърхностите трябва да се поддържат чисти, особено чрез честа поддръжка.",
+                    "seo": {
+                        "title": "Английски Цветно Третиране за Дъбов Паркет | Елегантен Финиш",
+                        "description": "English Colour третиране за дъбов паркет с дълбоки топли тонове. Традиционен елегантен вид. Холандско качество за българския пазар.",
+                        "keywords": [
+                            "английско третиране дъб",
+                            "english colour паркет българия",
+                            "елегантен дъбов под",
+                            "традиционен паркет финиш",
+                            "цветно третиране софия",
+                            "топъл дъб обработка",
+                            "класически паркет",
+                            "холандски дъбов под"
+                        ]
+                    }
+                },
+                "en": {
+                    "name": "English Colour",
+                    "description": "English Colour is a traditional wooden floor finish featuring a deep, warm undertone that delivers an elegant and timeless appearance. The treatment enhances natural wood color variations throughout the floor, creating sophisticated visual depth while maintaining natural aesthetics.",
+                    "benefits": [
+                        "Environmentally-friendly formula",
+                        "High scratch and wear resistance",
+                        "Compatible with floor heating systems",
+                        "Strong protective layer against moisture and dirt",
+                        "Enhances natural wood hues"
+                    ],
+                    "recommendedFor": [
+                        "Traditional English interiors",
+                        "Classic designs",
+                        "Elegant spaces",
+                        "Residential and commercial installations"
+                    ],
+                    "application": "This two-component system combines pigments, oils, and a protective topcoat. The color penetrates deeply into wood pores for even coverage, while the protective layer creates a durable finish resistant to moisture, dirt, and heavy wear.",
+                    "maintenance": "The finish requires minimal upkeep: regular vacuuming to remove dust/sand, damp mopping at least bi-weekly with appropriate cleaners, and optional maintenance treatments semi-annually for extra protection. Surfaces should be kept clean, particularly through frequent dust removal.",
+                    "seo": {
+                        "title": "English Colour Oak Treatment | Elegant Traditional Finish",
+                        "description": "English Colour treatment for oak parquet with deep warm tones. Traditional elegant appearance. Premium Dutch quality for Bulgarian market.",
+                        "keywords": [
+                            "english colour oak",
+                            "traditional oak treatment",
+                            "elegant oak flooring",
+                            "classic parquet finish",
+                            "warm oak floor bulgaria",
+                            "dutch oak treatment",
+                            "premium oak finish",
+                            "oak color treatment bulgaria"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "smoked-whitewash",
+            "category": "neutral",
+            "characteristics": {
+                "finishType": "smoked-light",
+                "intensity": "subtle",
+                "styleCompatibility": ["contemporary", "modern", "scandinavian"]
+            },
+            "images": [
+                "/images/oak/treatments/smoked-whitewash.webp"
+            ],
+            "imageAlt": {
+                "en": "Smoked Whitewash oak treatment - subtle greyed aesthetic with natural depth",
+                "bg": "Цветно третиране Опушен светъл дъб - фин сив вид с естествена дълбочина"
+            },
+            "i18n": {
+                "bg": {
+                    "name": "Опушен светъл дъб",
+                    "description": "Gerookt Whitewash е цветно третиране от два компонента, съчетаващо опушена основа с избелващ финиш. То осигурява фин, опушен вид със светъл подтон, създавайки мек, естествен изглед. Комбинацията от по-тъмни опушени тонове със светло избелващо покритие създава изискан, овехтял вид с естествена дълбочина.",
+                    "benefits": [
+                        "Висока устойчивост на драскотини и износване",
+                        "Топъл, обитаван цвят с характер",
+                        "Екологично чиста формулация",
+                        "Съвместимост със системи за подово отопление",
+                        "Изискана, овехтяла естетика"
+                    ],
+                    "recommendedFor": [
+                        "Съвременни интериори",
+                        "Модерни скандинавски дизайни",
+                        "Пространства с естествена светлина",
+                        "Минималистични обстановки"
+                    ],
+                    "application": "Системата се състои от двукомпонентен продукт с цветни пигменти и масла, които проникват дълбоко в порите на дървото за равномерно оцветяване. Защитното горно покритие втвърдява финиша, създавайки изключително силен защитен слой, устойчив на износване, влага, мръсотия и интензивно използване.",
+                    "maintenance": "Препоръчва се редовно почистване с подходящи продукти два пъти седмично. Периодични поддържащи третирания могат да се прилагат полугодишно за допълнителна защита. Рутинното отстраняване на прах и пясък чрез прахосмукане поддържа състоянието на пода.",
+                    "seo": {
+                        "title": "Опушен светъл дъб Третиране | Съвременен Сив Финиш",
+                        "description": "Gerookt Whitewash третиране за дъбов паркет със светъл опушен вид. Модерен скандинавски стил. Холандско качество.",
+                        "keywords": [
+                            "опушен дъб паркет",
+                            "светъл дъб третиране",
+                            "smoked whitewash българия",
+                            "сив дъбов под",
+                            "съвременен паркет финиш",
+                            "скандинавски дъб",
+                            "модерен дъбов под",
+                            "цветно третиране софия"
+                        ]
+                    }
+                },
+                "en": {
+                    "name": "Smoked Whitewash",
+                    "description": "Gerookt Whitewash is a two-component color treatment combining a smoked base with whitewash finishing. It provides a subtle, smoked look with a light undertone, creating a soft, natural appearance. The combination of darker smoked tones with lighter whitewash overlay creates a sophisticated, weathered appearance with natural depth.",
+                    "benefits": [
+                        "High scratch and wear resistance",
+                        "Warm, lived-in color with character",
+                        "Environmentally-conscious formulation",
+                        "Compatible with floor heating systems",
+                        "Sophisticated, weathered aesthetic"
+                    ],
+                    "recommendedFor": [
+                        "Contemporary interiors",
+                        "Modern Scandinavian designs",
+                        "Spaces with natural light",
+                        "Minimalist settings"
+                    ],
+                    "application": "The system consists of a dual-component product featuring color pigments and oils that penetrate deep into the wood's pores for uniform coloring. A protective topcoat hardens the finish, creating an extra strong protective layer that is wear-resistant and resistant to moisture, dirt, and intensive use.",
+                    "maintenance": "Regular cleaning with appropriate products is recommended bi-weekly. Periodic maintenance treatments can be applied semi-annually for added protection. Routine dust and sand removal via vacuuming maintains floor condition.",
+                    "seo": {
+                        "title": "Smoked Whitewash Oak Treatment | Contemporary Grey Finish",
+                        "description": "Smoked Whitewash treatment for oak parquet with subtle smoked look. Modern Scandinavian style. Premium Dutch quality.",
+                        "keywords": [
+                            "smoked whitewash oak",
+                            "grey oak treatment",
+                            "contemporary oak finish",
+                            "scandinavian oak floor",
+                            "modern oak treatment bulgaria",
+                            "light smoked oak",
+                            "weathered oak flooring",
+                            "dutch oak finish"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "greywash",
+            "category": "cool",
+            "characteristics": {
+                "finishType": "grey-toned",
+                "intensity": "subtle",
+                "styleCompatibility": ["modern", "contemporary", "minimalist", "rustic"]
+            },
+            "images": [
+                "/images/oak/treatments/greywash.webp"
+            ],
+            "imageAlt": {
+                "en": "Greywash oak treatment - subtle grey tint with modern contemporary appearance",
+                "bg": "Цветно третиране Сив отенък - фин сив тон със съвременен изглед"
+            },
+            "i18n": {
+                "bg": {
+                    "name": "Сив отенък",
+                    "description": "Третирането Greywash прилага фин сив оттенък, който подчертава фибрите на дървото и осигурява модерен, съвременен вид. Този финиш е подходящ както за минималистични, така и за рустични интериорни дизайни. Фината сива колорация подобрява естествената текстура на дървото, създавайки сдържана, изтънчена естетика при запазване на видимостта на фибрите.",
+                    "benefits": [
+                        "Екологично чист състав",
+                        "Висока устойчивост на драскотини и износване",
+                        "Подходящ за системи за подово отопление",
+                        "Създава равномерен, естествен изглед",
+                        "Универсална съвременна естетика"
+                    ],
+                    "recommendedFor": [
+                        "Модерни интериори",
+                        "Съвременни дизайни",
+                        "Минималистични пространства",
+                        "Рустик-модерни комбинации",
+                        "Скандинавски стил"
+                    ],
+                    "application": "Третирането се състои от двукомпонентна система, съчетаваща цветни пигменти, масла и защитно покритие. Тези елементи проникват дълбоко в порите на дървото, след което се втвърдяват в защитен слой, устойчив на влага, мръсотия и интензивно използване.",
+                    "maintenance": "Собствениците трябва да извършват редовно почистване няколко пъти седмично, използвайки подходящи почистващи препарати, като периодичните поддържащи третирания се прилагат не повече от два пъти годишно за оптимална защита.",
+                    "seo": {
+                        "title": "Сив отенък Цветно Третиране | Модерен Съвременен Финиш",
+                        "description": "Greywash третиране за дъбов паркет с фин сив тон. Модерен минималистичен вид. Холандско качество за България.",
+                        "keywords": [
+                            "greywash паркет българия",
+                            "сив дъбов под",
+                            "модерен паркет финиш",
+                            "съвременен дъб третиране",
+                            "сив дъб софия",
+                            "минималистичен паркет",
+                            "скандинавски дъбов под",
+                            "цветно третиране дъб"
+                        ]
+                    }
+                },
+                "en": {
+                    "name": "Greywash",
+                    "description": "The Greywash treatment applies a subtle grey tint that accentuates the wood grain and provides a modern, contemporary appearance. This finish suits both minimalist and rustic interior designs. The subtle grey coloration enhances natural wood texture, creating an understated, refined aesthetic while maintaining the visibility of wood grain patterns.",
+                    "benefits": [
+                        "Environmentally-friendly composition",
+                        "High scratch and wear resistance",
+                        "Suitable for floor heating systems",
+                        "Creates an even, natural appearance",
+                        "Versatile contemporary aesthetic"
+                    ],
+                    "recommendedFor": [
+                        "Modern interiors",
+                        "Contemporary designs",
+                        "Minimalist spaces",
+                        "Rustic-modern combinations",
+                        "Scandinavian style"
+                    ],
+                    "application": "The treatment comprises a two-component system combining color pigments, oils, and protective coating. These elements penetrate wood pores deeply, then harden into a protective layer resistant to moisture, dirt, and intensive use.",
+                    "maintenance": "Owners should perform regular cleaning multiple times weekly using appropriate cleaners, with periodic maintenance treatments applied no more than twice yearly for optimal protection.",
+                    "seo": {
+                        "title": "Greywash Oak Treatment | Modern Contemporary Finish",
+                        "description": "Greywash treatment for oak parquet with subtle grey tone. Modern minimalist appearance. Premium Dutch quality for Bulgaria.",
+                        "keywords": [
+                            "greywash oak treatment",
+                            "grey oak flooring",
+                            "modern oak finish",
+                            "contemporary oak bulgaria",
+                            "minimalist oak floor",
+                            "scandinavian oak treatment",
+                            "grey parquet finish",
+                            "oak color treatment"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "chalk-white",
+            "category": "cool",
+            "characteristics": {
+                "finishType": "white-light",
+                "intensity": "light",
+                "styleCompatibility": ["modern", "elegant", "scandinavian", "coastal"]
+            },
+            "images": [
+                "/images/oak/treatments/chalk-white.webp"
+            ],
+            "imageAlt": {
+                "en": "Chalk White oak treatment - light neutral finish with fresh elegant appearance",
+                "bg": "Цветно третиране Слонова кост - светъл неутрален финиш със свеж елегантен вид"
+            },
+            "i18n": {
+                "bg": {
+                    "name": "Слонова кост",
+                    "description": "Финишът Krijtwit е светло, бяло цветно третиране, предназначено за дъбови подове. Той осигурява светъл бял, неутрален финиш, който придава на дъбовите подове свеж и елегантен вид. Естествената структура на дървесните фибри остава фино видима под третирането, създавайки изтънчена естетика.",
+                    "benefits": [
+                        "Екологично чист състав",
+                        "Висока устойчивост на драскотини и износване",
+                        "Подходящ за системи за подово отопление",
+                        "Създава равномерна, естествена повърхностна обработка",
+                        "Свеж, просторен визуален ефект"
+                    ],
+                    "recommendedFor": [
+                        "Модерни интериори",
+                        "Елегантни пространства",
+                        "Скандинавски дизайни",
+                        "Крайбрежни стилове",
+                        "Светли, просторни помещения"
+                    ],
+                    "application": "Krijtwit се състои от двукомпонентна система, включваща пигментиран цвят и защитно горно покритие. Цветът прониква дълбоко в порите на дървото за равномерно покритие, докато защитният слой се втвърдява, за да създаде изключително силен защитен слой, устойчив на влага, мръсотия и интензивно използване.",
+                    "maintenance": "Редовната поддръжка включва отстраняване на прах няколко пъти седмично с прахосмукачка, почистване с моп с подходящ препарат поне два пъти седмично и опционални специализирани поддържащи третирания не повече от два пъти годишно.",
+                    "seo": {
+                        "title": "Слонова кост Цветно Третиране | Светъл Елегантен Финиш",
+                        "description": "Krijtwit третиране за дъбов паркет със светъл бял тон. Свеж елегантен вид. Холандско качество за българския пазар.",
+                        "keywords": [
+                            "бял дъбов паркет",
+                            "krijtwit третиране българия",
+                            "светъл дъб софия",
+                            "слонова кост паркет",
+                            "елегантен бял под",
+                            "скандинавски дъб",
+                            "светъл паркет финиш",
+                            "цветно третиране дъб"
+                        ]
+                    }
+                },
+                "en": {
+                    "name": "Chalk White",
+                    "description": "The Krijtwit finish is a light, chalk-white color treatment designed for wooden floors. It provides a light white, neutral finish that gives wooden floors a fresh and elegant appearance. The natural wood grain structure remains subtly visible beneath the treatment, creating a refined aesthetic.",
+                    "benefits": [
+                        "Environmentally-friendly composition",
+                        "High scratch and wear resistance",
+                        "Suitable for underfloor heating systems",
+                        "Creates an even, natural-looking surface treatment",
+                        "Fresh, spacious visual effect"
+                    ],
+                    "recommendedFor": [
+                        "Modern interiors",
+                        "Elegant spaces",
+                        "Scandinavian designs",
+                        "Coastal styles",
+                        "Bright, spacious rooms"
+                    ],
+                    "application": "The Krijtwit consists of a two-component system comprising pigmented color and protective topcoat. The color penetrates deeply into the wood's pores for uniform coverage, while the protective layer hardens to create an extra strong protective layer resistant to moisture, dirt, and intensive use.",
+                    "maintenance": "Regular upkeep involves dust removal several times weekly using a vacuum, mopping with appropriate cleaner at least biweekly, and optional specialized maintenance treatments no more than twice yearly.",
+                    "seo": {
+                        "title": "Chalk White Oak Treatment | Light Elegant Finish",
+                        "description": "Chalk White treatment for oak parquet with light white tone. Fresh elegant appearance. Premium Dutch quality for Bulgarian market.",
+                        "keywords": [
+                            "chalk white oak",
+                            "white oak treatment",
+                            "light oak flooring bulgaria",
+                            "elegant white oak",
+                            "scandinavian oak finish",
+                            "coastal oak floor",
+                            "krijtwit oak treatment",
+                            "white parquet finish"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "medium-brown",
+            "category": "warm",
+            "characteristics": {
+                "finishType": "warm-brown",
+                "intensity": "rich",
+                "styleCompatibility": ["classic", "traditional", "rustic", "rural"]
+            },
+            "images": [
+                "/images/oak/treatments/medium-brown.webp"
+            ],
+            "imageAlt": {
+                "en": "Medium Brown oak treatment - warm rich appearance enhancing wood depth",
+                "bg": "Цветно третиране Среден кафяв - топъл богат вид, подчертаващ дълбочината на дървото"
+            },
+            "i18n": {
+                "bg": {
+                    "name": "Среден кафяв",
+                    "description": "Midden Bruin (Среден кафяв) е професионално цветно третиране за дъбови подове, предназначено да подобри естествената красота на дървото с топли, богати тонове. Третирането осигурява равномерен, естествен кафяв тон, който се вписва в различни интериорни стилове, особено подходящ за класически и селски интериорни дизайни.",
+                    "benefits": [
+                        "Висока устойчивост на драскотини и износване",
+                        "Екологично чист състав",
+                        "Съвместимост със системи за подово отопление",
+                        "Създава защитен слой, устойчив на влага, мръсотия и интензивно използване",
+                        "Подобрява дълбочината и богатството на дървото"
+                    ],
+                    "recommendedFor": [
+                        "Класически интериори",
+                        "Традиционни дизайни",
+                        "Селски стил",
+                        "Рустични пространства",
+                        "Топли, уютни обстановки"
+                    ],
+                    "application": "Третирането се съединява с дървесните влакна за дълготрайно задържане на цвета и може да се прилага върху различни типове дъбови подове в колекциите на EKOFLOORS. Състои се от двукомпонентен продукт с цвят и защитно покритие, които проникват дълбоко в порите на дървото за равномерен, естествен финиш.",
+                    "maintenance": "Защитното покритие се втвърдява, за да създаде изключително силен защитен слой. Поддръжката включва редовно почистване няколко пъти седмично с подходящи продукти и периодично професионално третиране не повече от два пъти годишно.",
+                    "seo": {
+                        "title": "Среден кафяв Цветно Третиране | Топъл Богат Дъбов Финиш",
+                        "description": "Midden Bruin третиране за дъбов паркет с топли богати тонове. Класически стил. Холандско качество за България.",
+                        "keywords": [
+                            "среден кафяв дъб",
+                            "кафяв паркет третиране",
+                            "топъл дъбов под",
+                            "класически дъб българия",
+                            "традиционен паркет финиш",
+                            "кафяво третиране софия",
+                            "дъбов под обработка",
+                            "цветно третиране дъб"
+                        ]
+                    }
+                },
+                "en": {
+                    "name": "Medium Brown",
+                    "description": "Midden Bruin (Medium Brown) is a professional color treatment for wooden floors offered by EKOFLOORS, designed to enhance the natural beauty of wood with warm, rich tones. The treatment produces an even, natural-looking brown tone that suits various interior styles, particularly fitting classic and rural interior designs.",
+                    "benefits": [
+                        "High scratch and wear resistance",
+                        "Environmentally-friendly composition",
+                        "Compatible with underfloor heating systems",
+                        "Creates a protective layer resistant to moisture, dirt, and intensive use",
+                        "Enhances wood depth and richness"
+                    ],
+                    "recommendedFor": [
+                        "Classic interiors",
+                        "Traditional designs",
+                        "Rural style",
+                        "Rustic spaces",
+                        "Warm, cozy settings"
+                    ],
+                    "application": "The treatment bonds with wood fibers for lasting color retention and can be applied to various wood floor types within the EKOFLOORS collections. It consists of a 2-component product, with a color and a protective coat that penetrates deeply into wood pores for an even, natural finish.",
+                    "maintenance": "The protective coating hardens to create an extra strong protective layer. Maintenance involves regular cleaning multiple times weekly with appropriate products and periodic professional treatment no more than twice yearly.",
+                    "seo": {
+                        "title": "Medium Brown Oak Treatment | Warm Rich Oak Finish",
+                        "description": "Medium Brown treatment for oak parquet with warm rich tones. Classic traditional style. Premium Dutch quality for Bulgaria.",
+                        "keywords": [
+                            "medium brown oak",
+                            "warm oak treatment",
+                            "brown oak flooring",
+                            "classic oak finish bulgaria",
+                            "traditional oak treatment",
+                            "rich oak floor",
+                            "midden bruin oak",
+                            "oak color treatment"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "natural",
+            "category": "neutral",
+            "characteristics": {
+                "finishType": "transparent",
+                "intensity": "natural",
+                "styleCompatibility": ["all", "authentic", "natural", "timeless"]
+            },
+            "images": [
+                "/images/oak/treatments/natural.webp"
+            ],
+            "imageAlt": {
+                "en": "Natural oak treatment - transparent finish preserving original wood color",
+                "bg": "Цветно третиране Естествен - прозрачен финиш, запазващ оригиналния цвят на дървото"
+            },
+            "i18n": {
+                "bg": {
+                    "name": "Естествен",
+                    "description": "Финишът Naturel е прозрачна обработка за дъбови подове, която запазва оригиналния цвят на дървото, като същевременно осигурява защитни качества. Поддържа автентичните дървесни тонове без да променя оригиналната цветова палитра на пода. Двукомпонентната система, съчетаваща пигменти, масла и защитно горно покритие, прониква в порите на дървото за равномерен, естествен вид.",
+                    "benefits": [
+                        "Издръжливост с висока устойчивост на драскотини и износване",
+                        "Защита от влага, мръсотия и интензивно използване",
+                        "Екологично чиста формулация",
+                        "Съвместимост със системи за лъчисто подово отопление",
+                        "Запазва естествения характер на дървото"
+                    ],
+                    "recommendedFor": [
+                        "Всички интериорни стилове",
+                        "Автентични естествени дизайни",
+                        "Пространства, ценещи чистата дървесина",
+                        "Вечни класически интериори",
+                        "Жилищни и търговски приложения"
+                    ],
+                    "application": "Създава изключително силен защитен слой чрез процеса на втвърдяване, като същевременно поддържа визуална прозрачност. Прониква дълбоко в дървесните влакна за защита отвътре навън.",
+                    "maintenance": "Редовната поддръжка включва отстраняване на прах и пясък няколко пъти седмично с прахосмукачка, влажно почистване поне два пъти седмично с подходящи почистващи препарати и опционални периодични поддържащи третирания (максимум два пъти годишно) с използване на специализирани продукти.",
+                    "seo": {
+                        "title": "Естествен Цветно Третиране | Прозрачен Защитен Финиш",
+                        "description": "Naturel третиране за дъбов паркет, запазващо естествения цвят. Прозрачна защита. Холандско качество за България.",
+                        "keywords": [
+                            "естествен дъб паркет",
+                            "прозрачно третиране дъб",
+                            "натурален дъбов под",
+                            "автентичен дъб българия",
+                            "naturel паркет софия",
+                            "естествена дървесина под",
+                            "защитен финиш дъб",
+                            "цветно третиране дъб"
+                        ]
+                    }
+                },
+                "en": {
+                    "name": "Natural",
+                    "description": "The Naturel finish is a transparent wood floor treatment that preserves the original wood color while providing protective qualities. Maintains authentic wood tones without altering the floor's original color palette. The two-component system combining pigments, oils, and a protective topcoat penetrates wood pores for an even, natural appearance.",
+                    "benefits": [
+                        "Durability with high scratch and wear resistance",
+                        "Moisture protection, resists dirt and intensive use",
+                        "Environmentally-friendly formulation",
+                        "Compatible with radiant floor heating systems",
+                        "Preserves the wood's natural character"
+                    ],
+                    "recommendedFor": [
+                        "All interior styles",
+                        "Authentic natural designs",
+                        "Spaces valuing pure wood",
+                        "Timeless classic interiors",
+                        "Residential and commercial applications"
+                    ],
+                    "application": "Creates an extra strong protective layer through the curing process while maintaining visual transparency. Penetrates deeply into wood fibers for protection from within.",
+                    "maintenance": "Regular upkeep involves removing dust and sand multiple times weekly with a vacuum, damp-mopping at least biweekly with appropriate cleaners, and optional periodic maintenance (maximum twice yearly) using specialized products.",
+                    "seo": {
+                        "title": "Natural Oak Treatment | Transparent Protective Finish",
+                        "description": "Natural treatment for oak parquet preserving original wood color. Transparent protection. Premium Dutch quality for Bulgaria.",
+                        "keywords": [
+                            "natural oak treatment",
+                            "transparent oak finish",
+                            "authentic oak flooring",
+                            "naturel oak bulgaria",
+                            "clear oak protection",
+                            "original wood color",
+                            "pure oak finish",
+                            "oak color treatment"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "smokey",
+            "category": "dramatic",
+            "characteristics": {
+                "finishType": "grey-smoked",
+                "intensity": "bold",
+                "styleCompatibility": ["industrial", "vintage", "contemporary", "bold"]
+            },
+            "images": [
+                "/images/oak/treatments/smokey.webp"
+            ],
+            "imageAlt": {
+                "en": "Smokey oak treatment - grayed smoky aesthetic with vintage character",
+                "bg": "Цветно третиране Опушен - сива опушена естетика с винтидж характер"
+            },
+            "i18n": {
+                "bg": {
+                    "name": "Опушен",
+                    "description": "Третирането Smokey е цветен финиш, предлаган от EKOFLOORS за дъбови подове, част от тяхната колекция EKO Wood. Създава посивяла, опушена визия, която произвежда обитаван, винтидж вид, идеален за интериори, търсещи смел характер.",
+                    "benefits": [
+                        "Висока устойчивост на драскотини и износване",
+                        "Екологично чиста формулация",
+                        "Универсалност със съвместимост със системи за подово отопление",
+                        "Създава винтиджна, овехтяла естетика",
+                        "Смела, характерна визия"
+                    ],
+                    "recommendedFor": [
+                        "Индустриални интериори",
+                        "Винтидж дизайни",
+                        "Съвременни смели пространства",
+                        "Лофт стилове",
+                        "Модерни урбанистични обстановки"
+                    ],
+                    "application": "Продуктът използва двукомпонентна система, съчетаваща цветни пигменти и защитни масла. Пигментираният слой прониква дълбоко в порите на дървото за равномерно разпределение на цвета, докато защитното горно покритие създава подобрена защита срещу влага, мръсотия и интензивно използване.",
+                    "maintenance": "Редовната грижа включва прах и прахосмукане няколко пъти седмично, влажно почистване на всеки две седмици с подходящи почистващи препарати и прилагане на специализирани поддържащи продукти не повече от два пъти годишно.",
+                    "seo": {
+                        "title": "Опушен Цветно Третиране | Винтидж Опушен Дъбов Финиш",
+                        "description": "Smokey третиране за дъбов паркет със сива опушена визия. Индустриален винтидж стил. Холандско качество.",
+                        "keywords": [
+                            "опушен дъб паркет",
+                            "smokey третиране българия",
+                            "винтидж дъбов под",
+                            "индустриален паркет",
+                            "опушен финиш софия",
+                            "сив опушен дъб",
+                            "модерен винтидж под",
+                            "цветно третиране дъб"
+                        ]
+                    }
+                },
+                "en": {
+                    "name": "Smokey",
+                    "description": "The Smokey treatment is a color finish offered by EKOFLOORS for wooden floors, part of their EKO Wood collection. It creates a grayed, smoky aesthetic that produces a lived-in, vintage appearance ideal for interiors seeking bold character.",
+                    "benefits": [
+                        "High scratch and wear resistance",
+                        "Environmentally-friendly formulation",
+                        "Versatility with compatibility with floor heating systems",
+                        "Delivers a distressed, vintage-inspired look",
+                        "Bold, characterful appearance"
+                    ],
+                    "recommendedFor": [
+                        "Industrial interiors",
+                        "Vintage designs",
+                        "Contemporary bold spaces",
+                        "Loft styles",
+                        "Modern urban settings"
+                    ],
+                    "application": "The product uses a two-component system combining color pigments and protective oils. The pigmented layer penetrates deeply into wood pores for uniform color distribution, while a protective topcoat creates enhanced protection against moisture, dirt, and heavy use.",
+                    "maintenance": "Regular care involves dust and vacuum multiple times weekly, damp mop every two weeks using appropriate cleaners, and apply specialized maintenance products no more than twice annually.",
+                    "seo": {
+                        "title": "Smokey Oak Treatment | Vintage Smoked Oak Finish",
+                        "description": "Smokey treatment for oak parquet with grey smoked appearance. Industrial vintage style. Premium Dutch quality.",
+                        "keywords": [
+                            "smokey oak treatment",
+                            "smoked oak flooring",
+                            "vintage oak finish bulgaria",
+                            "industrial oak floor",
+                            "grey smoked oak",
+                            "distressed oak treatment",
+                            "modern vintage oak",
+                            "oak color treatment"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "weissgrund",
+            "category": "cool",
+            "characteristics": {
+                "finishType": "white-washed",
+                "intensity": "light",
+                "styleCompatibility": ["modern", "scandinavian", "minimalist", "coastal"]
+            },
+            "images": [
+                "/images/oak/treatments/weissgrund.webp"
+            ],
+            "imageAlt": {
+                "en": "Weissgrund oak treatment - light whitewashed look with fresh spacious atmosphere",
+                "bg": "Цветно третиране Светла основа - светъл избелен вид със свежа просторна атмосфера"
+            },
+            "i18n": {
+                "bg": {
+                    "name": "Светла основа",
+                    "description": "Weissgrund е вечно цветно третиране, което придава на дъбовите подове светъл, избелен вид. Продуктът се описва като осигуряващ свежа и просторна атмосфера, което го прави идеален за модерни и скандинавски интериорни дизайни. Третирането предоставя фина, леко избелена визия със светла и просторна естетика.",
+                    "benefits": [
+                        "Екологично чист състав",
+                        "Висока устойчивост на драскотини и износване",
+                        "Съвместимост със системи за подово отопление",
+                        "Издръжлив защитен слой",
+                        "Създава светла, просторна атмосфера"
+                    ],
+                    "recommendedFor": [
+                        "Модерни интериори",
+                        "Скандинавски дизайни",
+                        "Минималистични пространства",
+                        "Крайбрежни стилове",
+                        "Светли, отворени обстановки"
+                    ],
+                    "application": "Системата за оцветяване се състои от двукомпонентен продукт, съдържащ пигменти и масла, които проникват дълбоко в порите на дървото, и защитно горно покритие, което втвърдява финиша. Създава равномерен, естествен вид с добавена издръжливост срещу драскотини, износване, влага, мръсотия и интензивно използване.",
+                    "maintenance": "Редовната грижа включва прахосмукане няколко пъти седмично и почистване минимум два пъти седмично с подходящи почистващи препарати. Специални поддържащи продукти могат да се прилагат полугодишно за допълнителна защита.",
+                    "seo": {
+                        "title": "Светла основа Цветно Третиране | Скандинавски Бял Финиш",
+                        "description": "Weissgrund третиране за дъбов паркет със светъл избелен вид. Модерен скандинавски стил. Холандско качество.",
+                        "keywords": [
+                            "weissgrund паркет българия",
+                            "светъл бял дъб",
+                            "скандинавски дъбов под",
+                            "светла основа паркет",
+                            "избелен дъб софия",
+                            "модерен бял под",
+                            "минималистичен дъб",
+                            "цветно третиране дъб"
+                        ]
+                    }
+                },
+                "en": {
+                    "name": "Weissgrund",
+                    "description": "Weissgrund is a timeless color treatment that gives wooden floors a light, whitewashed look. The product is described as providing a fresh and spacious atmosphere, making it ideal for modern and Scandinavian interior designs. The treatment delivers a subtle, lightly whitewashed appearance with a bright and spacious aesthetic.",
+                    "benefits": [
+                        "Environmentally-friendly composition",
+                        "High scratch and wear resistance",
+                        "Compatible with floor heating systems",
+                        "Durable protective layer",
+                        "Creates bright, spacious atmosphere"
+                    ],
+                    "recommendedFor": [
+                        "Modern interiors",
+                        "Scandinavian designs",
+                        "Minimalist spaces",
+                        "Coastal styles",
+                        "Bright, open settings"
+                    ],
+                    "application": "The coloring system consists of a two-component product containing pigments and oils that penetrate deeply into the wood's pores, and a protective topcoat that hardens the finish. Creates an even, natural appearance with added durability against scratches, wear, moisture, dirt, and intensive use.",
+                    "maintenance": "Regular care involves vacuuming multiple times weekly and mopping at minimum biweekly with appropriate cleaners. Special maintenance products may be applied semi-annually for extra protection.",
+                    "seo": {
+                        "title": "Weissgrund Oak Treatment | Scandinavian White Finish",
+                        "description": "Weissgrund treatment for oak parquet with light whitewashed look. Modern Scandinavian style. Premium Dutch quality.",
+                        "keywords": [
+                            "weissgrund oak treatment",
+                            "light white oak",
+                            "scandinavian oak flooring",
+                            "whitewashed oak bulgaria",
+                            "modern white oak",
+                            "minimalist oak finish",
+                            "coastal oak floor",
+                            "oak color treatment"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "whitewash",
+            "category": "cool",
+            "characteristics": {
+                "finishType": "whitewashed",
+                "intensity": "light",
+                "styleCompatibility": ["scandinavian", "coastal", "modern", "airy"]
+            },
+            "images": [
+                "/images/oak/treatments/whitewash.webp"
+            ],
+            "imageAlt": {
+                "en": "Whitewash oak treatment - light whitewashed appearance for spacious interiors",
+                "bg": "Цветно третиране Изсветлен - светъл избелен вид за просторни интериори"
+            },
+            "i18n": {
+                "bg": {
+                    "name": "Изсветлен",
+                    "description": "Вечна и универсална обработка, която осигурява на дъбовите подове светъл, избелен вид. Третирането създава светла, светлотонална естетика с характерен избелен ефект. Този стил е особено подходящ за създаване на просторни, въздушни интериори и допълва естетиката на модерния скандинавски дизайн.",
+                    "benefits": [
+                        "Екологичен състав с екологично съзнателни формулации",
+                        "Висока устойчивост на драскотини и износване",
+                        "Защита от влага, мръсотия и интензивно използване",
+                        "Съвместимост със системи за лъчисто подово отопление",
+                        "Създава светла, просторна атмосфера"
+                    ],
+                    "recommendedFor": [
+                        "Скандинавски интериори",
+                        "Крайбрежни дизайни",
+                        "Модерни минималистични пространства",
+                        "Светли, въздушни стаи",
+                        "Просторни отворени обстановки"
+                    ],
+                    "application": "Третирането се състои от двукомпонентна система, съчетаваща пигментиран цвят със защитно горно покритие. Пигментите и маслата създават желания оттенък, докато защитният слой втвърдява финиша, установявайки здрава защитна бариера. Цветът прониква в порите на дървото за равномерен, автентичен вид.",
+                    "maintenance": "Редовното почистване включва прахосмукане няколко пъти седмично. Почистването с моп трябва да се извършва поне два пъти седмично с подходящи почистващи препарати; периодичните поддържащи третирания могат да се прилагат два пъти годишно за допълнителна защита.",
+                    "seo": {
+                        "title": "Изсветлен Цветно Третиране | Светъл Скандинавски Финиш",
+                        "description": "Whitewash третиране за дъбов паркет със светъл избелен вид. Скандинавски крайбрежен стил. Холандско качество.",
+                        "keywords": [
+                            "whitewash паркет българия",
+                            "изсветлен дъбов под",
+                            "скандинавски дъб софия",
+                            "крайбрежен паркет",
+                            "светъл дъб третиране",
+                            "избелен под българия",
+                            "модерен бял дъб",
+                            "цветно третиране дъб"
+                        ]
+                    }
+                },
+                "en": {
+                    "name": "Whitewash",
+                    "description": "A timeless and versatile finish providing wooden floors with a light, whitewashed appearance. The treatment delivers a bright, light-toned aesthetic with a characteristic whitewashed effect. This style is particularly well-suited for creating spacious, airy interiors and complements modern Scandinavian design aesthetics.",
+                    "benefits": [
+                        "Environmental composition with environmentally conscious formulations",
+                        "High scratch and wear resistance",
+                        "Resists moisture, dirt, and intensive use",
+                        "Floor heating compatible, can be used with radiant floor heating systems",
+                        "Creates bright, spacious atmosphere"
+                    ],
+                    "recommendedFor": [
+                        "Scandinavian interiors",
+                        "Coastal designs",
+                        "Modern minimalist spaces",
+                        "Bright, airy rooms",
+                        "Spacious open settings"
+                    ],
+                    "application": "The treatment consists of a two-component system combining pigmented color with a protective topcoat. The pigments and oils create the desired tint while the protective layer hardens the finish, establishing a robust protective barrier. The color penetrates wood pores for an even, authentic appearance.",
+                    "maintenance": "Regular cleaning involves vacuuming multiple times weekly. Mopping should occur at least biweekly with appropriate cleaners; periodic maintenance treatments can be applied twice yearly for additional protection.",
+                    "seo": {
+                        "title": "Whitewash Oak Treatment | Light Scandinavian Finish",
+                        "description": "Whitewash treatment for oak parquet with light whitewashed appearance. Scandinavian coastal style. Premium Dutch quality.",
+                        "keywords": [
+                            "whitewash oak treatment",
+                            "whitewashed oak flooring",
+                            "scandinavian oak bulgaria",
+                            "coastal oak finish",
+                            "light oak treatment",
+                            "airy oak floor",
+                            "modern white oak",
+                            "oak color treatment"
+                        ]
+                    }
+                }
+            }
+        },
+        {
+            "slug": "black",
+            "category": "dramatic",
+            "characteristics": {
+                "finishType": "black-tinted",
+                "intensity": "intense",
+                "styleCompatibility": ["modern", "industrial", "contemporary", "bold"]
+            },
+            "images": [
+                "/images/oak/treatments/black.webp"
+            ],
+            "imageAlt": {
+                "en": "Black oak treatment - powerful modern appearance with industrial character",
+                "bg": "Цветно третиране Черен - мощен модерен вид с индустриален характер"
+            },
+            "i18n": {
+                "bg": {
+                    "name": "Черен",
+                    "description": "Третирането Zwart създава мощен и модерен вид с дълбока, интензивна оцветяване, която придава на дъбовите подове здрав и индустриален характер, като същевременно запазва видимост на фината естествена текстура на дървото. Създава равномерен, естествен финиш с модерна, индустриална естетика.",
+                    "benefits": [
+                        "Висока устойчивост на драскотини и износване",
+                        "Екологично чист състав",
+                        "Универсалност със съвместимост със системи за подово отопление",
+                        "Силен защитен слой, устойчив на влага, мръсотия и интензивно използване",
+                        "Драматичен, смел визуален ефект"
+                    ],
+                    "recommendedFor": [
+                        "Модерни интериори",
+                        "Индустриални дизайни",
+                        "Съвременни смели пространства",
+                        "Минималистични урбанистични обстановки",
+                        "Висококонтрастни интериори"
+                    ],
+                    "application": "Третирането използва двукомпонентна система, съчетаваща цветен пигмент и защитно горно покритие. Цветът прониква в порите на дървото за равномерно нанасяне, докато защитният слой създава допълнителна издръжливост по време на втвърдяването.",
+                    "maintenance": "Редовната грижа включва чести прахосмукания (няколко пъти седмично или ежедневно, ако е необходимо), влажно почистване с подходящ почистващ препарат на всеки две седмици минимум и опционално прилагане на специализиран поддържащ продукт (максимум два пъти годишно).",
+                    "seo": {
+                        "title": "Черен Цветно Третиране | Индустриален Модерен Дъбов Финиш",
+                        "description": "Zwart третиране за дъбов паркет с дълбок черен тон. Модерен индустриален характер. Холандско качество.",
+                        "keywords": [
+                            "черен дъб паркет",
+                            "zwart третиране българия",
+                            "индустриален дъбов под",
+                            "черен паркет софия",
+                            "модерен черен дъб",
+                            "смел дъбов финиш",
+                            "съвременен черен под",
+                            "цветно третиране дъб"
+                        ]
+                    }
+                },
+                "en": {
+                    "name": "Black",
+                    "description": "The Zwart treatment creates a powerful and modern appearance with deep, intense tinting that gives wooden floors a robust and industrial character while maintaining subtle natural wood texture visibility. Creates a uniform, natural-looking finish with a modern, industrial aesthetic.",
+                    "benefits": [
+                        "High scratch and wear resistance",
+                        "Environmentally-friendly composition",
+                        "Versatility with compatibility with floor heating systems",
+                        "Strong protective layer resistant to moisture, dirt, and intensive use",
+                        "Dramatic, bold visual effect"
+                    ],
+                    "recommendedFor": [
+                        "Modern interiors",
+                        "Industrial designs",
+                        "Contemporary bold spaces",
+                        "Minimalist urban settings",
+                        "High-contrast interiors"
+                    ],
+                    "application": "The treatment uses a two-component system combining color pigment and protective topcoat. The color penetrates wood pores for even application, while the protective layer creates additional durability during curing.",
+                    "maintenance": "Regular care involves frequent vacuuming (multiple times weekly or daily as needed), damp mopping with appropriate cleaner every two weeks minimum, and optional specialized maintenance product application (maximum twice yearly).",
+                    "seo": {
+                        "title": "Black Oak Treatment | Industrial Modern Oak Finish",
+                        "description": "Black treatment for oak parquet with deep black tone. Modern industrial character. Premium Dutch quality.",
+                        "keywords": [
+                            "black oak treatment",
+                            "black oak flooring bulgaria",
+                            "industrial oak finish",
+                            "modern black oak",
+                            "bold oak treatment",
+                            "contemporary black floor",
+                            "zwart oak",
+                            "oak color treatment"
+                        ]
+                    }
+                }
+            }
+        }
+    ]
+}
