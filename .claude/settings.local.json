@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:ekofloors.nl)"
+      "WebFetch(domain:ekofloors.nl)",
+      "Read(//c/Users/kirch/**)"
     ],
     "deny": [],
     "ask": []

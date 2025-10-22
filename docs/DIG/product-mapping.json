@@ -1,0 +1,345 @@
+{
+  "mappingNotes": "Mapping between current oak.json products (by GTIN/SKU) and DIG Prijslijst CSV data",
+  "mapping": [
+    {
+      "currentProduct": {
+        "sku": "DIG-5493",
+        "gtin": 5493,
+        "name": "Everglades",
+        "grade": "Rustic",
+        "pattern": "plank",
+        "thickness": "14mm",
+        "width": "190mm",
+        "isFinished": false
+      },
+      "csvMatch": "NEEDS_MANUAL_MATCH",
+      "reason": "No exact match in CSV - likely a named collection without C-ID",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "manufacturerProductId": "rustic-everglades",
+        "woodGrade": "rustic",
+        "surfaceTreatment": null,
+        "newSku": "DIG-rustic-everglades"
+      }
+    },
+    {
+      "currentProduct": {
+        "sku": "DIG-5514",
+        "gtin": 5514,
+        "name": "Victoria Falls",
+        "grade": "Rustic",
+        "pattern": "plank",
+        "thickness": "14mm",
+        "width": "260mm",
+        "isFinished": false
+      },
+      "csvMatch": "NEEDS_MANUAL_MATCH",
+      "reason": "No exact match in CSV",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "manufacturerProductId": "rustic-victoria-falls",
+        "woodGrade": "rustic",
+        "surfaceTreatment": null,
+        "newSku": "DIG-rustic-victoria-falls"
+      }
+    },
+    {
+      "currentProduct": {
+        "sku": "DIG-5537",
+        "gtin": 5537,
+        "name": "Wahiba Sands",
+        "grade": "Select",
+        "pattern": "plank",
+        "thickness": "14mm",
+        "width": "190mm",
+        "isFinished": false
+      },
+      "csvMatch": "NEEDS_MANUAL_MATCH",
+      "reason": "No exact match in CSV",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "manufacturerProductId": "select-wahiba-sands",
+        "woodGrade": "select",
+        "surfaceTreatment": null,
+        "newSku": "DIG-select-wahiba-sands"
+      }
+    },
+    {
+      "currentProduct": {
+        "sku": "DIG-5744",
+        "gtin": 5744,
+        "name": "Arches",
+        "grade": "Rustic",
+        "pattern": "herringbone",
+        "thickness": "14mm",
+        "isFinished": true,
+        "finishType": "oiled"
+      },
+      "csvMatch": "NEEDS_MANUAL_MATCH",
+      "reason": "Herringbone pattern - possibly matches C908 (Engineered Oak Herringbone Rustic)",
+      "possibleMatches": ["A0002129,C908,Engineered,Oak,Herringbone,Rustic,Unfinished"],
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "herringbone",
+        "manufacturerProductId": "C908",
+        "woodGrade": "rustic",
+        "surfaceTreatment": null,
+        "newSku": "DIG-C908"
+      }
+    },
+    {
+      "currentProduct": {
+        "sku": "DIG-5768",
+        "gtin": 5768,
+        "name": "Yellowstone",
+        "grade": "Rustic",
+        "pattern": "plank",
+        "type": "solid",
+        "isFinished": false
+      },
+      "csvMatch": "POSSIBLE_MATCH",
+      "possibleMatches": [
+        "A0000008,C2,Solid,Oak,Plank,Rustic,Unfinished",
+        "A0000603,C224,Solid,Oak,Plank,Rustic,Unfinished"
+      ],
+      "newData": {
+        "constructionType": "solid",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "manufacturerProductId": "C2",
+        "woodGrade": "rustic",
+        "surfaceTreatment": null,
+        "newSku": "DIG-C2"
+      }
+    },
+    {
+      "currentProduct": {
+        "sku": "DIG-5779",
+        "gtin": 5779,
+        "name": "Redwood",
+        "grade": "Rustic",
+        "pattern": "plank",
+        "type": "solid",
+        "isFinished": false
+      },
+      "csvMatch": "POSSIBLE_MATCH",
+      "possibleMatches": [
+        "A0000008,C2,Solid,Oak,Plank,Rustic,Unfinished",
+        "A0000603,C224,Solid,Oak,Plank,Rustic,Unfinished"
+      ],
+      "newData": {
+        "constructionType": "solid",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "manufacturerProductId": "C224",
+        "woodGrade": "rustic",
+        "surfaceTreatment": null,
+        "newSku": "DIG-C224"
+      }
+    },
+    {
+      "currentProduct": {
+        "sku": "DIG-5844",
+        "gtin": 5844,
+        "name": "Gion Valley",
+        "grade": "Select",
+        "pattern": "plank",
+        "thickness": "14mm",
+        "width": "235mm",
+        "isFinished": false
+      },
+      "csvMatch": "NEEDS_MANUAL_MATCH",
+      "reason": "No exact match in CSV",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "manufacturerProductId": "select-gion-valley",
+        "woodGrade": "select",
+        "surfaceTreatment": null,
+        "newSku": "DIG-select-gion-valley"
+      }
+    },
+    {
+      "currentProduct": {
+        "sku": "DIG-5849",
+        "gtin": 5849,
+        "name": "Patagonia",
+        "grade": "Rustic",
+        "pattern": "plank",
+        "thickness": "14mm",
+        "isFinished": true,
+        "finishType": "oiled"
+      },
+      "csvMatch": "NEEDS_MANUAL_MATCH",
+      "reason": "No exact match in CSV",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "manufacturerProductId": "rustic-invisible-patagonia",
+        "woodGrade": "rustic",
+        "surfaceTreatment": null,
+        "newSku": "DIG-rustic-invisible-patagonia"
+      }
+    },
+    {
+      "currentProduct": {
+        "sku": "DIG-5858",
+        "gtin": 5858,
+        "name": "Kruger Park",
+        "grade": "Rustic",
+        "pattern": "plank",
+        "thickness": "14mm",
+        "isFinished": true,
+        "finishType": "oiled"
+      },
+      "csvMatch": "NEEDS_MANUAL_MATCH",
+      "reason": "No exact match in CSV",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "manufacturerProductId": "rustic-whitewash-kruger-park",
+        "woodGrade": "rustic",
+        "surfaceTreatment": null,
+        "newSku": "DIG-rustic-whitewash-kruger-park"
+      }
+    },
+    {
+      "currentProduct": {
+        "sku": "DIG-5876",
+        "gtin": 5876,
+        "name": "Sundarbans",
+        "grade": "Rustic",
+        "pattern": "plank",
+        "thickness": "14mm",
+        "isFinished": true,
+        "finishType": "oiled"
+      },
+      "csvMatch": "NEEDS_MANUAL_MATCH",
+      "reason": "No exact match in CSV",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "manufacturerProductId": "rustic-natural-sundarbans",
+        "woodGrade": "rustic",
+        "surfaceTreatment": null,
+        "newSku": "DIG-rustic-natural-sundarbans"
+      }
+    },
+    {
+      "currentProduct": {
+        "sku": "DIG-5908",
+        "gtin": 5908,
+        "name": "Sahara",
+        "grade": "Select",
+        "pattern": "plank",
+        "thickness": "14mm",
+        "isFinished": true,
+        "finishType": "lacquered"
+      },
+      "csvMatch": "FOUND",
+      "csvData": {
+        "productie": "A0019104",
+        "digSku": "-",
+        "floorType": "Engineered",
+        "material": "Oak",
+        "pattern": "Plank",
+        "finish": "Sahara",
+        "treatment": "Lacquered"
+      },
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "manufacturerProductId": "select-invisible-sahara",
+        "woodGrade": "select",
+        "surfaceTreatment": null,
+        "newSku": "DIG-select-invisible-sahara"
+      }
+    },
+    {
+      "currentProduct": {
+        "sku": "DIG-5912",
+        "gtin": 5912,
+        "name": "Kalahari",
+        "grade": "Select",
+        "pattern": "plank",
+        "thickness": "14mm",
+        "isFinished": true,
+        "finishType": "lacquered"
+      },
+      "csvMatch": "FOUND",
+      "csvData": {
+        "productie": "A0019097",
+        "digSku": "-",
+        "floorType": "Engineered",
+        "material": "Oak",
+        "pattern": "Plank",
+        "finish": "Kalahari",
+        "treatment": "Lacquered"
+      },
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "manufacturerProductId": "select-whitewash-kalahari",
+        "woodGrade": "select",
+        "surfaceTreatment": null,
+        "newSku": "DIG-select-whitewash-kalahari"
+      }
+    },
+    {
+      "currentProduct": {
+        "sku": "DIG-5926",
+        "gtin": 5926,
+        "name": "Mojave",
+        "grade": "Select",
+        "pattern": "plank",
+        "thickness": "14mm",
+        "isFinished": true,
+        "finishType": "lacquered"
+      },
+      "csvMatch": "FOUND",
+      "csvData": {
+        "productie": "A0019111",
+        "digSku": "-",
+        "floorType": "Engineered",
+        "material": "Oak",
+        "pattern": "Plank",
+        "finish": "Mojave",
+        "treatment": "Lacquered"
+      },
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "manufacturerProductId": "select-natural-mojave",
+        "woodGrade": "select",
+        "surfaceTreatment": null,
+        "newSku": "DIG-select-natural-mojave"
+      }
+    }
+  ],
+  "summary": {
+    "totalProducts": 13,
+    "foundInCSV": 3,
+    "needsManualMatch": 8,
+    "possibleMatches": 2
+  },
+  "questions": [
+    "Which C-IDs correspond to Everglades, Victoria Falls, Wahiba Sands, Gion Valley?",
+    "Is Arches = C908?",
+    "Is Yellowstone = C2 and Redwood = C224?",
+    "Which products are Patagonia, Kruger Park, and Sundarbans in the CSV?"
+  ]
+}

@@ -74,6 +74,7 @@ export interface SEOMetadata {
 export interface LocalizedContent {
     name: string;
     description?: string;
+    finishingNote?: string | null; // Note about finishing options for unfinished products
     features?: string[];
     seo: SEOMetadata;
     specifications?: Specifications;
@@ -95,11 +96,12 @@ export interface ProductMetadata {
 export interface Product {
     sku: string;
     slug: string;
-    collection: string; // Product collection/line (e.g., "hybrid-wood")
-    pattern: 'fishbone' | 'plank'; // Flooring pattern/style
+    collection: string; // Product collection/line (e.g., "hybrid-wood", "oak")
+    pattern: ProductPattern; // Flooring pattern/style
     installationSystem: 'click' | 'glue';
     price: number;
     gtin?: string | number;
+    productieId?: string; // DIG Productie number (e.g., "A0000449")
     categories?: string; // CSV categories field
 
     images: ProductImages;
@@ -110,6 +112,34 @@ export interface Product {
     i18n: I18nContent;
 
     metadata?: ProductMetadata;
+
+    // Oak-specific fields
+    isFinished?: boolean;
+    finishType?: 'unfinished' | 'oiled' | 'lacquered' | 'stained';
+    finishingOptions?: {
+        available: boolean;
+        options: string[];
+        colorTreatments?: string[];
+    };
+
+    // New structured oak fields (from DIG prijslijst)
+    constructionType?: 'engineered' | 'solid';
+    woodSpecies?: 'oak' | 'bamboo' | 'walnut' | 'pine';
+    mountingType?: 'plank' | 'herringbone' | 'chevron';
+    manufacturerProductId?: string; // C-code or descriptive name
+    woodGrade?: 'select' | 'rustic' | 'light-rustic' | 'natural';
+    surfaceTreatment?: string | null; // e.g., "deep-brushed", "wire-brushed"
+
+    // Physical dimensions (extracted from manufacturer)
+    dimensions?: {
+        length?: number; // mm
+        width?: number; // mm
+        thickness?: number; // mm
+    };
+    topLayer?: number; // Top layer thickness in mm (for engineered)
+
+    // Source tracking
+    sourceUrl?: string; // Original DIG webshop URL
 }
 
 export interface ProductCollection {
@@ -155,12 +185,15 @@ export interface CollectionInfo {
 // Utility Types
 // ============================================================================
 
-export type CollectionType = 'hybrid-wood' | 'glue-down-vinyl' | 'click-vinyl';
+export type CollectionType = 'hybrid-wood' | 'glue-down-vinyl' | 'click-vinyl' | 'oak';
 
 export type ProductPattern =
     // Hybrid Wood patterns
     | 'fishbone'
     | 'plank'
+    // Oak patterns
+    | 'herringbone'
+    | 'chevron'
     // Glue-down vinyl patterns
     | 'dorpen'
     | 'hongaarse-punt'
@@ -186,6 +219,8 @@ export function isValidPattern(pattern: string): pattern is ProductPattern {
     return [
         'fishbone',
         'plank',
+        'herringbone',
+        'chevron',
         'dorpen',
         'hongaarse-punt',
         'landhuis',
@@ -198,7 +233,7 @@ export function isValidPattern(pattern: string): pattern is ProductPattern {
 }
 
 export function isValidCollection(collection: string): collection is CollectionType {
-    return ['hybrid-wood', 'glue-down-vinyl', 'click-vinyl'].includes(collection);
+    return ['hybrid-wood', 'glue-down-vinyl', 'click-vinyl', 'oak'].includes(collection);
 }
 
 export function isValidImageSize(size: string): size is ImageSize {

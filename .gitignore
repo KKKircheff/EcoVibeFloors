@@ -31,6 +31,10 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
+firebase-debug.log
+pglite-debug.log
+*.stackdump
+*-debug.log
 
 # env files (can opt-in for committing if needed)
 .env*
@@ -41,3 +45,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# scripts (development only - Firebase upload utilities)
+/scripts

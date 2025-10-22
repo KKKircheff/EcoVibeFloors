@@ -1,0 +1,204 @@
+{
+    "description": "Mapping of DIG Productie numbers to manufacturer product URLs for scraping",
+    "lastUpdated": "2025-10-22",
+    "products": {
+        "engineeredOak": {
+            "plank": {
+                "A0000449": {
+                    "digSku": "C103",
+                    "finish": "Select",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c103-select/"
+                },
+                "A0000456": {
+                    "digSku": "C104",
+                    "finish": "Rustic",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c104-rustic/"
+                },
+                "A0000463": {
+                    "digSku": "C110",
+                    "finish": "Brushed",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c110-rustic-deep-brushed/"
+                },
+                "A0000120": {
+                    "digSku": "C12",
+                    "finish": "Rustic",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c12-rustic/"
+                },
+                "A0000029": {
+                    "digSku": "C3",
+                    "finish": "Rustic",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c3-rustic/"
+                },
+                "A0000197": {
+                    "digSku": "C38",
+                    "finish": "Rustic",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c38-rustic/"
+                },
+                "A0000071": {
+                    "digSku": "C6",
+                    "finish": "Rustic",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c6-light-rustic/"
+                },
+                "A0000113": {
+                    "digSku": "C11",
+                    "finish": "Rustic",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c11-rustic/"
+                },
+                "A0002269": {
+                    "digSku": "C960",
+                    "finish": "Original",
+                    "treatment": "Stained",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c960-old-school-floor-original/"
+                },
+                "A0002276": {
+                    "digSku": "C961",
+                    "finish": "Floor",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c961-old-school-floor/"
+                },
+                "A0018999": {
+                    "digSku": "-",
+                    "finish": "Various",
+                    "treatment": "Lacquered",
+                    "url": ""
+                },
+                "A0019013": {
+                    "digSku": "-",
+                    "finish": "Family",
+                    "treatment": "Lacquered",
+                    "url": ""
+                },
+                "A0019006": {
+                    "digSku": "-",
+                    "finish": "Various",
+                    "treatment": "Lacquered",
+                    "url": ""
+                },
+                "A0018992": {
+                    "digSku": "-",
+                    "finish": "Family",
+                    "treatment": "Lacquered",
+                    "url": ""
+                },
+                "A0019111": {
+                    "digSku": "-",
+                    "finish": "Mojave",
+                    "treatment": "Lacquered",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-family-natural-mojave/"
+                },
+                "A0019104": {
+                    "digSku": "-",
+                    "finish": "Sahara",
+                    "treatment": "Lacquered",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-family-invisible-sahara/"
+                },
+                "A0019097": {
+                    "digSku": "-",
+                    "finish": "Kalahari",
+                    "treatment": "Lacquered",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-family-whitewash-kalahari/"
+                },
+                "A0019090": {
+                    "digSku": "-",
+                    "finish": "Alacama",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-select-family-atacama/"
+                },
+                "A0025978": {
+                    "digSku": "-",
+                    "finish": "Titar",
+                    "treatment": "Unfinished",
+                    "url": ""
+                },
+                "A0025985": {
+                    "digSku": "-",
+                    "finish": "Namib",
+                    "treatment": "Lacquered",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-rustic-natural-namib/"
+                },
+                "A0025992": {
+                    "digSku": "-",
+                    "finish": "Simpson",
+                    "treatment": "Lacquered",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-rustic-invisible-simpson/"
+                }
+            },
+            "herringbone": {
+                "A0002129": {
+                    "digSku": "C908",
+                    "finish": "Rustic",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-visgraat-c908-rustic/"
+                },
+                "A0011054": {
+                    "digSku": "C903",
+                    "finish": "Brushed",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-visgraat-c903-select-brushed/"
+                },
+                "A0019027": {
+                    "digSku": "-",
+                    "finish": "Family",
+                    "treatment": "Lacquered",
+                    "url": ""
+                },
+                "A0019020": {
+                    "digSku": "-",
+                    "finish": "Family",
+                    "treatment": "Lacquered",
+                    "url": ""
+                },
+                "A0025999": {
+                    "digSku": "-",
+                    "finish": "Alacama",
+                    "treatment": "Unfinished",
+                    "url": ""
+                },
+                "A0026006": {
+                    "digSku": "-",
+                    "finish": "Sahara",
+                    "treatment": "Lacquered",
+                    "url": ""
+                }
+            },
+            "chevron": {
+                "A0002143": {
+                    "digSku": "C909",
+                    "finish": "Select",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-hongaarse-punt-c909-select/"
+                }
+            }
+        },
+        "solidOak": {
+            "plank": {
+                "A0000008": {
+                    "digSku": "C2",
+                    "finish": "Rustic",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/solid-oak-plank-c2-rustic/"
+                },
+                "A0000603": {
+                    "digSku": "C224",
+                    "finish": "Rustic",
+                    "treatment": "Unfinished",
+                    "url": "https://webshop.dutchinteriorgroup.com/solid-oak-plank-c224-rustic/"
+                }
+            }
+        }
+    },
+    "notes": [
+        "Please fill in the 'url' field for each product",
+        "URLs should point to the DIG webshop product pages",
+        "These will be scraped using Jina.ai Reader (https://r.jina.ai/[URL])",
+        "Total oak products: 29"
+    ]
+}

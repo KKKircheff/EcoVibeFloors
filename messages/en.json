@@ -61,10 +61,21 @@
     },
     "navigation": {
         "home": "Home",
+        "Home": "Home",
         "collections": "Collections",
+        "Collections": "Collections",
         "about": "About",
+        "oak": "Natural Oak",
+        "Premium_Oak": "Premium Oak",
+        "Premium_Oak_Custom_Crafted": "Premium Oak Custom Crafted",
+        "Hybrid_Wood": "Hybrid Wood",
+        "Click_Vinyl": "Click Vinyl",
+        "Glue-Down_Vinyl": "Glue-Down Vinyl",
+        "All_Collections": "All Collections",
         "blog": "Blog",
+        "Blog": "Blog",
         "contact": "Contact",
+        "Contact": "Contact",
         "language": "Language",
         "naturalOak": "Natural Oak",
         "hybridWood": "Hybrid Wood",
@@ -213,6 +224,7 @@
         "names": {
             "hybridWood": "Hybrid Wood",
             "hybrid-wood": "Hybrid Wood",
+            "oak": "Natural Oak",
             "clickVinyl": "Click Vinyl",
             "click-vinyl": "Click Vinyl",
             "glueDownVinyl": "Glue-Down Vinyl",
@@ -249,6 +261,9 @@
         "plankDescription": "Classic plank flooring offers timeless elegance with contemporary versatility, perfect for any interior design style.",
         "fishbone": "Herringbone",
         "fishboneDescription": "Sophisticated herringbone pattern creates visual impact and elegant texture, transforming any space into a luxurious setting.",
+        "herringbone": "Herringbone",
+        "herringboneDescription": "Classic herringbone pattern creates a sophisticated and elegant aesthetic, perfect for both traditional and contemporary interiors.",
+        "viewProducts": "View Products",
         "walvisgraat-click": "Whalebone Click",
         "walvisgraatClickDescription": "Extra-wide herringbone pattern with click installation, creating dramatic visual impact with easy DIY setup.",
         "natuur-click": "Nature Rigid Click",
@@ -921,6 +936,90 @@
             "contact": "Contact us today for personalized consultation and quotes"
         }
     },
+    "oak": {
+        "pageTitle": "Natural Oak Parquet Collection",
+        "title": "Natural Oak Parquet",
+        "collection": "Oak Collection",
+        "finished": "Finished",
+        "unfinished": "Unfinished",
+        "finishingOptions": "Finishing Options",
+        "availableTreatments": "Available Color Treatments",
+        "treatmentsDescription": "Customize your oak flooring with professional color treatments. Each treatment enhances the natural beauty of the wood while providing durable protection.",
+        "viewAllTreatments": "View All Treatments →",
+        "hero": {
+            "title": "Natural Oak Parquet",
+            "subtitle": "Premium Dutch oak flooring with customizable finishing options for the Bulgarian market"
+        },
+        "overview": {
+            "title": "Authentic Oak Flooring Excellence",
+            "subtitle": "Experience the timeless beauty of natural oak with Dutch craftsmanship",
+            "description": "Our Natural Oak Parquet collection features premium engineered oak flooring with customizable finishing options. Choose from unfinished planks ready for your preferred treatment, or select pre-finished options with professional color treatments and protective coatings."
+        },
+        "features": {
+            "title": "Premium Oak Features",
+            "naturalBeauty": {
+                "title": "100% Natural Oak",
+                "description": "Authentic oak top layer showcasing natural grain patterns and character"
+            },
+            "customizable": {
+                "title": "Customizable Finishes",
+                "description": "Choose from 11 professional color treatments or leave unfinished for custom application"
+            },
+            "durable": {
+                "title": "Durable Construction",
+                "description": "Engineered construction with 3mm oak top layer for long-lasting beauty"
+            },
+            "underfloorHeating": {
+                "title": "Underfloor Heating",
+                "description": "Compatible with radiant floor heating systems"
+            },
+            "warranty": {
+                "title": "Quality Warranty",
+                "description": "10-year residential and 5-year commercial warranty"
+            },
+            "dutchQuality": {
+                "title": "Dutch Quality",
+                "description": "Manufactured in the Netherlands to the highest European standards"
+            }
+        },
+        "patterns": {
+            "title": "Available Patterns",
+            "description": "Choose from classic plank or elegant herringbone patterns",
+            "plank": {
+                "title": "Plank",
+                "description": "Traditional plank format for timeless elegance"
+            },
+            "herringbone": {
+                "title": "Herringbone",
+                "description": "Classic herringbone pattern for sophisticated interiors"
+            }
+        },
+        "finishingProcess": {
+            "title": "Professional Finishing Options",
+            "description": "Transform your unfinished oak flooring with our professional treatment services",
+            "colorTreatment": {
+                "title": "Color Treatment",
+                "description": "11 professional color options from warm tones to cool greys"
+            },
+            "brushing": {
+                "title": "Relief Brushing",
+                "description": "Enhance natural texture and grain patterns"
+            },
+            "uvOil": {
+                "title": "UV Oil Finish",
+                "description": "Durable oil-based protection with natural appearance"
+            },
+            "lacquering": {
+                "title": "Lacquer Finish",
+                "description": "High-performance lacquer for maximum protection"
+            }
+        },
+        "cta": {
+            "title": "Create Your Perfect Oak Floor",
+            "description": "Discover the possibilities of natural oak flooring with customizable finishes. Our experts are ready to help you select the perfect combination.",
+            "contact": "Contact us today for samples and consultation"
+        }
+    },
     "whatIsHybridWood": {
         "hero": {
             "title": "What is Hybrid Wood Flooring?",
@@ -1178,5 +1277,24 @@
             "content": "Glue-down vinyl flooring provides the permanence, stability, and commercial-grade performance required in professional environments. From hotels and restaurants to offices and retail spaces, glue-down installation delivers unmatched durability and longevity that justifies the professional installation investment.",
             "cta": "Ready for a professional-grade flooring solution?"
         }
+    },
+    "oakTreatments": {
+        "pageTitle": "Oak Color Treatments",
+        "pageDescription": "Explore our premium Dutch color treatments for oak parquet flooring. 11 professional finishes that enhance natural wood beauty with superior protection.",
+        "oakCollection": "Oak Parquet",
+        "noTreatmentsFound": "No treatments found",
+        "category": "Category",
+        "categories": {
+            "warm": "Warm Tones",
+            "cool": "Cool Tones",
+            "neutral": "Neutral",
+            "dramatic": "Dramatic"
+        },
+        "benefits": "Benefits",
+        "recommendedFor": "Recommended For",
+        "application": "Application",
+        "maintenance": "Maintenance",
+        "backToTreatments": "Back to All Treatments",
+        "viewAllTreatments": "View All Treatments"
     }
 }

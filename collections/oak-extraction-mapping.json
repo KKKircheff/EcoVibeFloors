@@ -1,0 +1,215 @@
+{
+  "extractionNotes": "Manual mapping of PDF Description column to oak.json products",
+  "pdfStructure": {
+    "descriptionFormat": "[Construction Type] [Mounting Type] [ID/Name] [Grade] [Surface Treatment?]",
+    "examples": [
+      "Engineered oak plank C103 Select",
+      "Solid oak herringbone Rustic Deep brushed"
+    ]
+  },
+  "productMapping": [
+    {
+      "currentSku": "DIG-5493",
+      "currentName": "Everglades",
+      "currentGrade": "Rustic",
+      "currentPattern": "plank",
+      "currentThickness": "14 mm",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "woodGrade": "rustic",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    },
+    {
+      "currentSku": "DIG-5514",
+      "currentName": "Victoria Falls",
+      "currentGrade": "Rustic",
+      "currentPattern": "plank",
+      "currentThickness": "14 mm",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "woodGrade": "rustic",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    },
+    {
+      "currentSku": "DIG-5537",
+      "currentName": "Wahiba Sands",
+      "currentGrade": "Select",
+      "currentPattern": "plank",
+      "currentThickness": "14 mm",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "woodGrade": "select",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    },
+    {
+      "currentSku": "DIG-5744",
+      "currentName": "Arches",
+      "currentGrade": "Rustic",
+      "currentPattern": "herringbone",
+      "currentThickness": "14 mm",
+      "currentFinish": "invisible oiled",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "herringbone",
+        "woodGrade": "rustic",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    },
+    {
+      "currentSku": "DIG-5768",
+      "currentName": "Yellowstone",
+      "currentGrade": "Rustic",
+      "currentPattern": "plank",
+      "currentType": "solid",
+      "newData": {
+        "constructionType": "solid",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "woodGrade": "rustic",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    },
+    {
+      "currentSku": "DIG-5779",
+      "currentName": "Redwood",
+      "currentGrade": "Rustic",
+      "currentPattern": "plank",
+      "currentType": "solid",
+      "newData": {
+        "constructionType": "solid",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "woodGrade": "rustic",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    },
+    {
+      "currentSku": "DIG-5844",
+      "currentName": "Gion Valley",
+      "currentGrade": "Select",
+      "currentPattern": "plank",
+      "currentThickness": "14 mm",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "woodGrade": "select",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    },
+    {
+      "currentSku": "DIG-5849",
+      "currentName": "Patagonia",
+      "currentGrade": "Rustic",
+      "currentPattern": "plank",
+      "currentThickness": "14 mm",
+      "currentFinish": "invisible oiled",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "woodGrade": "rustic",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    },
+    {
+      "currentSku": "DIG-5858",
+      "currentName": "Kruger Park",
+      "currentGrade": "Rustic",
+      "currentPattern": "plank",
+      "currentThickness": "14 mm",
+      "currentFinish": "whitewash oiled",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "woodGrade": "rustic",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    },
+    {
+      "currentSku": "DIG-5876",
+      "currentName": "Sundarbans",
+      "currentGrade": "Rustic",
+      "currentPattern": "plank",
+      "currentThickness": "14 mm",
+      "currentFinish": "natural oiled",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "woodGrade": "rustic",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    },
+    {
+      "currentSku": "DIG-5908",
+      "currentName": "Sahara",
+      "currentGrade": "Select",
+      "currentPattern": "plank",
+      "currentThickness": "14 mm",
+      "currentFinish": "invisible lacquered",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "woodGrade": "select",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    },
+    {
+      "currentSku": "DIG-5912",
+      "currentName": "Kalahari",
+      "currentGrade": "Select",
+      "currentPattern": "plank",
+      "currentThickness": "14 mm",
+      "currentFinish": "whitewash lacquered",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "woodGrade": "select",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    },
+    {
+      "currentSku": "DIG-5926",
+      "currentName": "Mojave",
+      "currentGrade": "Select",
+      "currentPattern": "plank",
+      "currentThickness": "14 mm",
+      "currentFinish": "natural lacquered",
+      "newData": {
+        "constructionType": "engineered",
+        "woodSpecies": "oak",
+        "mountingType": "plank",
+        "woodGrade": "select",
+        "manufacturerProductId": "TBD",
+        "surfaceTreatment": null
+      }
+    }
+  ],
+  "notes": "Need to extract manufacturer product IDs from PDF Description column to complete manufacturerProductId and surfaceTreatment fields"
+}
