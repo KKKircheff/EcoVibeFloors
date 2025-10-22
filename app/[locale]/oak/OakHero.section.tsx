@@ -1,39 +1,17 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
-import Image from 'next/image';
-import { HeroWrapper } from '@/components/ui/sections/hero/HeroWrapper';
-import { HeroContent } from '@/components/ui/sections/hero/HeroContent';
-import heroImage from '../../../public/images/home-page/hero.webp';
+import { CollectionHero } from '@/components/ui/sections/hero/CollectionHero.section';
 
 export async function OakHero() {
-    const t = await getTranslations('oak');
+    const tOak = await getTranslations('oak.hero');
     const tButtons = await getTranslations('buttons');
 
     return (
-        <HeroWrapper>
-            <Image
-                src={heroImage}
-                alt="Premium oak flooring showcase"
-                fill
-                priority
-                placeholder="blur"
-                style={{
-                    objectFit: 'cover',
-                    objectPosition: 'center',
-                }}
-                sizes="100vw"
-            />
-            <HeroContent
-                title={t('hero.title')}
-                subtitle={t('hero.subtitle')}
-                buttons={[
-                    {
-                        text: tButtons('exploreCollection'),
-                        actionType: 'scroll',
-                        target: 'hero-section'
-                    }
-                ]}
-            />
-        </HeroWrapper>
+        <CollectionHero
+            title={tOak('title')}
+            subtitle={tOak('subtitle')}
+            learnMoreText={tButtons('learnMore')}
+            learnMoreTargetId="oak-learn-more"
+        />
     );
 }

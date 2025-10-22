@@ -1,9 +1,10 @@
 import 'server-only';
 import { Stack } from '@mui/material';
-import { setRequestLocale } from 'next-intl/server';
+import { setRequestLocale, getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
+import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
 import { OakHero } from './OakHero.section';
 import { OakOverview } from './(sections)/OakOverview.section';
 import { OakFeatures } from './(sections)/OakFeatures.section';
@@ -38,33 +39,39 @@ export default async function OakPage({ params }: OakPageProps) {
     // Enable static rendering
     setRequestLocale(locale);
 
+    const t = await getTranslations({ locale, namespace: 'breadcrumb' });
+    const tNavigation = await getTranslations({ locale, namespace: 'navigation' });
+
+    const breadcrumbItems = [
+        { label: t('home'), href: '/' },
+        { label: t('collections'), href: '/collections' },
+        { label: tNavigation('oak') }
+    ];
+
     return (
-        <Stack>
-            {/* Hero Section */}
-            <OakHero />
-
-            {/* Overview Section */}
-            <PageLayoutContainer bgcolor="white" py={{ xs: 8, md: 12 }}>
-                <OakOverview />
+        <Stack width={'100%'}>
+            <PageLayoutContainer bgcolor='grey.50' pt={{ xs: 2, md: 4 }}>
+                <Breadcrumb items={breadcrumbItems} />
+                <OakHero />
             </PageLayoutContainer>
 
-            {/* Features Section */}
-            <PageLayoutContainer bgcolor="grey.50" py={{ xs: 8, md: 12 }}>
-                <OakFeatures />
-            </PageLayoutContainer>
-
-            {/* Patterns Section */}
-            <PageLayoutContainer bgcolor="white" py={{ xs: 8, md: 12 }}>
+            <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }} id='oak-learn-more'>
                 <OakPatterns />
             </PageLayoutContainer>
 
-            {/* CTA Section */}
-            <PageLayoutContainer bgcolor="grey.50" py={{ xs: 8, md: 12 }}>
+            <PageLayoutContainer bgcolor='grey.50' py={{ xs: 6, md: 10 }}>
+                <OakFeatures />
+            </PageLayoutContainer>
+
+            <PageLayoutContainer bgcolor='background.paper' py={{ xs: 6, md: 10 }}>
+                <OakOverview />
+            </PageLayoutContainer>
+
+            <PageLayoutContainer bgcolor='primary.main' py={{ xs: 6, md: 10 }}>
                 <OakCTA />
             </PageLayoutContainer>
 
-            {/* Footer */}
-            <PageLayoutContainer pt={10} bgcolor="info.800">
+            <PageLayoutContainer pt={10} bgcolor='info.800'>
                 <Footer />
             </PageLayoutContainer>
         </Stack>

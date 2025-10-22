@@ -263,6 +263,8 @@
         "fishboneDescription": "Sophisticated herringbone pattern creates visual impact and elegant texture, transforming any space into a luxurious setting.",
         "herringbone": "Herringbone",
         "herringboneDescription": "Classic herringbone pattern creates a sophisticated and elegant aesthetic, perfect for both traditional and contemporary interiors.",
+        "chevron": "Chevron",
+        "chevronDescription": "Distinctive chevron pattern creates dynamic visual flow and architectural interest, perfect for sophisticated interiors.",
         "viewProducts": "View Products",
         "walvisgraat-click": "Whalebone Click",
         "walvisgraatClickDescription": "Extra-wide herringbone pattern with click installation, creating dramatic visual impact with easy DIY setup.",
@@ -316,7 +318,13 @@
         "vGroove": "V-Groove",
         "waterResistance": "Water Resistance",
         "underfloorHeating": "Underfloor Heating",
-        "certifications": "Certifications"
+        "certifications": "Certifications",
+        "grade": "Grade",
+        "finish": "Finish",
+        "installationMethod": "Installation Method",
+        "installation": "Installation",
+        "coveragePerPack": "Coverage Per Pack",
+        "countryOfProduction": "Country of Production"
     },
     "contact": {
         "title": "Contact EcoVibeFloors",
@@ -380,6 +388,24 @@
         "hero": {
             "title": "Premium Oak Collection",
             "subtitle": "Discover our natural oak cozy flooring collection"
+        },
+        "patterns": {
+            "title": "Available Patterns & Styles",
+            "plank": {
+                "title": "Oak Planks",
+                "dimensions": "Various sizes",
+                "description": "Classic plank design showcasing natural oak beauty with customizable finishing options perfect for any interior."
+            },
+            "herringbone": {
+                "title": "Herringbone Pattern",
+                "dimensions": "Various sizes",
+                "description": "Timeless herringbone pattern adds elegance and sophistication, perfect for traditional and contemporary spaces."
+            },
+            "chevron": {
+                "title": "Chevron Pattern",
+                "dimensions": "Various sizes",
+                "description": "Distinctive chevron design creates dynamic visual flow and architectural interest for sophisticated interiors."
+            }
         }
     },
     "customOak": {
@@ -987,11 +1013,18 @@
             "description": "Choose from classic plank or elegant herringbone patterns",
             "plank": {
                 "title": "Plank",
+                "dimensions": "Various sizes",
                 "description": "Traditional plank format for timeless elegance"
             },
             "herringbone": {
                 "title": "Herringbone",
+                "dimensions": "Various sizes",
                 "description": "Classic herringbone pattern for sophisticated interiors"
+            },
+            "chevron": {
+                "title": "Chevron Pattern",
+                "dimensions": "Various sizes",
+                "description": "Distinctive chevron design creates dynamic visual flow and architectural interest for sophisticated interiors."
             }
         },
         "finishingProcess": {
@@ -1016,8 +1049,8 @@
         },
         "cta": {
             "title": "Create Your Perfect Oak Floor",
-            "description": "Discover the possibilities of natural oak flooring with customizable finishes. Our experts are ready to help you select the perfect combination.",
-            "contact": "Contact us today for samples and consultation"
+            "content": "Discover the possibilities of natural oak flooring with customizable finishes. Our experts are ready to help you select the perfect combination.",
+            "cta": "Contact us today for samples and consultation"
         }
     },
     "whatIsHybridWood": {

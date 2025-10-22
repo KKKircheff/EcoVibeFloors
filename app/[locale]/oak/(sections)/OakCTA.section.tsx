@@ -1,46 +1,30 @@
 import 'server-only';
-import { Stack, Typography, Box } from '@mui/material';
+import { Stack, Container } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
-import PrimaryActionButton from '@/components/ui/buttons/PrimaryActionButton';
+import { BlogTitle } from '@/components/ui/typography/BlogTitle';
+import { BlogContent } from '@/components/ui/typography/BlogContent';
+import { HeroButton } from '@/components/ui/buttons/HeroButton';
 
 export async function OakCTA() {
     const t = await getTranslations('oak.cta');
+    const tButtons = await getTranslations('buttons');
 
     return (
-        <Box
-            sx={{
-                bgcolor: 'primary.main',
-                color: 'white',
-                py: { xs: 8, md: 12 },
-                px: { xs: 3, md: 6 },
-                borderRadius: 4,
-                textAlign: 'center'
-            }}
-        >
-            <Stack spacing={4} alignItems="center">
-                <Typography variant="h2" fontWeight={600} color="inherit">
+        <Container maxWidth="xl">
+            <Stack spacing={6} textAlign="center" alignItems="center">
+                <BlogTitle color="primary.contrastText">
                     {t('title')}
-                </Typography>
-                <Typography variant="h6" color="inherit" maxWidth="800px" sx={{ opacity: 0.95 }}>
-                    {t('description')}
-                </Typography>
-                <PrimaryActionButton
-                    href="/contact"
-                    variant="contained"
-                    sx={{
-                        bgcolor: 'white',
-                        color: 'primary.main',
-                        px: 4,
-                        py: 1.5,
-                        fontSize: '1.1rem',
-                        '&:hover': {
-                            bgcolor: 'grey.100'
-                        }
-                    }}
-                >
-                    {t('contact')}
-                </PrimaryActionButton>
+                </BlogTitle>
+                <BlogContent color="primary.contrastText" maxWidth={'1250px'}>
+                    {t('content')}
+                </BlogContent>
+                <BlogContent color="primary.contrastText" fontWeight={500}>
+                    {t('cta')}
+                </BlogContent>
+                <HeroButton actionType='navigate' target='/contact' buttonVariant='outlined'>
+                    {tButtons('contactUs')}
+                </HeroButton>
             </Stack>
-        </Box>
+        </Container >
     );
 }

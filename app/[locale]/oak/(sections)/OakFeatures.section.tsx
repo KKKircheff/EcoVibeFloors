@@ -1,85 +1,68 @@
 import 'server-only';
-import { Stack, Typography, Grid, Box, Paper } from '@mui/material';
+import { Grid } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
-import CheckCircleOutlineIcon from '@mui/icons-material/CheckCircleOutline';
+import { FeatureIconCard } from '@/components/ui/card/FeatureIconCard';
+import { TreeIcon } from '@/components/icons/TreeIcon';
+import { ScratchIcon } from '@/components/icons/ScratchIcon';
+import { HeatingIcon } from '@/components/icons/HeatingIcon';
+import { GoShieldCheck } from "react-icons/go";
+import { IoDiamondOutline } from "react-icons/io5";
+import { LuPaintbrush } from "react-icons/lu";
 
 export async function OakFeatures() {
     const t = await getTranslations('oak.features');
 
-    const features = [
+    const featuresConfig = [
         {
-            key: 'naturalBeauty',
-            icon: '🌳'
+            icon: <TreeIcon size={56} />,
+            titleKey: 'naturalBeauty.title',
+            descriptionKey: 'naturalBeauty.description',
+            iconColor: 'primary' as const
         },
         {
-            key: 'customizable',
-            icon: '🎨'
+            icon: <LuPaintbrush size={52} />,
+            titleKey: 'customizable.title',
+            descriptionKey: 'customizable.description',
+            iconColor: 'primary' as const
         },
         {
-            key: 'durable',
-            icon: '💪'
+            icon: <ScratchIcon size={68} />,
+            titleKey: 'durable.title',
+            descriptionKey: 'durable.description',
+            iconColor: 'primary' as const
         },
         {
-            key: 'underfloorHeating',
-            icon: '♨️'
+            icon: <HeatingIcon size={50} />,
+            titleKey: 'underfloorHeating.title',
+            descriptionKey: 'underfloorHeating.description',
+            iconColor: 'primary' as const
         },
         {
-            key: 'warranty',
-            icon: '✅'
+            icon: <GoShieldCheck size={52} />,
+            titleKey: 'warranty.title',
+            descriptionKey: 'warranty.description',
+            iconColor: 'primary' as const
         },
         {
-            key: 'dutchQuality',
-            icon: '🇳🇱'
+            icon: <IoDiamondOutline size={52} />,
+            titleKey: 'dutchQuality.title',
+            descriptionKey: 'dutchQuality.description',
+            iconColor: 'primary' as const
         }
     ];
 
     return (
-        <Stack spacing={6}>
-            <Stack spacing={2} alignItems="center" textAlign="center">
-                <Typography variant="h2" fontWeight={600}>
-                    {t('title')}
-                </Typography>
-            </Stack>
-
-            <Grid container spacing={4}>
-                {features.map((feature) => (
-                    <Grid size={{ xs: 12, sm: 6, md: 4 }} key={feature.key}>
-                        <Paper
-                            elevation={0}
-                            sx={{
-                                p: 4,
-                                height: '100%',
-                                borderRadius: 3,
-                                border: 1,
-                                borderColor: 'divider',
-                                transition: 'all 0.3s',
-                                '&:hover': {
-                                    boxShadow: 4,
-                                    borderColor: 'primary.main',
-                                    transform: 'translateY(-4px)'
-                                }
-                            }}
-                        >
-                            <Stack spacing={2} alignItems="center" textAlign="center">
-                                <Box
-                                    sx={{
-                                        fontSize: '3rem',
-                                        mb: 1
-                                    }}
-                                >
-                                    {feature.icon}
-                                </Box>
-                                <Typography variant="h5" fontWeight={600}>
-                                    {t(`${feature.key}.title`)}
-                                </Typography>
-                                <Typography variant="body1" color="text.secondary">
-                                    {t(`${feature.key}.description`)}
-                                </Typography>
-                            </Stack>
-                        </Paper>
-                    </Grid>
-                ))}
-            </Grid>
-        </Stack>
+        <Grid container spacing={{ xs: 6, md: 4 }}>
+            {featuresConfig.map((feature, index) => (
+                <Grid key={index} size={{ xs: 12, md: 6, lg: 4 }}>
+                    <FeatureIconCard
+                        icon={feature.icon}
+                        title={t(feature.titleKey)}
+                        description={t(feature.descriptionKey)}
+                        iconColor={feature.iconColor}
+                    />
+                </Grid>
+            ))}
+        </Grid>
     );
 }

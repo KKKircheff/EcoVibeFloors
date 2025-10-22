@@ -3,11 +3,13 @@ import { notFound } from 'next/navigation';
 import { Stack, Typography, Box, Chip, Grid, Divider } from '@mui/material';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
-import Image from 'next/image';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import Footer from '@/components/layout/footer/Footer.component';
 import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
+import ProductImageGallery from '@/components/products/product-image-gallery/ProductImageGallery.component';
+import ProductActions from '@/components/products/product-actions/ProductActions.component';
+import { ProductSpecs, SpecCategory } from '@/components/ui/sections/product/ProductSpecs';
 import { isValidPattern, ProductPattern, Product } from '@/types/products';
 import { getProductsByCollectionAndPattern } from '@/utils/products';
 import { routing } from '@/i18n/routing';
@@ -115,63 +117,160 @@ export default async function OakProductPage({ params }: ProductPageProps) {
         { label: localizedContent.name },
     ];
 
+    // Build spec categories for ProductSpecs component
+    const specs = localizedContent.specifications;
+    const dimensions = specs?.dimensions;
+    const specCategories: SpecCategory[] = [];
+
+    // Dimensions
+    if (dimensions) {
+        const dimensionSpecs: { label: string; value: string }[] = [];
+        if (dimensions.length) {
+            dimensionSpecs.push({ label: tProducts('length'), value: dimensions.length });
+        }
+        if (dimensions.width) {
+            dimensionSpecs.push({ label: tProducts('width'), value: dimensions.width });
+        }
+        if (dimensions.thickness) {
+            dimensionSpecs.push({ label: tProducts('thickness'), value: dimensions.thickness });
+        }
+        if (dimensionSpecs.length > 0) {
+            specCategories.push({
+                titleKey: 'dimensions',
+                specs: dimensionSpecs
+            });
+        }
+    }
+
+    // Appearance
+    if (specs?.appearance) {
+        const appearanceSpecs: { label: string; value: string }[] = [];
+        if (specs.appearance.color) {
+            appearanceSpecs.push({ label: tProducts('color'), value: specs.appearance.color });
+        }
+        if (specs.appearance.grade) {
+            appearanceSpecs.push({ label: tProducts('grade'), value: specs.appearance.grade });
+        }
+        if (specs.appearance.finish) {
+            appearanceSpecs.push({ label: tProducts('finish'), value: specs.appearance.finish });
+        }
+        if (appearanceSpecs.length > 0) {
+            specCategories.push({
+                titleKey: 'appearance',
+                specs: appearanceSpecs
+            });
+        }
+    }
+
+    // Installation
+    if (specs?.installation) {
+        const installationSpecs: { label: string; value: string }[] = [];
+        if (specs.installation.method) {
+            installationSpecs.push({ label: tProducts('installationMethod'), value: specs.installation.method });
+        }
+        if (specs.installation.vGroove) {
+            installationSpecs.push({ label: tProducts('vGroove'), value: specs.installation.vGroove });
+        }
+        if (specs.installation.coveragePerPack) {
+            installationSpecs.push({ label: tProducts('coveragePerPack'), value: specs.installation.coveragePerPack });
+        }
+        if (installationSpecs.length > 0) {
+            specCategories.push({
+                titleKey: 'installation',
+                specs: installationSpecs
+            });
+        }
+    }
+
+    // Performance & Certifications
+    if (specs?.performance || specs?.certifications) {
+        const performanceSpecs: { label: string; value: string }[] = [];
+        if (specs.performance?.underfloorHeating) {
+            performanceSpecs.push({
+                label: tProducts('underfloorHeating'),
+                value: specs.performance.underfloorHeating
+            });
+        }
+        if (specs.performance?.thermalResistance) {
+            performanceSpecs.push({
+                label: tProducts('thermalResistance'),
+                value: specs.performance.thermalResistance
+            });
+        }
+        if (specs.certifications?.warranty) {
+            performanceSpecs.push({
+                label: tProducts('warranty'),
+                value: specs.certifications.warranty
+            });
+        }
+        if (specs.certifications?.countryOfProduction) {
+            performanceSpecs.push({
+                label: tProducts('countryOfProduction'),
+                value: specs.certifications.countryOfProduction
+            });
+        }
+        if (performanceSpecs.length > 0) {
+            specCategories.push({
+                titleKey: 'performanceQuality',
+                specs: performanceSpecs
+            });
+        }
+    }
+
     return (
         <Stack>
-            {/* Breadcrumb and Hero */}
-            <PageLayoutContainer bgcolor="white" pt={{ xs: 3, md: 8 }} pb={{ xs: 4, md: 6 }}>
+            {/* Product Details */}
+            <PageLayoutContainer bgcolor="background.paper" py={{ xs: 4, md: 8 }}>
                 <Breadcrumb items={breadcrumbItems} />
-
-                <Grid container spacing={{ xs: 4, md: 6 }} sx={{ mt: 2 }}>
-                    {/* Product Image */}
+                <Grid container spacing={{ xs: 4, md: 12 }}>
+                    {/* Product Images */}
                     <Grid size={{ xs: 12, md: 6 }}>
-                        <Box
-                            sx={{
-                                position: 'relative',
-                                width: '100%',
-                                paddingBottom: '100%',
-                                overflow: 'hidden',
-                                borderRadius: 2,
-                                boxShadow: 3,
-                            }}
-                        >
-                            <Image
-                                src={imageUrls[0]}
-                                alt={product.imageAlt[locale as keyof typeof product.imageAlt]}
-                                fill
-                                sizes="(max-width: 900px) 100vw, 50vw"
-                                style={{ objectFit: 'cover' }}
-                                priority
-                            />
-                        </Box>
+                        <ProductImageGallery
+                            images={imageUrls}
+                            productName={localizedContent.name}
+                        />
                     </Grid>
 
                     {/* Product Info */}
                     <Grid size={{ xs: 12, md: 6 }}>
                         <Stack spacing={3}>
-                            <Box>
-                                <Typography variant="overline" color="primary">
-                                    {tOak('collection')}
-                                </Typography>
-                                <Typography variant="h2" component="h1" fontWeight={600}>
-                                    {localizedContent.name}
-                                </Typography>
-                            </Box>
+                            {/* Title and Price Row */}
+                            <Stack spacing={2}>
+                                <Stack
+                                    direction={{ xs: 'column', sm: 'row' }}
+                                    spacing={{ xs: 1, sm: 2 }}
+                                    alignItems={{ xs: 'flex-start', sm: 'baseline' }}
+                                    justifyContent="space-between"
+                                >
+                                    <Typography variant="h3" component="h1" color="text.primary">
+                                        {localizedContent.name}
+                                    </Typography>
+                                    <Typography
+                                        variant="h4"
+                                        color="primary.main"
+                                        sx={{ fontWeight: 600, whiteSpace: 'nowrap' }}
+                                    >
+                                        €{product.price.toFixed(2)}
+                                    </Typography>
+                                </Stack>
 
-                            <Box>
                                 <Chip
                                     label={product.isFinished ? tOak('finished') : tOak('unfinished')}
                                     color={product.isFinished ? 'success' : 'primary'}
-                                    sx={{ mb: 2 }}
+                                    size="small"
                                 />
-                                <Typography variant="h6" color="primary.main" fontWeight={600}>
-                                    €{product.price.toFixed(2)} / m²
+                            </Stack>
+
+                            <Divider />
+
+                            {/* Description */}
+                            {localizedContent.description && (
+                                <Typography variant="body1" color="info.400">
+                                    {localizedContent.description}
                                 </Typography>
-                            </Box>
+                            )}
 
-                            <Typography variant="body1" color="text.secondary">
-                                {localizedContent.description}
-                            </Typography>
-
+                            {/* Finishing Note */}
                             {product.i18n[locale as keyof typeof product.i18n].finishingNote && (
                                 <Box
                                     sx={{
@@ -188,152 +287,49 @@ export default async function OakProductPage({ params }: ProductPageProps) {
                                 </Box>
                             )}
 
+                            {/* Action Buttons */}
+                            <ProductActions
+                                product={{
+                                    sku: product.sku,
+                                    productName: localizedContent.name,
+                                    collection: product.collection,
+                                    pattern: product.pattern,
+                                    price: product.price,
+                                    imageUrl: imageUrls[0],
+                                }}
+                                addToBasketText={tProducts('addToBasket')}
+                                orderSamplesText={tProducts('orderSamples')}
+                            />
+
+                            <Divider />
+
                             {/* Features */}
-                            {localizedContent.features && (
-                                <Box>
-                                    <Typography variant="h6" fontWeight={600} gutterBottom>
-                                        {tProducts('features')}
-                                    </Typography>
+                            {localizedContent.features && localizedContent.features.length > 0 && (
+                                <Stack spacing={2}>
+                                    <Typography variant="h6" fontWeight={500}>{tProducts('keyFeatures')}</Typography>
                                     <Stack spacing={1}>
-                                        {localizedContent.features.map((feature: string, index: number) => (
-                                            <Typography key={index} variant="body2" color="text.secondary">
+                                        {localizedContent.features.slice(0, 5).map((feature: string, index: number) => (
+                                            <Typography key={index} variant="body1" color="info.400">
                                                 • {feature}
                                             </Typography>
                                         ))}
                                     </Stack>
-                                </Box>
+                                </Stack>
                             )}
                         </Stack>
                     </Grid>
                 </Grid>
             </PageLayoutContainer>
 
-            {/* Specifications */}
-            {localizedContent.specifications && (
-                <PageLayoutContainer bgcolor="grey.50" py={{ xs: 6, md: 10 }}>
-                    <Typography variant="h3" fontWeight={600} gutterBottom textAlign="center" mb={6}>
-                        {tProducts('specifications')}
-                    </Typography>
-
-                    <Grid container spacing={4}>
-                        {/* Dimensions */}
-                        {localizedContent.specifications.dimensions && (
-                            <Grid size={{ xs: 12, md: 6, lg: 3 }}>
-                                <Box sx={{ p: 3, bgcolor: 'white', borderRadius: 2, height: '100%' }}>
-                                    <Typography variant="h6" fontWeight={600} gutterBottom>
-                                        {tProducts('dimensions')}
-                                    </Typography>
-                                    <Divider sx={{ my: 2 }} />
-                                    <Stack spacing={1.5}>
-                                        {Object.entries(localizedContent.specifications.dimensions).map(([key, value]) => (
-                                            <Box key={key}>
-                                                <Typography variant="caption" color="text.secondary">
-                                                    {key.charAt(0).toUpperCase() + key.slice(1)}
-                                                </Typography>
-                                                <Typography variant="body2" fontWeight={500}>
-                                                    {value}
-                                                </Typography>
-                                            </Box>
-                                        ))}
-                                    </Stack>
-                                </Box>
-                            </Grid>
-                        )}
-
-                        {/* Appearance */}
-                        {localizedContent.specifications.appearance && (
-                            <Grid size={{ xs: 12, md: 6, lg: 3 }}>
-                                <Box sx={{ p: 3, bgcolor: 'white', borderRadius: 2, height: '100%' }}>
-                                    <Typography variant="h6" fontWeight={600} gutterBottom>
-                                        {tProducts('appearance')}
-                                    </Typography>
-                                    <Divider sx={{ my: 2 }} />
-                                    <Stack spacing={1.5}>
-                                        {Object.entries(localizedContent.specifications.appearance).map(([key, value]) => (
-                                            <Box key={key}>
-                                                <Typography variant="caption" color="text.secondary">
-                                                    {key.charAt(0).toUpperCase() + key.slice(1)}
-                                                </Typography>
-                                                <Typography variant="body2" fontWeight={500}>
-                                                    {value}
-                                                </Typography>
-                                            </Box>
-                                        ))}
-                                    </Stack>
-                                </Box>
-                            </Grid>
-                        )}
-
-                        {/* Installation */}
-                        {localizedContent.specifications.installation && (
-                            <Grid size={{ xs: 12, md: 6, lg: 3 }}>
-                                <Box sx={{ p: 3, bgcolor: 'white', borderRadius: 2, height: '100%' }}>
-                                    <Typography variant="h6" fontWeight={600} gutterBottom>
-                                        {tProducts('installation')}
-                                    </Typography>
-                                    <Divider sx={{ my: 2 }} />
-                                    <Stack spacing={1.5}>
-                                        {Object.entries(localizedContent.specifications.installation).map(([key, value]) => (
-                                            <Box key={key}>
-                                                <Typography variant="caption" color="text.secondary">
-                                                    {key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1')}
-                                                </Typography>
-                                                <Typography variant="body2" fontWeight={500}>
-                                                    {value}
-                                                </Typography>
-                                            </Box>
-                                        ))}
-                                    </Stack>
-                                </Box>
-                            </Grid>
-                        )}
-
-                        {/* Performance */}
-                        {localizedContent.specifications.performance && (
-                            <Grid size={{ xs: 12, md: 6, lg: 3 }}>
-                                <Box sx={{ p: 3, bgcolor: 'white', borderRadius: 2, height: '100%' }}>
-                                    <Typography variant="h6" fontWeight={600} gutterBottom>
-                                        {tProducts('performance')}
-                                    </Typography>
-                                    <Divider sx={{ my: 2 }} />
-                                    <Stack spacing={1.5}>
-                                        {Object.entries(localizedContent.specifications.performance).map(([key, value]) => (
-                                            <Box key={key}>
-                                                <Typography variant="caption" color="text.secondary">
-                                                    {key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1')}
-                                                </Typography>
-                                                <Typography variant="body2" fontWeight={500}>
-                                                    {value}
-                                                </Typography>
-                                            </Box>
-                                        ))}
-                                    </Stack>
-                                </Box>
-                            </Grid>
-                        )}
-                    </Grid>
-
-                    {/* Certifications */}
-                    {localizedContent.specifications.certifications && (
-                        <Box sx={{ mt: 4, p: 3, bgcolor: 'white', borderRadius: 2 }}>
-                            <Typography variant="h6" fontWeight={600} gutterBottom>
-                                {tProducts('certifications')}
-                            </Typography>
-                            <Divider sx={{ my: 2 }} />
-                            <Grid container spacing={3}>
-                                {Object.entries(localizedContent.specifications.certifications).map(([key, value]) => (
-                                    <Grid size={{ xs: 12, sm: 6, md: 4 }} key={key}>
-                                        <Typography variant="caption" color="text.secondary">
-                                            {key.charAt(0).toUpperCase() + key.slice(1).replace(/([A-Z])/g, ' $1')}
-                                        </Typography>
-                                        <Typography variant="body2" fontWeight={500}>
-                                            {value}
-                                        </Typography>
-                                    </Grid>
-                                ))}
-                            </Grid>
-                        </Box>
-                    )}
+            {/* Product Specifications Section */}
+            {specCategories.length > 0 && (
+                <PageLayoutContainer bgcolor="background.default" py={{ xs: 3, md: 6 }}>
+                    <Stack spacing={4}>
+                        <ProductSpecs
+                            translationKey="products"
+                            specCategories={specCategories}
+                        />
+                    </Stack>
                 </PageLayoutContainer>
             )}
 
