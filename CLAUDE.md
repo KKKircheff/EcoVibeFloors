@@ -66,18 +66,12 @@ To create a visually compelling, high-quality website with strong design and eng
 - **Static generation**: `generateStaticParams()` for both supported locales
 - **Metadata**: SEO-optimized for luxury flooring market
 
-### Agent OS Integration
-- **Product documentation**: `.agent-os/product/` contains mission, roadmap, tech stack
-- **Standards**: `.agent-os/standards/` contains Firebase patterns and best practices
-- **Mission**: Focus on luxury Dutch flooring import for Bulgarian market
-
 ## File Structure Patterns
 - `app/[locale]/` - All pages and layouts with internationalization
 - `lib/` - Shared utilities (Firebase, Theme)
 - `i18n/` - Internationalization configuration
 - `messages/` - Translation JSON files
 - `docs/products/` - Comprehensive product documentation for development reference
-- `.agent-os/` - Agent OS product and development standards
 
 ## Development Notes
 - All text content uses next-intl `useTranslations()` hook

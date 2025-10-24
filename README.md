@@ -148,7 +148,6 @@ firebase deploy
 ├── messages/              # Translation JSON files
 ├── functions/             # Firebase Cloud Functions
 ├── public/                # Static assets
-├── .agent-os/             # Agent OS product documentation
 └── middleware.ts          # Next.js middleware for i18n
 ```
 
