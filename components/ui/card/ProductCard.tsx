@@ -66,7 +66,8 @@ export function ProductCard({ product }: ProductCardProps) {
         if (!dimensions.length || !dimensions.width || !dimensions.thickness) {
             return '';
         }
-        return `${dimensions.length.replace(' cm', '')} × ${dimensions.width.replace(' cm', '')} × ${dimensions.thickness.replace(' cm', '')} cm`;
+        const unit = t('products.units.mm');
+        return `${dimensions.length} × ${dimensions.width} × ${dimensions.thickness} ${unit}`;
     };
     return (
         <Box sx={{ position: 'relative', height: '100%' }}>
@@ -148,10 +149,10 @@ export function ProductCard({ product }: ProductCardProps) {
                     <Stack direction="column" spacing={1}>
                         <Stack direction={{ xs: 'column', xl: 'row' }} alignItems={'çenter'} justifyContent={'space-between'}>
                             <Typography variant="subtitle2">
-                                {t('collections.names.hybridWood')}
+                                {t(`collections.names.${product.collection}`)}
                             </Typography>
                             <Typography variant='subtitle2'>
-                                {localizedContent.specifications?.dimensions && formatDimensions(localizedContent.specifications.dimensions)}
+                                {product.specifications?.dimensions && formatDimensions(product.specifications.dimensions)}
                             </Typography>
                         </Stack>
                         <Typography variant="h6" color="primary.900" fontWeight="bold" >

@@ -1,0 +1,247 @@
+{
+  "comparativeExamples": [
+    {
+      "category": "Product Descriptions",
+      "examples": [
+        {
+          "en": "Premium Dutch flooring with 25-year warranty",
+          "intent": "Emphasize quality origin and long-term trust",
+          "literalBg": "Премиум холандска подова настилка с 25-годишна гаранция",
+          "naturalBg": "Висококачествени холандски подови настилки с удължена 25-годишна гаранция",
+          "why": "Add 'удължена' (extended) - Bulgarian buyers expect shorter warranties, so emphasize it's above standard. Use plural 'настилки' for broader appeal."
+        },
+        {
+          "en": "Waterproof hybrid wood - real oak beauty",
+          "intent": "Highlight dual benefits: practical + aesthetic",
+          "literalBg": "Водоустойчиво хибридно дърво - истинска дъбова красота",
+          "naturalBg": "Водоустойчив паркет с истински дъбов слой - красотата на дърво без притесненията",
+          "why": "'паркет' is more natural than 'дърво' for flooring. Adding 'без притесненията' (without worries) provides emotional benefit."
+        },
+        {
+          "en": "Revolutionary hybrid flooring technology",
+          "intent": "Emphasize innovation and advancement",
+          "literalBg": "Революционна технология за хибридни подови настилки",
+          "naturalBg": "Иновативна технология - истински дъб върху водоустойчива основа",
+          "why": "Avoid 'революционна' (revolutionary) - sounds risky/untested. Explain WHAT the technology is instead of claiming novelty."
+        },
+        {
+          "en": "Engineered wood flooring with authentic oak veneer",
+          "intent": "Explain construction while emphasizing real wood",
+          "literalBg": "Инженерна дървена настилка с автентичен дъбов фурнир",
+          "naturalBg": "Многослоен дъбов паркет с естествен горен слой",
+          "why": "Use 'многослоен паркет' (multi-layer parquet) - well-known term. Avoid 'инженерна' (sounds technical). 'Естествен' better than 'автентичен'."
+        },
+        {
+          "en": "Easy DIY installation with click system",
+          "intent": "Emphasize ease of installation for homeowners",
+          "literalBg": "Лесен DIY монтаж с кликова система",
+          "naturalBg": "Лесен монтаж с клик система - без нужда от професионалист",
+          "why": "Drop 'DIY' (not commonly used in Bulgarian). Add clarification 'без нужда от професионалист' (no professional needed)."
+        }
+      ]
+    },
+    {
+      "category": "Technical Specifications",
+      "examples": [
+        {
+          "en": "Thickness: 10mm / Wear layer: 3mm",
+          "intent": "Provide clear technical specifications",
+          "literalBg": "Дебелина: 10мм / Слой на износване: 3мм",
+          "naturalBg": "Обща дебелина: 10 мм / Горен слой: 3 мм",
+          "why": "Use 'обща дебелина' (total thickness) for clarity. 'Горен слой' (top layer) more natural than 'слой на износване'."
+        },
+        {
+          "en": "Usage class: 23/33 - suitable for heavy residential and commercial use",
+          "intent": "Explain durability rating with context",
+          "literalBg": "Клас на употреба: 23/33 - подходящ за интензивна жилищна и търговска употреба",
+          "naturalBg": "Клас на износване: 23/33 - подходящ за интензивна жилищна и търговска употреба",
+          "why": "'Клас на износване' (wear resistance class) is the standard Bulgarian industry term, not 'клас на употреба'."
+        },
+        {
+          "en": "Compatible with underfloor heating systems",
+          "intent": "Important practical feature",
+          "literalBg": "Съвместим с системи за подово отопление",
+          "naturalBg": "Подходящ за подово отопление",
+          "why": "'Подходящ за' (suitable for) is simpler and more natural than 'съвместим със системи'."
+        }
+      ]
+    },
+    {
+      "category": "Marketing Copy",
+      "examples": [
+        {
+          "en": "Transform your space with timeless oak elegance",
+          "intent": "Inspire emotional connection to product",
+          "literalBg": "Трансформирайте пространството си с вечна дъбова елегантност",
+          "naturalBg": "Преобразете вашето пространство с класическата елегантност на дъба",
+          "why": "'Преобразете' more natural than borrowed 'трансформирайте'. 'Класическа' (classic) better than 'вечна' (eternal/timeless)."
+        },
+        {
+          "en": "Experience the warmth and beauty of natural wood",
+          "intent": "Emotional benefit of wood flooring",
+          "literalBg": "Изпитайте топлината и красотата на естественото дърво",
+          "naturalBg": "Насладете се на топлината и красотата на естественото дърво",
+          "why": "'Насладете се' (enjoy) is more inviting than 'изпитайте' (experience/test)."
+        },
+        {
+          "en": "Luxury flooring that lasts for generations",
+          "intent": "Long-term value positioning",
+          "literalBg": "Луксозни подови настилки, които издържат поколения",
+          "naturalBg": "Премиум подови настилки с дългосрочна издръжливост",
+          "why": "'Поколения' (generations) sounds exaggerated. Be specific with warranty or use 'дългосрочна издръжливост' (long-term durability)."
+        },
+        {
+          "en": "Discover the perfect balance of style and performance",
+          "intent": "Dual benefit positioning",
+          "literalBg": "Открийте перфектния баланс между стил и производителност",
+          "naturalBg": "Открийте перфектния баланс между естетика и издръжливост",
+          "why": "'Производителност' means productivity/output. Use 'издръжливост' (durability) for flooring context."
+        }
+      ]
+    },
+    {
+      "category": "Call-to-Action",
+      "examples": [
+        {
+          "en": "Request a free quote today",
+          "intent": "Drive inquiry action",
+          "literalBg": "Поискайте безплатна оферта днес",
+          "naturalBg": "Получете безплатна оферта днес",
+          "why": "'Получете' (receive/get) is more direct and action-oriented than 'поискайте' (request)."
+        },
+        {
+          "en": "Visit our showroom to see samples",
+          "intent": "Encourage in-person visit",
+          "literalBg": "Посетете нашия шоурум, за да видите мостри",
+          "naturalBg": "Посетете нашия шоурум и разгледайте мострите на живо",
+          "why": "'На живо' (in person/live) adds value. 'Разгледайте' (examine/explore) more active than just 'видите' (see)."
+        },
+        {
+          "en": "Contact us for expert advice",
+          "intent": "Position as helpful experts",
+          "literalBg": "Свържете се с нас за експертен съвет",
+          "naturalBg": "Свържете се с нас за професионална консултация",
+          "why": "'Професионална консултация' (professional consultation) sounds more formal and trustworthy than 'експертен съвет'."
+        }
+      ]
+    },
+    {
+      "category": "Product Benefits",
+      "examples": [
+        {
+          "en": "100% waterproof - perfect for kitchens and bathrooms",
+          "intent": "Highlight practical application",
+          "literalBg": "100% водонепропусклив - перфектен за кухни и бани",
+          "naturalBg": "100% водоустойчив - идеален за кухни и бани",
+          "why": "'Водоустойчив' is the standard term. 'Идеален' (ideal) is more natural than borrowed 'перфектен'."
+        },
+        {
+          "en": "Scratch-resistant surface for high-traffic areas",
+          "intent": "Durability in busy spaces",
+          "literalBg": "Устойчива на драскотини повърхност за високо трафикови зони",
+          "naturalBg": "Устойчива на надраскване повърхност за интензивно използване",
+          "why": "'Надраскване' (scratching) is the Bulgarian term. 'Интензивно използване' better than 'високо трафикови зони'."
+        },
+        {
+          "en": "Easy maintenance - simply wipe clean",
+          "intent": "Low-effort upkeep",
+          "literalBg": "Лесна поддръжка - просто избършете чисто",
+          "naturalBg": "Лесна поддръжка - достатъчно е да избършете",
+          "why": "'Достатъчно е' (it's enough to) is more natural phrasing than 'просто... чисто'."
+        },
+        {
+          "en": "Suitable for underfloor heating",
+          "intent": "Key Bulgarian market requirement",
+          "literalBg": "Подходящ за подово отопление",
+          "naturalBg": "Подходящ за подово отопление",
+          "why": "This translation is already optimal - standard industry term."
+        }
+      ]
+    },
+    {
+      "category": "Brand Positioning",
+      "examples": [
+        {
+          "en": "Premium Dutch flooring imported exclusively for Bulgaria",
+          "intent": "Emphasize import quality and exclusivity",
+          "literalBg": "Премиум холандски подови настилки, внасяни ексклузивно за България",
+          "naturalBg": "Премиум холандски подови настилки - ексклузивен вносител за България",
+          "why": "'Ексклузивен вносител' (exclusive importer) is clearer positioning than passive voice 'внасяни'."
+        },
+        {
+          "en": "German engineering meets Dutch design",
+          "intent": "Dual quality positioning",
+          "literalBg": "Германското инженерство среща холандския дизайн",
+          "naturalBg": "Германско качество и холандски дизайн",
+          "why": "Simpler construction without 'meets' - direct quality claims work better."
+        },
+        {
+          "en": "Over 20 years of flooring expertise",
+          "intent": "Build trust through experience",
+          "literalBg": "Над 20 години експертиза в подови настилки",
+          "naturalBg": "Над 20 години опит в подови настилки",
+          "why": "'Опит' (experience) is more natural Bulgarian than borrowed 'експертиза'."
+        }
+      ]
+    },
+    {
+      "category": "SEO-Focused",
+      "examples": [
+        {
+          "en": "Buy premium oak parquet flooring online",
+          "intent": "E-commerce search intent",
+          "literalBg": "Купете премиум дъбов паркет онлайн",
+          "naturalBg": "Дъбов паркет премиум качество - онлайн поръчка",
+          "why": "Noun-phrase structure matches Bulgarian search patterns better. 'Онлайн поръчка' clearer than verb 'купете онлайн'."
+        },
+        {
+          "en": "Waterproof vinyl flooring for bathroom",
+          "intent": "Problem-solution search",
+          "literalBg": "Водоустойчиви винилови подове за баня",
+          "naturalBg": "Винилови подове за баня - водоустойчиви",
+          "why": "Lead with product category, follow with feature - matches how Bulgarians search."
+        },
+        {
+          "en": "Best engineered wood flooring prices Sofia",
+          "intent": "Local commercial search",
+          "literalBg": "Най-добри цени за инженерни дървени настилки София",
+          "naturalBg": "Многослоен паркет София - конкурентни цени",
+          "why": "Use industry term 'многослоен паркет'. 'Конкурентни цени' (competitive prices) better than superlative claim."
+        }
+      ]
+    }
+  ],
+  "patternGuidelines": {
+    "goodPatterns": [
+      "Start with product category Bulgarian search term, then add features",
+      "Use concrete specifics (25 години, 3 мм, клас 33) over vague adjectives",
+      "Always mention warranty duration when discussing quality",
+      "Pair innovation claims with practical benefits explanation",
+      "Use standard Bulgarian industry terms even if they sound technical",
+      "Add 'удължена' (extended) when mentioning above-standard warranties",
+      "Specify origin (холандско/германско качество) for credibility",
+      "Use active, inviting verbs (насладете се, разгледайте, открийте)",
+      "Translate intent and emotional impact, not literal words",
+      "Keep brand names and proprietary terms in original language"
+    ],
+    "avoidPatterns": [
+      "Direct word-for-word translation without considering natural Bulgarian phrasing",
+      "Borrowed English words when Bulgarian equivalents exist (е.g., 'перфектен' vs 'идеален')",
+      "Superlatives without supporting evidence ('най-добър' without specifics)",
+      "Vague quality claims without concrete support (warranty, origin, specs)",
+      "Technical English terms that have established Bulgarian equivalents",
+      "Overly complex sentence structures (break into simpler sentences)",
+      "Passive voice when active is more natural",
+      "Generic descriptions that could apply to any product",
+      "Innovation-focused messaging without practical benefit explanation",
+      "Translating 'revolutionary' literally (sounds risky in Bulgarian market)"
+    ]
+  },
+  "contextualNotes": {
+    "toneGuidelines": "Professional but warm. Formal enough to build trust, friendly enough to be approachable. Avoid overly casual language but don't be cold/corporate.",
+    "sentenceLength": "Bulgarian readers prefer slightly longer, more complete sentences than English. However, avoid run-on sentences. Break complex ideas into 2-3 sentences instead of one long one.",
+    "numbersAndSpecs": "Always include space before units (3 мм, not 3мм). Write out warranty years fully (25-годишна гаранция). Bulgarians value specific numbers for credibility.",
+    "brandVoice": "Position as knowledgeable expert helping customers make informed decisions. Focus on education and guidance, not hard sales.",
+    "culturalConsiderations": "Bulgarian buyers are quality-conscious and value European (especially German) engineering. Warranty length is a critical trust signal. DIY is less common - many prefer professional installation."
+  }
+}

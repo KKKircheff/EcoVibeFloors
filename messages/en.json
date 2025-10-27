@@ -285,7 +285,8 @@
     },
     "installationSystems": {
         "click": "Click System",
-        "glue": "Glue-Down"
+        "glue": "Glue-Down",
+        "glue-down": "Glue-Down"
     },
     "products": {
         "filterBy": "Filter by",
@@ -318,6 +319,83 @@
         "vGroove": "V-Groove",
         "waterResistance": "Water Resistance",
         "underfloorHeating": "Underfloor Heating",
+        "units": {
+            "mm": "mm"
+        },
+        "specValues": {
+            "appearance": {
+                "color": {
+                    "natural-oak": "Natural Oak",
+                    "brown": "Brown",
+                    "grey": "Grey",
+                    "white": "White",
+                    "beige": "Beige",
+                    "beige-grey": "Beige, Grey",
+                    "black-brown": "Black, Brown",
+                    "black-brown-grey": "Black, Brown, Grey",
+                    "brown-grey": "Brown, Grey",
+                    "brown-grey-white": "Brown, Grey, White",
+                    "brown-white": "Brown, White"
+                },
+                "grade": {
+                    "select": "Select",
+                    "rustic": "Rustic"
+                },
+                "finish": {
+                    "unfinished": "Unfinished",
+                    "finished": "Finished",
+                    "lacquered": "Lacquered",
+                    "megamat": "MEGAMAT"
+                },
+                "structure": {
+                    "lightly-brushed": "Lightly brushed",
+                    "textured": "Textured",
+                    "tangible": "Tangible"
+                },
+                "material": {
+                    "vinyl": "Vinyl",
+                    "rigid-mineral-vinyl": "Rigid Mineral Vinyl"
+                }
+            },
+            "installation": {
+                "method": {
+                    "glue-down": "Glue-down",
+                    "click": "Click"
+                },
+                "vGroove": {
+                    "none": "None",
+                    "2-sides": "V-groove on 2 sides",
+                    "4-sides": "V-groove on 4 sides",
+                    "4-v": "4-V",
+                    "4-mv": "4-MV"
+                },
+                "clickSystem": {
+                    "fastclick": "Fastclick",
+                    "variclick": "Variclick",
+                    "unidrop": "Unidrop",
+                    "unizip": "UniZip",
+                    "i4f-system": "i4F System"
+                }
+            },
+            "performance": {
+                "underfloorHeating": {
+                    "suitable": "Suitable",
+                    "not-suitable": "Not suitable"
+                },
+                "waterResistance": {
+                    "excellent": "Excellent",
+                    "good": "Good",
+                    "fair": "Fair"
+                }
+            },
+            "certifications": {
+                "country": {
+                    "netherlands": "Netherlands",
+                    "germany": "Made in Germany",
+                    "belgium": "Belgium"
+                }
+            }
+        },
         "certifications": "Certifications",
         "grade": "Grade",
         "finish": "Finish",

@@ -122,8 +122,9 @@ export default async function ClickVinylProductPage({ params }: ProductDetailPag
         getStorageUrl(product.collection, product.pattern, product.sku, image).full
     );
 
-    const dimensions = localizedContent.specifications?.dimensions;
-    const specs = localizedContent.specifications;
+    const specs = product.specifications;
+    const dimensions = specs?.dimensions;
+    const localizedSpecs = localizedContent.specifications;
 
     // Build spec categories for ProductSpecs component
     const specCategories: SpecCategory[] = [];
@@ -133,9 +134,10 @@ export default async function ClickVinylProductPage({ params }: ProductDetailPag
         const technicalSpecs: { label: string; value: string }[] = [];
 
         if (dimensions?.thickness) {
+            const unit = tProducts('units.mm');
             technicalSpecs.push({
                 label: tProducts('thickness'),
-                value: dimensions.thickness
+                value: `${dimensions.thickness} ${unit}`
             });
         }
         if (specs.performance?.thermalResistance) {
@@ -161,16 +163,17 @@ export default async function ClickVinylProductPage({ params }: ProductDetailPag
 
     // Dimensions
     if (dimensions) {
+        const unit = tProducts('units.mm');
         const dimensionSpecs: { label: string; value: string }[] = [];
 
         if (dimensions.length) {
-            dimensionSpecs.push({ label: tProducts('length'), value: dimensions.length });
+            dimensionSpecs.push({ label: tProducts('length'), value: `${dimensions.length} ${unit}` });
         }
         if (dimensions.width) {
-            dimensionSpecs.push({ label: tProducts('width'), value: dimensions.width });
+            dimensionSpecs.push({ label: tProducts('width'), value: `${dimensions.width} ${unit}` });
         }
         if (dimensions.thickness) {
-            dimensionSpecs.push({ label: tProducts('thickness'), value: dimensions.thickness });
+            dimensionSpecs.push({ label: tProducts('thickness'), value: `${dimensions.thickness} ${unit}` });
         }
 
         if (dimensionSpecs.length > 0) {
@@ -185,11 +188,17 @@ export default async function ClickVinylProductPage({ params }: ProductDetailPag
     if (specs?.appearance) {
         const appearanceSpecs: { label: string; value: string }[] = [];
 
-        if (specs.appearance.color) {
-            appearanceSpecs.push({ label: tProducts('color'), value: specs.appearance.color });
+        if (specs.appearance.colorCode) {
+            appearanceSpecs.push({
+                label: tProducts('color'),
+                value: tProducts(`specValues.appearance.color.${specs.appearance.colorCode}` as keyof Messages['products'])
+            });
         }
-        if (specs.appearance.structure) {
-            appearanceSpecs.push({ label: tProducts('structure'), value: specs.appearance.structure });
+        if (specs.appearance.structureCode) {
+            appearanceSpecs.push({
+                label: tProducts('structure'),
+                value: tProducts(`specValues.appearance.structure.${specs.appearance.structureCode}` as keyof Messages['products'])
+            });
         }
         if (specs.installation?.vGroove) {
             appearanceSpecs.push({ label: tProducts('vGroove'), value: specs.installation.vGroove });
@@ -204,28 +213,29 @@ export default async function ClickVinylProductPage({ params }: ProductDetailPag
     }
 
     // Performance & Certifications
-    if (specs?.performance || specs?.certifications) {
+    if (specs?.performance || specs?.certifications || localizedSpecs?.certifications) {
         const performanceSpecs: { label: string; value: string }[] = [];
 
-        if (specs.performance?.waterResistance) {
+        if (specs?.performance?.waterResistanceCode) {
             performanceSpecs.push({
                 label: tProducts('waterResistance'),
-                value: specs.performance.waterResistance
+                value: tProducts(`specValues.performance.waterResistance.${specs.performance.waterResistanceCode}` as keyof Messages['products'])
             });
         }
-        if (specs.performance?.underfloorHeating) {
+        if (specs?.performance?.underfloorHeatingCode) {
             performanceSpecs.push({
                 label: tProducts('underfloorHeating'),
-                value: specs.performance.underfloorHeating
+                value: tProducts(`specValues.performance.underfloorHeating.${specs.performance.underfloorHeatingCode}` as keyof Messages['products'])
             });
         }
-        if (specs.certifications?.warranty) {
+        // Warranty stays in i18n (localized text)
+        if (localizedSpecs?.certifications?.warranty) {
             performanceSpecs.push({
                 label: tProducts('warranty'),
-                value: specs.certifications.warranty
+                value: localizedSpecs.certifications.warranty
             });
         }
-        if (specs.certifications?.qualityMark) {
+        if (specs?.certifications?.qualityMark) {
             performanceSpecs.push({
                 label: tProducts('certifications'),
                 value: specs.certifications.qualityMark
@@ -294,17 +304,17 @@ export default async function ClickVinylProductPage({ params }: ProductDetailPag
                                     <Stack spacing={0.5}>
                                         {dimensions.length && (
                                             <Typography variant="body1" color="info.400">
-                                                <strong>{tProducts('length')}:</strong> {dimensions.length}
+                                                <strong>{tProducts('length')}:</strong> {dimensions.length} {tProducts('units.mm')}
                                             </Typography>
                                         )}
                                         {dimensions.width && (
                                             <Typography variant="body1" color="info.400">
-                                                <strong>{tProducts('width')}:</strong> {dimensions.width}
+                                                <strong>{tProducts('width')}:</strong> {dimensions.width} {tProducts('units.mm')}
                                             </Typography>
                                         )}
                                         {dimensions.thickness && (
                                             <Typography variant="body1" color="info.400">
-                                                <strong>{tProducts('thickness')}:</strong> {dimensions.thickness}
+                                                <strong>{tProducts('thickness')}:</strong> {dimensions.thickness} {tProducts('units.mm')}
                                             </Typography>
                                         )}
                                     </Stack>

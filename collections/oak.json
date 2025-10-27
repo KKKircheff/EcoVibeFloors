@@ -4,8 +4,14 @@
         "totalProducts": 21,
         "collection": "oak",
         "description": "Natural oak parquet collection from Dutch Interior Group. Includes engineered and solid oak options with various finishes and patterns.",
-        "lastUpdated": "2025-10-22T13:48:05.559Z",
-        "skuFormat": "DIG-{GTIN}"
+        "lastUpdated": "2025-10-27T11:19:14.530Z",
+        "skuFormat": "DIG-{GTIN}",
+        "lastPolished": "2025-10-24T12:48:15.042Z",
+        "polishedBy": "Mistral AI translation polisher",
+        "dimensionsStandardized": "2025-10-27T10:30:59.062Z",
+        "specificationsNormalized": "2025-10-27T11:12:12.508Z",
+        "specificationsMigrated": "2025-10-27T11:19:14.530Z",
+        "specificationsStructure": "root-level-coded"
     },
     "products": [
         {
@@ -21,7 +27,6 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C103",
             "woodGrade": "select",
             "surfaceTreatment": null,
@@ -35,24 +40,24 @@
             ],
             "imageAlt": {
                 "en": "C103 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет C103 - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "C103",
-                    "description": "C103 engineered oak herringbone features select grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
+                    "name": "Natural oak",
+                    "description": "This premium engineered oak plank flooring features select grade oak with unfinished surface. This high-quality floor combines authentic natural beauty with exceptional durability, creating an elegant and cozy atmosphere in any space.",
                     "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
                     "features": [
                         "100% natural oak",
                         "select grade",
-                        "unfinished",
+                        "unfinished, ready for customization",
                         "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "14mm total thickness",
+                        "engineered plank"
                     ],
                     "seo": {
-                        "title": "C103 Oak Parquet | Select Unfinished",
-                        "description": "C103 oak parquet with select grade. Unfinished, durable, suitable for underfloor heating.",
+                        "title": "Natural Oak Parquet",
+                        "description": "Natural oak parquet with select grade. Unfinished, durable, suitable for underfloor heating.",
                         "keywords": [
                             "oak parquet",
                             "unfinished parquet",
@@ -65,81 +70,42 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Select",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "C103",
-                    "description": "Дъбов ламелен паркет C103 се отличава с селектирано качество и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Този премиум естествен под съчетава автентичната красота на дъба с изключителна издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
+                    "finishingNote": "Продуктът е необработен и предлага възможност за персонализиран завършек по избор – оцветяване в един от 11 налични цвята, четкане за по-изразен релеф или лакиране.",
                     "features": [
                         "100% естествен дъб",
-                        "селект класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Селект качество",
+                        "Натурален, готов за завършване с масла и в цвят",
+                        "Подходящ за подово отопление",
+                        "Обща дебелина 14 мм",
+                        "Ламелен паркет"
                     ],
                     "seo": {
-                        "title": "C103 Дъбов Паркет | Селект Необработен",
-                        "description": "Дъбов паркет C103 с селект класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов Паркет Селект | Необработен Финиш | Холандско Качество",
+                        "description": "Премиум дъбов паркет със селект качество. Натурален и готов за персонализиран дизайн. Изключително издръжлив и подходящ за подово отопление.",
                         "keywords": [
                             "дъбов паркет",
                             "необработен паркет",
-                            "селект дъб",
-                            "ламелен паркет българия",
+                            "селект дъбов паркет",
+                            "ламелен паркет",
                             "паркет за подово отопление",
                             "естествен дъбов под",
-                            "паркет c103",
+                            "паркет",
                             "дъбови ламели",
-                            "паркет софия"
+                            "холандски паркет",
+                            "премиум паркет софия"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Селект",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "Удължена гаранция: 10 години за жилищна употреба, 5 години за комерсиална"
                         }
                     }
                 }
@@ -166,6 +132,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
+                    "width": "260",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "select",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
@@ -181,7 +171,6 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C104",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
@@ -195,24 +184,24 @@
             ],
             "imageAlt": {
                 "en": "C104 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет C104 - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "C104",
-                    "description": "C104 engineered oak herringbone features rustic grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "name": "Natural oak",
+                    "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
+                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing for relief texture, or lacquering.",
                     "features": [
                         "100% natural oak",
                         "rustic grade",
-                        "unfinished",
+                        "unfinished surface",
                         "suitable for underfloor heating",
                         "14mm thickness",
-                        "engineered herringbone"
+                        "engineered plank"
                     ],
                     "seo": {
-                        "title": "C104 Oak Parquet | Rustic Unfinished",
-                        "description": "C104 oak parquet with rustic grade. Unfinished, durable, suitable for underfloor heating.",
+                        "title": "Oak Parquet | Rustic Unfinished",
+                        "description": "Natural oak parquet with rustic grade. Unfinished, durable, suitable for underfloor heating.",
                         "keywords": [
                             "oak parquet",
                             "unfinished parquet",
@@ -225,81 +214,42 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "C104",
-                    "description": "Дъбов ламелен паркет C104 се отличава с рустичен характер и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
+                    "finishingNote": "Този продукт е в необработен вид и предлага възможност за персонализиране. Може да бъде завършен по избор чрез оцветяване (наличиe на 11 цвята), четкане за релефна структура или лакиране.",
                     "features": [
                         "100% естествен дъб",
-                        "рустик класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Рустик качество",
+                        "Необработена повърхност",
+                        "Подходящ за подово отопление",
+                        "Дебелина 14 мм",
+                        "Ламелен паркет"
                     ],
                     "seo": {
-                        "title": "C104 Дъбов Паркет | Рустик Необработен",
-                        "description": "Дъбов паркет C104 с рустик класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов Паркет | Рустик | Необработен | Холандско Качество",
+                        "description": "Открийте na[iqt дъбов ламелен паркет от Холандия с рустик качество и необработена повърхност. Издръжлив и подходящ за подово отопление, с възможност за персонализиране на финиша.",
                         "keywords": [
                             "дъбов паркет",
                             "необработен паркет",
-                            "рустик дъб",
-                            "ламелен паркет българия",
+                            "рустик дъбов паркет",
+                            "ламелен паркет",
                             "паркет за подово отопление",
                             "естествен дъбов под",
-                            "паркет c104",
+                            "паркет C104",
                             "дъбови ламели",
-                            "паркет софия"
+                            "паркет София",
+                            "холандски паркет"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години жилищна употреба, 5 години комерсиална"
                         }
                     }
                 }
@@ -326,6 +276,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
+                    "width": "235",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
@@ -341,7 +315,6 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C110",
             "woodGrade": "rustic",
             "surfaceTreatment": "brushed",
@@ -355,20 +328,20 @@
             ],
             "imageAlt": {
                 "en": "C110 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет C110 - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "C110",
-                    "description": "C110 engineered oak herringbone features rustic grade with brushed appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "name": "Natural oak",
+                    "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
+                    "finishingNote": "This parquet is offered unfinished, allowing for a personalized finish of your choice: treatment in one of 11 available colors, brushing for relief texture, or lacquering.",
                     "features": [
                         "100% natural oak",
                         "rustic grade",
-                        "unfinished",
-                        "suitable for underfloor heating",
+                        "unfinished surface",
+                        "suitable for installation over underfloor heating",
                         "14mm thickness",
-                        "engineered herringbone"
+                        "engineered plank for gluing"
                     ],
                     "seo": {
                         "title": "C110 Oak Parquet | Rustic Unfinished",
@@ -385,81 +358,43 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "C110",
-                    "description": "Дъбов ламелен паркет C110 се отличава с рустичен характер и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
+                    "finishingNote": "Паркетът се предлага необработен, което позволява персонализиран завършек по ваш избор: обработка в един от 11 налични цвята, четкане за релефна текстура или лакиране.",
                     "features": [
                         "100% естествен дъб",
-                        "рустик класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Рустик качество",
+                        "Необработена повърхност",
+                        "Подходящ за инсталация върху подово отопление",
+                        "Дебелина 14 мм",
+                        "Ламелен паркет за залепване"
                     ],
                     "seo": {
-                        "title": "C110 Дъбов Паркет | Рустик Необработен",
-                        "description": "Дъбов паркет C110 с рустик класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "C110 Дъбов Паркет | Премиум Рустик Необработен",
+                        "description": "Дъбов паркет с рустик качество и необработена повърхност. Холандско производство, издръжлив и подходящ за подово отопление. Открийте елегантност и дълготрайност.",
                         "keywords": [
                             "дъбов паркет",
-                            "необработен паркет",
+                            "необработен дъбов паркет",
                             "рустик дъб",
-                            "ламелен паркет българия",
+                            "ламелен паркет",
                             "паркет за подово отопление",
                             "естествен дъбов под",
-                            "паркет c110",
+                            "паркет C110",
                             "дъбови ламели",
-                            "паркет софия"
+                            "холандски паркет",
+                            "премиум паркет",
+                            "паркет София"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години за жилищна употреба, 5 години за търговски обекти"
                         }
                     }
                 }
@@ -486,6 +421,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
+                    "width": "190",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
@@ -501,7 +460,6 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C12",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
@@ -515,20 +473,20 @@
             ],
             "imageAlt": {
                 "en": "C12 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет C12 - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "C12",
-                    "description": "C12 engineered oak herringbone features rustic grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "name": "Natural oak",
+                    "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
+                    "finishingNote": "This unfinished parquet offers flexibility for personalization. It can be finished to your preference with oil treatment in one of 11 available colors, brushing for pronounced relief, or lacquering for long-lasting protection.",
                     "features": [
                         "100% natural oak",
                         "rustic grade",
-                        "unfinished",
+                        "unfinished surface",
                         "suitable for underfloor heating",
                         "14mm thickness",
-                        "engineered herringbone"
+                        "engineered plank for gluing"
                     ],
                     "seo": {
                         "title": "C12 Oak Parquet | Rustic Unfinished",
@@ -545,81 +503,44 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "C12",
-                    "description": "Дъбов ламелен паркет C12 се отличава с рустичен характер и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
+                    "finishingNote": "Този необработен паркет предлага гъвкавост за персонализация. Може да бъде завършен по избор с омасляване в един от 11 налични цвята, четкане за изразен релеф или лакиране за дълготрайна защита.",
                     "features": [
                         "100% естествен дъб",
-                        "рустик класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Рустик качество",
+                        "Необработена повърхност",
+                        "Подходящ за подово отопление",
+                        "Дебелина 14 мм",
+                        "Ламелен паркет за лепене"
                     ],
                     "seo": {
-                        "title": "C12 Дъбов Паркет | Рустик Необработен",
-                        "description": "Дъбов паркет C12 с рустик класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов Ламелен Паркет | Рустик | Необработен | Холандско Качество",
+                        "description": "Открийте нашият дъбов ламелен паркет с изразен рустик характер и необработена повърхност. Холандско качество, дебелина 14 мм, подходящ за подово отопление. Създайте уникален интериор.",
                         "keywords": [
                             "дъбов паркет",
                             "необработен паркет",
-                            "рустик дъб",
-                            "ламелен паркет българия",
+                            "рустик дъбов паркет",
+                            "ламелен паркет",
                             "паркет за подово отопление",
                             "естествен дъбов под",
-                            "паркет c12",
+                            "холандски паркет",
+                            "премиум паркет",
+                            "паркет C12",
                             "дъбови ламели",
-                            "паркет софия"
+                            "паркет София",
+                            "дъбов под"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години жилищна употреба, 5 години комерсиална"
                         }
                     }
                 }
@@ -646,6 +567,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
+                    "width": "260",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
@@ -661,7 +606,6 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C3",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
@@ -675,20 +619,20 @@
             ],
             "imageAlt": {
                 "en": "C3 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет C3 - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "C3",
-                    "description": "C3 engineered oak herringbone features rustic grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "name": "Natural oak",
+                    "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
+                    "finishingNote": "As an unfinished product, this parquet offers complete freedom for personalization. It can be finished to your preference with oil treatment in 11 colors, brushing for relief texture, or lacquering for protection and shine.",
                     "features": [
                         "100% natural oak",
                         "rustic grade",
-                        "unfinished",
+                        "unfinished surface",
                         "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "14mm total thickness",
+                        "engineered plank"
                     ],
                     "seo": {
                         "title": "C3 Oak Parquet | Rustic Unfinished",
@@ -705,81 +649,44 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "C3",
-                    "description": "Дъбов ламелен паркет C3 се отличава с рустичен характер и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
+                    "finishingNote": "Като необработен продукт, този паркет предлага пълна свобода за персонализиране. Може да бъде завършен по избор с омасляване в 11 цвята, четкане за релефна текстура или лакиране за защита и блясък.",
                     "features": [
                         "100% естествен дъб",
-                        "рустик класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Рустик качество",
+                        "Необработена повърхност",
+                        "Подходящ за подово отопление",
+                        "Обща дебелина 14 мм",
+                        "Ламелен паркет"
                     ],
                     "seo": {
-                        "title": "C3 Дъбов Паркет | Рустик Необработен",
-                        "description": "Дъбов паркет C3 с рустик класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "C3 Дъбов Ламелен Паркет - Рустик Качество, Необработен | Floer Холандия",
+                        "description": "Открийте нашият дъбов ламелен паркет с изразен рустик характер и необработена повърхност. Холандско качество, дебелина 14 мм, подходящ за подово отопление. Създайте уникален интериор.",
                         "keywords": [
                             "дъбов паркет",
-                            "необработен паркет",
-                            "рустик дъб",
-                            "ламелен паркет българия",
+                            "необработен дъбов паркет",
+                            "рустик дъбов паркет",
+                            "ламелен паркет",
+                            "холандски паркет",
+                            "премиум паркет",
                             "паркет за подово отопление",
                             "естествен дъбов под",
-                            "паркет c3",
+                            "паркет C3",
                             "дъбови ламели",
-                            "паркет софия"
+                            "паркет София",
+                            "персонализиран паркет"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години за жилищна употреба, 5 години за търговски обекти"
                         }
                     }
                 }
@@ -806,6 +713,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "190",
+                    "width": "190",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
@@ -821,7 +752,6 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C38",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
@@ -835,20 +765,20 @@
             ],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет eiken - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "eiken",
-                    "description": "eiken engineered oak herringbone features rustic grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "name": "Natural oak",
+                    "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
+                    "finishingNote": "This unfinished parquet offers complete freedom for finish customization – oil treatment in one of 11 available colors, brushing to emphasize texture, or lacquering for a smooth surface.",
                     "features": [
                         "100% natural oak",
                         "rustic grade",
-                        "unfinished",
+                        "unfinished surface",
                         "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "14mm total thickness",
+                        "engineered plank for gluing"
                     ],
                     "seo": {
                         "title": "eiken Oak Parquet | Rustic Unfinished",
@@ -865,81 +795,43 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "eiken",
-                    "description": "Дъбов ламелен паркет eiken се отличава с рустичен характер и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
+                    "finishingNote": "Този необработен паркет предлага пълна свобода на избор за финишна обработка – с омасляване в един от 11-те налични цвята, четкане за подчертаване на текстурата или лакиране за гладка повърхност.",
                     "features": [
                         "100% естествен дъб",
-                        "рустик класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Рустик качество",
+                        "Необработена повърхност",
+                        "Подходящ за подово отопление",
+                        "Обща дебелина 14 мм",
+                        "Ламелен паркет за лепене"
                     ],
                     "seo": {
-                        "title": "eiken Дъбов Паркет | Рустик Необработен",
-                        "description": "Дъбов паркет eiken с рустик класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов паркет eiken | Рустик качество | Необработен",
+                        "description": "Открийте нашият дъбов ламелен паркет с изразен рустик характер и необработена повърхност. Холандско качество, дебелина 14 мм, подходящ за подово отопление. Създайте уникален интериор.",
                         "keywords": [
                             "дъбов паркет",
                             "необработен паркет",
-                            "рустик дъб",
-                            "ламелен паркет българия",
+                            "рустик дъбов паркет",
+                            "ламелен паркет",
                             "паркет за подово отопление",
                             "естествен дъбов под",
                             "паркет eiken",
                             "дъбови ламели",
-                            "паркет софия"
+                            "паркет София",
+                            "холандски паркет",
+                            "паркет за лепене"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години за жилищна употреба, 5 години за комерсиална"
                         }
                     }
                 }
@@ -966,6 +858,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
+                    "width": "190",
+                    "thickness": "10"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
@@ -981,7 +897,6 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C6",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
@@ -995,20 +910,20 @@
             ],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет eiken - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "eiken",
-                    "description": "eiken engineered oak herringbone features rustic grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "name": "Natural oak",
+                    "description": "Discover our oak plank parquet – embodiment of rustic elegance and natural beauty. This unfinished floor made from 100% oak combines Dutch quality with exceptional durability, offering a perfect base for creating a warm and stylish atmosphere in any home or office.",
+                    "finishingNote": "This unfinished oak parquet offers flexibility in final finishing. Can be finished to your preference with oil treatment in one of 11 available colors, brushing for pronounced relief, or lacquering for long-lasting protection.",
                     "features": [
-                        "100% natural oak",
-                        "rustic grade",
-                        "unfinished",
-                        "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "Made entirely from 100% natural oak",
+                        "rustic grade for authentic look",
+                        "unfinished surface for personalized finish",
+                        "compatible with underfloor heating",
+                        "optimal 19mm thickness for durability",
+                        "classic plank format"
                     ],
                     "seo": {
                         "title": "eiken Oak Parquet | Rustic Unfinished",
@@ -1025,51 +940,32 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "eiken",
-                    "description": "Дъбов ламелен паркет eiken се отличава с рустичен характер и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Открийте нашия дъбов ламелен паркет – въплъщение на рустик елегантност и естествена красота. Този необработен под от 100% дъб съчетава холандско качество с изключителна издръжливост, предлагайки перфектна основа за създаване на топла и стилна атмосфера във всеки дом или офис.",
+                    "finishingNote": "Този необработен дъбов паркет предлага гъвкавост във финишната обработка. Може да бъде завършен по Ваш избор с омасляване в един от 11-те налични цвята, четкане за изразен релеф или лакиране за дълготрайна защита.",
                     "features": [
-                        "100% естествен дъб",
-                        "рустик класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Изцяло от 100% естествен дъб",
+                        "Рустик качество за автентичен вид",
+                        "Необработена повърхност за персонализиран финиш",
+                        "Съвместим с подово отопление",
+                        "Оптимална дебелина от 14 мм за здравина",
+                        "Класически ламелен формат"
                     ],
                     "seo": {
-                        "title": "eiken Дъбов Паркет | Рустик Необработен",
-                        "description": "Дъбов паркет eiken с рустик класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов паркет eiken | Необработен | Рустик качество | Холандски",
+                        "description": "Открийте нашият дъбов ламелен паркет с изразен рустик характер и необработена повърхност. Холандско качество, дебелина 14 мм, подходящ за подово отопление. Създайте уникален интериор.",
                         "keywords": [
                             "дъбов паркет",
-                            "необработен паркет",
-                            "рустик дъб",
-                            "ламелен паркет българия",
+                            "необработен дъбов паркет",
+                            "рустик дъбов паркет",
+                            "холандски паркет",
+                            "ламелен паркет",
                             "паркет за подово отопление",
                             "естествен дъбов под",
                             "паркет eiken",
@@ -1078,28 +974,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години за жилищна употреба, 5 години за търговска"
                         }
                     }
                 }
@@ -1126,6 +1002,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
+                    "width": "190",
+                    "thickness": "19"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
@@ -1141,7 +1041,6 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C11",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
@@ -1155,20 +1054,20 @@
             ],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет eiken - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "eiken",
-                    "description": "eiken engineered oak herringbone features rustic grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "name": "Natural oak",
+                    "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
+                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing for texture emphasis, or lacquering.",
                     "features": [
                         "100% natural oak",
                         "rustic grade",
-                        "unfinished",
+                        "unfinished surface",
                         "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "10mm total thickness",
+                        "engineered plank"
                     ],
                     "seo": {
                         "title": "eiken Oak Parquet | Rustic Unfinished",
@@ -1185,81 +1084,43 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "eiken",
-                    "description": "Дъбов ламелен паркет eiken се отличава с рустичен характер и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
+                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с оцветяване (11 налични цвята), четкане (за изявена текстура) или лакиране.",
                     "features": [
                         "100% естествен дъб",
-                        "рустик класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Рустик качество",
+                        "Необработена повърхност",
+                        "Подходящ за подово отопление",
+                        "Обща дебелина 14 мм",
+                        "Ламелен паркет"
                     ],
                     "seo": {
-                        "title": "eiken Дъбов Паркет | Рустик Необработен",
-                        "description": "Дъбов паркет eiken с рустик класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов Ламелен Паркет | Рустик | Необработен",
+                        "description": "Открийте нашият дъбов ламелен паркет с изразен рустик характер и необработена повърхност. Холандско качество, дебелина 14 мм, подходящ за подово отопление. Създайте уникален интериор.",
                         "keywords": [
                             "дъбов паркет",
                             "необработен паркет",
                             "рустик дъб",
-                            "ламелен паркет българия",
+                            "ламелен паркет",
                             "паркет за подово отопление",
                             "естествен дъбов под",
                             "паркет eiken",
                             "дъбови ламели",
-                            "паркет софия"
+                            "паркет София",
+                            "холандски паркет",
+                            "дъбов паркет цена"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години гаранция за жилищна употреба, 5 години за търговска употреба"
                         }
                     }
                 }
@@ -1286,6 +1147,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
+                    "width": "150",
+                    "thickness": "10"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
@@ -1301,9 +1186,8 @@
             "finishType": "stained",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C960",
-            "woodGrade": null,
+            "woodGrade": "rustic",
             "surfaceTreatment": null,
             "images": [
                 "A0002269.webp",
@@ -1315,20 +1199,20 @@
             ],
             "imageAlt": {
                 "en": "C960 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет C960 - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "C960",
-                    "description": "C960 engineered oak herringbone features rustic grade with natural appearance and finished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
+                    "name": "Natural oak",
+                    "description": "Discover our oak plank parquet – a symbol of rustic elegance and durability. With lacquered finish and natural oak character, it is the ideal solution for creating a warm and stylish atmosphere in any home. Dutch quality with proven longevity.",
                     "finishingNote": null,
                     "features": [
-                        "100% natural oak",
+                        "genuine natural oak",
                         "rustic grade",
-                        "finished",
+                        "lacquered finish",
                         "suitable for underfloor heating",
                         "14mm thickness",
-                        "engineered herringbone"
+                        "plank format"
                     ],
                     "seo": {
                         "title": "C960 Oak Parquet | Rustic Finished",
@@ -1345,86 +1229,72 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Finished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "C960",
-                    "description": "Дъбов ламелен паркет C960 се отличава с рустичен характер и обработено покритие. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Открийте нашия дъбов ламелен паркет – символ на рустик елегантност и издръжливост. С лакирано покритие и естествен дъбов характер, той е идеалното решение за създаване на топла и стилна атмосфера във всеки дом. Холандско качество с доказана дълготрайност.",
                     "finishingNote": null,
                     "features": [
-                        "100% естествен дъб",
-                        "рустик класиране",
-                        "лакиран",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Истински естествен дъб",
+                        "Рустик качество",
+                        "Лакирано покритие",
+                        "Подходящ за подово отопление",
+                        "Дебелина 14 мм",
+                        "Ламелен формат"
                     ],
                     "seo": {
-                        "title": "C960 Дъбов Паркет | Рустик Лакиран",
-                        "description": "Дъбов паркет C960 с рустик класиране. Лакиран, издръжлив, подходящ за подово отопление.",
+                        "title": "C960 Дъбов Паркет | Рустик, Лакиран | Премиум Холандско Качество",
+                        "description": "Премиум дъбов паркет с рустик качество и лаково покритие. Издръжлив, лесен за поддръжка и съвместим с подово отопление. Холандско качество за вашия дом или офис.",
                         "keywords": [
                             "дъбов паркет",
-                            "обработен паркет",
-                            "рустик дъб",
-                            "ламелен паркет българия",
+                            "лакиран паркет",
+                            "рустик дъбов паркет",
+                            "ламелен паркет България",
                             "паркет за подово отопление",
                             "естествен дъбов под",
-                            "паркет c960",
+                            "паркет C960",
                             "дъбови ламели",
-                            "паркет софия"
+                            "паркет София",
+                            "холандски паркет",
+                            "качествен дъбов паркет"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Лакиран"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години гаранция за жилищна употреба, 5 години за търговски обекти"
                         }
                     }
                 }
             },
-            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c960-old-school-floor-original/"
+            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c960-old-school-floor-original/",
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
+                    "width": "190",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "finished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
+            }
         },
         {
             "sku": "DIG-A0002276",
@@ -1439,9 +1309,8 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C961",
-            "woodGrade": null,
+            "woodGrade": "rustic",
             "surfaceTreatment": null,
             "images": [
                 "A0002276.webp",
@@ -1453,20 +1322,20 @@
             ],
             "imageAlt": {
                 "en": "C961 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет C961 - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "C961",
-                    "description": "C961 engineered oak herringbone features rustic grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "name": "Natural oak",
+                    "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
+                    "finishingNote": "This parquet is unfinished and offers the opportunity for personalized final treatment: oil treatment in one of 11 available colors, brushing to emphasize texture, or lacquering for long-lasting protection.",
                     "features": [
                         "100% natural oak",
                         "rustic grade",
-                        "unfinished",
+                        "unfinished surface for personalization",
                         "suitable for underfloor heating",
                         "14mm thickness",
-                        "engineered herringbone"
+                        "engineered plank"
                     ],
                     "seo": {
                         "title": "C961 Oak Parquet | Rustic Unfinished",
@@ -1483,46 +1352,26 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "C961",
-                    "description": "Дъбов ламелен паркет C961 се отличава с рустичен характер и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
+                    "finishingNote": "Този паркет е необработен и предлага възможност за персонализирана финишна обработка: омасляване в един от 11-те налични цвята, четкане за подчертаване на текстурата или лакиране за дълготрайна защита.",
                     "features": [
                         "100% естествен дъб",
-                        "рустик класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Рустик качество",
+                        "Необработена повърхност за персонализация",
+                        "Подходящ за подово отопление",
+                        "Дебелина 14 мм",
+                        "Ламелен паркет"
                     ],
                     "seo": {
-                        "title": "C961 Дъбов Паркет | Рустик Необработен",
-                        "description": "Дъбов паркет C961 с рустик класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "C961 Дъбов Паркет | Рустик Качество, Необработен",
+                        "description": "Дъбов паркет с рустик качество и необработена повърхност. Издръжлив, с възможност за персонализиран финиш и подходящ за подово отопление.",
                         "keywords": [
                             "дъбов паркет",
                             "необработен паркет",
@@ -1536,28 +1385,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години жилищна употреба, 5 години комерсиална"
                         }
                     }
                 }
@@ -1584,6 +1413,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
+                    "width": "190",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
@@ -1599,9 +1452,8 @@
             "finishType": "lacquered",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
-            "manufacturerProductId": "noestarm",
-            "woodGrade": "natural",
+            "manufacturerProductId": "A0019111",
+            "woodGrade": "select",
             "surfaceTreatment": null,
             "images": [
                 "A0019111.webp",
@@ -1613,24 +1465,24 @@
             ],
             "imageAlt": {
                 "en": "noestarm Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет noestarm - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "noestarm",
-                    "description": "noestarm engineered oak herringbone features rustic grade with natural appearance and lacquered surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
+                    "name": "Natural oak",
+                    "description": "Natural oak parquet with special surface treatment. This high-quality floor combines natural oak beauty with proven durability, creating a warm and elegant atmosphere in any space.",
                     "finishingNote": null,
                     "features": [
                         "100% natural oak",
-                        "rustic grade",
-                        "lacquered",
+                        "select grade",
+                        "lacquered finish",
                         "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "14mm total thickness",
+                        "engineered parquet"
                     ],
                     "seo": {
-                        "title": "noestarm Oak Parquet | Rustic Lacquered",
-                        "description": "noestarm oak parquet with rustic grade. Lacquered, durable, suitable for underfloor heating.",
+                        "title": "Select Natural Oak Parquet | Lacquered",
+                        "description": "Select natural oak parquet. Lacquered, durable, suitable for underfloor heating.",
                         "keywords": [
                             "oak parquet",
                             "lacquered parquet",
@@ -1643,86 +1495,72 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Lacquered"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "noestarm",
-                    "description": "Дъбов ламелен паркет noestarm се отличава с рустичен характер и обработено покритие. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Естествен дъбов паркет със специална обработка на повърхността. Този висококачествен под съчетава естествената красота на дъба с доказана издръжливост, създавайки топла и елегантна атмосфера във всяко пространство.",
                     "finishingNote": null,
                     "features": [
                         "100% естествен дъб",
-                        "рустик класиране",
-                        "лакиран",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Селект качество",
+                        "Лакирано покритие",
+                        "Подходящ за подово отопление",
+                        "Обща дебелина: 14 мм",
+                        "Многослоен паркет"
                     ],
                     "seo": {
-                        "title": "noestarm Дъбов Паркет | Рустик Лакиран",
-                        "description": "Дъбов паркет noestarm с рустик класиране. Лакиран, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов Паркет | Селект Качество с Лакирано Покритие | Холандско Качество",
+                        "description": "Открийте дъбов паркет noestarm с рустик качество и лакирано покритие. Издръжлив, лесен за поддръжка и подходящ за подово отопление. Холандско качество с 10-годишна гаранция.",
                         "keywords": [
                             "дъбов паркет",
-                            "обработен паркет",
-                            "рустик дъб",
-                            "ламелен паркет българия",
+                            "лакиран паркет",
+                            "трислоен паркет българия",
                             "паркет за подово отопление",
                             "естествен дъбов под",
-                            "паркет noestarm",
+                            "паркет селект",
                             "дъбови ламели",
-                            "паркет софия"
+                            "паркет софия",
+                            "холандски паркет",
+                            "14 мм паркет",
+                            "лакиран дъбов паркет"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Лакиран"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години за жилищна употреба, 5 години за търговски обекти"
                         }
                     }
                 }
             },
-            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-family-natural-mojave/"
+            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-family-natural-mojave/",
+            "specifications": {
+                "dimensions": {
+                    "length": "1800",
+                    "width": "180",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "lacquered"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
+            }
         },
         {
             "sku": "DIG-A0019104",
@@ -1737,9 +1575,8 @@
             "finishType": "lacquered",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
-            "manufacturerProductId": "noestarm",
-            "woodGrade": null,
+            "manufacturerProductId": "A0019104",
+            "woodGrade": "select",
             "surfaceTreatment": null,
             "images": [
                 "A0019104.webp",
@@ -1751,20 +1588,20 @@
             ],
             "imageAlt": {
                 "en": "noestarm Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет noestarm - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "noestarm",
-                    "description": "noestarm engineered oak herringbone features rustic grade with natural appearance and lacquered surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
+                    "name": "Natural oak",
+                    "description": "Natural oak parquet with special surface treatment. This high-quality floor combines natural oak beauty with proven durability, creating a warm and elegant atmosphere in any space.",
                     "finishingNote": null,
                     "features": [
-                        "100% natural oak",
-                        "rustic grade",
-                        "lacquered",
+                        "genuine oak - 100% natural material",
+                        "rustic grade with pronounced character",
+                        "lacquered finish for easy maintenance",
                         "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "14mm total thickness",
+                        "plank design for classic look"
                     ],
                     "seo": {
                         "title": "noestarm Oak Parquet | Rustic Lacquered",
@@ -1781,86 +1618,71 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Lacquered"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "noestarm",
-                    "description": "Дъбов ламелен паркет noestarm се отличава с рустичен характер и обработено покритие. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
+                    "name": "Естествен дъбов паркетк",
+                    "description": "Естествен дъбов паркет със специална обработка на повърхността. Този висококачествен под съчетава естествената красота на дъба с доказана издръжливост, създавайки топла и елегантна атмосфера във всяко пространство.",
                     "finishingNote": null,
                     "features": [
-                        "100% естествен дъб",
-                        "рустик класиране",
-                        "лакиран",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Истински дъб - 100% естествен материал",
+                        "Рустик качество с изразен характер",
+                        "Лакирано покритие за лесна поддръжка",
+                        "Подходящ за подово отопление",
+                        "Обща дебелина 14 мм",
+                        "Ламелен дизайн за класически вид"
                     ],
                     "seo": {
-                        "title": "noestarm Дъбов Паркет | Рустик Лакиран",
-                        "description": "Дъбов паркет noestarm с рустик класиране. Лакиран, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов ламелен паркет Селект | Лакиран, Холандско качество",
+                        "description": "Открийте дъбов ламелен паркет със селект качество. Лакиран, изключително издръжлив и подходящ за подово отопление. Холандско производство с 10-годишна гаранция за жилищна употреба.",
                         "keywords": [
                             "дъбов паркет",
-                            "обработен паркет",
-                            "рустик дъб",
-                            "ламелен паркет българия",
+                            "ламелен паркет",
+                            "дъб",
+                            "лакиран паркет",
                             "паркет за подово отопление",
                             "естествен дъбов под",
+                            "холандски паркет",
                             "паркет noestarm",
                             "дъбови ламели",
                             "паркет софия"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Лакиран"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години гаранция за жилищна употреба, 5 години за търговска"
                         }
                     }
                 }
             },
-            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-family-invisible-sahara/"
+            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-family-invisible-sahara/",
+            "specifications": {
+                "dimensions": {
+                    "length": "1800",
+                    "width": "180",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "lacquered"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
+            }
         },
         {
             "sku": "DIG-A0019097",
@@ -1875,9 +1697,8 @@
             "finishType": "lacquered",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "noestarm",
-            "woodGrade": null,
+            "woodGrade": "select",
             "surfaceTreatment": null,
             "images": [
                 "A0019097.webp",
@@ -1889,20 +1710,20 @@
             ],
             "imageAlt": {
                 "en": "noestarm Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет noestarm - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "noestarm",
-                    "description": "noestarm engineered oak herringbone features rustic grade with natural appearance and lacquered surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
+                    "name": "Natural oak",
+                    "description": "Natural oak parquet with special surface treatment. This high-quality floor combines natural oak beauty with proven durability, creating a warm and elegant atmosphere in any space.",
                     "finishingNote": null,
                     "features": [
-                        "100% natural oak",
-                        "rustic grade",
-                        "lacquered",
+                        "made from 100% natural oak",
+                        "select grade",
+                        "lacquered finish for easy maintenance",
                         "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "14mm total thickness",
+                        "durable and stable construction"
                     ],
                     "seo": {
                         "title": "noestarm Oak Parquet | Rustic Lacquered",
@@ -1910,7 +1731,7 @@
                         "keywords": [
                             "oak parquet",
                             "lacquered parquet",
-                            "rustic oak",
+                            "oak",
                             "engineered parquet bulgaria",
                             "underfloor heating parquet",
                             "natural oak flooring",
@@ -1919,86 +1740,71 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Lacquered"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "noestarm",
-                    "description": "Дъбов ламелен паркет noestarm се отличава с рустичен характер и обработено покритие. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
+                    "name": "Естествен дъбов паркетт",
+                    "description": "Естествен дъбов паркет със специална обработка на повърхността. Този висококачествен под съчетава естествената красота на дъба с доказана издръжливост, създавайки топла и елегантна атмосфера във всяко пространство.",
                     "finishingNote": null,
                     "features": [
-                        "100% естествен дъб",
-                        "рустик класиране",
-                        "лакиран",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Изработен от 100% естествен дъб",
+                        "Селект качество",
+                        "Лакирано покритие за лесна поддръжка",
+                        "Подходящ за подово отопление",
+                        "Обща дебелина 14 мм",
+                        "Дълготрайна и стабилна конструкция"
                     ],
                     "seo": {
-                        "title": "noestarm Дъбов Паркет | Рустик Лакиран",
-                        "description": "Дъбов паркет noestarm с рустик класиране. Лакиран, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов Паркет | Селект | Лакиран | Холандско качество",
+                        "description": "Открийте висококачествения дъбов паркет от Холандия със селект качество и лаково покритие. Издръжлив, подходящ за подово отопление и с 10 години гаранция за жилищна употреба.",
                         "keywords": [
                             "дъбов паркет",
-                            "обработен паркет",
-                            "рустик дъб",
-                            "ламелен паркет българия",
+                            "Селект паркет",
+                            "лакиран паркет",
                             "паркет за подово отопление",
-                            "естествен дъбов под",
-                            "паркет noestarm",
-                            "дъбови ламели",
+                            "естествен дъбов паркет",
+                            "паркет",
+                            "холандски паркет",
+                            "трислоен паркет",
+                            "дъбови паркетни дъски",
                             "паркет софия"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Лакиран"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години жилищна употреба, 5 години комерсиална"
                         }
                     }
                 }
             },
-            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-family-whitewash-kalahari/"
+            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-family-whitewash-kalahari/",
+            "specifications": {
+                "dimensions": {
+                    "length": "1800",
+                    "width": "180",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "lacquered"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
+            }
         },
         {
             "sku": "DIG-A0019090",
@@ -2013,7 +1819,6 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "family",
             "woodGrade": "select",
             "surfaceTreatment": null,
@@ -2027,20 +1832,20 @@
             ],
             "imageAlt": {
                 "en": "family Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет family - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "family",
-                    "description": "family engineered oak herringbone features select grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "name": "Natural oak",
+                    "description": "High-quality Dutch oak plank parquet - select grade with unfinished surface. Combines natural oak beauty with exceptional durability, offering elegance and comfort in any room.",
+                    "finishingNote": "The parquet is unfinished and offers the possibility for personalization: choose between 11 different color treatments, brushing for pronounced relief, or classic lacquering.",
                     "features": [
-                        "100% natural oak",
-                        "select grade",
-                        "unfinished",
-                        "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "made entirely from 100% natural oak",
+                        "select wood quality",
+                        "possibility for personalized treatment",
+                        "high compatibility with underfloor heating",
+                        "durability with 14mm thickness",
+                        "Dutch production with guaranteed quality"
                     ],
                     "seo": {
                         "title": "family Oak Parquet | Select Unfinished",
@@ -2057,81 +1862,41 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Select",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "family",
-                    "description": "Дъбов ламелен паркет family се отличава с селектирано качество и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Висококачествен холандски дъбов ламелен паркет  – селект  с необработена повърхност. Съчетава естествената красота на дъба с изключителна издръжливост, предлагайки елегантност и уют във всяко помещение.",
+                    "finishingNote": "Паркетът е необработен и предлага възможност за персонализиране: изберете между 11 различни цветови обработки, четкане за изразен релеф или класическо лакиране.",
                     "features": [
-                        "100% естествен дъб",
-                        "селект класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Изцяло от 100% естествен дъб",
+                        "Дървесина селект качество",
+                        "Възможност за персонализирана обработка",
+                        "Висока съвместимост с подово отопление",
+                        "Издръжливост с дебелина 14 мм",
+                        "Холандско производство с гарантирано качество"
                     ],
                     "seo": {
-                        "title": "family Дъбов Паркет | Селект Необработен",
-                        "description": "Дъбов паркет family с селект класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов Паркет | Селект Качество | Необработен | Холандски",
+                        "description": "Открийте дъбов паркет family с премиум селект качество и необработена повърхност. Холандско производство, издръжлив и подходящ за подово отопление. Персонализирайте финиша по ваш вкус.",
                         "keywords": [
                             "дъбов паркет",
-                            "необработен паркет",
-                            "селект дъб",
-                            "ламелен паркет българия",
+                            "необработен дъбов паркет",
+                            "паркет селект качество",
+                            "ламелен паркет",
                             "паркет за подово отопление",
-                            "естествен дъбов под",
-                            "паркет family",
+                            "естествен дървен под",
+                            "холандски паркет family",
                             "дъбови ламели",
-                            "паркет софия"
+                            "паркет София"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Селект",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години за жилищна употреба, 5 години за търговски обекти"
                         }
                     }
                 }
@@ -2158,6 +1923,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1800",
+                    "width": "180",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "select",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
@@ -2173,7 +1962,6 @@
             "finishType": "lacquered",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "rustiek",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
@@ -2187,12 +1975,12 @@
             ],
             "imageAlt": {
                 "en": "rustiek Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет rustiek - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "rustiek",
-                    "description": "rustiek engineered oak herringbone features rustic grade with natural appearance and lacquered surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
+                    "name": "Natural oak",
+                    "description": "Oak plank parquet distinguished by natural rustic character and durable lacquered finish. This high-quality floor combines authentic wood beauty with exceptional durability, creating a warm and elegant atmosphere in any space. Ideal for underfloor heating.",
                     "finishingNote": null,
                     "features": [
                         "100% natural oak",
@@ -2200,7 +1988,7 @@
                         "lacquered",
                         "suitable for underfloor heating",
                         "14mm thickness",
-                        "engineered herringbone"
+                        "plank parquet"
                     ],
                     "seo": {
                         "title": "rustiek Oak Parquet | Rustic Lacquered",
@@ -2217,86 +2005,71 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Lacquered"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "rustiek",
-                    "description": "Дъбов ламелен паркет rustiek се отличава с рустичен характер и обработено покритие. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Дъбов ламелен паркет, който се отличава с естествен рустик характер и трайно лакирано покритие. Този висококачествен под съчетава автентичната красота на дървото с изключителна издръжливост, създавайки топла и елегантна атмосфера във всяко пространство. Идеален за подово отопление.",
                     "finishingNote": null,
                     "features": [
                         "100% естествен дъб",
-                        "рустик класиране",
-                        "лакиран",
-                        "подходящ за подово отопление",
+                        "Клас Рустик",
+                        "Лакиран",
+                        "Подходящ за подово отопление",
                         "14 мм дебелина",
-                        "ламелен паркет"
+                        "Ламелен паркет"
                     ],
                     "seo": {
-                        "title": "rustiek Дъбов Паркет | Рустик Лакиран",
-                        "description": "Дъбов паркет rustiek с рустик класиране. Лакиран, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов Ламелен Паркет Рустик | Лакиран | Холандско Качество",
+                        "description": "Открийте нашият дъбов ламелен паркет – лакиран, издръжлив и подходящ за подово отопление. Създайте топла и уютна атмосфера с естествено дърво.",
                         "keywords": [
                             "дъбов паркет",
-                            "обработен паркет",
-                            "рустик дъб",
-                            "ламелен паркет българия",
+                            "рустик паркет",
+                            "ламелен паркет",
+                            "лакиран паркет",
                             "паркет за подово отопление",
                             "естествен дъбов под",
-                            "паркет rustiek",
+                            "холандски паркет",
                             "дъбови ламели",
-                            "паркет софия"
+                            "паркет София",
+                            "висококачествен паркет"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Лакиран"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "Удължена гаранция: 10 години за жилищна употреба, 5 години за търговска"
                         }
                     }
                 }
             },
-            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-rustic-natural-namib/"
+            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-rustic-natural-namib/",
+            "specifications": {
+                "dimensions": {
+                    "length": "2200",
+                    "width": "180",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "lacquered"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
+            }
         },
         {
             "sku": "DIG-A0025992",
@@ -2311,7 +2084,6 @@
             "finishType": "lacquered",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "rustiek",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
@@ -2325,20 +2097,20 @@
             ],
             "imageAlt": {
                 "en": "rustiek Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет rustiek - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "rustiek",
-                    "description": "rustiek engineered oak herringbone features rustic grade with natural appearance and lacquered surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
+                    "name": "Natural oak",
+                    "description": "Discover the beauty of Dutch engineered oak parquet. With pronounced rustic character and lacquer finish, this high-quality floor combines natural wood elegance with excellent durability, creating a warm and cozy atmosphere in any room.",
                     "finishingNote": null,
                     "features": [
-                        "100% natural oak",
+                        "natural oak top layer",
                         "rustic grade",
-                        "lacquered",
+                        "lacquered finish for easy maintenance",
                         "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "14mm total thickness",
+                        "engineered parquet plank"
                     ],
                     "seo": {
                         "title": "rustiek Oak Parquet | Rustic Lacquered",
@@ -2355,92 +2127,78 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Lacquered"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "rustiek",
-                    "description": "Дъбов ламелен паркет rustiek се отличава с рустичен характер и обработено покритие. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Открийте красотата на холандския многослоен дъбов паркет. С изразен рустик характер и лаково покритие, този висококачествен под съчетава естествената елегантност на дървото с отлична издръжливост, създавайки топла и уютна атмосфера във всяко помещение.",
                     "finishingNote": null,
                     "features": [
-                        "100% естествен дъб",
-                        "рустик класиране",
-                        "лакиран",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Естествен дъбов горен слой",
+                        "Рустик качество",
+                        "Лакирано покритие за лесна поддръжка",
+                        "Подходящ за подово отопление",
+                        "Обща дебелина 14 мм",
+                        "Многослойна паркетна дъска"
                     ],
                     "seo": {
-                        "title": "rustiek Дъбов Паркет | Рустик Лакиран",
-                        "description": "Дъбов паркет rustiek с рустик класиране. Лакиран, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов паркет Рустик | Лакиран | Холандско качество",
+                        "description": "Премиум холандски дъбов паркет с лак покритие. Издръжлив и лесен за поддръжка, идеален за подово отопление. Открийте естествената красота на дъба.",
                         "keywords": [
                             "дъбов паркет",
-                            "обработен паркет",
                             "рустик дъб",
-                            "ламелен паркет българия",
+                            "лакиран паркет",
+                            "многослоен паркет българия",
                             "паркет за подово отопление",
                             "естествен дъбов под",
-                            "паркет rustiek",
-                            "дъбови ламели",
-                            "паркет софия"
+                            "дъбов паркет рустик",
+                            "дъбови паркетни дъски",
+                            "паркет софия",
+                            "холандски паркет",
+                            "паркет с гаранция"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Лакиран"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години гаранция за жилищна употреба, 5 години за търговска"
                         }
                     }
                 }
             },
-            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-rustic-invisible-simpson/"
+            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-rustic-invisible-simpson/",
+            "specifications": {
+                "dimensions": {
+                    "length": "2200",
+                    "width": "180",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "lacquered"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
+            }
         },
         {
             "sku": "DIG-A0002129",
             "slug": "oak-a0002129",
             "collection": "oak",
-            "pattern": "plank",
+            "pattern": "herringbone",
             "installationSystem": "glue",
             "price": 53.1,
             "gtin": "A0002129",
@@ -2449,7 +2207,6 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C908",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
@@ -2463,7 +2220,7 @@
             ],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет eiken - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
@@ -2493,81 +2250,45 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "eiken",
-                    "description": "Дъбов ламелен паркет eiken се отличава с рустичен характер и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Дъбов паркет, който се отличава с автентичен рустик характер, елегантна подредба тип рибена кост и необработена повърхност, предоставяйки възможност за създаване на уникален интериор. Този висококачествен под съчетава естествената красота на дървото с изключителна издръжливост, внасяйки топлина и уют във всяко пространство.",
+                    "finishingNote": "Продуктът е необработен и предлага пълна свобода при финиширането. Може да бъде завършен по избор с омасляване (в 11 различни цвята), четкане за релефна текстура или лакиране за допълнителна защита.",
                     "features": [
                         "100% естествен дъб",
-                        "рустик класиране",
-                        "необработен",
+                        "рустик качество",
+                        "рибена кост",
+                        "необработена повърхност",
                         "подходящ за подово отопление",
-                        "14 мм дебелина",
+                        "обща дебелина 14 мм",
                         "ламелен паркет"
                     ],
                     "seo": {
-                        "title": "eiken Дъбов Паркет | Рустик Необработен",
-                        "description": "Дъбов паркет eiken с рустик класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "Премиум Дъбов Паркет рибена кост | Рустик и Необработен",
+                        "description": "Дъбов паркет с автентичен рустичен характер. Необработен за персонализиран финиш, изключително издръжлив и подходящ за подово отопление.",
                         "keywords": [
                             "дъбов паркет",
                             "необработен паркет",
                             "рустик дъб",
-                            "ламелен паркет българия",
+                            "паркет рибена кост",
                             "паркет за подово отопление",
                             "естествен дъбов под",
                             "паркет eiken",
                             "дъбови ламели",
-                            "паркет софия"
+                            "паркет софия",
+                            "холандски паркет",
+                            "качествен дъбов паркет",
+                            "паркет за довършване"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години гаранция за жилищна употреба, 5 години за търговска"
                         }
                     }
                 }
@@ -2594,13 +2315,37 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "625",
+                    "width": "125",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
             "sku": "DIG-A0011054",
             "slug": "oak-a0011054",
             "collection": "oak",
-            "pattern": "plank",
+            "pattern": "herringbone",
             "installationSystem": "glue",
             "price": 69.3,
             "gtin": "A0011054",
@@ -2609,7 +2354,6 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C903",
             "woodGrade": "select",
             "surfaceTreatment": "brushed",
@@ -2623,20 +2367,18 @@
             ],
             "imageAlt": {
                 "en": "C903 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет C903 - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
                     "name": "C903",
-                    "description": "C903 engineered oak herringbone features select grade with brushed appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "description": "Discover our herringbone oak parquet with select grade and natural, unfinished surface. This premium floor combines authentic oak beauty with exceptional durability, offering an elegant base that can be finished according to your unique style.",
+                    "finishingNote": "As unfinished, this herringbone parquet offers complete freedom for personalization. Can be finished to your preference with coloring (11 shades), brushing to emphasize relief, or protective lacquering.",
                     "features": [
-                        "100% natural oak",
-                        "select grade",
-                        "unfinished",
-                        "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "genuine oak",
+                        "select wood grade",
+                        "unfinished surface",
+                        "herringbone format"
                     ],
                     "seo": {
                         "title": "C903 Oak Parquet | Select Unfinished",
@@ -2646,88 +2388,47 @@
                             "unfinished parquet",
                             "select oak",
                             "engineered parquet bulgaria",
-                            "underfloor heating parquet",
                             "natural oak flooring",
                             "parquet c903",
                             "oak planks"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Select",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "C903",
-                    "description": "Дъбов ламелен паркет C903 се отличава с селектирано качество и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Открийте нашия ламелен дъбов паркет със селект качество и естествена, необработена повърхност. Този премиум под съчетава автентичната красота на дъба с изключителна издръжливост, предлагайки елегантна основа, която може да бъде завършена според вашия уникален стил.",
+                    "finishingNote": "Тъй като е необработен, този ламелен паркет предлага пълна свобода за персонализация. Можете да го завършите според вашите предпочитания – с оцветяване (11 нюанса), четкане за подчертаване на релефа или защитно лакиране.",
                     "features": [
-                        "100% естествен дъб",
-                        "селект класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Истински дъб",
+                        "Селект качество на дървесината",
+                        "Необработена повърхност",
+                        "Ламелен формат"
                     ],
                     "seo": {
-                        "title": "C903 Дъбов Паркет | Селект Необработен",
-                        "description": "Дъбов паркет C903 с селект класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов паркет C903 - Селект качество, необработен | Холандско производство",
+                        "description": "Премиум ламелен дъбов паркет C903 от Холандия със селект качество и необработена повърхност. Идеален за подово отопление и персонализиран завършек.",
                         "keywords": [
                             "дъбов паркет",
                             "необработен паркет",
                             "селект дъб",
-                            "ламелен паркет българия",
+                            "ламелен паркет",
                             "паркет за подово отопление",
                             "естествен дъбов под",
-                            "паркет c903",
+                            "паркет C903",
                             "дъбови ламели",
-                            "паркет софия"
+                            "паркет София",
+                            "холандски паркет",
+                            "премиум паркет"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Селект",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "Удължена 10-годишна гаранция за жилищна употреба, 5 години за търговска"
                         }
                     }
                 }
@@ -2754,6 +2455,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "500",
+                    "width": "68",
+                    "thickness": "10"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "select",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "not-suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
@@ -2769,7 +2494,6 @@
             "finishType": "unfinished",
             "constructionType": "engineered",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C909",
             "woodGrade": "select",
             "surfaceTreatment": null,
@@ -2783,20 +2507,20 @@
             ],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет eiken - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "eiken",
-                    "description": "eiken engineered oak herringbone features select grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "name": "Natural oak",
+                    "description": "Discover our oak parquet with chevron pattern – symbol of refinement. With superior select wood grade and unfinished surface, it offers incomparable natural beauty and freedom for personalized finish. This durable floor is ideal for creating an elegant and cozy atmosphere in any space.",
+                    "finishingNote": "As an unfinished product, this parquet provides the opportunity for personalized final treatment – coloring in one of 11 available colors, brushing to emphasize relief, or lacquering.",
                     "features": [
                         "100% natural oak",
-                        "select grade",
-                        "unfinished",
-                        "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "select wood grade",
+                        "unfinished surface for personalized finish",
+                        "chevron pattern",
+                        "14mm total thickness",
+                        "Dutch production"
                     ],
                     "seo": {
                         "title": "eiken Oak Parquet | Select Unfinished",
@@ -2806,88 +2530,49 @@
                             "unfinished parquet",
                             "select oak",
                             "engineered parquet bulgaria",
-                            "underfloor heating parquet",
                             "natural oak flooring",
                             "parquet eiken",
                             "oak planks"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Select",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "eiken",
-                    "description": "Дъбов ламелен паркет eiken се отличава с селектирано качество и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Открийте нашия дъбов паркет с подредба 'Шеврон' – символ на изисканост. С превъзходно селект качество на дървесината и необработена повърхност, той предлага несравнима естествена красота и свобода за персонализиран финиш. Този издръжлив под е идеален за създаване на елегантна и уютна атмосфера във всяко пространство, включително и при наличие на подово отопление.",
+                    "finishingNote": "Като необработен продукт, този паркет предоставя възможност за персонализирана финална обработка – оцветяване в един от 11 налични цвята, четкане за подчертаване на релефа или лакиране.",
                     "features": [
                         "100% естествен дъб",
-                        "селект класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Селект качество на дървесината",
+                        "Необработена повърхност за персонализиран финиш",
+                        "подредба 'Шеврон'",
+                        "шеврон",
+                        "Обща дебелина 14 мм",
+                        "Холандско производство"
                     ],
                     "seo": {
-                        "title": "eiken Дъбов Паркет | Селект Необработен",
-                        "description": "Дъбов паркет eiken с селект класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов Паркет | Селект Качество | Шеврон | Холандия",
+                        "description": "Висококачествен дъбов паркет от Холандия s подредба 'Шеврон'. Селект качество, необработен, идеален за подово отопление. Създайте елегантен и издръжлив под с възможност за персонализирано завършване.",
                         "keywords": [
                             "дъбов паркет",
                             "необработен паркет",
-                            "селект дъб",
-                            "ламелен паркет българия",
-                            "паркет за подово отопление",
+                            "дъбов паркет селект",
+                            "шеврон паркет",
                             "естествен дъбов под",
-                            "паркет eiken",
-                            "дъбови ламели",
+                            "паркет",
+                            "шеврон",
+                            "холандски паркет",
+                            "паркет за лепене",
                             "паркет софия"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Селект",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години за жилищна употреба, 5 години за търговски обекти"
                         }
                     }
                 }
@@ -2914,6 +2599,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "657",
+                    "width": "125",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "select",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "not-suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
@@ -2927,9 +2636,8 @@
             "categories": "Oak Parquet",
             "isFinished": false,
             "finishType": "unfinished",
-            "constructionType": "engineered",
+            "constructionType": "solid",
             "woodSpecies": "oak",
-            "mountingType": "herringbone",
             "manufacturerProductId": "C2",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
@@ -2943,20 +2651,19 @@
             ],
             "imageAlt": {
                 "en": "C2 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет C2 - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "C2",
-                    "description": "C2 engineered oak herringbone features rustic grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "name": "Natural oak",
+                    "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
+                    "finishingNote": "This parquet is unfinished and provides the opportunity for personalized finish of your choice: coloring in one of 11 available colors, brushing for pronounced relief, or lacquering for additional protection.",
                     "features": [
                         "100% natural oak",
                         "rustic grade",
-                        "unfinished",
-                        "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
+                        "unfinished surface",
+                        "19mm total thickness",
+                        "plank format"
                     ],
                     "seo": {
                         "title": "C2 Oak Parquet | Rustic Unfinished",
@@ -2966,88 +2673,49 @@
                             "unfinished parquet",
                             "rustic oak",
                             "engineered parquet bulgaria",
-                            "underfloor heating parquet",
                             "natural oak flooring",
                             "parquet c2",
                             "oak planks"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "C2",
-                    "description": "Дъбов ламелен паркет C2 се отличава с рустичен характер и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
+                    "finishingNote": "Този паркет е необработен и предоставя възможност за персонализиран завършек по ваш избор: оцветяване в един от 11 налични цвята, четкане за изразен релеф или лакиране за допълнителна защита.",
                     "features": [
                         "100% естествен дъб",
-                        "рустик класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "рустик качество",
+                        "необработена повърхност",
+                        "обща дебелина 14 мм",
+                        "ламелен формат"
                     ],
                     "seo": {
-                        "title": "C2 Дъбов Паркет | Рустик Необработен",
-                        "description": "Дъбов паркет C2 с рустик класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "Дъбов паркет C2 | Рустик | Необработен | Холандско качество",
+                        "description": "Дъбов паркет с рустик качество и необработена повърхност. Издръжлив и подходящ за подово отопление – инвестиция в естествена красота и уют.",
                         "keywords": [
                             "дъбов паркет",
                             "необработен паркет",
                             "рустик дъб",
-                            "ламелен паркет българия",
+                            "ламелен паркет",
                             "паркет за подово отопление",
                             "естествен дъбов под",
-                            "паркет c2",
+                            "паркет C2",
                             "дъбови ламели",
-                            "паркет софия"
+                            "паркет София",
+                            "холандски паркет",
+                            "качествен дъбов паркет",
+                            "паркет с гаранция"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години за жилищна употреба, 5 години за търговска употреба"
                         }
                     }
                 }
@@ -3074,24 +2742,47 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
+                    "width": "190",
+                    "thickness": "19"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "not-suitable",
+                    "thermalResistance": "0.16"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         },
         {
             "sku": "DIG-A0000603",
             "slug": "oak-a0000603",
             "collection": "oak",
-            "pattern": "herringbone",
+            "pattern": "plank",
             "installationSystem": "glue",
             "price": 79.2,
             "gtin": "A0000603",
             "categories": "Oak Parquet",
             "isFinished": false,
             "finishType": "unfinished",
-            "constructionType": "engineered",
+            "constructionType": "solid",
             "woodSpecies": "oak",
-            "mountingType": "plank",
             "manufacturerProductId": "C224",
-            "woodGrade": null,
+            "woodGrade": "rustic",
             "surfaceTreatment": null,
             "images": [
                 "A0000603.webp",
@@ -3103,20 +2794,20 @@
             ],
             "imageAlt": {
                 "en": "C224 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет C224 - Премиум естествен дъбов под"
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "C224",
-                    "description": "C224 engineered oak plank features rustic grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "This product comes unfinished and can be customized with color treatments (11 colors available), brushing, or lacquering.",
+                    "name": "Natural oak",
+                    "description": "This oak parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, bringing warmth and comfort to any space.",
+                    "finishingNote": "The parquet is unfinished, allowing for individual finish of your choice through oil treatment (in one of 11 available colors), brushing, or lacquering.",
                     "features": [
                         "100% natural oak",
+                        "oak plank",
                         "rustic grade",
-                        "unfinished",
-                        "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered plank"
+                        "unfinished surface",
+                        "14mm total thickness",
+                        "plank construction"
                     ],
                     "seo": {
                         "title": "C224 Oak Parquet | Rustic Unfinished",
@@ -3126,88 +2817,46 @@
                             "unfinished parquet",
                             "rustic oak",
                             "engineered parquet bulgaria",
-                            "underfloor heating parquet",
                             "natural oak flooring",
-                            "parquet c224",
+                            "parquet",
                             "oak planks"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Natural Oak",
-                            "grade": "Rustic",
-                            "finish": "Unfinished"
-                        },
-                        "installation": {
-                            "method": "Glue-down",
-                            "vGroove": "V-groove on 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 years residential, 5 years commercial",
-                            "countryOfProduction": "Netherlands"
+                            "warranty": "10 years residential, 5 years commercial"
                         }
                     }
                 },
                 "bg": {
-                    "name": "C224",
-                    "description": "Дъбов ламелен паркет C224 се отличава с рустичен характер и необработена повърхност. Този висококачествен под съчетава естествената красота на дървото с издръжливост и е идеален за създаване на елегантна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт е необработен и може да бъде завършен по избор с третиранe в цвят (11 налични цвята), релефно четкане или лакиране.",
+                    "name": "Естествен дъбов паркет",
+                    "description": "Този дъбовият паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
+                    "finishingNote": "Паркетът е необработен, което позволява индивидуален завършек по ваш избор чрез омасляване (в един от 11 налични цвята), четкане или лакиране.",
                     "features": [
                         "100% естествен дъб",
-                        "рустик класиране",
-                        "необработен",
-                        "подходящ за подово отопление",
-                        "14 мм дебелина",
-                        "ламелен паркет"
+                        "Рустик качество",
+                        "Необработена повърхност",
+                        "Обща дебелина 14 мм",
+                        "Ламелна конструкция"
                     ],
                     "seo": {
-                        "title": "C224 Дъбов Паркет | Рустик Необработен",
-                        "description": "Дъбов паркет C224 с рустик класиране. Необработен, издръжлив, подходящ за подово отопление.",
+                        "title": "Необработен Дъбов Паркет | Рустик | Холандско Качество",
+                        "description": "Дъбов паркет с редене рибена кост. Този необработен под предлага висока издръжливост, холандско качество и е идеален за подово отопление.",
                         "keywords": [
                             "дъбов паркет",
                             "необработен паркет",
                             "рустик дъб",
-                            "ламелен паркет българия",
-                            "паркет за подово отопление",
                             "естествен дъбов под",
-                            "паркет c224",
-                            "дъбови ламели",
-                            "паркет софия"
+                            "паркет",
+                            "дъбов паркет рибена кост",
+                            "паркет София",
+                            "холандски паркет",
+                            "дъбов паркет цени"
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "N/A mm",
-                            "width": "N/A mm",
-                            "thickness": "N/A mm"
-                        },
-                        "appearance": {
-                            "color": "Естествен дъб",
-                            "grade": "Рустик",
-                            "finish": "Необработен"
-                        },
-                        "installation": {
-                            "method": "Лепене",
-                            "vGroove": "V-канал по 2 sides",
-                            "coveragePerPack": "N/A m²"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Подходящ",
-                            "thermalResistance": "N/A"
-                        },
                         "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална",
-                            "countryOfProduction": "Холандия"
+                            "warranty": "10 години гаранция за жилищна употреба, 5 години за търговски обекти"
                         }
                     }
                 }
@@ -3234,6 +2883,30 @@
                     "whitewash",
                     "black"
                 ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
+                    "width": "240",
+                    "thickness": "19"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "not-suitable",
+                    "thermalResistance": "0.16"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
             }
         }
     ]

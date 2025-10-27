@@ -130,7 +130,7 @@ export function ProductStyleCard({
                         <Stack spacing={1}>
                             {dimensions && (
                                 <Typography>
-                                    {dimensions} × 1.1 cm
+                                    {dimensions}
                                 </Typography>
                             )}
                             <Typography variant="body1">

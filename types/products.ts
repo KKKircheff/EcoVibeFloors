@@ -28,32 +28,58 @@ export interface ImageAltText {
  */
 export type ProductImages = string[];
 
+/**
+ * Product dimensions in millimeters (stored as numeric strings without units)
+ * Units are appended via translation keys (products.units.mm)
+ * Example: { length: "1900", width: "260", thickness: "14" }
+ */
 export interface Dimensions {
-    length?: string;
-    width?: string;
-    thickness?: string;
+    length?: string; // In mm, without unit (e.g., "1900")
+    width?: string; // In mm, without unit (e.g., "260")
+    thickness?: string; // In mm, without unit (e.g., "14")
 }
 
+/**
+ * Appearance specifications using standardized codes
+ * Codes are translated via products.specValues.appearance.{field}.{code}
+ */
 export interface Appearance {
-    color?: string;
-    structure?: string;
+    colorCode?: string; // e.g., "natural-oak", "brown"
+    gradeCode?: string; // e.g., "select", "rustic"
+    finishCode?: string; // e.g., "unfinished", "lacquered"
+    structureCode?: string; // e.g., "lightly-brushed", "textured"
+    materialCode?: string; // e.g., "vinyl", "rigid-mineral-vinyl"
 }
 
+/**
+ * Installation specifications using standardized codes
+ * Technical identifiers (vGroove, clickSystem) remain as-is
+ */
 export interface Installation {
-    vGroove?: string;
-    clickSystem?: string;
+    methodCode?: string; // e.g., "glue-down", "click"
+    vGroove?: string; // Technical spec (e.g., "4-MV", "2-sides")
+    clickSystem?: string; // Technical spec (e.g., "Fastclick", "UniZip")
+    coveragePerPack?: string; // Numeric value with unit
 }
 
+/**
+ * Performance specifications
+ * Boolean/simple values use codes, numeric values stay as-is
+ */
 export interface Performance {
-    waterResistance?: string;
-    thermalResistance?: string;
-    underfloorHeating?: string;
+    underfloorHeatingCode?: string; // e.g., "suitable", "not-suitable"
+    waterResistanceCode?: string; // e.g., "excellent", "good"
+    thermalResistance?: string; // Numeric value (e.g., "0.07m² K/W")
 }
 
+/**
+ * Certification specifications
+ * Warranty text stays as localized, country uses code
+ */
 export interface Certifications {
-    qualityMark?: string;
-    warranty?: string;
-    countryOfProduction?: string;
+    qualityMark?: string; // Certification names (e.g., "Blue Angel")
+    warranty?: string; // Localized text (stays in i18n)
+    countryCode?: string; // e.g., "netherlands", "germany"
 }
 
 export interface Specifications {
@@ -77,7 +103,7 @@ export interface LocalizedContent {
     finishingNote?: string | null; // Note about finishing options for unfinished products
     features?: string[];
     seo: SEOMetadata;
-    specifications?: Specifications;
+    specifications?: Specifications; // DEPRECATED: Move to product.specifications (root level). Only warranty text stays here.
 }
 
 export interface I18nContent {
@@ -112,6 +138,9 @@ export interface Product {
     i18n: I18nContent;
 
     metadata?: ProductMetadata;
+
+    // Product specifications (language-agnostic, at root level)
+    specifications?: Specifications;
 
     // Oak-specific fields
     isFinished?: boolean;

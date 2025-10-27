@@ -1,0 +1,308 @@
+{
+    "neverTranslate": [
+        "Floer",
+        "Ter Hürne",
+        "Dutch Interior Group",
+        "DIG",
+        "MEGAMAT",
+        "CLICKitEASY",
+        "SmartConnect",
+        "Hywood",
+        "vGroove"
+    ],
+    "brandNames": {
+        "Floer": {
+            "keepOriginal": true,
+            "note": "Dutch manufacturer brand name"
+        },
+        "Ter Hürne": {
+            "keepOriginal": true,
+            "note": "German manufacturer brand name - note umlaut (ü)"
+        },
+        "Dutch Interior Group": {
+            "keepOriginal": true,
+            "abbreviation": "DIG",
+            "note": "Parent company for oak products"
+        }
+    },
+    "productNames": {
+        "Hybrid Wood": {
+            "asProductName": "keep English in titles/headings",
+            "inDescriptions": "can translate or explain in Bulgarian",
+            "bgTranslation": "Хибридно дърво",
+            "examples": {
+                "title": "Колекция Hybrid Wood",
+                "description": "хибридни дървени подове с истински дъбов слой",
+                "explanation": "водоустойчив паркет с хибридна конструкция"
+            },
+            "note": "Floer proprietary product - balance brand recognition with understanding"
+        },
+        "Hywood": {
+            "keepOriginal": true,
+            "bgExplanation": "хибридни дървени подове от Ter Hürne",
+            "note": "Ter Hürne's version of hybrid wood flooring"
+        }
+    },
+    "technicalTerms": {
+        "vGroove": {
+            "bg": "V-канал",
+            "alternatives": ["V-фуга", "V-профил"],
+            "usage": "technical specifications",
+            "note": "Industry term recognized by professionals and customers"
+        },
+        "click system": {
+            "bg": "клик система",
+            "usage": "installation method - universal term",
+            "note": "Standard Bulgarian flooring industry term"
+        },
+        "floating installation": {
+            "bg": "плаващ монтаж",
+            "usage": "installation method without glue",
+            "note": "Common term in Bulgarian market"
+        },
+        "glue-down": {
+            "bg": "за залепване",
+            "alternatives": ["монтаж чрез залепване", "залепващ монтаж"],
+            "usage": "installation method with adhesive",
+            "note": "Permanent installation method"
+        },
+        "engineered wood": {
+            "bg": "многослоен паркет",
+            "alternatives": ["трислоен паркет (for 3-layer specifically)"],
+            "usage": "product category",
+            "note": "Bulgarians understand both terms - prefer specific layer count when known"
+        },
+        "solid wood": {
+            "bg": "масивен паркет",
+            "usage": "product category",
+            "note": "Well-established term in Bulgarian market"
+        },
+        "wear layer": {
+            "bg": "горен слой",
+            "alternatives": ["работен слой"],
+            "usage": "technical specification",
+            "note": "Thickness of top layer affects durability"
+        },
+        "top layer": {
+            "bg": "горен слой",
+            "usage": "technical specification",
+            "note": "Same as wear layer in context"
+        },
+        "usage class": {
+            "bg": "клас на износване",
+            "alternatives": ["клас на натоварване"],
+            "usage": "durability rating (23, 31, 33, etc.)",
+            "note": "Industry standard classification"
+        },
+        "underfloor heating": {
+            "bg": "подово отопление",
+            "usage": "compatibility feature",
+            "note": "Critical feature for Bulgarian market"
+        },
+        "water-resistant": {
+            "bg": "водоустойчив",
+            "usage": "key selling point",
+            "note": "Important for kitchen/bathroom applications"
+        },
+        "waterproof": {
+            "bg": "водонепропусклив",
+            "alternatives": ["100% водоустойчив"],
+            "usage": "complete water protection",
+            "note": "Stronger claim than water-resistant"
+        },
+        "brushed": {
+            "bg": "четкан",
+            "usage": "surface treatment",
+            "note": "Standard Bulgarian term for brushed wood"
+        },
+        "oiled": {
+            "bg": "омаслен",
+            "usage": "surface finish type",
+            "note": "Natural oil treatment"
+        },
+        "lacquered": {
+            "bg": "лакиран",
+            "usage": "surface finish type",
+            "note": "Protective coating finish"
+        },
+        "hand-scraped": {
+            "bg": "ръчно обработен",
+            "alternatives": ["с ръчна обработка"],
+            "usage": "artisanal finish",
+            "note": "Premium feature indicating craftsmanship"
+        },
+        "select grade": {
+            "bg": "селект качество",
+            "usage": "wood quality classification",
+            "note": "Minimal knots and color variation - premium grade"
+        },
+        "rustic grade": {
+            "bg": "рустик качество",
+            "usage": "wood quality classification",
+            "note": "Natural character with knots and color variation"
+        },
+        "herringbone": {
+            "bg": "рибена кост",
+            "alternatives": ["рибена кост"],
+            "usage": "pattern type",
+            "note": "Bulgarian-specific term 'рибена кост'"
+        },
+        "chevron": {
+            "bg": "шеврон",
+            "alternatives": ["френски паркет"],
+            "usage": "pattern type",
+            "note": "V-shaped pattern, distinct from herringbone"
+        },
+        "plank": {
+            "bg": "дъска",
+            "alternatives": ["паркетна дъска", "ламел"],
+            "usage": "format type",
+            "note": "Standard long format flooring"
+        }
+    },
+    "qualityTerms": {
+        "premium": {
+            "bg": "премиум",
+            "alternatives": ["висококачествен", "елитен"],
+            "usage": "quality positioning",
+            "note": "Use 'премиум' or 'висококачествен' - both work well in Bulgarian"
+        },
+        "luxury": {
+            "bg": "луксозен",
+            "alternatives": ["елитен", "ексклузивен"],
+            "usage": "high-end positioning",
+            "note": "Acceptable but 'премиум' often preferred for flooring"
+        },
+        "Dutch quality": {
+            "bg": "холандско качество",
+            "usage": "origin positioning",
+            "note": "Positive association with European quality standards"
+        },
+        "German quality": {
+            "bg": "германско качество",
+            "usage": "origin positioning",
+            "note": "Very strong positive association in Bulgarian market"
+        },
+        "European quality": {
+            "bg": "европейско качество",
+            "usage": "general quality positioning",
+            "note": "Good but less specific than Dutch/German"
+        },
+        "extended warranty": {
+            "bg": "удължена гаранция",
+            "usage": "trust builder",
+            "note": "Always include year count: 'удължена 25-годишна гаранция'"
+        },
+        "warranty": {
+            "bg": "гаранция",
+            "usage": "quality assurance",
+            "note": "Critical trust factor - always specify duration"
+        },
+        "certified": {
+            "bg": "сертифициран",
+            "alternatives": ["с сертификат"],
+            "usage": "quality proof",
+            "note": "Important for quality perception"
+        },
+        "REACH certified": {
+            "bg": "сертифициран по REACH",
+            "alternatives": ["със сертификат REACH", "европейски стандарт REACH"],
+            "usage": "safety certification",
+            "note": "European chemical safety regulation"
+        }
+    },
+    "marketingPhrases": {
+        "revolutionary": {
+            "avoidLiteral": true,
+            "bgAlternatives": ["иновативен", "съвременен", "усъвършенстван"],
+            "note": "Bulgarian buyers prefer 'proven innovation' over 'revolutionary' (sounds risky)"
+        },
+        "cutting-edge": {
+            "avoidLiteral": true,
+            "bgAlternatives": ["най-съвременен", "модерен", "с напреднала технология"],
+            "note": "Focus on proven technology rather than novelty"
+        },
+        "innovative": {
+            "bg": "иновативен",
+            "usage": "acceptable if balanced with quality/warranty claims",
+            "note": "OK to use but pair with concrete benefits"
+        },
+        "sustainable": {
+            "bg": "устойчив",
+            "alternatives": ["екологичен", "с грижа за околната среда"],
+            "usage": "environmental positioning",
+            "note": "Growing importance but less critical than quality/durability"
+        },
+        "eco-friendly": {
+            "bg": "екологичен",
+            "alternatives": ["приятелски към околната среда"],
+            "usage": "environmental benefit",
+            "note": "Support claim with specifics (certifications, materials)"
+        },
+        "timeless": {
+            "bg": "вечен",
+            "alternatives": ["неподвластен на времето", "класически"],
+            "usage": "aesthetic appeal",
+            "note": "Works well for traditional oak flooring"
+        },
+        "modern living": {
+            "bg": "съвременен живот",
+            "alternatives": ["модерен дом", "днешен начин на живот"],
+            "usage": "lifestyle positioning",
+            "note": "Connect to practical benefits (waterproof, easy maintenance)"
+        },
+        "worry-free": {
+            "bg": "без притеснения",
+            "alternatives": ["без грижи", "спокойствие"],
+            "usage": "peace of mind benefit",
+            "note": "Effective when paired with warranty/durability claims"
+        }
+    },
+    "avoidPatterns": {
+        "overliteraltranslations": {
+            "examples": [
+                {
+                    "en": "revolutionary hybrid technology",
+                    "badBg": "революционна хибридна технология",
+                    "reason": "Sounds robotic and unnatural, 'revolutionary' implies untested/risky"
+                },
+                {
+                    "en": "cutting-edge innovation",
+                    "badBg": "иновация на най-висок ръст",
+                    "reason": "Literal translation of idiom doesn't work in Bulgarian"
+                },
+                {
+                    "en": "worry-free living",
+                    "badBg": "живот без притеснения",
+                    "reason": "Too literal, needs context: 'без притеснения за подовата настилка'"
+                }
+            ]
+        },
+        "vagueclaims": {
+            "examples": [
+                {
+                    "en": "high quality",
+                    "badBg": "високо качество",
+                    "betterBg": "германско качество с 25-годишна гаранция",
+                    "reason": "Be specific - origin + warranty = credible quality claim"
+                },
+                {
+                    "en": "durable flooring",
+                    "badBg": "издръжлива подова настилка",
+                    "betterBg": "износоустойчива настилка клас 33 с горен слой 3.5 мм",
+                    "reason": "Concrete specs build trust better than adjectives"
+                }
+            ]
+        },
+        "missingtrust builders": {
+            "examples": [
+                {
+                    "en": "Premium Dutch flooring",
+                    "badBg": "Премиум холандски подови настилки",
+                    "betterBg": "Премиум холандски подови настилки с удължена 25-годишна гаранция",
+                    "reason": "Always add warranty when possible - critical trust signal"
+                }
+            ]
+        }
+    }
+}

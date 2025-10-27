@@ -6,7 +6,12 @@
         "description": "Enhanced product data with collection/pattern structure and i18n (array format)",
         "lastSorted": "2025-10-05T10:29:27.422Z",
         "lastRefined": "2025-10-05T17:33:32.407Z",
-        "refinementNote": "Manually rewritten Bulgarian texts with natural language"
+        "refinementNote": "Manually rewritten Bulgarian texts with natural language",
+        "lastUpdated": "2025-10-27T11:19:14.542Z",
+        "dimensionsStandardized": "2025-10-27T10:30:59.072Z",
+        "specificationsNormalized": "2025-10-27T11:12:12.517Z",
+        "specificationsMigrated": "2025-10-27T11:19:14.542Z",
+        "specificationsStructure": "root-level-coded"
     },
     "products": [
         {
@@ -27,7 +32,10 @@
                 "Floer-Hybride-Hout-Natuur-Eiken-Subtiel-sfeer-3.webp",
                 "Floer-Hybride-Hout-Natuur-Eiken-Subtiel-sfeer-4.webp"
             ],
-            "displayImages": [2, 4],
+            "displayImages": [
+                2,
+                4
+            ],
             "imageAlt": {
                 "en": "Hybrid Wood - Natural Oak Subtle - Premium plank flooring example",
                 "bg": "Естествен дъбов паркет с фина текстура - премиум качество"
@@ -70,28 +78,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0.07m² K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "25 Years"
                         }
                     }
                 },
@@ -125,37 +113,44 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0.07m² K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "25 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.847Z",
                 "updatedAt": "2025-10-01T06:31:24.041Z"
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "2375",
+                    "width": "270",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "Fastclick"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "waterResistanceCode": "good",
+                    "thermalResistance": "0.07m² K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel, Emission A+ Certification",
+                    "countryCode": "germany"
+                }
             }
         },
         {
@@ -217,28 +212,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0.07m² K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "25 Years"
                         }
                     }
                 },
@@ -271,39 +246,49 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0.07m² K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "25 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.845Z",
                 "updatedAt": "2025-10-01T06:31:24.054Z"
             },
-            "displayImages": [0, 6]
+            "displayImages": [
+                0,
+                6
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "2375",
+                    "width": "270",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "Fastclick"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "waterResistanceCode": "good",
+                    "thermalResistance": "0.07m² K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel, Emission A+ Certification",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5002",
@@ -379,28 +364,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0.07m² K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "25 Years"
                         }
                     }
                 },
@@ -434,39 +399,49 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0.07m² K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "25 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 21,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.851Z",
                 "updatedAt": "2025-10-01T06:31:24.044Z"
             },
-            "displayImages": [0, 20]
+            "displayImages": [
+                0,
+                20
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "2375",
+                    "width": "270",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "Fastclick"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "waterResistanceCode": "good",
+                    "thermalResistance": "0.07m² K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel, Emission A+ Certification",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5003",
@@ -528,28 +503,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0.07m² K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "25 Years"
                         }
                     }
                 },
@@ -583,39 +538,49 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0.07m² K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "25 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.849Z",
                 "updatedAt": "2025-10-01T06:31:24.055Z"
             },
-            "displayImages": [0, 6]
+            "displayImages": [
+                0,
+                6
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "2375",
+                    "width": "270",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "Fastclick"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "waterResistanceCode": "good",
+                    "thermalResistance": "0.07m² K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel, Emission A+ Certification",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5010",
@@ -677,28 +642,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Бял",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0.07m² K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "25 Years"
                         }
                     }
                 },
@@ -732,39 +677,49 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0.07m² K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "White",
-                            "structure": "Ligthly brushed"
+                            "warranty": "25 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.852Z",
                 "updatedAt": "2025-10-01T06:31:24.047Z"
             },
-            "displayImages": [0, 6]
+            "displayImages": [
+                0,
+                6
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "2375",
+                    "width": "270",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "white",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "Fastclick"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "waterResistanceCode": "good",
+                    "thermalResistance": "0.07m² K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel, Emission A+ Certification",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5004",
@@ -826,28 +781,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Бял",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0.07m² K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "25 Years"
                         }
                     }
                 },
@@ -881,39 +816,49 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0.07m² K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "White",
-                            "structure": "Ligthly brushed"
+                            "warranty": "25 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.844Z",
                 "updatedAt": "2025-10-01T06:31:24.044Z"
             },
-            "displayImages": [0, 6]
+            "displayImages": [
+                0,
+                6
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "2375",
+                    "width": "270",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "white",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "Fastclick"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "waterResistanceCode": "good",
+                    "thermalResistance": "0.07m² K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel, Emission A+ Certification",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5006",
@@ -975,28 +920,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0.07m² K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "25 Years"
                         }
                     }
                 },
@@ -1030,39 +955,49 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0.07m² K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "25 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.840Z",
                 "updatedAt": "2025-10-01T06:31:24.045Z"
             },
-            "displayImages": [0, 6]
+            "displayImages": [
+                0,
+                6
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "2375",
+                    "width": "270",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "Fastclick"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "waterResistanceCode": "good",
+                    "thermalResistance": "0.07m² K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel, Emission A+ Certification",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5007",
@@ -1124,28 +1059,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0.07m² K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "25 Years"
                         }
                     }
                 },
@@ -1179,39 +1094,49 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0.07m² K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "25 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.839Z",
                 "updatedAt": "2025-10-01T06:31:24.054Z"
             },
-            "displayImages": [0, 6]
+            "displayImages": [
+                0,
+                6
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "2375",
+                    "width": "270",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "Fastclick"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "waterResistanceCode": "good",
+                    "thermalResistance": "0.07m² K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel, Emission A+ Certification",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5008",
@@ -1274,28 +1199,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0.07m² K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "25 Years"
                         }
                     }
                 },
@@ -1330,39 +1235,49 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0.07m² K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "25 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.843Z",
                 "updatedAt": "2025-10-01T06:31:24.046Z"
             },
-            "displayImages": [0, 6]
+            "displayImages": [
+                0,
+                6
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "2375",
+                    "width": "270",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "Fastclick"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "waterResistanceCode": "good",
+                    "thermalResistance": "0.07m² K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel, Emission A+ Certification",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5009",
@@ -1425,28 +1340,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0.07m² K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "25 Years"
                         }
                     }
                 },
@@ -1481,39 +1376,49 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0.07m² K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "25 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.842Z",
                 "updatedAt": "2025-10-01T06:31:24.053Z"
             },
-            "displayImages": [0, 6]
+            "displayImages": [
+                0,
+                6
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "2375",
+                    "width": "270",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "Fastclick"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "waterResistanceCode": "good",
+                    "thermalResistance": "0.07m² K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel, Emission A+ Certification",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5013",
@@ -1574,28 +1479,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0.07m² K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "25 Years"
                         }
                     }
                 },
@@ -1627,39 +1512,49 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0.07m² K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "25 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 8,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.837Z",
                 "updatedAt": "2025-10-01T06:31:24.057Z"
             },
-            "displayImages": [0, 7]
+            "displayImages": [
+                0,
+                7
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "2375",
+                    "width": "270",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "Fastclick"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "waterResistanceCode": "good",
+                    "thermalResistance": "0.07m² K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel, Emission A+ Certification",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5012",
@@ -1720,28 +1615,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "waterResistance": "Добра",
-                            "thermalResistance": "0.07m² K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "25 Years"
                         }
                     }
                 },
@@ -1774,39 +1649,49 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "237.5 cm",
-                            "width": "27 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "Fastclick"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "waterResistance": "Good",
-                            "thermalResistance": "0.07m² K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel, Emission A+ Certification",
-                            "warranty": "25 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "25 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.853Z",
                 "updatedAt": "2025-10-01T06:31:24.056Z"
             },
-            "displayImages": [0, 6]
+            "displayImages": [
+                0,
+                6
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "2375",
+                    "width": "270",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "Fastclick"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "waterResistanceCode": "good",
+                    "thermalResistance": "0.07m² K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel, Emission A+ Certification",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5016",
@@ -1866,27 +1751,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Бял",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "thermalResistance": "0\\,075m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "20 Years"
                         }
                     }
                 },
@@ -1918,38 +1784,48 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "0\\,075m2K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "White",
-                            "structure": "Ligthly brushed"
+                            "warranty": "20 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.834Z",
                 "updatedAt": "2025-10-01T06:31:24.048Z"
             },
-            "displayImages": [0, 6]
+            "displayImages": [
+                0,
+                6
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "700",
+                    "width": "140",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "white",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "UniZip"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "0,075m2K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5014",
@@ -2008,27 +1884,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "thermalResistance": "0\\,075m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "20 Years"
                         }
                     }
                 },
@@ -2059,38 +1916,48 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "0\\,075m2K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "20 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.823Z",
                 "updatedAt": "2025-10-01T06:31:24.052Z"
             },
-            "displayImages": [0, 6]
+            "displayImages": [
+                0,
+                6
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "700",
+                    "width": "140",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "UniZip"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "0,075m2K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5015",
@@ -2149,27 +2016,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "thermalResistance": "0\\,075m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "20 Years"
                         }
                     }
                 },
@@ -2200,38 +2048,48 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "0\\,075m2K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "20 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 7,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.831Z",
                 "updatedAt": "2025-10-01T06:31:24.049Z"
             },
-            "displayImages": [0, 6]
+            "displayImages": [
+                0,
+                6
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "700",
+                    "width": "140",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "UniZip"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "0,075m2K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5017",
@@ -2300,27 +2158,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "thermalResistance": "0\\,075m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "20 Years"
                         }
                     }
                 },
@@ -2352,38 +2191,48 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "0\\,075m2K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "20 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 16,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.828Z",
                 "updatedAt": "2025-10-01T06:31:24.051Z"
             },
-            "displayImages": [0, 15]
+            "displayImages": [
+                0,
+                15
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "700",
+                    "width": "140",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "UniZip"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "0,075m2K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5018",
@@ -2440,27 +2289,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Beige, Grey",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "thermalResistance": "0\\,075m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "20 Years"
                         }
                     }
                 },
@@ -2493,38 +2323,48 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "0\\,075m2K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Beige, Grey",
-                            "structure": "Ligthly brushed"
+                            "warranty": "20 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 3,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.826Z",
                 "updatedAt": "2025-10-01T06:31:24.058Z"
             },
-            "displayImages": [2, 1]
+            "displayImages": [
+                2,
+                1
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "700",
+                    "width": "140",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "beige-grey",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "UniZip"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "0,075m2K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel",
+                    "countryCode": "germany"
+                }
+            }
         },
         {
             "sku": "FLR-5019",
@@ -2582,27 +2422,8 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "appearance": {
-                            "color": "Кафяв",
-                            "structure": "Леко структуриран"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "thermalResistance": "0\\,075m2K/W",
-                            "underfloorHeating": "Подходящ"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Произведено в Германия"
+                            "warranty": "20 Years"
                         }
                     }
                 },
@@ -2635,38 +2456,48 @@
                         ]
                     },
                     "specifications": {
-                        "dimensions": {
-                            "length": "70 cm",
-                            "width": "14 cm",
-                            "thickness": "1.1 cm"
-                        },
-                        "installation": {
-                            "vGroove": "4-MV",
-                            "clickSystem": "UniZip"
-                        },
-                        "performance": {
-                            "underfloorHeating": "Suitable",
-                            "thermalResistance": "0\\,075m2K/W"
-                        },
                         "certifications": {
-                            "qualityMark": "Blue Angel",
-                            "warranty": "20 Years",
-                            "countryOfProduction": "Made in Germany"
-                        },
-                        "appearance": {
-                            "color": "Brown",
-                            "structure": "Ligthly brushed"
+                            "warranty": "20 Years"
                         }
                     }
                 }
             },
             "metadata": {
                 "totalImages": 4,
-                "imageSizes": ["thumbnail", "full"],
+                "imageSizes": [
+                    "thumbnail",
+                    "full"
+                ],
                 "createdAt": "2025-10-01T06:31:18.833Z",
                 "updatedAt": "2025-10-01T06:31:24.059Z"
             },
-            "displayImages": [2, 4]
+            "displayImages": [
+                2,
+                4
+            ],
+            "specifications": {
+                "dimensions": {
+                    "length": "700",
+                    "width": "140",
+                    "thickness": "11"
+                },
+                "appearance": {
+                    "colorCode": "brown",
+                    "structureCode": "lightly-brushed"
+                },
+                "installation": {
+                    "vGroove": "4-mv",
+                    "clickSystem": "UniZip"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "0,075m2K/W"
+                },
+                "certifications": {
+                    "qualityMark": "Blue Angel",
+                    "countryCode": "germany"
+                }
+            }
         }
     ]
 }

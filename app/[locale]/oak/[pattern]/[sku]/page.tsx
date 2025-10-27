@@ -118,21 +118,22 @@ export default async function OakProductPage({ params }: ProductPageProps) {
     ];
 
     // Build spec categories for ProductSpecs component
-    const specs = localizedContent.specifications;
+    const specs = product.specifications;
     const dimensions = specs?.dimensions;
     const specCategories: SpecCategory[] = [];
 
     // Dimensions
     if (dimensions) {
+        const unit = tProducts('units.mm');
         const dimensionSpecs: { label: string; value: string }[] = [];
         if (dimensions.length) {
-            dimensionSpecs.push({ label: tProducts('length'), value: dimensions.length });
+            dimensionSpecs.push({ label: tProducts('length'), value: `${dimensions.length} ${unit}` });
         }
         if (dimensions.width) {
-            dimensionSpecs.push({ label: tProducts('width'), value: dimensions.width });
+            dimensionSpecs.push({ label: tProducts('width'), value: `${dimensions.width} ${unit}` });
         }
         if (dimensions.thickness) {
-            dimensionSpecs.push({ label: tProducts('thickness'), value: dimensions.thickness });
+            dimensionSpecs.push({ label: tProducts('thickness'), value: `${dimensions.thickness} ${unit}` });
         }
         if (dimensionSpecs.length > 0) {
             specCategories.push({
@@ -145,14 +146,29 @@ export default async function OakProductPage({ params }: ProductPageProps) {
     // Appearance
     if (specs?.appearance) {
         const appearanceSpecs: { label: string; value: string }[] = [];
-        if (specs.appearance.color) {
-            appearanceSpecs.push({ label: tProducts('color'), value: specs.appearance.color });
+        if (specs.appearance.colorCode) {
+            appearanceSpecs.push({
+                label: tProducts('color'),
+                value: tProducts(`specValues.appearance.color.${specs.appearance.colorCode}` as keyof Messages['products'])
+            });
         }
-        if (specs.appearance.grade) {
-            appearanceSpecs.push({ label: tProducts('grade'), value: specs.appearance.grade });
+        if (specs.appearance.gradeCode) {
+            appearanceSpecs.push({
+                label: tProducts('grade'),
+                value: tProducts(`specValues.appearance.grade.${specs.appearance.gradeCode}` as keyof Messages['products'])
+            });
         }
-        if (specs.appearance.finish) {
-            appearanceSpecs.push({ label: tProducts('finish'), value: specs.appearance.finish });
+        if (specs.appearance.finishCode) {
+            appearanceSpecs.push({
+                label: tProducts('finish'),
+                value: tProducts(`specValues.appearance.finish.${specs.appearance.finishCode}` as keyof Messages['products'])
+            });
+        }
+        if (specs.appearance.structureCode) {
+            appearanceSpecs.push({
+                label: tProducts('structure'),
+                value: tProducts(`specValues.appearance.structure.${specs.appearance.structureCode}` as keyof Messages['products'])
+            });
         }
         if (appearanceSpecs.length > 0) {
             specCategories.push({
@@ -165,8 +181,11 @@ export default async function OakProductPage({ params }: ProductPageProps) {
     // Installation
     if (specs?.installation) {
         const installationSpecs: { label: string; value: string }[] = [];
-        if (specs.installation.method) {
-            installationSpecs.push({ label: tProducts('installationMethod'), value: specs.installation.method });
+        if (specs.installation.methodCode) {
+            installationSpecs.push({
+                label: tProducts('installationMethod'),
+                value: tProducts(`specValues.installation.method.${specs.installation.methodCode}` as keyof Messages['products'])
+            });
         }
         if (specs.installation.vGroove) {
             installationSpecs.push({ label: tProducts('vGroove'), value: specs.installation.vGroove });
@@ -183,30 +202,38 @@ export default async function OakProductPage({ params }: ProductPageProps) {
     }
 
     // Performance & Certifications
-    if (specs?.performance || specs?.certifications) {
+    const localizedSpecs = localizedContent.specifications;
+    if (specs?.performance || specs?.certifications || localizedSpecs?.certifications) {
         const performanceSpecs: { label: string; value: string }[] = [];
-        if (specs.performance?.underfloorHeating) {
+        if (specs?.performance?.underfloorHeatingCode) {
             performanceSpecs.push({
                 label: tProducts('underfloorHeating'),
-                value: specs.performance.underfloorHeating
+                value: tProducts(`specValues.performance.underfloorHeating.${specs.performance.underfloorHeatingCode}` as keyof Messages['products'])
             });
         }
-        if (specs.performance?.thermalResistance) {
+        if (specs?.performance?.waterResistanceCode) {
+            performanceSpecs.push({
+                label: tProducts('waterResistance'),
+                value: tProducts(`specValues.performance.waterResistance.${specs.performance.waterResistanceCode}` as keyof Messages['products'])
+            });
+        }
+        if (specs?.performance?.thermalResistance) {
             performanceSpecs.push({
                 label: tProducts('thermalResistance'),
                 value: specs.performance.thermalResistance
             });
         }
-        if (specs.certifications?.warranty) {
-            performanceSpecs.push({
-                label: tProducts('warranty'),
-                value: specs.certifications.warranty
-            });
-        }
-        if (specs.certifications?.countryOfProduction) {
+        if (specs?.certifications?.countryCode) {
             performanceSpecs.push({
                 label: tProducts('countryOfProduction'),
-                value: specs.certifications.countryOfProduction
+                value: tProducts(`specValues.certifications.country.${specs.certifications.countryCode}` as keyof Messages['products'])
+            });
+        }
+        // Warranty stays in i18n (localized text)
+        if (localizedSpecs?.certifications?.warranty) {
+            performanceSpecs.push({
+                label: tProducts('warranty'),
+                value: localizedSpecs.certifications.warranty
             });
         }
         if (performanceSpecs.length > 0) {
@@ -281,7 +308,7 @@ export default async function OakProductPage({ params }: ProductPageProps) {
                                         borderColor: 'info.main'
                                     }}
                                 >
-                                    <Typography variant="body2" color="info.dark">
+                                    <Typography variant="body2" color="info.400">
                                         <strong>{tOak('finishingOptions')}:</strong> {product.i18n[locale as keyof typeof product.i18n].finishingNote}
                                     </Typography>
                                 </Box>
