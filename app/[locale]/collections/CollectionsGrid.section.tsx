@@ -17,7 +17,6 @@ export function CollectionsGrid({ title, subtitle }: CollectionsGridProps) {
 
     return (
         <Stack spacing={6}
-            // bgcolor={{ xs: palette.secondary.light, md: palette.secondary.light }}
             bgcolor={{ xs: 'grey.100', md: 'grey.100' }}
             mx={0}
             px={{ xs: 0, md: 6 }}

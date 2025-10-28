@@ -16,7 +16,7 @@
         "save": "Save",
         "delete": "Delete",
         "edit": "Edit",
-        "exploreCollection": "Explore Collection",
+        "exploreCollection": "Explore Collections",
         "sendInquiry": "Send Inquiry",
         "backHome": "Back to Home",
         "contactNow": "Contact Now",
@@ -61,16 +61,14 @@
     },
     "navigation": {
         "home": "Home",
-        "Home": "Home",
         "collections": "Collections",
-        "Collections": "Collections",
         "about": "About",
         "oak": "Natural Oak",
-        "Premium_Oak": "Premium Oak",
+        "Premium_Oak": "Natural Oak",
         "Premium_Oak_Custom_Crafted": "Premium Oak Custom Crafted",
         "Hybrid_Wood": "Hybrid Wood",
-        "Click_Vinyl": "Click Vinyl",
-        "Glue-Down_Vinyl": "Glue-Down Vinyl",
+        "Click_Vinyl": "Vinyl Click",
+        "Glue-Down_Vinyl": "Vinyl Glue-Down",
         "All_Collections": "All Collections",
         "blog": "Blog",
         "Blog": "Blog",
@@ -80,16 +78,8 @@
         "naturalOak": "Natural Oak",
         "hybridWood": "Hybrid Wood",
         "burgerMenuButton": "Menu",
-        "Premium_Oak": "Quality Natural Oak",
-        "Hybrid_Wood": "Premium Hybrid Wood",
-        "Premium_Oak_Custom_Crafted": "Premium Natural Oak",
-        "Click_Vinyl": "Click Vinyl",
-        "Glue-Down_Vinyl": "Glue-Down Vinyl",
-        "All_Collections": "All Collections",
         "Home": "Home",
-        "Collections": "Collections",
-        "Contact": "Contact",
-        "Blog": "Blog"
+        "Collections": "Collections"
     },
     "breadcrumb": {
         "home": "Home",
@@ -202,13 +192,13 @@
                 "viewCollection": "View Collection"
             },
             "clickVinyl": {
-                "title": "Premium Click Vinyl Floors",
+                "title": "Premium Click Vinyl",
                 "text": "Easy-to-install DIY-friendly vinyl with innovative i4F click system. 100% waterproof protection perfect for kitchens and bathrooms. No adhesive needed. Phthalate-free with 20-year warranty. Five distinct collections from Floer Netherlands.",
                 "learnMore": "Learn More",
                 "viewCollection": "View Collection"
             },
             "glueDownVinyl": {
-                "title": "Premium Glue-Down Vinyl Floors",
+                "title": "Premium Glue-Down Vinyl",
                 "text": "Professional-grade dryback vinyl for permanent installation. Maximum stability ideal for commercial spaces and high-traffic areas. 100% waterproof with superior durability. Usage class up to 42. 20-year warranty from Floer Netherlands.",
                 "learnMore": "Learn More",
                 "viewCollection": "View Collection"
@@ -224,7 +214,6 @@
         "names": {
             "hybridWood": "Hybrid Wood",
             "hybrid-wood": "Hybrid Wood",
-            "oak": "Natural Oak",
             "clickVinyl": "Click Vinyl",
             "click-vinyl": "Click Vinyl",
             "glueDownVinyl": "Glue-Down Vinyl",
@@ -460,31 +449,6 @@
     "notFound": {
         "title": "Page Not Found",
         "description": "The page you're looking for doesn't exist or has been moved."
-    },
-    "oak": {
-        "pageTitle": "Premium Oak Collection",
-        "hero": {
-            "title": "Premium Oak Collection",
-            "subtitle": "Discover our natural oak cozy flooring collection"
-        },
-        "patterns": {
-            "title": "Available Patterns & Styles",
-            "plank": {
-                "title": "Oak Planks",
-                "dimensions": "Various sizes",
-                "description": "Classic plank design showcasing natural oak beauty with customizable finishing options perfect for any interior."
-            },
-            "herringbone": {
-                "title": "Herringbone Pattern",
-                "dimensions": "Various sizes",
-                "description": "Timeless herringbone pattern adds elegance and sophistication, perfect for traditional and contemporary spaces."
-            },
-            "chevron": {
-                "title": "Chevron Pattern",
-                "dimensions": "Various sizes",
-                "description": "Distinctive chevron design creates dynamic visual flow and architectural interest for sophisticated interiors."
-            }
-        }
     },
     "customOak": {
         "pageTitle": "Premium Oak Custom Crafted Collection",

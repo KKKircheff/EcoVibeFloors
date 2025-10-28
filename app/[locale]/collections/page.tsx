@@ -29,7 +29,6 @@ export default async function CollectionsPage({ params }: CollectionsPageProps) 
     return (
         <Stack>
             <CollectionsHero />
-            {/* <PageLayoutContainer bgcolor={{ xs: palette.secondary.light, md: palette.secondary.light }}> */}
             <PageLayoutContainer bgcolor={{ xs: 'grey.100', md: 'grey.200' }}>
                 <CollectionsGrid title={c('title')} subtitle={t('hero.subtitle')} />
             </PageLayoutContainer>

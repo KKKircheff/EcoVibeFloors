@@ -201,7 +201,6 @@ export default async function OakProductPage({ params }: ProductPageProps) {
         }
     }
 
-    // Performance & Certifications
     const localizedSpecs = localizedContent.specifications;
     if (specs?.performance || specs?.certifications || localizedSpecs?.certifications) {
         const performanceSpecs: { label: string; value: string }[] = [];
@@ -283,10 +282,38 @@ export default async function OakProductPage({ params }: ProductPageProps) {
 
                                 <Chip
                                     label={product.isFinished ? tOak('finished') : tOak('unfinished')}
-                                    color={product.isFinished ? 'success' : 'primary'}
+                                    color={product.isFinished ? 'secondary' : 'primary'}
                                     size="small"
                                 />
                             </Stack>
+
+                            <Divider />
+
+                            {/* Dimensions */}
+                            {dimensions && (
+                                <Stack spacing={1.5}>
+                                    {/* <Typography variant="h6" fontWeight={500} color="text.primary">
+                                        {tProducts('dimensions')}
+                                    </Typography> */}
+                                    <Stack spacing={0.5}>
+                                        {dimensions.length && (
+                                            <Typography variant="body1" color="info.400">
+                                                <strong>{tProducts('length')}:</strong> {dimensions.length} {tProducts('units.mm')}
+                                            </Typography>
+                                        )}
+                                        {dimensions.width && (
+                                            <Typography variant="body1" color="info.400">
+                                                <strong>{tProducts('width')}:</strong> {dimensions.width} {tProducts('units.mm')}
+                                            </Typography>
+                                        )}
+                                        {dimensions.thickness && (
+                                            <Typography variant="body1" color="info.400">
+                                                <strong>{tProducts('thickness')}:</strong> {dimensions.thickness} {tProducts('units.mm')}
+                                            </Typography>
+                                        )}
+                                    </Stack>
+                                </Stack>
+                            )}
 
                             <Divider />
 
@@ -302,17 +329,26 @@ export default async function OakProductPage({ params }: ProductPageProps) {
                                 <Box
                                     sx={{
                                         p: 2,
-                                        bgcolor: 'info.50',
+                                        bgcolor: 'primary.100',
                                         borderRadius: 1,
                                         borderLeft: 4,
-                                        borderColor: 'info.main'
+                                        borderColor: 'primary.500'
                                     }}
                                 >
-                                    <Typography variant="body2" color="info.400">
+                                    <Typography variant="body2" color="info.500">
                                         <strong>{tOak('finishingOptions')}:</strong> {product.i18n[locale as keyof typeof product.i18n].finishingNote}
                                     </Typography>
                                 </Box>
                             )}
+
+                            {!product.isFinished && product.finishingOptions?.colorTreatments && (
+                                <TreatmentSwatchGallery
+                                    treatments={allTreatments}
+                                    availableSlugs={product.finishingOptions.colorTreatments}
+                                />)
+                            }
+
+                            <Divider />
 
                             {/* Action Buttons */}
                             <ProductActions

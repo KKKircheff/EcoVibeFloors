@@ -1,7 +1,6 @@
 'use client'
 export const dynamic = 'force-dynamic';
 import { Box, Stack, Typography, IconButton, Badge } from "@mui/material";
-import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import { useRouter } from '@/i18n/navigation';
 import { Locale, navRoutes } from '@/i18n/routing';
 import React, { useState } from "react";

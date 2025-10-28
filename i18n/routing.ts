@@ -63,12 +63,12 @@ export const navRoutes: NavRoute[] = [
                 icon: '',
                 visible: true,
             },
-            {
-                name: 'All Collections',
-                path: '/collections',
-                icon: '',
-                visible: true,
-            },
+            // {
+            //     name: 'All Collections',
+            //     path: '/collections',
+            //     icon: '',
+            //     visible: true,
+            // },
         ],
     },
     {

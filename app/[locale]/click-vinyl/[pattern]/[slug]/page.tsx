@@ -286,11 +286,6 @@ export default async function ClickVinylProductPage({ params }: ProductDetailPag
                                         €{product.price.toFixed(2)}
                                     </Typography>
                                 </Stack>
-
-                                {/* <Stack direction="row" spacing={1} flexWrap="wrap">
-                                    <Chip label={patternName} color="secondary" size="small" />
-                                    <Chip label={installationSystemName} color="secondary" variant="outlined" size="small" />
-                                </Stack> */}
                             </Stack>
 
                             <Divider />

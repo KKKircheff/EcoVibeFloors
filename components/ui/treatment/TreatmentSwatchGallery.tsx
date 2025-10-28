@@ -1,11 +1,10 @@
 'use client';
-import React, { useState } from 'react';
-import { Box, Stack, Typography, IconButton, Tooltip } from '@mui/material';
+import React from 'react';
+import { Box, Stack, Typography, Tooltip } from '@mui/material';
 import Image from 'next/image';
 import { useRouter } from '@/i18n/navigation';
 import { useLocale, useTranslations } from 'next-intl';
 import { OakTreatment } from '@/types/treatments';
-import { ChevronLeft, ChevronRight } from '@mui/icons-material';
 
 export interface TreatmentSwatchGalleryProps {
     treatments: OakTreatment[];
@@ -17,9 +16,6 @@ export function TreatmentSwatchGallery({ treatments, availableSlugs }: Treatment
     const locale = useLocale();
     const t = useTranslations('oak');
 
-    const [scrollPosition, setScrollPosition] = useState(0);
-    const containerRef = React.useRef<HTMLDivElement>(null);
-
     // Filter treatments if availableSlugs is provided
     const filteredTreatments = availableSlugs
         ? treatments.filter(treatment => availableSlugs.includes(treatment.slug))
@@ -29,149 +25,99 @@ export function TreatmentSwatchGallery({ treatments, availableSlugs }: Treatment
         router.push(`/oak/treatments/${slug}`);
     };
 
-    const scroll = (direction: 'left' | 'right') => {
-        if (!containerRef.current) return;
-
-        const scrollAmount = 300;
-        const newPosition = direction === 'left'
-            ? scrollPosition - scrollAmount
-            : scrollPosition + scrollAmount;
-
-        containerRef.current.scrollTo({
-            left: newPosition,
-            behavior: 'smooth'
-        });
-
-        setScrollPosition(newPosition);
-    };
-
     if (filteredTreatments.length === 0) {
         return null;
     }
 
     return (
-        <Stack spacing={3}>
-            {/* Scrollable swatches container */}
-            <Box sx={{ position: 'relative' }}>
-                {/* Left scroll button */}
-                <IconButton
-                    onClick={() => scroll('left')}
-                    disabled={scrollPosition <= 0}
-                    sx={{
-                        position: 'absolute',
-                        left: -20,
-                        top: '50%',
-                        transform: 'translateY(-50%)',
-                        zIndex: 2,
-                        bgcolor: 'background.paper',
-                        boxShadow: 2,
-                        '&:hover': {
-                            bgcolor: 'grey.100',
-                        },
-                        '&:disabled': {
-                            display: 'none',
-                        }
-                    }}
-                >
-                    <ChevronLeft />
-                </IconButton>
+        <Stack spacing={0}>
+            {/* Swatches container */}
+            <Box
+                sx={{
+                    display: 'flex',
+                    gap: 2,
+                    // Desktop: wrap to multiple rows
+                    flexWrap: { xs: 'nowrap', md: 'wrap' },
+                    // Mobile: horizontal scroll
+                    overflowX: { xs: 'auto', md: 'visible' },
+                    overflowY: 'visible',
+                    pb: { xs: 1, md: 2 },
+                    pt: 0.5,
+                    // Scrollbar styling (mobile only)
+                    '&::-webkit-scrollbar': {
+                        height: 8,
+                    },
+                    '&::-webkit-scrollbar-track': {
+                        backgroundColor: 'grey.200',
+                        borderRadius: 1,
+                    },
+                    '&::-webkit-scrollbar-thumb': {
+                        backgroundColor: 'primary.main',
+                        borderRadius: 1,
+                    },
+                }}
+            >
+                {filteredTreatments.map((treatment) => {
+                    const localizedContent = treatment.i18n[locale as keyof typeof treatment.i18n];
 
-                {/* Swatches container */}
-                <Box
-                    ref={containerRef}
-                    sx={{
-                        display: 'flex',
-                        gap: 2,
-                        overflowX: 'auto',
-                        scrollbarWidth: 'none',
-                        '&::-webkit-scrollbar': {
-                            display: 'none',
-                        },
-                        pb: 2,
-                    }}
-                >
-                    {filteredTreatments.map((treatment) => {
-                        const localizedContent = treatment.i18n[locale as keyof typeof treatment.i18n];
-
-                        return (
-                            <Tooltip key={treatment.slug} title={localizedContent.name} placement="top">
+                    return (
+                        <Tooltip key={treatment.slug} title={localizedContent.name} placement="top">
+                            <Box
+                                onClick={() => handleTreatmentClick(treatment.slug)}
+                                sx={{
+                                    minWidth: { xs: 80, md: 120 },
+                                    width: { xs: 80, md: 120 },
+                                    cursor: 'pointer',
+                                    transition: 'all 0.2s',
+                                    '&:hover': {
+                                        transform: 'scale(1.05)',
+                                        zIndex: '10 !important',
+                                    }
+                                }}
+                            >
+                                {/* Square image container */}
                                 <Box
-                                    onClick={() => handleTreatmentClick(treatment.slug)}
                                     sx={{
-                                        minWidth: { xs: 100, md: 120 },
-                                        width: { xs: 100, md: 120 },
-                                        cursor: 'pointer',
-                                        transition: 'all 0.2s',
+                                        position: 'relative',
+                                        width: '100%',
+                                        paddingBottom: '100%',
+                                        borderRadius: 2,
+                                        overflow: 'hidden',
+                                        border: 1,
+                                        borderColor: 'divider',
                                         '&:hover': {
-                                            transform: 'scale(1.05)',
+                                            // boxShadow: 4,
                                         }
                                     }}
                                 >
-                                    {/* Square image container */}
-                                    <Box
-                                        sx={{
-                                            position: 'relative',
-                                            width: '100%',
-                                            paddingBottom: '100%',
-                                            borderRadius: 2,
-                                            overflow: 'hidden',
-                                            boxShadow: 2,
-                                            border: 2,
-                                            borderColor: 'divider',
-                                            '&:hover': {
-                                                borderColor: 'primary.main',
-                                                boxShadow: 4,
-                                            }
-                                        }}
-                                    >
-                                        <Image
-                                            src={treatment.images[0]}
-                                            alt={treatment.imageAlt[locale as keyof typeof treatment.imageAlt]}
-                                            fill
-                                            sizes="120px"
-                                            style={{ objectFit: 'cover' }}
-                                        />
-                                    </Box>
-
-                                    {/* Treatment name */}
-                                    <Typography
-                                        variant="caption"
-                                        sx={{
-                                            display: 'block',
-                                            textAlign: 'center',
-                                            mt: 1,
-                                            fontWeight: 500,
-                                            overflow: 'hidden',
-                                            textOverflow: 'ellipsis',
-                                            whiteSpace: 'nowrap',
-                                        }}
-                                    >
-                                        {localizedContent.name}
-                                    </Typography>
+                                    <Image
+                                        src={treatment.images[0]}
+                                        alt={treatment.imageAlt[locale as keyof typeof treatment.imageAlt]}
+                                        fill
+                                        sizes="(max-width: 768px) 80px, 120px"
+                                        style={{ objectFit: 'cover' }}
+                                    />
                                 </Box>
-                            </Tooltip>
-                        );
-                    })}
-                </Box>
 
-                {/* Right scroll button */}
-                <IconButton
-                    onClick={() => scroll('right')}
-                    sx={{
-                        position: 'absolute',
-                        right: -20,
-                        top: '50%',
-                        transform: 'translateY(-50%)',
-                        zIndex: 2,
-                        bgcolor: 'background.paper',
-                        boxShadow: 2,
-                        '&:hover': {
-                            bgcolor: 'grey.100',
-                        }
-                    }}
-                >
-                    <ChevronRight />
-                </IconButton>
+                                {/* Treatment name */}
+                                <Typography
+                                    variant="caption"
+                                    sx={{
+                                        display: 'block',
+                                        textAlign: 'center',
+                                        mt: 1,
+                                        fontWeight: 500,
+                                        overflow: 'hidden',
+                                        textOverflow: 'ellipsis',
+                                        whiteSpace: 'nowrap',
+                                    }}
+                                >
+                                    {localizedContent.name}
+                                </Typography>
+                            </Box>
+                        </Tooltip>
+                    );
+                })}
             </Box>
 
             {/* View all treatments link */}

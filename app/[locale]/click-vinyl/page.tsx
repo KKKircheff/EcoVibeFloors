@@ -5,11 +5,8 @@ import { setRequestLocale, getTranslations } from 'next-intl/server';
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
 import { ClickVinylHero } from './(sections)/ClickVinylHero.section';
-import { ClickVinylOverview } from './(sections)/ClickVinylOverview.section';
 import { ClickVinylCollections } from './(sections)/ClickVinylCollections.section';
 import { ClickVinylFeatures } from './(sections)/ClickVinylFeatures.section';
-import { ClickVinylComparison } from './(sections)/ClickVinylComparison.section';
-import { ClickVinylInstallation } from './(sections)/ClickVinylInstallation.section';
 import Footer from '@/components/layout/footer/Footer.component';
 import { ClickVinylCTA } from './(sections)/ClickVinylCTA.section';
 

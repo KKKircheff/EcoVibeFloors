@@ -16,11 +16,23 @@ export const palette = {
         900: '#2f262b',
     },
     secondary: {
-        main: '#ebdfd6',
-        light: '#efe5de',
-        dark: '#222125',
-        contrastText: '#111',
+        main: '#87b3a9',
+        light: '#a3c4bc',
+        dark: '#698881',
+        contrastText: '#FFF',
     },
+    // secondary: {
+    //     main: '#00a1baff',
+    //     light: '#60b4c7',
+    //     dark: '#17798c',
+    //     contrastText: '#FFF',
+    // },
+    // tertary: {
+    //     main: '#ebdfd6',
+    //     light: '#efe5de',
+    //     dark: '#222125',
+    //     contrastText: '#111',
+    // },
     info: {
         main: '#38363f',
         light: '#cfced1',
