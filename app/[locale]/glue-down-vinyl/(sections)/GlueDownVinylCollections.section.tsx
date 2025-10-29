@@ -1,7 +1,7 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
 import { getStyleCardImages } from '@/lib/utils/getStyleCardImages';
-import { ProductStylesGrid } from '@/components/ui/product/ProductStylesGrid';
+import { ProductCollectionGrid } from '@/components/ui/product/ProductCollectionGrid';
 
 export async function GlueDownVinylCollections() {
     const t = await getTranslations('glueDownVinyl.collections');
@@ -40,7 +40,7 @@ export async function GlueDownVinylCollections() {
     ];
 
     return (
-        <ProductStylesGrid
+        <ProductCollectionGrid
             title={t('title')}
             styles={stylesConfig}
         />

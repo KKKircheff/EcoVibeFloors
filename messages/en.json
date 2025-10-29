@@ -220,7 +220,11 @@
             "glue-down-vinyl": "Glue-Down Vinyl",
             "vinyl": "Vinyl",
             "oak": "Natural Oak",
-            "customOak": "Premium Oak"
+            "customOak": "Premium Oak",
+            "solid": "Solid",
+            "engineered": "3-layer ",
+            "rustic": "Rustic charm",
+            "select": "Select elegance"
         },
         "clickVinyl": {
             "description": "Easy-to-install click vinyl flooring combining Dutch quality with 100% waterproof performance and DIY-friendly installation"
@@ -535,13 +539,13 @@
             "title": "Available Styles & Formats",
             "xlPlanks": {
                 "title": "Planks",
-                "dimensions": "237cm × 27cm",
+                "dimensions": "2370 mm × 270 mm x 11 mm",
                 "description": "Extra-long planks create a spacious, modern aesthetic perfect for contemporary interiors and open-plan living spaces.",
                 "imageCaption": "[Image: Room showcasing XL plank hybrid wood flooring]"
             },
             "herringbone": {
                 "title": "Herringbone Pattern",
-                "dimensions": "70cm × 14cm",
+                "dimensions": "700 mm × 140 mm x 11 mm",
                 "description": "Classic herringbone pattern adds elegance and sophistication to any space, perfect for traditional and modern interiors.",
                 "imageCaption": "[Image: Herringbone pattern hybrid wood flooring installation]"
             }
@@ -1093,6 +1097,162 @@
             "title": "Create Your Perfect Oak Floor",
             "content": "Discover the possibilities of natural oak flooring with customizable finishes. Our experts are ready to help you select the perfect combination.",
             "cta": "Contact us today for samples and consultation"
+        }
+    },
+    "oakFlooring": {
+        "pageTitle": "What is 3-Layer Oak Flooring? | Premium Engineered Oak",
+        "hero": {
+            "title": "What is 3-Layer Oak Flooring?",
+            "subtitle": "Premium Dutch engineered oak combining natural beauty with superior stability and durability for modern living.",
+            "learnMore": "Learn More"
+        },
+        "construction": {
+            "title": "Engineered for Excellence",
+            "subtitle": "3-Layer Construction Technology",
+            "description": "Three-layer engineered oak flooring represents the perfect balance between authentic natural wood and modern engineering. Unlike solid wood, the multi-layer construction features a premium 3mm oak top layer bonded to a stable plywood core, creating a floor that resists warping, cupping, and seasonal movement.",
+            "benefits": {
+                "title": "Why 3-Layer Construction?",
+                "stability": {
+                    "title": "Superior Dimensional Stability",
+                    "description": "Wood grains run in opposite directions through the layers, preventing warping and ensuring long-term stability even in fluctuating humidity"
+                },
+                "moisture": {
+                    "title": "Enhanced Moisture Resistance",
+                    "description": "The engineered core provides better resistance to moisture compared to solid wood, making it suitable for more environments"
+                },
+                "heating": {
+                    "title": "Underfloor Heating Compatible",
+                    "description": "Unlike solid oak, 3-layer construction allows efficient heat transfer without risk of damage to the floor"
+                },
+                "versatile": {
+                    "title": "Versatile Installation",
+                    "description": "Can be installed over concrete, plywood, or existing floors - perfect for renovations where subfloors vary"
+                }
+            }
+        },
+        "features": {
+            "title": "Premium Oak Features",
+            "naturalOak": {
+                "title": "100% Natural Oak Top Layer",
+                "description": "Authentic 3mm oak veneer showcasing natural grain patterns, knots, and character for timeless beauty"
+            },
+            "engineered": {
+                "title": "3-Layer Engineered Construction",
+                "description": "Multi-directional wood grain structure provides exceptional stability and resistance to seasonal changes"
+            },
+            "oilTreatment": {
+                "title": "UV LED Oil Treatment",
+                "description": "Advanced instant-curing oil technology enhances durability, natural appearance, and scratch resistance"
+            },
+            "customizable": {
+                "title": "11 Customizable Color Options",
+                "description": "From natural tones to warm browns and cool greys - create your perfect floor with professional color treatments"
+            },
+            "underfloorHeating": {
+                "title": "Underfloor Heating Ready",
+                "description": "Optimized thermal properties make it perfectly compatible with radiant heating systems"
+            },
+            "dutchQuality": {
+                "title": "Dutch Quality & Warranty",
+                "description": "Manufactured in the Netherlands with 10-year residential and 5-year commercial warranty"
+            }
+        },
+        "oilTreatment": {
+            "title": "UV LED Oil Treatment Technology",
+            "subtitle": "Advanced Protection That Enhances Natural Beauty",
+            "description": "Our oak floors feature cutting-edge UV LED Hardwax oil treatment - a revolutionary finishing technology that provides instant curing, exceptional durability, and enhanced natural wood appearance. This eco-friendly process penetrates deep into the wood fibers while creating a protective surface layer.",
+            "benefits": {
+                "title": "Why UV LED Oil Treatment?",
+                "instantCuring": {
+                    "title": "Instant Curing Technology",
+                    "description": "UV LED light cures the oil instantly, eliminating long drying times and allowing immediate use of your floor"
+                },
+                "naturalLook": {
+                    "title": "Enhanced Natural Appearance",
+                    "description": "Oil penetrates wood fibers to preserve the authentic look and feel while enriching grain patterns and color depth"
+                },
+                "durability": {
+                    "title": "Superior Durability",
+                    "description": "Creates a hard-wearing finish highly resistant to scratches, stains, and environmental wear"
+                },
+                "ecoFriendly": {
+                    "title": "Environmentally Friendly",
+                    "description": "Low VOC formulations are safer for indoor air quality and align with sustainability goals"
+                }
+            },
+            "colorOptions": {
+                "title": "11 Professional Color Treatments Available",
+                "description": "Transform your oak flooring with certified color treatments applied before UV oil finishing"
+            }
+        },
+        "styles": {
+            "title": "Available Patterns",
+            "description": "Choose from classic plank layouts or elegant herringbone patterns to match your interior design vision",
+            "plank": {
+                "title": "Classic Plank",
+                "dimensions": "Various dimensions available",
+                "description": "Traditional straight plank layout creates clean lines and timeless elegance, perfect for contemporary and classic interiors alike"
+            },
+            "herringbone": {
+                "title": "Elegant Herringbone",
+                "dimensions": "Various dimensions available",
+                "description": "Sophisticated zigzag pattern adds architectural interest and visual movement, creating a luxurious statement floor"
+            }
+        },
+        "specifications": {
+            "title": "Technical Specifications",
+            "technical": {
+                "title": "Technical Details",
+                "thickness": "Total Thickness",
+                "topLayer": "Oak Top Layer",
+                "dimensions": "Plank Dimensions",
+                "usageClass": "Usage Class",
+                "values": {
+                    "thickness": "14 mm",
+                    "topLayer": "3 mm natural oak",
+                    "dimensions": "1900 x 260 mm (typical)",
+                    "usageClass": "Class 23 (Residential)"
+                }
+            },
+            "installation": {
+                "title": "Installation",
+                "method": "Installation Method",
+                "vGroove": "V-Groove",
+                "coverage": "Coverage per Pack",
+                "values": {
+                    "method": "Glue-down installation",
+                    "vGroove": "2-sided V-groove",
+                    "coverage": "Varies by product"
+                }
+            },
+            "performance": {
+                "title": "Performance",
+                "underfloorHeating": "Underfloor Heating",
+                "warranty": "Warranty",
+                "origin": "Origin",
+                "values": {
+                    "underfloorHeating": "Fully compatible",
+                    "warranty": "10 years residential / 5 years commercial",
+                    "origin": "Made in the Netherlands"
+                }
+            }
+        },
+        "sustainability": {
+            "title": "Sustainable Dutch Craftsmanship",
+            "subtitle": "Quality That Respects Nature",
+            "content": "Our 3-layer oak flooring combines traditional Dutch craftsmanship with modern sustainability practices. By using engineered construction with a 3mm oak top layer, we preserve valuable oak resources while maintaining authentic natural beauty. The UV LED oil treatment uses low-VOC formulations that are safer for your home and the environment.",
+            "points": {
+                "dutchCraftsmanship": "Traditional Dutch manufacturing excellence with European quality standards",
+                "sustainableSourcing": "Responsible oak sourcing with efficient use of natural resources",
+                "lowVOC": "Eco-friendly UV LED oil treatments with minimal volatile organic compounds",
+                "longevity": "Durable construction ensures decades of use, reducing replacement needs and waste"
+            }
+        },
+        "cta": {
+            "title": "Discover Our Oak Collection",
+            "content": "Ready to experience the beauty of premium 3-layer oak flooring? Explore our complete collection featuring multiple patterns, finishes, and color treatments.",
+            "button": "Explore Oak Collection",
+            "contact": "Contact us for finishing consultation and samples"
         }
     },
     "whatIsHybridWood": {

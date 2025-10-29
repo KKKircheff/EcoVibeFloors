@@ -19,7 +19,7 @@ const pulse = keyframes`
   }
 `;
 
-export function ProductStyleCardSkeleton() {
+export function ProductCollectionCardSkeleton() {
     return (
         <Stack spacing={1} sx={{ height: '100%' }}>
             <Stack

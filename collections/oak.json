@@ -4,14 +4,15 @@
         "totalProducts": 21,
         "collection": "oak",
         "description": "Natural oak parquet collection from Dutch Interior Group. Includes engineered and solid oak options with various finishes and patterns.",
-        "lastUpdated": "2025-10-27T11:19:14.530Z",
+        "lastUpdated": "2025-10-29T19:20:02.725Z",
         "skuFormat": "DIG-{GTIN}",
         "lastPolished": "2025-10-24T12:48:15.042Z",
         "polishedBy": "Mistral AI translation polisher",
         "dimensionsStandardized": "2025-10-27T10:30:59.062Z",
         "specificationsNormalized": "2025-10-27T11:12:12.508Z",
         "specificationsMigrated": "2025-10-27T11:19:14.530Z",
-        "specificationsStructure": "root-level-coded"
+        "specificationsStructure": "root-level-coded",
+        "imagesUpdated": "2025-10-29T19:20:02.726Z"
     },
     "products": [
         {
@@ -30,15 +31,15 @@
             "manufacturerProductId": "C103",
             "woodGrade": "select",
             "surfaceTreatment": null,
-            "images": ["A0000449.webp", "A0000449.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0000449.webp", "2.webp", "3.webp", "4.webp"],
+            "displayImages": [3, 0],
             "imageAlt": {
                 "en": "C103 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Amsterdam",
                     "description": "This premium engineered oak plank flooring features select grade oak with unfinished surface. This high-quality floor combines authentic natural beauty with exceptional durability, creating an elegant and cozy atmosphere in any space.",
                     "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
                     "features": [
@@ -70,7 +71,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Амстердам",
                     "description": "Този премиум естествен под съчетава автентичната красота на дъба с изключителна издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
                     "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
                     "features": [
@@ -148,273 +149,6 @@
             }
         },
         {
-            "sku": "DIG-A0000456",
-            "slug": "oak-a0000456",
-            "collection": "oak",
-            "pattern": "plank",
-            "installationSystem": "glue",
-            "price": 54,
-            "gtin": "A0000456",
-            "categories": "Oak Parquet",
-            "isFinished": false,
-            "finishType": "unfinished",
-            "constructionType": "engineered",
-            "woodSpecies": "oak",
-            "manufacturerProductId": "C104",
-            "woodGrade": "rustic",
-            "surfaceTreatment": null,
-            "images": ["A0000456.webp", "A0000456.webp"],
-            "displayImages": [0, 1],
-            "imageAlt": {
-                "en": "C104 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет - Премиум естествен дъбов под"
-            },
-            "i18n": {
-                "en": {
-                    "name": "Natural oak",
-                    "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
-                    "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
-                    "features": [
-                        "100% natural oak",
-                        "rustic grade",
-                        "unfinished surface",
-                        "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered plank"
-                    ],
-                    "seo": {
-                        "title": "Oak Parquet | Rustic Unfinished",
-                        "description": "Natural oak parquet with rustic grade. Unfinished, durable, suitable for underfloor heating.",
-                        "keywords": [
-                            "oak parquet",
-                            "unfinished parquet",
-                            "rustic oak",
-                            "engineered parquet bulgaria",
-                            "underfloor heating parquet",
-                            "natural oak flooring",
-                            "parquet c104",
-                            "oak planks"
-                        ]
-                    },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "10 years residential, 5 years commercial"
-                        }
-                    }
-                },
-                "bg": {
-                    "name": "Естествен дъбов паркет",
-                    "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
-                    "features": [
-                        "100% естествен дъб",
-                        "Рустик качество",
-                        "Необработена повърхност",
-                        "Подходящ за подово отопление",
-                        "Дебелина 14 мм",
-                        "Ламелен паркет"
-                    ],
-                    "seo": {
-                        "title": "Дъбов Паркет | Рустик | Необработен | Холандско Качество",
-                        "description": "Открийте na[iqt дъбов ламелен паркет от Холандия с рустик качество и необработена повърхност. Издръжлив и подходящ за подово отопление, с възможност за персонализиране на финиша.",
-                        "keywords": [
-                            "дъбов паркет",
-                            "необработен паркет",
-                            "рустик дъбов паркет",
-                            "ламелен паркет",
-                            "паркет за подово отопление",
-                            "естествен дъбов под",
-                            "паркет C104",
-                            "дъбови ламели",
-                            "паркет София",
-                            "холандски паркет"
-                        ]
-                    },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "10 години жилищна употреба, 5 години комерсиална"
-                        }
-                    }
-                }
-            },
-            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c104-rustic/",
-            "finishingOptions": {
-                "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
-                "colorTreatments": [
-                    "abdij",
-                    "english-colour",
-                    "smoked-whitewash",
-                    "greywash",
-                    "chalk-white",
-                    "medium-brown",
-                    "natural",
-                    "smokey",
-                    "weissgrund",
-                    "whitewash",
-                    "black"
-                ]
-            },
-            "specifications": {
-                "dimensions": {
-                    "length": "1900",
-                    "width": "235",
-                    "thickness": "14"
-                },
-                "appearance": {
-                    "colorCode": "natural-oak",
-                    "gradeCode": "rustic",
-                    "finishCode": "unfinished"
-                },
-                "installation": {
-                    "methodCode": "glue-down",
-                    "vGroove": "2-sides",
-                    "coveragePerPack": "N/A m²"
-                },
-                "performance": {
-                    "underfloorHeatingCode": "suitable",
-                    "thermalResistance": "N/A"
-                },
-                "certifications": {
-                    "countryCode": "netherlands"
-                }
-            }
-        },
-        {
-            "sku": "DIG-A0000463",
-            "slug": "oak-a0000463",
-            "collection": "oak",
-            "pattern": "plank",
-            "installationSystem": "glue",
-            "price": 54,
-            "gtin": "A0000463",
-            "categories": "Oak Parquet",
-            "isFinished": false,
-            "finishType": "unfinished",
-            "constructionType": "engineered",
-            "woodSpecies": "oak",
-            "manufacturerProductId": "C110",
-            "woodGrade": "rustic",
-            "surfaceTreatment": "brushed",
-            "images": ["A0000463.webp", "A0000463.webp"],
-            "displayImages": [0, 1],
-            "imageAlt": {
-                "en": "C110 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет - Премиум естествен дъбов под"
-            },
-            "i18n": {
-                "en": {
-                    "name": "Natural oak",
-                    "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
-                    "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
-                    "features": [
-                        "100% natural oak",
-                        "rustic grade",
-                        "unfinished surface",
-                        "suitable for installation over underfloor heating",
-                        "14mm thickness",
-                        "engineered plank for gluing"
-                    ],
-                    "seo": {
-                        "title": "C110 Oak Parquet | Rustic Unfinished",
-                        "description": "C110 oak parquet with rustic grade. Unfinished, durable, suitable for underfloor heating.",
-                        "keywords": [
-                            "oak parquet",
-                            "unfinished parquet",
-                            "rustic oak",
-                            "engineered parquet bulgaria",
-                            "underfloor heating parquet",
-                            "natural oak flooring",
-                            "parquet c110",
-                            "oak planks"
-                        ]
-                    },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "10 years residential, 5 years commercial"
-                        }
-                    }
-                },
-                "bg": {
-                    "name": "Естествен дъбов паркет",
-                    "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
-                    "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
-                    "features": [
-                        "100% естествен дъб",
-                        "Рустик качество",
-                        "Необработена повърхност",
-                        "Подходящ за инсталация върху подово отопление",
-                        "Дебелина 14 мм",
-                        "Ламелен паркет за залепване"
-                    ],
-                    "seo": {
-                        "title": "C110 Дъбов Паркет | Премиум Рустик Необработен",
-                        "description": "Дъбов паркет с рустик качество и необработена повърхност. Холандско производство, издръжлив и подходящ за подово отопление. Открийте елегантност и дълготрайност.",
-                        "keywords": [
-                            "дъбов паркет",
-                            "необработен дъбов паркет",
-                            "рустик дъб",
-                            "ламелен паркет",
-                            "паркет за подово отопление",
-                            "естествен дъбов под",
-                            "паркет C110",
-                            "дъбови ламели",
-                            "холандски паркет",
-                            "премиум паркет",
-                            "паркет София"
-                        ]
-                    },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "10 години за жилищна употреба, 5 години за търговски обекти"
-                        }
-                    }
-                }
-            },
-            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c110-rustic-deep-brushed/",
-            "finishingOptions": {
-                "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
-                "colorTreatments": [
-                    "abdij",
-                    "english-colour",
-                    "smoked-whitewash",
-                    "greywash",
-                    "chalk-white",
-                    "medium-brown",
-                    "natural",
-                    "smokey",
-                    "weissgrund",
-                    "whitewash",
-                    "black"
-                ]
-            },
-            "specifications": {
-                "dimensions": {
-                    "length": "1900",
-                    "width": "190",
-                    "thickness": "14"
-                },
-                "appearance": {
-                    "colorCode": "natural-oak",
-                    "gradeCode": "rustic",
-                    "finishCode": "unfinished"
-                },
-                "installation": {
-                    "methodCode": "glue-down",
-                    "vGroove": "2-sides",
-                    "coveragePerPack": "N/A m²"
-                },
-                "performance": {
-                    "underfloorHeatingCode": "suitable",
-                    "thermalResistance": "N/A"
-                },
-                "certifications": {
-                    "countryCode": "netherlands"
-                }
-            }
-        },
-        {
             "sku": "DIG-A0000120",
             "slug": "oak-a0000120",
             "collection": "oak",
@@ -430,15 +164,15 @@
             "manufacturerProductId": "C12",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000120.webp", "A0000120.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0000120.webp", "2.webp", "3.webp", "4.webp"],
+            "displayImages": [2, 0],
             "imageAlt": {
                 "en": "C12 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Amsterdam",
                     "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
                     "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
                     "features": [
@@ -470,7 +204,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Амстердам",
                     "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
                     "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
                     "features": [
@@ -550,6 +284,139 @@
             }
         },
         {
+            "sku": "DIG-A0000456",
+            "slug": "oak-a0000456",
+            "collection": "oak",
+            "pattern": "plank",
+            "installationSystem": "glue",
+            "price": 54,
+            "gtin": "A0000456",
+            "categories": "Oak Parquet",
+            "isFinished": false,
+            "finishType": "unfinished",
+            "constructionType": "engineered",
+            "woodSpecies": "oak",
+            "manufacturerProductId": "C104",
+            "woodGrade": "rustic",
+            "surfaceTreatment": null,
+            "images": ["A0000456.webp", "2.webp", "3.webp", "4.webp"],
+            "displayImages": [2, 1],
+            "imageAlt": {
+                "en": "C104 Oak Parquet - Premium natural oak flooring",
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
+            },
+            "i18n": {
+                "en": {
+                    "name": "Leiden",
+                    "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
+                    "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
+                    "features": [
+                        "100% natural oak",
+                        "rustic grade",
+                        "unfinished surface",
+                        "suitable for underfloor heating",
+                        "14mm thickness",
+                        "engineered plank"
+                    ],
+                    "seo": {
+                        "title": "Oak Parquet | Rustic Unfinished",
+                        "description": "Natural oak parquet with rustic grade. Unfinished, durable, suitable for underfloor heating.",
+                        "keywords": [
+                            "oak parquet",
+                            "unfinished parquet",
+                            "rustic oak",
+                            "engineered parquet bulgaria",
+                            "underfloor heating parquet",
+                            "natural oak flooring",
+                            "parquet c104",
+                            "oak planks"
+                        ]
+                    },
+                    "specifications": {
+                        "certifications": {
+                            "warranty": "10 years residential, 5 years commercial"
+                        }
+                    }
+                },
+                "bg": {
+                    "name": "Лейден",
+                    "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
+                    "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
+                    "features": [
+                        "100% естествен дъб",
+                        "Рустик качество",
+                        "Необработена повърхност",
+                        "Подходящ за подово отопление",
+                        "Дебелина 14 мм",
+                        "Ламелен паркет"
+                    ],
+                    "seo": {
+                        "title": "Дъбов Паркет | Рустик | Необработен | Холандско Качество",
+                        "description": "Открийте na[iqt дъбов ламелен паркет от Холандия с рустик качество и необработена повърхност. Издръжлив и подходящ за подово отопление, с възможност за персонализиране на финиша.",
+                        "keywords": [
+                            "дъбов паркет",
+                            "необработен паркет",
+                            "рустик дъбов паркет",
+                            "ламелен паркет",
+                            "паркет за подово отопление",
+                            "естествен дъбов под",
+                            "паркет C104",
+                            "дъбови ламели",
+                            "паркет София",
+                            "холандски паркет"
+                        ]
+                    },
+                    "specifications": {
+                        "certifications": {
+                            "warranty": "10 години жилищна употреба, 5 години комерсиална"
+                        }
+                    }
+                }
+            },
+            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c104-rustic/",
+            "finishingOptions": {
+                "available": true,
+                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "colorTreatments": [
+                    "abdij",
+                    "english-colour",
+                    "smoked-whitewash",
+                    "greywash",
+                    "chalk-white",
+                    "medium-brown",
+                    "natural",
+                    "smokey",
+                    "weissgrund",
+                    "whitewash",
+                    "black"
+                ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
+                    "width": "235",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
+            }
+        },
+        {
             "sku": "DIG-A0000029",
             "slug": "oak-a0000029",
             "collection": "oak",
@@ -565,15 +432,15 @@
             "manufacturerProductId": "C3",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000029.webp", "A0000029.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0000029.webp", "2.webp", "3.webp", "4.webp"],
+            "displayImages": [2, 1],
             "imageAlt": {
                 "en": "C3 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Gauda",
                     "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
                     "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
                     "features": [
@@ -605,7 +472,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Гауда",
                     "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
                     "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
                     "features": [
@@ -661,7 +528,141 @@
             },
             "specifications": {
                 "dimensions": {
-                    "length": "190",
+                    "length": "1900",
+                    "width": "190",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
+            }
+        },
+        {
+            "sku": "DIG-A0000463",
+            "slug": "oak-a0000463",
+            "collection": "oak",
+            "pattern": "plank",
+            "installationSystem": "glue",
+            "price": 54,
+            "gtin": "A0000463",
+            "categories": "Oak Parquet",
+            "isFinished": false,
+            "finishType": "unfinished",
+            "constructionType": "engineered",
+            "woodSpecies": "oak",
+            "manufacturerProductId": "C110",
+            "woodGrade": "rustic",
+            "surfaceTreatment": "brushed",
+            "images": ["A0000463.webp", "2.webp", "3.webp", "4.webp"],
+            "displayImages": [2, 0],
+            "imageAlt": {
+                "en": "C110 Oak Parquet - Premium natural oak flooring",
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
+            },
+            "i18n": {
+                "en": {
+                    "name": "Gauda - Brushed",
+                    "description": "This oak plank parquet captivates with authentic rustic character and брусхед surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
+                    "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
+                    "features": [
+                        "100% natural oak",
+                        "rustic grade",
+                        "unfinished surface",
+                        "suitable for installation over underfloor heating",
+                        "14mm thickness",
+                        "engineered plank for gluing"
+                    ],
+                    "seo": {
+                        "title": "C110 Oak Parquet | Rustic Unfinished",
+                        "description": "C110 oak parquet with rustic grade. Unfinished, durable, suitable for underfloor heating.",
+                        "keywords": [
+                            "oak parquet",
+                            "unfinished parquet",
+                            "rustic oak",
+                            "engineered parquet bulgaria",
+                            "underfloor heating parquet",
+                            "natural oak flooring",
+                            "parquet c110",
+                            "oak planks"
+                        ]
+                    },
+                    "specifications": {
+                        "certifications": {
+                            "warranty": "10 years residential, 5 years commercial"
+                        }
+                    }
+                },
+                "bg": {
+                    "name": "Гауда структура",
+                    "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и финна релефна повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
+                    "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
+                    "features": [
+                        "100% естествен дъб",
+                        "Рустик качество",
+                        "Необработена повърхност",
+                        "Подходящ за инсталация върху подово отопление",
+                        "Дебелина 14 мм",
+                        "Ламелен паркет за залепване"
+                    ],
+                    "seo": {
+                        "title": "C110 Дъбов Паркет | Премиум Рустик Необработен",
+                        "description": "Дъбов паркет с рустик качество и необработена повърхност. Холандско производство, издръжлив и подходящ за подово отопление. Открийте елегантност и дълготрайност.",
+                        "keywords": [
+                            "дъбов паркет",
+                            "необработен дъбов паркет",
+                            "рустик дъб",
+                            "ламелен паркет",
+                            "паркет за подово отопление",
+                            "естествен дъбов под",
+                            "паркет C110",
+                            "дъбови ламели",
+                            "холандски паркет",
+                            "премиум паркет",
+                            "паркет София"
+                        ]
+                    },
+                    "specifications": {
+                        "certifications": {
+                            "warranty": "10 години за жилищна употреба, 5 години за търговски обекти"
+                        }
+                    }
+                }
+            },
+            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c110-rustic-deep-brushed/",
+            "finishingOptions": {
+                "available": true,
+                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "colorTreatments": [
+                    "abdij",
+                    "english-colour",
+                    "smoked-whitewash",
+                    "greywash",
+                    "chalk-white",
+                    "medium-brown",
+                    "natural",
+                    "smokey",
+                    "weissgrund",
+                    "whitewash",
+                    "black"
+                ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "1900",
                     "width": "190",
                     "thickness": "14"
                 },
@@ -700,15 +701,15 @@
             "manufacturerProductId": "C38",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000197.webp", "A0000197.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0000197.webp", "2.webp", "3.webp", "4.webp"],
+            "displayImages": [2, 0],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Rotterdam",
                     "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
                     "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
                     "features": [
@@ -740,7 +741,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Ротердам",
                     "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
                     "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
                     "features": [
@@ -834,15 +835,15 @@
             "manufacturerProductId": "C6",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000071.webp", "A0000071.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0000071.webp", "2.webp", "3.webp", "4.webp"],
+            "displayImages": [2, 0],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Utrecht",
                     "description": "Discover our oak plank parquet – embodiment of rustic elegance and natural beauty. This unfinished floor made from 100% oak combines Dutch quality with exceptional durability, offering a perfect base for creating a warm and stylish atmosphere in any home or office.",
                     "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
                     "features": [
@@ -874,7 +875,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Утрехт",
                     "description": "Открийте нашия дъбов ламелен паркет – въплъщение на рустик елегантност и естествена красота. Този необработен под от 100% дъб съчетава холандско качество с изключителна издръжливост, предлагайки перфектна основа за създаване на топла и стилна атмосфера във всеки дом или офис.",
                     "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
                     "features": [
@@ -882,12 +883,12 @@
                         "Рустик качество за автентичен вид",
                         "Необработена повърхност за персонализиран финиш",
                         "Съвместим с подово отопление",
-                        "Оптимална дебелина от 14 мм за здравина",
+                        "Оптимална дебелина от 19 мм за здравина",
                         "Класически ламелен формат"
                     ],
                     "seo": {
                         "title": "Дъбов паркет eiken | Необработен | Рустик качество | Холандски",
-                        "description": "Открийте нашият дъбов ламелен паркет с изразен рустик характер и необработена повърхност. Холандско качество, дебелина 14 мм, подходящ за подово отопление. Създайте уникален интериор.",
+                        "description": "Открийте нашият дъбов ламелен паркет с изразен рустик характер и необработена повърхност. Холандско качество, дебелина 19 мм, подходящ за подово отопление. Създайте уникален интериор.",
                         "keywords": [
                             "дъбов паркет",
                             "необработен дъбов паркет",
@@ -967,15 +968,15 @@
             "manufacturerProductId": "C11",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000113.webp", "A0000113.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0000113.webp", "2.webp", "3.webp", "4.webp"],
+            "displayImages": [2, 0],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Almere",
                     "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
                     "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
                     "features": [
@@ -1007,7 +1008,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Алмере",
                     "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
                     "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
                     "features": [
@@ -1101,15 +1102,15 @@
             "manufacturerProductId": "C960",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0002269.webp", "A0002269.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0002269.webp", "1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp"],
+            "displayImages": [7, 0],
             "imageAlt": {
                 "en": "C960 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Oldenzaal style",
                     "description": "Discover our oak plank parquet – a symbol of rustic elegance and durability. With lacquered finish and natural oak character, it is the ideal solution for creating a warm and stylish atmosphere in any home. Dutch quality with proven longevity.",
                     "finishingNote": null,
                     "features": [
@@ -1141,7 +1142,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Олдензал стил",
                     "description": "Открийте нашия дъбов ламелен паркет – символ на рустик елегантност и издръжливост. С лакирано покритие и естествен дъбов характер, той е идеалното решение за създаване на топла и стилна атмосфера във всеки дом. Холандско качество с доказана дълготрайност.",
                     "finishingNote": null,
                     "features": [
@@ -1218,15 +1219,15 @@
             "manufacturerProductId": "C961",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0002276.webp", "A0002276.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0002276.webp", "1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp"],
+            "displayImages": [5, 0],
             "imageAlt": {
                 "en": "C961 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Oldenzaal",
                     "description": "This oak plank parquet captivates with authentic rustic character and natural unfinished surface. This high-quality floor combines timeless wood beauty with proven durability, creating an elegant and cozy atmosphere in any space.",
                     "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
                     "features": [
@@ -1258,7 +1259,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Олдензал",
                     "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
                     "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
                     "features": [
@@ -1350,15 +1351,15 @@
             "manufacturerProductId": "A0019111",
             "woodGrade": "select",
             "surfaceTreatment": null,
-            "images": ["A0019111.webp", "A0019111.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0019111.webp", "1.webp", "2.webp", "3.webp"],
+            "displayImages": [1, 2],
             "imageAlt": {
                 "en": "noestarm Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Lonneker English Oak",
                     "description": "Natural oak parquet with special surface treatment. This high-quality floor combines natural oak beauty with proven durability, creating a warm and elegant atmosphere in any space.",
                     "finishingNote": null,
                     "features": [
@@ -1390,7 +1391,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Лонекер английски дъб",
                     "description": "Естествен дъбов паркет със специална обработка на повърхността. Този висококачествен под съчетава естествената красота на дъба с доказана издръжливост, създавайки топла и елегантна атмосфера във всяко пространство.",
                     "finishingNote": null,
                     "features": [
@@ -1467,15 +1468,15 @@
             "manufacturerProductId": "A0019104",
             "woodGrade": "select",
             "surfaceTreatment": null,
-            "images": ["A0019104.webp", "A0019104.webp"],
-            "displayImages": [0, 1],
+            "images": ["1.webp", "2.webp", "3.webp", "4.webp"],
+            "displayImages": [1, 0],
             "imageAlt": {
                 "en": "noestarm Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Lonneker Natural Oak",
                     "description": "Natural oak parquet with special surface treatment. This high-quality floor combines natural oak beauty with proven durability, creating a warm and elegant atmosphere in any space.",
                     "finishingNote": null,
                     "features": [
@@ -1507,7 +1508,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркетк",
+                    "name": "Лонекер естествен дъб",
                     "description": "Естествен дъбов паркет със специална обработка на повърхността. Този висококачествен под съчетава естествената красота на дъба с доказана издръжливост, създавайки топла и елегантна атмосфера във всяко пространство.",
                     "finishingNote": null,
                     "features": [
@@ -1583,15 +1584,15 @@
             "manufacturerProductId": "noestarm",
             "woodGrade": "select",
             "surfaceTreatment": null,
-            "images": ["A0019097.webp", "A0019097.webp"],
-            "displayImages": [0, 1],
+            "images": ["1.webp", "2.webp", "3.webp"],
+            "displayImages": [2, 0],
             "imageAlt": {
                 "en": "noestarm Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Lonneker Light Oak",
                     "description": "Natural oak parquet with special surface treatment. This high-quality floor combines natural oak beauty with proven durability, creating a warm and elegant atmosphere in any space.",
                     "finishingNote": null,
                     "features": [
@@ -1623,7 +1624,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркетт",
+                    "name": "Лонекер светъл дъб",
                     "description": "Естествен дъбов паркет със специална обработка на повърхността. Този висококачествен под съчетава естествената красота на дъба с доказана издръжливост, създавайки топла и елегантна атмосфера във всяко пространство.",
                     "finishingNote": null,
                     "features": [
@@ -1699,15 +1700,15 @@
             "manufacturerProductId": "family",
             "woodGrade": "select",
             "surfaceTreatment": null,
-            "images": ["A0019090.webp", "A0019090.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0019090.webp", "2.webp", "3.webp", "4.webp"],
+            "displayImages": [3, 2],
             "imageAlt": {
                 "en": "family Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Lonneker",
                     "description": "High-quality Dutch oak plank parquet - select grade with unfinished surface. Combines natural oak beauty with exceptional durability, offering elegance and comfort in any room.",
                     "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
                     "features": [
@@ -1739,7 +1740,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Лонекер",
                     "description": "Висококачествен холандски дъбов ламелен паркет  – селект  с необработена повърхност. Съчетава естествената красота на дъба с изключителна издръжливост, предлагайки елегантност и уют във всяко помещение.",
                     "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
                     "features": [
@@ -1831,15 +1832,15 @@
             "manufacturerProductId": "rustiek",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0025985.webp", "A0025985.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0025985.webp", "1.webp"],
+            "displayImages": [1, 0],
             "imageAlt": {
                 "en": "rustiek Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Groningen Natural Oak",
                     "description": "Oak plank parquet distinguished by natural rustic character and durable lacquered finish. This high-quality floor combines authentic wood beauty with exceptional durability, creating a warm and elegant atmosphere in any space. Ideal for underfloor heating.",
                     "finishingNote": null,
                     "features": [
@@ -1871,7 +1872,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Хронинген натурален дъб",
                     "description": "Дъбов ламелен паркет, който се отличава с естествен рустик характер и трайно лакирано покритие. Този висококачествен под съчетава автентичната красота на дървото с изключителна издръжливост, създавайки топла и елегантна атмосфера във всяко пространство. Идеален за подово отопление.",
                     "finishingNote": null,
                     "features": [
@@ -1947,15 +1948,15 @@
             "manufacturerProductId": "rustiek",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0025992.webp", "A0025992.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0025992.webp", "1.webp"],
+            "displayImages": [1, 0],
             "imageAlt": {
                 "en": "rustiek Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
             },
             "i18n": {
                 "en": {
-                    "name": "Natural oak",
+                    "name": "Groningen Light Oak",
                     "description": "Discover the beauty of Dutch engineered oak parquet. With pronounced rustic character and lacquer finish, this high-quality floor combines natural wood elegance with excellent durability, creating a warm and cozy atmosphere in any room.",
                     "finishingNote": null,
                     "features": [
@@ -1987,7 +1988,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Хронинген светъл дъб",
                     "description": "Открийте красотата на холандския многослоен дъбов паркет. С изразен рустик характер и лаково покритие, този висококачествен под съчетава естествената елегантност на дървото с отлична издръжливост, създавайки топла и уютна атмосфера във всяко помещение.",
                     "finishingNote": null,
                     "features": [
@@ -2049,399 +2050,6 @@
             }
         },
         {
-            "sku": "DIG-A0002129",
-            "slug": "oak-a0002129",
-            "collection": "oak",
-            "pattern": "herringbone",
-            "installationSystem": "glue",
-            "price": 53.1,
-            "gtin": "A0002129",
-            "categories": "Oak Parquet",
-            "isFinished": false,
-            "finishType": "unfinished",
-            "constructionType": "engineered",
-            "woodSpecies": "oak",
-            "manufacturerProductId": "C908",
-            "woodGrade": "rustic",
-            "surfaceTreatment": null,
-            "images": ["A0002129.webp", "A0002129.webp"],
-            "displayImages": [0, 1],
-            "imageAlt": {
-                "en": "eiken Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет - Премиум естествен дъбов под"
-            },
-            "i18n": {
-                "en": {
-                    "name": "eiken",
-                    "description": "eiken engineered oak herringbone features rustic grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
-                    "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
-                    "features": [
-                        "100% natural oak",
-                        "rustic grade",
-                        "unfinished",
-                        "suitable for underfloor heating",
-                        "14mm thickness",
-                        "engineered herringbone"
-                    ],
-                    "seo": {
-                        "title": "eiken Oak Parquet | Rustic Unfinished",
-                        "description": "eiken oak parquet with rustic grade. Unfinished, durable, suitable for underfloor heating.",
-                        "keywords": [
-                            "oak parquet",
-                            "unfinished parquet",
-                            "rustic oak",
-                            "engineered parquet bulgaria",
-                            "underfloor heating parquet",
-                            "natural oak flooring",
-                            "parquet eiken",
-                            "oak planks"
-                        ]
-                    },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "10 years residential, 5 years commercial"
-                        }
-                    }
-                },
-                "bg": {
-                    "name": "Естествен дъбов паркет",
-                    "description": "Дъбов паркет, който се отличава с автентичен рустик характер, елегантна подредба тип рибена кост и необработена повърхност, предоставяйки възможност за създаване на уникален интериор. Този висококачествен под съчетава естествената красота на дървото с изключителна издръжливост, внасяйки топлина и уют във всяко пространство.",
-                    "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
-                    "features": [
-                        "100% естествен дъб",
-                        "рустик качество",
-                        "рибена кост",
-                        "необработена повърхност",
-                        "подходящ за подово отопление",
-                        "обща дебелина 14 мм",
-                        "ламелен паркет"
-                    ],
-                    "seo": {
-                        "title": "Премиум Дъбов Паркет рибена кост | Рустик и Необработен",
-                        "description": "Дъбов паркет с автентичен рустичен характер. Необработен за персонализиран финиш, изключително издръжлив и подходящ за подово отопление.",
-                        "keywords": [
-                            "дъбов паркет",
-                            "необработен паркет",
-                            "рустик дъб",
-                            "паркет рибена кост",
-                            "паркет за подово отопление",
-                            "естествен дъбов под",
-                            "паркет eiken",
-                            "дъбови ламели",
-                            "паркет софия",
-                            "холандски паркет",
-                            "качествен дъбов паркет",
-                            "паркет за довършване"
-                        ]
-                    },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "10 години гаранция за жилищна употреба, 5 години за търговска"
-                        }
-                    }
-                }
-            },
-            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-visgraat-c908-rustic/",
-            "finishingOptions": {
-                "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
-                "colorTreatments": [
-                    "abdij",
-                    "english-colour",
-                    "smoked-whitewash",
-                    "greywash",
-                    "chalk-white",
-                    "medium-brown",
-                    "natural",
-                    "smokey",
-                    "weissgrund",
-                    "whitewash",
-                    "black"
-                ]
-            },
-            "specifications": {
-                "dimensions": {
-                    "length": "625",
-                    "width": "125",
-                    "thickness": "14"
-                },
-                "appearance": {
-                    "colorCode": "natural-oak",
-                    "gradeCode": "rustic",
-                    "finishCode": "unfinished"
-                },
-                "installation": {
-                    "methodCode": "glue-down",
-                    "vGroove": "2-sides",
-                    "coveragePerPack": "N/A m²"
-                },
-                "performance": {
-                    "underfloorHeatingCode": "suitable",
-                    "thermalResistance": "N/A"
-                },
-                "certifications": {
-                    "countryCode": "netherlands"
-                }
-            }
-        },
-        {
-            "sku": "DIG-A0011054",
-            "slug": "oak-a0011054",
-            "collection": "oak",
-            "pattern": "herringbone",
-            "installationSystem": "glue",
-            "price": 69.3,
-            "gtin": "A0011054",
-            "categories": "Oak Parquet",
-            "isFinished": false,
-            "finishType": "unfinished",
-            "constructionType": "engineered",
-            "woodSpecies": "oak",
-            "manufacturerProductId": "C903",
-            "woodGrade": "select",
-            "surfaceTreatment": "brushed",
-            "images": ["A0011054.webp", "A0011054.webp"],
-            "displayImages": [0, 1],
-            "imageAlt": {
-                "en": "C903 Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет - Премиум естествен дъбов под"
-            },
-            "i18n": {
-                "en": {
-                    "name": "C903",
-                    "description": "Discover our herringbone oak parquet with select grade and natural, unfinished surface. This premium floor combines authentic oak beauty with exceptional durability, offering an elegant base that can be finished according to your unique style.",
-                    "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
-                    "features": ["genuine oak", "select wood grade", "unfinished surface", "herringbone format"],
-                    "seo": {
-                        "title": "C903 Oak Parquet | Select Unfinished",
-                        "description": "C903 oak parquet with select grade. Unfinished, durable, suitable for underfloor heating.",
-                        "keywords": [
-                            "oak parquet",
-                            "unfinished parquet",
-                            "select oak",
-                            "engineered parquet bulgaria",
-                            "natural oak flooring",
-                            "parquet c903",
-                            "oak planks"
-                        ]
-                    },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "10 years residential, 5 years commercial"
-                        }
-                    }
-                },
-                "bg": {
-                    "name": "Естествен дъбов паркет",
-                    "description": "Открийте нашия ламелен дъбов паркет със селект качество и естествена, необработена повърхност. Този премиум под съчетава автентичната красота на дъба с изключителна издръжливост, предлагайки елегантна основа, която може да бъде завършена според вашия уникален стил.",
-                    "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
-                    "features": [
-                        "Истински дъб",
-                        "Селект качество на дървесината",
-                        "Необработена повърхност",
-                        "Ламелен формат"
-                    ],
-                    "seo": {
-                        "title": "Дъбов паркет C903 - Селект качество, необработен | Холандско производство",
-                        "description": "Премиум ламелен дъбов паркет C903 от Холандия със селект качество и необработена повърхност. Идеален за подово отопление и персонализиран завършек.",
-                        "keywords": [
-                            "дъбов паркет",
-                            "необработен паркет",
-                            "селект дъб",
-                            "ламелен паркет",
-                            "паркет за подово отопление",
-                            "естествен дъбов под",
-                            "паркет C903",
-                            "дъбови ламели",
-                            "паркет София",
-                            "холандски паркет",
-                            "премиум паркет"
-                        ]
-                    },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "Удължена 10-годишна гаранция за жилищна употреба, 5 години за търговска"
-                        }
-                    }
-                }
-            },
-            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-visgraat-c903-select-brushed/",
-            "finishingOptions": {
-                "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
-                "colorTreatments": [
-                    "abdij",
-                    "english-colour",
-                    "smoked-whitewash",
-                    "greywash",
-                    "chalk-white",
-                    "medium-brown",
-                    "natural",
-                    "smokey",
-                    "weissgrund",
-                    "whitewash",
-                    "black"
-                ]
-            },
-            "specifications": {
-                "dimensions": {
-                    "length": "500",
-                    "width": "68",
-                    "thickness": "10"
-                },
-                "appearance": {
-                    "colorCode": "natural-oak",
-                    "gradeCode": "select",
-                    "finishCode": "unfinished"
-                },
-                "installation": {
-                    "methodCode": "glue-down",
-                    "vGroove": "2-sides",
-                    "coveragePerPack": "N/A m²"
-                },
-                "performance": {
-                    "underfloorHeatingCode": "not-suitable",
-                    "thermalResistance": "N/A"
-                },
-                "certifications": {
-                    "countryCode": "netherlands"
-                }
-            }
-        },
-        {
-            "sku": "DIG-A0002143",
-            "slug": "oak-a0002143",
-            "collection": "oak",
-            "pattern": "chevron",
-            "installationSystem": "glue",
-            "price": 81,
-            "gtin": "A0002143",
-            "categories": "Oak Parquet",
-            "isFinished": false,
-            "finishType": "unfinished",
-            "constructionType": "engineered",
-            "woodSpecies": "oak",
-            "manufacturerProductId": "C909",
-            "woodGrade": "select",
-            "surfaceTreatment": null,
-            "images": ["A0002143.webp", "A0002143.webp"],
-            "displayImages": [0, 1],
-            "imageAlt": {
-                "en": "eiken Oak Parquet - Premium natural oak flooring",
-                "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
-            },
-            "i18n": {
-                "en": {
-                    "name": "Natural oak",
-                    "description": "Discover our oak parquet with chevron pattern – symbol of refinement. With superior select wood grade and unfinished surface, it offers incomparable natural beauty and freedom for personalized finish. This durable floor is ideal for creating an elegant and cozy atmosphere in any space.",
-                    "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
-                    "features": [
-                        "100% natural oak",
-                        "select wood grade",
-                        "unfinished surface for personalized finish",
-                        "chevron pattern",
-                        "14mm total thickness",
-                        "Dutch production"
-                    ],
-                    "seo": {
-                        "title": "eiken Oak Parquet | Select Unfinished",
-                        "description": "eiken oak parquet with select grade. Unfinished, durable, suitable for underfloor heating.",
-                        "keywords": [
-                            "oak parquet",
-                            "unfinished parquet",
-                            "select oak",
-                            "engineered parquet bulgaria",
-                            "natural oak flooring",
-                            "parquet eiken",
-                            "oak planks"
-                        ]
-                    },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "10 years residential, 5 years commercial"
-                        }
-                    }
-                },
-                "bg": {
-                    "name": "Естествен дъбов паркет",
-                    "description": "Открийте нашия дъбов паркет с подредба 'Шеврон' – символ на изисканост. С превъзходно селект качество на дървесината и необработена повърхност, той предлага несравнима естествена красота и свобода за персонализиран финиш. Този издръжлив под е идеален за създаване на елегантна и уютна атмосфера във всяко пространство, включително и при наличие на подово отопление.",
-                    "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
-                    "features": [
-                        "100% естествен дъб",
-                        "Селект качество на дървесината",
-                        "Необработена повърхност за персонализиран финиш",
-                        "подредба 'Шеврон'",
-                        "шеврон",
-                        "Обща дебелина 14 мм",
-                        "Холандско производство"
-                    ],
-                    "seo": {
-                        "title": "Дъбов Паркет | Селект Качество | Шеврон | Холандия",
-                        "description": "Висококачествен дъбов паркет от Холандия s подредба 'Шеврон'. Селект качество, необработен, идеален за подово отопление. Създайте елегантен и издръжлив под с възможност за персонализирано завършване.",
-                        "keywords": [
-                            "дъбов паркет",
-                            "необработен паркет",
-                            "дъбов паркет селект",
-                            "шеврон паркет",
-                            "естествен дъбов под",
-                            "паркет",
-                            "шеврон",
-                            "холандски паркет",
-                            "паркет за лепене",
-                            "паркет софия"
-                        ]
-                    },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "10 години за жилищна употреба, 5 години за търговски обекти"
-                        }
-                    }
-                }
-            },
-            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-hongaarse-punt-c909-select/",
-            "finishingOptions": {
-                "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
-                "colorTreatments": [
-                    "abdij",
-                    "english-colour",
-                    "smoked-whitewash",
-                    "greywash",
-                    "chalk-white",
-                    "medium-brown",
-                    "natural",
-                    "smokey",
-                    "weissgrund",
-                    "whitewash",
-                    "black"
-                ]
-            },
-            "specifications": {
-                "dimensions": {
-                    "length": "657",
-                    "width": "125",
-                    "thickness": "14"
-                },
-                "appearance": {
-                    "colorCode": "natural-oak",
-                    "gradeCode": "select",
-                    "finishCode": "unfinished"
-                },
-                "installation": {
-                    "methodCode": "glue-down",
-                    "vGroove": "2-sides",
-                    "coveragePerPack": "N/A m²"
-                },
-                "performance": {
-                    "underfloorHeatingCode": "not-suitable",
-                    "thermalResistance": "N/A"
-                },
-                "certifications": {
-                    "countryCode": "netherlands"
-                }
-            }
-        },
-        {
             "sku": "DIG-A0000008",
             "slug": "oak-a0000008",
             "collection": "oak",
@@ -2457,8 +2065,8 @@
             "manufacturerProductId": "C2",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000008.webp", "A0000008.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0000008.webp", "1.webp"],
+            "displayImages": [1, 0],
             "imageAlt": {
                 "en": "C2 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -2495,7 +2103,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Естествен дъб",
                     "description": "Този дъбовият ламелен паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
                     "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
                     "features": [
@@ -2589,8 +2197,8 @@
             "manufacturerProductId": "C224",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000603.webp", "A0000603.webp"],
-            "displayImages": [0, 1],
+            "images": ["A0000603.webp", "1.webp"],
+            "displayImages": [1, 0],
             "imageAlt": {
                 "en": "C224 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -2628,7 +2236,7 @@
                     }
                 },
                 "bg": {
-                    "name": "Естествен дъбов паркет",
+                    "name": "Естествен дъб",
                     "description": "Този дъбовият паркет пленява с автентичен рустик характер и естествена необработена повърхност. Този висококачествен под съчетава неподвластната на времето красота на дървото с доказана издръжливост, създавайки елегантна и уютна атмосфера във всяко пространство.",
                     "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
                     "features": [
@@ -2697,6 +2305,399 @@
                 "performance": {
                     "underfloorHeatingCode": "not-suitable",
                     "thermalResistance": "0.16"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
+            }
+        },
+        {
+            "sku": "DIG-A0011054",
+            "slug": "oak-a0011054",
+            "collection": "oak",
+            "pattern": "herringbone",
+            "installationSystem": "glue",
+            "price": 69.3,
+            "gtin": "A0011054",
+            "categories": "Oak Parquet",
+            "isFinished": false,
+            "finishType": "unfinished",
+            "constructionType": "solid",
+            "woodSpecies": "oak",
+            "manufacturerProductId": "C903",
+            "woodGrade": "select",
+            "surfaceTreatment": "brushed",
+            "images": ["A0011054.webp", "1.webp"],
+            "displayImages": [0, 1],
+            "imageAlt": {
+                "en": "C903 Oak Parquet - Premium natural oak flooring",
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
+            },
+            "i18n": {
+                "en": {
+                    "name": "Delden",
+                    "description": "Discover our herringbone oak parquet with select grade and natural, unfinished surface. This premium floor combines authentic oak beauty with exceptional durability, offering an elegant base that can be finished according to your unique style.",
+                    "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
+                    "features": ["genuine oak", "select wood grade", "unfinished surface", "herringbone format"],
+                    "seo": {
+                        "title": "C903 Oak Parquet | Select Unfinished",
+                        "description": "C903 oak parquet with select grade. Unfinished, durable, suitable for underfloor heating.",
+                        "keywords": [
+                            "oak parquet",
+                            "unfinished parquet",
+                            "select oak",
+                            "engineered parquet bulgaria",
+                            "natural oak flooring",
+                            "parquet c903",
+                            "oak planks"
+                        ]
+                    },
+                    "specifications": {
+                        "certifications": {
+                            "warranty": "10 years residential, 5 years commercial"
+                        }
+                    }
+                },
+                "bg": {
+                    "name": "Делден",
+                    "description": "Открийте нашия дъбов паркет с подредба рибена костс, селект качество и естествена, необработена повърхност. Този премиум под съчетава автентичната красота на дъба с изключителна издръжливост, предлагайки елегантна основа, която може да бъде завършена според вашия уникален стил.",
+                    "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
+                    "features": [
+                        "Истински дъб",
+                        "Селект качество на дървесината",
+                        "Необработена повърхност",
+                        "Ламелен формат"
+                    ],
+                    "seo": {
+                        "title": "Дъбов паркет C903 - Селект качество, необработен | Холандско производство",
+                        "description": "Премиум ламелен дъбов паркет C903 от Холандия със селект качество и необработена повърхност. Идеален за подово отопление и персонализиран завършек.",
+                        "keywords": [
+                            "дъбов паркет",
+                            "необработен паркет",
+                            "селект дъб",
+                            "ламелен паркет",
+                            "паркет за подово отопление",
+                            "естествен дъбов под",
+                            "паркет C903",
+                            "дъбови ламели",
+                            "паркет София",
+                            "холандски паркет",
+                            "премиум паркет"
+                        ]
+                    },
+                    "specifications": {
+                        "certifications": {
+                            "warranty": "Удължена 10-годишна гаранция за жилищна употреба, 5 години за търговска"
+                        }
+                    }
+                }
+            },
+            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-visgraat-c903-select-brushed/",
+            "finishingOptions": {
+                "available": true,
+                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "colorTreatments": [
+                    "abdij",
+                    "english-colour",
+                    "smoked-whitewash",
+                    "greywash",
+                    "chalk-white",
+                    "medium-brown",
+                    "natural",
+                    "smokey",
+                    "weissgrund",
+                    "whitewash",
+                    "black"
+                ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "500",
+                    "width": "68",
+                    "thickness": "10"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "select",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "not-suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
+            }
+        },
+        {
+            "sku": "DIG-A0002129",
+            "slug": "oak-a0002129",
+            "collection": "oak",
+            "pattern": "herringbone",
+            "installationSystem": "glue",
+            "price": 53.1,
+            "gtin": "A0002129",
+            "categories": "Oak Parquet",
+            "isFinished": false,
+            "finishType": "unfinished",
+            "constructionType": "solid",
+            "woodSpecies": "oak",
+            "manufacturerProductId": "C908",
+            "woodGrade": "rustic",
+            "surfaceTreatment": null,
+            "images": ["A0002129.webp", "1.webp", "2.webp", "3.webp", "4.webp"],
+            "displayImages": [0, 1, 2, 3, 4],
+            "imageAlt": {
+                "en": "eiken Oak Parquet - Premium natural oak flooring",
+                "bg": "Дъбов паркет - Премиум естествен дъбов под"
+            },
+            "i18n": {
+                "en": {
+                    "name": "Emmen",
+                    "description": "Eiken oak herringbone features rustic grade with natural appearance and unfinished surface. This high-quality flooring combines natural beauty with durability, making it perfect for creating an elegant atmosphere in any space.",
+                    "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
+                    "features": [
+                        "100% natural oak",
+                        "rustic grade",
+                        "unfinished",
+                        "suitable for underfloor heating",
+                        "14mm thickness",
+                        "engineered herringbone"
+                    ],
+                    "seo": {
+                        "title": "eiken Oak Parquet | Rustic Unfinished",
+                        "description": "eiken oak parquet with rustic grade. Unfinished, durable, suitable for underfloor heating.",
+                        "keywords": [
+                            "oak parquet",
+                            "unfinished parquet",
+                            "rustic oak",
+                            "engineered parquet bulgaria",
+                            "underfloor heating parquet",
+                            "natural oak flooring",
+                            "parquet eiken",
+                            "oak planks"
+                        ]
+                    },
+                    "specifications": {
+                        "certifications": {
+                            "warranty": "10 years residential, 5 years commercial"
+                        }
+                    }
+                },
+                "bg": {
+                    "name": "Емен",
+                    "description": "Дъбов паркет, който се отличава с автентичен рустик характер, елегантна подредба тип рибена кост и необработена повърхност, предоставяйки възможност за създаване на уникален интериор. Този висококачествен под съчетава естествената красота на дървото с изключителна издръжливост, внасяйки топлина и уют във всяко пространство.",
+                    "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
+                    "features": [
+                        "100% естествен дъб",
+                        "рустик качество",
+                        "рибена кост",
+                        "необработена повърхност",
+                        "подходящ за подово отопление",
+                        "обща дебелина 14 мм",
+                        "ламелен паркет"
+                    ],
+                    "seo": {
+                        "title": "Премиум Дъбов Паркет рибена кост | Рустик и Необработен",
+                        "description": "Дъбов паркет с автентичен рустичен характер. Необработен за персонализиран финиш, изключително издръжлив и подходящ за подово отопление.",
+                        "keywords": [
+                            "дъбов паркет",
+                            "необработен паркет",
+                            "рустик дъб",
+                            "паркет рибена кост",
+                            "паркет за подово отопление",
+                            "естествен дъбов под",
+                            "паркет eiken",
+                            "дъбови ламели",
+                            "паркет софия",
+                            "холандски паркет",
+                            "качествен дъбов паркет",
+                            "паркет за довършване"
+                        ]
+                    },
+                    "specifications": {
+                        "certifications": {
+                            "warranty": "10 години гаранция за жилищна употреба, 5 години за търговска"
+                        }
+                    }
+                }
+            },
+            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-visgraat-c908-rustic/",
+            "finishingOptions": {
+                "available": true,
+                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "colorTreatments": [
+                    "abdij",
+                    "english-colour",
+                    "smoked-whitewash",
+                    "greywash",
+                    "chalk-white",
+                    "medium-brown",
+                    "natural",
+                    "smokey",
+                    "weissgrund",
+                    "whitewash",
+                    "black"
+                ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "625",
+                    "width": "125",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "rustic",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "suitable",
+                    "thermalResistance": "N/A"
+                },
+                "certifications": {
+                    "countryCode": "netherlands"
+                }
+            }
+        },
+        {
+            "sku": "DIG-A0002143",
+            "slug": "oak-a0002143",
+            "collection": "oak",
+            "pattern": "chevron",
+            "installationSystem": "glue",
+            "price": 81,
+            "gtin": "A0002143",
+            "categories": "Oak Parquet",
+            "isFinished": false,
+            "finishType": "unfinished",
+            "constructionType": "engineered",
+            "woodSpecies": "oak",
+            "manufacturerProductId": "C909",
+            "woodGrade": "select",
+            "surfaceTreatment": null,
+            "images": ["A0002143.webp", "1.webp"],
+            "displayImages": [0, 1],
+            "imageAlt": {
+                "en": "eiken Oak Parquet - Premium natural oak flooring",
+                "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
+            },
+            "i18n": {
+                "en": {
+                    "name": "Budapest Chevron",
+                    "description": "Discover our oak parquet with chevron pattern – symbol of refinement. With superior select wood grade and unfinished surface, it offers incomparable natural beauty and freedom for personalized finish. This durable floor is ideal for creating an elegant and cozy atmosphere in any space.",
+                    "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
+                    "features": [
+                        "100% natural oak",
+                        "select wood grade",
+                        "unfinished surface for personalized finish",
+                        "chevron pattern",
+                        "14mm total thickness",
+                        "Dutch production"
+                    ],
+                    "seo": {
+                        "title": "eiken Oak Parquet | Select Unfinished",
+                        "description": "eiken oak parquet with select grade. Unfinished, durable, suitable for underfloor heating.",
+                        "keywords": [
+                            "oak parquet",
+                            "unfinished parquet",
+                            "select oak",
+                            "engineered parquet bulgaria",
+                            "natural oak flooring",
+                            "parquet eiken",
+                            "oak planks"
+                        ]
+                    },
+                    "specifications": {
+                        "certifications": {
+                            "warranty": "10 years residential, 5 years commercial"
+                        }
+                    }
+                },
+                "bg": {
+                    "name": "Будапеща Шеврон",
+                    "description": "Открийте нашия дъбов паркет с подредба 'Шеврон' – символ на изисканост. С превъзходно селект качество на дървесината и необработена повърхност, той предлага несравнима естествена красота и свобода за персонализиран финиш. Този издръжлив под е идеален за създаване на елегантна и уютна атмосфера във всяко пространство, включително и при наличие на подово отопление.",
+                    "finishingNote": "Този продукт се предлага в незавършен вид, което ви дава свободата да го персонализирате според вашите предпочитания — чрез омасляване в един от 11 налични цвята или чрез четкане за по-изразен и естествен релеф. Използваните масла са сертифицирани, високоустойчиви на износване и прилагани с иновативната LED Hardwax технология. Тя гарантира бързо и трайно върдяване, запазване на естествената красота на дървото и повишена устойчивост на драскотини, петна и външни влияния.",
+                    "features": [
+                        "100% естествен дъб",
+                        "Селект качество на дървесината",
+                        "Необработена повърхност за персонализиран финиш",
+                        "подредба 'Шеврон'",
+                        "шеврон",
+                        "Обща дебелина 14 мм",
+                        "Холандско производство"
+                    ],
+                    "seo": {
+                        "title": "Дъбов Паркет | Селект Качество | Шеврон | Холандия",
+                        "description": "Висококачествен дъбов паркет от Холандия s подредба 'Шеврон'. Селект качество, необработен, идеален за подово отопление. Създайте елегантен и издръжлив под с възможност за персонализирано завършване.",
+                        "keywords": [
+                            "дъбов паркет",
+                            "необработен паркет",
+                            "дъбов паркет селект",
+                            "шеврон паркет",
+                            "естествен дъбов под",
+                            "паркет",
+                            "шеврон",
+                            "холандски паркет",
+                            "паркет за лепене",
+                            "паркет софия"
+                        ]
+                    },
+                    "specifications": {
+                        "certifications": {
+                            "warranty": "10 години за жилищна употреба, 5 години за търговски обекти"
+                        }
+                    }
+                }
+            },
+            "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-hongaarse-punt-c909-select/",
+            "finishingOptions": {
+                "available": true,
+                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "colorTreatments": [
+                    "abdij",
+                    "english-colour",
+                    "smoked-whitewash",
+                    "greywash",
+                    "chalk-white",
+                    "medium-brown",
+                    "natural",
+                    "smokey",
+                    "weissgrund",
+                    "whitewash",
+                    "black"
+                ]
+            },
+            "specifications": {
+                "dimensions": {
+                    "length": "657",
+                    "width": "125",
+                    "thickness": "14"
+                },
+                "appearance": {
+                    "colorCode": "natural-oak",
+                    "gradeCode": "select",
+                    "finishCode": "unfinished"
+                },
+                "installation": {
+                    "methodCode": "glue-down",
+                    "vGroove": "2-sides",
+                    "coveragePerPack": "N/A m²"
+                },
+                "performance": {
+                    "underfloorHeatingCode": "not-suitable",
+                    "thermalResistance": "N/A"
                 },
                 "certifications": {
                     "countryCode": "netherlands"

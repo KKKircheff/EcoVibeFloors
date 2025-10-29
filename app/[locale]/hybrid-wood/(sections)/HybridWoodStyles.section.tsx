@@ -1,7 +1,7 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
 import { getStyleCardImages } from '@/lib/utils/getStyleCardImages';
-import { ProductStylesGrid } from '@/components/ui/product/ProductStylesGrid';
+import { ProductCollectionGrid } from '@/components/ui/product/ProductCollectionGrid';
 
 export async function HybridWoodStyles() {
     const t = await getTranslations('hybridWood.styles');
@@ -32,7 +32,7 @@ export async function HybridWoodStyles() {
     ];
 
     return (
-        <ProductStylesGrid
+        <ProductCollectionGrid
             title={t('title')}
             styles={stylesConfig}
         />

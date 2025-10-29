@@ -4,9 +4,9 @@ import Image from 'next/image';
 import { Stack, Typography, Box, CardContent, Card } from '@mui/material';
 import { useRouter } from '@/i18n/navigation';
 import { borderRadius } from '@/lib/styles/borderRadius';
-import { ProductStyleCardSkeleton } from './ProductStyleCardSkeleton';
+import { ProductCollectionCardSkeleton } from './ProductCollectionCardSkeleton';
 
-export interface ProductStyleCardProps {
+export interface ProductCollectionCardProps {
     title: string;
     dimensions?: string;
     description: string;
@@ -16,7 +16,7 @@ export interface ProductStyleCardProps {
     navigationUrl: string;
 }
 
-export function ProductStyleCard({
+export function ProductCollectionCard({
     title,
     dimensions,
     description,
@@ -24,7 +24,7 @@ export function ProductStyleCard({
     hoverImage,
     imageAlt,
     navigationUrl
-}: ProductStyleCardProps) {
+}: ProductCollectionCardProps) {
     const router = useRouter();
 
     const [isHovered, setIsHovered] = useState(false);
@@ -63,7 +63,7 @@ export function ProductStyleCard({
                     pointerEvents: isLoading ? 'auto' : 'none',
                 }}
             >
-                <ProductStyleCardSkeleton />
+                <ProductCollectionCardSkeleton />
             </Box>
 
             {/* Actual card content */}
@@ -126,7 +126,6 @@ export function ProductStyleCard({
                         <Typography variant="h4" component="h3" gutterBottom sx={{ flexGrow: 1 }}>
                             {title}
                         </Typography>
-
                         <Stack spacing={1}>
                             {dimensions && (
                                 <Typography>

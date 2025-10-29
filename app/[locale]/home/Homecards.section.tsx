@@ -12,7 +12,7 @@ const HomecardsSection = async () => {
             title: t('premiumOak.title'),
             text: t('premiumOak.text'),
             images: ['no-small1.jpg', 'no-small2.jpg', 'no-large.jpg'] as [string, string, string],
-            button1: { text: t('premiumOak.learnMore'), route: "/collections/oak/info" },
+            button1: { text: t('premiumOak.learnMore'), route: "/oak/what-is-oak-flooring" },
             button2: { text: t('premiumOak.viewCollection'), route: "/oak" },
             mirror: true
         },

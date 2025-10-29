@@ -106,7 +106,7 @@ export function ProductCard({ product }: ProductCardProps) {
             >
                 <Box
                     borderRadius={borderRadius.sm}
-                    sx={{ position: 'relative', width: '100%', paddingBottom: '150%' }}>
+                    sx={{ position: 'relative', width: '100%', paddingBottom: '100%' }}>
                     <Image
                         src={mainImageUrl}
                         alt={product.imageAlt[locale as keyof typeof product.imageAlt]}
@@ -145,16 +145,21 @@ export function ProductCard({ product }: ProductCardProps) {
                     <Typography variant="h4" component="h3" gutterBottom sx={{ flexGrow: 1 }}>
                         {localizedContent.name}
                     </Typography>
-
                     <Stack direction="column" spacing={1}>
-                        <Stack direction={{ xs: 'column', xl: 'row' }} alignItems={'çenter'} justifyContent={'space-between'}>
+                        <Typography variant="subtitle1">
+                            {t(`collections.names.${product.specifications?.appearance?.gradeCode}`)}
+                        </Typography>
+                        <Stack direction={{ xs: 'column', md: 'row' }} alignItems={'çenter'} justifyContent={'space-between'}>
                             <Typography variant="subtitle2">
                                 {t(`collections.names.${product.collection}`)}
                             </Typography>
-                            <Typography variant='subtitle2'>
-                                {product.specifications?.dimensions && formatDimensions(product.specifications.dimensions)}
+                            <Typography variant="subtitle2">
+                                {t(`collections.names.${product.constructionType}`)}
                             </Typography>
                         </Stack>
+                        <Typography variant='subtitle2'>
+                            {product.specifications?.dimensions && formatDimensions(product.specifications.dimensions)}
+                        </Typography>
                         <Typography variant="h6" color="primary.900" fontWeight="bold" >
                             {t('products.priceFrom')} €{product.price.toFixed(2)}
                         </Typography>
