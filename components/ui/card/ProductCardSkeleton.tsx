@@ -27,7 +27,7 @@ export function ProductCardSkeleton() {
                 sx={{
                     position: 'relative',
                     width: '100%',
-                    paddingBottom: '150%',
+                    paddingBottom: '120%',
                     backgroundColor: 'grey.100',
                     overflow: 'hidden',
                     display: 'flex',

@@ -106,7 +106,7 @@ export function ProductCard({ product }: ProductCardProps) {
             >
                 <Box
                     borderRadius={borderRadius.sm}
-                    sx={{ position: 'relative', width: '100%', paddingBottom: '100%' }}>
+                    sx={{ position: 'relative', width: '100%', paddingBottom: '120%' }}>
                     <Image
                         src={mainImageUrl}
                         alt={product.imageAlt[locale as keyof typeof product.imageAlt]}

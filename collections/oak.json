@@ -2452,7 +2452,7 @@
             "woodGrade": "rustic",
             "surfaceTreatment": null,
             "images": ["A0002129.webp", "1.webp", "2.webp", "3.webp", "4.webp"],
-            "displayImages": [0, 1, 2, 3, 4],
+            "displayImages": [3, 0],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"

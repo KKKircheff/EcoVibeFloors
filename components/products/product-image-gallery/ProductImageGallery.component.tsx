@@ -25,6 +25,9 @@ export default function ProductImageGallery({ images, productName }: ProductImag
     };
 
     const handleThumbnailClick = (index: number) => {
+        if (index === selectedImageIndex) {
+            return; // Don't reload if clicking the same thumbnail
+        }
         setSelectedImageIndex(index);
         setIsMainImageLoading(true);
     };
