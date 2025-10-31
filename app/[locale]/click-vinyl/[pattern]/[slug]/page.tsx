@@ -10,6 +10,7 @@ import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
 import ProductImageGallery from '@/components/products/product-image-gallery/ProductImageGallery.component';
 import ProductActions from '@/components/products/product-actions/ProductActions.component';
 import { ProductSpecs, SpecCategory } from '@/components/ui/sections/product/ProductSpecs';
+import { AuthenticatedPrice } from '@/components/ui/price/AuthenticatedPrice';
 import { isValidPattern } from '@/types/products';
 import { getProductBySlug, getProductsByCollection } from '@/utils/products';
 import { routing } from '@/i18n/routing';
@@ -278,13 +279,12 @@ export default async function ClickVinylProductPage({ params }: ProductDetailPag
                                     <Typography variant="h3" component="h1" color="text.primary">
                                         {localizedContent.name}
                                     </Typography>
-                                    <Typography
+                                    <AuthenticatedPrice
+                                        price={product.price}
                                         variant="h4"
                                         color="primary.main"
-                                        sx={{ fontWeight: 600, whiteSpace: 'nowrap' }}
-                                    >
-                                        €{product.price.toFixed(2)}
-                                    </Typography>
+                                        fontWeight={600}
+                                    />
                                 </Stack>
                             </Stack>
 

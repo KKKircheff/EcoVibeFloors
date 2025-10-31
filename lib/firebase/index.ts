@@ -17,9 +17,30 @@ export {
 
 // Authentication utilities
 export {
-  AuthService,
-  AUTH_ERROR_MESSAGES,
-  getAuthErrorMessage
+  signUp,
+  signIn,
+  signInWithGoogle,
+  signInWithGooglePopup,
+  signInWithGoogleRedirect,
+  handleRedirectResult,
+  signOutUser,
+  sendPasswordResetEmailToUser,
+  sendVerificationEmail,
+  updateUserProfile,
+  updateUserEmail,
+  updateUserPassword,
+  reauthenticateUser,
+  deleteUserAccount,
+  getCurrentUserData,
+  onAuthStateChangedListener,
+  getCurrentUser,
+  isAuthenticated,
+  isEmailVerified,
+  hasRole,
+  isAdmin,
+  isDesigner,
+  isDesignProfessional,
+  getAuthErrorTranslationKey
 } from './auth';
 export type {
   AuthResult,
@@ -82,95 +103,3 @@ export {
   STORAGE_SECURITY_RULES
 } from './collections';
 
-// Import services for convenience object
-import { FirebaseDB } from './db';
-import { AuthService } from './auth';
-import { StorageService } from './storage';
-import { ErrorHandler } from './errors';
-import { collections } from './collections';
-
-// Convenience exports for common operations
-export const firebase = {
-  // Database operations
-  db: {
-    create: FirebaseDB.create,
-    getById: FirebaseDB.getById,
-    getAll: FirebaseDB.getAll,
-    getPaginated: FirebaseDB.getPaginated,
-    update: FirebaseDB.update,
-    delete: FirebaseDB.delete,
-    batchWrite: FirebaseDB.batchWrite,
-    runTransaction: FirebaseDB.runTransaction,
-    subscribeToDocument: FirebaseDB.subscribeToDocument,
-    subscribeToCollection: FirebaseDB.subscribeToCollection
-  },
-  
-  // Authentication operations
-  auth: {
-    signUp: AuthService.signUp,
-    signIn: AuthService.signIn,
-    signInWithGoogle: AuthService.signInWithGoogle,
-    signOut: AuthService.signOut,
-    sendPasswordResetEmail: AuthService.sendPasswordResetEmail,
-    sendVerificationEmail: AuthService.sendVerificationEmail,
-    updateUserProfile: AuthService.updateUserProfile,
-    updateUserEmail: AuthService.updateUserEmail,
-    updateUserPassword: AuthService.updateUserPassword,
-    deleteUserAccount: AuthService.deleteUserAccount,
-    getCurrentUserData: AuthService.getCurrentUserData,
-    onAuthStateChanged: AuthService.onAuthStateChanged,
-    getCurrentUser: AuthService.getCurrentUser,
-    isAuthenticated: AuthService.isAuthenticated,
-    isEmailVerified: AuthService.isEmailVerified,
-    hasRole: AuthService.hasRole,
-    isAdmin: AuthService.isAdmin,
-    isDesigner: AuthService.isDesigner,
-    isDesignProfessional: AuthService.isDesignProfessional
-  },
-  
-  // Storage operations
-  storage: {
-    uploadFile: StorageService.uploadFile,
-    uploadFileSimple: StorageService.uploadFileSimple,
-    uploadMultipleFiles: StorageService.uploadMultipleFiles,
-    uploadImage: StorageService.uploadImage,
-    getDownloadURL: StorageService.getDownloadURL,
-    deleteFile: StorageService.deleteFile,
-    deleteMultipleFiles: StorageService.deleteMultipleFiles,
-    listFiles: StorageService.listFiles,
-    getFileMetadata: StorageService.getFileMetadata,
-    updateFileMetadata: StorageService.updateFileMetadata,
-    resizeImage: StorageService.resizeImage,
-    generatePath: StorageService.generatePath,
-    formatFileSize: StorageService.formatFileSize,
-    validateFileType: StorageService.validateFileType,
-    validateFileSize: StorageService.validateFileSize
-  },
-  
-  // Error handling
-  errors: {
-    handle: ErrorHandler.handleFirebaseError,
-    getMessage: ErrorHandler.getErrorMessage,
-    log: ErrorHandler.logError,
-    isRetryable: ErrorHandler.isRetryable,
-    requiresAuth: ErrorHandler.requiresAuth,
-    isPermissionError: ErrorHandler.isPermissionError,
-    retry: ErrorHandler.retry,
-    handleAsync: ErrorHandler.handleAsync
-  },
-  
-  // Collections
-  collections: {
-    users: collections.users,
-    products: collections.products,
-    orders: collections.orders,
-    consultations: collections.consultations,
-    reviews: collections.reviews,
-    categories: collections.categories,
-    suppliers: collections.suppliers
-  }
-};
-
-
-// Export default for easy importing
-export default firebase;

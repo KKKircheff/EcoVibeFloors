@@ -108,6 +108,13 @@ To create a visually compelling, high-quality website with strong design and eng
 - **ALWAYS use `@/` alias for imports instead of relative paths** (e.g., `import { Component } from '@/components/...'`)
 - **Images from public folder**: Import as `import imageName from '../../../public/images/path/image.webp'` from `app/[locale]/page/` directories (use relative paths for images, not `@/` alias)
 
+### Functional Programming Preference
+- **Prefer functions over classes**: Use standalone exported functions instead of static utility classes
+- **Why**: Better tree-shaking, simpler mental model, easier testing, aligns with React's functional paradigm
+- **Pattern**: Export individual functions from modules (e.g., `export async function signIn() {}`)
+- **Avoid**: Static utility classes (e.g., `export class AuthService { static signIn() {} }`)
+- **Example**: See `lib/firebase/auth.ts` for functional approach to Firebase authentication utilities
+
 ## Product Documentation Reference
 
 ### Location & Structure

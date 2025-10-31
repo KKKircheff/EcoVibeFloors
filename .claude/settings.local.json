@@ -4,7 +4,9 @@
       "WebFetch(domain:ekofloors.nl)",
       "Read(//c/Users/kirch/**)",
       "WebFetch(domain:www.floer.nl)",
-      "WebFetch(domain:www.terhuerne.com)"
+      "WebFetch(domain:www.terhuerne.com)",
+      "mcp__playwright__browser_close",
+      "mcp__firebase__apphosting_list_backends"
     ],
     "deny": [],
     "ask": []

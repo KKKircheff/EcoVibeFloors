@@ -17,6 +17,7 @@ import { layoutPaddings } from "@/lib/styles/layoutPaddings";
 import { useSampleBasket } from "@/lib/contexts/SampleBasketContext";
 import { PiBag } from "react-icons/pi";
 import { palette } from "@/lib/styles/pallete";
+import { AuthMenu } from "./AuthMenu.component";
 
 type Props = {
     locale: Locale
@@ -132,7 +133,8 @@ export default function Navbar({ locale }: Props) {
                             />
                         ))
                     }
-                    <Stack display={{ xs: 'none', lg: 'flex' }} direction="row" alignItems="flex-start" spacing={2} pt={1}>
+                    <Stack display={{ xs: 'none', lg: 'flex' }} direction="row" alignItems="flex-start" spacing={2} pt={.5}>
+                        <AuthMenu isScrolled={isScrolled} />
                         <IconButton
                             onClick={navigateToBasket}
                             aria-label="Sample basket"

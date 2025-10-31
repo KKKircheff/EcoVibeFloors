@@ -10,6 +10,7 @@ import UnderNavBar from "@/components/layout/navbar/UnderNavBar.component";
 import { Montserrat } from 'next/font/google';
 import { SampleBasketProvider } from '@/lib/contexts/SampleBasketContext';
 import { ToastProvider } from '@/lib/contexts/ToastContext';
+import { AuthProvider } from '@/lib/contexts/AuthContext';
 
 const montserrat = Montserrat({
     weight: ['400', '500', '600'],
@@ -73,13 +74,15 @@ export default async function LocaleLayout(props: Props) {
             <body className={montserrat.className}>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <ClientThemeProvider>
-                        <SampleBasketProvider>
-                            <ToastProvider>
-                                <Navbar locale={locale} />
-                                <UnderNavBar />
-                                {children}
-                            </ToastProvider>
-                        </SampleBasketProvider>
+                        <ToastProvider>
+                            <AuthProvider>
+                                <SampleBasketProvider>
+                                    <Navbar locale={locale} />
+                                    <UnderNavBar />
+                                    {children}
+                                </SampleBasketProvider>
+                            </AuthProvider>
+                        </ToastProvider>
                     </ClientThemeProvider>
                 </NextIntlClientProvider>
             </body>

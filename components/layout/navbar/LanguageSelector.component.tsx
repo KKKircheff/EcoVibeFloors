@@ -40,7 +40,7 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
     };
 
     return (
-        <Stack direction='row' alignItems={'center'} spacing={0} px={{ xs: 0, md: 1 }}>
+        <Stack direction='row' alignItems={'center'} spacing={0} px={{ xs: 0, md: 1 }} alignSelf={{ xs: 'flex-start' }} pt={{ xs: .5, md: 0.3, }}>
             <Select
                 variant="standard"
                 size="medium"

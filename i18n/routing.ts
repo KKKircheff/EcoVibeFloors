@@ -39,12 +39,12 @@ export const navRoutes: NavRoute[] = [
                 icon: '',
                 visible: true,
             },
-            {
-                name: 'Premium Oak Custom Crafted',
-                path: '/custom-oak',
-                icon: '',
-                visible: true,
-            },
+            // {
+            //     name: 'Premium Oak Custom Crafted',
+            //     path: '/custom-oak',
+            //     icon: '',
+            //     visible: true,
+            // },
             {
                 name: 'Hybrid Wood',
                 path: '/hybrid-wood',

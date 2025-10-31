@@ -2,7 +2,7 @@
 // Usage: import { useAuth, useLocalStorage } from '@/hooks'
 
 // Authentication hooks
-// export { default as useAuth } from './useAuth';
+export { useAuth } from './useAuth';
 
 // Storage hooks
 // export { default as useLocalStorage } from './useLocalStorage';

@@ -59,6 +59,56 @@
             }
         }
     },
+    "auth": {
+        "signIn": "LogIn",
+        "login": "LogIn",
+        "signUp": "Sign Up",
+        "signOut": "Sign Out",
+        "email": "Email",
+        "password": "Password",
+        "confirmPassword": "Confirm Password",
+        "fullName": "Full Name",
+        "name": "Name",
+        "phone": "Phone",
+        "company": "Company",
+        "signInToViewPricing": "Price: Login to view pricing",
+        "authTitle": "Welcome to EcoVibeFloors",
+        "googleSignIn": "Continue with Google",
+        "orDivider": "or",
+        "designProfessional": "I am a design professional",
+        "loading": "Processing...",
+        "validation": {
+            "emailRequired": "Email is required",
+            "emailInvalid": "Please enter a valid email address",
+            "passwordRequired": "Password is required",
+            "passwordTooShort": "Password must be at least 6 characters",
+            "passwordsDontMatch": "Passwords don't match",
+            "fullNameRequired": "Full name is required"
+        },
+        "errors": {
+            "userNotFound": "No account found with this email address",
+            "wrongPassword": "Incorrect password",
+            "emailAlreadyInUse": "An account with this email already exists",
+            "weakPassword": "Password should be at least 6 characters",
+            "invalidEmail": "Please enter a valid email address",
+            "tooManyRequests": "Too many failed attempts. Please try again later",
+            "networkError": "Network error. Please check your connection",
+            "requiresRecentLogin": "This action requires recent authentication. Please sign in again",
+            "popupClosedByUser": "Sign-in cancelled. Please try again",
+            "cancelledPopupRequest": "Sign-in cancelled. Please try again",
+            "accountExistsWithDifferentCredential": "An account already exists with this email using a different sign-in method",
+            "unauthorizedDomain": "This domain is not authorized. Please contact support",
+            "operationNotAllowed": "Google sign-in is not enabled. Please contact support",
+            "invalidApiKey": "Configuration error. Please contact support",
+            "unexpectedError": "An unexpected error occurred"
+        },
+        "success": {
+            "signupComplete": "Account created successfully!",
+            "signinComplete": "Welcome back!",
+            "signoutComplete": "Signed out successfully",
+            "verificationEmailSent": "Verification email sent. Please check your inbox"
+        }
+    },
     "navigation": {
         "home": "Home",
         "collections": "Collections",
@@ -283,6 +333,7 @@
     },
     "products": {
         "filterBy": "Filter by",
+        "price": "Price",
         "priceFrom": "from",
         "viewDetails": "View Details",
         "addToCart": "Add to Cart",

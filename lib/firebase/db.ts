@@ -83,7 +83,7 @@ export class FirebaseDB {
       };
 
       await setDoc(doc(db, collectionName, id), docData);
-      
+
       return {
         success: true,
         data: {

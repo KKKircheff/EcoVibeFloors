@@ -8,6 +8,7 @@ import { useRouter } from '@/i18n/navigation';
 import { borderRadius } from '@/lib/styles/borderRadius';
 import { ProductCardSkeleton } from './ProductCardSkeleton';
 import { getStorageUrl } from '@/lib/utils/getStorageUrl';
+import { AuthenticatedPrice } from '@/components/ui/price/AuthenticatedPrice';
 
 export interface ProductCardProps {
     product: Product;
@@ -145,24 +146,27 @@ export function ProductCard({ product }: ProductCardProps) {
                     <Typography variant="h4" component="h3" gutterBottom sx={{ flexGrow: 1 }}>
                         {localizedContent.name}
                     </Typography>
-                    <Stack direction="column" spacing={1}>
-                        <Typography variant="subtitle1">
-                            {t(`collections.names.${product.specifications?.appearance?.gradeCode}`)}
-                        </Typography>
+                    <Stack direction="column" spacing={0.5}>
                         <Stack direction={{ xs: 'column', md: 'row' }} alignItems={'çenter'} justifyContent={'space-between'}>
-                            <Typography variant="subtitle2">
-                                {t(`collections.names.${product.collection}`)}
-                            </Typography>
-                            <Typography variant="subtitle2">
+                            {product.specifications?.appearance?.gradeCode ? <Typography variant="subtitle1">
+                                {t(`collections.names.${product.specifications?.appearance?.gradeCode}`)}
+                            </Typography> : null}
+                            {product.constructionType ? <Typography variant="subtitle1">
                                 {t(`collections.names.${product.constructionType}`)}
-                            </Typography>
+                            </Typography> : null}
                         </Stack>
+                        <Typography variant="subtitle2">
+                            {t(`collections.names.${product.collection}`)}
+                        </Typography>
                         <Typography variant='subtitle2'>
                             {product.specifications?.dimensions && formatDimensions(product.specifications.dimensions)}
                         </Typography>
-                        <Typography variant="h6" color="primary.900" fontWeight="bold" >
-                            {t('products.priceFrom')} €{product.price.toFixed(2)}
-                        </Typography>
+                        <AuthenticatedPrice
+                            price={product.price}
+                            variant="subtitle2"
+                            color="primary.600"
+                            fontWeight='500'
+                        />
                     </Stack>
                 </Stack>
             </Stack>

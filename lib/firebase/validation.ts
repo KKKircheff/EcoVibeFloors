@@ -14,31 +14,95 @@ import { ErrorHandler, ERROR_CODES } from './errors';
 type ProductCategory = 'hardwood' | 'engineered-wood' | 'luxury-vinyl' | 'laminate' | 'bamboo' | 'cork' | 'accessories';
 type OrderStatus = 'draft' | 'pending' | 'confirmed' | 'processing' | 'shipping' | 'delivered' | 'completed' | 'cancelled' | 'refunded';
 
+interface ProductPricing {
+  pricePerSqm?: {
+    BGN?: number;
+    EUR?: number;
+  };
+}
+
+interface ProductSpecifications {
+  dimensions?: {
+    length?: number;
+    width?: number;
+    thickness?: number;
+  };
+}
+
+interface ProductAvailability {
+  quantity?: number;
+}
+
+interface ProductImage {
+  url?: string;
+  alt?: {
+    en?: string;
+    bg?: string;
+  };
+}
+
+interface OrderItem {
+  productId?: string;
+  quantity?: number;
+  unitPrice?: number;
+  total?: number;
+}
+
+interface Address {
+  street?: string;
+  city?: string;
+  postalCode?: string;
+  country?: string;
+}
+
+interface ShippingInfo {
+  address?: Address;
+}
+
+interface BillingInfo {
+  address?: Address;
+}
+
+interface ProjectDetails {
+  area?: number;
+  roomType?: string[];
+  description?: string;
+  budget?: {
+    min?: number;
+    max?: number;
+  };
+}
+
+interface PreferredContact {
+  method?: string;
+  availability?: string;
+}
+
 interface Product {
   name?: { en?: string; bg?: string };
   description?: { en?: string; bg?: string };
   category?: ProductCategory;
   brand?: string;
   origin?: string;
-  pricing?: any;
-  specifications?: any;
-  availability?: any;
-  images?: any[];
+  pricing?: ProductPricing;
+  specifications?: ProductSpecifications;
+  availability?: ProductAvailability;
+  images?: ProductImage[];
 }
 
 interface Order {
   userId?: string;
-  items?: any[];
-  shipping?: any;
-  billing?: any;
+  items?: OrderItem[];
+  shipping?: ShippingInfo;
+  billing?: BillingInfo;
   status?: OrderStatus;
 }
 
 interface ConsultationRequest {
   userId?: string;
   type?: string;
-  projectDetails?: any;
-  preferredContact?: any;
+  projectDetails?: ProjectDetails;
+  preferredContact?: PreferredContact;
 }
 
 // Validation result interface
@@ -402,7 +466,7 @@ export class OrderValidator extends BaseValidator {
     return this.getResult();
   }
 
-  private validateAddress(address: Record<string, unknown> | { street?: unknown; city?: unknown; postalCode?: unknown; country?: unknown }, fieldPrefix: string): void {
+  private validateAddress(address: Address, fieldPrefix: string): void {
     this.isRequired(address.street, `${fieldPrefix}.street`);
     this.isRequired(address.city, `${fieldPrefix}.city`);
     this.isRequired(address.postalCode, `${fieldPrefix}.postalCode`);

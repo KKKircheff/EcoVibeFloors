@@ -68,6 +68,25 @@ service cloud.firestore {
       allow read, update, delete: if false;
     }
 
+    // Users collection - allow users to manage their own profile
+    match /users/{userId} {
+      // Allow authenticated users to create their own document during signup
+      allow create: if request.auth != null
+                    && request.auth.uid == userId
+                    && request.resource.data.email == request.auth.token.email;
+
+      // Allow users to read their own document
+      allow read: if request.auth != null && request.auth.uid == userId;
+
+      // Allow users to update their own document (but not change role)
+      allow update: if request.auth != null
+                    && request.auth.uid == userId
+                    && request.resource.data.role == resource.data.role;
+
+      // Allow users to delete their own account
+      allow delete: if request.auth != null && request.auth.uid == userId;
+    }
+
     // Deny all other collections by default
     match /{document=**} {
       allow read, write: if false;

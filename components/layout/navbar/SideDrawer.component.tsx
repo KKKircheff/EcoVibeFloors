@@ -13,6 +13,7 @@ import { useRouter } from '@/i18n/navigation';
 import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import { palette } from '@/lib/styles/pallete';
 import { PiBag } from 'react-icons/pi';
+import { AuthMenu } from './AuthMenu.component';
 
 type Props = {
     routes: NavRoute[],
@@ -121,21 +122,24 @@ const SideDrawer = ({
                         setIsDrawerOpen={setIsDrawerOpen}
                     />
                 </Stack>
-                <Stack direction="row" alignItems="center" justifyContent='space-between' spacing={2} pr={0.5}>
+                <Stack direction="row" alignItems="center" justifyContent='space-between' spacing={1} pr={0.5}>
                     <LanguageSelector locale={locale} />
-                    <IconButton
-                        onClick={navigateToBasket}
-                        aria-label="Sample basket"
-                    >
-                        <Badge badgeContent={itemCount} color="primary">
-                            <PiBag
-                                style={{
-                                    color: palette.info[500],
-                                    transition: 'color 0.3s ease-in-out',
-                                }}
-                            />
-                        </Badge>
-                    </IconButton>
+                    <AuthMenu isScrolled={true} />
+                    <Stack direction="row" alignItems="center" spacing={1}>
+                        <IconButton
+                            onClick={navigateToBasket}
+                            aria-label="Sample basket"
+                        >
+                            <Badge badgeContent={itemCount} color="primary">
+                                <PiBag
+                                    style={{
+                                        color: palette.info[500],
+                                        transition: 'color 0.3s ease-in-out',
+                                    }}
+                                />
+                            </Badge>
+                        </IconButton>
+                    </Stack>
                 </Stack>
 
                 <List

@@ -9,11 +9,8 @@ export interface User extends BaseDocument {
   role: 'customer' | 'admin' | 'designer';
   preferences: {
     language: 'en' | 'bg';
-    currency: 'BGN' | 'EUR';
   };
   profile: {
-    firstName: string;
-    lastName: string;
     phone?: string;
     address?: Address;
     company?: string;

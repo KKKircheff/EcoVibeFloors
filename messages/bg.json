@@ -59,6 +59,56 @@
             }
         }
     },
+    "auth": {
+        "signIn": "Вписване",
+        "login": "Вход",
+        "signUp": "Регистрация",
+        "signOut": "Изход",
+        "email": "Имейл",
+        "password": "Парола",
+        "confirmPassword": "Потвърдете паролата",
+        "fullName": "Пълно име",
+        "name": "Име",
+        "phone": "Телефон",
+        "company": "Фирма",
+        "signInToViewPricing": "Цена: Влезте в профила си",
+        "authTitle": "Добре дошли в EcoVibeFloors",
+        "googleSignIn": "Продължете с Google",
+        "orDivider": "или",
+        "designProfessional": "Аз съм дизайнер/архитект",
+        "loading": "Обработка...",
+        "validation": {
+            "emailRequired": "Имейлът е задължителен",
+            "emailInvalid": "Моля, въведете валиден имейл адрес",
+            "passwordRequired": "Паролата е задължителна",
+            "passwordTooShort": "Паролата трябва да е поне 6 символа",
+            "passwordsDontMatch": "Паролите не съвпадат",
+            "fullNameRequired": "Пълното име е задължително"
+        },
+        "errors": {
+            "userNotFound": "Не е намерен профил с този имейл адрес",
+            "wrongPassword": "Неправилна парола",
+            "emailAlreadyInUse": "Вече съществува профил с този имейл",
+            "weakPassword": "Паролата трябва да е поне 6 символа",
+            "invalidEmail": "Моля, въведете валиден имейл адрес",
+            "tooManyRequests": "Твърде много неуспешни опити. Моля, опитайте отново по-късно",
+            "networkError": "Грешка в мрежата. Моля, проверете връзката си",
+            "requiresRecentLogin": "Това действие изисква скорошен вход. Моля, влезте отново",
+            "popupClosedByUser": "Входът е отменен. Моля, опитайте отново",
+            "cancelledPopupRequest": "Входът е отменен. Моля, опитайте отново",
+            "accountExistsWithDifferentCredential": "Вече съществува профил с този имейл чрез различен метод за вход",
+            "unauthorizedDomain": "Този домейн не е оторизиран. Моля, свържете се с поддръжката",
+            "operationNotAllowed": "Входът с Google не е активиран. Моля, свържете се с поддръжката",
+            "invalidApiKey": "Грешка в конфигурацията. Моля, свържете се с поддръжката",
+            "unexpectedError": "Възникна неочаквана грешка"
+        },
+        "success": {
+            "signupComplete": "Профилът е създаден успешно!",
+            "signinComplete": "Добре дошли отново!",
+            "signoutComplete": "Излязохте успешно",
+            "verificationEmailSent": "Изпратен е имейл за потвърждение. Моля, проверете пощата си"
+        }
+    },
     "navigation": {
         "home": "Начало",
         "Home": "Начало",
@@ -279,6 +329,7 @@
     },
     "products": {
         "filterBy": "Филтрирай по",
+        "price": "Цена",
         "priceFrom": "от",
         "viewDetails": "Виж детайли",
         "addToCart": "Добави в количка",

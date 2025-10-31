@@ -1,0 +1,18 @@
+# Firebase App Hosting Configuration
+# https://firebase.google.com/docs/app-hosting/multiple-environments
+
+# Runtime configuration
+# runConfig:
+  # Adjust these based on your app's needs
+  # cpu: 1
+  # memoryMiB: 512
+  # concurrency: 80
+
+# Environment variables
+# These will be available in both BUILD and RUNTIME
+# env:
+#   - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+#     value: ecovibefloors.com
+#     availability:
+#       - BUILD
+#       - RUNTIME
