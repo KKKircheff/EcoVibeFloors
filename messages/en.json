@@ -77,6 +77,8 @@
         "orDivider": "or",
         "designProfessional": "I am a design professional",
         "loading": "Processing...",
+        "checkingAuth": "Completing sign-in...",
+        "signInSuccess": "Successfully signed in! Redirecting...",
         "validation": {
             "emailRequired": "Email is required",
             "emailInvalid": "Please enter a valid email address",

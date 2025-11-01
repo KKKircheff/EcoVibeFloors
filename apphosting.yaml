@@ -10,9 +10,9 @@
 
 # Environment variables
 # These will be available in both BUILD and RUNTIME
-# env:
-#   - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
-#     value: ecovibefloors.com
-#     availability:
-#       - BUILD
-#       - RUNTIME
+env:
+  - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+    value: ecovibe-floors.firebaseapp.com
+    availability:
+      - BUILD
+      - RUNTIME

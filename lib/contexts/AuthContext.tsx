@@ -56,16 +56,12 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     // Check for redirect result on mount (for signInWithRedirect)
     useEffect(() => {
         const checkRedirectResult = async () => {
-            console.log('🔍 AuthContext: Checking for redirect result...');
             const result = await authHandleRedirectResult();
 
             if (result.success && result.user) {
-                console.log('✅ AuthContext: Redirect result found, user authenticated');
                 setUser(result.user);
                 // Navigate to home page after successful redirect sign-in
                 router.push('/');
-            } else if (result.error && result.error !== 'No redirect result') {
-                console.error('❌ AuthContext: Error handling redirect result:', result.error);
             }
         };
 
@@ -100,37 +96,24 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     };
 
     const signInWithGooglePopup = async (): Promise<AuthResult> => {
-        console.log('🔐 AuthContext: Starting Google popup sign-in...');
         const result = await authSignInWithGooglePopup();
         if (result.success && result.user) {
-            console.log('✅ AuthContext: Popup sign-in successful, setting user');
             setUser(result.user);
             // Navigate to home page after successful sign-in
             router.push('/');
-        } else {
-            console.error('❌ AuthContext: Popup sign-in failed');
         }
         return result;
     };
 
     const signInWithGoogle = async (): Promise<AuthResult | void> => {
-        console.log('🔐 AuthContext: Starting Google sign-in (environment-based)...');
         const result = await authSignInWithGoogle();
 
         // If using popup (dev), result will be returned immediately
         if (result && result.success && result.user) {
-            console.log('✅ AuthContext: Popup sign-in successful, setting user');
             setUser(result.user);
             router.push('/');
             return result;
-        } else if (result && !result.success) {
-            console.error('❌ AuthContext: Sign-in failed');
-            return result;
         }
-
-        // If using redirect (production), function returns void and redirect happens
-        // The redirect result will be handled by the useEffect above
-        console.log('🔄 AuthContext: Redirecting to Google sign-in...');
     };
 
     const signOut = async (): Promise<void> => {

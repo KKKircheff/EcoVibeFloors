@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import {
     Box,
     Container,
@@ -15,13 +15,14 @@ import {
     Card,
     Tabs,
     Tab,
+    CircularProgress,
 } from '@mui/material';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter } from '@/i18n/navigation';
 import { useAuth } from '@/hooks';
 import PrimaryActionButton from '@/components/ui/buttons/PrimaryActionButton';
-import { getAuthErrorTranslationKey } from '@/lib/firebase/auth';
+import { getAuthErrorTranslationKey, handleRedirectResult } from '@/lib/firebase/auth';
 import googleIcon from '../../../public/images/icons/google.png';
 
 type AuthMode = 'login' | 'signup';
@@ -39,6 +40,44 @@ export default function AuthPage() {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState('');
 
+    // Redirect result state
+    const [isCheckingRedirect, setIsCheckingRedirect] = useState(true);
+    const [redirectSuccess, setRedirectSuccess] = useState(false);
+
+    // Check for OAuth redirect result on mount
+    useEffect(() => {
+        const checkForRedirectResult = async () => {
+            try {
+                const result = await handleRedirectResult();
+                console.log('----- result:', result)
+                if (result.success && result.user) {
+                    // Successfully signed in via redirect
+                    setRedirectSuccess(true);
+                    setIsCheckingRedirect(false);
+
+                    // Wait a moment to show success message, then redirect
+                    setTimeout(() => {
+                        router.push('/');
+                    }, 1500);
+                } else {
+                    // No redirect result (user navigated directly to page)
+                    setIsCheckingRedirect(false);
+                }
+            } catch (err) {
+                // Error handling redirect result
+                console.error('Error handling redirect:', err);
+                const errorKey = getAuthErrorTranslationKey('auth/operation-not-allowed');
+                setError(t(`errors.${errorKey}` as 'errors.unexpectedError'));
+                setIsCheckingRedirect(false);
+            }
+        };
+
+        // Only run on client side
+        if (typeof window !== 'undefined') {
+            checkForRedirectResult();
+        }
+    }, [router, t]);
+
     const handleTabChange = (_event: React.SyntheticEvent, newValue: AuthMode) => {
         setMode(newValue);
         setError(''); // Clear errors when switching tabs
@@ -48,12 +87,10 @@ export default function AuthPage() {
         setLoading(true);
         setError('');
 
-        console.log('🔐 Auth Page: Starting Google sign-in...');
 
         const result = await signInWithGoogle();
 
         if (result && !result.success) {
-            console.error('❌ Auth Page: Google sign-in failed');
             const errorKey = result.code
                 ? getAuthErrorTranslationKey(result.code)
                 : 'unexpectedError';
@@ -61,6 +98,35 @@ export default function AuthPage() {
             setLoading(false);
         }
     };
+
+    // Show loading spinner while checking for redirect result
+    if (isCheckingRedirect) {
+        return (
+            <Container maxWidth="sm" sx={{ py: 8 }}>
+                <Card elevation={3} sx={{ p: 4 }}>
+                    <Stack spacing={3} alignItems="center">
+                        <CircularProgress size={60} />
+                        <Typography variant="h6" color="text.secondary">
+                            {t('checkingAuth')}
+                        </Typography>
+                    </Stack>
+                </Card>
+            </Container>
+        );
+    }
+
+    // Show success message after redirect signin
+    if (redirectSuccess) {
+        return (
+            <Container maxWidth="sm" sx={{ py: 8 }}>
+                <Card elevation={3} sx={{ p: 4 }}>
+                    <Alert severity="success">
+                        {t('signInSuccess')}
+                    </Alert>
+                </Card>
+            </Container>
+        );
+    }
 
     return (
         <Container maxWidth="sm" sx={{ py: 8 }}>

@@ -120,8 +120,6 @@ export async function signIn(email: string, password: string): Promise<AuthResul
 // No third-party storage issues or iframe complications
 export async function signInWithGooglePopup(): Promise<AuthResult> {
     try {
-        console.log('🔐 Auth: Initiating Google sign-in with popup');
-
         const provider = new GoogleAuthProvider();
         provider.addScope('profile');
         provider.addScope('email');
@@ -130,20 +128,10 @@ export async function signInWithGooglePopup(): Promise<AuthResult> {
         const userCredential = await signInWithPopup(auth, provider);
         const user = userCredential.user;
 
-        console.log('✅ Auth: Popup sign-in successful!');
-        console.log('👤 User:', {
-            uid: user.uid,
-            email: user.email,
-            displayName: user.displayName,
-        });
-
         // Check if user exists in Firestore, create if not
-        console.log('🔍 Auth: Checking if user exists in Firestore...');
         const userResult = await UsersDB.getById(user.uid);
 
         if (!userResult.success) {
-            console.log('📝 Auth: User not found in Firestore, creating...');
-
             // Create user document
             const userData = {
                 email: user.email!,
@@ -159,12 +147,7 @@ export async function signInWithGooglePopup(): Promise<AuthResult> {
             };
 
             await UsersDB.createWithId(user.uid, userData);
-            console.log('✅ Auth: User document created in Firestore');
-        } else {
-            console.log('✅ Auth: User already exists in Firestore');
         }
-
-        console.log('🎉 Auth: Google popup sign-in complete!');
 
         return {
             success: true,
@@ -172,11 +155,6 @@ export async function signInWithGooglePopup(): Promise<AuthResult> {
         };
     } catch (error) {
         console.error('❌ Auth: Error with popup sign-in:', error);
-        console.error('Error details:', {
-            message: error instanceof Error ? error.message : 'Unknown error',
-            code: (error as AuthError)?.code,
-            fullError: error,
-        });
 
         return {
             success: false,
@@ -191,8 +169,6 @@ export async function signInWithGooglePopup(): Promise<AuthResult> {
 // Requires custom authDomain to match app domain for getRedirectResult() to work
 export async function signInWithGoogleRedirect(): Promise<void> {
     try {
-        console.log('🔐 Auth: Initiating Google sign-in with redirect');
-
         const provider = new GoogleAuthProvider();
         provider.addScope('profile');
         provider.addScope('email');
@@ -211,12 +187,9 @@ export async function signInWithGoogleRedirect(): Promise<void> {
 // Call this function when the app loads to check for redirect result
 export async function handleRedirectResult(): Promise<AuthResult> {
     try {
-        console.log('🔍 Auth: Checking for redirect result...');
-
         const result = await getRedirectResult(auth);
 
         if (!result) {
-            console.log('ℹ️ Auth: No redirect result found (user did not sign in via redirect)');
             return {
                 success: false,
                 error: 'No redirect result',
@@ -224,20 +197,10 @@ export async function handleRedirectResult(): Promise<AuthResult> {
         }
 
         const user = result.user;
-        console.log('✅ Auth: Redirect sign-in successful!');
-        console.log('👤 User:', {
-            uid: user.uid,
-            email: user.email,
-            displayName: user.displayName,
-        });
 
-        // Check if user exists in Firestore, create if not
-        console.log('🔍 Auth: Checking if user exists in Firestore...');
         const userResult = await UsersDB.getById(user.uid);
 
         if (!userResult.success) {
-            console.log('📝 Auth: User not found in Firestore, creating...');
-
             const userData = {
                 email: user.email!,
                 displayName: user.displayName || user.email!,
@@ -252,12 +215,7 @@ export async function handleRedirectResult(): Promise<AuthResult> {
             };
 
             await UsersDB.createWithId(user.uid, userData);
-            console.log('✅ Auth: User document created in Firestore');
-        } else {
-            console.log('✅ Auth: User already exists in Firestore');
         }
-
-        console.log('🎉 Auth: Google redirect sign-in complete!');
 
         return {
             success: true,
@@ -288,12 +246,11 @@ export async function signInWithGoogle(): Promise<AuthResult | void> {
 
     // Use redirect in production or on mobile devices
     if (isProduction || isMobile || forceRedirectForTesting) {
-        console.log('🔐 Auth: Using redirect method (production/mobile/testing)');
-        await signInWithGoogleRedirect();
-        // Redirect methods don't return immediately - user will be redirected
-        return;
+        //     await signInWithGoogleRedirect();
+        //     // Redirect methods don't return immediately - user will be redirected
+        //     return;
+        return await signInWithGooglePopup();
     } else {
-        console.log('🔐 Auth: Using popup method (development)');
         return await signInWithGooglePopup();
     }
 }

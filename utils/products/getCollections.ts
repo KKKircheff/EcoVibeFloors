@@ -30,6 +30,25 @@ export interface CollectionMetadata {
 export function getAllCollections(): CollectionMetadata[] {
     return [
         {
+            id: 'oak',
+            slug: 'oak',
+            nameKey: 'collections.names.oak',
+            descriptionKey: 'collections.naturalOak.description',
+            patterns: ['plank'],
+            cardImages: {
+                main: {
+                    sku: 'DIG-A0000197',
+                    imageIndex: 0,
+                    full: true,
+                },
+                hover: {
+                    sku: 'DIG-A0000197',
+                    imageIndex: 2,
+                    full: true,
+                },
+            },
+        },
+        {
             id: 'hybrid-wood',
             slug: 'hybrid-wood',
             nameKey: 'collections.names.hybridWood',
@@ -37,12 +56,12 @@ export function getAllCollections(): CollectionMetadata[] {
             patterns: ['plank', 'fishbone'],
             cardImages: {
                 main: {
-                    sku: 'FLR-5015',
-                    imageIndex: 0,
+                    sku: 'FLR-5006',
+                    imageIndex: 3,
                     full: true,
                 },
                 hover: {
-                    sku: 'FLR-5002',
+                    sku: 'FLR-5006',
                     imageIndex: 0,
                     full: true,
                 },
@@ -56,13 +75,16 @@ export function getAllCollections(): CollectionMetadata[] {
             patterns: ['walvisgraat-click', 'natuur-click', 'landhuis-click', 'tegel-click', 'visgraat-click'],
             cardImages: {
                 main: {
-                    sku: 'FLR-3911',
-                    imageIndex: 0,
+                    sku: 'FLR-3728',
+                    imageIndex: 5,
+                    // sku: 'FLR-3750',
+                    // imageIndex: 24,
                     full: true,
                 },
                 hover: {
-                    sku: 'FLR-3912',
-                    imageIndex: 0,
+                    sku: 'FLR-3728',
+                    // sku: 'FLR-3750',
+                    imageIndex: 1,
                     full: true,
                 },
             },
@@ -75,25 +97,18 @@ export function getAllCollections(): CollectionMetadata[] {
             patterns: ['dorpen', 'hongaarse-punt', 'landhuis'],
             cardImages: {
                 main: {
-                    sku: 'FLR-3040',
+                    sku: 'FLR-3035',
                     imageIndex: 0,
                     full: true,
                 },
                 hover: {
-                    sku: 'FLR-3041',
-                    imageIndex: 0,
+                    sku: 'FLR-3035',
+                    imageIndex: 6,
                     full: true,
                 },
             },
         },
         // Future collections to be added:
-        // {
-        //     id: 'oak',
-        //     slug: 'oak',
-        //     nameKey: 'collections.names.oak',
-        //     descriptionKey: 'collections.naturalOak.description',
-        //     patterns: ['plank'],
-        // },
         // {
         //     id: 'custom-oak',
         //     slug: 'custom-oak',

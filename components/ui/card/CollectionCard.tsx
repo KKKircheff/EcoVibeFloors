@@ -95,7 +95,7 @@ export function CollectionCard({
                     sx={{
                         position: 'relative',
                         width: '100%',
-                        paddingBottom: { xs: '100%', sm: '80%', md: '60%' },
+                        paddingBottom: '75%',
                         overflow: 'hidden'
                     }}
                 >
@@ -129,31 +129,50 @@ export function CollectionCard({
                     )}
                 </Box>
 
-                <CardContent sx={{ flexGrow: 1, display: 'flex', flexDirection: 'column', px: 3 }} >
-                    <Stack spacing={1} pt={2} pb={5}>
-                        <Typography variant="h4" component="h2" sx={{ flexGrow: 1 }}>
+                <CardContent
+                    sx={{
+                        flexGrow: 1,
+                        display: 'flex',
+                        flexDirection: 'column',
+                        p: { xs: 3, md: 4 },
+                        '&:last-child': {
+                            pb: { xs: 3, md: 4 }
+                        }
+                    }}
+                >
+                    <Stack spacing={2} sx={{ flexGrow: 1, mb: 3 }}>
+                        <Typography variant="h3" component="h2">
                             {t(nameKey)}
                         </Typography>
 
                         <Typography
-                            variant="subtitle1"
+                            variant="body1"
                             color="text.secondary"
+                            sx={{
+                                lineHeight: 1.6,
+                                display: '-webkit-box',
+                                WebkitLineClamp: 3,
+                                WebkitBoxOrient: 'vertical',
+                                overflow: 'hidden'
+                            }}
                         >
                             {t(descriptionKey)}
                         </Typography>
 
-                        {/* {productCount !== undefined && (
-                            <Typography variant="subtitle2" color="primary.500" fontWeight={500}>
-                                {productCount} {productCount === 1 ? 'product' : 'products'}
+                        {productCount !== undefined && (
+                            <Typography variant="subtitle2" color="primary.600" fontWeight={600}>
+                                {productCount} {t('products.productsAvailable', { count: productCount })}
                             </Typography>
-                        )} */}
+                        )}
                     </Stack>
+
                     <PrimaryActionButton
                         onClick={handleExploreClick}
                         variant="contained"
                         color="primary"
                         endIcon={<ArrowForwardIcon />}
                         fullWidth
+                        sx={{ mt: 'auto' }}
                     >
                         {t('buttons.exploreCollection')}
                     </PrimaryActionButton>

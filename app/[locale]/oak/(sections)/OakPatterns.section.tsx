@@ -7,8 +7,8 @@ export async function OakPatterns() {
     const t = await getTranslations('oak.patterns');
 
     // Get images from product data by SKU
-    const plankImages = getStyleCardImages('oak', 'DIG-A0000449', 0, 1);
-    const herringboneImages = getStyleCardImages('oak', 'DIG-A0002129', 0, 1);
+    const plankImages = getStyleCardImages('oak', 'DIG-A0002269', 1, 5);
+    const herringboneImages = getStyleCardImages('oak', 'DIG-A0002129', 1, 3);
     const chevronImages = getStyleCardImages('oak', 'DIG-A0002143', 0, 1);
 
     const stylesConfig = [
