@@ -124,7 +124,7 @@ const SideDrawer = ({
                 </Stack>
                 <Stack direction="row" alignItems="center" justifyContent='space-between' spacing={1} pr={0.5}>
                     <LanguageSelector locale={locale} />
-                    <AuthMenu isScrolled={true} />
+                    <AuthMenu isScrolled={true} onNavigate={handleDrawerClose} />
                     <Stack direction="row" alignItems="center" spacing={1}>
                         <IconButton
                             onClick={navigateToBasket}

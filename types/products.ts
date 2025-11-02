@@ -217,7 +217,14 @@ export interface CollectionInfo {
 export type CollectionType = 'hybrid-wood' | 'glue-down-vinyl' | 'click-vinyl' | 'oak';
 
 export type ProductPattern =
-    // Hybrid Wood patterns
+    // Hybrid Wood patterns (hy-wood collection)
+    | 'classic-evo'
+    | 'noblessse-evo'
+    | 'herringbone-evo'
+    | 'classic-olio'
+    | 'noblessse-olio'
+    | 'herringbone-olio'
+    // Hybrid Wood patterns (legacy - removed)
     | 'fishbone'
     | 'plank'
     // Oak patterns
@@ -246,13 +253,24 @@ export function isValidLocale(locale: string): locale is Locale {
 
 export function isValidPattern(pattern: string): pattern is ProductPattern {
     return [
+        // Hy-Wood patterns
+        'classic-evo',
+        'noblessse-evo',
+        'herringbone-evo',
+        'classic-olio',
+        'noblessse-olio',
+        'herringbone-olio',
+        // Legacy hybrid-wood patterns
         'fishbone',
         'plank',
+        // Oak patterns
         'herringbone',
         'chevron',
+        // Glue-down vinyl patterns
         'dorpen',
         'hongaarse-punt',
         'landhuis',
+        // Click vinyl patterns
         'walvisgraat-click',
         'natuur-click',
         'landhuis-click',

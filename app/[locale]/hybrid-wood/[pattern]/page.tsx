@@ -24,7 +24,14 @@ interface PatternPageProps {
 }
 
 export async function generateStaticParams() {
-    const patterns: ProductPattern[] = ['plank', 'fishbone'];
+    const patterns: ProductPattern[] = [
+        'classic-evo',
+        'noblessse-evo',
+        'herringbone-evo',
+        'classic-olio',
+        'noblessse-olio',
+        'herringbone-olio'
+    ];
 
     const params = [];
     for (const pattern of patterns) {

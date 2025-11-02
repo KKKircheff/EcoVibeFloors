@@ -14,8 +14,17 @@ export function getStorageUrl(
     sku: string,
     imageName: string
 ): { full: string; thumbnail: string } {
-    const fullPath = `products/${collection}/${pattern}/${sku}/full/${imageName}`;
-    const thumbnailPath = `products/${collection}/${pattern}/${sku}/thumbnail/${imageName}`;
+    // Map frontend collection names to Firebase Storage paths
+    // This handles cases where the collection identifier differs from the storage path
+    const storageCollectionMap: Record<string, string> = {
+        'hybrid-wood': 'hy-wood', // Frontend uses 'hybrid-wood', storage uses 'hy-wood'
+    };
+
+    // Use mapped path if exists, otherwise use collection name as-is
+    const storagePath = storageCollectionMap[collection] || collection;
+
+    const fullPath = `products/${storagePath}/${pattern}/${sku}/full/${imageName}`;
+    const thumbnailPath = `products/${storagePath}/${pattern}/${sku}/thumbnail/${imageName}`;
 
     const encodedFullPath = encodeURIComponent(fullPath);
     const encodedThumbnailPath = encodeURIComponent(thumbnailPath);

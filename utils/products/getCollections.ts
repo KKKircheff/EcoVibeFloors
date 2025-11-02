@@ -53,16 +53,16 @@ export function getAllCollections(): CollectionMetadata[] {
             slug: 'hybrid-wood',
             nameKey: 'collections.names.hybridWood',
             descriptionKey: 'collections.hybridWood.description',
-            patterns: ['plank', 'fishbone'],
+            patterns: ['classic-evo', 'noblessse-evo', 'herringbone-evo', 'classic-olio', 'noblessse-olio', 'herringbone-olio'],
             cardImages: {
                 main: {
-                    sku: 'FLR-5006',
-                    imageIndex: 3,
+                    sku: '1101280228',
+                    imageIndex: 0,
                     full: true,
                 },
                 hover: {
-                    sku: 'FLR-5006',
-                    imageIndex: 0,
+                    sku: '1101280228',
+                    imageIndex: 2,
                     full: true,
                 },
             },

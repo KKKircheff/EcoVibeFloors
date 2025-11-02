@@ -18,9 +18,10 @@ import { palette } from '@/lib/styles/pallete';
 
 interface AuthMenuProps {
     isScrolled: boolean;
+    onNavigate?: () => void;
 }
 
-export function AuthMenu({ isScrolled }: AuthMenuProps) {
+export function AuthMenu({ isScrolled, onNavigate }: AuthMenuProps) {
     const t = useTranslations('auth');
     const router = useRouter();
     const { user, isAuthenticated, signOut } = useAuth();
@@ -41,6 +42,7 @@ export function AuthMenu({ isScrolled }: AuthMenuProps) {
     };
 
     const handleSignInClick = () => {
+        onNavigate?.();
         router.push('/auth');
     };
 

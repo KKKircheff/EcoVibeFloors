@@ -16,6 +16,7 @@ import {
     Tabs,
     Tab,
     CircularProgress,
+    Grid,
 } from '@mui/material';
 import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
@@ -129,94 +130,177 @@ export default function AuthPage() {
     }
 
     return (
-        <Container maxWidth="sm" sx={{ py: 8 }}>
-            <Card elevation={3} sx={{ p: 4, px: { xs: 1, md: 4 } }}>
-                <Stack spacing={4}>
-                    {/* Tabs */}
-                    <Tabs
-                        value={mode}
-                        onChange={handleTabChange}
-                        sx={{
-                            borderBottom: 1,
-                            borderColor: 'divider',
-                            mb: 2,
-                        }}
-                    >
-                        <Tab label={t('login')} value="login" sx={{ mx: 'auto', width: '50%', color: 'info.600' }} />
-                        <Tab label={t('signUp')} value="signup" sx={{ mx: 'auto', width: '50%', color: 'info.600' }} />
-                    </Tabs>
+        <Box sx={{ position: 'relative', minHeight: '100vh', display: 'flex', alignItems: 'center', py: 8 }}>
+            {/* Background Image Layer (behind everything) */}
+            <Box
+                sx={{
+                    position: 'absolute',
+                    top: 0,
+                    left: 0,
+                    width: '100%',
+                    height: '100%',
+                    zIndex: 0,
+                    display: { xs: 'none', md: 'block' },
+                    backgroundImage: 'url(/images/home-page/hero-home-new.webp)',
+                    backgroundSize: 'cover',
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat',
+                }}
+            />
 
-                    {/* Error Alert */}
-                    {error && (
-                        <Alert severity="error" onClose={() => setError('')}>
-                            {error}
-                        </Alert>
-                    )}
+            {/* Main Container */}
+            <Container maxWidth="lg" sx={{ position: 'relative', zIndex: 1 }}>
+                <Card
+                    elevation={6}
+                    sx={{
+                        borderRadius: '20px',
+                        overflow: 'hidden',
+                        minHeight: { xs: 'auto', md: 600 },
+                        // Gradient: transparent left (cutout window), white right (form background)
+                        background: {
+                            xs: 'white',
+                            // md: 'linear-gradient(to right, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 45%, rgba(255,255,255,0.95) 52%, rgba(255,255,255,1) 55%, rgba(255,255,255,1) 100%)',
+                            md: 'linear-gradient(to right, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.1) 45%, rgba(255,255,255,0.1) 52%, rgba(255,255,255,0.1) 55%, rgba(255,255,255,0.1) 100%)',
+                        },
+                        backdropFilter: { xs: 'none', md: 'blur(6px)' },
+                    }}
+                >
+                    <Grid container minHeight={{ xs: 'auto', md: 600 }}>
+                        {/* Left Section: Text over background (through cutout window) */}
+                        <Grid
+                            size={{ xs: 12, md: 6 }}
+                            display={{ xs: 'none', md: 'flex' }}
+                            sx={{
+                                alignItems: 'flex-end',
+                                justifyContent: 'center',
+                                p: { md: 6 },
+                            }}
+                        >
+                            <Stack spacing={3}>
+                                <Typography
+                                    variant="h2"
+                                    sx={{
+                                        // color: 'primary.700',
+                                        color: 'white',
+                                        textShadow: '0 2px 8px rgba(0,0,0,0.5)',
+                                        fontWeight: 700,
+                                    }}
+                                >
+                                    {t('welcome')}
+                                </Typography>
+                                <Typography
+                                    variant="h5"
+                                    sx={{
+                                        color: 'white',
+                                        textShadow: '0 1px 4px rgba(0,0,0,0.4)',
+                                    }}
+                                >
+                                    {t('tagline')}
+                                </Typography>
+                            </Stack>
+                        </Grid>
 
-                    {/* Google Sign In */}
-                    <Button
-                        variant="contained"
-                        color='info'
-                        size="large"
-                        fullWidth
-                        startIcon={
-                            <Image
-                                src={googleIcon}
-                                alt="Google"
-                                width={20}
-                                height={20}
-                                style={{ objectFit: 'contain' }}
-                            />
-                        }
-                        onClick={handleGoogleSignIn}
-                        disabled={loading}
-                        sx={{
-                            py: 1.5,
-                            border: '1px solid',
-                            borderColor: 'info.200',
-                            borderRadius: '60px',
-                            bgcolor: 'white',
-                            color: 'info.600',
-                            '&:hover': {
-                                color: 'info.50',
-                                borderColor: 'grey.400',
-                                backgroundColor: 'grey.800',
-                            },
-                        }}
-                    >
-                        {t('googleSignIn')}
-                    </Button>
+                        {/* Right Section: Forms on white background */}
+                        <Grid
+                            size={{ xs: 12, md: 6 }}
+                            sx={{
+                                bgcolor: { xs: 'transparent', md: 'white' },
+                                display: 'flex',
+                                alignItems: 'center',
+                                justifyContent: 'center',
+                            }}
+                        >
+                            <Box sx={{ width: '100%', maxWidth: 480, p: 4, px: { xs: 1, md: 4 } }}>
+                                <Stack spacing={4}>
+                                    {/* Tabs */}
+                                    <Tabs
+                                        value={mode}
+                                        onChange={handleTabChange}
+                                        sx={{
+                                            borderBottom: 1,
+                                            borderColor: 'divider',
+                                            mb: 2,
+                                        }}
+                                    >
+                                        <Tab label={t('login')} value="login" sx={{ mx: 'auto', width: '50%', color: 'info.600' }} />
+                                        <Tab label={t('signUp')} value="signup" sx={{ mx: 'auto', width: '50%', color: 'info.600' }} />
+                                    </Tabs>
 
-                    <Divider>
-                        <Typography variant="body2" color="text.secondary">
-                            {t('orDivider')}
-                        </Typography>
-                    </Divider>
+                                    {/* Error Alert */}
+                                    {error && (
+                                        <Alert severity="error" onClose={() => setError('')}>
+                                            {error}
+                                        </Alert>
+                                    )}
 
-                    {/* Forms */}
-                    {mode === 'login' ? (
-                        <LoginForm
-                            t={t}
-                            signIn={signIn}
-                            router={router}
-                            loading={loading}
-                            setLoading={setLoading}
-                            setError={setError}
-                        />
-                    ) : (
-                        <SignUpForm
-                            t={t}
-                            signUp={signUp}
-                            router={router}
-                            locale={locale}
-                            loading={loading}
-                            setLoading={setLoading}
-                            setError={setError}
-                        />
-                    )}
-                </Stack>
-            </Card>
-        </Container>
+                                    {/* Google Sign In */}
+                                    <Button
+                                        variant="contained"
+                                        color='info'
+                                        size="large"
+                                        fullWidth
+                                        startIcon={
+                                            <Image
+                                                src={googleIcon}
+                                                alt="Google"
+                                                width={20}
+                                                height={20}
+                                                style={{ objectFit: 'contain' }}
+                                            />
+                                        }
+                                        onClick={handleGoogleSignIn}
+                                        disabled={loading}
+                                        sx={{
+                                            py: 1.5,
+                                            border: '1px solid',
+                                            borderColor: 'info.200',
+                                            borderRadius: '60px',
+                                            bgcolor: 'white',
+                                            color: 'info.600',
+                                            '&:hover': {
+                                                color: 'info.50',
+                                                borderColor: 'grey.400',
+                                                backgroundColor: 'grey.800',
+                                            },
+                                        }}
+                                    >
+                                        {t('googleSignIn')}
+                                    </Button>
+
+                                    <Divider>
+                                        <Typography variant="body2" color="text.secondary">
+                                            {t('orDivider')}
+                                        </Typography>
+                                    </Divider>
+
+                                    {/* Forms */}
+                                    {mode === 'login' ? (
+                                        <LoginForm
+                                            t={t}
+                                            signIn={signIn}
+                                            router={router}
+                                            loading={loading}
+                                            setLoading={setLoading}
+                                            setError={setError}
+                                        />
+                                    ) : (
+                                        <SignUpForm
+                                            t={t}
+                                            signUp={signUp}
+                                            router={router}
+                                            locale={locale}
+                                            loading={loading}
+                                            setLoading={setLoading}
+                                            setError={setError}
+                                        />
+                                    )}
+                                </Stack>
+                            </Box>
+                        </Grid>
+                    </Grid>
+                </Card>
+            </Container>
+        </Box>
     );
 }
 

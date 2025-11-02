@@ -73,6 +73,8 @@
         "company": "Company",
         "signInToViewPricing": "Price: Login to view pricing",
         "authTitle": "Welcome to EcoVibeFloors",
+        "welcome": "Welcome to EcoVibeFloors",
+        "tagline": "Premium European Flooring Solutions",
         "googleSignIn": "Continue with Google",
         "orDivider": "or",
         "designProfessional": "I am a design professional",
@@ -266,6 +268,7 @@
         "names": {
             "hybridWood": "Hybrid Wood",
             "hybrid-wood": "Hybrid Wood",
+            "hy-wood": "Hybrid Wood",
             "clickVinyl": "Click Vinyl",
             "click-vinyl": "Click Vinyl",
             "glueDownVinyl": "Glue-Down Vinyl",
@@ -306,6 +309,18 @@
         "plankDescription": "Classic plank flooring offers timeless elegance with contemporary versatility, perfect for any interior design style.",
         "fishbone": "Herringbone",
         "fishboneDescription": "Sophisticated herringbone pattern creates visual impact and elegant texture, transforming any space into a luxurious setting.",
+        "classic-evo": "Classic Lacquered",
+        "classic-evoDescription": "Premium plank flooring with durable EVO lacquer finish, combining classic aesthetics with modern waterproof technology.",
+        "noblessse-evo": "Noblesse Lacquered",
+        "noblessse-evoDescription": "Extra-long luxury planks with EVO lacquer finish, creating sophisticated and spacious interiors with superior durability.",
+        "herringbone-evo": "Herringbone Lacquered",
+        "herringbone-evoDescription": "Elegant herringbone pattern with EVO lacquer finish, offering timeless sophistication with contemporary waterproof performance.",
+        "classic-olio": "Classic Oilo",
+        "classic-olioDescription": "Natural plank flooring with oiled finish, delivering authentic wood character and easy maintenance.",
+        "noblessse-olio": "Noblesse Olio",
+        "noblessse-olioDescription": "Extra-long luxury planks with oiled finish, combining natural warmth with premium quality and simple care.",
+        "herringbone-olio": "Herringbone Olio",
+        "herringbone-olioDescription": "Classic herringbone pattern with oiled finish, bringing traditional elegance and natural beauty to any space.",
         "herringbone": "Herringbone",
         "herringboneDescription": "Classic herringbone pattern creates a sophisticated and elegant aesthetic, perfect for both traditional and contemporary interiors.",
         "chevron": "Chevron",
@@ -590,6 +605,30 @@
         },
         "styles": {
             "title": "Available Styles & Formats",
+            "classicEvo": {
+                "dimensions": "2197 × 233 × 11 mm",
+                "description": "Premium plank flooring with durable EVO lacquer finish, combining classic aesthetics with modern waterproof technology."
+            },
+            "noblessseEvo": {
+                "dimensions": "2375 × 270 × 11 mm",
+                "description": "Extra-long luxury planks with EVO lacquer finish, creating sophisticated and spacious interiors with superior durability."
+            },
+            "herringboneEvo": {
+                "dimensions": "774 × 129 × 11 mm",
+                "description": "Elegant herringbone pattern with EVO lacquer finish, offering timeless sophistication with contemporary waterproof performance."
+            },
+            "classicOlio": {
+                "dimensions": "2197 × 233 × 11 mm",
+                "description": "Natural plank flooring with oiled finish, delivering authentic wood character and easy maintenance."
+            },
+            "noblessseOlio": {
+                "dimensions": "2375 × 270 × 11 mm",
+                "description": "Extra-long luxury planks with oiled finish, combining natural warmth with premium quality and simple care."
+            },
+            "herringboneOlio": {
+                "dimensions": "546 × 91 × 11 mm",
+                "description": "Classic herringbone pattern with oiled finish, bringing traditional elegance and natural beauty to any space."
+            },
             "xlPlanks": {
                 "title": "Planks",
                 "dimensions": "2370 mm × 270 mm x 11 mm",
