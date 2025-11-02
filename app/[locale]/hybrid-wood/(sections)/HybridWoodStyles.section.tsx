@@ -8,11 +8,11 @@ export async function HybridWoodStyles() {
     const tPatterns = await getTranslations('patterns');
 
     // Get images from product data by SKU (all 6 patterns)
-    const classicEvoImages = getStyleCardImages('hybrid-wood', '1101280228', 0, 2);
-    const noblessseEvoImages = getStyleCardImages('hybrid-wood', '1101280128', 0, 2);
-    const herringboneEvoImages = getStyleCardImages('hybrid-wood', '1101281421', 0, 2);
-    const classicOlioImages = getStyleCardImages('hybrid-wood', '1101280236', 0, 2);
-    const noblessseOlioImages = getStyleCardImages('hybrid-wood', '1101280136', 0, 2);
+    const classicEvoImages = getStyleCardImages('hybrid-wood', '1101280228', 2, 0);
+    const noblessseEvoImages = getStyleCardImages('hybrid-wood', '1101280128', 2, 0);
+    const herringboneEvoImages = getStyleCardImages('hybrid-wood', '1101281421', 1, 2);
+    const classicOlioImages = getStyleCardImages('hybrid-wood', '1101280236', 3, 0);
+    const noblessseOlioImages = getStyleCardImages('hybrid-wood', '1101280136', 3, 0);
     const herringboneOlioImages = getStyleCardImages('hybrid-wood', '1101281428', 0, 2);
 
     const stylesConfig = [

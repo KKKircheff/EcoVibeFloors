@@ -53,16 +53,23 @@ export function getAllCollections(): CollectionMetadata[] {
             slug: 'hybrid-wood',
             nameKey: 'collections.names.hybridWood',
             descriptionKey: 'collections.hybridWood.description',
-            patterns: ['classic-evo', 'noblessse-evo', 'herringbone-evo', 'classic-olio', 'noblessse-olio', 'herringbone-olio'],
+            patterns: [
+                'classic-evo',
+                'noblessse-evo',
+                'herringbone-evo',
+                'classic-olio',
+                'noblessse-olio',
+                'herringbone-olio',
+            ],
             cardImages: {
                 main: {
                     sku: '1101280228',
-                    imageIndex: 0,
+                    imageIndex: 3,
                     full: true,
                 },
                 hover: {
                     sku: '1101280228',
-                    imageIndex: 2,
+                    imageIndex: 0,
                     full: true,
                 },
             },

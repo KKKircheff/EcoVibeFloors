@@ -9,22 +9,6 @@ const HomecardsSection = async () => {
 
     const cardsConfig = [
         {
-            title: t('premiumOak.title'),
-            text: t('premiumOak.text'),
-            images: ['no-small1.jpg', 'no-small2.jpg', 'no-large.jpg'] as [string, string, string],
-            button1: { text: t('premiumOak.learnMore'), route: "/oak/what-is-oak-flooring" },
-            button2: { text: t('premiumOak.viewCollection'), route: "/oak" },
-            mirror: true
-        },
-        {
-            title: t('premiumOakCustom.title'),
-            text: t('premiumOakCustom.text'),
-            images: ['premium-large.jpg', 'premium-small2.jpg', 'premium-small1.jpg'] as [string, string, string],
-            button1: { text: t('premiumOakCustom.learnMore'), route: "/collections/custom-oak/info" },
-            button2: { text: t('premiumOakCustom.viewCollection'), route: "/custom-oak" },
-            mirror: false
-        },
-        {
             title: t('hybridWood.title'),
             text: t('hybridWood.text'),
             images: ['hw-2.jpg', 'hw-1.jpg', 'hw-3.jpg'] as [string, string, string],
@@ -32,6 +16,22 @@ const HomecardsSection = async () => {
             button2: { text: t('hybridWood.viewCollection'), route: "/hybrid-wood" },
             mirror: true
         },
+        {
+            title: t('premiumOak.title'),
+            text: t('premiumOak.text'),
+            images: ['no-small1.jpg', 'no-small2.jpg', 'no-large.jpg'] as [string, string, string],
+            button1: { text: t('premiumOak.learnMore'), route: "/oak/what-is-oak-flooring" },
+            button2: { text: t('premiumOak.viewCollection'), route: "/oak" },
+            mirror: true
+        },
+        // {
+        //     title: t('premiumOakCustom.title'),
+        //     text: t('premiumOakCustom.text'),
+        //     images: ['premium-large.jpg', 'premium-small2.jpg', 'premium-small1.jpg'] as [string, string, string],
+        //     button1: { text: t('premiumOakCustom.learnMore'), route: "/collections/custom-oak/info" },
+        //     button2: { text: t('premiumOakCustom.viewCollection'), route: "/custom-oak" },
+        //     mirror: false
+        // },
         {
             title: t('clickVinyl.title'),
             text: t('clickVinyl.text'),

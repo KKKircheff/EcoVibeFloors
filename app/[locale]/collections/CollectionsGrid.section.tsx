@@ -5,7 +5,6 @@ import { getProductCountByCollection } from '@/utils/products';
 import { CollectionCard } from '@/components/ui/card/CollectionCard';
 import { getCollectionCardImages } from '@/lib/utils/getCollectionCardImages';
 import { CollectionHero } from '@/components/ui/sections/hero/CollectionHero.section';
-import { palette } from '@/lib/styles/pallete';
 
 interface CollectionsGridProps {
     title: string;
