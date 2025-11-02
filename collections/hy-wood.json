@@ -23,10 +23,7 @@
                 "1101280228_HW_Eiche-Mojave_Schlaf_Milieu-RS_V02.webp",
                 "1101280228_HW_Eiche-Mojave_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Mojave - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Mojave - Премиум естествен под"
@@ -111,10 +108,7 @@
             },
             "metadata": {
                 "totalImages": 4,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.653Z",
                 "updatedAt": "2025-11-02T18:05:29.654Z"
             },
@@ -154,21 +148,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -196,10 +178,7 @@
                 "1101280226_HW_Eiche-Joshua-Tree_Schlaf_Milieu-RS_V02.webp",
                 "1101280226_HW_Eiche-Joshua-Tree_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Joshua Tree - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Joshua Tree - Премиум естествен под"
@@ -284,10 +263,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.654Z",
                 "updatedAt": "2025-11-02T18:05:29.654Z"
             },
@@ -327,21 +303,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -369,10 +333,7 @@
                 "1101281301_HW_Esche-Yoho_Schlaf_Milieu-RS_V02.webp",
                 "1101281301_HW_Esche-Yoho_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Ash Yoho - Premium plank flooring",
                 "bg": "Хибридно дърво - Ash Yoho - Премиум естествен под"
@@ -457,10 +418,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.655Z",
                 "updatedAt": "2025-11-02T18:05:29.655Z"
             },
@@ -500,21 +458,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -542,10 +488,7 @@
                 "1101281223_HW_Eiche-Una_Schlaf_Milieu-RS_V02.webp",
                 "1101281223_HW_Eiche-Una_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Una - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Una - Премиум естествен под"
@@ -630,10 +573,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.655Z",
                 "updatedAt": "2025-11-02T18:05:29.655Z"
             },
@@ -673,21 +613,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -715,10 +643,7 @@
                 "1101281302_HW_Esche-Abisko_Schlaf_Milieu-RS_V02.webp",
                 "1101281302_HW_Esche-Abisko_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Ash Abisko - Premium plank flooring",
                 "bg": "Хибридно дърво - Ash Abisko - Премиум естествен под"
@@ -803,10 +728,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.655Z",
                 "updatedAt": "2025-11-02T18:05:29.655Z"
             },
@@ -846,21 +768,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -888,10 +798,7 @@
                 "1101281200_HW_Eiche-Capitol-Reef_Schlaf_Milieu-RS_V02.webp",
                 "1101281200_HW_Eiche-Capitol-Reef_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Capitol Reef - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Capitol Reef - Премиум естествен под"
@@ -976,10 +883,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.656Z",
                 "updatedAt": "2025-11-02T18:05:29.656Z"
             },
@@ -1019,21 +923,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -1061,10 +953,7 @@
                 "1101281202_HW_Eiche-Wind-Cave_Schlaf_Milieu-RS_V02.webp",
                 "1101281202_HW_Eiche-Wind-Cave_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Wind Cave - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Wind Cave - Премиум естествен под"
@@ -1149,10 +1038,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.656Z",
                 "updatedAt": "2025-11-02T18:05:29.656Z"
             },
@@ -1192,21 +1078,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -1234,10 +1108,7 @@
                 "1101281201_HW_Eiche-Tyresta_Schlaf_Milieu-RS_V02.webp",
                 "1101281201_HW_Eiche-Tyresta_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Tyresta - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Tyresta - Премиум естествен под"
@@ -1322,10 +1193,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.657Z",
                 "updatedAt": "2025-11-02T18:05:29.657Z"
             },
@@ -1365,21 +1233,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -1407,10 +1263,7 @@
                 "1101281213_HW_Eiche-Reivo_Schlaf_Milieu-RS_V02.webp",
                 "1101281213_HW_Eiche-Reivo_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Reivo - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Reivo - Премиум естествен под"
@@ -1495,10 +1348,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.657Z",
                 "updatedAt": "2025-11-02T18:05:29.657Z"
             },
@@ -1538,21 +1388,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -1580,10 +1418,7 @@
                 "1101280227_HW_Eiche-Yosemite_Schlaf_Milieu-RS_V02.webp",
                 "1101280227_HW_Eiche-Yosemite_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Yosemite - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Yosemite - Премиум естествен под"
@@ -1668,10 +1503,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.657Z",
                 "updatedAt": "2025-11-02T18:05:29.657Z"
             },
@@ -1711,21 +1543,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -1753,10 +1573,7 @@
                 "1101281205_HW_Eiche-Dovre_Schlaf_Milieu-RS_V02.webp",
                 "1101281205_HW_Eiche-Dovre_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Dovre - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Dovre - Премиум естествен под"
@@ -1841,10 +1658,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.658Z",
                 "updatedAt": "2025-11-02T18:05:29.658Z"
             },
@@ -1884,21 +1698,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -1926,10 +1728,7 @@
                 "1101281204_HW_Eiche-Oulanka_Schlaf_Milieu-RS_V02.webp",
                 "1101281204_HW_Eiche-Oulanka_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Oulanka - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Oulanka - Премиум естествен под"
@@ -2014,10 +1813,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.658Z",
                 "updatedAt": "2025-11-02T18:05:29.658Z"
             },
@@ -2057,21 +1853,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -2099,10 +1883,7 @@
                 "1101281203_HW_Eiche-Nordens-Ark_Schlaf_Milieu-RS_V02.webp",
                 "1101281203_HW_Eiche-TNordens-Ark_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Nordens Ark - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Nordens Ark - Премиум естествен под"
@@ -2187,10 +1968,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.658Z",
                 "updatedAt": "2025-11-02T18:05:29.658Z"
             },
@@ -2230,21 +2008,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -2272,10 +2038,7 @@
                 "1101281206_HW_Eiche-Junkerdal_Schlaf_Milieu-RS_V02.webp",
                 "1101281206_HW_Eiche-Junkerdal_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Junkerdal - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Junkerdal - Премиум естествен под"
@@ -2360,10 +2123,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.658Z",
                 "updatedAt": "2025-11-02T18:05:29.658Z"
             },
@@ -2403,21 +2163,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -2445,10 +2193,7 @@
                 "1101281304_HW_Walnuss-Prescott_Schlaf_Milieu-RS_V02.webp",
                 "1101281304_HW_Walnuss-Prescott_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Walnut Prescott - Premium plank flooring",
                 "bg": "Хибридно дърво - Walnut Prescott - Премиум естествен под"
@@ -2533,10 +2278,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.659Z",
                 "updatedAt": "2025-11-02T18:05:29.659Z"
             },
@@ -2576,21 +2318,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -2618,10 +2348,7 @@
                 "1101281212_HW_Eiche-Iraty_Schlaf_Milieu-RS_V02.webp",
                 "1101281212_HW_Eiche-Iraty_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Iraty - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Iraty - Премиум естествен под"
@@ -2706,10 +2433,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.659Z",
                 "updatedAt": "2025-11-02T18:05:29.659Z"
             },
@@ -2749,21 +2473,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -2791,10 +2503,7 @@
                 "1101281211_HW_Eiche-Val-Cama_Schlaf_Milieu-RS_V02.webp",
                 "1101281211_HW_Eiche-Val-Cama_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Val Cama - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Val Cama - Премиум естествен под"
@@ -2879,10 +2588,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.659Z",
                 "updatedAt": "2025-11-02T18:05:29.659Z"
             },
@@ -2922,21 +2628,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -2964,10 +2658,7 @@
                 "1101281217_HW_Eiche-Sumava_Schlaf_Milieu-RS_V02.webp",
                 "1101281217_HW_Eiche-Sumava_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Sumava - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Sumava - Премиум естествен под"
@@ -3052,10 +2743,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.659Z",
                 "updatedAt": "2025-11-02T18:05:29.659Z"
             },
@@ -3095,21 +2783,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -3137,10 +2813,7 @@
                 "1101281208_HW_Eiche-Pirin_Schlaf_Milieu-RS_V02.webp",
                 "1101281208_HW_Eiche-Pirin_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Pirin - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Pirin - Премиум естествен под"
@@ -3225,10 +2898,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.660Z",
                 "updatedAt": "2025-11-02T18:05:29.660Z"
             },
@@ -3268,21 +2938,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -3310,10 +2968,7 @@
                 "1101281209_HW_Eiche-Nieuw-Land_Schlaf_Milieu-RS_V02.webp",
                 "1101281209_HW_Eiche-Nieuw-Land_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Nieuw Land - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Nieuw Land - Премиум естествен под"
@@ -3398,10 +3053,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.660Z",
                 "updatedAt": "2025-11-02T18:05:29.660Z"
             },
@@ -3441,21 +3093,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -3483,10 +3123,7 @@
                 "1101281224_HW_Eiche-Ordesa_Schlaf_Milieu-RS_V02.webp",
                 "1101281224_HW_Eiche-Ordesa_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Ordesa - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Ordesa - Премиум естествен под"
@@ -3571,10 +3208,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.660Z",
                 "updatedAt": "2025-11-02T18:05:29.660Z"
             },
@@ -3614,21 +3248,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -3655,10 +3277,7 @@
                 "1101280128_HW_Eiche-Mojave_Schlaf_Milieu-RS_V02.webp",
                 "1101280128_HW_Eiche-Mojave_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Mojave - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Mojave - Премиум естесвен парке широка дъска"
@@ -3743,10 +3362,7 @@
             },
             "metadata": {
                 "totalImages": 4,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.661Z",
                 "updatedAt": "2025-11-02T18:05:29.661Z"
             },
@@ -3786,21 +3402,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -3828,10 +3432,7 @@
                 "1101280126_HW_Eiche-Joshua-Tree_Schlaf_Milieu-RS_V02.webp",
                 "1101280126_HW_Eiche-Joshua-Tree_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Joshua Tree - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Joshua Tree - Премиум естесвен парке широка дъска"
@@ -3916,10 +3517,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.661Z",
                 "updatedAt": "2025-11-02T18:05:29.661Z"
             },
@@ -3959,21 +3557,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -4001,10 +3587,7 @@
                 "1101281123_HW_Eiche-Una_Schlaf_Milieu-RS_V02.webp",
                 "1101281123_HW_Eiche-Una_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Una - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Una - Премиум естесвен парке широка дъска"
@@ -4089,10 +3672,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.661Z",
                 "updatedAt": "2025-11-02T18:05:29.661Z"
             },
@@ -4132,21 +3712,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -4174,10 +3742,7 @@
                 "1101281102_HW_Eiche-Wind-Cave_Schlaf_Milieu-RS_V02.webp",
                 "1101281102_HW_Eiche-Wind-Cave_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Wind Cave - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Wind Cave - Премиум естесвен парке широка дъска"
@@ -4262,10 +3827,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.662Z",
                 "updatedAt": "2025-11-02T18:05:29.662Z"
             },
@@ -4305,21 +3867,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -4347,10 +3897,7 @@
                 "1101281101_HW_Eiche-Tyresta_Schlaf_Milieu-RS_V02.webp",
                 "1101281101_HW_Eiche-Tyresta_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Tyresta - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Tyresta - Премиум естесвен парке широка дъска"
@@ -4435,10 +3982,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.662Z",
                 "updatedAt": "2025-11-02T18:05:29.662Z"
             },
@@ -4478,21 +4022,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -4520,10 +4052,7 @@
                 "1101281100_HW_Eiche-Capitol-Reef_Schlaf_Milieu-RS_V02.webp",
                 "1101281100_HW_Eiche-Capitol-Reef_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Capitol Reef - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Capitol Reef - Премиум естесвен парке широка дъска"
@@ -4608,10 +4137,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.662Z",
                 "updatedAt": "2025-11-02T18:05:29.662Z"
             },
@@ -4651,21 +4177,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -4693,10 +4207,7 @@
                 "1101281113_HW_Eiche-Reivo_Schlaf_Milieu-RS_V02.webp",
                 "1101281113_HW_Eiche-Reivo_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Reivo - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Reivo - Премиум естесвен парке широка дъска"
@@ -4781,10 +4292,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.662Z",
                 "updatedAt": "2025-11-02T18:05:29.662Z"
             },
@@ -4824,21 +4332,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -4866,10 +4362,7 @@
                 "1101280127_HW_Eiche-Yosemite_Schlaf_Milieu-RS_V02.webp",
                 "1101280127_HW_Eiche-Yosemite_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Yosemite - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Yosemite - Премиум естесвен парке широка дъска"
@@ -4954,10 +4447,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.663Z",
                 "updatedAt": "2025-11-02T18:05:29.663Z"
             },
@@ -4997,21 +4487,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -5039,10 +4517,7 @@
                 "1101281103_HW_Eiche-Nordens-Ark_Schlaf_Milieu-RS_V02.webp",
                 "1101281103_HW_Eiche-Nordens-Ark_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Nordens Ark - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Nordens Ark - Премиум естесвен парке широка дъска"
@@ -5127,10 +4602,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.663Z",
                 "updatedAt": "2025-11-02T18:05:29.663Z"
             },
@@ -5170,21 +4642,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -5212,10 +4672,7 @@
                 "1101281105_HW_Eiche-Dovre_Schlaf_Milieu-RS_V02.webp",
                 "1101281105_HW_Eiche-Dovre_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Dovre - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Dovre - Премиум естесвен парке широка дъска"
@@ -5300,10 +4757,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.663Z",
                 "updatedAt": "2025-11-02T18:05:29.663Z"
             },
@@ -5343,21 +4797,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -5385,10 +4827,7 @@
                 "1101281104_HW_Eiche-Oulanka_Schlaf_Milieu-RS_V02.webp",
                 "1101281104_HW_Eiche-Oulanka_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Oulanka - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Oulanka - Премиум естесвен парке широка дъска"
@@ -5473,10 +4912,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.663Z",
                 "updatedAt": "2025-11-02T18:05:29.664Z"
             },
@@ -5516,21 +4952,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -5558,10 +4982,7 @@
                 "1101281106_HW_Eiche-Junkerdal_Schlaf_Milieu-RS_V02.webp",
                 "1101281106_HW_Eiche-Junkerdal_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Junkerdal - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Junkerdal - Премиум естесвен парке широка дъска"
@@ -5646,10 +5067,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.664Z",
                 "updatedAt": "2025-11-02T18:05:29.664Z"
             },
@@ -5689,21 +5107,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -5731,10 +5137,7 @@
                 "1101281112_HW_Eiche-Iraty_Schlaf_Milieu-RS_V02.webp",
                 "1101281112_HW_Eiche-Iraty_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Iraty - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Iraty - Премиум естесвен парке широка дъска"
@@ -5819,10 +5222,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.664Z",
                 "updatedAt": "2025-11-02T18:05:29.664Z"
             },
@@ -5862,21 +5262,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -5904,10 +5292,7 @@
                 "1101281111_HW_Eiche-Val-Cama_Schlaf_Milieu-RS_V02.webp",
                 "1101281111_HW_Eiche-Val-Cama_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Val Cama - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Val Cama - Премиум естесвен парке широка дъска"
@@ -5992,10 +5377,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.664Z",
                 "updatedAt": "2025-11-02T18:05:29.664Z"
             },
@@ -6035,21 +5417,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -6077,10 +5447,7 @@
                 "1101281117_HW_Eiche-Sumava_Schlaf_Milieu-RS_V02.webp",
                 "1101281117_HW_Eiche-Sumava_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Sumava - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Sumava - Премиум естесвен парке широка дъска"
@@ -6165,10 +5532,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.664Z",
                 "updatedAt": "2025-11-02T18:05:29.664Z"
             },
@@ -6208,21 +5572,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -6250,10 +5602,7 @@
                 "1101281108_HW_Eiche-Pirin_Schlaf_Milieu-RS_V02.webp",
                 "1101281108_HW_Eiche-Pirin_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Pirin - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Pirin - Премиум естесвен парке широка дъска"
@@ -6338,10 +5687,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.665Z",
                 "updatedAt": "2025-11-02T18:05:29.665Z"
             },
@@ -6381,21 +5727,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -6423,10 +5757,7 @@
                 "1101281109_HW_Eiche-Nieuw-Land_Schlaf_Milieu-RS_V02.webp",
                 "1101281109_HW_Eiche-Nieuw-Land_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Nieuw Land - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Nieuw Land - Премиум естесвен парке широка дъска"
@@ -6511,10 +5842,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.665Z",
                 "updatedAt": "2025-11-02T18:05:29.665Z"
             },
@@ -6554,21 +5882,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -6596,10 +5912,7 @@
                 "1101281124_HW_Eiche-Ordesa_Schlaf_Milieu-RS_V02.webp",
                 "1101281124_HW_Eiche-Ordesa_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Ordesa - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Ordesa - Премиум естесвен парке широка дъска"
@@ -6684,10 +5997,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.665Z",
                 "updatedAt": "2025-11-02T18:05:29.665Z"
             },
@@ -6727,21 +6037,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -6768,10 +6066,7 @@
                 "1101281421_HW_Eiche-Gascogne_OF-Pers_V01.webp",
                 "1101281421_HW_Eiche-Gascogne_OF-Plan_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [3, 0],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Gascogne - Premium herringbone flooring",
                 "bg": "Хибридно дърво - Oak Gascogne - Премиум паркет рибена кост"
@@ -6854,10 +6149,7 @@
             },
             "metadata": {
                 "totalImages": 4,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.666Z",
                 "updatedAt": "2025-11-02T18:05:29.666Z"
             },
@@ -6897,21 +6189,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -6938,10 +6218,7 @@
                 "1101281422_HW_Eiche-Spessart_OF-Pers_V01.webp",
                 "1101281422_HW_Eiche-Spessart_OF-Plan_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [3, 0],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Spessart - Premium herringbone flooring",
                 "bg": "Хибридно дърво - Oak Spessart - Премиум паркет рибена кост"
@@ -7024,10 +6301,7 @@
             },
             "metadata": {
                 "totalImages": 4,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.666Z",
                 "updatedAt": "2025-11-02T18:05:29.666Z"
             },
@@ -7067,21 +6341,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -7108,10 +6370,7 @@
                 "1101281424_HW_Eiche-Tayrona_OF-Pers_V01.webp",
                 "1101281424_HW_Eiche-Tayrona_OF-Plan_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [3, 0],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Tayrona - Premium herringbone flooring",
                 "bg": "Хибридно дърво - Oak Tayrona - Премиум паркет рибена кост"
@@ -7194,10 +6453,7 @@
             },
             "metadata": {
                 "totalImages": 4,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.666Z",
                 "updatedAt": "2025-11-02T18:05:29.666Z"
             },
@@ -7237,21 +6493,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -7278,10 +6522,7 @@
                 "1101281426_HW_Eiche-Marais_OF-Pers_V01.webp",
                 "1101281426_HW_Eiche-Marais_OF-Plan_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [3, 0],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Marais - Premium herringbone flooring",
                 "bg": "Хибридно дърво - Oak Marais - Премиум паркет рибена кост"
@@ -7364,10 +6605,7 @@
             },
             "metadata": {
                 "totalImages": 4,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.667Z",
                 "updatedAt": "2025-11-02T18:05:29.667Z"
             },
@@ -7407,21 +6645,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -7448,10 +6674,7 @@
                 "1101280236_HW_Eiche-Great-Basin_Schlaf_Milieu-RS_V02.webp",
                 "1101280236_HW_Eiche-Great-Basin_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Great Basin - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Great Basin - Премиум естествен под"
@@ -7536,10 +6759,7 @@
             },
             "metadata": {
                 "totalImages": 4,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.667Z",
                 "updatedAt": "2025-11-02T18:05:29.667Z"
             },
@@ -7579,21 +6799,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -7621,10 +6829,7 @@
                 "1101280237_HW_Eiche-Beverin_Schlaf_Milieu-RS_V02.webp",
                 "1101280237_HW_Eiche-Beverin_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Beverin - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Beverin - Премиум естествен под"
@@ -7709,10 +6914,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.667Z",
                 "updatedAt": "2025-11-02T18:05:29.667Z"
             },
@@ -7752,21 +6954,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -7794,10 +6984,7 @@
                 "1101280231_HW_Eiche-Caledonian-Forest_Schlaf_Milieu-RS_V02.webp",
                 "1101280231_HW_Eiche-Caledonian-Forest_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Caledonian Forest - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Caledonian Forest - Премиум естествен под"
@@ -7882,10 +7069,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.668Z",
                 "updatedAt": "2025-11-02T18:05:29.668Z"
             },
@@ -7925,21 +7109,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -7967,10 +7139,7 @@
                 "1101280230_HW_Eiche-Yellowstone_Schlaf_Milieu-RS_V02.webp",
                 "1101280230_HW_Eiche-Yellowstone_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Yellowstone - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Yellowstone - Премиум естествен под"
@@ -8055,10 +7224,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.668Z",
                 "updatedAt": "2025-11-02T18:05:29.668Z"
             },
@@ -8098,21 +7264,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -8140,10 +7294,7 @@
                 "1101280229_HW_Eiche-Six-Rivers_Schlaf_Milieu-RS_V02.webp",
                 "1101280229_HW_Eiche-Six-Rivers_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Six Rivers - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Six Rivers - Премиум естествен под"
@@ -8228,10 +7379,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.668Z",
                 "updatedAt": "2025-11-02T18:05:29.668Z"
             },
@@ -8271,21 +7419,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -8313,10 +7449,7 @@
                 "1101280235_HW_Eiche-Thousand-Islands_Schlaf_Milieu-RS_V02.webp",
                 "1101280235_HW_Eiche-Thousand-Islands_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Thousand Islands - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Thousand Islands - Премиум естествен под"
@@ -8401,10 +7534,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.668Z",
                 "updatedAt": "2025-11-02T18:05:29.668Z"
             },
@@ -8444,21 +7574,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -8486,10 +7604,7 @@
                 "1101280234_HW_Eiche-Riding-Mountain_Schlaf_Milieu-RS_V02.webp",
                 "1101280234_HW_Eiche-Riding-Mountain_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Riding Mountain - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Riding Mountain - Премиум естествен под"
@@ -8574,10 +7689,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.669Z",
                 "updatedAt": "2025-11-02T18:05:29.669Z"
             },
@@ -8617,21 +7729,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -8659,10 +7759,7 @@
                 "1101280232_HW_Eiche-Parc-Ela_Schlaf_Milieu-RS_V02.webp",
                 "1101280232_HW_Eiche-Parc-Ela_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Parc Ela - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Parc Ela - Премиум естествен под"
@@ -8747,10 +7844,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.669Z",
                 "updatedAt": "2025-11-02T18:05:29.669Z"
             },
@@ -8790,21 +7884,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -8832,10 +7914,7 @@
                 "1101280233_HW_Eiche-Outer-Banks_Schlaf_Milieu-RS_V02.webp",
                 "1101280233_HW_Eiche-Outer-Banks_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Outer Banks - Premium plank flooring",
                 "bg": "Хибридно дърво - Oak Outer Banks - Премиум естествен под"
@@ -8920,10 +7999,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.669Z",
                 "updatedAt": "2025-11-02T18:05:29.669Z"
             },
@@ -8963,21 +8039,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -9004,10 +8068,7 @@
                 "1101280136_HW_Eiche-Great-Basin_Schlaf_Milieu-RS_V02.webp",
                 "1101280136_HW_Eiche-Great-Basin_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Great Basin - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Great Basin - Премиум естесвен парке широка дъска"
@@ -9092,10 +8153,7 @@
             },
             "metadata": {
                 "totalImages": 4,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.670Z",
                 "updatedAt": "2025-11-02T18:05:29.670Z"
             },
@@ -9135,21 +8193,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -9177,10 +8223,7 @@
                 "1101280137_HW_Eiche-Beverin_Schlaf_Milieu-RS_V02.webp",
                 "1101280137_HW_Eiche-Beverin_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Beverin - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Beverin - Премиум естесвен парке широка дъска"
@@ -9265,10 +8308,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.670Z",
                 "updatedAt": "2025-11-02T18:05:29.670Z"
             },
@@ -9308,21 +8348,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -9350,10 +8378,7 @@
                 "1101280131_HW_Eiche-Caledonian-Forest_Schlaf_Milieu-RS_V02.webp",
                 "1101280131_HW_Eiche-Caledonian-Forest_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Caledonian Forest - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Caledonian Forest - Премиум естесвен парке широка дъска"
@@ -9438,10 +8463,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.670Z",
                 "updatedAt": "2025-11-02T18:05:29.670Z"
             },
@@ -9481,21 +8503,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -9523,10 +8533,7 @@
                 "1101280130_HW_Eiche-Yellowstone_Schlaf_Milieu-RS_V02.webp",
                 "1101280130_HW_Eiche-Yellowstone_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Yellowstone - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Yellowstone - Премиум естесвен парке широка дъска"
@@ -9611,10 +8618,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.670Z",
                 "updatedAt": "2025-11-02T18:05:29.670Z"
             },
@@ -9654,21 +8658,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -9696,10 +8688,7 @@
                 "1101280129_HW_Eiche-Six-Rivers_Schlaf_Milieu-RS_V02.webp",
                 "1101280129_HW_Eiche-Six-Rivers_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Six Rivers - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Six Rivers - Премиум естесвен парке широка дъска"
@@ -9784,10 +8773,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.671Z",
                 "updatedAt": "2025-11-02T18:05:29.671Z"
             },
@@ -9827,21 +8813,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -9869,10 +8843,7 @@
                 "1101280135_HW_Eiche-Thousand-Islands_Schlaf_Milieu-RS_V02.webp",
                 "1101280135_HW_Eiche-Thousand-Islands_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Thousand Islands - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Thousand Islands - Премиум естесвен парке широка дъска"
@@ -9957,10 +8928,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.671Z",
                 "updatedAt": "2025-11-02T18:05:29.671Z"
             },
@@ -10000,21 +8968,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -10042,10 +8998,7 @@
                 "1101280134_HW_Eiche-Riding-Mountain_Schlaf_Milieu-RS_V02.webp",
                 "1101280134_HW_Eiche-Riding-Mountain_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Riding Mountain - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Riding Mountain - Премиум естесвен парке широка дъска"
@@ -10130,10 +9083,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.671Z",
                 "updatedAt": "2025-11-02T18:05:29.671Z"
             },
@@ -10173,21 +9123,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -10215,10 +9153,7 @@
                 "1101280132_HW_Eiche-Parc-Ela_Schlaf_Milieu-RS_V02.webp",
                 "1101280132_HW_Eiche-Parc-Ela_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Parc Ela - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Parc Ela - Премиум естесвен парке широка дъска"
@@ -10303,10 +9238,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.671Z",
                 "updatedAt": "2025-11-02T18:05:29.671Z"
             },
@@ -10346,21 +9278,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -10388,10 +9308,7 @@
                 "1101280133_HW_Eiche-Outer-Banks_Schlaf_Milieu-RS_V02.webp",
                 "1101280133_HW_Eiche-Outer-Banks_Wohn_Milieu-RS_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [0, 3],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Outer Banks - Premium extra-wide plank flooring",
                 "bg": "Хибридно дърво - Oak Outer Banks - Премиум естесвен парке широка дъска"
@@ -10476,10 +9393,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.671Z",
                 "updatedAt": "2025-11-02T18:05:29.671Z"
             },
@@ -10519,21 +9433,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -10561,10 +9463,7 @@
                 "1101281428_HW_Eiche-Luberon_OF-Pers_V01.webp",
                 "1101281428_HW_Eiche-Luberon_OF-Plan_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [3, 0],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Luberon - Premium herringbone flooring",
                 "bg": "Хибридно дърво - Oak Luberon - Премиум паркет рибена кост"
@@ -10647,10 +9546,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.672Z",
                 "updatedAt": "2025-11-02T18:05:29.672Z"
             },
@@ -10690,21 +9586,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -10732,10 +9616,7 @@
                 "1101281427_HW_Eiche-Gran-Sasso_OF-Pers_V01.webp",
                 "1101281427_HW_Eiche-Gran-Sasso_OF-Plan_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [3, 0],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Gran Sasso - Premium herringbone flooring",
                 "bg": "Хибридно дърво - Oak Gran Sasso - Премиум паркет рибена кост"
@@ -10818,10 +9699,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.672Z",
                 "updatedAt": "2025-11-02T18:05:29.672Z"
             },
@@ -10861,21 +9739,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -10903,10 +9769,7 @@
                 "1101281430_HW_Eiche-Acadia_OF-Pers_V01.webp",
                 "1101281430_HW_Eiche-Acadia_OF-Plan_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [3, 0],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Acadia - Premium herringbone flooring",
                 "bg": "Хибридно дърво - Oak Acadia - Премиум паркет рибена кост"
@@ -10989,10 +9852,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.672Z",
                 "updatedAt": "2025-11-02T18:05:29.672Z"
             },
@@ -11032,21 +9892,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -11074,10 +9922,7 @@
                 "1101281431_HW_Eiche-Yasuni_OF-Pers_V01.webp",
                 "1101281431_HW_Eiche-Yasuni_OF-Plan_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [3, 0],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Yasuni - Premium herringbone flooring",
                 "bg": "Хибридно дърво - Oak Yasuni - Премиум паркет рибена кост"
@@ -11160,10 +10005,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.673Z",
                 "updatedAt": "2025-11-02T18:05:29.673Z"
             },
@@ -11203,21 +10045,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
@@ -11245,10 +10075,7 @@
                 "1101281429_HW_Eiche-Morvan_OF-Pers_V01.webp",
                 "1101281429_HW_Eiche-Morvan_OF-Plan_V01.webp"
             ],
-            "displayImages": [
-                0,
-                1
-            ],
+            "displayImages": [3, 0],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Morvan - Premium herringbone flooring",
                 "bg": "Хибридно дърво - Oak Morvan - Премиум паркет рибена кост"
@@ -11331,10 +10158,7 @@
             },
             "metadata": {
                 "totalImages": 5,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
+                "imageSizes": ["thumbnail", "full"],
                 "createdAt": "2025-11-02T18:05:29.673Z",
                 "updatedAt": "2025-11-02T18:05:29.673Z"
             },
@@ -11374,21 +10198,9 @@
                         "residential": "Lifetime",
                         "commercial": "10 Years"
                     },
-                    "emissions": [
-                        "E1",
-                        "CARB 2",
-                        "eco INSTITUT",
-                        "French A+"
-                    ],
-                    "environmental": [
-                        "Blue Angel",
-                        "FSC",
-                        "PEFC"
-                    ],
-                    "safety": [
-                        "Bf-s1",
-                        "DS"
-                    ],
+                    "emissions": ["E1", "CARB 2", "eco INSTITUT", "French A+"],
+                    "environmental": ["Blue Angel", "FSC", "PEFC"],
+                    "safety": ["Bf-s1", "DS"],
                     "features": [
                         "REAL WOOD",
                         "Underfloor Heating Compatible",
