@@ -69,6 +69,14 @@ export async function generateMetadata({ params }: ProductDetailPageProps): Prom
         ? localizedContent.seo.keywords.join(', ')
         : localizedContent.seo.keywords;
 
+    // Get OG image from displayImages[1] (hover image) or fallback to first image
+    const ogImageIndex = product.displayImages?.[1] ?? product.displayImages?.[0] ?? 0;
+    const ogImagePath = product.images[ogImageIndex];
+    const ogImageUrl = getStorageUrl(product.collection, product.pattern, product.sku, ogImagePath).full;
+
+    // Build canonical URL
+    const canonicalUrl = `https://ecovibefloors.com/${locale}/click-vinyl/${product.pattern}/${product.slug}`;
+
     return {
         title: localizedContent.seo.title,
         description: localizedContent.seo.description,
@@ -77,6 +85,21 @@ export async function generateMetadata({ params }: ProductDetailPageProps): Prom
             title: localizedContent.seo.title,
             description: localizedContent.seo.description,
             type: 'website',
+            url: canonicalUrl,
+            siteName: 'EcoVibeFloors',
+            locale: locale === 'bg' ? 'bg_BG' : 'en_US',
+            images: [{
+                url: ogImageUrl,
+                width: 1200,
+                height: 630,
+                alt: localizedContent.name,
+            }],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: localizedContent.seo.title,
+            description: localizedContent.seo.description,
+            images: [ogImageUrl],
         },
     };
 }

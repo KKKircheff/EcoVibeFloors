@@ -176,6 +176,11 @@
         }
     },
     "home": {
+        "metadata": {
+            "title": "EcoVibeFloors - Premium Dutch Flooring",
+            "description": "Luxury natural wood and laminate floors from the Netherlands for Bulgarian homes. Extended guarantees and exceptional quality.",
+            "ogImageAlt": "EcoVibeFloors - High quality flooring solutions from Germany & The Netherlands"
+        },
         "dutchOrigin": "Dutch Origin",
         "certified": "Certified Products",
         "innovative": "Innovative Engineering",
@@ -260,6 +265,11 @@
         }
     },
     "collections": {
+        "metadata": {
+            "title": "Collections - EcoVibeFloors",
+            "description": "Explore our premium flooring collections - natural oak, Hybrid Wood, vinyl and laminate from Germany and The Netherlands",
+            "ogImageAlt": "EcoVibeFloors - High quality flooring solutions from Germany & The Netherlands"
+        },
         "title": "Premium Flooring Collections",
         "hero": {
             "title": "Collections",
@@ -473,6 +483,11 @@
         "countryOfProduction": "Country of Production"
     },
     "contact": {
+        "metadata": {
+            "title": "Contact - EcoVibeFloors",
+            "description": "Contact us for consultation about premium flooring solutions from Germany and The Netherlands. Expert assistance for your project",
+            "ogImageAlt": "EcoVibeFloors - High quality flooring solutions from Germany & The Netherlands"
+        },
         "title": "Contact EcoVibeFloors",
         "subtitle": "Get in touch for pricing and consultation",
         "hero": {

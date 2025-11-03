@@ -64,6 +64,12 @@ export async function generateMetadata({ params }: TreatmentDetailPageProps): Pr
         ? localizedContent.seo.keywords.join(', ')
         : localizedContent.seo.keywords;
 
+    // Get OG image from treatment images (treatments use first image)
+    const ogImageUrl = treatment.images[0];
+
+    // Build canonical URL
+    const canonicalUrl = `https://ecovibefloors.com/${locale}/oak/treatments/${treatment.slug}`;
+
     return {
         title: localizedContent.seo.title,
         description: localizedContent.seo.description,
@@ -72,6 +78,21 @@ export async function generateMetadata({ params }: TreatmentDetailPageProps): Pr
             title: localizedContent.seo.title,
             description: localizedContent.seo.description,
             type: 'website',
+            url: canonicalUrl,
+            siteName: 'EcoVibeFloors',
+            locale: locale === 'bg' ? 'bg_BG' : 'en_US',
+            images: [{
+                url: ogImageUrl,
+                width: 1200,
+                height: 630,
+                alt: localizedContent.name,
+            }],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: localizedContent.seo.title,
+            description: localizedContent.seo.description,
+            images: [ogImageUrl],
         },
     };
 }

@@ -8,7 +8,7 @@
 
 import {Product, ProductPattern, CollectionType} from '@/types/products';
 import {hyWoodCollection} from '@/collections/hy-wood';
-import {hybridWoodCollection} from '@/collections/hybrid-wood';
+import {hybridWoodCollection} from '@/collections/json-backup/hybrid-wood';
 import {clickVinylCollection} from '@/collections/click-vinyl';
 import {glueDownVinylCollection} from '@/collections/glue-down-vinyl';
 import {oakCollection} from '@/collections/oak';

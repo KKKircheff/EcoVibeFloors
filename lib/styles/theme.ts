@@ -6,7 +6,7 @@ const zenKakuGothicNew = Zen_Kaku_Gothic_New({
     weight: ['400', '500'],
     subsets: ['latin', 'cyrillic'],
     display: 'optional',
-    preload: true,
+    preload: false,
 });
 
 // const poiretOne = Poiret_One({
@@ -16,10 +16,10 @@ const zenKakuGothicNew = Zen_Kaku_Gothic_New({
 // });
 
 const montserrat = Montserrat({
-    weight: ['300', '400', '500', '600'],
+    weight: ['400', '500', '600'],
     subsets: ['latin', 'cyrillic'],
-    display: 'optional',
-    preload: true,
+    display: 'swap',
+    preload: false,
 });
 export const caveat = Caveat({
     weight: ['400', '500'],

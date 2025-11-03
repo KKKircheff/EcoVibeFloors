@@ -7,17 +7,9 @@ import ClientThemeProvider from '@/components/providers/theme-provider';
 import Navbar from '@/components/layout/navbar/Navbar.component';
 import '../globals.css';
 import UnderNavBar from "@/components/layout/navbar/UnderNavBar.component";
-import { Montserrat } from 'next/font/google';
 import { SampleBasketProvider } from '@/lib/contexts/SampleBasketContext';
 import { ToastProvider } from '@/lib/contexts/ToastContext';
 import { AuthProvider } from '@/lib/contexts/AuthContext';
-
-const montserrat = Montserrat({
-    weight: ['400', '500', '600'],
-    subsets: ['latin', 'cyrillic'],
-    display: 'swap',
-    preload: true,
-});
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -31,11 +23,34 @@ type Props = {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
     const { locale } = await params;
 
-    const t = await getTranslations({ locale, namespace: 'metadata' });
+    const t = await getTranslations({ locale, namespace: 'home' });
+
+    const ogImageUrl = 'https://ecovibefloors.com/images/OG.webp';
+    const homeUrl = `https://ecovibefloors.com/${locale}`;
 
     return {
-        title: t('title'),
-        description: t('description'),
+        title: t('metadata.title'),
+        description: t('metadata.description'),
+        openGraph: {
+            title: t('metadata.title'),
+            description: t('metadata.description'),
+            type: 'website',
+            url: homeUrl,
+            siteName: 'EcoVibeFloors',
+            locale: locale === 'bg' ? 'bg_BG' : 'en_US',
+            images: [{
+                url: ogImageUrl,
+                width: 1200,
+                height: 630,
+                alt: t('metadata.ogImageAlt'),
+            }],
+        },
+        twitter: {
+            card: 'summary_large_image',
+            title: t('metadata.title'),
+            description: t('metadata.description'),
+            images: [ogImageUrl],
+        },
     };
 }
 
@@ -71,7 +86,7 @@ export default async function LocaleLayout(props: Props) {
                     `
                 }} />
             </head>
-            <body className={montserrat.className}>
+            <body>
                 <NextIntlClientProvider locale={locale} messages={messages}>
                     <ClientThemeProvider>
                         <ToastProvider>

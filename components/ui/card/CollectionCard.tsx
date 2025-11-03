@@ -103,6 +103,7 @@ export function CollectionCard({
                         src={mainImageSrc}
                         alt={t(nameKey)}
                         fill
+                        sizes="(max-width: 1200px) 100vw, (max-width: 1920px) 50vw, 960px"
                         loading="lazy"
                         onLoad={handleMainImageLoad}
                         style={{
@@ -118,6 +119,7 @@ export function CollectionCard({
                             src={hoverImageSrc}
                             alt={t(nameKey)}
                             fill
+                            sizes="(max-width: 1200px) 100vw, (max-width: 1920px) 50vw, 960px"
                             loading="lazy"
                             onLoad={handleHoverImageLoad}
                             style={{

@@ -13,7 +13,9 @@ type Props = {
     locale: Locale,
     isScrolled?: boolean
 }
-const flagSize = 22
+// Flag dimensions with proper 2:1 aspect ratio
+const FLAG_WIDTH = 24
+const FLAG_HEIGHT = 18
 
 export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
     const _t = useTranslations('navigation');
@@ -50,8 +52,8 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                 onClose={handleClose}
                 open={open}
                 sx={{
-                    maxWidth: `${flagSize + 2}px !important`,
-                    width: `${flagSize + 2}px !important`,
+                    maxWidth: `${FLAG_WIDTH + 2}px !important`,
+                    width: `${FLAG_WIDTH + 2}px !important`,
                     overflow: 'hidden',
                     '&::before, &::after': {
                         display: 'none',
@@ -61,9 +63,9 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                         marginTop: .6,
                         padding: '0px 0px',
                         overflow: 'hidden',
-                        maxWidth: `${flagSize + 2}px !important`,
-                        minWidth: `${flagSize + 2}px !important`,
-                        width: `${flagSize + 2}px !important`,
+                        maxWidth: `${FLAG_WIDTH + 2}px !important`,
+                        minWidth: `${FLAG_WIDTH + 2}px !important`,
+                        width: `${FLAG_WIDTH + 2}px !important`,
                         background: 'transparent',
                         // background: c.neutral[200],
                         borderRadius: 0,
@@ -128,12 +130,12 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                     <Image
                         src={`/images/flags/bg.png`}
                         alt="Bulgarian Flag"
-                        width={flagSize}
-                        height={flagSize}
+                        width={FLAG_WIDTH}
+                        height={FLAG_HEIGHT}
                         style={{
-                            width: `${flagSize}px`,
-                            height: `${flagSize - 4}px`,
-                            objectFit: 'fill'
+                            width: `${FLAG_WIDTH}px`,
+                            height: `${FLAG_HEIGHT}px`,
+                            objectFit: 'cover'
                         }}
                     />
                     <Typography
@@ -148,12 +150,12 @@ export const LanguageSelector = ({ locale, isScrolled = true }: Props) => {
                     <Image
                         src={'/images/flags/gb.png'}
                         alt="UK flag"
-                        width={flagSize}
-                        height={flagSize}
+                        width={FLAG_WIDTH}
+                        height={FLAG_HEIGHT}
                         style={{
-                            width: `${flagSize}px`,
-                            height: `${flagSize - 4}px`,
-                            objectFit: 'fill'
+                            width: `${FLAG_WIDTH}px`,
+                            height: `${FLAG_HEIGHT}px`,
+                            objectFit: 'cover'
                         }}
                     />
                     <Typography

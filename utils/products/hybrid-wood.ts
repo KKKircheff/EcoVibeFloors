@@ -3,8 +3,8 @@
  * Provides functions to filter and retrieve products from the Floer Hybrid Wood collection
  */
 
-import { Product, ProductPattern } from '@/types/products';
-import { hybridWoodCollection } from '@/collections/hybrid-wood';
+import {Product, ProductPattern} from '@/types/products';
+import {hybridWoodCollection} from '@/collections/json-backup/hybrid-wood';
 
 /**
  * Get all products from the Hybrid Wood collection
@@ -30,10 +30,7 @@ export function getHybridWoodProductBySlug(slug: string): Product | undefined {
 /**
  * Get a single Hybrid Wood product by pattern and slug
  */
-export function getHybridWoodProductByPatternSlug(
-    pattern: ProductPattern,
-    slug: string
-): Product | undefined {
+export function getHybridWoodProductByPatternSlug(pattern: ProductPattern, slug: string): Product | undefined {
     const products = getHybridWoodProductsByPattern(pattern);
     return products.find((product) => product.slug === slug);
 }
