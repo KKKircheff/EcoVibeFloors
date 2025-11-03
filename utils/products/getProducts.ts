@@ -1,27 +1,33 @@
 /**
  * Product fetching utilities
- * Provides functions to filter and retrieve products from JSON collections
+ * Provides functions to filter and retrieve products from TypeScript collections
+ *
+ * Note: This file provides backward compatibility for utilities that need dynamic collection access.
+ * For direct collection access in routes, prefer importing collection-specific utilities instead.
  */
 
 import {Product, ProductPattern, CollectionType} from '@/types/products';
-import hyWoodData from '@/collections/hy-wood.json';
-import clickVinylData from '@/collections/click-vinyl.json';
-import glueDownVinylData from '@/collections/glue-down-vinyl.json';
-import oakData from '@/collections/oak.json';
+import {hyWoodCollection} from '@/collections/hy-wood';
+import {hybridWoodCollection} from '@/collections/hybrid-wood';
+import {clickVinylCollection} from '@/collections/click-vinyl';
+import {glueDownVinylCollection} from '@/collections/glue-down-vinyl';
+import {oakCollection} from '@/collections/oak';
 
 /**
  * Get all products from a specific collection
  */
 export function getProductsByCollection(collection: CollectionType): Product[] {
     switch (collection) {
+        case 'hy-wood':
+            return hyWoodCollection.products;
         case 'hybrid-wood':
-            return hyWoodData.products as Product[];
+            return hyWoodCollection.products;
         case 'click-vinyl':
-            return clickVinylData.products as Product[];
+            return clickVinylCollection.products;
         case 'glue-down-vinyl':
-            return glueDownVinylData.products as Product[];
+            return glueDownVinylCollection.products;
         case 'oak':
-            return oakData.products as Product[];
+            return oakCollection.products;
         default:
             return [];
     }
@@ -30,10 +36,7 @@ export function getProductsByCollection(collection: CollectionType): Product[] {
 /**
  * Get products filtered by collection and pattern
  */
-export function getProductsByCollectionAndPattern(
-    collection: CollectionType,
-    pattern: ProductPattern
-): Product[] {
+export function getProductsByCollectionAndPattern(collection: CollectionType, pattern: ProductPattern): Product[] {
     const collectionProducts = getProductsByCollection(collection);
     return collectionProducts.filter((product) => product.pattern === pattern);
 }
@@ -43,10 +46,11 @@ export function getProductsByCollectionAndPattern(
  */
 export function getAllProducts(): Product[] {
     return [
-        ...(hyWoodData.products as Product[]),
-        ...(clickVinylData.products as Product[]),
-        ...(glueDownVinylData.products as Product[]),
-        ...(oakData.products as Product[])
+        ...hyWoodCollection.products,
+        ...hybridWoodCollection.products,
+        ...clickVinylCollection.products,
+        ...glueDownVinylCollection.products,
+        ...oakCollection.products,
     ];
 }
 
@@ -60,13 +64,9 @@ export function getProductCountByCollection(collection: CollectionType): number 
 /**
  * Count products by collection and pattern
  */
-export function getProductCountByCollectionAndPattern(
-    collection: CollectionType,
-    pattern: ProductPattern
-): number {
+export function getProductCountByCollectionAndPattern(collection: CollectionType, pattern: ProductPattern): number {
     return getProductsByCollectionAndPattern(collection, pattern).length;
 }
-
 
 /**
  * Get a single product by collection, pattern, and slug

@@ -3,9 +3,9 @@
  * Fetches product images by SKU for style cards
  */
 
-import { CollectionType } from '@/types/products';
-import { getProductsByCollection } from '@/utils/products/getProducts';
-import { getStorageUrl } from './getStorageUrl';
+import {CollectionType} from '@/types/products';
+import {getProductsByCollection} from '@/utils/products/getProducts';
+import {getStorageUrl} from './getStorageUrl';
 
 interface StyleCardImages {
     mainImage: string;
@@ -52,19 +52,9 @@ export function getStyleCardImages(
     // Note: Use the collection parameter (file-level type like 'glue-down-vinyl', 'click-vinyl')
     // NOT product.collection (which contains sub-collection names like 'village-vinyl')
     // Firebase Storage structure uses the file-level collection type
-    const mainImageUrls = getStorageUrl(
-        collection,
-        product.pattern,
-        product.sku,
-        mainImageName
-    );
+    const mainImageUrls = getStorageUrl(collection, product.pattern, product.sku, mainImageName);
 
-    const hoverImageUrls = getStorageUrl(
-        collection,
-        product.pattern,
-        product.sku,
-        hoverImageName
-    );
+    const hoverImageUrls = getStorageUrl(collection, product.pattern, product.sku, hoverImageName);
 
     return {
         mainImage: full ? mainImageUrls.full : mainImageUrls.thumbnail,

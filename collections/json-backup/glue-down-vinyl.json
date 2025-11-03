@@ -5,10 +5,7 @@
         "vinylType": "glue-down-vinyl",
         "installationSystem": "glue-down",
         "description": "Enhanced glue-down-vinyl product data with i18n (array format)",
-        "lastUpdated": "2025-10-27T11:19:14.566Z",
-        "dimensionsStandardized": "2025-10-27T10:30:59.096Z",
-        "specificationsMigrated": "2025-10-27T11:19:14.566Z",
-        "specificationsStructure": "root-level-coded"
+        "lastUpdated": "2025-10-27T11:19:14.566Z"
     },
     "products": [
         {

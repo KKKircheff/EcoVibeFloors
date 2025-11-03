@@ -12,7 +12,7 @@ import ProductActions from '@/components/products/product-actions/ProductActions
 import { ProductSpecs, SpecCategory } from '@/components/ui/sections/product/ProductSpecs';
 import { AuthenticatedPrice } from '@/components/ui/price/AuthenticatedPrice';
 import { isValidPattern } from '@/types/products';
-import { getProductBySlug, getProductsByCollection } from '@/utils/products';
+import { getGlueDownVinylProductBySlug, getGlueDownVinylProducts } from '@/utils/products/glue-down-vinyl';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { getStorageUrl } from '@/lib/utils/getStorageUrl';
@@ -30,7 +30,7 @@ interface ProductDetailPageProps {
 
 // Generate static params for all glue-down-vinyl products
 export async function generateStaticParams() {
-    const products = getProductsByCollection('glue-down-vinyl');
+    const products = getGlueDownVinylProducts();
 
     const params = [];
     for (const product of products) {
@@ -50,7 +50,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: ProductDetailPageProps): Promise<Metadata> {
     const { slug, locale } = await params;
 
-    const product = getProductBySlug('glue-down-vinyl', slug);
+    const product = getGlueDownVinylProductBySlug(slug);
 
     if (!product) {
         return {};
@@ -90,7 +90,7 @@ export default async function GlueDownVinylProductPage({ params }: ProductDetail
         notFound();
     }
 
-    const product = getProductBySlug('glue-down-vinyl', slug);
+    const product = getGlueDownVinylProductBySlug(slug);
 
     if (!product || product.pattern !== pattern) {
         notFound();
@@ -231,9 +231,14 @@ export default async function GlueDownVinylProductPage({ params }: ProductDetail
         }
         // Warranty stays in i18n (localized text)
         if (localizedSpecs?.certifications?.warranty) {
+            const warranty = localizedSpecs.certifications.warranty;
+            const warrantyValue = typeof warranty === 'string'
+                ? warranty
+                : `${warranty.residential} (residential), ${warranty.commercial} (commercial)`;
+
             performanceSpecs.push({
                 label: tProducts('warranty'),
-                value: localizedSpecs.certifications.warranty
+                value: warrantyValue
             });
         }
         if (specs?.certifications?.qualityMark) {

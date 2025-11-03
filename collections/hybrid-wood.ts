@@ -1,4 +1,14 @@
-{
+/**
+ * hybridWoodCollection - TypeScript constant generated from hybrid-wood.json
+ * Source of truth: hybrid-wood.json
+ *
+ * This file is generated to provide type safety.
+ * To update: Edit hybrid-wood.json then regenerate this file.
+ */
+
+import { ProductCollection } from '@/types/products';
+
+export const hybridWoodCollection: ProductCollection = {
     "metadata": {
         "generatedAt": "2025-10-01T06:31:24.059Z",
         "totalProducts": 18,
@@ -7,11 +17,7 @@
         "lastSorted": "2025-10-05T10:29:27.422Z",
         "lastRefined": "2025-10-05T17:33:32.407Z",
         "refinementNote": "Manually rewritten Bulgarian texts with natural language",
-        "lastUpdated": "2025-10-27T11:19:14.542Z",
-        "dimensionsStandardized": "2025-10-27T10:30:59.072Z",
-        "specificationsNormalized": "2025-10-27T11:12:12.517Z",
-        "specificationsMigrated": "2025-10-27T11:19:14.542Z",
-        "specificationsStructure": "root-level-coded"
+        "lastUpdated": "2025-10-27T11:19:14.542Z"
     },
     "products": [
         {
@@ -2500,4 +2506,4 @@
             }
         }
     ]
-}
+} as const;

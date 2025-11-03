@@ -8,7 +8,7 @@ import PageLayoutContainer from '@/components/layout/page-container/PageLayoutCo
 import Footer from '@/components/layout/footer/Footer.component';
 import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
 import { isValidPattern, ProductPattern } from '@/types/products';
-import { getProductsByCollectionAndPattern } from '@/utils/products';
+import { getClickVinylProductsByPattern } from '@/utils/products/click-vinyl';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { ProductGrid } from '@/components/ui/product/ProductGrid';
@@ -79,7 +79,7 @@ export default async function ClickVinylPatternPage({ params }: PatternPageProps
     const tBreadcrumb = await getTranslations('breadcrumb');
     const tNavigation = await getTranslations('navigation');
 
-    const products = getProductsByCollectionAndPattern('click-vinyl', pattern as ProductPattern);
+    const products = getClickVinylProductsByPattern(pattern as ProductPattern);
 
     const patternKey = pattern as keyof Messages['patterns'];
     const patternDescKey = `${toCamelCase(pattern)}Description` as keyof Messages['patterns'];

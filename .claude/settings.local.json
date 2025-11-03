@@ -6,9 +6,25 @@
       "WebFetch(domain:www.floer.nl)",
       "WebFetch(domain:www.terhuerne.com)",
       "mcp__playwright__browser_close",
-      "mcp__firebase__apphosting_list_backends"
+      "mcp__firebase__apphosting_list_backends",
+      "Bash(node utils/json-to-ts-collections.cjs:*)",
+      "Bash(npx tsc:*)"
     ],
     "deny": [],
     "ask": []
+  },
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "npx tsc --noEmit",
+            "timeout": 60
+          }
+        ]
+      }
+    ]
   }
 }

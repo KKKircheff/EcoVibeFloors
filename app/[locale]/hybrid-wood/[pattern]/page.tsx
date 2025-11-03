@@ -8,10 +8,10 @@ import PageLayoutContainer from '@/components/layout/page-container/PageLayoutCo
 import Footer from '@/components/layout/footer/Footer.component';
 import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
 import { isValidPattern, ProductPattern } from '@/types/products';
-import { getProductsByCollectionAndPattern } from '@/utils/products';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { ProductGrid } from '@/components/ui/product/ProductGrid';
+import { getHyWoodProductsByPattern } from '@/utils/products/hy-wood';
 
 // Force static generation
 export const dynamic = 'error';
@@ -85,7 +85,7 @@ export default async function HybridWoodPatternPage({ params }: PatternPageProps
     const tBreadcrumb = await getTranslations('breadcrumb');
     const tNavigation = await getTranslations('navigation');
 
-    const products = getProductsByCollectionAndPattern('hybrid-wood', pattern as ProductPattern);
+    const products = getHyWoodProductsByPattern(pattern as ProductPattern);
 
     const patternKey = pattern as keyof Messages['patterns'];
     const patternDescKey = `${pattern}Description` as keyof Messages['patterns'];

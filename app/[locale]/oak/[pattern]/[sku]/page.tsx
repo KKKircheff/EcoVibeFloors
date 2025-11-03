@@ -12,7 +12,7 @@ import ProductActions from '@/components/products/product-actions/ProductActions
 import { ProductSpecs, SpecCategory } from '@/components/ui/sections/product/ProductSpecs';
 import { AuthenticatedPrice } from '@/components/ui/price/AuthenticatedPrice';
 import { isValidPattern, ProductPattern, Product } from '@/types/products';
-import { getProductsByCollectionAndPattern } from '@/utils/products';
+import { getOakProductsByPattern } from '@/utils/products/oak';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { TreatmentSwatchGallery } from '@/components/ui/treatment/TreatmentSwatchGallery';
@@ -35,7 +35,7 @@ export async function generateStaticParams() {
     const params = [];
 
     for (const pattern of patterns) {
-        const products = getProductsByCollectionAndPattern('oak', pattern);
+        const products = getOakProductsByPattern(pattern);
         for (const product of products) {
             for (const locale of routing.locales) {
                 params.push({
@@ -57,8 +57,8 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
         return {};
     }
 
-    const products = getProductsByCollectionAndPattern('oak', pattern as ProductPattern);
-    const product = products.find(p => p.slug === sku);
+    const products = getOakProductsByPattern(pattern as ProductPattern);
+    const product = products.find((p) => p.slug === sku);
 
     if (!product) {
         return {};
@@ -86,8 +86,8 @@ export default async function OakProductPage({ params }: ProductPageProps) {
         notFound();
     }
 
-    const products = getProductsByCollectionAndPattern('oak', pattern as ProductPattern);
-    const product = products.find(p => p.slug === sku);
+    const products = getOakProductsByPattern(pattern as ProductPattern);
+    const product = products.find((p) => p.slug === sku);
 
     if (!product) {
         notFound();
@@ -103,7 +103,7 @@ export default async function OakProductPage({ params }: ProductPageProps) {
     const patternKey = pattern as keyof Messages['patterns'];
 
     // Generate image URLs from filenames
-    const imageUrls = product.images.map((image) =>
+    const imageUrls = product.images.map((image: string) =>
         getStorageUrl(product.collection, product.pattern, product.sku, image).full
     );
 
@@ -231,9 +231,14 @@ export default async function OakProductPage({ params }: ProductPageProps) {
         }
         // Warranty stays in i18n (localized text)
         if (localizedSpecs?.certifications?.warranty) {
+            const warranty = localizedSpecs.certifications.warranty;
+            const warrantyValue = typeof warranty === 'string'
+                ? warranty
+                : `${warranty.residential} (residential), ${warranty.commercial} (commercial)`;
+
             performanceSpecs.push({
                 label: tProducts('warranty'),
-                value: localizedSpecs.certifications.warranty
+                value: warrantyValue
             });
         }
         if (performanceSpecs.length > 0) {

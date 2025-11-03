@@ -12,10 +12,10 @@ import ProductActions from '@/components/products/product-actions/ProductActions
 import { ProductSpecs, SpecCategory } from '@/components/ui/sections/product/ProductSpecs';
 import { AuthenticatedPrice } from '@/components/ui/price/AuthenticatedPrice';
 import { isValidPattern } from '@/types/products';
-import { getProductBySlug, getProductsByCollection } from '@/utils/products';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { getStorageUrl } from '@/lib/utils/getStorageUrl';
+import { getHyWoodProductBySlug, getHyWoodProducts } from '@/utils/products/hy-wood';
 
 // Force static generation
 export const dynamic = 'error';
@@ -30,7 +30,7 @@ interface ProductDetailPageProps {
 
 // Generate static params for all hybrid-wood products
 export async function generateStaticParams() {
-    const products = getProductsByCollection('hybrid-wood');
+    const products = getHyWoodProducts();
 
     const params = [];
     for (const product of products) {
@@ -50,7 +50,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: ProductDetailPageProps): Promise<Metadata> {
     const { slug, locale } = await params;
 
-    const product = getProductBySlug('hybrid-wood', slug);
+    const product = getHyWoodProductBySlug(slug);
 
     if (!product) {
         return {};
@@ -90,7 +90,7 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
         notFound();
     }
 
-    const product = getProductBySlug('hybrid-wood', slug);
+    const product = getHyWoodProductBySlug(slug);
 
     if (!product || product.pattern !== pattern) {
         notFound();
@@ -231,9 +231,14 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
         }
         // Warranty stays in i18n (localized text)
         if (localizedSpecs?.certifications?.warranty) {
+            const warranty = localizedSpecs.certifications.warranty;
+            const warrantyValue = typeof warranty === 'string'
+                ? warranty
+                : `${warranty.residential} (residential), ${warranty.commercial} (commercial)`;
+
             performanceSpecs.push({
                 label: tProducts('warranty'),
-                value: localizedSpecs.certifications.warranty
+                value: warrantyValue
             });
         }
         if (specs?.certifications?.qualityMark) {

@@ -387,7 +387,11 @@
             "appearance": {
                 "color": {
                     "natural-oak": "Natural Oak",
+                    "natural": "Natural",
                     "brown": "Brown",
+                    "light-brown": "Light Brown",
+                    "medium-brown": "Medium Brown",
+                    "dark-brown": "Dark Brown",
                     "grey": "Grey",
                     "white": "White",
                     "beige": "Beige",
@@ -409,7 +413,9 @@
                     "megamat": "MEGAMAT"
                 },
                 "structure": {
+                    "brushed": "Brushed",
                     "lightly-brushed": "Lightly brushed",
+                    "smooth": "Smooth",
                     "textured": "Textured",
                     "tangible": "Tangible"
                 },
@@ -427,6 +433,7 @@
                     "none": "None",
                     "2-sides": "V-groove on 2 sides",
                     "4-sides": "V-groove on 4 sides",
+                    "4-sided-micro-bevel": "4-sided micro bevel",
                     "4-v": "4-V",
                     "4-mv": "4-MV"
                 },

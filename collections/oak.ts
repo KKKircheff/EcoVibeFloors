@@ -1,18 +1,20 @@
-{
+/**
+ * oakCollection - TypeScript constant generated from oak.json
+ * Source of truth: oak.json
+ *
+ * This file is generated to provide type safety.
+ * To update: Edit oak.json then regenerate this file.
+ */
+
+import { ProductCollection } from '@/types/products';
+
+export const oakCollection: ProductCollection = {
     "metadata": {
         "generatedAt": "2025-10-22T11:11:27.399Z",
         "totalProducts": 21,
         "collection": "oak",
         "description": "Natural oak parquet collection from Dutch Interior Group. Includes engineered and solid oak options with various finishes and patterns.",
-        "lastUpdated": "2025-10-29T19:20:02.725Z",
-        "skuFormat": "DIG-{GTIN}",
-        "lastPolished": "2025-10-24T12:48:15.042Z",
-        "polishedBy": "Mistral AI translation polisher",
-        "dimensionsStandardized": "2025-10-27T10:30:59.062Z",
-        "specificationsNormalized": "2025-10-27T11:12:12.508Z",
-        "specificationsMigrated": "2025-10-27T11:19:14.530Z",
-        "specificationsStructure": "root-level-coded",
-        "imagesUpdated": "2025-10-29T19:20:02.726Z"
+        "lastUpdated": "2025-10-29T19:20:02.725Z"
     },
     "products": [
         {
@@ -31,8 +33,16 @@
             "manufacturerProductId": "C103",
             "woodGrade": "select",
             "surfaceTreatment": null,
-            "images": ["A0000449.webp", "2.webp", "3.webp", "4.webp"],
-            "displayImages": [3, 0],
+            "images": [
+                "A0000449.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp"
+            ],
+            "displayImages": [
+                3,
+                0
+            ],
             "imageAlt": {
                 "en": "C103 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -108,7 +118,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c103-select/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -164,8 +179,16 @@
             "manufacturerProductId": "C12",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000120.webp", "2.webp", "3.webp", "4.webp"],
-            "displayImages": [2, 0],
+            "images": [
+                "A0000120.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp"
+            ],
+            "displayImages": [
+                2,
+                0
+            ],
             "imageAlt": {
                 "en": "C12 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -243,7 +266,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c12-rustic/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -299,8 +327,16 @@
             "manufacturerProductId": "C104",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000456.webp", "2.webp", "3.webp", "4.webp"],
-            "displayImages": [2, 1],
+            "images": [
+                "A0000456.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp"
+            ],
+            "displayImages": [
+                2,
+                1
+            ],
             "imageAlt": {
                 "en": "C104 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -376,7 +412,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c104-rustic/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -432,8 +473,16 @@
             "manufacturerProductId": "C3",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000029.webp", "2.webp", "3.webp", "4.webp"],
-            "displayImages": [2, 1],
+            "images": [
+                "A0000029.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp"
+            ],
+            "displayImages": [
+                2,
+                1
+            ],
             "imageAlt": {
                 "en": "C3 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -511,7 +560,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c3-rustic/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -567,8 +621,16 @@
             "manufacturerProductId": "C110",
             "woodGrade": "rustic",
             "surfaceTreatment": "brushed",
-            "images": ["A0000463.webp", "2.webp", "3.webp", "4.webp"],
-            "displayImages": [2, 0],
+            "images": [
+                "A0000463.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp"
+            ],
+            "displayImages": [
+                2,
+                0
+            ],
             "imageAlt": {
                 "en": "C110 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -645,7 +707,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c110-rustic-deep-brushed/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -701,8 +768,16 @@
             "manufacturerProductId": "C38",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000197.webp", "2.webp", "3.webp", "4.webp"],
-            "displayImages": [2, 0],
+            "images": [
+                "A0000197.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp"
+            ],
+            "displayImages": [
+                2,
+                0
+            ],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -779,7 +854,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c38-rustic/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -835,8 +915,16 @@
             "manufacturerProductId": "C6",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000071.webp", "2.webp", "3.webp", "4.webp"],
-            "displayImages": [2, 0],
+            "images": [
+                "A0000071.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp"
+            ],
+            "displayImages": [
+                2,
+                0
+            ],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -912,7 +1000,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c6-light-rustic/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -968,8 +1061,16 @@
             "manufacturerProductId": "C11",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000113.webp", "2.webp", "3.webp", "4.webp"],
-            "displayImages": [2, 0],
+            "images": [
+                "A0000113.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp"
+            ],
+            "displayImages": [
+                2,
+                0
+            ],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -1046,7 +1147,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c11-rustic/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -1102,8 +1208,21 @@
             "manufacturerProductId": "C960",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0002269.webp", "1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp", "7.webp", "8.webp"],
-            "displayImages": [7, 0],
+            "images": [
+                "A0002269.webp",
+                "1.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp",
+                "5.webp",
+                "6.webp",
+                "7.webp",
+                "8.webp"
+            ],
+            "displayImages": [
+                7,
+                0
+            ],
             "imageAlt": {
                 "en": "C960 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -1219,8 +1338,19 @@
             "manufacturerProductId": "C961",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0002276.webp", "1.webp", "2.webp", "3.webp", "4.webp", "5.webp", "6.webp"],
-            "displayImages": [5, 0],
+            "images": [
+                "A0002276.webp",
+                "1.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp",
+                "5.webp",
+                "6.webp"
+            ],
+            "displayImages": [
+                5,
+                0
+            ],
             "imageAlt": {
                 "en": "C961 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -1295,7 +1425,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-plank-c961-old-school-floor/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -1351,8 +1486,16 @@
             "manufacturerProductId": "A0019111",
             "woodGrade": "select",
             "surfaceTreatment": null,
-            "images": ["A0019111.webp", "1.webp", "2.webp", "3.webp"],
-            "displayImages": [1, 2],
+            "images": [
+                "A0019111.webp",
+                "1.webp",
+                "2.webp",
+                "3.webp"
+            ],
+            "displayImages": [
+                1,
+                2
+            ],
             "imageAlt": {
                 "en": "noestarm Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -1468,8 +1611,16 @@
             "manufacturerProductId": "A0019104",
             "woodGrade": "select",
             "surfaceTreatment": null,
-            "images": ["1.webp", "2.webp", "3.webp", "4.webp"],
-            "displayImages": [1, 0],
+            "images": [
+                "1.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp"
+            ],
+            "displayImages": [
+                1,
+                0
+            ],
             "imageAlt": {
                 "en": "noestarm Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
@@ -1584,8 +1735,15 @@
             "manufacturerProductId": "noestarm",
             "woodGrade": "select",
             "surfaceTreatment": null,
-            "images": ["1.webp", "2.webp", "3.webp"],
-            "displayImages": [2, 0],
+            "images": [
+                "1.webp",
+                "2.webp",
+                "3.webp"
+            ],
+            "displayImages": [
+                2,
+                0
+            ],
             "imageAlt": {
                 "en": "noestarm Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
@@ -1700,8 +1858,16 @@
             "manufacturerProductId": "family",
             "woodGrade": "select",
             "surfaceTreatment": null,
-            "images": ["A0019090.webp", "2.webp", "3.webp", "4.webp"],
-            "displayImages": [3, 2],
+            "images": [
+                "A0019090.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp"
+            ],
+            "displayImages": [
+                3,
+                2
+            ],
             "imageAlt": {
                 "en": "family Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
@@ -1776,7 +1942,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-oak-plank-select-family-atacama/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -1832,8 +2003,14 @@
             "manufacturerProductId": "rustiek",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0025985.webp", "1.webp"],
-            "displayImages": [1, 0],
+            "images": [
+                "A0025985.webp",
+                "1.webp"
+            ],
+            "displayImages": [
+                1,
+                0
+            ],
             "imageAlt": {
                 "en": "rustiek Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -1948,8 +2125,14 @@
             "manufacturerProductId": "rustiek",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0025992.webp", "1.webp"],
-            "displayImages": [1, 0],
+            "images": [
+                "A0025992.webp",
+                "1.webp"
+            ],
+            "displayImages": [
+                1,
+                0
+            ],
             "imageAlt": {
                 "en": "rustiek Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -2065,8 +2248,14 @@
             "manufacturerProductId": "C2",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000008.webp", "1.webp"],
-            "displayImages": [1, 0],
+            "images": [
+                "A0000008.webp",
+                "1.webp"
+            ],
+            "displayImages": [
+                1,
+                0
+            ],
             "imageAlt": {
                 "en": "C2 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -2141,7 +2330,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/solid-oak-plank-c2-rustic/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -2197,8 +2391,14 @@
             "manufacturerProductId": "C224",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0000603.webp", "1.webp"],
-            "displayImages": [1, 0],
+            "images": [
+                "A0000603.webp",
+                "1.webp"
+            ],
+            "displayImages": [
+                1,
+                0
+            ],
             "imageAlt": {
                 "en": "C224 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -2271,7 +2471,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/solid-oak-plank-c224-rustic/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -2327,8 +2532,14 @@
             "manufacturerProductId": "C903",
             "woodGrade": "select",
             "surfaceTreatment": "brushed",
-            "images": ["A0011054.webp", "1.webp"],
-            "displayImages": [0, 1],
+            "images": [
+                "A0011054.webp",
+                "1.webp"
+            ],
+            "displayImages": [
+                0,
+                1
+            ],
             "imageAlt": {
                 "en": "C903 Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -2338,7 +2549,12 @@
                     "name": "Delden",
                     "description": "Discover our herringbone oak parquet with select grade and natural, unfinished surface. This premium floor combines authentic oak beauty with exceptional durability, offering an elegant base that can be finished according to your unique style.",
                     "finishingNote": "his product is left unfinished, giving you the flexibility to personalize it to your taste—whether through oiling in one of 11 available colors or brushing for a more pronounced texture. The oils used are certified, highly durable, and applied using LED Hardwax technology. This innovative method ensures rapid curing, preserves the natural beauty of the wood, and enhances resistance to scratches, stains, and environmental wear.",
-                    "features": ["genuine oak", "select wood grade", "unfinished surface", "herringbone format"],
+                    "features": [
+                        "genuine oak",
+                        "select wood grade",
+                        "unfinished surface",
+                        "herringbone format"
+                    ],
                     "seo": {
                         "title": "C903 Oak Parquet | Select Unfinished",
                         "description": "C903 oak parquet with select grade. Unfinished, durable, suitable for underfloor heating.",
@@ -2395,7 +2611,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-visgraat-c903-select-brushed/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -2451,8 +2672,17 @@
             "manufacturerProductId": "C908",
             "woodGrade": "rustic",
             "surfaceTreatment": null,
-            "images": ["A0002129.webp", "1.webp", "2.webp", "3.webp", "4.webp"],
-            "displayImages": [3, 0],
+            "images": [
+                "A0002129.webp",
+                "1.webp",
+                "2.webp",
+                "3.webp",
+                "4.webp"
+            ],
+            "displayImages": [
+                3,
+                0
+            ],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет - Премиум естествен дъбов под"
@@ -2531,7 +2761,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-visgraat-c908-rustic/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -2587,8 +2822,14 @@
             "manufacturerProductId": "C909",
             "woodGrade": "select",
             "surfaceTreatment": null,
-            "images": ["A0002143.webp", "1.webp"],
-            "displayImages": [0, 1],
+            "images": [
+                "A0002143.webp",
+                "1.webp"
+            ],
+            "displayImages": [
+                0,
+                1
+            ],
             "imageAlt": {
                 "en": "eiken Oak Parquet - Premium natural oak flooring",
                 "bg": "Дъбов паркет селект - Премиум естествен дъбов под"
@@ -2664,7 +2905,12 @@
             "sourceUrl": "https://webshop.dutchinteriorgroup.com/engineered-flooring-oak-hongaarse-punt-c909-select/",
             "finishingOptions": {
                 "available": true,
-                "options": ["color-treatment", "brushing", "uv-oil", "lacquering"],
+                "options": [
+                    "color-treatment",
+                    "brushing",
+                    "uv-oil",
+                    "lacquering"
+                ],
                 "colorTreatments": [
                     "abdij",
                     "english-colour",
@@ -2705,4 +2951,4 @@
             }
         }
     ]
-}
+} as const;

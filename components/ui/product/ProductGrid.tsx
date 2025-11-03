@@ -9,6 +9,7 @@ export interface ProductGridProps {
 }
 
 export function ProductGrid({ products, emptyMessage }: ProductGridProps) {
+
     if (products.length === 0) {
         return (
             <Stack alignItems="center" justifyContent="center" py={8}>

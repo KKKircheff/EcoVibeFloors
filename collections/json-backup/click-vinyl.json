@@ -5,10 +5,7 @@
         "vinylType": "click-vinyl",
         "installationSystem": "click",
         "description": "Enhanced click-vinyl product data with i18n (array format)",
-        "lastUpdated": "2025-10-27T11:19:14.556Z",
-        "dimensionsStandardized": "2025-10-27T10:30:59.085Z",
-        "specificationsMigrated": "2025-10-27T11:19:14.556Z",
-        "specificationsStructure": "root-level-coded"
+        "lastUpdated": "2025-10-27T11:19:14.556Z"
     },
     "products": [
         {

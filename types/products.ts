@@ -49,6 +49,8 @@ export interface Appearance {
     finishCode?: string; // e.g., "unfinished", "lacquered"
     structureCode?: string; // e.g., "lightly-brushed", "textured"
     materialCode?: string; // e.g., "vinyl", "rigid-mineral-vinyl"
+    surfaceColourName?: string; // Ter Hürne specific - surface color name
+    surface?: string; // Ter Hürne specific - surface type/treatment
 }
 
 /**
@@ -75,11 +77,22 @@ export interface Performance {
 /**
  * Certification specifications
  * Warranty text stays as localized, country uses code
+ * Warranty supports both simple string format and structured object format (residential/commercial)
  */
 export interface Certifications {
     qualityMark?: string; // Certification names (e.g., "Blue Angel")
-    warranty?: string; // Localized text (stays in i18n)
+    warranty?:
+        | string
+        | {
+              // Localized text (stays in i18n) OR structured warranty
+              residential: string;
+              commercial: string;
+          };
     countryCode?: string; // e.g., "netherlands", "germany"
+    emissions?: string | readonly string[]; // Emissions standard (e.g., "E1" or ["E1", "CARB 2"])
+    environmental?: string | readonly string[]; // Environmental certification (e.g., "Blue Angel" or ["Blue Angel", "FSC", "PEFC"])
+    safety?: string | readonly string[]; // Safety certification (e.g., "FloorScore" or ["Bf-s1", "DS"])
+    [key: string]: string | readonly string[] | {residential: string; commercial: string} | undefined; // Allow additional certification fields
 }
 
 export interface Specifications {
@@ -89,6 +102,7 @@ export interface Specifications {
     performance?: Performance;
     certifications?: Certifications;
     general?: Record<string, string>;
+    [key: string]: any; // Allow additional specification fields with any structure
 }
 
 export interface SEOMetadata {
@@ -116,7 +130,10 @@ export interface ProductMetadata {
     imageSizes: ('thumbnail' | 'full')[];
     createdAt: string;
     updatedAt?: string;
+    lastUpdated?: string;
     status?: 'draft' | 'published' | 'archived';
+    dataSource?: string;
+    imagePathPattern?: string;
 }
 
 export interface Product {
@@ -124,7 +141,7 @@ export interface Product {
     slug: string;
     collection: string; // Product collection/line (e.g., "hybrid-wood", "oak")
     pattern: ProductPattern; // Flooring pattern/style
-    installationSystem: 'click' | 'glue';
+    installationSystem: 'click' | 'glue' | 'glue-down';
     price: number;
     gtin?: string | number;
     productieId?: string; // DIG Productie number (e.g., "A0000449")
@@ -180,7 +197,10 @@ export interface ProductCollection {
         version?: string;
         lastSorted?: string;
         lastRefined?: string;
+        lastUpdated?: string;
         refinementNote?: string;
+        dataSource?: string;
+        imagePathPattern?: string;
         // Vinyl-specific metadata fields
         vinylType?: string;
         installationSystem?: 'click' | 'glue' | 'glue-down';
@@ -214,7 +234,7 @@ export interface CollectionInfo {
 // Utility Types
 // ============================================================================
 
-export type CollectionType = 'hybrid-wood' | 'glue-down-vinyl' | 'click-vinyl' | 'oak';
+export type CollectionType = 'hybrid-wood' | 'glue-down-vinyl' | 'click-vinyl' | 'oak' | 'hy-wood';
 
 export type ProductPattern =
     // Hybrid Wood patterns (hy-wood collection)

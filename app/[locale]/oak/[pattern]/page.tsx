@@ -8,7 +8,7 @@ import PageLayoutContainer from '@/components/layout/page-container/PageLayoutCo
 import Footer from '@/components/layout/footer/Footer.component';
 import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
 import { isValidPattern, ProductPattern } from '@/types/products';
-import { getProductsByCollectionAndPattern } from '@/utils/products';
+import { getOakProductsByPattern } from '@/utils/products/oak';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { ProductGrid } from '@/components/ui/product/ProductGrid';
@@ -78,7 +78,7 @@ export default async function OakPatternPage({ params }: PatternPageProps) {
     const tBreadcrumb = await getTranslations('breadcrumb');
     const tNavigation = await getTranslations('navigation');
 
-    const products = getProductsByCollectionAndPattern('oak', pattern as ProductPattern);
+    const products = getOakProductsByPattern(pattern as ProductPattern);
 
     const patternKey = pattern as keyof Messages['patterns'];
     const patternDescKey = `${pattern}Description` as keyof Messages['patterns'];

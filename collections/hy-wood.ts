@@ -1,8 +1,18 @@
-{
+/**
+ * hyWoodCollection - TypeScript constant generated from hy-wood.json
+ * Source of truth: hy-wood.json
+ *
+ * This file is generated to provide type safety.
+ * To update: Edit hy-wood.json then regenerate this file.
+ */
+
+import { ProductCollection } from '@/types/products';
+
+export const hyWoodCollection: ProductCollection = {
     "metadata": {
         "generatedAt": "2025-11-02T18:05:29.673Z",
         "totalProducts": 66,
-        "collection": "hy-wood",
+        "collection": "hybrid-wood",
         "description": "Hybrid wood premium flooring collection with real wood top layers",
         "dataSource": "hywood-pricelist.json",
         "imagePathPattern": "/hy-wood/{pattern}/{sku}/full/{image}"
@@ -11,7 +21,7 @@
         {
             "sku": "1101280228",
             "slug": "classic-evo-hy-wood-oak-mojave",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 71.42,
@@ -25,7 +35,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Mojave - Premium plank flooring",
@@ -34,7 +44,7 @@
             "i18n": {
                 "bg": {
                     "name": "Мохаве опушен дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -48,7 +58,7 @@
                     ],
                     "seo": {
                         "title": "Мохаве опушен дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -72,7 +82,7 @@
                 },
                 "en": {
                     "name": "Mojave Smoked Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -86,7 +96,7 @@
                     ],
                     "seo": {
                         "title": "Mojave Smoked Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -131,7 +141,7 @@
                     "surface": "Light smoked, brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -177,12 +187,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101280226",
             "slug": "classic-evo-hy-wood-oak-joshua-tree",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -197,7 +208,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Joshua Tree - Premium plank flooring",
@@ -206,7 +217,7 @@
             "i18n": {
                 "bg": {
                     "name": "Джошуа тъмен дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -220,7 +231,7 @@
                     ],
                     "seo": {
                         "title": "Джошуа тъмен дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -244,7 +255,7 @@
                 },
                 "en": {
                     "name": "Joshua Dark Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -258,7 +269,7 @@
                     ],
                     "seo": {
                         "title": "Joshua Dark Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -303,7 +314,7 @@
                     "surface": "smooth"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -349,12 +360,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281301",
             "slug": "classic-evo-hy-wood-ash-yoho",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 67.22,
@@ -369,7 +381,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Ash Yoho - Premium plank flooring",
@@ -378,7 +390,7 @@
             "i18n": {
                 "bg": {
                     "name": "Йохо светъл ясен",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -392,7 +404,7 @@
                     ],
                     "seo": {
                         "title": "Йохо светъл ясен",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -416,7 +428,7 @@
                 },
                 "en": {
                     "name": "Yoho Light Ash",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -430,7 +442,7 @@
                     ],
                     "seo": {
                         "title": "Yoho Light Ash",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -475,7 +487,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -521,12 +533,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281223",
             "slug": "classic-evo-hy-wood-oak-una",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 66.38,
@@ -541,7 +554,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Una - Premium plank flooring",
@@ -550,7 +563,7 @@
             "i18n": {
                 "bg": {
                     "name": "Уна пясъчен дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -564,7 +577,7 @@
                     ],
                     "seo": {
                         "title": "Уна пясъчен дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -588,7 +601,7 @@
                 },
                 "en": {
                     "name": "Una Sand Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -602,7 +615,7 @@
                     ],
                     "seo": {
                         "title": "Una Sand Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -647,7 +660,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -693,12 +706,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281302",
             "slug": "classic-evo-hy-wood-ash-abisko",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 67.22,
@@ -713,7 +727,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Ash Abisko - Premium plank flooring",
@@ -722,7 +736,7 @@
             "i18n": {
                 "bg": {
                     "name": "Абиско натурален ясен",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -736,7 +750,7 @@
                     ],
                     "seo": {
                         "title": "Абиско натурален ясен",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -760,7 +774,7 @@
                 },
                 "en": {
                     "name": "Abisko Natural Ash",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -774,7 +788,7 @@
                     ],
                     "seo": {
                         "title": "Abisko Natural Ash",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -819,7 +833,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -865,12 +879,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281200",
             "slug": "classic-evo-hy-wood-oak-capitol-reef",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 66.38,
@@ -885,7 +900,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Capitol Reef - Premium plank flooring",
@@ -894,7 +909,7 @@
             "i18n": {
                 "bg": {
                     "name": "Капитол натурален дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -908,7 +923,7 @@
                     ],
                     "seo": {
                         "title": "Капитол натурален дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -932,7 +947,7 @@
                 },
                 "en": {
                     "name": "Capitol Natural Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -946,7 +961,7 @@
                     ],
                     "seo": {
                         "title": "Capitol Natural Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -991,7 +1006,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -1037,12 +1052,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281202",
             "slug": "classic-evo-hy-wood-oak-wind-cave",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 61.34,
@@ -1057,7 +1073,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Wind Cave - Premium plank flooring",
@@ -1066,7 +1082,7 @@
             "i18n": {
                 "bg": {
                     "name": "Уинд Кейв дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -1080,7 +1096,7 @@
                     ],
                     "seo": {
                         "title": "Уинд Кейв дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -1104,7 +1120,7 @@
                 },
                 "en": {
                     "name": "Wind Cave Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -1118,7 +1134,7 @@
                     ],
                     "seo": {
                         "title": "Wind Cave Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -1163,7 +1179,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -1209,12 +1225,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281201",
             "slug": "classic-evo-hy-wood-oak-tyresta",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -1229,7 +1246,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Tyresta - Premium plank flooring",
@@ -1238,7 +1255,7 @@
             "i18n": {
                 "bg": {
                     "name": "Тиреста натурален дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -1252,7 +1269,7 @@
                     ],
                     "seo": {
                         "title": "Тиреста натурален дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -1276,7 +1293,7 @@
                 },
                 "en": {
                     "name": "Tyresta Natural Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -1290,7 +1307,7 @@
                     ],
                     "seo": {
                         "title": "Tyresta Natural Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -1335,7 +1352,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -1381,12 +1398,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281213",
             "slug": "classic-evo-hy-wood-oak-reivo",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 61.34,
@@ -1401,7 +1419,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Reivo - Premium plank flooring",
@@ -1410,7 +1428,7 @@
             "i18n": {
                 "bg": {
                     "name": "Рейво кафяв дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -1424,7 +1442,7 @@
                     ],
                     "seo": {
                         "title": "Рейво кафяв дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -1448,7 +1466,7 @@
                 },
                 "en": {
                     "name": "Reivo Coffee Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -1462,7 +1480,7 @@
                     ],
                     "seo": {
                         "title": "Reivo Coffee Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -1507,7 +1525,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -1553,12 +1571,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101280227",
             "slug": "classic-evo-hy-wood-oak-yosemite",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 71.42,
@@ -1573,7 +1592,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Yosemite - Premium plank flooring",
@@ -1582,7 +1601,7 @@
             "i18n": {
                 "bg": {
                     "name": "Йосемити опушен дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -1596,7 +1615,7 @@
                     ],
                     "seo": {
                         "title": "Йосемити опушен дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -1620,7 +1639,7 @@
                 },
                 "en": {
                     "name": "Yosemite Smoked Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -1634,7 +1653,7 @@
                     ],
                     "seo": {
                         "title": "Yosemite Smoked Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -1679,7 +1698,7 @@
                     "surface": "Light smoked, brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -1725,12 +1744,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281205",
             "slug": "classic-evo-hy-wood-oak-dovre",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 61.34,
@@ -1745,7 +1765,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Dovre - Premium plank flooring",
@@ -1754,7 +1774,7 @@
             "i18n": {
                 "bg": {
                     "name": "Довре дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -1768,7 +1788,7 @@
                     ],
                     "seo": {
                         "title": "Довре дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -1792,7 +1812,7 @@
                 },
                 "en": {
                     "name": "Dovre Raw Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -1806,7 +1826,7 @@
                     ],
                     "seo": {
                         "title": "Dovre Raw Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -1851,7 +1871,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -1897,12 +1917,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281204",
             "slug": "classic-evo-hy-wood-oak-oulanka",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -1917,7 +1938,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Oulanka - Premium plank flooring",
@@ -1926,7 +1947,7 @@
             "i18n": {
                 "bg": {
                     "name": "Йелоустоун дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -1940,7 +1961,7 @@
                     ],
                     "seo": {
                         "title": "Йелоустоун дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -1964,7 +1985,7 @@
                 },
                 "en": {
                     "name": "Yellowstone Raw Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -1978,7 +1999,7 @@
                     ],
                     "seo": {
                         "title": "Yellowstone Raw Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -2023,7 +2044,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -2069,12 +2090,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281203",
             "slug": "classic-evo-hy-wood-oak-nordens-ark",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 66.38,
@@ -2089,7 +2111,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Nordens Ark - Premium plank flooring",
@@ -2098,7 +2120,7 @@
             "i18n": {
                 "bg": {
                     "name": "Норденс дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -2112,7 +2134,7 @@
                     ],
                     "seo": {
                         "title": "Норденс дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -2136,7 +2158,7 @@
                 },
                 "en": {
                     "name": "Nordens Raw Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -2150,7 +2172,7 @@
                     ],
                     "seo": {
                         "title": "Nordens Raw Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -2195,7 +2217,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -2241,12 +2263,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281206",
             "slug": "classic-evo-hy-wood-oak-junkerdal",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -2261,7 +2284,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Junkerdal - Premium plank flooring",
@@ -2270,7 +2293,7 @@
             "i18n": {
                 "bg": {
                     "name": "Юнкердал пясъчен дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -2284,7 +2307,7 @@
                     ],
                     "seo": {
                         "title": "Юнкердал пясъчен дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -2308,7 +2331,7 @@
                 },
                 "en": {
                     "name": "Junkerdal Sand Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -2322,7 +2345,7 @@
                     ],
                     "seo": {
                         "title": "Junkerdal Sand Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -2367,7 +2390,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -2413,12 +2436,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281304",
             "slug": "classic-evo-hy-wood-walnut-prescott",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 71.42,
@@ -2433,7 +2457,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Walnut Prescott - Premium plank flooring",
@@ -2442,7 +2466,7 @@
             "i18n": {
                 "bg": {
                     "name": "Прескот тъмен орех",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -2456,7 +2480,7 @@
                     ],
                     "seo": {
                         "title": "Прескот тъмен орех",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -2480,7 +2504,7 @@
                 },
                 "en": {
                     "name": "Prescott Dark Walnut",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -2494,7 +2518,7 @@
                     ],
                     "seo": {
                         "title": "Prescott Dark Walnut",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -2539,7 +2563,7 @@
                     "surface": "fine brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -2585,12 +2609,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281212",
             "slug": "classic-evo-hy-wood-oak-iraty",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 61.34,
@@ -2605,7 +2630,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Iraty - Premium plank flooring",
@@ -2614,7 +2639,7 @@
             "i18n": {
                 "bg": {
                     "name": "Ирати златист дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -2628,7 +2653,7 @@
                     ],
                     "seo": {
                         "title": "Ирати златист дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -2652,7 +2677,7 @@
                 },
                 "en": {
                     "name": "Iraty Golden Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -2666,7 +2691,7 @@
                     ],
                     "seo": {
                         "title": "Iraty Golden Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -2711,7 +2736,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -2757,12 +2782,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281211",
             "slug": "classic-evo-hy-wood-oak-val-cama",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -2777,7 +2803,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Val Cama - Premium plank flooring",
@@ -2786,7 +2812,7 @@
             "i18n": {
                 "bg": {
                     "name": "Френска нуга",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -2800,7 +2826,7 @@
                     ],
                     "seo": {
                         "title": "Френска нуга",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -2824,7 +2850,7 @@
                 },
                 "en": {
                     "name": "French nougat Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -2838,7 +2864,7 @@
                     ],
                     "seo": {
                         "title": "French nougat Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -2883,7 +2909,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -2929,12 +2955,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281217",
             "slug": "classic-evo-hy-wood-oak-sumava",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 61.34,
@@ -2949,7 +2976,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Sumava - Premium plank flooring",
@@ -2958,7 +2985,7 @@
             "i18n": {
                 "bg": {
                     "name": "Тъмно кафе",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -2972,7 +2999,7 @@
                     ],
                     "seo": {
                         "title": "Тъмно кафе",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -2996,7 +3023,7 @@
                 },
                 "en": {
                     "name": "Coffee Wide Dark",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -3010,7 +3037,7 @@
                     ],
                     "seo": {
                         "title": "Coffee Wide Dark",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -3055,7 +3082,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -3101,12 +3128,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281208",
             "slug": "classic-evo-hy-wood-oak-pirin",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -3121,7 +3149,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Pirin - Premium plank flooring",
@@ -3130,7 +3158,7 @@
             "i18n": {
                 "bg": {
                     "name": "Пирин натурален дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -3144,7 +3172,7 @@
                     ],
                     "seo": {
                         "title": "Пирин натурален дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -3168,7 +3196,7 @@
                 },
                 "en": {
                     "name": "Pirin Natural Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -3182,7 +3210,7 @@
                     ],
                     "seo": {
                         "title": "Pirin Natural Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -3227,7 +3255,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -3273,12 +3301,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281209",
             "slug": "classic-evo-hy-wood-oak-nieuw-land",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 61.34,
@@ -3293,7 +3322,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Nieuw Land - Premium plank flooring",
@@ -3302,7 +3331,7 @@
             "i18n": {
                 "bg": {
                     "name": "Нов пясъчен дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -3316,7 +3345,7 @@
                     ],
                     "seo": {
                         "title": "Нов пясъчен дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -3340,7 +3369,7 @@
                 },
                 "en": {
                     "name": "New Sand Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -3354,7 +3383,7 @@
                     ],
                     "seo": {
                         "title": "New Sand Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -3399,7 +3428,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -3445,12 +3474,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281224",
             "slug": "classic-evo-hy-wood-oak-ordesa",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -3465,7 +3495,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Ordesa - Premium plank flooring",
@@ -3474,7 +3504,7 @@
             "i18n": {
                 "bg": {
                     "name": "Ордеса кафяв дъб",
-                    "description": "bg",
+                    "description": "Усетете естествената топлина на дъба във всяка дъска, подчертана от уникална шарка и финни възли. Лакираната EVO повърхност осигурява изключителна издръжливост, като същевременно запазва елегантния и уютен характер на дървото. Благодарение на хибридната технология подът е водоустойчив, устойчив на надраскване и идеален за домакинства с динамичен живот. Иновативната клик система гарантира бърз монтаж, приятно усещане и съвместимост с подово отопление.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -3488,7 +3518,7 @@
                     ],
                     "seo": {
                         "title": "Ордеса кафяв дъб",
-                        "description": "bg",
+                        "description": "Луксозни дъбови дъски с естествена текстура и здраво лакирано покритие. Водо- и удароустойчив под, идеален за уютни семейни домове с подово отопление.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -3512,7 +3542,7 @@
                 },
                 "en": {
                     "name": "Ordesa Brown Oak",
-                    "description": "en",
+                    "description": "Experience the natural warmth of oak in every plank, enriched with unique grain patterns and subtle knots. The EVO lacquered finish enhances durability while preserving the wood's elegant, cozy appeal. With innovative hybrid technology, the floor offers excellent water and scratch resistance, perfect for active homes. Its click system ensures fast installation and long-lasting comfort in spaces with underfloor heating.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -3526,7 +3556,7 @@
                     ],
                     "seo": {
                         "title": "Ordesa Brown Oak",
-                        "description": "en",
+                        "description": "Luxurious oak planks with natural texture and durable lacquer finish. Water-resistant, scratch-resistant, and perfect for cozy family homes with underfloor heating.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -3571,7 +3601,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -3617,12 +3647,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101280128",
             "slug": "noblessse-evo-hy-wood-oak-mojave",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 71.42,
@@ -3636,7 +3667,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Mojave - Premium extra-wide plank flooring",
@@ -3645,7 +3676,7 @@
             "i18n": {
                 "bg": {
                     "name": "Мохаве опушен",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -3659,7 +3690,7 @@
                     ],
                     "seo": {
                         "title": "Мохаве опушен",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -3683,7 +3714,7 @@
                 },
                 "en": {
                     "name": "Mojave Wide Smoked",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -3697,7 +3728,7 @@
                     ],
                     "seo": {
                         "title": "Mojave Wide Smoked",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -3742,7 +3773,7 @@
                     "surface": "Light smoked, brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -3788,12 +3819,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101280126",
             "slug": "noblessse-evo-hy-wood-oak-joshua-tree",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -3808,7 +3840,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Joshua Tree - Premium extra-wide plank flooring",
@@ -3817,7 +3849,7 @@
             "i18n": {
                 "bg": {
                     "name": "Джошуа тъмен",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -3831,7 +3863,7 @@
                     ],
                     "seo": {
                         "title": "Джошуа тъмен",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -3855,7 +3887,7 @@
                 },
                 "en": {
                     "name": "Joshua Wide Dark",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -3869,7 +3901,7 @@
                     ],
                     "seo": {
                         "title": "Joshua Wide Dark",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -3914,7 +3946,7 @@
                     "surface": "smooth"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -3960,12 +3992,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281123",
             "slug": "noblessse-evo-hy-wood-oak-una",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 66.38,
@@ -3980,7 +4013,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Una - Premium extra-wide plank flooring",
@@ -3989,7 +4022,7 @@
             "i18n": {
                 "bg": {
                     "name": "Уна пясъчен дъб",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -4003,7 +4036,7 @@
                     ],
                     "seo": {
                         "title": "Уна пясъчен дъб",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -4027,7 +4060,7 @@
                 },
                 "en": {
                     "name": "Una Wide Sand",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -4041,7 +4074,7 @@
                     ],
                     "seo": {
                         "title": "Una Wide Sand",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -4086,7 +4119,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -4132,12 +4165,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281102",
             "slug": "noblessse-evo-hy-wood-oak-wind-cave",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 61.34,
@@ -4152,7 +4186,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Wind Cave - Premium extra-wide plank flooring",
@@ -4161,7 +4195,7 @@
             "i18n": {
                 "bg": {
                     "name": "Уинд Кейв",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -4175,7 +4209,7 @@
                     ],
                     "seo": {
                         "title": "Уинд Кейв",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -4199,7 +4233,7 @@
                 },
                 "en": {
                     "name": "Wind Cave Wide",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -4213,7 +4247,7 @@
                     ],
                     "seo": {
                         "title": "Wind Cave Wide",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -4258,7 +4292,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -4304,12 +4338,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281101",
             "slug": "noblessse-evo-hy-wood-oak-tyresta",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -4324,7 +4359,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Tyresta - Premium extra-wide plank flooring",
@@ -4333,7 +4368,7 @@
             "i18n": {
                 "bg": {
                     "name": "Тиреста натурален",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -4347,7 +4382,7 @@
                     ],
                     "seo": {
                         "title": "Тиреста натурален",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -4371,7 +4406,7 @@
                 },
                 "en": {
                     "name": "Tyresta Wide Natural",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -4385,7 +4420,7 @@
                     ],
                     "seo": {
                         "title": "Tyresta Wide Natural",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -4430,7 +4465,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -4476,12 +4511,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281100",
             "slug": "noblessse-evo-hy-wood-oak-capitol-reef",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 66.38,
@@ -4496,7 +4532,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Capitol Reef - Premium extra-wide plank flooring",
@@ -4505,7 +4541,7 @@
             "i18n": {
                 "bg": {
                     "name": "Капитол натурален",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -4519,7 +4555,7 @@
                     ],
                     "seo": {
                         "title": "Капитол натурален",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -4543,7 +4579,7 @@
                 },
                 "en": {
                     "name": "Capitol Wide Natural",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -4557,7 +4593,7 @@
                     ],
                     "seo": {
                         "title": "Capitol Wide Natural",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -4602,7 +4638,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -4648,12 +4684,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281113",
             "slug": "noblessse-evo-hy-wood-oak-reivo",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 61.34,
@@ -4668,7 +4705,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Reivo - Premium extra-wide plank flooring",
@@ -4677,7 +4714,7 @@
             "i18n": {
                 "bg": {
                     "name": "Рейво кафяв",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -4691,7 +4728,7 @@
                     ],
                     "seo": {
                         "title": "Рейво кафяв",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -4715,7 +4752,7 @@
                 },
                 "en": {
                     "name": "Reivo Wide Coffee",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -4729,7 +4766,7 @@
                     ],
                     "seo": {
                         "title": "Reivo Wide Coffee",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -4774,7 +4811,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -4820,12 +4857,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101280127",
             "slug": "noblessse-evo-hy-wood-oak-yosemite",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 71.42,
@@ -4840,7 +4878,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Yosemite - Premium extra-wide plank flooring",
@@ -4849,7 +4887,7 @@
             "i18n": {
                 "bg": {
                     "name": "Йосемити опушен",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -4863,7 +4901,7 @@
                     ],
                     "seo": {
                         "title": "Йосемити опушен",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -4887,7 +4925,7 @@
                 },
                 "en": {
                     "name": "Yosemite Wide Smoked",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -4901,7 +4939,7 @@
                     ],
                     "seo": {
                         "title": "Yosemite Wide Smoked",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -4946,7 +4984,7 @@
                     "surface": "Light smoked, brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -4992,12 +5030,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281103",
             "slug": "noblessse-evo-hy-wood-oak-nordens-ark",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 66.38,
@@ -5012,7 +5051,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Nordens Ark - Premium extra-wide plank flooring",
@@ -5021,7 +5060,7 @@
             "i18n": {
                 "bg": {
                     "name": "Норденс",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -5035,7 +5074,7 @@
                     ],
                     "seo": {
                         "title": "Норденс",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -5059,7 +5098,7 @@
                 },
                 "en": {
                     "name": "Nordens Wide Raw",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -5073,7 +5112,7 @@
                     ],
                     "seo": {
                         "title": "Nordens Wide Raw",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -5118,7 +5157,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -5164,12 +5203,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281105",
             "slug": "noblessse-evo-hy-wood-oak-dovre",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 61.34,
@@ -5184,7 +5224,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Dovre - Premium extra-wide plank flooring",
@@ -5193,7 +5233,7 @@
             "i18n": {
                 "bg": {
                     "name": "Довре",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -5207,7 +5247,7 @@
                     ],
                     "seo": {
                         "title": "Довре",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -5231,7 +5271,7 @@
                 },
                 "en": {
                     "name": "Dovre Wide Raw",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -5245,7 +5285,7 @@
                     ],
                     "seo": {
                         "title": "Dovre Wide Raw",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -5290,7 +5330,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -5336,12 +5376,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281104",
             "slug": "noblessse-evo-hy-wood-oak-oulanka",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -5356,7 +5397,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Oulanka - Premium extra-wide plank flooring",
@@ -5365,7 +5406,7 @@
             "i18n": {
                 "bg": {
                     "name": "Йелоустоун",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -5379,7 +5420,7 @@
                     ],
                     "seo": {
                         "title": "Йелоустоун",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -5403,7 +5444,7 @@
                 },
                 "en": {
                     "name": "Yellowstone Wide Raw",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -5417,7 +5458,7 @@
                     ],
                     "seo": {
                         "title": "Yellowstone Wide Raw",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -5462,7 +5503,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -5508,12 +5549,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281106",
             "slug": "noblessse-evo-hy-wood-oak-junkerdal",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -5528,7 +5570,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Junkerdal - Premium extra-wide plank flooring",
@@ -5537,7 +5579,7 @@
             "i18n": {
                 "bg": {
                     "name": "Пясъчен дъб Лаутербрюнен",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -5551,7 +5593,7 @@
                     ],
                     "seo": {
                         "title": "Пясъчен дъб Лаутербрюнен",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -5575,7 +5617,7 @@
                 },
                 "en": {
                     "name": "Lauterbrunnen Wide Sand",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -5589,7 +5631,7 @@
                     ],
                     "seo": {
                         "title": "Lauterbrunnen Wide Sand",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -5634,7 +5676,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -5680,12 +5722,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281112",
             "slug": "noblessse-evo-hy-wood-oak-iraty",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 61.34,
@@ -5700,7 +5743,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Iraty - Premium extra-wide plank flooring",
@@ -5709,7 +5752,7 @@
             "i18n": {
                 "bg": {
                     "name": "Ирати златист",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -5723,7 +5766,7 @@
                     ],
                     "seo": {
                         "title": "Ирати златист",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -5747,7 +5790,7 @@
                 },
                 "en": {
                     "name": "Iraty Wide Golden",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -5761,7 +5804,7 @@
                     ],
                     "seo": {
                         "title": "Iraty Wide Golden",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -5806,7 +5849,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -5852,12 +5895,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281111",
             "slug": "noblessse-evo-hy-wood-oak-val-cama",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -5872,7 +5916,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Val Cama - Premium extra-wide plank flooring",
@@ -5881,7 +5925,7 @@
             "i18n": {
                 "bg": {
                     "name": "Халстад",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -5895,7 +5939,7 @@
                     ],
                     "seo": {
                         "title": "Халстад",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -5919,7 +5963,7 @@
                 },
                 "en": {
                     "name": "Hallstatt Wide",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -5933,7 +5977,7 @@
                     ],
                     "seo": {
                         "title": "Hallstatt Wide",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -5978,7 +6022,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -6024,12 +6068,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281117",
             "slug": "noblessse-evo-hy-wood-oak-sumava",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 61.34,
@@ -6044,7 +6089,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Sumava - Premium extra-wide plank flooring",
@@ -6053,7 +6098,7 @@
             "i18n": {
                 "bg": {
                     "name": "Тъмно кафе",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -6067,7 +6112,7 @@
                     ],
                     "seo": {
                         "title": "Тъмно кафе",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -6091,7 +6136,7 @@
                 },
                 "en": {
                     "name": "Coffee Wide Dark",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -6105,7 +6150,7 @@
                     ],
                     "seo": {
                         "title": "Coffee Wide Dark",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -6150,7 +6195,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -6196,12 +6241,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281108",
             "slug": "noblessse-evo-hy-wood-oak-pirin",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -6216,7 +6262,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Pirin - Premium extra-wide plank flooring",
@@ -6225,7 +6271,7 @@
             "i18n": {
                 "bg": {
                     "name": "Пирин натурален",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -6239,7 +6285,7 @@
                     ],
                     "seo": {
                         "title": "Пирин натурален",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -6263,7 +6309,7 @@
                 },
                 "en": {
                     "name": "Pirin Wide Natural",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -6277,7 +6323,7 @@
                     ],
                     "seo": {
                         "title": "Pirin Wide Natural",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -6322,7 +6368,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -6368,12 +6414,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281109",
             "slug": "noblessse-evo-hy-wood-oak-nieuw-land",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 61.34,
@@ -6388,7 +6435,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Nieuw Land - Premium extra-wide plank flooring",
@@ -6397,7 +6444,7 @@
             "i18n": {
                 "bg": {
                     "name": "Нов пясъчен",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -6411,7 +6458,7 @@
                     ],
                     "seo": {
                         "title": "Нов пясъчен",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -6435,7 +6482,7 @@
                 },
                 "en": {
                     "name": "New Wide Sand",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -6449,7 +6496,7 @@
                     ],
                     "seo": {
                         "title": "New Wide Sand",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -6494,7 +6541,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -6540,12 +6587,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281124",
             "slug": "noblessse-evo-hy-wood-oak-ordesa",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-evo",
             "installationSystem": "click",
             "price": 63.02,
@@ -6560,7 +6608,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Ordesa - Premium extra-wide plank flooring",
@@ -6569,7 +6617,7 @@
             "i18n": {
                 "bg": {
                     "name": "Ордеса кафяв",
-                    "description": "bg",
+                    "description": "С екстрашироки размери тези хибридни дъски придават усещане за простор и елегантност в дома. Лакираната EVO повърхност предлага изключителна устойчивост на влага и надраскване, като подчертава естествената красота на дъба. Идеален избор за семейства и домашни любимци, подът остава красив с минимална поддръжка. Широкият формат и клик системата осигуряват плавна визия и уютно усещане.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -6583,7 +6631,7 @@
                     ],
                     "seo": {
                         "title": "Ордеса кафяв",
-                        "description": "bg",
+                        "description": "Екстрашироки лакирани дъбови дъски, които придават елегантност и топлина на дома. Изключително издръжливи и водоустойчиви, създадени за модерен уют.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -6607,7 +6655,7 @@
                 },
                 "en": {
                     "name": "Ordesa Wide Brown",
-                    "description": "en",
+                    "description": "With extra-wide dimensions, these hybrid planks bring a sense of space and gentle elegance to your home. The lacquered EVO surface delivers exceptional resistance to scratches and moisture while highlighting the oak's natural charm. Perfect for families, pets, and everyday life, the surface stays beautiful with minimal care. The wide-format design and click system create a seamless, cozy flooring experience.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -6621,7 +6669,7 @@
                     ],
                     "seo": {
                         "title": "Ordesa Wide Brown",
-                        "description": "en",
+                        "description": "Extra-wide lacquered oak planks that elevate your space with elegance and warmth. Ultra-durable, water-resistant, and designed for modern cozy living.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -6666,7 +6714,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -6712,12 +6760,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281421",
             "slug": "herringbone-evo-hy-wood-oak-gascogne",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "herringbone-evo",
             "installationSystem": "click",
             "price": 81.5,
@@ -6730,8 +6779,8 @@
                 "1101281421_HW_Eiche-Gascogne_OF-Plan_V01.webp"
             ],
             "displayImages": [
-                0,
-                1
+                3,
+                0
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Gascogne - Premium herringbone flooring",
@@ -6740,7 +6789,7 @@
             "i18n": {
                 "bg": {
                     "name": "Гасконски дъб",
-                    "description": "bg",
+                    "description": "Този елегантен под с подредба рибена кост съчетава вечна естетика с модерната издръжливост на хибридното дърво. Лакираната EVO повърхност предлага висока устойчивост на надраскване и влага, гарантирайки красота и комфорт във времето. Всяка част показва уникална текстура на дъба, носеща дълбочина и уют в пространството. Съвършен баланс между изисканост и топлина.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -6753,7 +6802,7 @@
                     ],
                     "seo": {
                         "title": "Гасконски дъб",
-                        "description": "bg",
+                        "description": "Елегантна лакирана рибена кост с естествен дъбов релеф и хибридна издръжливост. Водоустойчива, удароустойчива и идеална за топли, стилни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -6777,7 +6826,7 @@
                 },
                 "en": {
                     "name": "Gascogne Oak Herringbone",
-                    "description": "en",
+                    "description": "This elegant herringbone design combines timeless style with the advanced performance of hybrid wood. The EVO lacquered surface provides high scratch and moisture resistance, ensuring beauty and comfort for years. Each piece features unique oak textures that bring depth and warmth into your space. A perfect balance of sophistication and cozy living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -6790,7 +6839,7 @@
                     ],
                     "seo": {
                         "title": "Gascogne Oak Herringbone",
-                        "description": "en",
+                        "description": "Elegant lacquered herringbone flooring with natural oak detail and hybrid durability. Water-resistant, scratch-resistant, and perfect for warm, stylish interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -6835,7 +6884,7 @@
                     "surface": "fine brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY HB"
                 },
                 "performance": {
@@ -6881,12 +6930,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281422",
             "slug": "herringbone-evo-hy-wood-oak-spessart",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "herringbone-evo",
             "installationSystem": "click",
             "price": 81.5,
@@ -6899,8 +6949,8 @@
                 "1101281422_HW_Eiche-Spessart_OF-Plan_V01.webp"
             ],
             "displayImages": [
-                0,
-                1
+                3,
+                0
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Spessart - Premium herringbone flooring",
@@ -6909,7 +6959,7 @@
             "i18n": {
                 "bg": {
                     "name": "Букело натурален дъб",
-                    "description": "bg",
+                    "description": "Този елегантен под с подредба рибена кост съчетава вечна естетика с модерната издръжливост на хибридното дърво. Лакираната EVO повърхност предлага висока устойчивост на надраскване и влага, гарантирайки красота и комфорт във времето. Всяка част показва уникална текстура на дъба, носеща дълбочина и уют в пространството. Съвършен баланс между изисканост и топлина.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -6922,7 +6972,7 @@
                     ],
                     "seo": {
                         "title": "Букело натурален дъб",
-                        "description": "bg",
+                        "description": "Елегантна лакирана рибена кост с естествен дъбов релеф и хибридна издръжливост. Водоустойчива, удароустойчива и идеална за топли, стилни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -6946,7 +6996,7 @@
                 },
                 "en": {
                     "name": "Boekelo Raw Herringbone",
-                    "description": "en",
+                    "description": "This elegant herringbone design combines timeless style with the advanced performance of hybrid wood. The EVO lacquered surface provides high scratch and moisture resistance, ensuring beauty and comfort for years. Each piece features unique oak textures that bring depth and warmth into your space. A perfect balance of sophistication and cozy living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -6959,7 +7009,7 @@
                     ],
                     "seo": {
                         "title": "Boekelo Raw Herringbone",
-                        "description": "en",
+                        "description": "Elegant lacquered herringbone flooring with natural oak detail and hybrid durability. Water-resistant, scratch-resistant, and perfect for warm, stylish interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -7004,7 +7054,7 @@
                     "surface": "fine brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY HB"
                 },
                 "performance": {
@@ -7050,12 +7100,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281424",
             "slug": "herringbone-evo-hy-wood-oak-tayrona",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "herringbone-evo",
             "installationSystem": "click",
             "price": 81.5,
@@ -7068,8 +7119,8 @@
                 "1101281424_HW_Eiche-Tayrona_OF-Plan_V01.webp"
             ],
             "displayImages": [
-                0,
-                1
+                3,
+                0
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Tayrona - Premium herringbone flooring",
@@ -7078,7 +7129,7 @@
             "i18n": {
                 "bg": {
                     "name": "Тайрона пясъчен дъб",
-                    "description": "bg",
+                    "description": "Този елегантен под с подредба рибена кост съчетава вечна естетика с модерната издръжливост на хибридното дърво. Лакираната EVO повърхност предлага висока устойчивост на надраскване и влага, гарантирайки красота и комфорт във времето. Всяка част показва уникална текстура на дъба, носеща дълбочина и уют в пространството. Съвършен баланс между изисканост и топлина.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -7091,7 +7142,7 @@
                     ],
                     "seo": {
                         "title": "Тайрона пясъчен дъб",
-                        "description": "bg",
+                        "description": "Елегантна лакирана рибена кост с естествен дъбов релеф и хибридна издръжливост. Водоустойчива, удароустойчива и идеална за топли, стилни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -7115,7 +7166,7 @@
                 },
                 "en": {
                     "name": "Tayrona Sand Herringbone",
-                    "description": "en",
+                    "description": "This elegant herringbone design combines timeless style with the advanced performance of hybrid wood. The EVO lacquered surface provides high scratch and moisture resistance, ensuring beauty and comfort for years. Each piece features unique oak textures that bring depth and warmth into your space. A perfect balance of sophistication and cozy living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -7128,7 +7179,7 @@
                     ],
                     "seo": {
                         "title": "Tayrona Sand Herringbone",
-                        "description": "en",
+                        "description": "Elegant lacquered herringbone flooring with natural oak detail and hybrid durability. Water-resistant, scratch-resistant, and perfect for warm, stylish interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -7173,7 +7224,7 @@
                     "surface": "fine brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY HB"
                 },
                 "performance": {
@@ -7219,12 +7270,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101281426",
             "slug": "herringbone-evo-hy-wood-oak-marais",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "herringbone-evo",
             "installationSystem": "click",
             "price": 81.5,
@@ -7237,8 +7289,8 @@
                 "1101281426_HW_Eiche-Marais_OF-Plan_V01.webp"
             ],
             "displayImages": [
-                0,
-                1
+                3,
+                0
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Marais - Premium herringbone flooring",
@@ -7247,7 +7299,7 @@
             "i18n": {
                 "bg": {
                     "name": "Маре кафяв дъб",
-                    "description": "bg",
+                    "description": "Този елегантен под с подредба рибена кост съчетава вечна естетика с модерната издръжливост на хибридното дърво. Лакираната EVO повърхност предлага висока устойчивост на надраскване и влага, гарантирайки красота и комфорт във времето. Всяка част показва уникална текстура на дъба, носеща дълбочина и уют в пространството. Съвършен баланс между изисканост и топлина.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -7260,7 +7312,7 @@
                     ],
                     "seo": {
                         "title": "Маре кафяв дъб",
-                        "description": "bg",
+                        "description": "Елегантна лакирана рибена кост с естествен дъбов релеф и хибридна издръжливост. Водоустойчива, удароустойчива и идеална за топли, стилни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -7284,7 +7336,7 @@
                 },
                 "en": {
                     "name": "Marais Brown Herringbone",
-                    "description": "en",
+                    "description": "This elegant herringbone design combines timeless style with the advanced performance of hybrid wood. The EVO lacquered surface provides high scratch and moisture resistance, ensuring beauty and comfort for years. Each piece features unique oak textures that bring depth and warmth into your space. A perfect balance of sophistication and cozy living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -7297,7 +7349,7 @@
                     ],
                     "seo": {
                         "title": "Marais Brown Herringbone",
-                        "description": "en",
+                        "description": "Elegant lacquered herringbone flooring with natural oak detail and hybrid durability. Water-resistant, scratch-resistant, and perfect for warm, stylish interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -7342,7 +7394,7 @@
                     "surface": "fine brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY HB"
                 },
                 "performance": {
@@ -7388,12 +7440,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "evo"
         },
         {
             "sku": "1101280236",
             "slug": "classic-olio-hy-wood-oak-great-basin",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-olio",
             "installationSystem": "click",
             "price": 71.42,
@@ -7407,7 +7460,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Great Basin - Premium plank flooring",
@@ -7416,7 +7469,7 @@
             "i18n": {
                 "bg": {
                     "name": "Грейт Бейсин опушен",
-                    "description": "bg",
+                    "description": "Всяка дъбова дъска носи истинската топлина и характер на природното дърво, подчертано от нежно омаслено покритие. Повърхността е приятна на допир и създава тиха и уютна атмосфера във всеки интериор. Хибридната устойчивост защитава от влага и ежедневно натоварване, като запазва естествения вид и усещане. Бързият монтаж и съвместимостта с подово отопление гарантират комфорт и уют в съвременния дом.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -7430,7 +7483,7 @@
                     ],
                     "seo": {
                         "title": "Грейт Бейсин опушен",
-                        "description": "bg",
+                        "description": "Топли омаслени дъбови дъски с естествен релеф и меко, уютно усещане. Хибридна здравина и топъл допир за спокойни и гостоприемни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -7454,7 +7507,7 @@
                 },
                 "en": {
                     "name": "Great Basin Smoked",
-                    "description": "en",
+                    "description": "Each oak plank brings the authentic warmth and character of natural wood, enhanced by a soft oiled finish. The surface feels inviting and tactile, creating a calm and cozy atmosphere in every room. With hybrid durability, it resists moisture and daily wear while maintaining a beautifully natural feel. Easy installation and compatibility with underfloor heating make it perfect for comfortable modern living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -7468,7 +7521,7 @@
                     ],
                     "seo": {
                         "title": "Great Basin Smoked",
-                        "description": "en",
+                        "description": "Warm oiled oak planks with natural grain and soft, cozy feel. Hybrid durability and warm touch, perfect for calm and welcoming interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -7513,7 +7566,7 @@
                     "surface": "Light smoked, brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -7559,12 +7612,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280237",
             "slug": "classic-olio-hy-wood-oak-beverin",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-olio",
             "installationSystem": "click",
             "price": 71.42,
@@ -7579,7 +7633,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Beverin - Premium plank flooring",
@@ -7588,7 +7642,7 @@
             "i18n": {
                 "bg": {
                     "name": "Беверин опушен дъб",
-                    "description": "bg",
+                    "description": "Всяка дъбова дъска носи истинската топлина и характер на природното дърво, подчертано от нежно омаслено покритие. Повърхността е приятна на допир и създава тиха и уютна атмосфера във всеки интериор. Хибридната устойчивост защитава от влага и ежедневно натоварване, като запазва естествения вид и усещане. Бързият монтаж и съвместимостта с подово отопление гарантират комфорт и уют в съвременния дом.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -7602,7 +7656,7 @@
                     ],
                     "seo": {
                         "title": "Беверин опушен дъб",
-                        "description": "bg",
+                        "description": "Топли омаслени дъбови дъски с естествен релеф и меко, уютно усещане. Хибридна здравина и топъл допир за спокойни и гостоприемни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -7626,7 +7680,7 @@
                 },
                 "en": {
                     "name": "Beverin Smoked Oak",
-                    "description": "en",
+                    "description": "Each oak plank brings the authentic warmth and character of natural wood, enhanced by a soft oiled finish. The surface feels inviting and tactile, creating a calm and cozy atmosphere in every room. With hybrid durability, it resists moisture and daily wear while maintaining a beautifully natural feel. Easy installation and compatibility with underfloor heating make it perfect for comfortable modern living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -7640,7 +7694,7 @@
                     ],
                     "seo": {
                         "title": "Beverin Smoked Oak",
-                        "description": "en",
+                        "description": "Warm oiled oak planks with natural grain and soft, cozy feel. Hybrid durability and warm touch, perfect for calm and welcoming interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -7685,7 +7739,7 @@
                     "surface": "Light smoked, brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -7731,12 +7785,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280231",
             "slug": "classic-olio-hy-wood-oak-caledonian-forest",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-olio",
             "installationSystem": "click",
             "price": 63.02,
@@ -7751,7 +7806,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Caledonian Forest - Premium plank flooring",
@@ -7760,7 +7815,7 @@
             "i18n": {
                 "bg": {
                     "name": "Каледониан натурален дъб",
-                    "description": "bg",
+                    "description": "Всяка дъбова дъска носи истинската топлина и характер на природното дърво, подчертано от нежно омаслено покритие. Повърхността е приятна на допир и създава тиха и уютна атмосфера във всеки интериор. Хибридната устойчивост защитава от влага и ежедневно натоварване, като запазва естествения вид и усещане. Бързият монтаж и съвместимостта с подово отопление гарантират комфорт и уют в съвременния дом.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -7774,7 +7829,7 @@
                     ],
                     "seo": {
                         "title": "Каледониан натурален дъб",
-                        "description": "bg",
+                        "description": "Топли омаслени дъбови дъски с естествен релеф и меко, уютно усещане. Хибридна здравина и топъл допир за спокойни и гостоприемни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -7798,7 +7853,7 @@
                 },
                 "en": {
                     "name": "Caledonian Natural Oak",
-                    "description": "en",
+                    "description": "Each oak plank brings the authentic warmth and character of natural wood, enhanced by a soft oiled finish. The surface feels inviting and tactile, creating a calm and cozy atmosphere in every room. With hybrid durability, it resists moisture and daily wear while maintaining a beautifully natural feel. Easy installation and compatibility with underfloor heating make it perfect for comfortable modern living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -7812,7 +7867,7 @@
                     ],
                     "seo": {
                         "title": "Caledonian Natural Oak",
-                        "description": "en",
+                        "description": "Warm oiled oak planks with natural grain and soft, cozy feel. Hybrid durability and warm touch, perfect for calm and welcoming interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -7857,7 +7912,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -7903,12 +7958,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280230",
             "slug": "classic-olio-hy-wood-oak-yellowstone",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-olio",
             "installationSystem": "click",
             "price": 64.7,
@@ -7923,7 +7979,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Yellowstone - Premium plank flooring",
@@ -7932,7 +7988,7 @@
             "i18n": {
                 "bg": {
                     "name": "Йелоустоун натурален дъб",
-                    "description": "bg",
+                    "description": "Всяка дъбова дъска носи истинската топлина и характер на природното дърво, подчертано от нежно омаслено покритие. Повърхността е приятна на допир и създава тиха и уютна атмосфера във всеки интериор. Хибридната устойчивост защитава от влага и ежедневно натоварване, като запазва естествения вид и усещане. Бързият монтаж и съвместимостта с подово отопление гарантират комфорт и уют в съвременния дом.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -7946,7 +8002,7 @@
                     ],
                     "seo": {
                         "title": "Йелоустоун натурален дъб",
-                        "description": "bg",
+                        "description": "Топли омаслени дъбови дъски с естествен релеф и меко, уютно усещане. Хибридна здравина и топъл допир за спокойни и гостоприемни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -7970,7 +8026,7 @@
                 },
                 "en": {
                     "name": "Yellowstone Natural Oak",
-                    "description": "en",
+                    "description": "Each oak plank brings the authentic warmth and character of natural wood, enhanced by a soft oiled finish. The surface feels inviting and tactile, creating a calm and cozy atmosphere in every room. With hybrid durability, it resists moisture and daily wear while maintaining a beautifully natural feel. Easy installation and compatibility with underfloor heating make it perfect for comfortable modern living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -7984,7 +8040,7 @@
                     ],
                     "seo": {
                         "title": "Yellowstone Natural Oak",
-                        "description": "en",
+                        "description": "Warm oiled oak planks with natural grain and soft, cozy feel. Hybrid durability and warm touch, perfect for calm and welcoming interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -8029,7 +8085,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -8075,12 +8131,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280229",
             "slug": "classic-olio-hy-wood-oak-six-rivers",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-olio",
             "installationSystem": "click",
             "price": 68.06,
@@ -8095,7 +8152,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Six Rivers - Premium plank flooring",
@@ -8104,7 +8161,7 @@
             "i18n": {
                 "bg": {
                     "name": "Сикс Ривърс дъб",
-                    "description": "bg",
+                    "description": "Всяка дъбова дъска носи истинската топлина и характер на природното дърво, подчертано от нежно омаслено покритие. Повърхността е приятна на допир и създава тиха и уютна атмосфера във всеки интериор. Хибридната устойчивост защитава от влага и ежедневно натоварване, като запазва естествения вид и усещане. Бързият монтаж и съвместимостта с подово отопление гарантират комфорт и уют в съвременния дом.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -8118,7 +8175,7 @@
                     ],
                     "seo": {
                         "title": "Сикс Ривърс дъб",
-                        "description": "bg",
+                        "description": "Топли омаслени дъбови дъски с естествен релеф и меко, уютно усещане. Хибридна здравина и топъл допир за спокойни и гостоприемни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -8142,7 +8199,7 @@
                 },
                 "en": {
                     "name": "Six Rivers Oak",
-                    "description": "en",
+                    "description": "Each oak plank brings the authentic warmth and character of natural wood, enhanced by a soft oiled finish. The surface feels inviting and tactile, creating a calm and cozy atmosphere in every room. With hybrid durability, it resists moisture and daily wear while maintaining a beautifully natural feel. Easy installation and compatibility with underfloor heating make it perfect for comfortable modern living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -8156,7 +8213,7 @@
                     ],
                     "seo": {
                         "title": "Six Rivers Oak",
-                        "description": "en",
+                        "description": "Warm oiled oak planks with natural grain and soft, cozy feel. Hybrid durability and warm touch, perfect for calm and welcoming interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -8201,7 +8258,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -8247,12 +8304,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280235",
             "slug": "classic-olio-hy-wood-oak-thousand-islands",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-olio",
             "installationSystem": "click",
             "price": 64.7,
@@ -8267,7 +8325,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Thousand Islands - Premium plank flooring",
@@ -8276,7 +8334,7 @@
             "i18n": {
                 "bg": {
                     "name": "Дъб Бавария",
-                    "description": "bg",
+                    "description": "Всяка дъбова дъска носи истинската топлина и характер на природното дърво, подчертано от нежно омаслено покритие. Повърхността е приятна на допир и създава тиха и уютна атмосфера във всеки интериор. Хибридната устойчивост защитава от влага и ежедневно натоварване, като запазва естествения вид и усещане. Бързият монтаж и съвместимостта с подово отопление гарантират комфорт и уют в съвременния дом.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -8290,7 +8348,7 @@
                     ],
                     "seo": {
                         "title": "Дъб Бавария",
-                        "description": "bg",
+                        "description": "Топли омаслени дъбови дъски с естествен релеф и меко, уютно усещане. Хибридна здравина и топъл допир за спокойни и гостоприемни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -8314,7 +8372,7 @@
                 },
                 "en": {
                     "name": "Bavarian Oak",
-                    "description": "en",
+                    "description": "Each oak plank brings the authentic warmth and character of natural wood, enhanced by a soft oiled finish. The surface feels inviting and tactile, creating a calm and cozy atmosphere in every room. With hybrid durability, it resists moisture and daily wear while maintaining a beautifully natural feel. Easy installation and compatibility with underfloor heating make it perfect for comfortable modern living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -8328,7 +8386,7 @@
                     ],
                     "seo": {
                         "title": "Bavarian Oak",
-                        "description": "en",
+                        "description": "Warm oiled oak planks with natural grain and soft, cozy feel. Hybrid durability and warm touch, perfect for calm and welcoming interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -8373,7 +8431,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -8419,12 +8477,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280234",
             "slug": "classic-olio-hy-wood-oak-riding-mountain",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-olio",
             "installationSystem": "click",
             "price": 63.02,
@@ -8439,7 +8498,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Riding Mountain - Premium plank flooring",
@@ -8448,7 +8507,7 @@
             "i18n": {
                 "bg": {
                     "name": "Колорадо тъмен дъб",
-                    "description": "bg",
+                    "description": "Всяка дъбова дъска носи истинската топлина и характер на природното дърво, подчертано от нежно омаслено покритие. Повърхността е приятна на допир и създава тиха и уютна атмосфера във всеки интериор. Хибридната устойчивост защитава от влага и ежедневно натоварване, като запазва естествения вид и усещане. Бързият монтаж и съвместимостта с подово отопление гарантират комфорт и уют в съвременния дом.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -8462,7 +8521,7 @@
                     ],
                     "seo": {
                         "title": "Колорадо тъмен дъб",
-                        "description": "bg",
+                        "description": "Топли омаслени дъбови дъски с естествен релеф и меко, уютно усещане. Хибридна здравина и топъл допир за спокойни и гостоприемни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -8486,7 +8545,7 @@
                 },
                 "en": {
                     "name": "Colorado Dark",
-                    "description": "en",
+                    "description": "Each oak plank brings the authentic warmth and character of natural wood, enhanced by a soft oiled finish. The surface feels inviting and tactile, creating a calm and cozy atmosphere in every room. With hybrid durability, it resists moisture and daily wear while maintaining a beautifully natural feel. Easy installation and compatibility with underfloor heating make it perfect for comfortable modern living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -8500,7 +8559,7 @@
                     ],
                     "seo": {
                         "title": "Colorado Dark",
-                        "description": "en",
+                        "description": "Warm oiled oak planks with natural grain and soft, cozy feel. Hybrid durability and warm touch, perfect for calm and welcoming interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -8545,7 +8604,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -8591,12 +8650,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280232",
             "slug": "classic-olio-hy-wood-oak-parc-ela",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-olio",
             "installationSystem": "click",
             "price": 64.7,
@@ -8611,7 +8671,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Parc Ela - Premium plank flooring",
@@ -8620,7 +8680,7 @@
             "i18n": {
                 "bg": {
                     "name": "Дъб Ниагара",
-                    "description": "bg",
+                    "description": "Всяка дъбова дъска носи истинската топлина и характер на природното дърво, подчертано от нежно омаслено покритие. Повърхността е приятна на допир и създава тиха и уютна атмосфера във всеки интериор. Хибридната устойчивост защитава от влага и ежедневно натоварване, като запазва естествения вид и усещане. Бързият монтаж и съвместимостта с подово отопление гарантират комфорт и уют в съвременния дом.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -8634,7 +8694,7 @@
                     ],
                     "seo": {
                         "title": "Дъб Ниагара",
-                        "description": "bg",
+                        "description": "Топли омаслени дъбови дъски с естествен релеф и меко, уютно усещане. Хибридна здравина и топъл допир за спокойни и гостоприемни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -8658,7 +8718,7 @@
                 },
                 "en": {
                     "name": "Niagara Raw",
-                    "description": "en",
+                    "description": "Each oak plank brings the authentic warmth and character of natural wood, enhanced by a soft oiled finish. The surface feels inviting and tactile, creating a calm and cozy atmosphere in every room. With hybrid durability, it resists moisture and daily wear while maintaining a beautifully natural feel. Easy installation and compatibility with underfloor heating make it perfect for comfortable modern living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -8672,7 +8732,7 @@
                     ],
                     "seo": {
                         "title": "Niagara Raw",
-                        "description": "en",
+                        "description": "Warm oiled oak planks with natural grain and soft, cozy feel. Hybrid durability and warm touch, perfect for calm and welcoming interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -8717,7 +8777,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -8763,12 +8823,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280233",
             "slug": "classic-olio-hy-wood-oak-outer-banks",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "classic-olio",
             "installationSystem": "click",
             "price": 64.7,
@@ -8783,7 +8844,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Outer Banks - Premium plank flooring",
@@ -8792,7 +8853,7 @@
             "i18n": {
                 "bg": {
                     "name": "Аутър Бенкс пясъчен",
-                    "description": "bg",
+                    "description": "Всяка дъбова дъска носи истинската топлина и характер на природното дърво, подчертано от нежно омаслено покритие. Повърхността е приятна на допир и създава тиха и уютна атмосфера във всеки интериор. Хибридната устойчивост защитава от влага и ежедневно натоварване, като запазва естествения вид и усещане. Бързият монтаж и съвместимостта с подово отопление гарантират комфорт и уют в съвременния дом.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -8806,7 +8867,7 @@
                     ],
                     "seo": {
                         "title": "Аутър Бенкс пясъчен",
-                        "description": "bg",
+                        "description": "Топли омаслени дъбови дъски с естествен релеф и меко, уютно усещане. Хибридна здравина и топъл допир за спокойни и гостоприемни интериори.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -8830,7 +8891,7 @@
                 },
                 "en": {
                     "name": "Outer Banks Sand",
-                    "description": "en",
+                    "description": "Each oak plank brings the authentic warmth and character of natural wood, enhanced by a soft oiled finish. The surface feels inviting and tactile, creating a calm and cozy atmosphere in every room. With hybrid durability, it resists moisture and daily wear while maintaining a beautifully natural feel. Easy installation and compatibility with underfloor heating make it perfect for comfortable modern living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -8844,7 +8905,7 @@
                     ],
                     "seo": {
                         "title": "Outer Banks Sand",
-                        "description": "en",
+                        "description": "Warm oiled oak planks with natural grain and soft, cozy feel. Hybrid durability and warm touch, perfect for calm and welcoming interiors.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -8889,7 +8950,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -8935,12 +8996,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280136",
             "slug": "noblessse-olio-hy-wood-oak-great-basin",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-olio",
             "installationSystem": "click",
             "price": 71.42,
@@ -8954,7 +9016,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Great Basin - Premium extra-wide plank flooring",
@@ -8963,7 +9025,7 @@
             "i18n": {
                 "bg": {
                     "name": "Грейт Бейсин",
-                    "description": "bg",
+                    "description": "Матово омасленото покритие подчертава природния характер на екстрашироките дъбови дъски, носейки топлина и спокойствие в интериора. Хибридната технология гарантира дълготрайна здравина, водоустойчивост и комфорт при всяка стъпка. Естествената текстура създава усещане за уют и домашен комфорт. Лесният монтаж и съвместимостта с подово отопление са идеални за ежедневен лукс.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -8977,7 +9039,7 @@
                     ],
                     "seo": {
                         "title": "Грейт Бейсин",
-                        "description": "bg",
+                        "description": "Екстрашироки омаслени дъбови дъски с естествен матов финиш и топъл, спокоен характер. Хибридна здравина и автентично уютно усещане.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -9001,7 +9063,7 @@
                 },
                 "en": {
                     "name": "Great Basin Wide",
-                    "description": "en",
+                    "description": "The soft, matte oiled finish accentuates the natural character of extra-wide oak planks, creating a warm and serene interior atmosphere. Hybrid technology ensures long-lasting strength, water resistance, and comfort underfoot. The tactile natural surface invites relaxation and homey warmth. Easy installation and underfloor heating compatibility make it an ideal choice for luxurious everyday living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -9015,7 +9077,7 @@
                     ],
                     "seo": {
                         "title": "Great Basin Wide",
-                        "description": "en",
+                        "description": "Extra-wide oiled oak planks with a natural matte feel for a warm and serene home atmosphere. Hybrid strength with an authentic, cozy wood character.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -9060,7 +9122,7 @@
                     "surface": "Light smoked, brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -9106,12 +9168,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280137",
             "slug": "noblessse-olio-hy-wood-oak-beverin",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-olio",
             "installationSystem": "click",
             "price": 71.42,
@@ -9126,7 +9189,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Beverin - Premium extra-wide plank flooring",
@@ -9135,7 +9198,7 @@
             "i18n": {
                 "bg": {
                     "name": "Беверин опушен",
-                    "description": "bg",
+                    "description": "Матово омасленото покритие подчертава природния характер на екстрашироките дъбови дъски, носейки топлина и спокойствие в интериора. Хибридната технология гарантира дълготрайна здравина, водоустойчивост и комфорт при всяка стъпка. Естествената текстура създава усещане за уют и домашен комфорт. Лесният монтаж и съвместимостта с подово отопление са идеални за ежедневен лукс.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -9149,7 +9212,7 @@
                     ],
                     "seo": {
                         "title": "Беверин опушен",
-                        "description": "bg",
+                        "description": "Екстрашироки омаслени дъбови дъски с естествен матов финиш и топъл, спокоен характер. Хибридна здравина и автентично уютно усещане.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -9173,7 +9236,7 @@
                 },
                 "en": {
                     "name": "Beverin Wide Smoked",
-                    "description": "en",
+                    "description": "The soft, matte oiled finish accentuates the natural character of extra-wide oak planks, creating a warm and serene interior atmosphere. Hybrid technology ensures long-lasting strength, water resistance, and comfort underfoot. The tactile natural surface invites relaxation and homey warmth. Easy installation and underfloor heating compatibility make it an ideal choice for luxurious everyday living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -9187,7 +9250,7 @@
                     ],
                     "seo": {
                         "title": "Beverin Wide Smoked",
-                        "description": "en",
+                        "description": "Extra-wide oiled oak planks with a natural matte feel for a warm and serene home atmosphere. Hybrid strength with an authentic, cozy wood character.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -9232,7 +9295,7 @@
                     "surface": "Light smoked, brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -9278,12 +9341,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280131",
             "slug": "noblessse-olio-hy-wood-oak-caledonian-forest",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-olio",
             "installationSystem": "click",
             "price": 63.02,
@@ -9298,7 +9362,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Caledonian Forest - Premium extra-wide plank flooring",
@@ -9307,7 +9371,7 @@
             "i18n": {
                 "bg": {
                     "name": "Каледониан натурален",
-                    "description": "bg",
+                    "description": "Матово омасленото покритие подчертава природния характер на екстрашироките дъбови дъски, носейки топлина и спокойствие в интериора. Хибридната технология гарантира дълготрайна здравина, водоустойчивост и комфорт при всяка стъпка. Естествената текстура създава усещане за уют и домашен комфорт. Лесният монтаж и съвместимостта с подово отопление са идеални за ежедневен лукс.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -9321,7 +9385,7 @@
                     ],
                     "seo": {
                         "title": "Каледониан натурален",
-                        "description": "bg",
+                        "description": "Екстрашироки омаслени дъбови дъски с естествен матов финиш и топъл, спокоен характер. Хибридна здравина и автентично уютно усещане.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -9345,7 +9409,7 @@
                 },
                 "en": {
                     "name": "Caledonian Wide Natural",
-                    "description": "en",
+                    "description": "The soft, matte oiled finish accentuates the natural character of extra-wide oak planks, creating a warm and serene interior atmosphere. Hybrid technology ensures long-lasting strength, water resistance, and comfort underfoot. The tactile natural surface invites relaxation and homey warmth. Easy installation and underfloor heating compatibility make it an ideal choice for luxurious everyday living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -9359,7 +9423,7 @@
                     ],
                     "seo": {
                         "title": "Caledonian Wide Natural",
-                        "description": "en",
+                        "description": "Extra-wide oiled oak planks with a natural matte feel for a warm and serene home atmosphere. Hybrid strength with an authentic, cozy wood character.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -9404,7 +9468,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -9450,12 +9514,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280130",
             "slug": "noblessse-olio-hy-wood-oak-yellowstone",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-olio",
             "installationSystem": "click",
             "price": 67.22,
@@ -9470,7 +9535,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Yellowstone - Premium extra-wide plank flooring",
@@ -9479,7 +9544,7 @@
             "i18n": {
                 "bg": {
                     "name": "Йелоустоун натурален",
-                    "description": "bg",
+                    "description": "Матово омасленото покритие подчертава природния характер на екстрашироките дъбови дъски, носейки топлина и спокойствие в интериора. Хибридната технология гарантира дълготрайна здравина, водоустойчивост и комфорт при всяка стъпка. Естествената текстура създава усещане за уют и домашен комфорт. Лесният монтаж и съвместимостта с подово отопление са идеални за ежедневен лукс.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -9493,7 +9558,7 @@
                     ],
                     "seo": {
                         "title": "Йелоустоун натурален",
-                        "description": "bg",
+                        "description": "Екстрашироки омаслени дъбови дъски с естествен матов финиш и топъл, спокоен характер. Хибридна здравина и автентично уютно усещане.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -9517,7 +9582,7 @@
                 },
                 "en": {
                     "name": "Yellowstone Wide Natural",
-                    "description": "en",
+                    "description": "The soft, matte oiled finish accentuates the natural character of extra-wide oak planks, creating a warm and serene interior atmosphere. Hybrid technology ensures long-lasting strength, water resistance, and comfort underfoot. The tactile natural surface invites relaxation and homey warmth. Easy installation and underfloor heating compatibility make it an ideal choice for luxurious everyday living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -9531,7 +9596,7 @@
                     ],
                     "seo": {
                         "title": "Yellowstone Wide Natural",
-                        "description": "en",
+                        "description": "Extra-wide oiled oak planks with a natural matte feel for a warm and serene home atmosphere. Hybrid strength with an authentic, cozy wood character.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -9576,7 +9641,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -9622,12 +9687,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280129",
             "slug": "noblessse-olio-hy-wood-oak-six-rivers",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-olio",
             "installationSystem": "click",
             "price": 68.06,
@@ -9642,7 +9708,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Six Rivers - Premium extra-wide plank flooring",
@@ -9651,7 +9717,7 @@
             "i18n": {
                 "bg": {
                     "name": "Сикс Ривърс",
-                    "description": "bg",
+                    "description": "Матово омасленото покритие подчертава природния характер на екстрашироките дъбови дъски, носейки топлина и спокойствие в интериора. Хибридната технология гарантира дълготрайна здравина, водоустойчивост и комфорт при всяка стъпка. Естествената текстура създава усещане за уют и домашен комфорт. Лесният монтаж и съвместимостта с подово отопление са идеални за ежедневен лукс.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -9665,7 +9731,7 @@
                     ],
                     "seo": {
                         "title": "Сикс Ривърс",
-                        "description": "bg",
+                        "description": "Екстрашироки омаслени дъбови дъски с естествен матов финиш и топъл, спокоен характер. Хибридна здравина и автентично уютно усещане.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -9689,7 +9755,7 @@
                 },
                 "en": {
                     "name": "Six Rivers Wide",
-                    "description": "en",
+                    "description": "The soft, matte oiled finish accentuates the natural character of extra-wide oak planks, creating a warm and serene interior atmosphere. Hybrid technology ensures long-lasting strength, water resistance, and comfort underfoot. The tactile natural surface invites relaxation and homey warmth. Easy installation and underfloor heating compatibility make it an ideal choice for luxurious everyday living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -9703,7 +9769,7 @@
                     ],
                     "seo": {
                         "title": "Six Rivers Wide",
-                        "description": "en",
+                        "description": "Extra-wide oiled oak planks with a natural matte feel for a warm and serene home atmosphere. Hybrid strength with an authentic, cozy wood character.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -9748,7 +9814,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -9794,12 +9860,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280135",
             "slug": "noblessse-olio-hy-wood-oak-thousand-islands",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-olio",
             "installationSystem": "click",
             "price": 67.22,
@@ -9814,7 +9881,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Thousand Islands - Premium extra-wide plank flooring",
@@ -9823,7 +9890,7 @@
             "i18n": {
                 "bg": {
                     "name": "Дъб Бавария",
-                    "description": "bg",
+                    "description": "Матово омасленото покритие подчертава природния характер на екстрашироките дъбови дъски, носейки топлина и спокойствие в интериора. Хибридната технология гарантира дълготрайна здравина, водоустойчивост и комфорт при всяка стъпка. Естествената текстура създава усещане за уют и домашен комфорт. Лесният монтаж и съвместимостта с подово отопление са идеални за ежедневен лукс.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -9837,7 +9904,7 @@
                     ],
                     "seo": {
                         "title": "Дъб Бавария",
-                        "description": "bg",
+                        "description": "Екстрашироки омаслени дъбови дъски с естествен матов финиш и топъл, спокоен характер. Хибридна здравина и автентично уютно усещане.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -9861,7 +9928,7 @@
                 },
                 "en": {
                     "name": "Bavarian Oak Wide",
-                    "description": "en",
+                    "description": "The soft, matte oiled finish accentuates the natural character of extra-wide oak planks, creating a warm and serene interior atmosphere. Hybrid technology ensures long-lasting strength, water resistance, and comfort underfoot. The tactile natural surface invites relaxation and homey warmth. Easy installation and underfloor heating compatibility make it an ideal choice for luxurious everyday living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -9875,7 +9942,7 @@
                     ],
                     "seo": {
                         "title": "Bavarian Oak Wide",
-                        "description": "en",
+                        "description": "Extra-wide oiled oak planks with a natural matte feel for a warm and serene home atmosphere. Hybrid strength with an authentic, cozy wood character.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -9920,7 +9987,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -9966,12 +10033,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280134",
             "slug": "noblessse-olio-hy-wood-oak-riding-mountain",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-olio",
             "installationSystem": "click",
             "price": 63.02,
@@ -9986,7 +10054,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Riding Mountain - Premium extra-wide plank flooring",
@@ -9995,7 +10063,7 @@
             "i18n": {
                 "bg": {
                     "name": "Тъмен дъб Колорадо",
-                    "description": "bg",
+                    "description": "Матово омасленото покритие подчертава природния характер на екстрашироките дъбови дъски, носейки топлина и спокойствие в интериора. Хибридната технология гарантира дълготрайна здравина, водоустойчивост и комфорт при всяка стъпка. Естествената текстура създава усещане за уют и домашен комфорт. Лесният монтаж и съвместимостта с подово отопление са идеални за ежедневен лукс.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -10009,7 +10077,7 @@
                     ],
                     "seo": {
                         "title": "Тъмен дъб Колорадо",
-                        "description": "bg",
+                        "description": "Екстрашироки омаслени дъбови дъски с естествен матов финиш и топъл, спокоен характер. Хибридна здравина и автентично уютно усещане.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -10033,7 +10101,7 @@
                 },
                 "en": {
                     "name": "Colorado Wide",
-                    "description": "en",
+                    "description": "The soft, matte oiled finish accentuates the natural character of extra-wide oak planks, creating a warm and serene interior atmosphere. Hybrid technology ensures long-lasting strength, water resistance, and comfort underfoot. The tactile natural surface invites relaxation and homey warmth. Easy installation and underfloor heating compatibility make it an ideal choice for luxurious everyday living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -10047,7 +10115,7 @@
                     ],
                     "seo": {
                         "title": "Colorado Wide",
-                        "description": "en",
+                        "description": "Extra-wide oiled oak planks with a natural matte feel for a warm and serene home atmosphere. Hybrid strength with an authentic, cozy wood character.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -10092,7 +10160,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -10138,12 +10206,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280132",
             "slug": "noblessse-olio-hy-wood-oak-parc-ela",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-olio",
             "installationSystem": "click",
             "price": 67.22,
@@ -10158,7 +10227,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Parc Ela - Premium extra-wide plank flooring",
@@ -10167,7 +10236,7 @@
             "i18n": {
                 "bg": {
                     "name": "Дъб Ниагара",
-                    "description": "bg",
+                    "description": "Матово омасленото покритие подчертава природния характер на екстрашироките дъбови дъски, носейки топлина и спокойствие в интериора. Хибридната технология гарантира дълготрайна здравина, водоустойчивост и комфорт при всяка стъпка. Естествената текстура създава усещане за уют и домашен комфорт. Лесният монтаж и съвместимостта с подово отопление са идеални за ежедневен лукс.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -10181,7 +10250,7 @@
                     ],
                     "seo": {
                         "title": "Дъб Ниагара",
-                        "description": "bg",
+                        "description": "Екстрашироки омаслени дъбови дъски с естествен матов финиш и топъл, спокоен характер. Хибридна здравина и автентично уютно усещане.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -10205,7 +10274,7 @@
                 },
                 "en": {
                     "name": "Niagara Wide",
-                    "description": "en",
+                    "description": "The soft, matte oiled finish accentuates the natural character of extra-wide oak planks, creating a warm and serene interior atmosphere. Hybrid technology ensures long-lasting strength, water resistance, and comfort underfoot. The tactile natural surface invites relaxation and homey warmth. Easy installation and underfloor heating compatibility make it an ideal choice for luxurious everyday living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -10219,7 +10288,7 @@
                     ],
                     "seo": {
                         "title": "Niagara Wide",
-                        "description": "en",
+                        "description": "Extra-wide oiled oak planks with a natural matte feel for a warm and serene home atmosphere. Hybrid strength with an authentic, cozy wood character.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -10264,7 +10333,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -10310,12 +10379,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101280133",
             "slug": "noblessse-olio-hy-wood-oak-outer-banks",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "noblessse-olio",
             "installationSystem": "click",
             "price": 67.22,
@@ -10330,7 +10400,7 @@
             ],
             "displayImages": [
                 0,
-                1
+                3
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Outer Banks - Premium extra-wide plank flooring",
@@ -10339,7 +10409,7 @@
             "i18n": {
                 "bg": {
                     "name": "Аутър Бенкс",
-                    "description": "bg",
+                    "description": "Матово омасленото покритие подчертава природния характер на екстрашироките дъбови дъски, носейки топлина и спокойствие в интериора. Хибридната технология гарантира дълготрайна здравина, водоустойчивост и комфорт при всяка стъпка. Естествената текстура създава усещане за уют и домашен комфорт. Лесният монтаж и съвместимостта с подово отопление са идеални за ежедневен лукс.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -10353,7 +10423,7 @@
                     ],
                     "seo": {
                         "title": "Аутър Бенкс",
-                        "description": "bg",
+                        "description": "Екстрашироки омаслени дъбови дъски с естествен матов финиш и топъл, спокоен характер. Хибридна здравина и автентично уютно усещане.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -10377,7 +10447,7 @@
                 },
                 "en": {
                     "name": "Outer Banks Wide",
-                    "description": "en",
+                    "description": "The soft, matte oiled finish accentuates the natural character of extra-wide oak planks, creating a warm and serene interior atmosphere. Hybrid technology ensures long-lasting strength, water resistance, and comfort underfoot. The tactile natural surface invites relaxation and homey warmth. Easy installation and underfloor heating compatibility make it an ideal choice for luxurious everyday living.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -10391,7 +10461,7 @@
                     ],
                     "seo": {
                         "title": "Outer Banks Wide",
-                        "description": "en",
+                        "description": "Extra-wide oiled oak planks with a natural matte feel for a warm and serene home atmosphere. Hybrid strength with an authentic, cozy wood character.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -10436,7 +10506,7 @@
                     "surface": "brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY Pro"
                 },
                 "performance": {
@@ -10482,12 +10552,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101281428",
             "slug": "herringbone-olio-hy-wood-oak-luberon",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "herringbone-olio",
             "installationSystem": "click",
             "price": 83.18,
@@ -10501,8 +10572,8 @@
                 "1101281428_HW_Eiche-Luberon_OF-Plan_V01.webp"
             ],
             "displayImages": [
-                0,
-                1
+                3,
+                0
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Luberon - Premium herringbone flooring",
@@ -10511,7 +10582,7 @@
             "i18n": {
                 "bg": {
                     "name": "Дъб Аспен",
-                    "description": "bg",
+                    "description": "Подът с дизайн рибена кост, импрегниран с висококачествени масла, носи естествен чар и фин уют във всеки интериор. Меката, органична повърхност подчертава текстурата на дървото и създава топла домашна атмосфера. Благодарение на хибридната здравина и водоустойчивост е подходящ както за стилни, така и за ежедневни пространства. Идеален избор за ценители на естествения характер на дървото в съчетание със съвременен комфорт.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -10524,7 +10595,7 @@
                     ],
                     "seo": {
                         "title": "Дъб Аспен",
-                        "description": "bg",
+                        "description": "Омаслена рибена кост с богата естествена текстура и топла, изискана атмосфера. Нежен естествен финиш и хибридна устойчивост за гостоприемни пространства.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -10548,7 +10619,7 @@
                 },
                 "en": {
                     "name": "Aspen Raw Herringbone",
-                    "description": "en",
+                    "description": "The oiled herringbone pattern brings natural charm and a refined, cozy feeling to any interior. Its soft, organic surface enhances the wood's texture and invites warmth into your home. With hybrid durability and water resistance, it suits both elegant and everyday living spaces. Ideal for those seeking authentic wood character with modern comfort.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -10561,7 +10632,7 @@
                     ],
                     "seo": {
                         "title": "Aspen Raw Herringbone",
-                        "description": "en",
+                        "description": "Oiled herringbone flooring with rich natural texture and warm, refined ambiance. Soft natural finish and hybrid performance for welcoming living spaces.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -10606,7 +10677,7 @@
                     "surface": "fine brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY HB"
                 },
                 "performance": {
@@ -10652,12 +10723,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101281427",
             "slug": "herringbone-olio-hy-wood-oak-gran-sasso",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "herringbone-olio",
             "installationSystem": "click",
             "price": 83.18,
@@ -10671,8 +10743,8 @@
                 "1101281427_HW_Eiche-Gran-Sasso_OF-Plan_V01.webp"
             ],
             "displayImages": [
-                0,
-                1
+                3,
+                0
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Gran Sasso - Premium herringbone flooring",
@@ -10681,7 +10753,7 @@
             "i18n": {
                 "bg": {
                     "name": "Гран Сасо дъб",
-                    "description": "bg",
+                    "description": "Подът с дизайн рибена кост, импрегниран с висококачествени масла, носи естествен чар и фин уют във всеки интериор. Меката, органична повърхност подчертава текстурата на дървото и създава топла домашна атмосфера. Благодарение на хибридната здравина и водоустойчивост е подходящ както за стилни, така и за ежедневни пространства. Идеален избор за ценители на естествения характер на дървото в съчетание със съвременен комфорт.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -10694,7 +10766,7 @@
                     ],
                     "seo": {
                         "title": "Гран Сасо дъб",
-                        "description": "bg",
+                        "description": "Омаслена рибена кост с богата естествена текстура и топла, изискана атмосфера. Нежен естествен финиш и хибридна устойчивост за гостоприемни пространства.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -10718,7 +10790,7 @@
                 },
                 "en": {
                     "name": "Gran Sasso Herringbone",
-                    "description": "en",
+                    "description": "The oiled herringbone pattern brings natural charm and a refined, cozy feeling to any interior. Its soft, organic surface enhances the wood's texture and invites warmth into your home. With hybrid durability and water resistance, it suits both elegant and everyday living spaces. Ideal for those seeking authentic wood character with modern comfort.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -10731,7 +10803,7 @@
                     ],
                     "seo": {
                         "title": "Gran Sasso Herringbone",
-                        "description": "en",
+                        "description": "Oiled herringbone flooring with rich natural texture and warm, refined ambiance. Soft natural finish and hybrid performance for welcoming living spaces.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -10776,7 +10848,7 @@
                     "surface": "fine brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY HB"
                 },
                 "performance": {
@@ -10822,12 +10894,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101281430",
             "slug": "herringbone-olio-hy-wood-oak-acadia",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "herringbone-olio",
             "installationSystem": "click",
             "price": 83.18,
@@ -10841,8 +10914,8 @@
                 "1101281430_HW_Eiche-Acadia_OF-Plan_V01.webp"
             ],
             "displayImages": [
-                0,
-                1
+                3,
+                0
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Acadia - Premium herringbone flooring",
@@ -10851,7 +10924,7 @@
             "i18n": {
                 "bg": {
                     "name": "Акадия кафяв дъб",
-                    "description": "bg",
+                    "description": "Подът с дизайн рибена кост, импрегниран с висококачествени масла, носи естествен чар и фин уют във всеки интериор. Меката, органична повърхност подчертава текстурата на дървото и създава топла домашна атмосфера. Благодарение на хибридната здравина и водоустойчивост е подходящ както за стилни, така и за ежедневни пространства. Идеален избор за ценители на естествения характер на дървото в съчетание със съвременен комфорт.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -10864,7 +10937,7 @@
                     ],
                     "seo": {
                         "title": "Акадия кафяв дъб",
-                        "description": "bg",
+                        "description": "Омаслена рибена кост с богата естествена текстура и топла, изискана атмосфера. Нежен естествен финиш и хибридна устойчивост за гостоприемни пространства.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -10888,7 +10961,7 @@
                 },
                 "en": {
                     "name": "Acadia Brown Herringbone",
-                    "description": "en",
+                    "description": "The oiled herringbone pattern brings natural charm and a refined, cozy feeling to any interior. Its soft, organic surface enhances the wood's texture and invites warmth into your home. With hybrid durability and water resistance, it suits both elegant and everyday living spaces. Ideal for those seeking authentic wood character with modern comfort.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -10901,7 +10974,7 @@
                     ],
                     "seo": {
                         "title": "Acadia Brown Herringbone",
-                        "description": "en",
+                        "description": "Oiled herringbone flooring with rich natural texture and warm, refined ambiance. Soft natural finish and hybrid performance for welcoming living spaces.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -10946,7 +11019,7 @@
                     "surface": "fine brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY HB"
                 },
                 "performance": {
@@ -10992,12 +11065,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101281431",
             "slug": "herringbone-olio-hy-wood-oak-yasuni",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "herringbone-olio",
             "installationSystem": "click",
             "price": 83.18,
@@ -11011,8 +11085,8 @@
                 "1101281431_HW_Eiche-Yasuni_OF-Plan_V01.webp"
             ],
             "displayImages": [
-                0,
-                1
+                3,
+                0
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Yasuni - Premium herringbone flooring",
@@ -11021,7 +11095,7 @@
             "i18n": {
                 "bg": {
                     "name": "Токио тъмен дъб",
-                    "description": "bg",
+                    "description": "Подът с дизайн рибена кост, импрегниран с висококачествени масла, носи естествен чар и фин уют във всеки интериор. Меката, органична повърхност подчертава текстурата на дървото и създава топла домашна атмосфера. Благодарение на хибридната здравина и водоустойчивост е подходящ както за стилни, така и за ежедневни пространства. Идеален избор за ценители на естествения характер на дървото в съчетание със съвременен комфорт.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -11034,7 +11108,7 @@
                     ],
                     "seo": {
                         "title": "Токио тъмен дъб",
-                        "description": "bg",
+                        "description": "Омаслена рибена кост с богата естествена текстура и топла, изискана атмосфера. Нежен естествен финиш и хибридна устойчивост за гостоприемни пространства.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -11058,7 +11132,7 @@
                 },
                 "en": {
                     "name": "Tokyo Dark Herringbone",
-                    "description": "en",
+                    "description": "The oiled herringbone pattern brings natural charm and a refined, cozy feeling to any interior. Its soft, organic surface enhances the wood's texture and invites warmth into your home. With hybrid durability and water resistance, it suits both elegant and everyday living spaces. Ideal for those seeking authentic wood character with modern comfort.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -11071,7 +11145,7 @@
                     ],
                     "seo": {
                         "title": "Tokyo Dark Herringbone",
-                        "description": "en",
+                        "description": "Oiled herringbone flooring with rich natural texture and warm, refined ambiance. Soft natural finish and hybrid performance for welcoming living spaces.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -11116,7 +11190,7 @@
                     "surface": "fine brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY HB"
                 },
                 "performance": {
@@ -11162,12 +11236,13 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         },
         {
             "sku": "1101281429",
             "slug": "herringbone-olio-hy-wood-oak-morvan",
-            "collection": "hy-wood",
+            "collection": "hybrid-wood",
             "pattern": "herringbone-olio",
             "installationSystem": "click",
             "price": 83.18,
@@ -11181,8 +11256,8 @@
                 "1101281429_HW_Eiche-Morvan_OF-Plan_V01.webp"
             ],
             "displayImages": [
-                0,
-                1
+                3,
+                0
             ],
             "imageAlt": {
                 "en": "Hy-Wood - Oak Morvan - Premium herringbone flooring",
@@ -11191,7 +11266,7 @@
             "i18n": {
                 "bg": {
                     "name": "Сахара пясъчен дъб",
-                    "description": "bg",
+                    "description": "Подът с дизайн рибена кост, импрегниран с висококачествени масла, носи естествен чар и фин уют във всеки интериор. Меката, органична повърхност подчертава текстурата на дървото и създава топла домашна атмосфера. Благодарение на хибридната здравина и водоустойчивост е подходящ както за стилни, така и за ежедневни пространства. Идеален избор за ценители на естествения характер на дървото в съчетание със съвременен комфорт.",
                     "features": [
                         "водоустойчив",
                         "устойчив на драскотини",
@@ -11204,7 +11279,7 @@
                     ],
                     "seo": {
                         "title": "Сахара пясъчен дъб",
-                        "description": "bg",
+                        "description": "Омаслена рибена кост с богата естествена текстура и топла, изискана атмосфера. Нежен естествен финиш и хибридна устойчивост за гостоприемни пространства.",
                         "keywords": [
                             "дъбов под българия",
                             "водоустойчив под",
@@ -11228,7 +11303,7 @@
                 },
                 "en": {
                     "name": "Sahara Sand Herringbone",
-                    "description": "en",
+                    "description": "The oiled herringbone pattern brings natural charm and a refined, cozy feeling to any interior. Its soft, organic surface enhances the wood's texture and invites warmth into your home. With hybrid durability and water resistance, it suits both elegant and everyday living spaces. Ideal for those seeking authentic wood character with modern comfort.",
                     "features": [
                         "water-resistant",
                         "scratch-resistant",
@@ -11241,7 +11316,7 @@
                     ],
                     "seo": {
                         "title": "Sahara Sand Herringbone",
-                        "description": "en",
+                        "description": "Oiled herringbone flooring with rich natural texture and warm, refined ambiance. Soft natural finish and hybrid performance for welcoming living spaces.",
                         "keywords": [
                             "hy-wood flooring",
                             "plank flooring",
@@ -11286,7 +11361,7 @@
                     "surface": "fine brushed"
                 },
                 "installation": {
-                    "vGroove": "4-sided micro bevel",
+                    "vGroove": "4-sided-micro-bevel",
                     "clickSystem": "CLICKitEASY HB"
                 },
                 "performance": {
@@ -11332,7 +11407,8 @@
                         "Robust"
                     ]
                 }
-            }
+            },
+            "surfaceTreatment": "olio"
         }
     ]
-}
+} as const;
