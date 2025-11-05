@@ -177,24 +177,24 @@
     },
     "home": {
         "metadata": {
-            "title": "EcoVibeFloors - Premium Dutch Flooring",
+            "title": "EcoVibeFloors - Premium floors ",
             "description": "Luxury natural wood and laminate floors from the Netherlands for Bulgarian homes. Extended guarantees and exceptional quality.",
             "ogImageAlt": "EcoVibeFloors - High quality flooring solutions from Germany & The Netherlands"
         },
-        "dutchOrigin": "Dutch Origin",
+        "dutchOrigin": "Dutch and German Origin",
         "certified": "Certified Products",
         "innovative": "Innovative Engineering",
         "luxury": "Luxury Design",
         "diverse": "Diverse Quality Floor Systems",
         "ecoFriendly": "Eco-Friendly Natural Materials",
         "hero": {
-            "title": "Premium Dutch Flooring for Bulgarian Homes",
-            "subtitle": "Discover luxury natural wood and laminate floors with extended guarantees and exceptional quality."
+            "title": "Premium Dutch & German Flooring for Bulgarian Homes",
+            "subtitle": "Discover luxury natural wood, hybrid wood and vinyl floors  with exceptional quality."
         },
         "features": {
             "dutchOrigin": {
-                "title": "Dutch Origin",
-                "description": "Premium Quality from The Netherlands"
+                "title": "Dutch & German Origin",
+                "description": "Premium quality floors from The Netherlands and Germany "
             },
             "certified": {
                 "title": "Certified Products",
@@ -240,7 +240,7 @@
             },
             "hybridWood": {
                 "title": "Hybrid Wood Floors",
-                "text": "Hybrid wood floors combine oak aesthetics with practicality. Natural wood, free of chemicals, compressed for exceptional hardness and 24-hour water resistance. Certified by REACH, FloorScore, and GreenGuard Gold.",
+                "text": "Hybrid wood floors combine oak aesthetics with practicality. Natural wood, free of chemicals, compressed for exceptional hardness and 24-hour water resistance. Nature Protect and Aqua Seal tecnologies. Certified by FSC.",
                 "learnMore": "Learn More",
                 "viewCollection": "View Collection"
             },
@@ -336,21 +336,20 @@
         "chevron": "Chevron",
         "chevronDescription": "Distinctive chevron pattern creates dynamic visual flow and architectural interest, perfect for sophisticated interiors.",
         "viewProducts": "View Products",
-        "walvisgraat-click": "Whalebone Click",
+        "walvisgraat-click": "Whalebone",
         "walvisgraatClickDescription": "Extra-wide herringbone pattern with click installation, creating dramatic visual impact with easy DIY setup.",
-        "natuur-click": "Nature Rigid Click",
+        "natuur-click": "Nature Rigid",
         "natuurClickDescription": "Commercial-grade rigid core vinyl with authentic wood textures and superior durability for high-traffic areas.",
-        "landhuis-click": "Manor Click",
+        "landhuis-click": "Nature Ridgit XL",
         "landhuisClickDescription": "Wide plank design with realistic oak aesthetics, perfect for creating spacious and elegant interiors.",
-        "tegel-click": "Tile Click",
+        "tegel-click": "Tiles Betonlook",
         "tegelClickDescription": "Large format stone and concrete looks, ideal for damp areas with excellent underfloor heating compatibility.",
-        "visgraat-click": "Herringbone Click",
+        "visgraat-click": "Herringbone",
         "visgraatClickDescription": "Classic herringbone pattern in click format with ceramic bead technology for enhanced wear resistance.",
         "dorpen": "Village",
         "dorpenDescription": "Authentic village oak aesthetics with glue-down stability, perfect for commercial spaces requiring permanent installation.",
         "hongaarse-punt": "Hungarian Point",
         "hongaarsePuntDescription": "Elegant diagonal herringbone pattern creating sophisticated visual movement and timeless appeal.",
-        "landhuis": "Manor",
         "landhuisDescription": "Wide plank manor style with glue-down installation for maximum stability in high-traffic commercial environments."
     },
     "installationSystems": {

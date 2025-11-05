@@ -8,11 +8,11 @@ export async function ClickVinylCollections() {
     const tPatterns = await getTranslations('patterns');
 
     // Get images from product data by SKU for each pattern
-    const walvisgraatImages = getStyleCardImages('click-vinyl', 'FLR-3911', 0, 1);
-    const natuurImages = getStyleCardImages('click-vinyl', 'FLR-3726', 0, 1);
-    const landhuisImages = getStyleCardImages('click-vinyl', 'FLR-3753', 0, 1);
-    const tegelImages = getStyleCardImages('click-vinyl', 'FLR-3805', 0, 1);
-    const visgraatImages = getStyleCardImages('click-vinyl', 'FLR-3930', 0, 1);
+    const walvisgraatImages = getStyleCardImages('click-vinyl', 'FLR-3911', 7, 30);
+    const natuurImages = getStyleCardImages('click-vinyl', 'FLR-3726', 7, 0);
+    const landhuisImages = getStyleCardImages('click-vinyl', 'FLR-3753', 15, 1);
+    const tegelImages = getStyleCardImages('click-vinyl', 'FLR-3805', 12, 0);
+    const visgraatImages = getStyleCardImages('click-vinyl', 'FLR-3930', 11, 0);
 
     const stylesConfig = [
         {
@@ -22,6 +22,14 @@ export async function ClickVinylCollections() {
             hoverImage: walvisgraatImages.hoverImage,
             imageAlt: tPatterns('walvisgraat-click'),
             navigationUrl: '/click-vinyl/walvisgraat-click'
+        },
+        {
+            title: tPatterns('visgraat-click'),
+            description: tPatterns('visgraatClickDescription'),
+            mainImage: visgraatImages.mainImage,
+            hoverImage: visgraatImages.hoverImage,
+            imageAlt: tPatterns('visgraat-click'),
+            navigationUrl: '/click-vinyl/visgraat-click'
         },
         {
             title: tPatterns('natuur-click'),
@@ -47,14 +55,6 @@ export async function ClickVinylCollections() {
             imageAlt: tPatterns('tegel-click'),
             navigationUrl: '/click-vinyl/tegel-click'
         },
-        {
-            title: tPatterns('visgraat-click'),
-            description: tPatterns('visgraatClickDescription'),
-            mainImage: visgraatImages.mainImage,
-            hoverImage: visgraatImages.hoverImage,
-            imageAlt: tPatterns('visgraat-click'),
-            navigationUrl: '/click-vinyl/visgraat-click'
-        }
     ];
 
     return (

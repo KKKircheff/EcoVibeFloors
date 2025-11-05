@@ -1,6 +1,7 @@
 import 'server-only';
 import { Stack } from '@mui/material';
 import type { Metadata } from 'next';
+import { getTranslations } from 'next-intl/server';
 
 import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
 import { ContactHero } from './ContactHero.section';

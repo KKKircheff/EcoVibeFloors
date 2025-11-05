@@ -3,7 +3,7 @@ import {Zen_Kaku_Gothic_New, Montserrat, Caveat} from 'next/font/google';
 import {palette} from './pallete';
 
 const zenKakuGothicNew = Zen_Kaku_Gothic_New({
-    weight: ['400', '500'],
+    weight: ['400'],
     subsets: ['latin', 'cyrillic'],
     display: 'optional',
     preload: false,
@@ -16,16 +16,16 @@ const zenKakuGothicNew = Zen_Kaku_Gothic_New({
 // });
 
 const montserrat = Montserrat({
-    weight: ['400', '500', '600'],
     subsets: ['latin', 'cyrillic'],
     display: 'swap',
-    preload: false,
+    // Variable font automatically loaded (weight range 100-900)
+    // preload: true, // Preload critical font used in hero section
 });
 export const caveat = Caveat({
-    weight: ['400', '500'],
     subsets: ['latin', 'cyrillic'],
     display: 'swap',
     preload: false,
+    // Variable font automatically loaded (weight range 400-700)
 });
 
 const baseTheme = createTheme({

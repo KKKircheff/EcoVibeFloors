@@ -77,6 +77,9 @@ export default async function LocaleLayout(props: Props) {
     return (
         <html lang={locale}>
             <head>
+                <link rel="preconnect" href="https://fonts.googleapis.com" />
+                <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+                <link rel="dns-prefetch" href="https://firebasestorage.googleapis.com" />
                 <style dangerouslySetInnerHTML={{
                     __html: `
                         body { margin: 0; font-family: 'Zen Kaku Gothic New', 'Montserrat', system-ui, sans-serif; }
