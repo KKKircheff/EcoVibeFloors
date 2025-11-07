@@ -16,3 +16,9 @@ env:
     availability:
       - BUILD
       - RUNTIME
+
+  - variable: NEXT_PUBLIC_BASE_URL
+    value: https://ecovibefloors.com
+    availability:
+      - BUILD
+      - RUNTIME

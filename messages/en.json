@@ -178,7 +178,7 @@
     "home": {
         "metadata": {
             "title": "EcoVibeFloors - Premium floors ",
-            "description": "Luxury natural wood and laminate floors from the Netherlands for Bulgarian homes. Extended guarantees and exceptional quality.",
+            "description": "Luxury natural wood, hybrid wood and vinyl floors from The Netherlands and Germany. Extended guarantees and exceptional quality. Direct delivery to the customers' addresses in Bulgaria",
             "ogImageAlt": "EcoVibeFloors - High quality flooring solutions from Germany & The Netherlands"
         },
         "dutchOrigin": "Dutch and German Origin",
@@ -346,10 +346,11 @@
         "tegelClickDescription": "Large format stone and concrete looks, ideal for damp areas with excellent underfloor heating compatibility.",
         "visgraat-click": "Herringbone",
         "visgraatClickDescription": "Classic herringbone pattern in click format with ceramic bead technology for enhanced wear resistance.",
-        "dorpen": "Village",
+        "dorpen": "Provance Chic",
         "dorpenDescription": "Authentic village oak aesthetics with glue-down stability, perfect for commercial spaces requiring permanent installation.",
-        "hongaarse-punt": "Hungarian Point",
+        "hongaarse-punt": "Chevron Classic Style",
         "hongaarsePuntDescription": "Elegant diagonal herringbone pattern creating sophisticated visual movement and timeless appeal.",
+        "landhuis": "Provance Charm",
         "landhuisDescription": "Wide plank manor style with glue-down installation for maximum stability in high-traffic commercial environments."
     },
     "installationSystems": {

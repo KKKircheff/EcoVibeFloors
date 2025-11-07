@@ -99,32 +99,27 @@ export const clickVinylCollection: ProductCollection = {
                     'name': 'Нордкапър',
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
-                    'features': ['waterproof', 'MEGAMAT', 'phthalate-free', 'underfloor heating'],
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
+                    ],
                     'seo': {
                         'title': 'Нордкапър | Луксозен Винилов Под | Floer България',
                         'description':
                             'Нордкапър - 100% водоустойчив винилов под с REACH сертификат. Лесен монтаж с клик система. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.',
                         'keywords': [
                             'винилов под',
-                            'луксозен винилов под',
-                            'LVT под българия',
-                            'walvisgraat-click винилов под',
+                            'LVT настилка българия',
                             'водоустойчив винил',
-                            'винилов под за подово отопление',
                             'клик винил',
+                            'винил за подово отопление',
                             'floer винил българия',
                             'rigid click vinyl',
-                            'клик система винил',
-                            'винил без лепило',
-                            'лесен монтаж винил',
-                            'винилова настилка',
-                            'ПВЦ под',
-                            'подови настилки винил',
-                            'устойчив на влага под',
-                            'под за деца',
-                            'екологичен винилов под',
+                            'walvisgraat винил',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на дъб винил',
                         ],
                     },
                     'specifications': {
@@ -136,8 +131,13 @@ export const clickVinylCollection: ProductCollection = {
                 'en': {
                     'name': 'Noordkaper Natural',
                     'description':
-                        'Meet the special Floer Whalebone Rigid Click Vinyl in Nordcaper Natural. Install the click connection yourself and achieve an elegant natural look! With its natural oak colour, the Whalebone Rigid Click Vinyl - Nordcaper Natural imitates the appearance of a real oak wood floor but offers all the ben...',
-                    'features': ['waterproof', 'MEGAMAT', 'phthalate-free', 'underfloor heating'],
+                        'Luxury vinyl flooring with oak pattern. Manufactured with a rigid mineral core for exceptional stability. Equipped with an advanced click system for easy installation. Suitable for DIY installation without adhesive. Features: 100% waterproof, scratch and impact resistant, suitable for wet rooms, eco-friendly production with REACH certificate, safe for households with children, easy maintenance and cleaning. 20-year warranty. Suitable for underfloor heating and intensive use.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
+                    ],
                     'seo': {
                         'title': 'Whalebone Vinyl - Noordkaper Natural | Premium Vinyl Flooring | Eco Vibe Floors',
                         'description':
@@ -238,32 +238,27 @@ export const clickVinylCollection: ProductCollection = {
                     'name': 'Балейн светъл дъб',
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
-                    'features': ['waterproof', 'MEGAMAT', 'phthalate-free', 'underfloor heating'],
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
+                    ],
                     'seo': {
                         'title': 'Балейн светъл дъб | Луксозен Винилов Под | Floer България',
                         'description':
                             'Винил Балейн светъл дъб - 100% водоустойчив винилов под с REACH сертификат. Лесен монтаж с клик система. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.',
                         'keywords': [
                             'винилов под',
-                            'луксозен винилов под',
-                            'LVT под българия',
-                            'walvisgraat-click винилов под',
+                            'LVT настилка българия',
                             'водоустойчив винил',
-                            'винилов под за подово отопление',
                             'клик винил',
+                            'винил за подово отопление',
                             'floer винил българия',
                             'rigid click vinyl',
-                            'клик система винил',
-                            'винил без лепило',
-                            'лесен монтаж винил',
-                            'винилова настилка',
-                            'ПВЦ под',
-                            'подови настилки винил',
-                            'устойчив на влага под',
-                            'под за деца',
-                            'екологичен винилов под',
+                            'walvisgraat винил',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на дъб винил',
                         ],
                     },
                     'specifications': {
@@ -276,7 +271,12 @@ export const clickVinylCollection: ProductCollection = {
                     'name': 'Balein Beige Oak',
                     'description':
                         'Discover the popular Floer Whalebone Rigid Click Vinyl in Baleen Beige. Install the click connection yourself and achieve a realistic light oak look! With its beige colour, the Whalebone Rigid Click Vinyl - Baleen Beige imitates the appearance of a real oak wood floor but offers all the benefits of ...',
-                    'features': ['waterproof', 'MEGAMAT', 'phthalate-free', 'underfloor heating'],
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
+                    ],
                     'seo': {
                         'title': 'Whalebone Vinyl - Balein Beige | Premium Vinyl Flooring | Eco Vibe Floors',
                         'description':
@@ -377,32 +377,27 @@ export const clickVinylCollection: ProductCollection = {
                     'name': 'Брайд',
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
-                    'features': ['waterproof', 'MEGAMAT', 'phthalate-free', 'underfloor heating'],
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
+                    ],
                     'seo': {
                         'title': 'Винил Голяма Рибена Кост - Bryde Кафяв | Луксозен Винилов Под | Floer България',
                         'description':
                             'Винил Голяма Рибена Кост - Bryde Кафяв - 100% водоустойчив винилов под с REACH сертификат. Лесен монтаж с клик система. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.',
                         'keywords': [
                             'винилов под',
-                            'луксозен винилов под',
-                            'LVT под българия',
-                            'walvisgraat-click винилов под',
+                            'LVT настилка българия',
                             'водоустойчив винил',
-                            'винилов под за подово отопление',
                             'клик винил',
+                            'винил за подово отопление',
                             'floer винил българия',
                             'rigid click vinyl',
-                            'клик система винил',
-                            'винил без лепило',
-                            'лесен монтаж винил',
-                            'винилова настилка',
-                            'ПВЦ под',
-                            'подови настилки винил',
-                            'устойчив на влага под',
-                            'под за деца',
-                            'екологичен винилов под',
+                            'walvisgraat винил',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на дъб винил',
                         ],
                     },
                     'specifications': {
@@ -415,7 +410,12 @@ export const clickVinylCollection: ProductCollection = {
                     'name': 'Bryde Brown',
                     'description':
                         'Discover the large and impressive Floer Whalebone Rigid Click Vinyl in Bryde Brown. Install the click connection yourself and achieve a realistic oak look! With its light brown oak colour, the Whalebone Rigid Click Vinyl - Bryde Brown imitates the appearance of a real oak wood floor but offers all t...',
-                    'features': ['waterproof', 'MEGAMAT', 'phthalate-free', 'underfloor heating'],
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
+                    ],
                     'seo': {
                         'title': 'Whalebone Vinyl - Bryde Brown | Premium Vinyl Flooring | Eco Vibe Floors',
                         'description':
@@ -508,32 +508,27 @@ export const clickVinylCollection: ProductCollection = {
                     'name': 'Нарвал',
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
-                    'features': ['waterproof', 'MEGAMAT', 'phthalate-free', 'underfloor heating'],
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
+                    ],
                     'seo': {
                         'title': 'Винил Нарвал| Луксозен Винилов Под | България',
                         'description':
                             'Винил Нарвал - 100% водоустойчив винилов под с REACH сертификат. Лесен монтаж с клик система. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.',
                         'keywords': [
                             'винилов под',
-                            'луксозен винилов под',
-                            'LVT под българия',
-                            'walvisgraat-click винилов под',
+                            'LVT настилка българия',
                             'водоустойчив винил',
-                            'винилов под за подово отопление',
                             'клик винил',
+                            'винил за подово отопление',
                             'floer винил българия',
                             'rigid click vinyl',
-                            'клик система винил',
-                            'винил без лепило',
-                            'лесен монтаж винил',
-                            'винилова настилка',
-                            'ПВЦ под',
-                            'подови настилки винил',
-                            'устойчив на влага под',
-                            'под за деца',
-                            'екологичен винилов под',
+                            'walvisgraat винил',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на дъб винил',
                         ],
                     },
                     'specifications': {
@@ -546,7 +541,12 @@ export const clickVinylCollection: ProductCollection = {
                     'name': 'Narwal Nootbruin',
                     'description':
                         'Explore the impressive Floer Whalebone Rigid Click Vinyl in Narwhal Nutbrown. With a self-installing feature and a realistic dark look, this Whalebone Rigid Click Vinyl floor offers both elegance and luxury, along with all the advantages of click vinyl. These large rigid click vinyl floors come in a...',
-                    'features': ['waterproof', 'MEGAMAT', 'phthalate-free', 'underfloor heating'],
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
+                    ],
                     'seo': {
                         'title': 'Whalebone Vinyl - Narwal Nootbruin | Premium Vinyl Flooring | Eco Vibe Floors',
                         'description':
@@ -642,32 +642,27 @@ export const clickVinylCollection: ProductCollection = {
                     'name': 'Орка',
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
-                    'features': ['waterproof', 'MEGAMAT', 'phthalate-free', 'underfloor heating'],
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
+                    ],
                     'seo': {
                         'title': 'Винил Голяма Рибена Кост - Orka Необработен | Луксозен Винилов Под | Floer България',
                         'description':
                             'Винил Голяма Рибена Кост - Orka Необработен - 100% водоустойчив винилов под с REACH сертификат. Лесен монтаж с клик система. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.',
                         'keywords': [
                             'винилов под',
-                            'луксозен винилов под',
-                            'LVT под българия',
-                            'walvisgraat-click винилов под',
+                            'LVT настилка българия',
                             'водоустойчив винил',
-                            'винилов под за подово отопление',
                             'клик винил',
+                            'винил за подово отопление',
                             'floer винил българия',
                             'rigid click vinyl',
-                            'клик система винил',
-                            'винил без лепило',
-                            'лесен монтаж винил',
-                            'винилова настилка',
-                            'ПВЦ под',
-                            'подови настилки винил',
-                            'устойчив на влага под',
-                            'под за деца',
-                            'екологичен винилов под',
+                            'walvisgraat винил',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на дъб винил',
                         ],
                     },
                     'specifications': {
@@ -680,7 +675,12 @@ export const clickVinylCollection: ProductCollection = {
                     'name': 'Orka Untreated',
                     'description':
                         'Discover the popular Floer Whalebone Rigid Click Vinyl in Orca Untreated. Install the click connection yourself and achieve a realistic light oak look! With its light oak colour, the Whalebone Rigid Click Vinyl - Orca Untreated imitates the appearance of a real oak wood floor but offers all the bene...',
-                    'features': ['waterproof', 'MEGAMAT', 'phthalate-free', 'underfloor heating'],
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
+                    ],
                     'seo': {
                         'title': 'Whalebone Vinyl - Orka Untreated | Premium Vinyl Flooring | Eco Vibe Floors',
                         'description':
@@ -795,12 +795,12 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water-resistant',
-                        'scratch-resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'Click Vinyl floor features a rigid mineral core intermediate layer. This ensures the stability of the floor. Thanks to the stone core and the practical Unidrop click system',
-                        'underfloor equipped with underfloor heating',
+                        'Водоустойчив',
+                        'Устойчив на надраскване',
+                        'MEGAMAT покритие',
+                        'Без фталати',
+                        'Клик система Unidrop',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Голяма Рибена Кост - Cetus Crème | Луксозен Винилов Под | Floer България',
@@ -808,25 +808,15 @@ export const clickVinylCollection: ProductCollection = {
                             'Винил Голяма Рибена Кост - Cetus Crème - 100% водоустойчив винилов под с REACH сертификат. Лесен монтаж с клик система. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.',
                         'keywords': [
                             'винилов под',
-                            'луксозен винилов под',
-                            'LVT под българия',
-                            'walvisgraat-click винилов под',
+                            'LVT настилка българия',
                             'водоустойчив винил',
-                            'винилов под за подово отопление',
                             'клик винил',
+                            'винил за подово отопление',
                             'floer винил българия',
                             'rigid click vinyl',
-                            'клик система винил',
-                            'винил без лепило',
-                            'лесен монтаж винил',
-                            'винилова настилка',
-                            'ПВЦ под',
-                            'подови настилки винил',
-                            'устойчив на влага под',
-                            'под за деца',
-                            'екологичен винилов под',
+                            'walvisgraat винил',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на дъб винил',
                         ],
                     },
                     'specifications': {
@@ -840,12 +830,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'An oak herringbone Rigid Click Vinyl floor with extra large dimensions? Floer Whalebone Rigid Click Vinyl in the colour Cetus Cream makes it possible! This specific colour combines the unique oak design of a real wood floor with the advantages of Click Vinyl flooring. These XL herringbone Click Viny...',
                     'features': [
-                        'water-resistant',
-                        'scratch-resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'Click Vinyl floor features a rigid mineral core intermediate layer. This ensures the stability of the floor. Thanks to the stone core and the practical Unidrop click system',
-                        'underfloor equipped with underfloor heating',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Whalebone Vinyl - Cetus Crème | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -960,13 +948,12 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water resistant',
-                        'scratch resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'click system',
-                        'underfloor heating',
-                        '0.55 mm, making them scratch resistant. In addition to their durability, they have a usage class of 23/33/42. So they are ideal for both domestic and industrial applications! With the right underlay you get a 20-year warranty',
+                        'Водоустойчив',
+                        'Устойчив на надраскване',
+                        'MEGAMAT покритие',
+                        'Без фталати',
+                        'Клик система',
+                        'Подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Голяма Рибена Кост - Gaia Сивbeige | Луксозен Винилов Под | Floer България',
@@ -974,25 +961,15 @@ export const clickVinylCollection: ProductCollection = {
                             'Винил Голяма Рибена Кост - Gaia Сивbeige - 100% водоустойчив винилов под с REACH сертификат. Лесен монтаж с клик система. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.',
                         'keywords': [
                             'винилов под',
-                            'луксозен винилов под',
-                            'LVT под българия',
-                            'walvisgraat-click винилов под',
+                            'LVT настилка българия',
                             'водоустойчив винил',
-                            'винилов под за подово отопление',
                             'клик винил',
+                            'винил за подово отопление',
                             'floer винил българия',
                             'rigid click vinyl',
-                            'клик система винил',
-                            'винил без лепило',
-                            'лесен монтаж винил',
-                            'винилова настилка',
-                            'ПВЦ под',
-                            'подови настилки винил',
-                            'устойчив на влага под',
-                            'под за деца',
-                            'екологичен винилов под',
+                            'walvisgraat винил',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на дъб винил',
                         ],
                     },
                     'specifications': {
@@ -1012,7 +989,6 @@ export const clickVinylCollection: ProductCollection = {
                         'phthalate-free',
                         'click system',
                         'underfloor heating',
-                        '0.55 mm, making them scratch resistant. In addition to their durability, they have a usage class of 23/33/42. So they are ideal for both domestic and industrial applications! With the right underlay you get a 20-year warranty',
                     ],
                     'seo': {
                         'title': 'Whalebone Vinyl - Gaia Greybeige | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -1101,10 +1077,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'waterproof',
-                        'megamat',
-                        'Click Vinyl - Garda Grey Beige floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to the next level. !--more--The dimensions are also subtly emphasised by the micro bevel. You can lay this click Vinyl floor quickly and easily with the convenient a href="https://floer.eu/system',
-                        'underfloor heating',
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Натура - Garda Сивbeige | Луксозен Винилов Под | Floer България',
@@ -1130,7 +1106,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -1144,10 +1120,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Strong, stable and above all beautiful to look at: the Floer Nature Rigid Click Vinyl - Garda Grey Beige floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to the next level. The dimensions are also subtly emph...',
                     'features': [
-                        'waterproof',
-                        'megamat',
-                        'Click Vinyl - Garda Grey Beige floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to the next level. !--more--The dimensions are also subtly emphasised by the micro bevel. You can lay this click Vinyl floor quickly and easily with the convenient a href="https://floer.eu/system',
-                        'underfloor heating',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Nature Vinyl - Garda Greybeige | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -1236,10 +1212,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'waterproof',
-                        'megamat',
-                        'Click Vinyl - Berner Brown floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to a higher level. !--more--Unlike standard Vinyl, which requires gluing, this Click Vinyl floor is quick and easy to install with the convenient a href="https://floer.eu/system',
-                        'underfloor heating',
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Натура - Berner Кафяв | Луксозен Винилов Под | Floer България',
@@ -1265,7 +1241,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -1279,10 +1255,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Strong, stable and above all beautiful to look at: the Floer Nature Click Vinyl - Berner Brown floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to a higher level. Unlike standard Vinyl, which requires gluing,...',
                     'features': [
-                        'waterproof',
-                        'megamat',
-                        'Click Vinyl - Berner Brown floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to a higher level. !--more--Unlike standard Vinyl, which requires gluing, this Click Vinyl floor is quick and easy to install with the convenient a href="https://floer.eu/system',
-                        'underfloor heating',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Nature Vinyl - Berner Brown | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -1385,10 +1361,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'waterproof',
-                        'megamat',
-                        'Click Vinyl - Ordesa Untreated floor has it all. With a luxurious size of 22.8 cm wide and 121 cm long, this Click Vinyl floor takes your interior to the next level. !--more--Unlike standard Vinyl, which requires gluing, you lay this light oak Click Vinyl floor is easy and quick to install with the convenient a href="https://floer.eu/systems/"Variclick/a system',
-                        'underfloor heating',
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Натура - Ordesa Необработен | Луксозен Винилов Под | Floer България',
@@ -1414,7 +1390,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -1428,10 +1404,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Strong, stable and above all beautiful to look at: the Floer Nature Click Vinyl - Ordesa Untreated floor has it all. With a luxurious size of 22.8 cm wide and 121 cm long, this Click Vinyl floor takes your interior to the next level. Unlike standard Vinyl, which requires gluing, you lay this light o...',
                     'features': [
-                        'waterproof',
-                        'megamat',
-                        'Click Vinyl - Ordesa Untreated floor has it all. With a luxurious size of 22.8 cm wide and 121 cm long, this Click Vinyl floor takes your interior to the next level. !--more--Unlike standard Vinyl, which requires gluing, you lay this light oak Click Vinyl floor is easy and quick to install with the convenient a href="https://floer.eu/systems/"Variclick/a system',
-                        'underfloor heating',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Nature Vinyl - Ordesa Untreated | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -1520,10 +1496,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'waterproof',
-                        'megamat',
-                        'Click Vinyl - Madeira Mocha floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to the next level. !--more--The dimensions are also subtly accentuated by the micro bevel. You can install this Click Vinyl floor quickly and easily with the convenient a href="https://floer.eu/systems/"Variclick/a system',
-                        'underfloor heating',
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Натура - Madeira-Mokka | Луксозен Винилов Под | Floer България',
@@ -1549,7 +1525,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -1563,10 +1539,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Strong, stable and above all beautiful to look at: the Floer Nature Click Vinyl - Madeira Mocha floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to the next level. The dimensions are also subtly accentuated b...',
                     'features': [
-                        'waterproof',
-                        'megamat',
-                        'Click Vinyl - Madeira Mocha floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to the next level. !--more--The dimensions are also subtly accentuated by the micro bevel. You can install this Click Vinyl floor quickly and easily with the convenient a href="https://floer.eu/systems/"Variclick/a system',
-                        'underfloor heating',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Nature Vinyl - Madeira-Mokka | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -1668,11 +1644,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water-resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'underfloor heating',
-                        "30.5 cm, the extra wide Click Vinyl floor gives your living environment a spatial effect. The extra wide Click Vinyl floor also has a usage class of 23/33/42. This means it can be used in intensive domestic areas as well as commercial and industrial environments. In addition, the floor is equipped with 'ceramic bead technology', which provides extra protection for the floor. You can also benefit from a 20 year warranty",
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Къща - Естествен Eik | Луксозен Винилов Под | Floer България',
@@ -1698,7 +1673,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -1712,11 +1687,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Width, MEGAMAT, but above all an extremely realistic oak design: the Country House Click Vinyl in the colour Natural Oak has it all. The Country House Rigid Click Vinyl luxury oak floors are not only extra wide at 30.5 cm. They are also extra long at no less than 150 cm! Where Dryback Vinyl needs to...',
                     'features': [
-                        'water-resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'underfloor heating',
-                        "30.5 cm, the extra wide Click Vinyl floor gives your living environment a spatial effect. The extra wide Click Vinyl floor also has a usage class of 23/33/42. This means it can be used in intensive domestic areas as well as commercial and industrial environments. In addition, the floor is equipped with 'ceramic bead technology', which provides extra protection for the floor. You can also benefit from a 20 year warranty",
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Country House Vinyl - Natural Eik | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -1804,11 +1778,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'waterproof',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'underfloor heating',
-                        "30.5 cm, the extra wide Click Vinyl floor adds a spatial effect to your living space. This floor has a usage class of 23/33/42, making it suitable for intensive domestic use as well as commercial and industrial applications. The floor is also equipped with 'ceramic bead technology' for extra protection. You can also benefit from a 20 year warranty",
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Къща - Бялte Eik | Луксозен Винилов Под | Floer България',
@@ -1834,7 +1807,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -1848,11 +1821,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Width, MEGAMAT, but above all an extremely realistic oak design: the Country House Rigid Click Vinyl in the colour White Oak has it all. The luxurious oak Click Vinyl floors of the Country House Rigid Click Vinyl are not only remarkably wide at 30.5 cm. They are also exceptionally long with an impre...',
                     'features': [
-                        'waterproof',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'underfloor heating',
-                        "30.5 cm, the extra wide Click Vinyl floor adds a spatial effect to your living space. This floor has a usage class of 23/33/42, making it suitable for intensive domestic use as well as commercial and industrial applications. The floor is also equipped with 'ceramic bead technology' for extra protection. You can also benefit from a 20 year warranty",
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Country House Vinyl - Whitete Eik | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -1954,11 +1926,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water-resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'underfloor heating',
-                        "30.5 cm, the extra wide Click Vinyl floor gives your living environment a spatial effect. This floor has a usage class of 23/33/42. This means it can be used in intense domestic areas as well as commercial and industrial environments. In addition, the floor is equipped with 'ceramic bead technology', which gives extra protection to the floor. You can also benefit from a 20 year warranty",
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Къща - Landelijke Eik | Луксозен Винилов Под | Floer България',
@@ -1984,7 +1955,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -1998,11 +1969,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Width, MEGAMAT, but above all an extremely realistic oak design: the Country House Click Vinyl in the color Country Oak has it all. The luxurious Click Vinyl oak floors from Country House Click Vinyl are not only extra wide at 30.5 cm. They are also extra long at no less than 150 cm! Where standard ...',
                     'features': [
-                        'water-resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'underfloor heating',
-                        "30.5 cm, the extra wide Click Vinyl floor gives your living environment a spatial effect. This floor has a usage class of 23/33/42. This means it can be used in intense domestic areas as well as commercial and industrial environments. In addition, the floor is equipped with 'ceramic bead technology', which gives extra protection to the floor. You can also benefit from a 20 year warranty",
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Country House Vinyl - Landelijke Eik | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -2090,11 +2060,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water-resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'underfloor heating',
-                        "30.5 cm, the extra wide Click Vinyl floor gives a spatial effect to your living environment. With a usage class of 23/33/42, this floor is suitable for use in domestic, commercial and industrial environments. The floor is also equipped with 'ceramic-bead technology' for extra protection. You can also benefit from a 20 year warranty",
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Къща - Pure Eik | Луксозен Винилов Под | Floer България',
@@ -2120,7 +2089,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -2134,11 +2103,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Width, MEGAMAT, but above all an extremely realistic oak design: the Country House Click Vinyl in the colour Pure Oak has it all. The luxurious oak Click Vinyl floors from Country House Rigid Click Vinyl are not only extra wide at 30.5 cm. They are also extra long at no less than 150 cm! Wherever Dr...',
                     'features': [
-                        'water-resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'underfloor heating',
-                        "30.5 cm, the extra wide Click Vinyl floor gives a spatial effect to your living environment. With a usage class of 23/33/42, this floor is suitable for use in domestic, commercial and industrial environments. The floor is also equipped with 'ceramic-bead technology' for extra protection. You can also benefit from a 20 year warranty",
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Country House Vinyl - Pure Eik | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -2237,11 +2205,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water-resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'underfloor heating',
-                        "30.5 cm, the extra wide Click Vinyl floor adds a spatial effect to your living space. This floor has a usage class of 23/33/42, making it suitable for intensive domestic use as well as commercial and industrial applications. The floor is equipped with 'ceramic-bead technology', which provides extra protection. You can also benefit from a 20 year warranty",
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Къща - Крем Eik | Луксозен Винилов Под | Floer България',
@@ -2267,7 +2234,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -2281,11 +2248,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Width, MEGAMAT, but above all an extremely realistic oak design: the Country House Click Vinyl in the colour Cream Oak has it all. The luxurious oak Click Vinyl floors from Country House Click Vinyl are not only extra wide at 30.5 cm. They are also extra long at no less than 150 cm! Where standard V...',
                     'features': [
-                        'water-resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'underfloor heating',
-                        "30.5 cm, the extra wide Click Vinyl floor adds a spatial effect to your living space. This floor has a usage class of 23/33/42, making it suitable for intensive domestic use as well as commercial and industrial applications. The floor is equipped with 'ceramic-bead technology', which provides extra protection. You can also benefit from a 20 year warranty",
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Country House Vinyl - Cream Eik | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -2384,11 +2350,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water-resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'underfloor heating',
-                        "30.5 cm, the extra wide Click Vinyl floor adds a spatial effect to your living space. This floor has a usage class of 23/33/42, making it suitable for intensive domestic use as well as commercial and industrial applications. The floor is equipped with 'ceramic-bead technology', which provides extra protection. You can also benefit from a 20 year warranty",
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Къща - Grijze Eik | Луксозен Винилов Под | Floer България',
@@ -2414,7 +2379,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -2428,11 +2393,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Width, MEGAMAT, but above all an extremely realistic oak design: the Country House Click Vinyl in the colour Grey Oak has it all. The luxurious oak Click Vinyl floors from Country House Click Vinyl are not only extra wide at 30.5 cm. They are also extra long at no less than 150 cm! Where standard Vi...',
                     'features': [
-                        'water-resistant',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'underfloor heating',
-                        "30.5 cm, the extra wide Click Vinyl floor adds a spatial effect to your living space. This floor has a usage class of 23/33/42, making it suitable for intensive domestic use as well as commercial and industrial applications. The floor is equipped with 'ceramic-bead technology', which provides extra protection. You can also benefit from a 20 year warranty",
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Country House Vinyl - Grijze Eik | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -2522,11 +2486,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water-resistant',
-                        'megamat',
-                        'phthalate-free',
-                        'Click Vinyl – Cilento Cream floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to a higher level. !--more--The dimensions are also subtly emphasised by the four-sided micro bevel. Thanks to the handy a href="https://floer.eu/system',
-                        'underfloor heating',
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Натура - Cilento Крем | Луксозен Винилов Под | Floer България',
@@ -2552,7 +2515,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -2566,11 +2529,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Strong, stable and above all beautiful to look at: the Floer Nature Rigid Click Vinyl – Cilento Cream floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to a higher level. The dimensions are also subtly emphasi...',
                     'features': [
-                        'water-resistant',
-                        'megamat',
-                        'phthalate-free',
-                        'Click Vinyl – Cilento Cream floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to a higher level. !--more--The dimensions are also subtly emphasised by the four-sided micro bevel. Thanks to the handy a href="https://floer.eu/system',
-                        'underfloor heating',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Nature Vinyl - Cilento Cream | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -2657,10 +2619,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water-resistant',
-                        'megamat',
-                        'Click Vinyl - Niederhorn Nutbrown floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to a higher level. !--more--Unlike standard vinyl, which requires gluing, this Click Vinyl floor is quick and easy to install with the a href="https://floer.eu/system',
-                        'underfloor heating',
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Натура - Niederhorn Nootbruin | Луксозен Винилов Под | Floer България',
@@ -2686,7 +2648,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -2700,10 +2662,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Powerful, stable, but above all beautiful to look at: the Floer Nature Click Vinyl - Niederhorn Nutbrown floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to a higher level. Unlike standard vinyl, which requir...',
                     'features': [
-                        'water-resistant',
-                        'megamat',
-                        'Click Vinyl - Niederhorn Nutbrown floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 121 cm, this Click Vinyl floor takes your interior to a higher level. !--more--Unlike standard vinyl, which requires gluing, this Click Vinyl floor is quick and easy to install with the a href="https://floer.eu/system',
-                        'underfloor heating',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Nature Vinyl - Niederhorn Nootbruin | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -2794,12 +2756,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под на плочи с текстура гранитогрес. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'Waterproof',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'click system',
-                        'underfloor heating',
-                        '985" data-end="1383" data-is-last-node="" data-is-only-node=""The Concrete Look Light Grey floor is completely phthalate-free and comes with strong certifications like FloorScore, Eurofins Gold, GreenGuard Gold, and REACH. That means it\'s safe for your health and the environment. Combine it with the Rigid Click Vinyl underlay and enjoy up to 20 years of factory warranty',
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Плочка - Betonlook Lichtgrijs | Луксозен Винилов Под | Floer България',
@@ -2825,7 +2785,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -2839,12 +2799,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'The Floer Tile Click Vinyl – Concrete Look Light Grey is perfect for those who love a rugged concrete look and enjoy getting hands-on with installation. This light grey floor combines the sleek appearance of concrete with the warm, comfortable feel of vinyl. nNo cold tiles here, but that same moder...',
                     'features': [
-                        'Waterproof',
-                        'MEGAMAT',
-                        'phthalate-free',
-                        'click system',
-                        'underfloor heating',
-                        '985" data-end="1383" data-is-last-node="" data-is-only-node=""The Concrete Look Light Grey floor is completely phthalate-free and comes with strong certifications like FloorScore, Eurofins Gold, GreenGuard Gold, and REACH. That means it\'s safe for your health and the environment. Combine it with the Rigid Click Vinyl underlay and enjoy up to 20 years of factory warranty',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Tile Vinyl - Betonlook Lichtgrijs | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -2935,9 +2893,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'waterproof',
-                        'click-vinyl/"Herringbone Rigid Click Vinyl/a in the colour Greige Oak is a beautiful herringbone floor with a tangible structure. A rock-solid vinyl floor which doesn\'t need to be adhered to the subfloor. The easy Floer a href="https://floer.eu/systems/"Unidrop/a system',
-                        'underfloor heating',
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Клик Винил Рибена Кост - Greige Дъб | Луксозен Винилов Под | Floer България',
@@ -2963,7 +2922,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -2977,9 +2936,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         "The Floer Herringbone Rigid Click Vinyl in the colour Greige Oak is a beautiful herringbone floor with a tangible structure. A rock-solid vinyl floor which doesn't need to be adhered to the subfloor. The easy Floer Unidrop system allows you to install your rigid click herringbone floor with ease by ...",
                     'features': [
-                        'waterproof',
-                        'click-vinyl/"Herringbone Rigid Click Vinyl/a in the colour Greige Oak is a beautiful herringbone floor with a tangible structure. A rock-solid vinyl floor which doesn\'t need to be adhered to the subfloor. The easy Floer a href="https://floer.eu/systems/"Unidrop/a system',
-                        'underfloor heating',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Herringbone Click Vinyl - Greige Oak | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -3069,9 +3029,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'waterproof',
-                        'click-vinyl/"Herringbone Rigid Click Vinyl/a in the colour Beige Oak is a beautiful herringbone floor with a tangible structure. A rock-solid vinyl floor which doesn\'t need to be adhered to the subfloor. The easy Floer a href="https://floer.eu/systems/"Unidrop/a system',
-                        'underfloor heating',
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Клик Винил Рибена Кост - Бежов Дъб | Луксозен Винилов Под | Floer България',
@@ -3097,7 +3058,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -3111,9 +3072,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         "The Floer Herringbone Rigid Click Vinyl in the colour Beige Oak is a beautiful herringbone floor with a tangible structure. A rock-solid vinyl floor which doesn't need to be adhered to the subfloor. The easy Floer Unidrop system allows you to install your rigid click herringbone floor with ease by y...",
                     'features': [
-                        'waterproof',
-                        'click-vinyl/"Herringbone Rigid Click Vinyl/a in the colour Beige Oak is a beautiful herringbone floor with a tangible structure. A rock-solid vinyl floor which doesn\'t need to be adhered to the subfloor. The easy Floer a href="https://floer.eu/systems/"Unidrop/a system',
-                        'underfloor heating',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Herringbone Click Vinyl - Beige Oak | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -3201,9 +3163,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'waterproof',
-                        'click-vinyl/"Herringbone Rigid Click Vinyl/a in the colour Pure Oak is a beautiful herringbone floor with a tangible structure. A rock-solid vinyl floor which doesn\'t need to be adhered to the subfloor. The easy Floer a href="https://floer.eu/systems/"Unidrop/a system',
-                        'underfloor heating',
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Клик Винил Рибена Кост - Чист Дъб | Луксозен Винилов Под | Floer България',
@@ -3229,7 +3192,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -3243,9 +3206,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         "The Floer Herringbone Rigid Click Vinyl in the colour Pure Oak is a beautiful herringbone floor with a tangible structure. A rock-solid vinyl floor which doesn't need to be adhered to the subfloor. The easy Floer Unidrop system allows you to install your rigid click herringbone floor with ease by yo...",
                     'features': [
-                        'waterproof',
-                        'click-vinyl/"Herringbone Rigid Click Vinyl/a in the colour Pure Oak is a beautiful herringbone floor with a tangible structure. A rock-solid vinyl floor which doesn\'t need to be adhered to the subfloor. The easy Floer a href="https://floer.eu/systems/"Unidrop/a system',
-                        'underfloor heating',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Herringbone Click Vinyl - Pure Oak | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -3333,9 +3297,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'waterproof',
-                        'click-vinyl/"Herringbone Rigid Click Vinyl/a in the colour Natural Oak is a beautiful herringbone floor with a tangible structure. A rock-solid vinyl floor which doesn\'t need to be adhered to the subfloor. The easy Floer a href="https://floer.eu/systems/"Unidrop/a system',
-                        'underfloor heating',
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Клик Винил Рибена Кост - Естествен Дъб | Луксозен Винилов Под | Floer България',
@@ -3361,7 +3326,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -3375,9 +3340,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         "The Floer Herringbone Rigid Click Vinyl in the colour Natural Oak is a beautiful herringbone floor with a tangible structure. A rock-solid vinyl floor which doesn't need to be adhered to the subfloor. The easy Floer Unidrop system allows you to install your rigid click herringbone floor with ease by...",
                     'features': [
-                        'waterproof',
-                        'click-vinyl/"Herringbone Rigid Click Vinyl/a in the colour Natural Oak is a beautiful herringbone floor with a tangible structure. A rock-solid vinyl floor which doesn\'t need to be adhered to the subfloor. The easy Floer a href="https://floer.eu/systems/"Unidrop/a system',
-                        'underfloor heating',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Herringbone Click Vinyl - Natural Oak | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -3465,10 +3431,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под на плочи с текстура гранитогрес. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water resistant',
-                        'scratch resistant',
-                        'click-vinyl/"Tile Rigid Click Vinyl/a - Concrete Look Beige. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! !--more--Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vinyl is easy and quick to install yourself, thanks to the convenient a href="https://floer.eu/systems/"Fastclick/a system',
-                        "0,55 mm thick wearing surface, which makes this floor suitable for both intensive residential use, as well as intensive commercial use. When used residentially, you will receive a 20 year manufacturer's warranty upon purchase on these stone rigid click vinyl floors! strongNote:/strong this warranty",
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Плочка - Betonlook Бежов | Луксозен Винилов Под | Floer България',
@@ -3494,7 +3460,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -3508,10 +3474,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Strong, stable and beautiful to look at: Floer Tile Rigid Click Vinyl - Concrete Look Beige. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vi...',
                     'features': [
-                        'water resistant',
-                        'scratch resistant',
-                        'click-vinyl/"Tile Rigid Click Vinyl/a - Concrete Look Beige. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! !--more--Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vinyl is easy and quick to install yourself, thanks to the convenient a href="https://floer.eu/systems/"Fastclick/a system',
-                        "0,55 mm thick wearing surface, which makes this floor suitable for both intensive residential use, as well as intensive commercial use. When used residentially, you will receive a 20 year manufacturer's warranty upon purchase on these stone rigid click vinyl floors! strongNote:/strong this warranty",
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Tile Vinyl - Betonlook Beige | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -3599,10 +3565,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под на плочи с текстура гранитогрес. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water resistant',
-                        'scratch resistant',
-                        'click-vinyl/"Tile Rigid Click Vinyl/a - Concrete Look Grey. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! !--more--Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vinyl is easy and quick to install yourself, thanks to the convenient a href="https://floer.eu/systems/"Fastclick/a system',
-                        "0,55 mm thick wearing surface, which makes this floor suitable for both intensive residential use, as well as intensive commercial use. When used residentially, you will receive a 20 year manufacturer's warranty upon purchase on these stone rigid click vinyl floors! strongNote:/strong this warranty",
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Плочка - Betonlook Сив | Луксозен Винилов Под | Floer България',
@@ -3628,7 +3594,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -3642,10 +3608,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Strong, stable and beautiful to look at: Floer Tile Rigid Click Vinyl - Concrete Look Grey. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vin...',
                     'features': [
-                        'water resistant',
-                        'scratch resistant',
-                        'click-vinyl/"Tile Rigid Click Vinyl/a - Concrete Look Grey. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! !--more--Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vinyl is easy and quick to install yourself, thanks to the convenient a href="https://floer.eu/systems/"Fastclick/a system',
-                        "0,55 mm thick wearing surface, which makes this floor suitable for both intensive residential use, as well as intensive commercial use. When used residentially, you will receive a 20 year manufacturer's warranty upon purchase on these stone rigid click vinyl floors! strongNote:/strong this warranty",
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Tile Vinyl - Betonlook Grey | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -3734,10 +3700,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под на плочи с текстура гранитогрес. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water resistant',
-                        'scratch resistant',
-                        'click-vinyl/"Tile Rigid Click Vinyl/a - Concrete Look Black. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! !--more--Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vinyl is easy and quick to install yourself, thanks to the convenient a href="https://floer.eu/systems/"Fastclick/a system',
-                        "0,55 mm thick wearing surface, which makes this floor suitable for both intensive residential use, as well as intensive commercial use. When used residentially, you will receive a 20 year manufacturer's warranty upon purchase on these stone rigid click vinyl floors! strongNote:/strong this warranty",
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Плочка - Betonlook Zwart | Луксозен Винилов Под | Floer България',
@@ -3763,7 +3729,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -3777,10 +3743,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Strong, stable and beautiful to look at: Floer Tile Rigid Click Vinyl - Concrete Look Black. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vi...',
                     'features': [
-                        'water resistant',
-                        'scratch resistant',
-                        'click-vinyl/"Tile Rigid Click Vinyl/a - Concrete Look Black. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! !--more--Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vinyl is easy and quick to install yourself, thanks to the convenient a href="https://floer.eu/systems/"Fastclick/a system',
-                        "0,55 mm thick wearing surface, which makes this floor suitable for both intensive residential use, as well as intensive commercial use. When used residentially, you will receive a 20 year manufacturer's warranty upon purchase on these stone rigid click vinyl floors! strongNote:/strong this warranty",
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Tile Vinyl - Betonlook Zwart | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -3869,10 +3835,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под на плочи с текстура гранитогрес. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water resistant',
-                        'scratch resistant',
-                        'click-vinyl/"Tile Rigid Click Vinyl/a - Concrete Look Sand. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! !--more--Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vinyl is easy and quick to install yourself, thanks to the convenient a href="https://floer.eu/systems/"Fastclick/a system',
-                        "0,55 mm thick wearing surface, which makes this floor suitable for both intensive residential use, as well as intensive commercial use. When used residentially, you will receive a 20 year manufacturer's warranty upon purchase on these stone rigid click vinyl floors! strongNote:/strong this warranty",
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Плочка - Betonlook Zand | Луксозен Винилов Под | Floer България',
@@ -3898,7 +3864,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -3912,10 +3878,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Strong, stable and beautiful to look at: Floer Tile Rigid Click Vinyl - Concrete Look Sand. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vin...',
                     'features': [
-                        'water resistant',
-                        'scratch resistant',
-                        'click-vinyl/"Tile Rigid Click Vinyl/a - Concrete Look Sand. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! !--more--Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vinyl is easy and quick to install yourself, thanks to the convenient a href="https://floer.eu/systems/"Fastclick/a system',
-                        "0,55 mm thick wearing surface, which makes this floor suitable for both intensive residential use, as well as intensive commercial use. When used residentially, you will receive a 20 year manufacturer's warranty upon purchase on these stone rigid click vinyl floors! strongNote:/strong this warranty",
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Tile Vinyl - Betonlook Zand | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -4004,10 +3970,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под на плочи с текстура гранитогрес. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'water resistant',
-                        'scratch resistant',
-                        'click-vinyl/"Tile Rigid Click Vinyl/a - Concrete Look Greige. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! !--more--Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vinyl is easy and quick to install yourself, thanks to the convenient a href="https://floer.eu/systems/"Fastclick/a system',
-                        "0,55 mm thick wearing surface, which makes this floor suitable for both intensive residential use, as well as intensive commercial use. When used residentially, you will receive a 20 year manufacturer's warranty upon purchase on these stone rigid click vinyl floors! strongNote:/strong this warranty",
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Плочка - Betonlook Greige | Луксозен Винилов Под | Floer България',
@@ -4033,7 +3999,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -4047,10 +4013,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Strong, stable and beautiful to look at: Floer Tile Rigid Click Vinyl - Concrete Look Greige. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click V...',
                     'features': [
-                        'water resistant',
-                        'scratch resistant',
-                        'click-vinyl/"Tile Rigid Click Vinyl/a - Concrete Look Greige. The luxurious stone structure floors from this rigid click vinyl collection consist of tiles with a size of 91,4 x 45,7 cm! !--more--Whereas dryback vinyl needs to be adhered to the subfloor, this Tile Rigid Click Vinyl is easy and quick to install yourself, thanks to the convenient a href="https://floer.eu/systems/"Fastclick/a system',
-                        "0,55 mm thick wearing surface, which makes this floor suitable for both intensive residential use, as well as intensive commercial use. When used residentially, you will receive a 20 year manufacturer's warranty upon purchase on these stone rigid click vinyl floors! strongNote:/strong this warranty",
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Tile Vinyl - Betonlook Greige | Premium Vinyl Flooring | Eco Vibe Floors',
@@ -4143,12 +4109,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Луксозен винилов под с шарка дъб. Произведен с твърдо минерално ядро за изключителна стабилност. Оборудван с напреднала клик-система за лесен монтаж. Подходящ за самостоятелна инсталация без лепило. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.',
                     'features': [
-                        'Water-Resistant',
-                        'megamat',
-                        'Phthalate-Free',
-                        'Click Vinyl - Zadar Sand floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 122 cm, this Click Vinyl floor takes your interior to the next level. !--more--The dimensions are also subtly emphasised by the micro bevel. You can lay this click Vinyl floor quickly and easily with the convenient a href="https://floer.eu/system',
-                        'underfloor heating',
-                        '1201" data-end="1589" data-is-last-node="" data-is-only-node=""This sand-coloured oak-look vinyl floor is fully water-resistant and features a low thermal resistance of just 0.039 m²K/W – making it an ideal match for underfloor heating. It’s designed to handle heavy use in both residential and commercial settings. For private use, you’ll even receive a 20-year manufacturer’s warranty',
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
                     'seo': {
                         'title': 'Винил Натура - Zadar Zand | Луксозен Винилов Под | Floer България',
@@ -4174,7 +4138,7 @@ export const clickVinylCollection: ProductCollection = {
                             'под за деца',
                             'екологичен винилов под',
                             'REACH сертифициран под',
-                            'имитация на дърво винил',
+                            'шарка на естествен дъб',
                         ],
                     },
                     'specifications': {
@@ -4188,12 +4152,10 @@ export const clickVinylCollection: ProductCollection = {
                     'description':
                         'Strong, stable and above all beautiful to look at: the Floer Nature Rigid Click Vinyl - Zadar Sand floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 122 cm, this Click Vinyl floor takes your interior to the next level. The dimensions are also subtly emphasised...',
                     'features': [
-                        'Water-Resistant',
-                        'megamat',
-                        'Phthalate-Free',
-                        'Click Vinyl - Zadar Sand floor has it all. With a luxurious size of both 22.8 cm in width and a generous length of 122 cm, this Click Vinyl floor takes your interior to the next level. !--more--The dimensions are also subtly emphasised by the micro bevel. You can lay this click Vinyl floor quickly and easily with the convenient a href="https://floer.eu/system',
-                        'underfloor heating',
-                        '1201" data-end="1589" data-is-last-node="" data-is-only-node=""This sand-coloured oak-look vinyl floor is fully water-resistant and features a low thermal resistance of just 0.039 m²K/W – making it an ideal match for underfloor heating. It’s designed to handle heavy use in both residential and commercial settings. For private use, you’ll even receive a 20-year manufacturer’s warranty',
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
                     'seo': {
                         'title': 'Nature Vinyl - Zadar Zand | Premium Vinyl Flooring | Eco Vibe Floors',

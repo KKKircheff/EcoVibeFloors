@@ -1,2505 +1,2357 @@
-/**
- * glueDownVinylCollection - TypeScript constant generated from glue-down-vinyl.json
- * Source of truth: glue-down-vinyl.json
- *
- * This file is generated to provide type safety.
- * To update: Edit glue-down-vinyl.json then regenerate this file.
- */
-
-import { ProductCollection } from '@/types/products';
+import {ProductCollection} from '@/types/products';
 
 export const glueDownVinylCollection: ProductCollection = {
-    "metadata": {
-        "generatedAt": "2025-10-08T12:06:47.891Z",
-        "totalProducts": 18,
-        "vinylType": "glue-down-vinyl",
-        "installationSystem": "glue-down",
-        "description": "Enhanced glue-down-vinyl product data with i18n (array format)",
-        "lastUpdated": "2025-10-27T11:19:14.566Z"
+    'metadata': {
+        'generatedAt': '2025-10-08T12:06:47.891Z',
+        'totalProducts': 18,
+        'vinylType': 'glue-down-vinyl',
+        'installationSystem': 'glue-down',
+        'description': 'Enhanced glue-down-vinyl product data with i18n (array format)',
+        'lastUpdated': '2025-10-27T11:19:14.566Z',
     },
-    "products": [
+    'products': [
         {
-            "sku": "FLR-3040",
-            "slug": "village-callantsoog-creamwit-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "dorpen",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425249049",
-            "categories": "Village Vinyl",
-            "images": [
-                "Floer-Callantsoog-Creme-Eiken-trap-bekleding.webp",
-                "Floer-Dorpen-PVC-Callantsoog-Creme-Eiken-trap-bekleding-2.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Creme-Eiken-product-front.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-product-detail.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-product-perspectief.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-product-topdown-groot.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-product-topdown.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-sfeer-front.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-sfeer-perspectief.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-sfeer-topdown-groot.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-sfeer-topdown.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-1.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-10.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-14.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-16.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-17.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-18.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-19.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-22.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-24.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-25.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-26.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-27.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-3.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-4.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-6.webp",
-                "Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-8.webp"
+            'sku': 'FLR-3040',
+            'slug': 'village-callantsoog-creamwit-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'dorpen',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425249049',
+            'categories': 'Village Vinyl',
+            'images': [
+                'Floer-Callantsoog-Creme-Eiken-trap-bekleding.webp',
+                'Floer-Dorpen-PVC-Callantsoog-Creme-Eiken-trap-bekleding-2.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Creme-Eiken-product-front.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-product-detail.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-product-perspectief.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-product-topdown-groot.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-product-topdown.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-sfeer-front.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-sfeer-perspectief.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-sfeer-topdown-groot.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-sfeer-topdown.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-1.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-10.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-14.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-16.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-17.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-18.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-19.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-22.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-24.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-25.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-26.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-27.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-3.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-4.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-6.webp',
+                'Floer-Dorpen-PVC-vloer-Callantsoog-Cremewit-Eiken-woonkamer-8.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Village Vinyl - Callantsoog Creamwit Oak - Premium dorpen vinyl flooring",
-                "bg": "Винил Селище - Callantsoog Кремwit Дъб - Премиум dorpen винилова настилка"
+            'displayImages': [3, 8],
+            'imageAlt': {
+                'en': ' De Waal Creamwit Oak - Premium dorpen vinyl flooring',
+                'bg': ' Де Ваал Кремwit Дъб - Премиум dorpen винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Селище - Callantsoog Кремwit Дъб",
-                    "description": "Винил Селище - Callantsoog Кремwit Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "water resistant",
-                        "MEGAMAT",
-                        "phthalate-free",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Де Ваал',
+                    'description':
+                        'Де Ваал – екстра голям премиум винилов под за залепване в светъл дъбов нюанс, с изключително матово покритие MEGAMAT. Ултра-матовата повърхност и автентичната текстура на дърво пресъздават вида на истински дъб, като същевременно осигуряват практичните предимства на 100% водонепропусклива конструкция. Подходящ за интензивно натоварени помещения, съвместим с подово отопление и с 20-годишна гаранция за жилищна употреба. Без фталати и сертифициран по REACH за здравословна домашна среда.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Селище - Callantsoog Кремwit Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Селище - Callantsoog Кремwit Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "dorpen винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Де Ваал | Премиум винилов под за залепване',
+                        'description':
+                            'Де Ваал – екстра голям винилов под за залепване с ултра-матово MEGAMAT покритие. 100% водонепропусклив, реалистична имитация на дъб, съвместим с подово отопление, REACH сертификат. 20-годишна гаранция.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'винилов под за залепване',
+                            'водонепропусклив винил',
+                            'винилов под за подово отопление',
+                            'ПВЦ под България',
+                            'MEGAMAT покритие',
+                            'имитация на дъб',
+                            'премиум винилови настилки',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Village Vinyl - Callantsoog Creamwit Oak",
-                    "description": "Discover the Floer Village Vinyl - Casares Cream White Oak; extra large and impressive vinyl. The unique Village Vinyl in the light colour Casares Cream White Oak is now available with the unique MEGAMAT finish. With its extremely matt finish and realistic wood look, this vinyl floor has the appeara...",
-                    "features": [
-                        "water resistant",
-                        "MEGAMAT",
-                        "phthalate-free",
-                        "underfloor heating"
+                'en': {
+                    'name': 'De Waal',
+                    'description':
+                        "Experience the De Waal – an extra-large, premium glue-down vinyl floor in a light oak tone, enhanced with Floer's exclusive MEGAMAT finish. Its ultra-matt surface and authentic wood grain create the look of real oak, while delivering the practical benefits of 100% waterproof performance. Designed for high-traffic spaces, fully compatible with underfloor heating, and backed by a 20-year residential warranty. Phthalate-free and REACH certified for a healthier home environment.",
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Village Vinyl - Callantsoog Creamwit Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Village Vinyl - Callantsoog Creamwit Oak: Discover the Floer Village Vinyl - Casares Cream White Oak; extra large and impressive vinyl. The unique Village Vinyl i... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "dorpen vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "village vinyl"
-                        ]
+                    'seo': {
+                        'title': 'De Waal | Premium Glue-Down Vinyl Flooring | Floer',
+                        'description':
+                            'De Waal – extra-large glue-down vinyl with MEGAMAT ultra-matt finish. 100% waterproof, realistic oak look, underfloor heating compatible, REACH certified. 20-year warranty. ⭐ Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'dorpen vinyl',
+                            'waterproof flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'village vinyl',
+                            'glue-down vinyl',
+                            'premium vinyl floor',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 27,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.111Z",
-                "updatedAt": "2025-10-08T12:06:47.884Z"
+            'metadata': {
+                'totalImages': 27,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.111Z',
+                'updatedAt': '2025-10-08T12:06:47.884Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1219",
-                    "thickness": "3",
-                    "width": "229"
+            'specifications': {
+                'dimensions': {
+                    'length': '1219',
+                    'thickness': '3',
+                    'width': '229',
                 },
-                "appearance": {
-                    "colorCode": "brown-white",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown-white',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "underfloorHeatingCode": "suitable",
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'underfloorHeatingCode': 'suitable',
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3038",
-            "slug": "village-noordwijk-nature-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "dorpen",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425248967",
-            "categories": "Village Vinyl",
-            "images": [
-                "Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-detail.webp",
-                "Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-front.webp",
-                "Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-perspectief.webp",
-                "Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-supershot.webp",
-                "Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-topdown-groot.webp",
-                "Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-topdown.webp",
-                "Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-velling.webp",
-                "Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-sfeer-front.webp",
-                "Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-sfeer-perspectief.webp",
-                "Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-sfeer-topdown-alternatief.webp",
-                "Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-sfeer-topdown-groot.webp",
-                "Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-sfeer-topdown.webp"
+            'sku': 'FLR-3038',
+            'slug': 'village-noordwijk-nature-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'dorpen',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425248967',
+            'categories': 'Village Vinyl',
+            'images': [
+                'Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-detail.webp',
+                'Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-front.webp',
+                'Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-perspectief.webp',
+                'Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-supershot.webp',
+                'Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-topdown-groot.webp',
+                'Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-topdown.webp',
+                'Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-product-velling.webp',
+                'Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-sfeer-front.webp',
+                'Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-sfeer-perspectief.webp',
+                'Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-sfeer-topdown-alternatief.webp',
+                'Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-sfeer-topdown-groot.webp',
+                'Floer-Dorpen-PVC-vloer-Noordwijk-Natuur-sfeer-topdown.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Village Vinyl - Noordwijk Natural Oak - Premium dorpen vinyl flooring",
-                "bg": "Винил Селище - Noordwijk Естествен Дъб - Премиум dorpen винилова настилка"
+            'displayImages': [0, 8],
+            'imageAlt': {
+                'en': ' Noordwijk Natural Oak - Premium dorpen vinyl flooring',
+                'bg': ' Noordwijk Естествен Дъб - Премиум dorpen винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Селище - Noordwijk Естествен Дъб",
-                    "description": "Винил Селище - Noordwijk Естествен Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Нордвайк',
+                    'description':
+                        'Открийте Нордвайкl, премиум винилова настилка за залепване, създадена за интензивно натоварване. Екстра широките и гъвкави ламели осигуряват елегантен безшевен вид, като същевременно издържат на влага, замърсявания и силен трафик. Произведена без вредни вещества и сертифицирана по REACH, тази екологична настилка е 100% водонепропусклива с матово покритие MEGAMAT. Подходяща за подово отопление и с 20-годишна гаранция – идеален избор за стилни домове и взискателни търговски обекти.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Селище - Noordwijk Естествен Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Селище - Noordwijk Естествен Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "dorpen винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Noordwijk Natural | Премиум винил за залепване | Village Vinyl България',
+                        'description':
+                            'Нордвайк 100% водонепропусклив винил за залепване с матово покритие MEGAMAT. Сертифициран по REACH, подходящ за подово отопление. 20-годишна гаранция.',
+                        'keywords': [
+                            'премиум винилов под',
+                            'винил за залепване',
+                            'водонепропусклив винил',
+                            'PVC под България',
+                            'матово покритие MEGAMAT',
+                            'подходящ за подово отопление',
+                            'колекция Village Vinyl',
+                            'екологичен винилов под',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Village Vinyl - Noordwijk Natural Oak",
-                    "description": "Looking for a durable floor that can withstand intensive use, moisture, and dirt? Look no further than the Floer Village Vinyl - Naxxar Natural Oak. These eco-friendly floorboards are extra wide and ultra-flexible, making them suitable for the toughest conditions. Plus, they are produced without har...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Noordwijk Natural',
+                    'description':
+                        'Discover the  Noordwijk Natural, a premium glue-down vinyl floor designed for intensive use. Extra-wide, ultra-flexible planks deliver a seamless, elegant look while withstanding moisture, dirt, and heavy foot traffic. Crafted without harmful substances and REACH certified, this eco-friendly flooring is 100% waterproof with a MEGAMAT matte finish. Compatible with underfloor heating and backed by a 20-year warranty, it’s the ideal choice for both stylish homes and demanding commercial spaces.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Village Vinyl - Noordwijk Natural Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Village Vinyl - Noordwijk Natural Oak: Looking for a durable floor that can withstand intensive use, moisture, and dirt? Look no further than the Floer Village... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "dorpen vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "village vinyl"
-                        ]
+                    'seo': {
+                        'title': 'Noordwijk Natural | Premium Glue-Down Vinyl Flooring | Eco Vibe Floors',
+                        'description':
+                            ' Noordwijk Natural: 100% waterproof glue-down vinyl with MEGAMAT matte finish. REACH certified, underfloor heating compatible. 20-year warranty. Free delivery.',
+                        'keywords': [
+                            'premium vinyl flooring',
+                            'glue-down vinyl',
+                            'waterproof vinyl floor',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT matte finish',
+                            'underfloor heating compatible',
+                            'Village Vinyl collection',
+                            'eco-friendly vinyl flooring',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 12,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.117Z",
-                "updatedAt": "2025-10-08T12:06:47.884Z"
+            'metadata': {
+                'totalImages': 12,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.117Z',
+                'updatedAt': '2025-10-08T12:06:47.884Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1219",
-                    "thickness": "3",
-                    "width": "229"
+            'specifications': {
+                'dimensions': {
+                    'length': '1219',
+                    'thickness': '3',
+                    'width': '229',
                 },
-                "appearance": {
-                    "colorCode": "brown",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3039",
-            "slug": "village-makkum-mokka-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "dorpen",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425248974",
-            "categories": "Village Vinyl",
-            "images": [
-                "Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-detail-v1.webp",
-                "Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-front-v1.webp",
-                "Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-perspectief-v1.webp",
-                "Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-supershot-v1.webp",
-                "Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-topdown-groot-v1.webp",
-                "Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-topdown-v1.webp",
-                "Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-velling-v1.webp",
-                "Floer-Dorpen-PVC-vloer-Makkum-Mokka-sfeer-front-v1.webp",
-                "Floer-Dorpen-PVC-vloer-Makkum-Mokka-sfeer-perspectief-v1.webp",
-                "Floer-Dorpen-PVC-vloer-Makkum-Mokka-sfeer-topdown-groot-v1.webp",
-                "Floer-Dorpen-PVC-vloer-Makkum-Mokka-sfeer-topdown-v1.webp"
+            'sku': 'FLR-3039',
+            'slug': 'village-makkum-mokka-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'dorpen',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425248974',
+            'categories': 'Village Vinyl',
+            'images': [
+                'Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-detail-v1.webp',
+                'Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-front-v1.webp',
+                'Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-perspectief-v1.webp',
+                'Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-supershot-v1.webp',
+                'Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-topdown-groot-v1.webp',
+                'Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-topdown-v1.webp',
+                'Floer-Dorpen-PVC-vloer-Makkum-Mokka-product-velling-v1.webp',
+                'Floer-Dorpen-PVC-vloer-Makkum-Mokka-sfeer-front-v1.webp',
+                'Floer-Dorpen-PVC-vloer-Makkum-Mokka-sfeer-perspectief-v1.webp',
+                'Floer-Dorpen-PVC-vloer-Makkum-Mokka-sfeer-topdown-groot-v1.webp',
+                'Floer-Dorpen-PVC-vloer-Makkum-Mokka-sfeer-topdown-v1.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Village Vinyl - Makkum Mokka Oak - Premium dorpen vinyl flooring",
-                "bg": "Винил Селище - Makkum Mokka Дъб - Премиум dorpen винилова настилка"
+            'displayImages': [0, 8],
+            'imageAlt': {
+                'en': ' Makkum Mokka Oak - Premium dorpen vinyl flooring',
+                'bg': ' Makkum Mokka Дъб - Премиум dorpen винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Селище - Makkum Mokka Дъб",
-                    "description": "Винил Селище - Makkum Mokka Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Маккум мока',
+                    'description':
+                        'Търсите премиум винилов под, който издържа на интензивно натоварване, влага и ежедневна употреба? Makkum Mokka предлага изключителна издръжливост и елегантен вид. Екологично произведени, екстра широки ламели с ултра гъвкаво ядро за максимална устойчивост, без вредни вещества и със сертификат REACH за безопасност в дома. 100% водонепропусклива конструкция с ексклузивно MEGAMAT матово покритие, съвместимост с подово отопление – идеален избор за кухни, бани и дневни. С 20-годишна гаранция за жилищна употреба, Makkum Mokka осигурява дългосрочна надеждност и спокойствие.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Селище - Makkum Mokka Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Селище - Makkum Mokka Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "dorpen винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Маккум мока | Премиум водонепропусклив винилов под',
+                        'description':
+                            'Маккум мока: Екстра широк, 100% водонепропусклив винилов под с матово MEGAMAT покритие и сертификат REACH. 20-годишна гаранция. Подходящ за подово отопление. Безплатна доставка.',
+                        'keywords': [
+                            'премиум винилов под',
+                            'Village Vinyl Makkum Mokka',
+                            'водонепропусклив винил',
+                            'ПВЦ под България',
+                            'MEGAMAT покритие',
+                            'винил за подово отопление',
+                            'винил за залепване',
+                            'екологичен винилов под',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Village Vinyl - Makkum Mokka Oak",
-                    "description": "Looking for a durable floor that can withstand intensive use, moisture, and dirt? Look no further than the Floer Village Vinyl - Menton Mocha Oak. These eco-friendly floorboards are extra wide and ultra-flexible, making them suitable for the toughest conditions. Plus, they are produced without harmf...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Makkum Mokka',
+                    'description':
+                        'Searching for a premium vinyl floor that can handle heavy traffic, moisture, and everyday mess? The Makkum Mokka delivers exceptional durability and timeless style. These eco-friendly, extra-wide planks feature an ultra-flexible core for maximum resilience, produced without harmful substances and fully REACH certified for a safer home environment. The 100% waterproof construction, exclusive MEGAMAT matte finish, and compatibility with underfloor heating make Makkum Mokka a smart choice for kitchens, bathrooms, and living spaces alike. Backed by a 20-year residential warranty, it offers lasting performance you can trust.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Village Vinyl - Makkum Mokka Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Village Vinyl - Makkum Mokka Oak: Looking for a durable floor that can withstand intensive use, moisture, and dirt? Look no further than the Floer Village... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "dorpen vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "village vinyl"
-                        ]
+                    'seo': {
+                        'title': 'Makkum Mokka | Premium Waterproof Vinyl Flooring',
+                        'description':
+                            'Makkum Mokka: Extra-wide, 100% waterproof vinyl flooring with MEGAMAT matte finish and REACH certification. 20-year warranty. Compatible with underfloor heating. Free delivery.',
+                        'keywords': [
+                            'premium vinyl flooring',
+                            'Village Vinyl Makkum Mokka',
+                            'waterproof vinyl floor',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'glue-down vinyl',
+                            'eco-friendly vinyl floor',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 11,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.116Z",
-                "updatedAt": "2025-10-08T12:06:47.884Z"
+            'metadata': {
+                'totalImages': 11,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.116Z',
+                'updatedAt': '2025-10-08T12:06:47.884Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1219",
-                    "thickness": "3",
-                    "width": "229"
+            'specifications': {
+                'dimensions': {
+                    'length': '1219',
+                    'thickness': '3',
+                    'width': '229',
                 },
-                "appearance": {
-                    "colorCode": "black-brown",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'black-brown',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3036",
-            "slug": "village-bemmel-beige-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "dorpen",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425248813",
-            "categories": "Village Vinyl",
-            "images": [
-                "Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur-2.webp",
-                "Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur-3.webp",
-                "Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur-5.webp",
-                "Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur-6.webp",
-                "Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur-7.webp",
-                "Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur-8.webp",
-                "Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur.webp",
-                "Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-2.webp",
-                "Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-3.webp",
-                "Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-4.webp",
-                "Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-5.webp",
-                "Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-6.webp",
-                "Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-7.webp",
-                "Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-8.webp",
-                "Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-9.webp",
-                "Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-closeup-final.webp",
-                "Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-front-final.webp",
-                "Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-perspectief-final.webp",
-                "Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-supershot-final.webp",
-                "Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-topdown-final.webp",
-                "Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-topdown-groot-final.webp",
-                "Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-velling-final.webp",
-                "Floer-Dorpen-PVC-vloer-Bemmel-Beige-sfeer-front-final.webp",
-                "Floer-Dorpen-PVC-vloer-Bemmel-Beige-sfeer-perspectief-final.webp",
-                "Floer-Dorpen-PVC-vloer-Bemmel-Beige-sfeer-topdown-final.webp",
-                "Floer-Dorpen-PVC-vloer-Bemmel-Beige-sfeer-topdown-groot-final.webp"
+            'sku': 'FLR-3036',
+            'slug': 'village-bemmel-beige-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'dorpen',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425248813',
+            'categories': 'Village Vinyl',
+            'images': [
+                'Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur-2.webp',
+                'Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur-3.webp',
+                'Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur-5.webp',
+                'Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur-6.webp',
+                'Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur-7.webp',
+                'Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur-8.webp',
+                'Floer-Dorpen-PVC-Bemme-Beige-Eiken-interieur.webp',
+                'Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-2.webp',
+                'Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-3.webp',
+                'Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-4.webp',
+                'Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-5.webp',
+                'Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-6.webp',
+                'Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-7.webp',
+                'Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-8.webp',
+                'Floer-Dorpen-PVC-Bemmel-Beige-Eiken-Klantfoto-9.webp',
+                'Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-closeup-final.webp',
+                'Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-front-final.webp',
+                'Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-perspectief-final.webp',
+                'Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-supershot-final.webp',
+                'Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-topdown-final.webp',
+                'Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-topdown-groot-final.webp',
+                'Floer-Dorpen-PVC-vloer-Bemmel-Beige-product-velling-final.webp',
+                'Floer-Dorpen-PVC-vloer-Bemmel-Beige-sfeer-front-final.webp',
+                'Floer-Dorpen-PVC-vloer-Bemmel-Beige-sfeer-perspectief-final.webp',
+                'Floer-Dorpen-PVC-vloer-Bemmel-Beige-sfeer-topdown-final.webp',
+                'Floer-Dorpen-PVC-vloer-Bemmel-Beige-sfeer-topdown-groot-final.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Village Vinyl - Bemmel Beige Oak - Premium dorpen vinyl flooring",
-                "bg": "Винил Селище - Bemmel Бежов Дъб - Премиум dorpen винилова настилка"
+            'displayImages': [15, 10],
+            'imageAlt': {
+                'en': ' Bemmel Beige Oak - Premium dorpen vinyl flooring',
+                'bg': ' Bemmel Бежов Дъб - Премиум dorpen винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Селище - Bemmel Бежов Дъб",
-                    "description": "Винил Селище - Bemmel Бежов Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Беммел',
+                    'description':
+                        'Винилов под Беммел Бежов Дъб е създаден за най-взискателните условия. Екологично произведените, екстра широки и ултра гъвкави ламели са 100% водонепропускливи и устойчиви на драскотини, удари и влага. Залепващият монтаж осигурява елегантен и безшевен вид, идеален за кухни, бани и интензивно натоварени помещения. Повърхността с MEGAMAT покритие придава автентична текстура и премиум усещане. С 20-годишна гаранция и съвместимост с подово отопление, това е стилно и издръжливо решение за вашия дом или офис.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Селище - Bemmel Бежов Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Селище - Bemmel Бежов Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "dorpen винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Винилов под Беммел Бежов Дъб | Премиум водонепропусклив винил',
+                        'description':
+                            'Беммел Бежов Дъб: 100% водонепропусклив винилов под с MEGAMAT покритие. Екологично производство, устойчив на драскотини и удари. 20-годишна гаранция. Подходящ за подово отопление и влажни помещения.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'водонепропусклив винил',
+                            'ПВЦ под България',
+                            'MEGAMAT покритие',
+                            'винил за подово отопление',
+                            'винил за залепване',
+                            'екологичен винилов под',
+                            'устойчив винилов под',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Village Vinyl - Bemmel Beige Oak",
-                    "description": "Are you looking for a floor that can withstand intensive use, moisture and dirt? Then you've come to the right place! The Floer Village Vinyl - Bibury Beige Oak is suitable for the toughest conditions. The eco-friendly produced floorboards are extra wide, ultra flexible and can take a beating. No ha...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Bemmel',
+                    'description':
+                        'Looking for a floor that can handle heavy use, moisture, and everyday wear? The  Bemmel Beige Oak is designed for the toughest conditions. Crafted with eco-friendly materials, these extra-wide, ultra-flexible planks resist scratches, dents, and water damage. This 100% waterproof glue-down vinyl floor with MEGAMAT finish offers a seamless, elegant look—perfect for kitchens, bathrooms, and high-traffic spaces. Backed by a 20-year warranty and fully compatible with underfloor heating, it’s a premium choice that combines style, durability, and peace of mind.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Village Vinyl - Bemmel Beige Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Village Vinyl - Bemmel Beige Oak: Are you looking for a floor that can withstand intensive use, moisture and dirt? Then you've come to the right place! Th... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "dorpen vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "village vinyl"
-                        ]
+                    'seo': {
+                        'title': ' Bemmel Beige Oak | Premium Waterproof Vinyl Flooring',
+                        'description':
+                            ' Bemmel Beige Oak: 100% waterproof glue-down vinyl with MEGAMAT finish. Eco-friendly, scratch-resistant, ideal for wet areas. 20-year warranty. Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'dorpen vinyl',
+                            'waterproof vinyl flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'glue-down vinyl',
+                            'luxury vinyl floor',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 26,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.108Z",
-                "updatedAt": "2025-10-08T12:06:47.885Z"
+            'metadata': {
+                'totalImages': 26,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.108Z',
+                'updatedAt': '2025-10-08T12:06:47.885Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1219",
-                    "thickness": "3",
-                    "width": "229"
+            'specifications': {
+                'dimensions': {
+                    'length': '1219',
+                    'thickness': '3',
+                    'width': '229',
                 },
-                "appearance": {
-                    "colorCode": "brown",
-                    "finishCode": "megamat",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown',
+                    'finishCode': 'megamat',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "underfloorHeatingCode": "suitable",
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'underfloorHeatingCode': 'suitable',
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark': 'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3037",
-            "slug": "village-lisse-lichtbruin-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "dorpen",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425248820",
-            "categories": "Village Vinyl",
-            "images": [
-                "Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-closeup-final.webp",
-                "Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-front-final.webp",
-                "Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-perspectief-final.webp",
-                "Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-supershot-final.webp",
-                "Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-topdown-final.webp",
-                "Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-topdown-groot-final.webp",
-                "Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-velling-final.webp",
-                "Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-sfeer-front-final.webp",
-                "Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-sfeer-perspectief-final.webp",
-                "Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-sfeer-topdown-final.webp",
-                "Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-sfeer-topdown-groot-final.webp"
+            'sku': 'FLR-3037',
+            'slug': 'village-lisse-lichtbruin-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'dorpen',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425248820',
+            'categories': 'Village Vinyl',
+            'images': [
+                'Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-closeup-final.webp',
+                'Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-front-final.webp',
+                'Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-perspectief-final.webp',
+                'Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-supershot-final.webp',
+                'Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-topdown-final.webp',
+                'Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-topdown-groot-final.webp',
+                'Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-product-velling-final.webp',
+                'Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-sfeer-front-final.webp',
+                'Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-sfeer-perspectief-final.webp',
+                'Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-sfeer-topdown-final.webp',
+                'Floer-Dorpen-PVC-vloer-Lisse-Lichtbruin-sfeer-topdown-groot-final.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Village Vinyl - Lisse Lichtbruin Oak - Premium dorpen vinyl flooring",
-                "bg": "Винил Селище - Lisse Lichtbruin Дъб - Премиум dorpen винилова настилка"
+            'displayImages': [0, 9],
+            'imageAlt': {
+                'en': ' Lisse Lichtbruin Oak - Premium dorpen vinyl flooring',
+                'bg': ' Lisse Lichtbruin Дъб - Премиум dorpen винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Селище - Lisse Lichtbruin Дъб",
-                    "description": "Винил Селище - Lisse Lichtbruin Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Лиссе',
+                    'description':
+                        'Търсите подова настилка, която издържа на влага, замърсяване и интензивно натоварване? Винил Лиссе Дъб предлага изключителна издръжливост и стил във всяко помещение. Екологично произведените, екстра широки винилови ламели за залепване съчетават висока гъвкавост с здравина, без вредни пластификатори – безопасни за дома и семейството. С 100% водоустойчива конструкция, премиум MEGAMAT матово покритие и пълна съвместимост с подово отопление, този винилов под осигурява дълготрайна красота и надеждност, подкрепени с 20-годишна гаранция.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Селище - Lisse Lichtbruin Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Селище - Lisse Lichtbruin Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "dorpen винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Винил Лиссе Дъб | Премиум водоустойчив винилов под',
+                        'description':
+                            'Винил  Лиссе Дъб: 100% водоустойчив винилов под за залепване с MEGAMAT матово покритие, съвместим с подово отопление и 20-годишна гаранция. Екологично производство, безопасен за дома. ⭐ Безплатна доставка.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'водоустойчив винил',
+                            'ПВЦ под България',
+                            'MEGAMAT покритие',
+                            'винил за подово отопление',
+                            'винилов под за залепване',
+                            'екологичен винилов под',
+                            'винил Village',
+                            'винилови настилки',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Village Vinyl - Lisse Lichtbruin Oak",
-                    "description": "Looking for a floor that can withstand moisture, dirt and heavy use? You've found it! The Floer Village Vinyl - Lavenham Light Brown Oak is suitable for all kinds of conditions. The sustainably produced floorboards are extra wide, extremely flexible and can take a beating. No harmful plasticisers ar...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Lisse',
+                    'description':
+                        'Searching for a floor that stands up to moisture, dirt, and heavy foot traffic? The  Lisse Oak delivers exceptional performance in any environment. Sustainably produced, these extra-wide glue-down planks combine remarkable flexibility with robust strength. Free from harmful plasticisers, they are safe for your home and family. Featuring a 100% waterproof design, premium MEGAMAT matte finish, and full compatibility with underfloor heating, this vinyl floor offers enduring style and durability backed by a 20-year warranty.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Village Vinyl - Lisse Lichtbruin Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Village Vinyl - Lisse Lichtbruin Oak: Looking for a floor that can withstand moisture, dirt and heavy use? You've found it! The Floer Village Vinyl - Lavenham... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "dorpen vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "village vinyl"
-                        ]
+                    'seo': {
+                        'title': ' Lisse Oak | Premium Waterproof Vinyl Flooring',
+                        'description':
+                            ' Lisse Oak: 100% waterproof glue-down vinyl with MEGAMAT finish, underfloor heating compatibility, and a 20-year warranty. Sustainably produced and safe for your home. ⭐ Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'dorpen vinyl',
+                            'waterproof vinyl flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'village vinyl',
+                            'glue-down vinyl',
+                            'eco-friendly vinyl floor',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 11,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.115Z",
-                "updatedAt": "2025-10-08T12:06:47.885Z"
+            'metadata': {
+                'totalImages': 11,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.115Z',
+                'updatedAt': '2025-10-08T12:06:47.885Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1219",
-                    "thickness": "3",
-                    "width": "229"
+            'specifications': {
+                'dimensions': {
+                    'length': '1219',
+                    'thickness': '3',
+                    'width': '229',
                 },
-                "appearance": {
-                    "colorCode": "brown",
-                    "finishCode": "megamat",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown',
+                    'finishCode': 'megamat',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3035",
-            "slug": "village-langelo-landelijk-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "dorpen",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425248806",
-            "categories": "Village Vinyl",
-            "images": [
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-1.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-10.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-11.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-12.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-13.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-14.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-15.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-16.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-17.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-18.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-19.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-2.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-20.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-21.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-22.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-23.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-3.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-4.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-5.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-6.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-7.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-8.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-9.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-closeup-final.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-front-final.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-perspectief-final.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-supershot-final.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-topdown-final.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-topdown-groot-final.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-velling-final.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-sfeer-front-final.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-sfeer-perspectief-final.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-sfeer-topdown-final.webp",
-                "Floer-Dorpen-PVC-vloer-Langelo-Landelijk-sfeer-topdown-groot-final.webp"
+            'sku': 'FLR-3035',
+            'slug': 'village-langelo-landelijk-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'dorpen',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425248806',
+            'categories': 'Village Vinyl',
+            'images': [
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-1.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-10.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-11.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-12.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-13.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-14.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-15.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-16.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-17.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-18.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-19.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-2.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-20.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-21.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-22.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-23.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-3.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-4.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-5.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-6.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-7.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-8.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-Eiken-interieur-woonkamer-9.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-closeup-final.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-front-final.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-perspectief-final.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-supershot-final.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-topdown-final.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-topdown-groot-final.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-product-velling-final.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-sfeer-front-final.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-sfeer-perspectief-final.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-sfeer-topdown-final.webp',
+                'Floer-Dorpen-PVC-vloer-Langelo-Landelijk-sfeer-topdown-groot-final.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Village Vinyl - Langelo Landelijk Oak - Premium dorpen vinyl flooring",
-                "bg": "Винил Селище - Langelo Landelijk Дъб - Премиум dorpen винилова настилка"
+            'displayImages': [6, 11],
+            'imageAlt': {
+                'en': ' Langelo Landelijk Oak - Premium dorpen vinyl flooring',
+                'bg': ' Langelo Landelijk Дъб - Премиум dorpen винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Селище - Langelo Landelijk Дъб",
-                    "description": "Винил Селище - Langelo Landelijk Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Лангело',
+                    'description':
+                        'Търсите подова настилка, която издържа на интензивно натоварване, влага и ежедневни предизвикателства? Лангело Ланделик Дъб е създаден за най-тежките условия. Екологично произведените, изключително широки винилови ламели за залепване съчетават гъвкавост с висока устойчивост на удари. Без използване на вредни пластификатори – безопасен за дома и семейството. С 100% водонепропусклива основа и устойчив на надраскване повърхност, този под е идеален за влажни помещения, подово отопление и интензивна жилищна или търговска употреба. Лесен за поддръжка и почистване, с удължена гаранция от 15–35 години за спокойствие и сигурност.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Селище - Langelo Landelijk Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Селище - Langelo Landelijk Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "dorpen винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Лангело Ланделик Дъб | Луксозен винилов под за залепване | Екологичен и издръжлив',
+                        'description':
+                            'Лангело Ланделик Дъб – 100% водонепропусклив винилов под със сертификат REACH. Екологично производство, изключително широки ламели, подходящ за влажни помещения и подово отопление. Удължена гаранция 15–35 години.',
+                        'keywords': [
+                            'винилов под',
+                            'винилов под за залепване',
+                            'водонепропусклив под',
+                            'ПВЦ под България',
+                            'MEGAMAT покритие',
+                            'под за подово отопление',
+                            'екологичен винилов под',
+                            'REACH сертифициран под',
+                            'широки винилови ламели',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Village Vinyl - Langelo Landelijk Oak",
-                    "description": "Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Colmar Country Oak is suitable for the toughest conditions. The eco-friendly produced floorboards are remarkably extra wide, flexible and able to withstand knocks. No harmful plasticisers ...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Langelo',
+                    'description':
+                        'Searching for a floor that can handle heavy traffic, moisture, and everyday challenges? The Langelo Landelijk Oak is crafted for the toughest conditions. These eco-friendly, extra-wide glue-down vinyl planks combine flexibility with exceptional impact resistance. Produced without harmful plasticisers, they are safe for your home and family. Featuring a 100% waterproof core and scratch-resistant surface, this floor is ideal for wet rooms, underfloor heating, and intensive residential or commercial use. Easy to maintain and clean, it comes with a generous 15–35 year warranty for lasting peace of mind.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Village Vinyl - Langelo Landelijk Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Village Vinyl - Langelo Landelijk Oak: Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Colmar C... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "dorpen vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "village vinyl"
-                        ]
+                    'seo': {
+                        'title': 'Langelo Landelijk Oak | Luxury Glue-Down Vinyl Flooring | Eco-Friendly & Durable',
+                        'description':
+                            'Langelo Landelijk Oak: 100% waterproof glue-down vinyl floor with REACH certification. Extra-wide planks, eco-friendly production, suitable for wet rooms & underfloor heating. 15–35 year warranty. ⭐ Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'glue-down vinyl',
+                            'waterproof flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'eco-friendly vinyl floor',
+                            'REACH certified flooring',
+                            'extra-wide vinyl planks',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 34,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.114Z",
-                "updatedAt": "2025-10-08T12:06:47.885Z"
+            'metadata': {
+                'totalImages': 34,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.114Z',
+                'updatedAt': '2025-10-08T12:06:47.885Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1219",
-                    "thickness": "3",
-                    "width": "229"
+            'specifications': {
+                'dimensions': {
+                    'length': '1219',
+                    'thickness': '3',
+                    'width': '229',
                 },
-                "appearance": {
-                    "colorCode": "brown",
-                    "finishCode": "megamat",
-                    "structureCode": "textured",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown',
+                    'finishCode': 'megamat',
+                    'structureCode': 'textured',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3042",
-            "slug": "village-buinen-brown-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "dorpen",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425249063",
-            "categories": "Village Vinyl",
-            "images": [
-                "Floer-Dorpen-PVC-Buinen-Bruin-detail-2.webp",
-                "Floer-Dorpen-PVC-Buinen-Bruin-detail.webp",
-                "Floer-Dorpen-PVC-Buinen-Bruin-front-sfeer.webp",
-                "Floer-Dorpen-PVC-Buinen-Bruin-front.webp",
-                "Floer-Dorpen-PVC-Buinen-Bruin-microvelling.webp",
-                "Floer-Dorpen-PVC-Buinen-Bruin-perspectief-sfeer.webp",
-                "Floer-Dorpen-PVC-Buinen-Bruin-Perspectief.webp",
-                "Floer-Dorpen-PVC-Buinen-Bruin-topdown-groot.webp",
-                "Floer-Dorpen-PVC-Buinen-Bruin-topdown-sfeer-2.webp",
-                "Floer-Dorpen-PVC-Buinen-Bruin-topdown-sfeer.webp",
-                "Floer-Dorpen-PVC-Buinen-Bruin-topdown.webp"
+            'sku': 'FLR-3042',
+            'slug': 'village-buinen-brown-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'dorpen',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425249063',
+            'categories': 'Village Vinyl',
+            'images': [
+                'Floer-Dorpen-PVC-Buinen-Bruin-detail-2.webp',
+                'Floer-Dorpen-PVC-Buinen-Bruin-detail.webp',
+                'Floer-Dorpen-PVC-Buinen-Bruin-front-sfeer.webp',
+                'Floer-Dorpen-PVC-Buinen-Bruin-front.webp',
+                'Floer-Dorpen-PVC-Buinen-Bruin-microvelling.webp',
+                'Floer-Dorpen-PVC-Buinen-Bruin-perspectief-sfeer.webp',
+                'Floer-Dorpen-PVC-Buinen-Bruin-Perspectief.webp',
+                'Floer-Dorpen-PVC-Buinen-Bruin-topdown-groot.webp',
+                'Floer-Dorpen-PVC-Buinen-Bruin-topdown-sfeer-2.webp',
+                'Floer-Dorpen-PVC-Buinen-Bruin-topdown-sfeer.webp',
+                'Floer-Dorpen-PVC-Buinen-Bruin-topdown.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Village Vinyl - Buinen Brown Oak - Premium dorpen vinyl flooring",
-                "bg": "Винил Селище - Buinen Кафяв Дъб - Премиум dorpen винилова настилка"
+            'displayImages': [1, 2],
+            'imageAlt': {
+                'en': ' Buinen Brown Oak - Premium dorpen vinyl flooring',
+                'bg': ' Buinen Кафяв Дъб - Премиум dorpen винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Селище - Buinen Кафяв Дъб",
-                    "description": "Винил Селище - Buinen Кафяв Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Бюйнен',
+                    'description':
+                        'Винил Бюйнен Кафяв Дъб е създаден да издържа на интензивно натоварване, влага и ежедневна употреба. Екстра широките и издръжливи ламели впечатляват с реалистична дъбова визия, подсилена от премиум покритие MEGAMAT за естествен матов ефект. 100% водоустойчив и съвместим с подово отопление, този винилов под за залепване съчетава лукс и практичност. С 20-годишна гаранция за жилищна употреба и REACH сертификат за безопасност, той е идеален избор за кухни, бани и помещения с високо натоварване.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Селище - Buinen Кафяв Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Селище - Buinen Кафяв Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "dorpen винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Винил Бюйнен Кафяв Дъб | Луксозен водоустойчив винилов под',
+                        'description':
+                            'Винил Бюйнен Кафяв Дъб: екстра широки ламели, реалистична дъбова визия, MEGAMAT матово покритие. 100% водоустойчив, подходящ за подово отопление, REACH сертифициран. 20-годишна гаранция.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'водоустойчив винил',
+                            'ПВЦ под България',
+                            'MEGAMAT покритие',
+                            'винил за подово отопление',
+                            'винил за залепване',
+                            'винилова ламела',
+                            'екстра широк винил',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Village Vinyl - Buinen Brown Oak",
-                    "description": "Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Banska Brown Oak is suitable for the toughest conditions. These floorboards are not only extra wide and very durable, but also beautiful in their appearance. The realistic oak design gives...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Buinen',
+                    'description':
+                        "Experience the  Buinen Brown Oak, designed to handle heavy foot traffic, moisture, and everyday wear with ease. These extra-wide, durable planks feature a stunningly realistic oak design enhanced by the premium MEGAMAT finish for a natural matte look. 100% waterproof and compatible with underfloor heating, this glue-down vinyl flooring offers both luxury and practicality. Backed by a 20-year residential warranty and REACH-certified for safety, it's the perfect choice for kitchens, bathrooms, and high-use spaces.",
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Village Vinyl - Buinen Brown Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Village Vinyl - Buinen Brown Oak: Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Banska B... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "dorpen vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "village vinyl"
-                        ]
+                    'seo': {
+                        'title': ' Buinen Brown Oak | Luxury Waterproof Vinyl Flooring',
+                        'description':
+                            ' Buinen Brown Oak: Extra-wide planks, realistic oak design, MEGAMAT matte finish. 100% waterproof, underfloor heating compatible, REACH certified. 20-year warranty. Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'dorpen vinyl',
+                            'waterproof vinyl flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'glue-down vinyl',
+                            'luxury vinyl plank',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 11,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.110Z",
-                "updatedAt": "2025-10-08T12:06:47.886Z"
+            'metadata': {
+                'totalImages': 11,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.110Z',
+                'updatedAt': '2025-10-08T12:06:47.886Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1219",
-                    "thickness": "3",
-                    "width": "229"
+            'specifications': {
+                'dimensions': {
+                    'length': '1219',
+                    'thickness': '3',
+                    'width': '229',
                 },
-                "appearance": {
-                    "colorCode": "brown",
-                    "finishCode": "megamat",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown',
+                    'finishCode': 'megamat',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "underfloorHeatingCode": "suitable",
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'underfloorHeatingCode': 'suitable',
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3046",
-            "slug": "village-nootdorp-nootbruin",
-            "collection": "glue-down-vinyl",
-            "pattern": "dorpen",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425249254",
-            "categories": "Village Vinyl",
-            "images": [
-                "Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-detail.webp",
-                "Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-front.webp",
-                "Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-perspectief.webp",
-                "Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-sfeer-front-akupanel.webp",
-                "Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-sfeer-perspectief-akupanel.webp",
-                "Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-sfeer-topdown-groot.webp",
-                "Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-sfeer-topdown.webp",
-                "Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-topdown-groot.webp",
-                "Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-topdown.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-10.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-11.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-12.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-13.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-14.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-15.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-16.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-17.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-18.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-19.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-2.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-20.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-21.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-22.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-23.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-24.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-25.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-26.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-3.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-4.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-5.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-6.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-7.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-8.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-9.webp",
-                "Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin.webp"
+            'sku': 'FLR-3046',
+            'slug': 'village-nootdorp-nootbruin',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'dorpen',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425249254',
+            'categories': 'Village Vinyl',
+            'images': [
+                'Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-detail.webp',
+                'Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-front.webp',
+                'Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-perspectief.webp',
+                'Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-sfeer-front-akupanel.webp',
+                'Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-sfeer-perspectief-akupanel.webp',
+                'Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-sfeer-topdown-groot.webp',
+                'Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-sfeer-topdown.webp',
+                'Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-topdown-groot.webp',
+                'Floer-Dorpen-PVC-Nootdorp-Nootbruin-Eiken-topdown.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-10.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-11.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-12.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-13.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-14.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-15.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-16.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-17.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-18.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-19.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-2.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-20.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-21.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-22.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-23.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-24.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-25.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-26.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-3.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-4.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-5.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-6.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-7.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-8.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin-9.webp',
+                'Floer-Dorpen-PVC-vloer-Nootdorp-Nootbruin.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Village Vinyl - Nootdorp Nootbruin - Premium dorpen vinyl flooring",
-                "bg": "Винил Селище - Nootdorp Nootbruin - Премиум dorpen винилова настилка"
+            'displayImages': [0, 3],
+            'imageAlt': {
+                'en': ' Nootdorp Nootbruin - Premium dorpen vinyl flooring',
+                'bg': ' Nootdorp Nootbruin - Премиум dorpen винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Селище - Nootdorp Nootbruin",
-                    "description": "Винил Селище - Nootdorp Nootbruin - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Ноотдорп',
+                    'description':
+                        'Търсите подова настилка, която издържа на интензивно натоварване, влага и замърсяване? Винил Nootdorp Nootbruin е създаден за най-тежките условия. Екстра широките и изключително издръжливи ламели с реалистична дъбова визия придават естествена елегантност на всяко помещение. Професионалният монтаж чрез залепване осигурява безшевен завършек, 100% водонепропусклива защита и комфортната повърхност MEGAMAT. Подходящ за подово отопление и интензивна употреба в дома или офиса. Холандско качество с 20-годишна гаранция.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Селище - Nootdorp Nootbruin | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Селище - Nootdorp Nootbruin - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "dorpen винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Винил Nootdorp Nootbruin | Луксозен водонепропусклив винилов под',
+                        'description':
+                            'Nootdorp Nootbruin: Екстра широки ламели с дъбов дизайн, 100% водонепропусклив, MEGAMAT повърхност за комфорт. Подходящ за подово отопление. Холандско качество с 20-годишна гаранция.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'водонепропусклив винил',
+                            'ПВЦ под България',
+                            'MEGAMAT повърхност',
+                            'винилов под за подово отопление',
+                            'винил за залепване',
+                            'екстра широки винилови ламели',
+                            'имитация на дъб винил',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Village Vinyl - Nootdorp Nootbruin",
-                    "description": "Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Warth Walnut Brown Oak is suitable for the toughest conditions. Not only are these planks extra wide and extremely durable, they are also unique in appearance. The realistic oak design giv...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Nootdorp Nootbruin',
+                    'description':
+                        'Searching for a floor that can handle heavy use, moisture, and dirt with ease? The  Nootdorp Nootbruin is designed for the toughest conditions. These extra-wide, exceptionally durable planks feature a realistic oak design that brings natural elegance to any interior. With professional glue-down installation, this premium vinyl flooring delivers a seamless finish, 100% waterproof protection, and the exclusive MEGAMAT surface for enhanced comfort underfoot. Perfectly compatible with underfloor heating and ideal for intensive residential or commercial use, backed by a 20-year warranty.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Village Vinyl - Nootdorp Nootbruin | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Village Vinyl - Nootdorp Nootbruin: Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Warth Wa... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "dorpen vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "village vinyl"
-                        ]
+                    'seo': {
+                        'title': ' Nootdorp Nootbruin | Premium Waterproof Vinyl Flooring | Eco Vibe Floors',
+                        'description':
+                            ' Nootdorp Nootbruin: Extra-wide planks, realistic oak design, 100% waterproof, MEGAMAT comfort finish. Underfloor heating compatible. 20-year warranty. ⭐ Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'dorpen vinyl',
+                            'waterproof vinyl flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'premium glue-down vinyl',
+                            'luxury vinyl tile',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 35,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.118Z",
-                "updatedAt": "2025-10-08T12:06:47.886Z"
+            'metadata': {
+                'totalImages': 35,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.118Z',
+                'updatedAt': '2025-10-08T12:06:47.886Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1219",
-                    "thickness": "3",
-                    "width": "229"
+            'specifications': {
+                'dimensions': {
+                    'length': '1219',
+                    'thickness': '3',
+                    'width': '229',
                 },
-                "appearance": {
-                    "colorCode": "brown",
-                    "finishCode": "megamat",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown',
+                    'finishCode': 'megamat',
+                    'materialCode': 'vinyl',
                 },
-                "performance": {
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3041",
-            "slug": "village-grolloo-greybeige-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "dorpen",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425249056",
-            "categories": "Village Vinyl",
-            "images": [
-                "Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-detail-1.webp",
-                "Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-detail-2.webp",
-                "Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-detail.webp",
-                "Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-front.webp",
-                "Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-perspectief-2.webp",
-                "Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-perspectief.webp",
-                "Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-topdown-2.webp",
-                "Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-topdown-3.webp",
-                "Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-topdown-4.webp",
-                "Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-topdown-groot.webp",
-                "Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-topdown.webp",
-                "Floer-Dorpen-PVC-vloer-Grolloo-Grijsbeige-Eiken-1-.webp",
-                "Floer-Dorpen-PVC-vloer-Grolloo-Grijsbeige-Eiken-2-.webp"
+            'sku': 'FLR-3041',
+            'slug': 'village-grolloo-greybeige-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'dorpen',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425249056',
+            'categories': 'Village Vinyl',
+            'images': [
+                'Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-detail-1.webp',
+                'Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-detail-2.webp',
+                'Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-detail.webp',
+                'Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-front.webp',
+                'Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-perspectief-2.webp',
+                'Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-perspectief.webp',
+                'Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-topdown-2.webp',
+                'Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-topdown-3.webp',
+                'Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-topdown-4.webp',
+                'Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-topdown-groot.webp',
+                'Floer-Dorpen-PVC-Grolloo-Grijsbeige-Eiken-topdown.webp',
+                'Floer-Dorpen-PVC-vloer-Grolloo-Grijsbeige-Eiken-1-.webp',
+                'Floer-Dorpen-PVC-vloer-Grolloo-Grijsbeige-Eiken-2-.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Village Vinyl - Grolloo Greybeige Oak - Premium dorpen vinyl flooring",
-                "bg": "Винил Селище - Grolloo Сивbeige Дъб - Премиум dorpen винилова настилка"
+            'displayImages': [0, 6],
+            'imageAlt': {
+                'en': ' Grolloo Greybeige Oak - Premium dorpen vinyl flooring',
+                'bg': ' Grolloo Сивbeige Дъб - Премиум dorpen винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Селище - Grolloo Сивbeige Дъб",
-                    "description": "Винил Селище - Grolloo Сивbeige Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Гроло',
+                    'description':
+                        'Търсите подова настилка, която издържа на интензивно натоварване, влага и ежедневни предизвикателства? Винил Grolloo Greybeige е създаден за най-взискателните условия. Екологично произведените, екстра широки ламели съчетават изключителна издръжливост с елегантна визия. Реалистичната имитация на дърво и монтаж чрез залепване осигуряват безшевен и стилен завършек. 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, сертифициран по REACH, безопасен за домакинства с деца и лесен за поддръжка. С впечатляваща гаранция от 15 до 35 години и пълна съвместимост с подово отопление.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Селище - Grolloo Сивbeige Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Селище - Grolloo Сивbeige Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "dorpen винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Винил Grolloo Greybeige | Луксозен водоустойчив винилов под',
+                        'description':
+                            'Винил Grolloo Greybeige – екстра широки ламели с реалистична имитация на дърво. 100% водоустойчив, MEGAMAT финиш, REACH сертификат, подходящ за деца. 15–35 години гаранция. Съвместим с подово отопление. ⭐ Безплатна доставка.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'водоустойчив винил',
+                            'ПВЦ под България',
+                            'MEGAMAT финиш',
+                            'винил за подово отопление',
+                            'винил за лепене',
+                            'екологичен винилов под',
+                            'REACH сертифициран под',
+                            'имитация на дърво винил',
+                            'екстра широк винил',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Village Vinyl - Grolloo Greybeige Oak",
-                    "description": "Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Ghent Grey Beige Oak is suitable for the toughest conditions. These environmentally friendly produced floorboards are not only extra wide and extremely durable, but also exceptionally beau...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Grolloo Greybeige',
+                    'description':
+                        'Searching for a floor that can handle heavy traffic, moisture, and everyday challenges? The Grolloo Greybeige is crafted for the most demanding environments. These eco-friendly, extra-wide planks combine exceptional durability with timeless beauty. Featuring a realistic wood texture and professional glue-down installation, they deliver a seamless, elegant finish. 100% waterproof, scratch- and impact-resistant, suitable for wet areas, REACH certified, child-friendly, and effortless to maintain. Backed by an impressive 15–35 year warranty and fully compatible with underfloor heating.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Village Vinyl - Grolloo Greybeige Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Village Vinyl - Grolloo Greybeige Oak: Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Ghent Gr... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "dorpen vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "village vinyl"
-                        ]
+                    'seo': {
+                        'title': 'Grolloo Greybeige | Premium Waterproof Vinyl Flooring',
+                        'description':
+                            'Grolloo Greybeige: Extra-wide, realistic wood-look planks. 100% waterproof, MEGAMAT finish, REACH certified, child-friendly. 15–35 year warranty. Compatible with underfloor heating. ⭐ Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'dorpen vinyl',
+                            'waterproof vinyl flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'village vinyl',
+                            'glue-down vinyl',
+                            'eco-friendly vinyl floor',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 13,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.113Z",
-                "updatedAt": "2025-10-08T12:06:47.887Z"
+            'metadata': {
+                'totalImages': 13,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.113Z',
+                'updatedAt': '2025-10-08T12:06:47.887Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1219",
-                    "thickness": "3",
-                    "width": "229"
+            'specifications': {
+                'dimensions': {
+                    'length': '1219',
+                    'thickness': '3',
+                    'width': '229',
                 },
-                "appearance": {
-                    "colorCode": "brown-grey",
-                    "finishCode": "megamat",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown-grey',
+                    'finishCode': 'megamat',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3045",
-            "slug": "village-clinge-cream-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "dorpen",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425249247",
-            "categories": "Village Vinyl",
-            "images": [
-                "Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-product-detail.webp",
-                "Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-product-front.webp",
-                "Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-product-perspectief.webp",
-                "Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-product-topdown-groot.webp",
-                "Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-product-topdown.webp",
-                "Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-product-velling.webp",
-                "Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-sfeer-front-akupanel.webp",
-                "Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-sfeer-front.webp",
-                "Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-sfeer-perspectief-akupanel.webp",
-                "Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-sfeer-perspectief.webp",
-                "Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-sfeer-topdown-groot.webp",
-                "Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-sfeer-topdown.webp"
+            'sku': 'FLR-3045',
+            'slug': 'village-clinge-cream-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'dorpen',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425249247',
+            'categories': 'Village Vinyl',
+            'images': [
+                'Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-product-detail.webp',
+                'Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-product-front.webp',
+                'Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-product-perspectief.webp',
+                'Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-product-topdown-groot.webp',
+                'Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-product-topdown.webp',
+                'Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-product-velling.webp',
+                'Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-sfeer-front-akupanel.webp',
+                'Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-sfeer-front.webp',
+                'Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-sfeer-perspectief-akupanel.webp',
+                'Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-sfeer-perspectief.webp',
+                'Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-sfeer-topdown-groot.webp',
+                'Floer-Dorpen-PVC-vloer-Clinge-Creme-Eiken-sfeer-topdown.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Village Vinyl - Clinge Cream Oak - Premium dorpen vinyl flooring",
-                "bg": "Винил Селище - Clinge Крем Дъб - Премиум dorpen винилова настилка"
+            'displayImages': [0, 8],
+            'imageAlt': {
+                'en': ' Clinge Cream Oak - Premium dorpen vinyl flooring',
+                'bg': ' Clinge Крем Дъб - Премиум dorpen винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Селище - Clinge Крем Дъб",
-                    "description": "Винил Селище - Clinge Крем Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Клинге',
+                    'description':
+                        'Търсите подова настилка, която издържа на интензивно натоварване, влага и ежедневна употреба?   Клинге Крем Дъб е създаден за дългосрочна експлоатация и впечатлява с изисканата си имитация на естествен дъб. Екстра широките ламели съчетават изключителна издръжливост с луксозно матово покритие MEGAMAT. 100% водоустойчив и подходящ за подово отопление, този винил за залепване осигурява безшевен и елегантен завършек. Холандско качество с 20-годишна гаранция – перфектният избор за стил и надеждност.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Селище - Clinge Крем Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Селище - Clinge Крем Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "dorpen винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': '  Клинге Крем Дъб | Луксозен водоустойчив винилов под',
+                        'description':
+                            '  Клинге Крем Дъб – екстра широки ламели с матово MEGAMAT покритие, 100% водоустойчив, подходящ за подово отопление. Холандско качество с 20-годишна гаранция.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'водоустойчив винил',
+                            'ПВЦ под България',
+                            'MEGAMAT покритие',
+                            'винил за подово отопление',
+                            'винил за залепване',
+                            'винилова ламела',
+                            'екстра широк винил',
+                            'винилов под имитация на дърво',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Village Vinyl - Clinge Cream Oak",
-                    "description": "Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Castellucio Cream Oak floor has been specially developed for intensive use. n n n nThese floorboards are not only extra wide and extremely durable, but also sublime in their appearance...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Clinge',
+                    'description':
+                        'Searching for a floor that can handle heavy traffic, moisture, and everyday wear? The  Clinge Cream Oak is designed for intensive use while offering a refined, natural oak look. These extra-wide planks combine exceptional durability with the luxurious MEGAMAT matte finish. 100% waterproof and suitable for underfloor heating, this glue-down vinyl ensures a seamless, elegant appearance. Backed by a 20-year residential warranty, it’s the perfect choice for both style and performance.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Village Vinyl - Clinge Cream Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Village Vinyl - Clinge Cream Oak: Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Castellu... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "dorpen vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "village vinyl"
-                        ]
+                    'seo': {
+                        'title': ' Clinge Cream Oak | Premium Waterproof Vinyl Flooring',
+                        'description':
+                            ' Clinge Cream Oak: Extra-wide, 100% waterproof glue-down vinyl with MEGAMAT finish. Suitable for underfloor heating. 20-year warranty. Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'dorpen vinyl',
+                            'waterproof vinyl flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'glue-down vinyl',
+                            'luxury vinyl plank',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 12,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.112Z",
-                "updatedAt": "2025-10-08T12:06:47.887Z"
+            'metadata': {
+                'totalImages': 12,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.112Z',
+                'updatedAt': '2025-10-08T12:06:47.887Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1219",
-                    "thickness": "3",
-                    "width": "229"
+            'specifications': {
+                'dimensions': {
+                    'length': '1219',
+                    'thickness': '3',
+                    'width': '229',
                 },
-                "appearance": {
-                    "colorCode": "brown-white",
-                    "finishCode": "megamat",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown-white',
+                    'finishCode': 'megamat',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3044",
-            "slug": "village-wateringen-white-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "dorpen",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425249216",
-            "categories": "Village Vinyl",
-            "images": [
-                "Floer-Dorpen-PVC-Wateringen-Wit-Eiken-detail.webp",
-                "Floer-Dorpen-PVC-Wateringen-Wit-Eiken-front.webp",
-                "Floer-Dorpen-PVC-Wateringen-Wit-Eiken-perspectief.webp",
-                "Floer-Dorpen-PVC-Wateringen-Wit-Eiken-sfeer-2.webp",
-                "Floer-Dorpen-PVC-Wateringen-Wit-Eiken-sfeer-topdow-groot.webp",
-                "Floer-Dorpen-PVC-Wateringen-Wit-Eiken-sfeer-topdown.webp",
-                "Floer-Dorpen-PVC-Wateringen-Wit-Eiken-sfeer.webp",
-                "Floer-Dorpen-PVC-Wateringen-Wit-Eiken-topdown-groot.webp",
-                "Floer-Dorpen-PVC-Wateringen-Wit-Eiken-topdown.webp"
+            'sku': 'FLR-3044',
+            'slug': 'village-wateringen-white-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'dorpen',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425249216',
+            'categories': 'Village Vinyl',
+            'images': [
+                'Floer-Dorpen-PVC-Wateringen-Wit-Eiken-detail.webp',
+                'Floer-Dorpen-PVC-Wateringen-Wit-Eiken-front.webp',
+                'Floer-Dorpen-PVC-Wateringen-Wit-Eiken-perspectief.webp',
+                'Floer-Dorpen-PVC-Wateringen-Wit-Eiken-sfeer-2.webp',
+                'Floer-Dorpen-PVC-Wateringen-Wit-Eiken-sfeer-topdow-groot.webp',
+                'Floer-Dorpen-PVC-Wateringen-Wit-Eiken-sfeer-topdown.webp',
+                'Floer-Dorpen-PVC-Wateringen-Wit-Eiken-sfeer.webp',
+                'Floer-Dorpen-PVC-Wateringen-Wit-Eiken-topdown-groot.webp',
+                'Floer-Dorpen-PVC-Wateringen-Wit-Eiken-topdown.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Village Vinyl - Wateringen White Oak - Premium dorpen vinyl flooring",
-                "bg": "Винил Селище - Wateringen Бял Дъб - Премиум dorpen винилова настилка"
+            'displayImages': [0, 3],
+            'imageAlt': {
+                'en': ' Wateringen White Oak - Premium dorpen vinyl flooring',
+                'bg': ' Wateringen Бял Дъб - Премиум dorpen винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Селище - Wateringen Бял Дъб",
-                    "description": "Винил Селище - Wateringen Бял Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Ватеринген',
+                    'description':
+                        'Търсите подова настилка, която издържа на интензивно натоварване, влага и ежедневна употреба? Винил Wateringen White Oak е създаден за взискателни пространства. Екстра широките ламели съчетават изключителна издръжливост с класическа красота, реалистична дървесна текстура и топъл естествен дъбов нюанс, който придава уют и елегантност на всеки интериор. Този винилов под за залепване е 100% водонепропусклив, устойчив на драскотини и удари, сертифициран по европейския стандарт REACH и съвместим с подово отопление. Лесен за поддръжка, подходящ както за жилищна, така и за търговска употреба, с надеждна 20-годишна гаранция.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Селище - Wateringen Бял Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Селище - Wateringen Бял Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "dorpen винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Винил  Wateringen White Oak | Луксозен водонепропусклив винилов под',
+                        'description':
+                            ' Wateringen White Oak: 100% водонепропусклив винилов под за залепване с MEGAMAT покритие, REACH сертификат, устойчив на драскотини, съвместим с подово отопление. 20-годишна гаранция.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'водонепропусклив винил',
+                            'ПВЦ под България',
+                            'MEGAMAT покритие',
+                            'винил за подово отопление',
+                            'винил за залепване',
+                            'професионален винилов под',
+                            'винилова настилка',
+                            'устойчив на влага под',
+                            'REACH сертифициран под',
+                            'имитация на дърво винил',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Village Vinyl - Wateringen White Oak",
-                    "description": "Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Wigtown White Oak flooring has been specially developed for tough conditions. These planks are not only extra wide and very durable, but also beautiful to look at. In addition, the realist...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Wateringen White Oak',
+                    'description':
+                        'Searching for a floor that can handle heavy traffic, moisture, and everyday wear? The Wateringen White Oak is crafted for demanding environments. These extra-wide planks combine exceptional durability with timeless beauty, featuring a realistic wood grain and warm natural oak tones that elevate any interior. This glue-down vinyl is 100% waterproof, scratch and impact resistant, REACH certified, and compatible with underfloor heating. Easy to maintain and ideal for both residential and commercial spaces, it comes with a reliable 20-year warranty.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Village Vinyl - Wateringen White Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Village Vinyl - Wateringen White Oak: Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Wigtown ... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "dorpen vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "village vinyl"
-                        ]
+                    'seo': {
+                        'title': ' Wateringen White Oak | Premium Waterproof Vinyl Flooring',
+                        'description':
+                            ' Wateringen White Oak: 100% waterproof glue-down vinyl with MEGAMAT finish, REACH certified. Scratch-resistant, underfloor heating compatible, 20-year warranty. Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'dorpen vinyl',
+                            'waterproof flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'village vinyl',
+                            'glue-down vinyl',
+                            'luxury vinyl plank',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 9,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.119Z",
-                "updatedAt": "2025-10-08T12:06:47.887Z"
+            'metadata': {
+                'totalImages': 9,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.119Z',
+                'updatedAt': '2025-10-08T12:06:47.887Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1219",
-                    "thickness": "3",
-                    "width": "229"
+            'specifications': {
+                'dimensions': {
+                    'length': '1219',
+                    'thickness': '3',
+                    'width': '229',
                 },
-                "appearance": {
-                    "colorCode": "white",
-                    "finishCode": "megamat",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'white',
+                    'finishCode': 'megamat',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3570",
-            "slug": "hungarian-point-hungarian-point-untreated-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "hongaarse-punt",
-            "installationSystem": "glue-down",
-            "price": 44.95,
-            "gtin": "8719425249261",
-            "categories": "Chevron Vinyl",
-            "images": [
-                "Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-closeup.webp",
-                "Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-detail.webp",
-                "Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-front.webp",
-                "Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-perspectief.webp",
-                "Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-sfeer-akupanel-front.webp",
-                "Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-sfeer-akupanel-perspectief.webp",
-                "Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-sfeer-front.webp",
-                "Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-sfeer-perspectief.webp",
-                "Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-sfeer-topdown-groot.webp",
-                "Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-sfeer-topdown.webp",
-                "Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-topdown-groot.webp",
-                "Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-topdown.webp"
+            'sku': 'FLR-3570',
+            'slug': 'hungarian-point-hungarian-point-untreated-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'hongaarse-punt',
+            'installationSystem': 'glue-down',
+            'price': 44.95,
+            'gtin': '8719425249261',
+            'categories': 'Chevron Vinyl',
+            'images': [
+                'Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-closeup.webp',
+                'Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-detail.webp',
+                'Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-front.webp',
+                'Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-perspectief.webp',
+                'Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-sfeer-akupanel-front.webp',
+                'Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-sfeer-akupanel-perspectief.webp',
+                'Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-sfeer-front.webp',
+                'Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-sfeer-perspectief.webp',
+                'Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-sfeer-topdown-groot.webp',
+                'Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-sfeer-topdown.webp',
+                'Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-topdown-groot.webp',
+                'Floer-Hongaarse-Punt-PVC-Onbehandeld-Eiken-topdown.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Hungarian Point Vinyl - Untreated Oak - Premium hongaarse-punt vinyl flooring",
-                "bg": "Винил Унгарска Точка - Необработен Дъб - Премиум hongaarse-punt винилова настилка"
+            'displayImages': [1, 6],
+            'imageAlt': {
+                'en': 'Hungarian Point Vinyl - Untreated Oak - Premium hongaarse-punt vinyl flooring',
+                'bg': 'Винил Унгарска Точка - Необработен Дъб - Премиум hongaarse-punt винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Унгарска Точка - Необработен Дъб",
-                    "description": "Винил Унгарска Точка - Необработен Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "megamat",
-                        "phthalate-free",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Шеврон класик',
+                    'description':
+                        'Шеврон Untreated Oak – елегантно съчетание между класически дизайн и съвременна функционалност. Луксозен винилов под с реалистична дъбова визия и традиционен шеврон мотив, изрязан прецизно под ъгъл 60°. Размерът на ламелите е 55 x 15.9 см, което осигурява динамична и хармонична визия. Монтажът чрез залепване гарантира безшевен и изискан завършек с висока издръжливост. 100% водоустойчив, с матова MEGAMAT® повърхност, без фталати и напълно съвместим с подово отопление. Холандско качество с 20-годишна гаранция, подходящ за интензивно натоварени помещения и модерни интериори.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Унгарска Точка - Необработен Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Унгарска Точка - Необработен Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "hongaarse-punt винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Шеврон Untreated Oak | Луксозен водоустойчив винилов под | Floer',
+                        'description':
+                            'Шеврон Untreated Oak – класически шеврон дизайн, 100% водоустойчив, матова MEGAMAT® повърхност. Холандско качество с 20-годишна гаранция. Подходящ за подово отопление и интензивно натоварени помещения.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'водоустойчив винил',
+                            'ПВЦ под България',
+                            'MEGAMAT покритие',
+                            'винил за подово отопление',
+                            'винил за залепване',
+                            'шеврон винилов под',
+                            'винилова настилка за интензивно натоварване',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Hungarian Point Vinyl - Untreated Oak",
-                    "description": "Discover Floer Chevron Vinyl - Untreated Oak, the perfect blend of classic and contemporary! The oak vinyl floor in the traditional Chevron pattern is cut at a 60 degree angle. In addition, the planks have a size of 55 x 15.9 cm. This creates a dynamic look that is both timeless and modern. nChevro...",
-                    "features": [
-                        "megamat",
-                        "phthalate-free",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Chevron Untreated Oak',
+                    'description':
+                        "Experience the timeless elegance of Chevron Untreated Oak – a perfect harmony of classic craftsmanship and contemporary style. This premium oak-effect vinyl floor features the traditional Chevron pattern, precisely cut at a 60° angle for a dynamic, sophisticated look. Each plank measures 55 x 15.9 cm, creating a seamless visual flow. Designed for glue-down installation, it delivers a smooth, refined finish with exceptional durability. 100% waterproof with MEGAMAT® matte surface, phthalate-free construction, and fully compatible with underfloor heating. Backed by a 20-year residential warranty, it's ideal for high-traffic areas and modern interiors.",
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Hungarian Point Vinyl - Untreated Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Hungarian Point Vinyl - Untreated Oak: Discover Floer Chevron Vinyl - Untreated Oak, the perfect blend of classic and contemporary! The oak vinyl floor in the ... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "hongaarse-punt vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "hungarian point vinyl"
-                        ]
+                    'seo': {
+                        'title': 'Chevron Untreated Oak | Premium Waterproof Vinyl Flooring | Floer',
+                        'description':
+                            'Chevron Untreated Oak – classic Chevron pattern, 100% waterproof, MEGAMAT® matte finish. 20-year warranty. Perfect for underfloor heating and high-traffic interiors. Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'chevron vinyl floor',
+                            'waterproof vinyl flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'glue-down vinyl',
+                            'luxury vinyl tiles',
+                            'high-traffic flooring',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 12,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.121Z",
-                "updatedAt": "2025-10-08T12:06:47.888Z"
+            'metadata': {
+                'totalImages': 12,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.121Z',
+                'updatedAt': '2025-10-08T12:06:47.888Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "550",
-                    "thickness": "3",
-                    "width": "159"
+            'specifications': {
+                'dimensions': {
+                    'length': '550',
+                    'thickness': '3',
+                    'width': '159',
                 },
-                "appearance": {
-                    "colorCode": "brown-white",
-                    "finishCode": "megamat",
-                    "structureCode": "textured",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown-white',
+                    'finishCode': 'megamat',
+                    'structureCode': 'textured',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "underfloorHeatingCode": "suitable",
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'underfloorHeatingCode': 'suitable',
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3571",
-            "slug": "hungarian-point-hungarian-point-nature-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "hongaarse-punt",
-            "installationSystem": "glue-down",
-            "price": 44.95,
-            "gtin": "8719425249278",
-            "categories": "Chevron Vinyl",
-            "images": [
-                "Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-detail.webp",
-                "Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-front.webp",
-                "Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-patroon.webp",
-                "Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-perspectief.webp",
-                "Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-sfeer-front-akupanel.webp",
-                "Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-sfeer-front.webp",
-                "Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-sfeer-perspectief-akupanel.webp",
-                "Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-sfeer-perspectief.webp",
-                "Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-topdown-groot.webp",
-                "Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-topdown-product.webp",
-                "Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-topdown-sfeer-groot.webp",
-                "Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-topdown-sfeer-product.webp"
+            'sku': 'FLR-3571',
+            'slug': 'hungarian-point-hungarian-point-nature-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'hongaarse-punt',
+            'installationSystem': 'glue-down',
+            'price': 44.95,
+            'gtin': '8719425249278',
+            'categories': 'Chevron Vinyl',
+            'images': [
+                'Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-detail.webp',
+                'Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-front.webp',
+                'Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-patroon.webp',
+                'Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-perspectief.webp',
+                'Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-sfeer-front-akupanel.webp',
+                'Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-sfeer-front.webp',
+                'Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-sfeer-perspectief-akupanel.webp',
+                'Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-sfeer-perspectief.webp',
+                'Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-topdown-groot.webp',
+                'Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-topdown-product.webp',
+                'Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-topdown-sfeer-groot.webp',
+                'Floer-Hongaarse-punt-PVC-vloer-Natuur-Eiken-topdown-sfeer-product.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Hungarian Point Vinyl - Natural Oak - Premium hongaarse-punt vinyl flooring",
-                "bg": "Винил Унгарска Точка - Естествен Дъб - Премиум hongaarse-punt винилова настилка"
+            'displayImages': [0, 10],
+            'imageAlt': {
+                'en': 'Hungarian Point Vinyl - Natural Oak - Premium hongaarse-punt vinyl flooring',
+                'bg': 'Винил Унгарска Точка - Естествен Дъб - Премиум hongaarse-punt винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Унгарска Точка - Естествен Дъб",
-                    "description": "Винил Унгарска Точка - Естествен Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "megamat",
-                        "phthalate-free",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Шеврон естествен Дъб',
+                    'description':
+                        'Шеврон Естествен Дъб – премиум винилов под, който съчетава класическа елегантност с модерна функционалност. Изработен в традиционен шеврон модел с прецизно изрязване под ъгъл 60°, всяка ламела е с размер 55 x 15.9 см, създавайки динамична и неподвластна на времето визия. Монтажът чрез залепване осигурява безшевен и изискан завършек, подходящ както за жилищни, така и за търговски пространства. 100% водоустойчив, с матово MEGAMAT покритие, съвместим с подово отопление. Сертифициран по REACH за безопасност и екологичност, с 20-годишна гаранция за спокойствие и дълготрайност.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Унгарска Точка - Естествен Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Унгарска Точка - Естествен Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "hongaarse-punt винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Шеврон Естествен Дъб | Премиум винилов под | Eco Vibe Floors',
+                        'description':
+                            'Шеврон Естествен Дъб – 100% водоустойчив винилов под с матово MEGAMAT покритие. REACH сертификат, съвместим с подово отопление, 20-годишна гаранция. Безплатна доставка.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'шеврон винилов под',
+                            'водоустойчив винил',
+                            'ПВЦ под България',
+                            'матово MEGAMAT покритие',
+                            'подово отопление',
+                            'винил за залепване',
+                            'премиум винилови настилки',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Hungarian Point Vinyl - Natural Oak",
-                    "description": "Discover Floer Chevron Vinyl - Natural Oak, the perfect blend of classic and contemporary! The oak vinyl floor in the traditional Chevron pattern is cut at a 60 degree angle. In addition, the planks have a size of 55 x 15.9 cm. This creates a dynamic look that is both timeless and modern. nChevron ...",
-                    "features": [
-                        "megamat",
-                        "phthalate-free",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Chevron Natural Oak',
+                    'description':
+                        'Experience the elegance of Chevron Natural Oak – a luxurious vinyl floor that perfectly balances classic style with modern sophistication. Crafted in the traditional Chevron pattern with precise 60° cuts, each plank measures 55 x 15.9 cm, creating a dynamic and timeless visual appeal. Designed for glue-down installation, it delivers a seamless, refined finish ideal for both residential and commercial interiors. Featuring 100% waterproof protection, MEGAMAT matte finish, and compatibility with underfloor heating, this floor is as practical as it is beautiful. REACH-certified for eco-friendly safety and backed by a 20-year warranty.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Hungarian Point Vinyl - Natural Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Hungarian Point Vinyl - Natural Oak: Discover Floer Chevron Vinyl - Natural Oak, the perfect blend of classic and contemporary! The oak vinyl floor in the tr... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "hongaarse-punt vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "hungarian point vinyl"
-                        ]
+                    'seo': {
+                        'title': 'Chevron Natural Oak | Luxury Vinyl Flooring | Eco Vibe Floors',
+                        'description':
+                            'Chevron Natural Oak – classic meets contemporary in a 100% waterproof vinyl floor with MEGAMAT matte finish. REACH-certified, underfloor heating compatible, 20-year warranty. Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'chevron vinyl floor',
+                            'waterproof vinyl flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'hungarian point vinyl',
+                            'luxury vinyl floor',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 12,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.120Z",
-                "updatedAt": "2025-10-08T12:06:47.889Z"
+            'metadata': {
+                'totalImages': 12,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.120Z',
+                'updatedAt': '2025-10-08T12:06:47.889Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "550",
-                    "thickness": "3",
-                    "width": "159"
+            'specifications': {
+                'dimensions': {
+                    'length': '550',
+                    'thickness': '3',
+                    'width': '159',
                 },
-                "appearance": {
-                    "colorCode": "brown-white",
-                    "finishCode": "megamat",
-                    "structureCode": "textured",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown-white',
+                    'finishCode': 'megamat',
+                    'structureCode': 'textured',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "underfloorHeatingCode": "suitable",
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'underfloorHeatingCode': 'suitable',
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
         },
         {
-            "sku": "FLR-3233",
-            "slug": "country-house-nature-eik",
-            "collection": "glue-down-vinyl",
-            "pattern": "landhuis",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425249759",
-            "categories": "Country House Vinyl",
-            "images": [
-                "Floer-Landhuis-PVC-Natuur-Eik-closeup.webp",
-                "Floer-Landhuis-PVC-Natuur-Eik-detail.webp",
-                "Floer-Landhuis-PVC-Natuur-Eik-front.webp",
-                "Floer-Landhuis-PVC-Natuur-Eik-Perspectief.webp",
-                "Floer-Landhuis-PVC-Natuur-Eik-sfeer-perspectief.webp",
-                "Floer-Landhuis-PVC-Natuur-Eik-sfeer-topdown-2.webp",
-                "Floer-Landhuis-PVC-Natuur-Eik-sfeer-topdown.webp",
-                "Floer-Landhuis-PVC-Natuur-Eik-sfeer.webp",
-                "Floer-Landhuis-PVC-Natuur-Eik-topdown-groot.webp",
-                "Floer-Landhuis-PVC-Natuur-Eik-topdown.webp",
-                "Floer-Landhuis-PVC-vloer-Natuur-Eik-woonkamer-1.webp",
-                "Floer-Landhuis-PVC-vloer-Natuur-Eik-woonkamer-11.webp"
+            'sku': 'FLR-3233',
+            'slug': 'country-house-nature-eik',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'landhuis',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425249759',
+            'categories': 'Country House Vinyl',
+            'images': [
+                'Floer-Landhuis-PVC-Natuur-Eik-closeup.webp',
+                'Floer-Landhuis-PVC-Natuur-Eik-detail.webp',
+                'Floer-Landhuis-PVC-Natuur-Eik-front.webp',
+                'Floer-Landhuis-PVC-Natuur-Eik-Perspectief.webp',
+                'Floer-Landhuis-PVC-Natuur-Eik-sfeer-perspectief.webp',
+                'Floer-Landhuis-PVC-Natuur-Eik-sfeer-topdown-2.webp',
+                'Floer-Landhuis-PVC-Natuur-Eik-sfeer-topdown.webp',
+                'Floer-Landhuis-PVC-Natuur-Eik-sfeer.webp',
+                'Floer-Landhuis-PVC-Natuur-Eik-topdown-groot.webp',
+                'Floer-Landhuis-PVC-Natuur-Eik-topdown.webp',
+                'Floer-Landhuis-PVC-vloer-Natuur-Eik-woonkamer-1.webp',
+                'Floer-Landhuis-PVC-vloer-Natuur-Eik-woonkamer-11.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Natural Eik - Premium landhuis vinyl flooring",
-                "bg": "Естествен Eik - Премиум landhuis винилова настилка"
+            'displayImages': [1, 6],
+            'imageAlt': {
+                'en': 'Natural Eik - Premium landhuis vinyl flooring',
+                'bg': 'Естествен Eik - Премиум landhuis винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Естествен Eik",
-                    "description": "Естествен Eik - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating",
-                        "20-year factory warranty"
+            'i18n': {
+                'bg': {
+                    'name': 'Естествен дъб',
+                    'description':
+                        ' Естествен дъб е премиум винилов под за залепване, създаден да впечатлява. XXL дъски с размери 154 см дължина и 31 см ширина, в топъл дъбов десен с богат характер, придават стил и усещане за простор на всяко помещение – от рустик до модерен интериор. 100% водоустойчив, устойчив на драскотини и удари, подходящ за подово отопление и интензивно натоварване. Екологично производство със сертификат REACH и фабрична 20-годишна гаранция осигуряват красота и дълготрайна издръжливост. Идеален избор за жилищни и търговски пространства с професионален монтаж.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Естествен Eik | Луксозен Винилов Под | Floer България",
-                        "description": "Естествен Eik - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "landhuis винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Естествен дъб | Премиум винилов под за залепване | България',
+                        'description':
+                            'Естествен дъб – 100% водоустойчив винилов под за залепване със сертификат REACH. XXL дъски с MEGAMAT покритие, подходящ за подово отопление. 20 години гаранция. ⭐ Безплатна доставка в България.',
+                        'keywords': [
+                            'винилов под',
+                            'винилов под за залепване',
+                            'водоустойчив винилов под',
+                            'ПВЦ под България',
+                            'MEGAMAT покритие',
+                            'под за подово отопление',
+                            'луксозен винилов под',
+                            'country house винил',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Natural Eik",
-                    "description": "The Floer Country House Vinyl – Natural Oak is a floor that makes an impression. Thanks to the extra wide XXL planks and warm oak look full of character, you can give every room a stylish. With lengths of 154 cm and widths of 31 cm, you create an extremely spacious feeling.Whether you prefer a rural...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating",
-                        "20-year factory warranty"
+                'en': {
+                    'name': 'Natural Оак',
+                    'description':
+                        'The  Natural Oak is a premium floor designed to impress. Featuring extra-wide XXL planks in a warm, character-rich oak design, it brings a stylish and spacious feel to any interior. With lengths of 154 cm and widths of 31 cm, this format creates an open, luxurious atmosphere whether your style is rustic or modern. Crafted to be 100% waterproof, scratch and impact resistant, and suitable for underfloor heating, it is ideal for intensive residential or commercial use. Produced in an eco-friendly, REACH-certified process and backed by a 20-year factory warranty, it offers both beauty and long-term performance.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Natural Eik | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Natural Eik: The Floer Country House Vinyl – Natural Oak is a floor that makes an impression. Thanks to the extra wide XXL planks and... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "landhuis vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "country house vinyl"
-                        ]
+                    'seo': {
+                        'title': 'Natural Oak | Premium Glue-Down Vinyl Flooring | Bulgaria',
+                        'description':
+                            'Natural Oak – 100% waterproof glue-down vinyl flooring with REACH certification. Extra-wide XXL planks, MEGAMAT finish, suitable for underfloor heating. 20-year warranty. ⭐ Free delivery in Bulgaria.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'glue-down vinyl',
+                            'waterproof flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'country house vinyl',
+                            'luxury vinyl plank',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 12,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.125Z",
-                "updatedAt": "2025-10-08T12:06:47.889Z"
+            'metadata': {
+                'totalImages': 12,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.125Z',
+                'updatedAt': '2025-10-08T12:06:47.889Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1540",
-                    "thickness": "3",
-                    "width": "310"
+            'specifications': {
+                'dimensions': {
+                    'length': '1540',
+                    'thickness': '3',
+                    'width': '310',
                 },
-                "appearance": {
-                    "colorCode": "brown",
-                    "finishCode": "megamat",
-                    "structureCode": "tangible",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown',
+                    'finishCode': 'megamat',
+                    'structureCode': 'tangible',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "underfloorHeatingCode": "suitable",
-                    "waterResistanceCode": "good",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'underfloorHeatingCode': 'suitable',
+                    'waterResistanceCode': 'good',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001, REACH"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001, REACH',
+                },
+            },
         },
         {
-            "sku": "FLR-3230",
-            "slug": "country-house-landelijke-eik",
-            "collection": "glue-down-vinyl",
-            "pattern": "landhuis",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425249728",
-            "categories": "Country House Vinyl",
-            "images": [
-                "Floer-Landhuis-PVC-Landelijke-Eik-closeup.webp",
-                "Floer-Landhuis-PVC-Landelijke-Eik-detail.webp",
-                "Floer-Landhuis-PVC-Landelijke-Eik-front.webp",
-                "Floer-Landhuis-PVC-Landelijke-Eik-Perspectief.webp",
-                "Floer-Landhuis-PVC-Landelijke-Eik-sfeer-akupanel.webp",
-                "Floer-Landhuis-PVC-Landelijke-Eik-sfeer-perspectief-akupanel.webp",
-                "Floer-Landhuis-PVC-Landelijke-Eik-sfeer-perspectief.webp",
-                "Floer-Landhuis-PVC-Landelijke-Eik-sfeer-topdown-groot.webp",
-                "Floer-Landhuis-PVC-Landelijke-Eik-sfeer-topdown.webp",
-                "Floer-Landhuis-PVC-Landelijke-Eik-sfeer.webp",
-                "Floer-Landhuis-PVC-Landelijke-Eik-topdown-groot.webp",
-                "Floer-Landhuis-PVC-Landelijke-Eik-topdown.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-1.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-10.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-11.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-12.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-13.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-14.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-15.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-2.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-4.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-5.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-6.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-7.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-8.webp",
-                "Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-9.webp"
+            'sku': 'FLR-3230',
+            'slug': 'country-house-landelijke-eik',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'landhuis',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425249728',
+            'categories': 'Country House Vinyl',
+            'images': [
+                'Floer-Landhuis-PVC-Landelijke-Eik-closeup.webp',
+                'Floer-Landhuis-PVC-Landelijke-Eik-detail.webp',
+                'Floer-Landhuis-PVC-Landelijke-Eik-front.webp',
+                'Floer-Landhuis-PVC-Landelijke-Eik-Perspectief.webp',
+                'Floer-Landhuis-PVC-Landelijke-Eik-sfeer-akupanel.webp',
+                'Floer-Landhuis-PVC-Landelijke-Eik-sfeer-perspectief-akupanel.webp',
+                'Floer-Landhuis-PVC-Landelijke-Eik-sfeer-perspectief.webp',
+                'Floer-Landhuis-PVC-Landelijke-Eik-sfeer-topdown-groot.webp',
+                'Floer-Landhuis-PVC-Landelijke-Eik-sfeer-topdown.webp',
+                'Floer-Landhuis-PVC-Landelijke-Eik-sfeer.webp',
+                'Floer-Landhuis-PVC-Landelijke-Eik-topdown-groot.webp',
+                'Floer-Landhuis-PVC-Landelijke-Eik-topdown.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-1.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-10.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-11.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-12.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-13.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-14.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-15.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-2.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-4.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-5.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-6.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-7.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-8.webp',
+                'Floer-Landhuis-PVC-vloer-Landelijke-Eik-woonkamer-9.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Landelijke Eik - Premium landhuis vinyl flooring",
-                "bg": "Landelijke Eik - Премиум landhuis винилова настилка"
+            'displayImages': [1, 5],
+            'imageAlt': {
+                'en': 'Landelijke Eik - Premium landhuis vinyl flooring',
+                'bg': 'Landelijke Eik - Премиум landhuis винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Landelijke Eik",
-                    "description": "Landelijke Eik - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating",
-                        "20-year factory warranty"
+            'i18n': {
+                'bg': {
+                    'name': 'Английски дъб',
+                    'description':
+                        'Английски дъб – луксозен винилов под за залепване от колекцията Landhuis, създаден да впечатлява. Екстра широките XXL дъски с дължина 154 см и ширина 31 см придават изключително просторно усещане във всяко помещение. Топлият дъбов десен с богата текстура носи неподвластен на времето стил, подходящ както за модерен, така и за рустик интериор. 100% водоустойчива конструкция с матово покритие MEGAMAT и съвместимост с подово отопление осигуряват практична издръжливост и лесна поддръжка. Холандско качество с 20-годишна гаранция – идеален избор за кухни, бани и помещения с интензивно натоварване.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Landelijke Eik | Луксозен Винилов Под | Floer България",
-                        "description": "Landelijke Eik - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "landhuis винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Английски дъб | Луксозен винилов под за залепване | Холандско качество',
+                        'description':
+                            'Английски дъб – XXL дъски с топъл дъбов десен. 100% водоустойчив, MEGAMAT матово покритие, подходящ за подово отопление. Холандско качество с 20-годишна гаранция – за кухни, бани и натоварени помещения.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'винилов под за залепване',
+                            'landhuis винилов под',
+                            'водоустойчив винил',
+                            'ПВЦ под България',
+                            'MEGAMAT покритие',
+                            'под за подово отопление',
+                            'XXL винилови дъски',
+                            'винилов под за кухня',
+                            'винилов под за баня',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Landelijke Eik",
-                    "description": "The Floer Country House Vinyl – Country Oak is a floor that makes an impression. Thanks to the extra wide XXL planks and warm oak look full of character, you can give every room a stylish. With lengths of 154 cm and widths of 31 cm, you create an extremely spacious feeling.Whether you prefer a rural...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating",
-                        "20-year factory warranty"
+                'en': {
+                    'name': 'English Oak',
+                    'description':
+                        'The  English Oak is a premium glue-down vinyl floor designed to impress. Featuring extra-wide XXL planks at 154 cm in length and 31 cm in width, it creates an exceptionally spacious feel in any room. The warm oak design, rich in character, adds timeless style to both modern and rustic interiors. With a 100% waterproof core, MEGAMAT matte finish, and compatibility with underfloor heating, this floor combines luxury aesthetics with practical durability. Backed by a 20-year residential warranty, it is ideal for kitchens, bathrooms, and high-traffic living spaces.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Landelijke Eik | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Landelijke Eik: The Floer Country House Vinyl – Country Oak is a floor that makes an impression. Thanks to the extra wide XXL planks and... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "landhuis vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "country house vinyl"
-                        ]
+                    'seo': {
+                        'title': 'English Oak | Premium Glue-Down Vinyl Flooring | Eco Vibe Floors',
+                        'description':
+                            'English Oak – extra-wide XXL planks with warm oak character. 100% waterproof, MEGAMAT matte finish, underfloor heating compatible. 20-year warranty. Perfect for kitchens, bathrooms, and living spaces.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'glue-down vinyl',
+                            'landhuis vinyl',
+                            'waterproof flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'country house vinyl',
+                            'XXL vinyl planks',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 26,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.124Z",
-                "updatedAt": "2025-10-08T12:06:47.889Z"
+            'metadata': {
+                'totalImages': 26,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.124Z',
+                'updatedAt': '2025-10-08T12:06:47.889Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1540",
-                    "thickness": "3",
-                    "width": "310"
+            'specifications': {
+                'dimensions': {
+                    'length': '1540',
+                    'thickness': '3',
+                    'width': '310',
                 },
-                "appearance": {
-                    "colorCode": "brown",
-                    "finishCode": "megamat",
-                    "structureCode": "tangible",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown',
+                    'finishCode': 'megamat',
+                    'structureCode': 'tangible',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "underfloorHeatingCode": "suitable",
-                    "waterResistanceCode": "good",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'underfloorHeatingCode': 'suitable',
+                    'waterResistanceCode': 'good',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001, REACH"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001, REACH',
+                },
+            },
         },
         {
-            "sku": "FLR-3235",
-            "slug": "country-house-cream-eik",
-            "collection": "glue-down-vinyl",
-            "pattern": "landhuis",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425249773",
-            "categories": "Country House Vinyl",
-            "images": [
-                "Floer-Landhuis-PVC-Creme-Eik-closeup.webp",
-                "Floer-Landhuis-PVC-Creme-Eik-detail.webp",
-                "Floer-Landhuis-PVC-Creme-Eik-front.webp",
-                "Floer-Landhuis-PVC-Creme-Eik-Perspectief.webp",
-                "Floer-Landhuis-PVC-Creme-Eik-sfeer-perspectief-akupanel.webp",
-                "Floer-Landhuis-PVC-Creme-Eik-sfeer-topdown-groot.webp",
-                "Floer-Landhuis-PVC-Creme-Eik-sfeer-topdown.webp",
-                "Floer-Landhuis-PVC-Creme-Eik-topdown-groot.webp",
-                "Floer-Landhuis-PVC-Creme-Eik-topdown.webp",
-                "Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-1.webp",
-                "Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-10.webp",
-                "Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-12.webp",
-                "Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-13.webp",
-                "Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-2.webp",
-                "Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-3.webp",
-                "Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-4.webp",
-                "Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-5.webp",
-                "Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-6.webp",
-                "Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-7.webp",
-                "Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-8.webp",
-                "Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-9.webp"
+            'sku': 'FLR-3235',
+            'slug': 'country-house-cream-eik',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'landhuis',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425249773',
+            'categories': 'Country House Vinyl',
+            'images': [
+                'Floer-Landhuis-PVC-Creme-Eik-closeup.webp',
+                'Floer-Landhuis-PVC-Creme-Eik-detail.webp',
+                'Floer-Landhuis-PVC-Creme-Eik-front.webp',
+                'Floer-Landhuis-PVC-Creme-Eik-Perspectief.webp',
+                'Floer-Landhuis-PVC-Creme-Eik-sfeer-perspectief-akupanel.webp',
+                'Floer-Landhuis-PVC-Creme-Eik-sfeer-topdown-groot.webp',
+                'Floer-Landhuis-PVC-Creme-Eik-sfeer-topdown.webp',
+                'Floer-Landhuis-PVC-Creme-Eik-topdown-groot.webp',
+                'Floer-Landhuis-PVC-Creme-Eik-topdown.webp',
+                'Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-1.webp',
+                'Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-10.webp',
+                'Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-12.webp',
+                'Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-13.webp',
+                'Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-2.webp',
+                'Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-3.webp',
+                'Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-4.webp',
+                'Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-5.webp',
+                'Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-6.webp',
+                'Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-7.webp',
+                'Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-8.webp',
+                'Floer-Landhuis-PVC-vloer-Creme-Eik-woonkamer-9.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Crème Eik - Premium landhuis vinyl flooring",
-                "bg": "Crème Eik - Премиум landhuis винилова настилка"
+            'displayImages': [1, 15],
+            'imageAlt': {
+                'en': 'Crème Eik - Premium landhuis vinyl flooring',
+                'bg': 'Crème Eik - Премиум landhuis винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Crème Eik",
-                    "description": "Crème Eik - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating",
-                        "20-year factory warranty"
+            'i18n': {
+                'bg': {
+                    'name': 'Светъл дъб',
+                    'description':
+                        'Светъл дъб от серията  впечатляваща винилова настилка с XXL дъски (154 см дължина, 31 см ширина) и топъл дъбов дизайн, богат на характер. Създава усещане за простор и уют, подходяща както за рустик, така и за модерен интериор. 100% водоустойчив под с премиум MEGAMAT покритие, съвместим с подово отопление и проектиран за интензивно натоварване. Холандско качество с 20-годишна фабрична гаранция – издръжливост и красота за години напред.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Crème Eik | Луксозен Винилов Под | Floer България",
-                        "description": "Crème Eik - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "landhuis винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Светъл дъб | Премиум водоустойчив винилов под | Холандско качество',
+                        'description':
+                            'Светъл дъб  XXL дъски с топъл дъбов дизайн. 100% водоустойчив, MEGAMAT покритие, подходящ за подово отопление, 20-годишна гаранция. ⭐ Безплатна доставка.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'водоустойчив винил',
+                            'ПВЦ под България',
+                            'MEGAMAT покритие',
+                            'винилов под за подово отопление',
+                            'landhuis винилов под',
+                            'XXL винилови дъски',
+                            'винил за лепене',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Crème Eik",
-                    "description": "The Floer Country House Vinyl – Cream Oak is a floor that makes an impression. Thanks to the extra wide XXL planks and warm oak look full of character, you can give every room a stylish. With lengths of 154 cm and widths of 31 cm, you create an extremely spacious feeling.Whether you prefer a rural a...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating",
-                        "20-year factory warranty"
+                'en': {
+                    'name': 'Crеам Оак',
+                    'description':
+                        'The  Light Oak is a statement floor that transforms any space. Featuring extra-wide XXL planks (154 cm long, 31 cm wide) with a warm and character-rich oak design, it creates an inviting and spacious atmosphere. Perfectly suited to both rustic and modern interiors, this 100% waterproof floor boasts the premium MEGAMAT finish, is compatible with underfloor heating, and built for intensive use. Backed by a 20-year factory warranty, it offers lasting beauty and performance.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Crème Eik | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Crème Eik: The Floer Country House Vinyl – Cream Oak is a floor that makes an impression. Thanks to the extra wide XXL planks and w... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "landhuis vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "country house vinyl"
-                        ]
+                    'seo': {
+                        'title': 'Light Oak | Premium Waterproof Vinyl Flooring | Eco Vibe Floors',
+                        'description':
+                            'Light Oak  XXL planks with warm oak design. 100% waterproof, MEGAMAT finish, underfloor heating compatible, 20-year warranty. ⭐ Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'landhuis vinyl',
+                            'waterproof vinyl flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'country house vinyl',
+                            'XXL vinyl planks',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 21,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.122Z",
-                "updatedAt": "2025-10-08T12:06:47.890Z"
+            'metadata': {
+                'totalImages': 21,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.122Z',
+                'updatedAt': '2025-10-08T12:06:47.890Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1540",
-                    "thickness": "3",
-                    "width": "310"
+            'specifications': {
+                'dimensions': {
+                    'length': '1540',
+                    'thickness': '3',
+                    'width': '310',
                 },
-                "appearance": {
-                    "colorCode": "brown",
-                    "finishCode": "megamat",
-                    "structureCode": "tangible",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown',
+                    'finishCode': 'megamat',
+                    'structureCode': 'tangible',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "underfloorHeatingCode": "suitable",
-                    "waterResistanceCode": "good",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'underfloorHeatingCode': 'suitable',
+                    'waterResistanceCode': 'good',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001, REACH"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001, REACH',
+                },
+            },
         },
         {
-            "sku": "FLR-3234",
-            "slug": "country-house-grijze-eik",
-            "collection": "glue-down-vinyl",
-            "pattern": "landhuis",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425249766",
-            "categories": "Country House Vinyl",
-            "images": [
-                "Floer-Landhuis-PVC-Grijze-Eik-detail.webp",
-                "Floer-Landhuis-PVC-Grijze-Eik-front-akupanel.webp",
-                "Floer-Landhuis-PVC-Grijze-Eik-front.webp",
-                "Floer-Landhuis-PVC-Grijze-Eik-perspectief-akupanel.webp",
-                "Floer-Landhuis-PVC-Grijze-Eik-perspectief.webp",
-                "Floer-Landhuis-PVC-Grijze-Eik-topdown-groot-sfeer.webp",
-                "Floer-Landhuis-PVC-Grijze-Eik-topdown-groot.webp",
-                "Floer-Landhuis-PVC-Grijze-Eik-topdown-sfeer.webp",
-                "Floer-Landhuis-PVC-Grijze-Eik-topdown.webp",
-                "Floer-Landhuis-PVC-Grijze-Eik-velling.webp",
-                "Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-1.webp",
-                "Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-11.webp",
-                "Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-12.webp",
-                "Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-14.webp",
-                "Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-2.webp",
-                "Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-3.webp",
-                "Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-4.webp",
-                "Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-5.webp",
-                "Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-7.webp",
-                "Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-8.webp",
-                "Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-9.webp"
+            'sku': 'FLR-3234',
+            'slug': 'country-house-grijze-eik',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'landhuis',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425249766',
+            'categories': 'Country House Vinyl',
+            'images': [
+                'Floer-Landhuis-PVC-Grijze-Eik-detail.webp',
+                'Floer-Landhuis-PVC-Grijze-Eik-front-akupanel.webp',
+                'Floer-Landhuis-PVC-Grijze-Eik-front.webp',
+                'Floer-Landhuis-PVC-Grijze-Eik-perspectief-akupanel.webp',
+                'Floer-Landhuis-PVC-Grijze-Eik-perspectief.webp',
+                'Floer-Landhuis-PVC-Grijze-Eik-topdown-groot-sfeer.webp',
+                'Floer-Landhuis-PVC-Grijze-Eik-topdown-groot.webp',
+                'Floer-Landhuis-PVC-Grijze-Eik-topdown-sfeer.webp',
+                'Floer-Landhuis-PVC-Grijze-Eik-topdown.webp',
+                'Floer-Landhuis-PVC-Grijze-Eik-velling.webp',
+                'Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-1.webp',
+                'Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-11.webp',
+                'Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-12.webp',
+                'Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-14.webp',
+                'Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-2.webp',
+                'Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-3.webp',
+                'Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-4.webp',
+                'Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-5.webp',
+                'Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-7.webp',
+                'Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-8.webp',
+                'Floer-Landhuis-PVC-vloer-Grijze-Eik-woonkamer-9.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Grijze Eik - Premium landhuis vinyl flooring",
-                "bg": "Grijze Eik - Премиум landhuis винилова настилка"
+            'displayImages': [9, 11],
+            'imageAlt': {
+                'en': 'Grijze Eik - Premium landhuis vinyl flooring',
+                'bg': 'Grijze Eik - Премиум landhuis винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Grijze Eik",
-                    "description": "Grijze Eik - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating",
-                        "20-year factory warranty"
+            'i18n': {
+                'bg': {
+                    'name': 'Сив дъб',
+                    'description':
+                        ' Сив дъб е премиум винилова настилка, която придава елегантност и простор на всяко помещение. XXL дъски с размери 154 см дължина × 31 см ширина и топъл дъбов десен с богата текстура създават стилна атмосфера – идеална както за рустик, така и за модерен интериор. 100% водоустойчив дизайн с матово покритие MEGAMAT, подходящ за подово отопление. Монтаж чрез залепване за професионален резултат. Холандско качество с 20-годишна гаранция за спокойствие и дълготрайна употреба.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Grijze Eik | Луксозен Винилов Под | Floer България",
-                        "description": "Grijze Eik - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "landhuis винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Сив дъб | Премиум винилов под Country House Vinyl',
+                        'description':
+                            'Сив дъб – XXL дъски с топъл дъбов десен. 100% водоустойчив, матово покритие MEGAMAT, подходящ за подово отопление. Монтаж чрез залепване. Холандско качество с 20-годишна гаранция.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'винилови настилки България',
+                            'водоустойчив винилов под',
+                            'ПВЦ под',
+                            'винилов под за подово отопление',
+                            'винил за залепване',
+                            'премиум винилов под',
+                            'XXL винилови дъски',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Grijze Eik",
-                    "description": "The Floer Country House Vinyl – Grey Oak is a floor that makes an impression. Thanks to the extra wide XXL planks and warm oak look full of character, you can give every room a stylish. With lengths of 154 cm and widths of 31 cm, you create an extremely spacious feeling.Whether you prefer a rural at...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating",
-                        "20-year factory warranty"
+                'en': {
+                    'name': 'Gray oak',
+                    'description':
+                        'The  Gray Oak is a premium floor that instantly elevates any interior. Featuring extra-wide XXL planks (154 cm length × 31 cm width) and a warm, character-rich oak design, it creates an exceptionally spacious and stylish atmosphere. Perfectly suited to both rustic and modern interiors, Gray Oak combines authentic wood aesthetics with practical benefits: 100% waterproof construction, MEGAMAT matte finish, and compatibility with underfloor heating. Professionally installed via glue-down method, backed by a 20-year residential warranty for lasting peace of mind.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Grijze Eik | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Grijze Eik: The Floer Country House Vinyl – Grey Oak is a floor that makes an impression. Thanks to the extra wide XXL planks and wa... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "landhuis vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "country house vinyl"
-                        ]
+                    'seo': {
+                        'title': 'Gray Oak | Premium Country House Vinyl Flooring',
+                        'description':
+                            'Gray Oak – XXL planks with warm oak character. 100% waterproof, MEGAMAT matte finish, underfloor heating compatible. Glue-down installation. 20-year warranty. Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'country house vinyl',
+                            'waterproof vinyl floor',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'glue-down vinyl',
+                            'luxury vinyl plank',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 21,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.123Z",
-                "updatedAt": "2025-10-08T12:06:47.890Z"
+            'metadata': {
+                'totalImages': 21,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.123Z',
+                'updatedAt': '2025-10-08T12:06:47.890Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1540",
-                    "thickness": "3",
-                    "width": "310"
+            'specifications': {
+                'dimensions': {
+                    'length': '1540',
+                    'thickness': '3',
+                    'width': '310',
                 },
-                "appearance": {
-                    "colorCode": "brown",
-                    "finishCode": "megamat",
-                    "structureCode": "tangible",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown',
+                    'finishCode': 'megamat',
+                    'structureCode': 'tangible',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "underfloorHeatingCode": "suitable",
-                    "waterResistanceCode": "good",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'underfloorHeatingCode': 'suitable',
+                    'waterResistanceCode': 'good',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001, REACH"
-                }
-            }
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001, REACH',
+                },
+            },
         },
         {
-            "sku": "FLR-3047",
-            "slug": "village-zeewolde-zand-oak",
-            "collection": "glue-down-vinyl",
-            "pattern": "dorpen",
-            "installationSystem": "glue-down",
-            "price": 39.95,
-            "gtin": "8719425240107",
-            "categories": "Village Vinyl",
-            "images": [
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-1.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-10.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-11.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-12.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-13.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-15.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-2.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-3.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-4.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-5.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-6.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-7.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-8.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-9.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-product-foto-2.webp",
-                "Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-product-foto.webp"
+            'sku': 'FLR-3047',
+            'slug': 'village-zeewolde-zand-oak',
+            'collection': 'glue-down-vinyl',
+            'pattern': 'dorpen',
+            'installationSystem': 'glue-down',
+            'price': 39.95,
+            'gtin': '8719425240107',
+            'categories': 'Village Vinyl',
+            'images': [
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-1.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-10.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-11.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-12.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-13.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-15.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-2.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-3.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-4.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-5.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-6.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-7.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-8.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-9.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-product-foto-2.webp',
+                'Floer-Dorpen-PVC-vloer-Zeewolde-Zand-Eiken-product-foto.webp',
             ],
-            "displayImages": [
-                0,
-                1
-            ],
-            "imageAlt": {
-                "en": "Village Vinyl - Zeewolde Zand Oak - Premium dorpen vinyl flooring",
-                "bg": "Винил Селище - Zeewolde Zand Дъб - Премиум dorpen винилова настилка"
+            'displayImages': [15, 6],
+            'imageAlt': {
+                'en': ' Zeewolde Zand Oak - Premium dorpen vinyl flooring',
+                'bg': ' Zeewolde Zand Дъб - Премиум dorpen винилова настилка',
             },
-            "i18n": {
-                "bg": {
-                    "name": "Винил Селище - Zeewolde Zand Дъб",
-                    "description": "Винил Селище - Zeewolde Zand Дъб - луксозен винилов под с реалистична имитация на дърво. Здрава конструкция с реалистична текстура. Залепва се директно върху основата за елегантен и безшевен вид. Професионален монтаж. Характеристики: 100% водоустойчив, устойчив на драскотини и удари, подходящ за влажни помещения, екологично производство със сертификат REACH, подходящ за домакинства с деца, лесна поддръжка и почистване. 15 до 35 години гаранция. Подходящ за подово отопление и интензивно използване.",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+            'i18n': {
+                'bg': {
+                    'name': 'Зийволде пясъчен дъб',
+                    'description':
+                        'Търсите подова настилка, която издържа на интензивно натоварване, влага и ежедневна употреба? Винил Зийволде пясъчен дъб е създаден за най-тежките условия, като същевременно внася елегантен и неподвластен на времето стил във вашия дом или офис. Широките ламели са произведени по екологичен начин, с 100% водонепропусклива конструкция и премиум MEGAMAT матово покритие. Подходящ за подово отопление и професионален монтаж чрез залепване. Холандско качество с 20-годишна гаранция – издръжливост, стил и спокойствие за всяко помещение.',
+                    'features': [
+                        'Изцяло водоустойчив - подходящ за кухни, бани и влажни помещения',
+                        'MEGAMAT покритие (матова противоплъзгаща повърхност)',
+                        'Без фталати - безопасен за деца и домашни любимци',
+                        'Съвместим с подово отопление',
                     ],
-                    "seo": {
-                        "title": "Винил Селище - Zeewolde Zand Дъб | Луксозен Винилов Под | Floer България",
-                        "description": "Винил Селище - Zeewolde Zand Дъб - 100% водоустойчив винилов под с REACH сертификат. Професионален монтаж. 15-35 години гаранция. ⭐ Подходящ за подово отопление и влажни помещения.",
-                        "keywords": [
-                            "винилов под",
-                            "луксозен винилов под",
-                            "LVT под българия",
-                            "dorpen винилов под",
-                            "водоустойчив винил",
-                            "винилов под за подово отопление",
-                            "лепящ винил",
-                            "floer винил българия",
-                            "dryback vinyl",
-                            "винил за лепене",
-                            "професионален винилов под",
-                            "винилова настилка",
-                            "ПВЦ под",
-                            "подови настилки винил",
-                            "устойчив на влага под",
-                            "под за деца",
-                            "екологичен винилов под",
-                            "REACH сертифициран под",
-                            "имитация на дърво винил"
-                        ]
+                    'seo': {
+                        'title': 'Винил Зийволде пясъчен дъб | Премиум водонепропусклив винилов под',
+                        'description':
+                            'Винил Зийволде пясъчен дъб: широки ламели, 100% водонепропусклив, MEGAMAT матово покритие, екологично производство. Подходящ за подово отопление. Холандско качество с 20-годишна гаранция.',
+                        'keywords': [
+                            'винилов под',
+                            'луксозен винилов под',
+                            'водонепропусклив винил',
+                            'PVC под България',
+                            'MEGAMAT покритие',
+                            'под за подово отопление',
+                            'винилова ламела',
+                            'винил за залепване',
+                            'екологичен винилов под',
+                            'холандски винилов под',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
                 },
-                "en": {
-                    "name": "Village Vinyl - Zeewolde Zand Oak",
-                    "description": "Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Sartaguda Sand Oak is suitable for the toughest conditions. These environmentally friendly produced floorboards are not only extra wide and extremely durable, but also exceptionally beauti...",
-                    "features": [
-                        "waterproof",
-                        "megamat",
-                        "underfloor heating"
+                'en': {
+                    'name': 'Zeewolde Sand Oak',
+                    'description':
+                        'Searching for a floor that can handle heavy foot traffic, moisture, and everyday dirt? The Zeewolde Sand Oak is built for the toughest conditions while bringing timeless style to your space. Crafted with extra-wide planks from eco-friendly production, this 100% waterproof vinyl features the exclusive MEGAMAT finish for a sophisticated matte look. Compatible with underfloor heating and backed by a 20-year warranty, it delivers long-lasting performance, durability, and elegance for both residential and commercial interiors.',
+                    'features': [
+                        'Fully waterproof - suitable for kitchens, bathrooms and wet rooms',
+                        'MEGAMAT finish (matte anti-slip surface)',
+                        'Phthalate-free - safe for children and pets',
+                        'Compatible with underfloor heating',
                     ],
-                    "seo": {
-                        "title": "Village Vinyl - Zeewolde Zand Oak | Premium Vinyl Flooring | Eco Vibe Floors",
-                        "description": "Village Vinyl - Zeewolde Zand Oak: Looking for a floor that can withstand heavy use, moisture and dirt? Look no further! The Floer Village Vinyl - Sartagud... 100% waterproof, MEGAMAT finish. 20-year warranty. ⭐ Free delivery.",
-                        "keywords": [
-                            "vinyl flooring",
-                            "dorpen vinyl",
-                            "waterproof flooring",
-                            "PVC flooring bulgaria",
-                            "MEGAMAT finish",
-                            "underfloor heating compatible",
-                            "village vinyl"
-                        ]
+                    'seo': {
+                        'title': ' Zeewolde Sand Oak | Premium Waterproof Vinyl Flooring',
+                        'description':
+                            ' Zeewolde Sand Oak: Extra-wide planks, 100% waterproof, MEGAMAT matte finish, eco-friendly production. Underfloor heating compatible. 20-year warranty. Free delivery.',
+                        'keywords': [
+                            'vinyl flooring',
+                            'dorpen vinyl',
+                            'waterproof vinyl flooring',
+                            'PVC flooring Bulgaria',
+                            'MEGAMAT finish',
+                            'underfloor heating compatible',
+                            'luxury vinyl plank',
+                            'glue-down vinyl',
+                            'eco-friendly vinyl floor',
+                        ],
                     },
-                    "specifications": {
-                        "certifications": {
-                            "warranty": "20 Years"
-                        }
-                    }
-                }
+                    'specifications': {
+                        'certifications': {
+                            'warranty': '20 Years',
+                        },
+                    },
+                },
             },
-            "metadata": {
-                "totalImages": 16,
-                "imageSizes": [
-                    "thumbnail",
-                    "full"
-                ],
-                "createdAt": "2025-10-08T12:06:32.119Z",
-                "updatedAt": "2025-10-08T12:06:47.890Z"
+            'metadata': {
+                'totalImages': 16,
+                'imageSizes': ['thumbnail', 'full'],
+                'createdAt': '2025-10-08T12:06:32.119Z',
+                'updatedAt': '2025-10-08T12:06:47.890Z',
             },
-            "specifications": {
-                "dimensions": {
-                    "length": "1219",
-                    "thickness": "3",
-                    "width": "229"
+            'specifications': {
+                'dimensions': {
+                    'length': '1219',
+                    'thickness': '3',
+                    'width': '229',
                 },
-                "appearance": {
-                    "colorCode": "brown-grey",
-                    "finishCode": "megamat",
-                    "materialCode": "vinyl"
+                'appearance': {
+                    'colorCode': 'brown-grey',
+                    'finishCode': 'megamat',
+                    'materialCode': 'vinyl',
                 },
-                "installation": {
-                    "vGroove": "4-mv"
+                'installation': {
+                    'vGroove': '4-mv',
                 },
-                "performance": {
-                    "waterResistanceCode": "excellent",
-                    "thermalResistance": "0,019 m2K/W"
+                'performance': {
+                    'waterResistanceCode': 'excellent',
+                    'thermalResistance': '0,019 m2K/W',
                 },
-                "certifications": {
-                    "qualityMark": "Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001"
-                }
-            }
-        }
-    ]
+                'certifications': {
+                    'qualityMark':
+                        'Emission A+ Certification, EPD, Eurofins Gold, FloorScore, GreenGuard Gold, ISO14001',
+                },
+            },
+        },
+    ],
 } as const;
