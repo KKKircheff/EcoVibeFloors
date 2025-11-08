@@ -40,6 +40,13 @@ To create a visually compelling, high-quality website with strong design and eng
   - Example: `node utils/polish-collection-translations.js --all` - Process all collections
   - **Usage**: Use after adding new products or updating product descriptions
 
+- `npx tsx utils/refine-and-translate-json.ts [--collection=X] [--dry-run] [--verbose]` - Refine and translate product collections with Zod validation
+  - Example: `npx tsx utils/refine-and-translate-json.ts --collection=hybrid-wood --dry-run` - Preview product refinements with validation
+  - Example: `npx tsx utils/refine-and-translate-json.ts --collection=glue-down-vinyl` - Process collection with type-safe validation
+  - **Features**: TypeScript type safety, Zod schema validation, automatic retry on JSON errors, immutable state management
+  - **Usage**: Use for production-grade translation with full product validation
+  - **Requires**: `AZURE_API_KEY` and `TARGET_URL` in `.env` file
+
 ### Translation Agents (Claude Code)
 - **polish-text agent**: Refine existing Bulgarian translations during development
   - Usage: Ask Claude to "use polish-text agent to improve this translation: [text]"

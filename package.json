@@ -37,6 +37,7 @@
     "eslint": "^9",
     "eslint-config-next": "15.5.2",
     "firebase-admin": "^13.5.0",
+    "tsx": "^4.20.6",
     "typescript": "^5",
     "zod": "^3.25.76"
   },

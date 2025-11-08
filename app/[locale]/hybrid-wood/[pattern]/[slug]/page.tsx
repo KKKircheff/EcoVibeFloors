@@ -364,6 +364,7 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
                                     imageUrl: imageUrls[0],
                                 }}
                                 addToBasketText={tProducts('addToBasket')}
+                                removeFromBasketText={tProducts('removeFromBasket')}
                                 orderSamplesText={tProducts('orderSamples')}
                             />
 

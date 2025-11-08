@@ -364,6 +364,7 @@ export default async function ClickVinylProductPage({ params }: ProductDetailPag
                                     imageUrl: imageUrls[0],
                                 }}
                                 addToBasketText={tProducts('addToBasket')}
+                                removeFromBasketText={tProducts('removeFromBasket')}
                                 orderSamplesText={tProducts('orderSamples')}
                             />
 

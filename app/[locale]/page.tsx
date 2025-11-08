@@ -11,6 +11,7 @@ import { palette } from '@/lib/styles/pallete';
 const HomeFeatures = dynamicImport(() => import('./home/HomeFeatures.section').then(mod => ({ default: mod.HomeFeatures })));
 const QuotesSection = dynamicImport(() => import('./home/Quotes.section'));
 const HomecardsSection = dynamicImport(() => import('./home/Homecards.section'));
+const HomeFAQ = dynamicImport(() => import('./home/HomeFAQ.section').then(mod => ({ default: mod.HomeFAQ })));
 const Footer = dynamicImport(() => import('@/components/layout/footer/Footer.component'));
 
 // Force static generation
@@ -65,6 +66,19 @@ export default async function HomePage({ params }: HomePageProps) {
                 >
                     <QuotesSection />
                     <HomecardsSection />
+                </PageLayoutContainer>
+            </Suspense>
+
+            <Suspense fallback={
+                <PageLayoutContainer py={{ xs: 8, md: 12 }}>
+                    <Box sx={{ py: 4 }}>
+                        <Skeleton variant="rectangular" height={60} sx={{ mb: 4 }} />
+                        <Skeleton variant="rectangular" height={400} />
+                    </Box>
+                </PageLayoutContainer>
+            }>
+                <PageLayoutContainer py={{ xs: 8, md: 12 }}>
+                    <HomeFAQ />
                 </PageLayoutContainer>
             </Suspense>
 

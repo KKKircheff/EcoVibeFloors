@@ -26,10 +26,10 @@ This document provides context about how Floer and Ter Hürne position their pro
 
 ---
 
-## Floer Hybrid Wood Messaging
+## Ter Hürne  Hywood / Hybrid Wood Messaging
 
 ### The Three Key Selling Points
-Floer markets Hybrid Wood around three core benefits:
+Ter Hürne  markets Hybrid Wood around three core benefits:
 
 1. **"Waterbestendig & ijzersterk"** (Water-resistant and iron-strong)
    - Intent: Emphasize **durability** and **practical functionality**
@@ -313,7 +313,7 @@ For Bulgarian market, position as **"Premium European import - German & Dutch qu
 
 ## Example Transformations
 
-### Floer Hybrid Wood Product Description
+### Ter Hurne Hybrid Wood Product Description
 
 **English (International):**
 "Discover revolutionary Hybrid Wood - where real oak beauty meets waterproof innovation. Perfect for modern living."

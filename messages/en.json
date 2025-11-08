@@ -221,6 +221,44 @@
             "beautiful_floor": "Beautiful flooring brings mood, comfort and coziness.",
             "energizing_feeling": "An energizing feeling every day in your home, office or store"
         },
+        "faq": {
+            "sectionTitle": "Frequently Asked Questions",
+            "sectionSubtitle": "Find answers to the most common questions about our premium flooring collections",
+            "questions": {
+                "hybridVsVinyl": {
+                    "question": "What makes Hybrid Wood different from regular vinyl?",
+                    "answer": "Hybrid Wood combines a real natural oak top layer on a waterproof HDF core made from natural wood, while vinyl floors use entirely synthetic materials with printed designs. Our Dutch Hybrid Wood floors are FSC certified, manufactured without chemicals, and come with an extended 25-year warranty. You get the authentic warmth and texture of real wood combined with 100% waterproof protection – ideal for kitchens and bathrooms."
+                },
+                "dutchGermanQuality": {
+                    "question": "Why are our Dutch and German floors higher quality?",
+                    "answer": "Dutch and German manufacturers like Floer and Ter Hürne have extensive experience in flooring production and adhere to the strictest European manufacturing standards. They offer 20-25 year warranties for residential use and industry-standard 10-15 year warranties for commercial applications. As exclusive importers of these premium brands, we bring you European quality with proven durability, cutting-edge technologies like UV OLed and next-generation UV oil coatings, Hywood (Ter Hürne's Hybrid Wood), Aqua Seal and Nature Protect coatings, along with FSC, REACH, and FloorScore certifications."
+                },
+                "woodInKitchenBathroom": {
+                    "question": "Can I install hybrid floors in kitchens or wet rooms?",
+                    "answer": "Yes! Our Hywood (Hybrid Wood) floors feature innovative 24-hour waterproof technology that combines a real oak top layer with a waterproof HDF core made from natural wood. Unlike traditional wood parquet, Hywood withstands spills, splashes, and high humidity without damage. Our click vinyl collections also offer 100% waterproof protection with authentic wood aesthetics, making them ideal for kitchens and high-moisture areas."
+                },
+                "warrantyMeaning": {
+                    "question": "What does the extended 25-year warranty mean?",
+                    "answer": "Our 25-year warranty (for Hywood and vinyl collections) covers manufacturing defects, wear layer deterioration, and structural integrity for residential use. This is nearly double the industry standard warranty period. The warranty includes protection against delamination, excessive wear under normal use, and coating failures. For commercial applications, warranty periods vary by collection and usage class. Our Dutch and German partners stand behind their products with comprehensive coverage that reflects true quality confidence."
+                },
+                "underfloorHeatingCompatibility": {
+                    "question": "Are the floors compatible with underfloor heating?",
+                    "answer": "Yes, all our collections are specifically tested and certified for underfloor heating systems. Natural engineered floors, Hywood (Hybrid Wood) floors, as well as click and glue-down vinyl floors have excellent thermal conductivity with low thermal resistance (0.07 m²K/W), making them extremely efficient with radiant heating. Our oak parquet (excluding solid wood) and vinyl collections are also compatible when installed according to manufacturer guidelines. Underfloor heating is extremely popular in Bulgaria, and we ensure all our products perform optimally with these systems."
+                },
+                "solidVsEngineered": {
+                    "question": "What's the difference between solid and engineered parquet?",
+                    "answer": "Solid parquet consists of a single piece of oak throughout its thickness, offering authentic wood that can be sanded multiple times over decades. Engineered (multi-layer) parquet features a real oak top layer (typically 3-4mm) bonded to a stable plywood core, providing superior dimensional stability and resistance to humidity changes. Engineered parquet is ideal for underfloor heating, works over concrete subfloors, and offers better value while maintaining authentic oak aesthetics. Both options feature premium Dutch quality with professional finishing."
+                },
+                "installationDifficulty": {
+                    "question": "How difficult is the installation of hybrid and vinyl floors?",
+                    "answer": "Our click vinyl and Hywood collections feature click systems suitable for DIY installation that don't require adhesives or professional installers. An average room (15-20 m²) can be installed in 4-6 hours with basic tools. The i4F click technology ensures planks snap together perfectly and float over the subfloor. Glue-down vinyl requires professional installation for permanent commercial-grade results. We provide detailed installation guides and can recommend experienced installers throughout Bulgaria for any collection."
+                },
+                "safetyCertifications": {
+                    "question": "What safety certifications do the floors have?",
+                    "answer": "All our flooring collections meet rigorous European safety standards. Key certifications include: REACH (restricted hazardous substances), FSC (sustainable forestry), FloorScore and GreenGuard Gold (indoor air quality), and phthalate-free construction with bio-organic plasticizers. Our Hywood floors are produced without chemicals using Wood Powder technology. These independent certifications ensure your floors are safe for children, pets, and family members with sensitivities, while meeting EU environmental regulations."
+                }
+            }
+        },
 
         "Hybrid_Wood": "Premium Hybrid Wood ",
         "Vinyl": "High quality Vinyl",
@@ -374,7 +412,8 @@
         "requestQuote": "Request Quote",
         "orderSamples": "Order Samples",
         "contactUs": "Contact Us",
-        "addToBasket": "Add to Basket",
+        "addToBasket": "Add to Product List",
+        "removeFromBasket": "Remove from Product List",
         "dimensions": "Dimensions",
         "appearance": "Appearance",
         "warranty": "Warranty",
@@ -503,16 +542,16 @@
         }
     },
     "sampleBasket": {
-        "title": "Sample Basket",
-        "subtitle": "You have {count} of {max} samples in your basket",
-        "samplesTitle": "Samples",
+        "title": "Product Information Request",
+        "subtitle": "You have {count} of {max} samples in your request list",
+        "samplesTitle": "Products",
         "deliveryInfo": "Delivery Information",
-        "emptyTitle": "Your sample basket is empty",
-        "emptySubtitle": "Browse our collections and add samples to your basket",
+        "emptyTitle": "You haven't added any products to your request",
+        "emptySubtitle": "Browse our collections and add products to your request list",
         "backToCollections": "Back to Collections",
-        "itemRemoved": "Sample removed from basket",
-        "orderSuccess": "Sample order submitted successfully! We will contact you soon.",
-        "emptyBasketError": "Your basket is empty. Please add samples before ordering.",
+        "itemRemoved": "Product removed from the basket",
+        "orderSuccess": "Product information request submitted successfully! We will contact you soon.",
+        "emptyBasketError": "Your product list is empty. Please add products before submitting.",
         "form": {
             "street": "Street Address",
             "city": "City",

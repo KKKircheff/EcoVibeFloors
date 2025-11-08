@@ -20,7 +20,11 @@
       "mcp__playwright__browser_click",
       "mcp__context7__resolve-library-id",
       "mcp__context7__get-library-docs",
-      "WebSearch"
+      "WebSearch",
+      "WebFetch(domain:support.claude.com)",
+      "WebFetch(domain:code.claude.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(node:*)"
     ],
     "deny": [],
     "ask": []

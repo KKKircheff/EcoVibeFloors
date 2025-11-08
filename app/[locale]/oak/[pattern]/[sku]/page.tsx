@@ -366,6 +366,7 @@ export default async function OakProductPage({ params }: ProductPageProps) {
                                     imageUrl: imageUrls[0],
                                 }}
                                 addToBasketText={tProducts('addToBasket')}
+                                removeFromBasketText={tProducts('removeFromBasket')}
                                 orderSamplesText={tProducts('orderSamples')}
                             />
 
