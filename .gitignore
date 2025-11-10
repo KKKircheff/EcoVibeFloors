@@ -39,6 +39,9 @@ pglite-debug.log
 # env files (can opt-in for committing if needed)
 .env*
 
+# Firebase service account credentials
+serviceAccountKey.json
+
 # vercel
 .vercel
 
@@ -48,3 +51,6 @@ next-env.d.ts
 
 # scripts (development only - Firebase upload utilities)
 /scripts
+
+# MCP configuration (project-specific)
+.mcp.json

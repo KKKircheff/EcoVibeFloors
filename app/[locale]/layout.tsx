@@ -10,6 +10,7 @@ import UnderNavBar from "@/components/layout/navbar/UnderNavBar.component";
 import { SampleBasketProvider } from '@/lib/contexts/SampleBasketContext';
 import { ToastProvider } from '@/lib/contexts/ToastContext';
 import { AuthProvider } from '@/lib/contexts/AuthContext';
+import { FloatingChatButton } from '@/components/chat-ai-assistant/FloatingChatButton';
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -98,6 +99,7 @@ export default async function LocaleLayout(props: Props) {
                                     <Navbar locale={locale} />
                                     <UnderNavBar />
                                     {children}
+                                    <FloatingChatButton />
                                 </SampleBasketProvider>
                             </AuthProvider>
                         </ToastProvider>

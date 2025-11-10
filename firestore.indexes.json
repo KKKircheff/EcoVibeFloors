@@ -21,6 +21,24 @@
   //    },
   //   ]
   // ]
-  "indexes": [],
+  "indexes": [
+    {
+      "collectionGroup": "project-knowledge",
+      "queryScope": "COLLECTION",
+      "fields": [
+        {
+          "fieldPath": "locale",
+          "order": "ASCENDING"
+        },
+        {
+          "fieldPath": "embedding",
+          "vectorConfig": {
+            "dimension": 1536,
+            "flat": {}
+          }
+        }
+      ]
+    }
+  ],
   "fieldOverrides": []
 }

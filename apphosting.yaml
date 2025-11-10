@@ -11,14 +11,65 @@
 # Environment variables
 # These will be available in both BUILD and RUNTIME
 env:
+  # Firebase Client Configuration (Public)
   - variable: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
     value: ecovibe-floors.firebaseapp.com
     availability:
       - BUILD
       - RUNTIME
 
+  - variable: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+    value: ecovibe-floors
+    availability:
+      - BUILD
+      - RUNTIME
+
   - variable: NEXT_PUBLIC_BASE_URL
     value: https://ecovibefloors.com
+    availability:
+      - BUILD
+      - RUNTIME
+
+  # Azure OpenAI Configuration (Server-side - needed at BUILD for /api/chat initialization)
+  - variable: AZURE_RESOURCE_NAME
+    value: kirch-md03vahe-swedencentral
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: AZURE_API_KEY
+    secret: AZURE_API_KEY
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: AZURE_CHAT_MODEL
+    value: gpt-5-chat
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: AZURE_EMBEDDINGS_MODEL
+    value: text-embedding-3-small
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: TEXT_EMBEDDING_3_SMALL_ENDPOINT
+    value: https://kirch-md03vahe-swedencentral.cognitiveservices.azure.com/openai/deployments/text-embedding-3-small/embeddings?api-version=2023-05-15
+    availability:
+      - BUILD
+      - RUNTIME
+
+  # Firebase Admin SDK (Server-side - needed at BUILD for static generation)
+  - variable: FIREBASE_CLIENT_EMAIL
+    value: firebase-adminsdk-fbsvc@ecovibe-floors.iam.gserviceaccount.com
+    availability:
+      - BUILD
+      - RUNTIME
+
+  - variable: FIREBASE_PRIVATE_KEY
+    secret: FIREBASE_PRIVATE_KEY
     availability:
       - BUILD
       - RUNTIME

@@ -87,6 +87,15 @@ service cloud.firestore {
       allow delete: if request.auth != null && request.auth.uid == userId;
     }
 
+    // Project knowledge collection - public read for AI assistant RAG queries
+    match /project-knowledge/{docId} {
+      // Allow public read access for chat AI assistant
+      allow read: if true;
+
+      // Deny all writes (only backend/admin can write via Admin SDK)
+      allow write: if false;
+    }
+
     // Deny all other collections by default
     match /{document=**} {
       allow read, write: if false;

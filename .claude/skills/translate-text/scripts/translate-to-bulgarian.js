@@ -44,7 +44,7 @@ function detectContentType(content) {
 }
 
 /**
- * Translate English text to Bulgarian using Azure GPT-4
+ * Translate English text to Bulgarian using Azure GPT-5
  *
  * @param {string} englishText - Text to translate
  * @param {Object} options - Optional parameters
@@ -126,7 +126,7 @@ Return JSON with:
         }
 
         // Call Azure API
-        if (verbose) console.log('🤖 Calling Azure GPT-4 API...');
+        if (verbose) console.log('🤖 Calling Azure GPT-5 API...');
         const responseContent = await callAzureGPTWithRetry(
             systemPrompt,
             userPrompt,
@@ -202,8 +202,8 @@ Examples:
   node translate-to-bulgarian.js --type=json --text='{"title":"Oak Flooring"}'
 
 Environment Variables:
-  AZURE_API_KEY      Azure GPT-4 API key (required)
-  TARGET_URL         Azure GPT-4 endpoint URL (required)
+  AZURE_API_KEY      Azure GPT-5 API key (required)
+  TARGET_URL         Azure GPT-5 endpoint URL (required)
 `);
         process.exit(0);
     }

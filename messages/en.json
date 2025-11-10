@@ -1684,5 +1684,19 @@
         "maintenance": "Maintenance",
         "backToTreatments": "Back to All Treatments",
         "viewAllTreatments": "View All Treatments"
+    },
+    "chatAssistant": {
+        "title": "Ecovibe Floors AI Assistant",
+        "welcome": {
+            "title": "Hello!",
+            "subtitle": "How can I help you with flooring solutions today?"
+        },
+        "input": {
+            "placeholder": "Ask a question...",
+            "send": "Send"
+        },
+        "error": {
+            "message": "An error occurred. Please try again."
+        }
     }
 }

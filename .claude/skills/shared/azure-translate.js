@@ -1,5 +1,5 @@
 /**
- * Shared Azure GPT-4 API utility for translation skills
+ * Shared Azure GPT-5 API utility for translation skills
  * Based on refine-and-translate-json.ts implementation
  */
 
@@ -24,7 +24,7 @@ if (!AZURE_API_KEY || !TARGET_URL) {
 }
 
 /**
- * Call Azure GPT-4 API with custom prompt
+ * Call Azure GPT-5 API with custom prompt
  *
  * @param {string} systemPrompt - System instructions for the AI
  * @param {string} userPrompt - User message/content to process
@@ -101,8 +101,8 @@ export async function callAzureGPTWithRetry(systemPrompt, userPrompt, options = 
 
             // Check if this is a JSON parse error (malformed response)
             const isJsonError = error.message.includes('JSON') ||
-                               error.message.includes('parse') ||
-                               error.message.includes('Unexpected token');
+                error.message.includes('parse') ||
+                error.message.includes('Unexpected token');
 
             // Only retry on JSON errors and if we have retries left
             if (isJsonError && attempt < maxRetries) {

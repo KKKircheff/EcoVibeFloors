@@ -12,7 +12,7 @@ import {
 } from '../../shared/azure-translate.js';
 
 /**
- * Polish Bulgarian text using Azure GPT-4
+ * Polish Bulgarian text using Azure GPT-5
  *
  * @param {string} bulgarianText - Text to polish
  * @param {Object} options - Optional parameters
@@ -120,8 +120,8 @@ Examples:
   node polish-bulgarian.js --verbose --text="Премиум настилки"
 
 Environment Variables:
-  AZURE_API_KEY      Azure GPT-4 API key (required)
-  TARGET_URL         Azure GPT-4 endpoint URL (required)
+  AZURE_API_KEY      Azure GPT-5 API key (required)
+  TARGET_URL         Azure GPT-5 endpoint URL (required)
 `);
         process.exit(0);
     }

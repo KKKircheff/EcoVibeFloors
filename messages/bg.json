@@ -1640,5 +1640,19 @@
         "maintenance": "Поддръжка",
         "backToTreatments": "Обратно към всички третирания",
         "viewAllTreatments": "Виж всички третирания"
+    },
+    "chatAssistant": {
+        "title": "Ecovibe Floors AI Асистент",
+        "welcome": {
+            "title": "Здравейте!",
+            "subtitle": "Нека ви помогна с информация при избора на вашия красива и качествен под!"
+        },
+        "input": {
+            "placeholder": "Задайте въпрос...",
+            "send": "Изпрати"
+        },
+        "error": {
+            "message": "Възникна грешка. Моля, опитайте отново."
+        }
     }
 }

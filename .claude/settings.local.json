@@ -24,11 +24,17 @@
       "WebFetch(domain:support.claude.com)",
       "WebFetch(domain:code.claude.com)",
       "WebFetch(domain:github.com)",
-      "Bash(node:*)"
+      "Bash(node:*)",
+      "WebFetch(domain:docs.mistral.ai)",
+      "WebFetch(domain:ai-sdk.dev)"
     ],
     "deny": [],
     "ask": []
   },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "firebase"
+  ],
   "hooks": {
     "PostToolUse": [
       {
