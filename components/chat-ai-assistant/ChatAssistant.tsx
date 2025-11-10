@@ -36,6 +36,11 @@ export function ChatAssistant({ onClose, embedded = false }: ChatAssistantProps)
     const [input, setInput] = useState('');
     const messagesEndRef = useRef<HTMLDivElement>(null);
 
+    // Frontend validation constants
+    const MAX_CHARS = 800;
+    const isInputTooLong = input.length > MAX_CHARS;
+    const isInputValid = input.trim().length > 0 && !isInputTooLong;
+
     const { messages, sendMessage, status, error } = useChat({
         transport: new DefaultChatTransport({
             api: '/api/chat',
@@ -51,7 +56,8 @@ export function ChatAssistant({ onClose, embedded = false }: ChatAssistantProps)
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        if (input.trim() && status === 'ready') {
+        // Frontend validation before sending
+        if (isInputValid && status === 'ready') {
             sendMessage({ text: input });
             setInput('');
         }
@@ -193,7 +199,7 @@ export function ChatAssistant({ onClose, embedded = false }: ChatAssistantProps)
                 {isLoading && (
                     <Fade in timeout={200}>
                         <Box sx={{ display: 'flex', gap: 1, alignItems: 'center' }}>
-                            <Avatar sx={{ bgcolor: 'info.500', width: 36, height: 36 }}>
+                            <Avatar sx={{ bgcolor: 'secondary.main', width: 36, height: 36 }}>
                                 <AutoAwesomeIcon fontSize="small" />
                             </Avatar>
                             <Paper elevation={0} sx={{ p: 2, borderRadius: 2, bggolor: 'info.100' }}>
@@ -255,42 +261,58 @@ export function ChatAssistant({ onClose, embedded = false }: ChatAssistantProps)
             {/* Input Area */}
             <Box sx={{ p: 2, borderTop: 1, borderColor: 'primary.200', bgcolor: 'primary.100', borderRadius: 2 }}>
                 <form onSubmit={handleSubmit}>
-                    <Stack direction={{ xs: 'column', md: 'row' }} spacing={1} alignItems={'center'}>
-                        <TextField
-                            fullWidth
-                            value={input}
-                            onChange={handleInputChange}
-                            placeholder={t('input.placeholder')}
-                            disabled={isLoading}
-                            size="small"
-                            variant="outlined"
-                            sx={{
-                                '& .MuiOutlinedInput-root': {
-                                    bgcolor: 'background.paper',
-                                    py: .2
-                                },
-                            }}
-                            onKeyDown={(e) => {
-                                if (e.key === 'Enter' && !e.shiftKey) {
-                                    e.preventDefault();
-                                    handleSubmit(e as any);
-                                }
-                            }}
-                        />
-                        <Button
-                            type="submit"
-                            variant="contained"
-                            size='small'
-                            disabled={isLoading || !input.trim()}
-                            endIcon={<SendIcon />}
-                            sx={{
-                                minWidth: 100,
-                                borderRadius: 1,
-                                py: .75,
-                            }}
-                        >
-                            {t('input.send')}
-                        </Button>
+                    <Stack spacing={0.5}>
+                        <Stack direction={{ xs: 'column', md: 'row' }} spacing={1} alignItems={'center'}>
+                            <TextField
+                                fullWidth
+                                value={input}
+                                onChange={handleInputChange}
+                                placeholder={t('input.placeholder')}
+                                disabled={isLoading}
+                                size="small"
+                                variant="outlined"
+                                error={isInputTooLong}
+                                sx={{
+                                    '& .MuiOutlinedInput-root': {
+                                        bgcolor: 'background.paper',
+                                        py: .2
+                                    },
+                                }}
+                                onKeyDown={(e) => {
+                                    if (e.key === 'Enter' && !e.shiftKey) {
+                                        e.preventDefault();
+                                        handleSubmit(e as any);
+                                    }
+                                }}
+                            />
+                            <Button
+                                type="submit"
+                                variant="contained"
+                                size='small'
+                                disabled={isLoading || !isInputValid}
+                                endIcon={<SendIcon />}
+                                sx={{
+                                    minWidth: 100,
+                                    borderRadius: 1,
+                                    py: .75,
+                                }}
+                            >
+                                {t('input.send')}
+                            </Button>
+                        </Stack>
+
+                        {/* Character counter */}
+                        <Stack direction="row" justifyContent="space-between" alignItems="center" px={0.5}>
+                            <Typography
+                                variant="caption"
+                                color={isInputTooLong ? 'error' : 'text.secondary'}
+                                sx={{ fontSize: '0.75rem' }}
+                            >
+                                {isInputTooLong
+                                    ? t('input.tooLong', { max: MAX_CHARS })
+                                    : t('input.characterCount', { count: input.length, max: MAX_CHARS })}
+                            </Typography>
+                        </Stack>
                     </Stack>
                 </form>
             </Box>

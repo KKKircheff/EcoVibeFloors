@@ -57,6 +57,12 @@
                 "success": "Thank you for your inquiry. We will contact you as soon as possible.",
                 "error": "An error occurred while sending. Please try again."
             }
+        },
+        "chatInput": {
+            "tooLong": "Your message is too long. Please keep it under 800 characters.",
+            "invalidContent": "Please provide a valid message.",
+            "tooManySpecialChars": "Your message contains too many special characters. Please use simpler text.",
+            "suspiciousPattern": "Your message contains unusual patterns. Please rephrase your question."
         }
     },
     "auth": {
@@ -1693,7 +1699,9 @@
         },
         "input": {
             "placeholder": "Ask a question...",
-            "send": "Send"
+            "send": "Send",
+            "characterCount": "{count}/{max} characters",
+            "tooLong": "Message too long (max {max} characters)"
         },
         "error": {
             "message": "An error occurred. Please try again."

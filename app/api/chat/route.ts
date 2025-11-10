@@ -2,10 +2,55 @@ import {streamText} from 'ai';
 import {getFirestoreAdmin} from '@/lib/firebase/firebase-admin';
 import {getAzureAI, getAzureEmbeddings, AZURE_MODELS} from '@/lib/azure/azure-ai';
 import type {VectorSearchResult} from '@/lib/chat-ai-assistant/types';
+import {validateMessage} from '@/lib/security/input-validator';
 
 const db = getFirestoreAdmin();
 const embeddings = getAzureEmbeddings();
 const azure = getAzureAI();
+
+// Translations for API responses (hardcoded since next-intl doesn't work in API routes)
+// These match the translations in messages/en.json and messages/bg.json under api.chat namespace
+const translations = {
+    en: {
+        errors: {
+            noMessage: 'No message provided',
+            processingFailed: 'Failed to process request',
+            validation: {
+                tooLong: 'Your message is too long. Please keep it under 800 characters.',
+                invalidContent: 'Please provide a valid message.',
+                tooManySpecialChars: 'Your message contains too many special characters. Please use simpler text.',
+                suspiciousPattern: 'Your message contains unusual patterns. Please rephrase your question.',
+            },
+        },
+        systemPrompt: {
+            offTopicResponse:
+                'Sorry, I can only answer questions related to flooring and our products. You can ask about Floer and Ter Hürne collections, types of parquet, vinyl, laminate, installation, or maintenance. Do you have such a question?',
+            sampleBasketPage: 'the sample request page /sample-basket',
+            contactPage: 'the contact page /contact',
+            languageName: 'English',
+        },
+    },
+    bg: {
+        errors: {
+            noMessage: 'Не е предоставено съобщение',
+            processingFailed: 'Неуспешна обработка на заявката',
+            validation: {
+                tooLong: 'Вашето съобщение е твърде дълго. Моля, ограничете го до 800 символа.',
+                invalidContent: 'Моля, предоставете валидно съобщение.',
+                tooManySpecialChars:
+                    'Съобщението съдържа твърде много специални символи. Моля, използвайте по-прост текст.',
+                suspiciousPattern: 'Съобщението съдържа необични шаблони. Моля, преформулирайте въпроса си.',
+            },
+        },
+        systemPrompt: {
+            offTopicResponse:
+                'Извинявайте, отговарям само на въпроси, свързани с подови настилки и нашите продукти. Можете да попитате за колекциите Floer и Ter Hürne, видове паркети, винил, ламинат, монтаж или поддръжка. Имате ли такъв въпрос?',
+            sampleBasketPage: 'страницата за заявка на мостри /sample-basket',
+            contactPage: 'страницата за контакти /contact',
+            languageName: 'Bulgarian',
+        },
+    },
+};
 
 async function searchKnowledge(
     queryEmbedding: number[],
@@ -40,6 +85,10 @@ export async function POST(req: Request) {
         const lastMessage = messages[messages.length - 1];
         let userMessage: string | undefined;
 
+        // Get locale first
+        const locale = (req.headers.get('x-locale') || 'bg') as 'en' | 'bg';
+        const t = translations[locale];
+
         // Handle both old format (content) and new format (parts)
         if (lastMessage?.content) {
             userMessage = lastMessage.content;
@@ -50,13 +99,43 @@ export async function POST(req: Request) {
         }
 
         if (!userMessage) {
-            return new Response(JSON.stringify({error: 'No message provided'}), {
+            return new Response(JSON.stringify({error: t.errors.noMessage}), {
                 status: 400,
                 headers: {'Content-Type': 'application/json'},
             });
         }
 
-        const locale = (req.headers.get('x-locale') || 'bg') as 'en' | 'bg';
+        // Validate and sanitize user input
+        const validationResult = validateMessage(userMessage);
+
+        if (!validationResult.isValid) {
+            // Log rejected message for security monitoring
+            console.warn('Chat input rejected:', {
+                errorCode: validationResult.errorCode,
+                errorDetails: validationResult.errorDetails,
+                messageLength: userMessage.length,
+                locale,
+                timestamp: new Date().toISOString(),
+            });
+
+            // Map validation error codes to translation keys
+            let errorMessage = t.errors.validation.invalidContent;
+            if (validationResult.errorCode === 'TOO_LONG') {
+                errorMessage = t.errors.validation.tooLong;
+            } else if (validationResult.errorCode === 'TOO_MANY_SPECIAL_CHARS') {
+                errorMessage = t.errors.validation.tooManySpecialChars;
+            } else if (validationResult.errorCode === 'SUSPICIOUS_PATTERN') {
+                errorMessage = t.errors.validation.suspiciousPattern;
+            }
+
+            return new Response(JSON.stringify({error: errorMessage}), {
+                status: 400,
+                headers: {'Content-Type': 'application/json'},
+            });
+        }
+
+        // Use sanitized input for further processing
+        userMessage = validationResult.sanitizedInput!;
 
         const questionEmbedding = await embeddings.embedQuery(userMessage);
 
@@ -87,20 +166,18 @@ TOPIC BOUNDARIES:
 - ONLY answer questions about flooring products, installation, maintenance, specifications, interior design related to floors, home renovation involving flooring, and underfloor heating
 - Product names (like "Amsterdam" oak floor collection) ARE relevant - always check the context first before declining
 - Related topics (interior design with flooring focus, home renovation, underfloor heating compatibility) ARE acceptable
-- If a question is clearly off-topic (sports, cooking, general travel, politics, etc.), politely respond in ${locale === 'bg' ? 'Bulgarian' : 'English'}:
-  ${locale === 'bg'
-    ? '"Извинявайте, отговарям само на въпроси, свързани с подови настилки и нашите продукти. Можете да попитате за колекциите Floer и Ter Hürne, видове паркети, винил, ламинат, монтаж или поддръжка. Имате ли такъв въпрос?"'
-    : '"Sorry, I can only answer questions related to flooring and our products. You can ask about Floer and Ter Hürne collections, types of parquet, vinyl, laminate, installation, or maintenance. Do you have such a question?"'}
+- If a question is clearly off-topic (sports, cooking, general travel, politics, etc.), politely respond in ${t.systemPrompt.languageName}:
+  "${t.systemPrompt.offTopicResponse}"
 
 CAPABILITY BOUNDARIES:
 - You can ONLY provide information from the knowledge base above
 - You CANNOT send emails, generate PDFs, arrange physical samples, or perform any external actions
-- For sample requests, direct users to: ${locale === 'bg' ? 'страницата за заявка на мостри /sample-basket' : 'the sample request page /sample-basket'}
-- For contact/project inquiries, direct users to: ${locale === 'bg' ? 'страницата за контакти /contact' : 'the contact page /contact'}
+- For sample requests, direct users to: ${t.systemPrompt.sampleBasketPage}
+- For contact/project inquiries, direct users to: ${t.systemPrompt.contactPage}
 - NEVER promise actions you cannot perform (sending files, emails, physical materials)
 
 GUIDELINES:
-- Answer in ${locale === 'bg' ? 'Bulgarian' : 'English'} language
+- Answer in ${t.systemPrompt.languageName} language
 - Be concise, helpful, and professional yet warm
 - Base your answer strictly on the context provided above
 - If recommending products, mention specific names, features, and prices from the context
@@ -117,7 +194,7 @@ IMPORTANT:
 
         // 5. Convert UIMessages to ModelMessages (AI SDK v5.0)
         // UIMessages have parts array, ModelMessages have content string
-        const modelMessages = messages.map((msg: any) => {
+        const modelMessages = messages.map((msg: any, index: number) => {
             let content: string;
 
             // Handle both old format (content) and new format (parts)
@@ -132,6 +209,11 @@ IMPORTANT:
                 content = textParts;
             } else {
                 content = '';
+            }
+
+            // Use sanitized content for the last user message
+            if (index === messages.length - 1 && msg.role === 'user') {
+                content = userMessage;
             }
 
             return {
@@ -152,9 +234,14 @@ IMPORTANT:
         return result.toUIMessageStreamResponse();
     } catch (error) {
         console.error('Chat API error:', error);
+
+        // Get locale from request header for error message
+        const locale = (req.headers.get('x-locale') || 'bg') as 'en' | 'bg';
+        const t = translations[locale];
+
         return new Response(
             JSON.stringify({
-                error: 'Failed to process request',
+                error: t.errors.processingFailed,
                 details: error instanceof Error ? error.message : 'Unknown error',
             }),
             {status: 500, headers: {'Content-Type': 'application/json'}}
