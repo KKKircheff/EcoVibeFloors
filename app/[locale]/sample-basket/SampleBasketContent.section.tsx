@@ -62,7 +62,7 @@ export default function SampleBasketContent() {
         const samplesHtml = items
             .map(
                 (item, index) =>
-                    `<li>SKU: ${item.sku} - ${item.productName} (${item.collection}, ${item.pattern}) - €${item.price.toFixed(2)}</li>`
+                    `<li>SKU: ${item.sku} - ${item.productName} (${item.collection}, ${item.pattern}) - €${item.price.toFixed(2)} (incl. VAT)</li>`
             )
             .join('');
 

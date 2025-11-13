@@ -166,6 +166,7 @@ export function ProductCard({ product }: ProductCardProps) {
                             variant="subtitle2"
                             color="primary.600"
                             fontWeight='500'
+                            direction='row'
                         />
                     </Stack>
                 </Stack>

@@ -10,7 +10,7 @@ import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
 import ProductImageGallery from '@/components/products/product-image-gallery/ProductImageGallery.component';
 import ProductActions from '@/components/products/product-actions/ProductActions.component';
 import { ProductSpecs, SpecCategory } from '@/components/ui/sections/product/ProductSpecs';
-import { AuthenticatedPrice } from '@/components/ui/price/AuthenticatedPrice';
+import { OakDualPrice } from '@/components/ui/price/OakDualPrice';
 import { isValidPattern, ProductPattern, Product } from '@/types/products';
 import { getOakProductsByPattern } from '@/utils/products/oak';
 import { routing } from '@/i18n/routing';
@@ -271,15 +271,16 @@ export default async function OakProductPage({ params }: ProductPageProps) {
                                 <Stack
                                     direction={{ xs: 'column', sm: 'row' }}
                                     spacing={{ xs: 1, sm: 2 }}
-                                    alignItems={{ xs: 'flex-start', sm: 'baseline' }}
+                                    alignItems={{ xs: 'flex-start', sm: 'flex-start' }}
                                     justifyContent="space-between"
                                 >
                                     <Typography variant="h3" component="h1" color="text.primary">
                                         {localizedContent.name}
                                     </Typography>
-                                    <AuthenticatedPrice
-                                        price={product.price}
-                                        variant="h4"
+                                    <OakDualPrice
+                                        basePrice={product.price}
+                                        isFinished={product.isFinished || false}
+                                        variant="h5"
                                         color="primary.main"
                                         fontWeight={600}
                                     />

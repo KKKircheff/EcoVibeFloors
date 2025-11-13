@@ -309,7 +309,7 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
                                     </Typography>
                                     <AuthenticatedPrice
                                         price={product.price}
-                                        variant="h4"
+                                        variant="h5"
                                         color="primary.main"
                                         fontWeight={600}
                                     />
