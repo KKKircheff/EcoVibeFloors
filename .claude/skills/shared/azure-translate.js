@@ -29,14 +29,12 @@ if (!AZURE_API_KEY || !TARGET_URL) {
  * @param {string} systemPrompt - System instructions for the AI
  * @param {string} userPrompt - User message/content to process
  * @param {Object} options - Optional configuration
- * @param {number} options.temperature - Response randomness (0-1, default 0.4)
  * @param {number} options.maxTokens - Maximum response length (default 3000)
  * @param {Object} options.responseFormat - Response format (default: json_object)
  * @returns {Promise<string>} AI response content
  */
 export async function callAzureGPT(systemPrompt, userPrompt, options = {}) {
     const {
-        temperature = 0.4,
         maxTokens = 3000,
         responseFormat = { type: 'json_object' }
     } = options;
@@ -54,7 +52,6 @@ export async function callAzureGPT(systemPrompt, userPrompt, options = {}) {
                     { role: 'user', content: userPrompt }
                 ],
                 max_tokens: maxTokens,
-                temperature: temperature,
                 response_format: responseFormat
             })
         });

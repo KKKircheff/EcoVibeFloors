@@ -125,10 +125,10 @@ export function ChatAssistant({ onClose, embedded = false }: ChatAssistantProps)
                     <Fade in timeout={500}>
                         <Box sx={{ textAlign: 'center', py: 4, bgcolor: 'primary.100', borderRadius: 2 }}>
                             <AutoAwesomeIcon sx={{ fontSize: 64, mb: 2, color: 'primary.500' }} />
-                            <Typography variant="h6" gutterBottom color='primary.400'>
+                            <Typography variant="h6" gutterBottom color='primary.500'>
                                 {t('welcome.title')}
                             </Typography>
-                            <Typography variant="body2" color='primary.400'>
+                            <Typography variant="body1" color='primary.500'>
                                 {t('welcome.subtitle')}
                             </Typography>
                         </Box>

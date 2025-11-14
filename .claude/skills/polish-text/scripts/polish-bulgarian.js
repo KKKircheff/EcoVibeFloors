@@ -59,7 +59,6 @@ Return JSON response following the specified format.`;
             systemPrompt,
             userPrompt,
             {
-                temperature: 0.4,
                 maxTokens: 10000,
                 responseFormat: { type: 'json_object' }
             },

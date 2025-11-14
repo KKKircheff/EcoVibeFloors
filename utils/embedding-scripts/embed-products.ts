@@ -132,7 +132,7 @@ function createProductChunk(product: any, locale: 'en' | 'bg'): ChunkMetadata {
         contentType: 'product',
         category: product.collection,
         sourceId: product.sku,
-        sourceUrl: `/${locale}/${product.collection}/${product.slug}`,
+        sourceUrl: `/${locale}/${product.collection}/${product.pattern}/${product.slug}`,
         sourceTitle: localizedData.name,
         productSku: product.sku,
         price: product.price,

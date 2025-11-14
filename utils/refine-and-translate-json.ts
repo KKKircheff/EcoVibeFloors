@@ -1,13 +1,13 @@
-import { promises as fs } from 'fs';
+import {promises as fs} from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
-import { dirname } from 'path';
+import {fileURLToPath} from 'url';
+import {dirname} from 'path';
 import dotenv from 'dotenv';
 import {
     validateProduct,
     formatValidationErrors,
     type Product,
-    type TranslationResult as TranslationResultType
+    type TranslationResult as TranslationResultType,
 } from '@/types/product.schema';
 
 const __filename = fileURLToPath(import.meta.url);
@@ -46,7 +46,7 @@ interface ProcessingStats {
     updatedCount: number;
     skippedCount: number;
     errorCount: number;
-    errors: Array<{ sku: string; error: string }>;
+    errors: Array<{sku: string; error: string}>;
     changes: Array<{
         sku: string;
         name: string;
@@ -133,7 +133,7 @@ export async function loadTranslationContext(): Promise<TranslationContext> {
 
         console.log('✓ Translation context loaded successfully\n');
 
-        return { terminologyMap, bgMarketContext, enSourceContext };
+        return {terminologyMap, bgMarketContext, enSourceContext};
     } catch (error) {
         console.error('❌ Error loading context files:', (error as Error).message);
         throw error;
@@ -147,10 +147,7 @@ export async function loadTranslationContext(): Promise<TranslationContext> {
 /**
  * Read and parse collection JSON file
  */
-export async function readCollectionFile(
-    collectionPath: string,
-    collectionName: string
-): Promise<CollectionData> {
+export async function readCollectionFile(collectionPath: string, collectionName: string): Promise<CollectionData> {
     console.log(`📂 Reading collection: ${collectionName}.json`);
 
     try {
@@ -163,7 +160,7 @@ export async function readCollectionFile(
         }
 
         console.log(`✓ Found ${products.length} products\n`);
-        return { collection, products };
+        return {collection, products};
     } catch (error) {
         console.error('❌ Error reading collection:', (error as Error).message);
         throw error;
@@ -267,13 +264,21 @@ English Name: ${product.i18n.en.name}
 English Description: ${product.i18n.en.description || 'N/A'}
 English SEO Title: ${product.i18n.en.seo.title}
 English SEO Description: ${product.i18n.en.seo.description}
-English Keywords: ${Array.isArray(product.i18n.en.seo.keywords) ? product.i18n.en.seo.keywords.join(', ') : product.i18n.en.seo.keywords}
+English Keywords: ${
+        Array.isArray(product.i18n.en.seo.keywords)
+            ? product.i18n.en.seo.keywords.join(', ')
+            : product.i18n.en.seo.keywords
+    }
 
 Bulgarian Name (current): ${product.i18n.bg.name}
 Bulgarian Description (current): ${product.i18n.bg.description || 'N/A'}
 Bulgarian SEO Title (current): ${product.i18n.bg.seo.title}
 Bulgarian SEO Description (current): ${product.i18n.bg.seo.description}
-Bulgarian Keywords (current): ${Array.isArray(product.i18n.bg.seo.keywords) ? product.i18n.bg.seo.keywords.join(', ') : product.i18n.bg.seo.keywords}
+Bulgarian Keywords (current): ${
+        Array.isArray(product.i18n.bg.seo.keywords)
+            ? product.i18n.bg.seo.keywords.join(', ')
+            : product.i18n.bg.seo.keywords
+    }
 
 TASK:
 1. REFINE ENGLISH: Improve English description and SEO if needed for clarity and luxury positioning
@@ -317,10 +322,7 @@ Response format:
 /**
  * Apply translation result to product (immutable - returns new product)
  */
-export function applyTranslationToProduct(
-    product: Product,
-    result: TranslationResultType
-): Product {
+export function applyTranslationToProduct(product: Product, result: TranslationResultType): Product {
     return {
         ...product,
         i18n: {
@@ -356,17 +358,14 @@ export function updateStats(
 ): ProcessingStats {
     const newStats: ProcessingStats = {
         ...stats,
-        processedCount: stats.processedCount + 1
+        processedCount: stats.processedCount + 1,
     };
 
     if (error) {
         return {
             ...newStats,
             errorCount: newStats.errorCount + 1,
-            errors: [
-                ...newStats.errors,
-                { sku: product.sku, error: error.message }
-            ],
+            errors: [...newStats.errors, {sku: product.sku, error: error.message}],
         };
     }
 
@@ -396,9 +395,13 @@ export function updateStats(
  * Format changes preview for dry-run mode
  */
 export function formatChangesPreview(changes: ProcessingStats['changes']): string {
-    return changes.map(change => {
-        return `\nSKU: ${change.sku} - ${change.name}\nImprovements:\n${change.improvements.map(i => `  - ${i}`).join('\n')}\nQuality Signals:\n${change.qualitySignals.map(s => `  - ${s}`).join('\n')}`;
-    }).join('\n' + '='.repeat(60));
+    return changes
+        .map((change) => {
+            return `\nSKU: ${change.sku} - ${change.name}\nImprovements:\n${change.improvements
+                .map((i) => `  - ${i}`)
+                .join('\n')}\nQuality Signals:\n${change.qualitySignals.map((s) => `  - ${s}`).join('\n')}`;
+        })
+        .join('\n' + '='.repeat(60));
 }
 
 // ============================================================================
@@ -421,20 +424,20 @@ export async function translateProduct(
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
-                'api-key': apiKey
+                'api-key': apiKey,
             },
             body: JSON.stringify({
                 messages: [
-                    { role: 'system', content: systemPrompt },
+                    {role: 'system', content: systemPrompt},
                     {
                         role: 'user',
-                        content: 'Please refine the English content if needed and create high-quality Bulgarian translations following all the guidelines. Return only the JSON response.'
-                    }
+                        content:
+                            'Please refine the English content if needed and create high-quality Bulgarian translations following all the guidelines. Return only the JSON response.',
+                    },
                 ],
                 max_tokens: 3000,
-                temperature: 0.4,
-                response_format: { type: 'json_object' }
-            })
+                response_format: {type: 'json_object'},
+            }),
         });
 
         if (!response.ok) {
@@ -478,15 +481,16 @@ export async function translateProductWithRetry(
             lastError = error as Error;
 
             // Check if this is a JSON parse error (malformed response)
-            const isJsonError = lastError.message.includes('JSON') ||
-                               lastError.message.includes('parse') ||
-                               lastError.message.includes('Unexpected token');
+            const isJsonError =
+                lastError.message.includes('JSON') ||
+                lastError.message.includes('parse') ||
+                lastError.message.includes('Unexpected token');
 
             // Only retry on JSON errors and if we have retries left
             if (isJsonError && attempt < maxRetries) {
                 console.log(`  ⚠️  JSON parse error, retrying (attempt ${attempt + 2}/${maxRetries + 1})...`);
                 // Wait 1 second before retrying
-                await new Promise(resolve => setTimeout(resolve, 1000));
+                await new Promise((resolve) => setTimeout(resolve, 1000));
                 continue;
             }
 
@@ -508,13 +512,13 @@ export async function translateProductWithRetry(
  */
 export function logImprovements(result: TranslationResultType, verbose: boolean): void {
     console.log(`  ✓ Improvements made:`);
-    result.improvements.forEach(improvement => {
+    result.improvements.forEach((improvement) => {
         console.log(`    - ${improvement}`);
     });
 
     if (result.quality_signals_added && result.quality_signals_added.length > 0) {
         console.log(`  📊 Quality signals added:`);
-        result.quality_signals_added.forEach(signal => {
+        result.quality_signals_added.forEach((signal) => {
             console.log(`    - ${signal}`);
         });
     }
@@ -563,23 +567,23 @@ export async function processProduct(
                 const validationError = new Error(`Product validation failed: ${errorDetails}`);
                 const updatedStats = updateStats(stats, product, null, validationError);
 
-                return { product, result: null, stats: updatedStats };
+                return {product, result: null, stats: updatedStats};
             }
 
             // Validation succeeded - use updated product
             console.log(`  ✓ Product validation passed`);
             const updatedStats = updateStats(stats, product, result, null);
 
-            return { product: validation.data!, result, stats: updatedStats };
+            return {product: validation.data!, result, stats: updatedStats};
         } else {
             console.log(`  ⊘ No changes needed`);
             const updatedStats = updateStats(stats, product, null, null);
-            return { product, result: null, stats: updatedStats };
+            return {product, result: null, stats: updatedStats};
         }
     } catch (error) {
         console.error(`  ❌ Error: ${(error as Error).message}`);
         const updatedStats = updateStats(stats, product, null, error as Error);
-        return { product, result: null, stats: updatedStats };
+        return {product, result: null, stats: updatedStats};
     }
 }
 
@@ -597,7 +601,7 @@ export function printSummary(stats: ProcessingStats, config: ProcessingConfig): 
 
     if (stats.changes.length > 0) {
         console.log('\n✅ Products successfully improved:');
-        stats.changes.forEach(change => {
+        stats.changes.forEach((change) => {
             console.log(`  - ${change.sku}: ${change.name}`);
             console.log(`    Improvements: ${change.improvements.length}`);
         });
@@ -605,7 +609,7 @@ export function printSummary(stats: ProcessingStats, config: ProcessingConfig): 
 
     if (stats.errors.length > 0) {
         console.log('\n❌ Errors encountered:');
-        stats.errors.forEach(err => {
+        stats.errors.forEach((err) => {
             console.log(`  - SKU ${err.sku}: ${err.error}`);
         });
     }
@@ -643,7 +647,7 @@ export async function refineAndTranslateCollection(
 
         // Load resources
         const context = await loadTranslationContext();
-        const { collection, products } = await readCollectionFile(config.collectionPath, collectionName);
+        const {collection, products} = await readCollectionFile(config.collectionPath, collectionName);
 
         // Create backup (only if not dry run)
         if (!dryRun) {
@@ -671,12 +675,12 @@ export async function refineAndTranslateCollection(
 
             // Rate limiting - wait 2 seconds between requests
             if (i < products.length - 1) {
-                await new Promise(resolve => setTimeout(resolve, 2000));
+                await new Promise((resolve) => setTimeout(resolve, 2000));
             }
         }
 
         // Save updated collection
-        const updatedCollection = { ...collection, products: updatedProducts };
+        const updatedCollection = {...collection, products: updatedProducts};
         await saveCollectionFile(config.collectionPath, updatedCollection, config, stats.changes);
 
         // Print summary
@@ -686,9 +690,8 @@ export async function refineAndTranslateCollection(
             success: stats.errorCount === 0,
             processed: stats.processedCount,
             updated: stats.updatedCount,
-            errors: stats.errorCount
+            errors: stats.errorCount,
         };
-
     } catch (error) {
         console.error('\n❌ FATAL ERROR:', (error as Error).message);
         console.error((error as Error).stack);
@@ -704,7 +707,7 @@ export async function refineAndTranslateCollection(
 const args = process.argv.slice(2);
 const dryRun = args.includes('--dry-run');
 const verbose = args.includes('--verbose');
-const collectionArg = args.find(arg => arg.startsWith('--collection='));
+const collectionArg = args.find((arg) => arg.startsWith('--collection='));
 const collectionName = collectionArg ? collectionArg.split('=')[1] : 'glue-down-vinyl';
 
 console.log('\n🌍 Product Translation & Refinement Script (TypeScript)');
@@ -725,6 +728,6 @@ if (args.includes('--help')) {
 }
 
 // Run the refiner
-refineAndTranslateCollection(collectionName, dryRun, verbose).then(result => {
+refineAndTranslateCollection(collectionName, dryRun, verbose).then((result) => {
     process.exit(result.success ? 0 : 1);
 });

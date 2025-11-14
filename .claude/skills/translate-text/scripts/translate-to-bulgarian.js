@@ -131,7 +131,6 @@ Return JSON with:
             systemPrompt,
             userPrompt,
             {
-                temperature: 0.4,
                 maxTokens: 3000,
                 responseFormat: { type: 'json_object' }
             },

@@ -1,7 +1,7 @@
 {
     "metadata": {
-        "title": "EcoVibeFloors - Premium Dutch Flooring",
-        "description": "Luxury natural wood and laminate floors from the Netherlands for Bulgarian homes. Extended guarantees and exceptional quality."
+        "title": "EcoVibeFloors Sofia, Plovdiv, Varna, Burgas - Premium Oak & Vinyl from Netherlands",
+        "description": "Premium oak parquet, hybrid wood and vinyl floors from the Netherlands and Germany for homes in Sofia, Plovdiv, Varna and Burgas. Up to 25-year warranty and delivery to address."
     },
     "common": {
         "loading": "Loading..."
@@ -184,9 +184,9 @@
     },
     "home": {
         "metadata": {
-            "title": "EcoVibeFloors - Premium floors ",
-            "description": "Luxury natural wood, hybrid wood and vinyl floors from The Netherlands and Germany. Extended guarantees and exceptional quality. Direct delivery to the customers' addresses in Bulgaria",
-            "ogImageAlt": "EcoVibeFloors - High quality flooring solutions from Germany & The Netherlands"
+            "title": "EcoVibeFloors - Premium Oak & Vinyl for Sofia, Plovdiv, Varna, Burgas",
+            "description": "Premium oak parquet, hybrid wood and vinyl floors from Netherlands and Germany for homes in Sofia, Plovdiv, Varna and Burgas. Up to 25-year warranty and delivery to address.",
+            "ogImageAlt": "EcoVibeFloors - Premium flooring solutions from Netherlands & Germany for Bulgaria"
         },
         "dutchOrigin": "Dutch and German Origin",
         "certified": "Certified Products",
@@ -319,9 +319,9 @@
     },
     "collections": {
         "metadata": {
-            "title": "Collections - EcoVibeFloors",
-            "description": "Explore our premium flooring collections - natural oak, Hybrid Wood, vinyl and laminate from Germany and The Netherlands",
-            "ogImageAlt": "EcoVibeFloors - High quality flooring solutions from Germany & The Netherlands"
+            "title": "Flooring Collections Sofia, Plovdiv, Varna, Burgas - EcoVibeFloors",
+            "description": "Premium oak parquet, hybrid wood and vinyl flooring from Netherlands and Germany for homes in Sofia, Plovdiv, Varna and Burgas",
+            "ogImageAlt": "EcoVibeFloors - Premium collections from Netherlands & Germany"
         },
         "title": "Premium Flooring Collections",
         "hero": {
@@ -541,9 +541,9 @@
     },
     "contact": {
         "metadata": {
-            "title": "Contact - EcoVibeFloors",
-            "description": "Contact us for consultation about premium flooring solutions from Germany and The Netherlands. Expert assistance for your project",
-            "ogImageAlt": "EcoVibeFloors - High quality flooring solutions from Germany & The Netherlands"
+            "title": "Contact Sofia, Plovdiv, Varna, Burgas - EcoVibeFloors Flooring",
+            "description": "Consultation and delivery of premium flooring from Netherlands and Germany in Sofia, Plovdiv, Varna and Burgas. Expert assistance for your project",
+            "ogImageAlt": "EcoVibeFloors - Contact and delivery throughout Bulgaria"
         },
         "title": "Contact EcoVibeFloors",
         "subtitle": "Get in touch for pricing and consultation",
@@ -609,7 +609,7 @@
         }
     },
     "hybridWood": {
-        "pageTitle": "Hybrid Wood Collection",
+        "pageTitle": "Hybrid Wood Flooring Sofia, Plovdiv, Varna, Burgas - Floer Netherlands",
         "hero": {
             "title": "Hybrid Wood Collection",
             "subtitle": "The perfect blend of natural beauty and modern innovations",
@@ -732,7 +732,7 @@
         }
     },
     "clickVinyl": {
-        "pageTitle": "Click Vinyl Collection",
+        "pageTitle": "Click Vinyl Flooring Sofia, Plovdiv, Varna, Burgas - Floer Netherlands",
         "hero": {
             "title": "Premium Click Vinyl Collection",
             "subtitle": "Easy-to-install click vinyl flooring combining Dutch quality with 100% waterproof performance",
@@ -882,7 +882,7 @@
         }
     },
     "glueDownVinyl": {
-        "pageTitle": "Glue-Down Vinyl Collection",
+        "pageTitle": "Glue-Down Vinyl Sofia, Plovdiv, Varna, Burgas - Floer Netherlands",
         "hero": {
             "title": "Premium Glue-Down Vinyl Collection",
             "subtitle": "Professional-grade glue-down vinyl flooring combining Dutch quality with maximum stability",
@@ -1180,7 +1180,7 @@
         }
     },
     "oak": {
-        "pageTitle": "Natural Oak Parquet Collection",
+        "pageTitle": "Natural Oak Parquet Sofia, Plovdiv, Varna, Burgas - Dutch Quality",
         "title": "Natural Oak Parquet",
         "collection": "Oak Collection",
         "finished": "Finished",
@@ -1271,7 +1271,7 @@
         }
     },
     "oakFlooring": {
-        "pageTitle": "What is 3-Layer Oak Flooring? | Premium Engineered Oak",
+        "pageTitle": "3-Layer Oak Flooring Sofia, Plovdiv, Varna, Burgas | Dutch Quality",
         "hero": {
             "title": "What is 3-Layer Oak Flooring?",
             "subtitle": "Premium Dutch engineered oak combining natural beauty with superior stability and durability for modern living.",

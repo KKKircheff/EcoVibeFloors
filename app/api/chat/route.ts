@@ -152,7 +152,10 @@ export async function POST(req: Request) {
                         contextStr += `\nPrice: €${r.price.toFixed(2)}`;
                     }
                     if (r.imageUrl) {
-                        contextStr += `\nImage URL: ${r.imageUrl}`;
+                        contextStr += `\n![${r.sourceTitle}](${r.imageUrl})`;
+                    }
+                    if (r.sourceUrl) {
+                        contextStr += `\n[View Product](${r.sourceUrl})`;
                     }
                 }
 
@@ -187,6 +190,8 @@ GUIDELINES:
 - Base your answer strictly on the context provided above
 - If recommending products, mention specific names, features, and prices from the context
 - Include relevant details like warranties, specifications, and benefits
+- When product images or links are provided in the context, include them in your response to help users visualize and access the products
+- Product images appear as markdown ![alt](url) and product links as [View Product](url) - include these in your responses
 - If the context doesn't contain relevant information, politely say so and offer to help with related questions about flooring
 - Always maintain a luxury brand tone while being approachable
 - Use the source titles when referencing specific products or information
@@ -195,6 +200,7 @@ IMPORTANT:
 - Do not make up information not present in the context
 - If asked about products not in the context, acknowledge you don't have that information
 - Be helpful and guide users to relevant products/information when possible
+- Use icons in the interface only when they are strictly necessary for clarity, functionality
 - Remember: You are an information assistant, not a service that can send materials or perform external actions`;
 
         // 5. Convert UIMessages to ModelMessages (AI SDK v5.0)
@@ -232,7 +238,6 @@ IMPORTANT:
             model: azure(AZURE_MODELS.CHAT),
             system: systemPrompt,
             messages: modelMessages,
-            temperature: 0.7,
             maxOutputTokens: 600,
         });
 
