@@ -11,7 +11,7 @@ export interface KnowledgeChunk {
 
   // Metadata for filtering
   locale: 'en' | 'bg';
-  contentType: 'product' | 'page';
+  contentType: 'product' | 'page' | 'document';
   category: 'hybrid-wood' | 'oak' | 'click-vinyl' | 'glue-down-vinyl' | 'general';
 
   // Source tracking
@@ -32,7 +32,7 @@ export interface KnowledgeChunk {
 export interface ChunkMetadata {
   text: string;
   locale: 'en' | 'bg';
-  contentType: 'product' | 'page';
+  contentType: 'product' | 'page' | 'document';
   category: string;
   sourceId: string;
   sourceUrl: string;

@@ -161,19 +161,11 @@ export default async function TreatmentDetailPage({ params }: TreatmentDetailPag
                     <Grid size={{ xs: 12, md: 6 }}>
                         <Stack spacing={3}>
                             {/* Title and Category */}
-                            <Stack spacing={2}>
+                            <Stack spacing={2} direction={'row'} alignItems={'center'}>
                                 <Typography variant="h3" component="h1" color="text.primary">
                                     {localizedContent.name}
                                 </Typography>
-                                <Stack direction="row" spacing={1} flexWrap="wrap">
-                                    <Chip label={t(categoryKey)} color="primary" size="medium" />
-                                    <Chip
-                                        label={treatment.characteristics.finishType}
-                                        color="secondary"
-                                        variant="outlined"
-                                        size="medium"
-                                    />
-                                </Stack>
+                                <Chip label={t(categoryKey)} color="primary" size="medium" />
                             </Stack>
 
                             <Divider />

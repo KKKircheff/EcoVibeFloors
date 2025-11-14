@@ -47,23 +47,34 @@ The embedding generation script uses Firebase Admin SDK and requires environment
 
 ### 4. Generate Embeddings (Run Locally)
 
+**Three specialized scripts** (recommended):
+
 ```bash
-# Dry run to preview chunks (no upload)
-npx tsx utils/chat-ai-assistant/generate-embeddings.ts --dry-run
+# 1. Embed Products
+npx tsx utils/embedding-scripts/embed-products.ts --dry-run
+npx tsx utils/embedding-scripts/embed-products.ts --collection=hybrid-wood
 
-# Generate and upload all embeddings
-npx tsx utils/chat-ai-assistant/generate-embeddings.ts
+# 2. Embed Website Pages
+npx tsx utils/embedding-scripts/embed-pages.ts --dry-run --delay=2000
+npx tsx utils/embedding-scripts/embed-pages.ts --delay=2000
 
-# Regenerate specific collection only
-npx tsx utils/chat-ai-assistant/generate-embeddings.ts --collection=hybrid-wood
+# 3. Embed Custom Documents (NEW!)
+npx tsx utils/embedding-scripts/embed-documents.ts --file=guide.md --dry-run
+npx tsx utils/embedding-scripts/embed-documents.ts --file=manual.pdf
 ```
 
-**What it does:**
-- Loads 135+ products from TypeScript collections
-- Converts products to natural language descriptions (1 chunk per product per locale)
-- Scrapes 18 website pages with Jina.ai (LangChain chunking)
-- Generates 1536-dim embeddings with Azure OpenAI (text-embedding-3-small)
-- Uploads chunks to Firestore `project-knowledge` collection with full product metadata
+**Legacy script** (combines products + pages):
+```bash
+npx tsx utils/embedding-scripts/generate-embeddings.ts --dry-run
+npx tsx utils/embedding-scripts/generate-embeddings.ts
+```
+
+**What they do:**
+- **embed-products.ts**: Loads 135+ products from TypeScript collections, 1 chunk per product per locale
+- **embed-pages.ts**: Scrapes 18 website pages with Jina.ai, chunks with LangChain
+- **embed-documents.ts**: Embeds custom markdown/text/PDF files from `lib/chat-ai-assistant/docs/`
+- All generate 1536-dim embeddings with Azure OpenAI (text-embedding-3-small)
+- Upload to Firestore `project-knowledge` collection with full metadata
 
 **Estimated time:** 10-20 minutes (depends on rate limits)
 
@@ -134,7 +145,7 @@ Ensure environment variables are set in Firebase App Hosting settings.
 
 ```bash
 # Full usage
-npx tsx utils/chat-ai-assistant/generate-embeddings.ts [OPTIONS]
+npx tsx utils/embedding-scripts/generate-embeddings.ts [OPTIONS]
 
 # Options:
 #   --dry-run              Preview chunks without uploading
@@ -142,9 +153,9 @@ npx tsx utils/chat-ai-assistant/generate-embeddings.ts [OPTIONS]
 #                          (hybrid-wood, oak, click-vinyl, glue-down-vinyl)
 
 # Examples:
-npx tsx utils/chat-ai-assistant/generate-embeddings.ts --dry-run
-npx tsx utils/chat-ai-assistant/generate-embeddings.ts
-npx tsx utils/chat-ai-assistant/generate-embeddings.ts --collection=oak
+npx tsx utils/embedding-scripts/generate-embeddings.ts --dry-run
+npx tsx utils/embedding-scripts/generate-embeddings.ts
+npx tsx utils/embedding-scripts/generate-embeddings.ts --collection=oak
 ```
 
 ### Chat Assistant Components
@@ -246,7 +257,7 @@ Vector index is still building. Wait 5-15 minutes after creating the index.
 The script includes 100ms delays between requests by default (configured for 1500 requests/minute). If you hit rate limits, increase the delay:
 
 ```bash
-npx tsx utils/chat-ai-assistant/generate-embeddings.ts --delay=200
+npx tsx utils/embedding-scripts/generate-embeddings.ts --delay=200
 ```
 
 ### TypeScript errors
@@ -265,7 +276,7 @@ npx tsc --noEmit
 ## Files Structure
 
 ```
-utils/chat-ai-assistant/
+utils/embedding-scripts/
 ├── README.md                    # This file
 ├── generate-embeddings.ts       # Main embedding generation script
 └── pages-to-scrape.ts          # Configuration for web pages

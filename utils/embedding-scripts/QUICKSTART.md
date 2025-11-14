@@ -28,10 +28,10 @@ FIREBASE_PRIVATE_KEY="-----BEGIN PRIVATE KEY-----\n...\n-----END PRIVATE KEY----
 
 ```bash
 # Dry run first to preview
-npx tsx utils/chat-ai-assistant/generate-embeddings.ts --dry-run
+npx tsx utils/embedding-scripts/generate-embeddings.ts --dry-run
 
 # Generate and upload all embeddings (~900 chunks)
-npx tsx utils/chat-ai-assistant/generate-embeddings.ts
+npx tsx utils/embedding-scripts/generate-embeddings.ts
 ```
 
 **Expected output:**
@@ -61,7 +61,7 @@ Rate limit delay: 500ms between requests
 
 ```bash
 # Using the provided script
-bash utils/chat-ai-assistant/create-firestore-index.sh
+bash utils/embedding-scripts/create-firestore-index.sh
 
 # Or manually with gcloud:
 gcloud firestore indexes composite create \
@@ -162,7 +162,7 @@ Firebase Console → Functions → Logs (or Cloud Logging)
 ### Test Vector Search Manually
 ```bash
 # Coming soon: Test script to verify vector search
-npx tsx utils/chat-ai-assistant/test-search.ts "test query"
+npx tsx utils/embedding-scripts/test-search.ts "test query"
 ```
 
 ## 💰 Cost Tracking
@@ -197,7 +197,7 @@ All types should compile successfully ✅
 
 ## 📚 Documentation
 
-- Full README: `utils/chat-ai-assistant/README.md`
+- Full README: `utils/embedding-scripts/README.md`
 - Firestore Vector Search: https://firebase.google.com/docs/firestore/vector-search
 - Vercel AI SDK: https://sdk.vercel.ai/docs
 - Mistral AI: https://docs.mistral.ai/

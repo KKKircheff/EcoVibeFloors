@@ -147,8 +147,13 @@ export async function POST(req: Request) {
                 let contextStr = `[${index + 1}. ${r.sourceTitle}]\n${r.text}`;
 
                 // Add product details if available
-                if (r.contentType === 'product' && r.price) {
-                    contextStr += `\nPrice: €${r.price.toFixed(2)}`;
+                if (r.contentType === 'product') {
+                    if (r.price) {
+                        contextStr += `\nPrice: €${r.price.toFixed(2)}`;
+                    }
+                    if (r.imageUrl) {
+                        contextStr += `\nImage URL: ${r.imageUrl}`;
+                    }
                 }
 
                 contextStr += `\n(Relevance: ${relevance}%)`;

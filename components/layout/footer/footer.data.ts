@@ -47,6 +47,10 @@ export const footerData = {
             link: '/',
         },
         {
+            title: 'phone2' as FooterLinkKeys,
+            link: '/',
+        },
+        {
             title: 'trademark' as FooterLinkKeys,
             link: '/',
         },

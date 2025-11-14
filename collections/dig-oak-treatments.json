@@ -14,16 +14,14 @@
                 "intensity": "medium",
                 "styleCompatibility": ["classic", "traditional", "rustic"]
             },
-            "images": [
-                "/images/oak/treatments/abdij.webp"
-            ],
+            "images": ["/images/oak/treatments/abdij.webp"],
             "imageAlt": {
                 "en": "Abdij oak color treatment - warm, lived-in appearance with authentic character",
                 "bg": "Цветно третиране Кафяв - топъл, автентичен вид с характер"
             },
             "i18n": {
                 "bg": {
-                    "name": "Кафяв",
+                    "name": "Кафяв дъб",
                     "description": "Цветното третиране Abdij придава на дъбовите подове топъл, обитаван вид с автентичен характер. Това покритие подчертава естествените фибри на дървото и цветните нюанси, създавайки вечна естетика. Цветът прониква дълбоко в порите на дървото, създавайки равномерен, естествен вид, а не повърхностна обработка.",
                     "benefits": [
                         "Висока устойчивост на драскотини и износване",
@@ -99,16 +97,14 @@
                 "intensity": "rich",
                 "styleCompatibility": ["traditional", "classic", "elegant"]
             },
-            "images": [
-                "/images/oak/treatments/english-colour.webp"
-            ],
+            "images": ["/images/oak/treatments/english-colour.webp"],
             "imageAlt": {
                 "en": "English Colour oak treatment - deep, warm undertones with elegant appearance",
                 "bg": "Цветно третиране Английски - дълбоки, топли подтонове с елегантен вид"
             },
             "i18n": {
                 "bg": {
-                    "name": "Английски",
+                    "name": "Английски дъб",
                     "description": "English Colour е традиционно покритие за дъбови подове с дълбок, топъл подтон, което осигурява елегантен и вечен вид. Третирането подобрява естествените цветови вариации на дървото по целия под, създавайки изискана визуална дълбочина при запазване на естествената естетика.",
                     "benefits": [
                         "Екологично чиста формула",
@@ -183,9 +179,7 @@
                 "intensity": "subtle",
                 "styleCompatibility": ["contemporary", "modern", "scandinavian"]
             },
-            "images": [
-                "/images/oak/treatments/smoked-whitewash.webp"
-            ],
+            "images": ["/images/oak/treatments/smoked-whitewash.webp"],
             "imageAlt": {
                 "en": "Smoked Whitewash oak treatment - subtle greyed aesthetic with natural depth",
                 "bg": "Цветно третиране Опушен светъл дъб - фин сив вид с естествена дълбочина"
@@ -267,9 +261,7 @@
                 "intensity": "subtle",
                 "styleCompatibility": ["modern", "contemporary", "minimalist", "rustic"]
             },
-            "images": [
-                "/images/oak/treatments/greywash.webp"
-            ],
+            "images": ["/images/oak/treatments/greywash.webp"],
             "imageAlt": {
                 "en": "Greywash oak treatment - subtle grey tint with modern contemporary appearance",
                 "bg": "Цветно третиране Сив отенък - фин сив тон със съвременен изглед"
@@ -353,9 +345,7 @@
                 "intensity": "light",
                 "styleCompatibility": ["modern", "elegant", "scandinavian", "coastal"]
             },
-            "images": [
-                "/images/oak/treatments/chalk-white.webp"
-            ],
+            "images": ["/images/oak/treatments/chalk-white.webp"],
             "imageAlt": {
                 "en": "Chalk White oak treatment - light neutral finish with fresh elegant appearance",
                 "bg": "Цветно третиране Слонова кост - светъл неутрален финиш със свеж елегантен вид"
@@ -439,16 +429,14 @@
                 "intensity": "rich",
                 "styleCompatibility": ["classic", "traditional", "rustic", "rural"]
             },
-            "images": [
-                "/images/oak/treatments/medium-brown.webp"
-            ],
+            "images": ["/images/oak/treatments/medium-brown.webp"],
             "imageAlt": {
                 "en": "Medium Brown oak treatment - warm rich appearance enhancing wood depth",
                 "bg": "Цветно третиране Среден кафяв - топъл богат вид, подчертаващ дълбочината на дървото"
             },
             "i18n": {
                 "bg": {
-                    "name": "Среден кафяв",
+                    "name": "Светло кафяв дъб",
                     "description": "Midden Bruin (Среден кафяв) е професионално цветно третиране за дъбови подове, предназначено да подобри естествената красота на дървото с топли, богати тонове. Третирането осигурява равномерен, естествен кафяв тон, който се вписва в различни интериорни стилове, особено подходящ за класически и селски интериорни дизайни.",
                     "benefits": [
                         "Висока устойчивост на драскотини и износване",
@@ -525,16 +513,14 @@
                 "intensity": "natural",
                 "styleCompatibility": ["all", "authentic", "natural", "timeless"]
             },
-            "images": [
-                "/images/oak/treatments/natural.webp"
-            ],
+            "images": ["/images/oak/treatments/natural.webp"],
             "imageAlt": {
                 "en": "Natural oak treatment - transparent finish preserving original wood color",
                 "bg": "Цветно третиране Естествен - прозрачен финиш, запазващ оригиналния цвят на дървото"
             },
             "i18n": {
                 "bg": {
-                    "name": "Естествен",
+                    "name": "Натурален дъб",
                     "description": "Финишът Naturel е прозрачна обработка за дъбови подове, която запазва оригиналния цвят на дървото, като същевременно осигурява защитни качества. Поддържа автентичните дървесни тонове без да променя оригиналната цветова палитра на пода. Двукомпонентната система, съчетаваща пигменти, масла и защитно горно покритие, прониква в порите на дървото за равномерен, естествен вид.",
                     "benefits": [
                         "Издръжливост с висока устойчивост на драскотини и износване",
@@ -611,16 +597,14 @@
                 "intensity": "bold",
                 "styleCompatibility": ["industrial", "vintage", "contemporary", "bold"]
             },
-            "images": [
-                "/images/oak/treatments/smokey.webp"
-            ],
+            "images": ["/images/oak/treatments/smokey.webp"],
             "imageAlt": {
                 "en": "Smokey oak treatment - grayed smoky aesthetic with vintage character",
                 "bg": "Цветно третиране Опушен - сива опушена естетика с винтидж характер"
             },
             "i18n": {
                 "bg": {
-                    "name": "Опушен",
+                    "name": "Опушен дъб",
                     "description": "Третирането Smokey е цветен финиш, предлаган от EKOFLOORS за дъбови подове, част от тяхната колекция EKO Wood. Създава посивяла, опушена визия, която произвежда обитаван, винтидж вид, идеален за интериори, търсещи смел характер.",
                     "benefits": [
                         "Висока устойчивост на драскотини и износване",
@@ -697,16 +681,14 @@
                 "intensity": "light",
                 "styleCompatibility": ["modern", "scandinavian", "minimalist", "coastal"]
             },
-            "images": [
-                "/images/oak/treatments/weissgrund.webp"
-            ],
+            "images": ["/images/oak/treatments/weissgrund.webp"],
             "imageAlt": {
                 "en": "Weissgrund oak treatment - light whitewashed look with fresh spacious atmosphere",
                 "bg": "Цветно третиране Светла основа - светъл избелен вид със свежа просторна атмосфера"
             },
             "i18n": {
                 "bg": {
-                    "name": "Светла основа",
+                    "name": "Светъл дъб",
                     "description": "Weissgrund е вечно цветно третиране, което придава на дъбовите подове светъл, избелен вид. Продуктът се описва като осигуряващ свежа и просторна атмосфера, което го прави идеален за модерни и скандинавски интериорни дизайни. Третирането предоставя фина, леко избелена визия със светла и просторна естетика.",
                     "benefits": [
                         "Екологично чист състав",
@@ -783,16 +765,14 @@
                 "intensity": "light",
                 "styleCompatibility": ["scandinavian", "coastal", "modern", "airy"]
             },
-            "images": [
-                "/images/oak/treatments/whitewash.webp"
-            ],
+            "images": ["/images/oak/treatments/whitewash.webp"],
             "imageAlt": {
                 "en": "Whitewash oak treatment - light whitewashed appearance for spacious interiors",
                 "bg": "Цветно третиране Изсветлен - светъл избелен вид за просторни интериори"
             },
             "i18n": {
                 "bg": {
-                    "name": "Изсветлен",
+                    "name": "Изсветлен дъб",
                     "description": "Вечна и универсална обработка, която осигурява на дъбовите подове светъл, избелен вид. Третирането създава светла, светлотонална естетика с характерен избелен ефект. Този стил е особено подходящ за създаване на просторни, въздушни интериори и допълва естетиката на модерния скандинавски дизайн.",
                     "benefits": [
                         "Екологичен състав с екологично съзнателни формулации",
@@ -869,16 +849,14 @@
                 "intensity": "intense",
                 "styleCompatibility": ["modern", "industrial", "contemporary", "bold"]
             },
-            "images": [
-                "/images/oak/treatments/black.webp"
-            ],
+            "images": ["/images/oak/treatments/black.webp"],
             "imageAlt": {
                 "en": "Black oak treatment - powerful modern appearance with industrial character",
                 "bg": "Цветно третиране Черен - мощен модерен вид с индустриален характер"
             },
             "i18n": {
                 "bg": {
-                    "name": "Черен",
+                    "name": "Черен дъб",
                     "description": "Третирането Zwart създава мощен и модерен вид с дълбока, интензивна оцветяване, която придава на дъбовите подове здрав и индустриален характер, като същевременно запазва видимост на фината естествена текстура на дървото. Създава равномерен, естествен финиш с модерна, индустриална естетика.",
                     "benefits": [
                         "Висока устойчивост на драскотини и износване",
