@@ -9,14 +9,16 @@ export async function HomeFAQ() {
 
     // FAQ questions configuration
     const faqKeys: (keyof Messages['home']['faq']['questions'])[] = [
-        'hybridVsVinyl',
+        'hybridVsOakParquet',
         'dutchGermanQuality',
         'woodInKitchenBathroom',
-        'warrantyMeaning',
+        'differenceSpcLvt',
         'underfloorHeatingCompatibility',
         'solidVsEngineered',
         'installationDifficulty',
-        'safetyCertifications'
+        'safetyCertifications',
+        'warrantyMeaning',
+        'deliveryTerms'
     ];
 
     // Generate Schema.org FAQPage structured data

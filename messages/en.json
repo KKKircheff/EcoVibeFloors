@@ -127,8 +127,8 @@
         "Premium_Oak": "Natural Oak",
         "Premium_Oak_Custom_Crafted": "Premium Oak Custom Crafted",
         "Hybrid_Wood": "Hybrid Wood",
-        "Click_Vinyl": "Vinyl Click",
-        "Glue-Down_Vinyl": "Vinyl Glue-Down",
+        "Click_Vinyl": "SPC Click Vinyl",
+        "Glue-Down_Vinyl": "LVT Glue-Down Vinyl",
         "All_Collections": "All Collections",
         "blog": "Blog",
         "Blog": "Blog",
@@ -232,29 +232,25 @@
             "sectionTitle": "Frequently Asked Questions",
             "sectionSubtitle": "Find answers to the most common questions about our premium flooring collections",
             "questions": {
-                "hybridVsVinyl": {
-                    "question": "What makes Hybrid Wood different from regular vinyl?",
-                    "answer": "Hybrid Wood combines a real natural oak top layer on a waterproof HDF core made from natural wood, while vinyl floors use entirely synthetic materials with printed designs. Our Dutch Hybrid Wood floors are FSC certified, manufactured without chemicals, and come with an extended 25-year warranty. You get the authentic warmth and texture of real wood combined with 100% waterproof protection – ideal for kitchens and bathrooms."
+                "hybridVsOakParquet": {
+                    "question": "What's the difference between Hybrid Wood and oak parquet floors?",
+                    "answer": "Both options offer the look of natural oak and are made from real wood. Hybrid Wood provides modern peace of mind – authentic oak aesthetics thanks to its top layer of natural oak, 24-hour water resistance, exceptional scratch resistance, lifetime residential warranty, and almost zero maintenance. This makes it ideal for busy families with children and pets who want luxury without compromise. Classic engineered or solid oak parquet delivers timeless elegance with a genuine 3–6 mm oak wear layer (or solid oak), which can be sanded and renewed for generations, along with 11 stunning colour treatments for personalized style and the warmth that only real wood can offer – the choice of those who appreciate natural materials and long-lasting craftsmanship. Unlike Hybrid Wood, regular maintenance is essential here. Whether you prefer modern, worry-free living or the authenticity of natural wood, both options are produced in the Netherlands and Germany, ensuring premium quality and a refined experience."
                 },
                 "dutchGermanQuality": {
-                    "question": "Why are our Dutch and German floors higher quality?",
-                    "answer": "Dutch and German manufacturers like Floer and Ter Hürne have extensive experience in flooring production and adhere to the strictest European manufacturing standards. They offer 20-25 year warranties for residential use and industry-standard 10-15 year warranties for commercial applications. As exclusive importers of these premium brands, we bring you European quality with proven durability, cutting-edge technologies like UV OLed and next-generation UV oil coatings, Hywood (Ter Hürne's Hybrid Wood), Aqua Seal and Nature Protect coatings, along with FSC, REACH, and FloorScore certifications."
+                    "question": "Why do our Dutch and German floors rate as premium quality?",
+                    "answer": "Dutch and German manufacturers such as Floer and Ter Hürne have decades of experience in flooring production and adhere to the strictest European manufacturing standards. They offer 20- to 30-year or even lifetime residential warranties and industry-standard commercial warranties ranging from 5 to 15 years. As the exclusive importer of these premium brands, we provide you with floors of genuine European quality, proven durability, advanced technologies such as next-generation UV Oiled and UV oil finishes, Aqua Seal and Nature Protect, as well as certifications including FSC, REACH, and FloorScore."
                 },
                 "woodInKitchenBathroom": {
                     "question": "Can I install hybrid floors in kitchens or wet rooms?",
-                    "answer": "Yes! Our Hywood (Hybrid Wood) floors feature innovative 24-hour waterproof technology that combines a real oak top layer with a waterproof HDF core made from natural wood. Unlike traditional wood parquet, Hywood withstands spills, splashes, and high humidity without damage. Our click vinyl collections also offer 100% waterproof protection with authentic wood aesthetics, making them ideal for kitchens and high-moisture areas."
-                },
-                "warrantyMeaning": {
-                    "question": "What does the extended 25-year warranty mean?",
-                    "answer": "Our 25-year warranty (for Hywood and vinyl collections) covers manufacturing defects, wear layer deterioration, and structural integrity for residential use. This is nearly double the industry standard warranty period. The warranty includes protection against delamination, excessive wear under normal use, and coating failures. For commercial applications, warranty periods vary by collection and usage class. Our Dutch and German partners stand behind their products with comprehensive coverage that reflects true quality confidence."
+                    "answer": "Yes! Our Hybrid Wood floors feature innovative 24-hour water-resistant technology that combines a real oak top layer with a water-resistant HDF core made from natural wood. Unlike traditional hardwood flooring, hybrid wood withstands spills, splashes, and humidity without damage. Our click-vinyl collections (SPC and LVT) also offer 100% waterproof protection with easy installation, making them ideal for kitchens and high-humidity areas."
                 },
                 "underfloorHeatingCompatibility": {
                     "question": "Are the floors compatible with underfloor heating?",
-                    "answer": "Yes, all our collections are specifically tested and certified for underfloor heating systems. Natural engineered floors, Hywood (Hybrid Wood) floors, as well as click and glue-down vinyl floors have excellent thermal conductivity with low thermal resistance (0.07 m²K/W), making them extremely efficient with radiant heating. Our oak parquet (excluding solid wood) and vinyl collections are also compatible when installed according to manufacturer guidelines. Underfloor heating is extremely popular in Bulgaria, and we ensure all our products perform optimally with these systems."
+                    "answer": "Yes, all our collections are specifically tested and certified for underfloor heating systems. Natural engineered floors, Hywood (Hybrid Wood) floors, as well as SPC click and LVT glue-down vinyl floors have excellent thermal conductivity with low thermal resistance (0.07 m²K/W), making them extremely efficient with radiant heating. Our oak parquet (excluding solid wood) and vinyl collections are also compatible when installed according to manufacturer guidelines. Underfloor heating is extremely popular in Bulgaria, and we ensure all our products perform optimally with these systems."
                 },
                 "solidVsEngineered": {
                     "question": "What's the difference between solid and engineered parquet?",
-                    "answer": "Solid parquet consists of a single piece of oak throughout its thickness, offering authentic wood that can be sanded multiple times over decades. Engineered (multi-layer) parquet features a real oak top layer (typically 3-4mm) bonded to a stable plywood core, providing superior dimensional stability and resistance to humidity changes. Engineered parquet is ideal for underfloor heating, works over concrete subfloors, and offers better value while maintaining authentic oak aesthetics. Both options feature premium Dutch quality with professional finishing."
+                    "answer": "Solid wood flooring consists of a single, full-thickness oak board, offering authentic wood that can be sanded multiple times over the decades. It is sensitive to moisture and heat, which can lead to potential deformation and requires specialized maintenance. Engineered flooring (two-layer or three-layer) features a real oak top layer (typically 3–4 mm) bonded to a base of stable wooden layers that provide excellent dimensional stability and resistance to changes in humidity. Engineered parquet is ideal for underfloor heating, works well over concrete subfloors, and offers better value while preserving the authentic oak aesthetic. Both options are distinguished by premium quality and are manufactured according to strict European standards for drying and processing, often using environmentally certified lacquers and oils to ensure longevity and a healthy indoor environment."
                 },
                 "installationDifficulty": {
                     "question": "How difficult is the installation of hybrid and vinyl floors?",
@@ -263,6 +259,18 @@
                 "safetyCertifications": {
                     "question": "What safety certifications do the floors have?",
                     "answer": "All our flooring collections meet rigorous European safety standards. Key certifications include: REACH (restricted hazardous substances), FSC (sustainable forestry), FloorScore and GreenGuard Gold (indoor air quality), and phthalate-free construction with bio-organic plasticizers. Our Hywood floors are produced without chemicals using Wood Powder technology. These independent certifications ensure your floors are safe for children, pets, and family members with sensitivities, while meeting EU environmental regulations."
+                },
+                "differenceSpcLvt": {
+                    "question": "What is the difference between SPC and LVT vinyl floors?",
+                    "answer": "SPC (Stone Plastic Composite) flooring has a rigid stone-plastic core that makes it extremely durable, stable, waterproof, and very easy to install thanks to its click system - all of our click vinyl floors are SPC. LVT (Luxury Vinyl Tile) flooring has a softer, more flexible vinyl core that provides a comfortable, cushioned feel and excellent acoustics, and when glued down (as all of our glue-down vinyls are) it becomes extremely stable and reliable for both residential and heavy commercial use. In short, SPC offers maximum strength and easy installation, while LVT offers superior comfort and glue-down stability."
+                },
+                "warrantyMeaning": {
+                    "question": "What do “lifetime” and “extended” guarantees mean?",
+                    "answer": "Our lifetime and extended manufacturer warranties apply to the Hybrid Wood collections as well as to our SPC click vinyl and glued-down LVT vinyl floors. They cover manufacturing defects, wear of the top layer, and structural integrity under residential use. The warranty includes protection against delamination, excessive wear under normal use, and damage to the surface coating. For commercial applications, warranty periods vary depending on the collection and usage class. Our Dutch and German partners stand firmly behind their products with the reputation they have built over decades, reflecting true confidence in their quality."
+                },
+                "deliveryTerms": {
+                    "question": "Is delivery included, and what are the conditions?",
+                    "answer": "Yes, delivery is included in the price for all our flooring products with a minimum order of 50 m². We deliver nationwide in Bulgaria, including major cities such as Sofia, Plovdiv, Varna, and Burgas, as well as smaller towns and villages. Delivery is made directly to your address only if a large truck can access the location; otherwise, the order will be delivered to the nearest suitable pickup point. For orders under 50 m², delivery conditions are arranged individually."
                 }
             }
         },

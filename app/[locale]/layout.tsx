@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     const t = await getTranslations({ locale, namespace: 'home' });
 
-    const ogImageUrl = 'https://ecovibefloors.com/images/OG.webp';
+    const ogImageUrl = `https://ecovibefloors.com/images/OG-${locale}.webp`;
     const homeUrl = `https://ecovibefloors.com/${locale}`;
 
     return {

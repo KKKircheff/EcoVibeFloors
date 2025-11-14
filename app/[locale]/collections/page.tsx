@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: CollectionsPageProps): Promis
 
     const t = await getTranslations({ locale, namespace: 'collections' });
 
-    const ogImageUrl = 'https://ecovibefloors.com/images/OG.webp';
+    const ogImageUrl = `https://ecovibefloors.com/images/OG-${locale}.webp`;
     const collectionsUrl = `https://ecovibefloors.com/${locale}/collections`;
 
     return {

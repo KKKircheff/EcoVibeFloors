@@ -19,7 +19,7 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
 
     const t = await getTranslations({ locale, namespace: 'contact' });
 
-    const ogImageUrl = 'https://ecovibefloors.com/images/OG.webp';
+    const ogImageUrl = `https://ecovibefloors.com/images/OG-${locale}.webp`;
     const contactUrl = `https://ecovibefloors.com/${locale}/contact`;
 
     return {
