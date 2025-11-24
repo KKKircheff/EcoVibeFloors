@@ -35,7 +35,7 @@ if (!AZURE_API_KEY || !TARGET_URL) {
  */
 export async function callAzureGPT(systemPrompt, userPrompt, options = {}) {
     const {
-        maxTokens = 3000,
+        maxTokens = 10000,
         responseFormat = { type: 'json_object' }
     } = options;
 

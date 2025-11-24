@@ -1718,5 +1718,93 @@
         "error": {
             "message": "An error occurred. Please try again."
         }
+    },
+    "termsOfService": {
+        "title": "Terms of Service",
+        "lastUpdated": "Last Updated",
+        "introduction": "Welcome to EcoVibeFloors. By accessing and using our website, you agree to be bound by these Terms of Service and all applicable laws and regulations.",
+        "metadata": {
+            "title": "Terms of Service | EcoVibeFloors",
+            "description": "Terms and conditions for using EcoVibeFloors premium flooring services.",
+            "ogImageAlt": "EcoVibeFloors - Terms of Service"
+        },
+        "section1": {
+            "title": "Use of Service",
+            "content": "You may use our service only for lawful purposes and in accordance with these Terms. You agree not to use the service in any way that violates any applicable laws or regulations."
+        },
+        "section2": {
+            "title": "Product Information",
+            "content": "We strive to provide accurate product descriptions and pricing. However, we do not warrant that product descriptions or other content is accurate, complete, reliable, current, or error-free."
+        },
+        "section3": {
+            "title": "Contact Information",
+            "content": "If you have any questions about these Terms of Service, please contact us at contact@ecovibefloors.com"
+        }
+    },
+    "privacyPolicy": {
+        "title": "Privacy Policy",
+        "lastUpdated": "Last Updated",
+        "introduction": "At EcoVibeFloors, we take your privacy seriously. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website.",
+        "metadata": {
+            "title": "Privacy Policy | EcoVibeFloors",
+            "description": "Learn how EcoVibeFloors protects and handles your personal information.",
+            "ogImageAlt": "EcoVibeFloors - Privacy Policy"
+        },
+        "section1": {
+            "title": "Information We Collect",
+            "content": "We collect information that you voluntarily provide to us when you express an interest in obtaining information about us or our products and services, when you participate in activities on the website, or otherwise when you contact us."
+        },
+        "section2": {
+            "title": "How We Use Your Information",
+            "content": "We use personal information collected via our website for a variety of business purposes described below. We process your personal information for these purposes in reliance on our legitimate business interests, in order to enter into or perform a contract with you, with your consent, and/or for compliance with our legal obligations."
+        },
+        "section3": {
+            "title": "Data Protection Rights",
+            "content": "Under the General Data Protection Regulation (GDPR), you have certain rights including the right to access, rectify, or erase your personal data. To exercise these rights, please contact us at contact@ecovibefloors.com"
+        }
+    },
+    "gdpr": {
+        "title": "GDPR Compliance",
+        "lastUpdated": "Last Updated",
+        "introduction": "EcoVibeFloors is committed to protecting your personal data in accordance with the General Data Protection Regulation (GDPR) and other applicable data protection laws.",
+        "metadata": {
+            "title": "GDPR Compliance | EcoVibeFloors",
+            "description": "Information about EcoVibeFloors' GDPR compliance and data protection measures.",
+            "ogImageAlt": "EcoVibeFloors - GDPR Compliance"
+        },
+        "section1": {
+            "title": "Your Rights Under GDPR",
+            "content": "Under GDPR, you have the right to access your personal data, the right to rectification, the right to erasure, the right to restrict processing, the right to data portability, and the right to object to processing."
+        },
+        "section2": {
+            "title": "Legal Basis for Processing",
+            "content": "We process your personal data based on one or more of the following legal bases: your consent, performance of a contract, compliance with legal obligations, protection of vital interests, public interest, or legitimate interests."
+        },
+        "section3": {
+            "title": "Data Controller Information",
+            "content": "EcoVibeFloors is the data controller responsible for your personal data. For any questions or to exercise your GDPR rights, please contact us at contact@ecovibefloors.com"
+        }
+    },
+    "accessibility": {
+        "title": "Accessibility Statement",
+        "lastUpdated": "Last Updated",
+        "introduction": "EcoVibeFloors is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards.",
+        "metadata": {
+            "title": "Accessibility Statement | EcoVibeFloors",
+            "description": "Learn about EcoVibeFloors' commitment to web accessibility.",
+            "ogImageAlt": "EcoVibeFloors - Accessibility Statement"
+        },
+        "section1": {
+            "title": "Conformance Status",
+            "content": "We strive to conform to the Web Content Accessibility Guidelines (WCAG) 2.1 Level AA. These guidelines explain how to make web content more accessible for people with disabilities and user-friendly for everyone."
+        },
+        "section2": {
+            "title": "Accessibility Features",
+            "content": "Our website includes features such as keyboard navigation support, descriptive alt text for images, clear heading structures, and sufficient color contrast ratios to enhance accessibility."
+        },
+        "section3": {
+            "title": "Feedback and Contact",
+            "content": "We welcome your feedback on the accessibility of EcoVibeFloors. If you encounter any accessibility barriers, please contact us at contact@ecovibefloors.com"
+        }
     }
 }

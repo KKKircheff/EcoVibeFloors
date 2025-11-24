@@ -27,7 +27,9 @@
       "Bash(node:*)",
       "WebFetch(domain:docs.mistral.ai)",
       "WebFetch(domain:ai-sdk.dev)",
-      "Bash(git -C \"C:/myProjects/EcoVibeFloors\" log --oneline)"
+      "Bash(git -C \"C:/myProjects/EcoVibeFloors\" log --oneline)",
+      "Bash(curl:*)",
+      "Bash(grep:*)"
     ],
     "deny": [],
     "ask": []

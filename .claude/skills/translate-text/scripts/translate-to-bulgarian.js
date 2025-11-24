@@ -131,7 +131,7 @@ Return JSON with:
             systemPrompt,
             userPrompt,
             {
-                maxTokens: 3000,
+                maxTokens: 10000,
                 responseFormat: { type: 'json_object' }
             },
             1 // Max retries
