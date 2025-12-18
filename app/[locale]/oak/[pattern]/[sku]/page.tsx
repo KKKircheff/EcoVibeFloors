@@ -66,12 +66,22 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
 
     const localizedContent = product.i18n[locale as keyof typeof product.i18n];
 
+    // Build canonical URL and hreflang alternates
+    const canonicalUrl = `https://ecovibefloors.com/${locale}/oak/${pattern}/${sku}`;
+
     return {
         title: `${localizedContent.name} | ${localizedContent.seo.title}`,
         description: localizedContent.seo.description,
         keywords: Array.isArray(localizedContent.seo.keywords)
             ? localizedContent.seo.keywords.join(', ')
             : localizedContent.seo.keywords,
+        alternates: {
+            canonical: canonicalUrl,
+            languages: {
+                'bg': `https://ecovibefloors.com/bg/oak/${pattern}/${sku}`,
+                'en': `https://ecovibefloors.com/en/oak/${pattern}/${sku}`,
+            },
+        },
     };
 }
 

@@ -22,6 +22,10 @@ export default function robots(): MetadataRoute.Robots {
                 '/api/', // Block API routes from being indexed
                 '/*&', // Block URLs ending with ampersand (malformed URLs)
                 '/*$', // Block URLs ending with dollar sign (malformed URLs)
+                '/*/collections/*', // Block old URL pattern (redirects handle these)
+                '/*/auth', // Block auth pages from indexing
+                '/*/chat', // Block chat interface from indexing
+                '/*/sample-basket', // Block sample basket from indexing
             ],
         },
         sitemap: `${baseUrl}/sitemap.xml`,

@@ -21,6 +21,20 @@ export default function middleware(request: NextRequest) {
         return NextResponse.next();
     }
 
+    // Redirect /[locale]/collections/[...path] → /[locale]/[...path]
+    // Fixes 287 404 errors from old URL structure
+    const collectionsRegex = /^\/([a-z]{2})\/collections\/(.+)$/;
+    const match = pathname.match(collectionsRegex);
+
+    if (match) {
+        const [, locale, restOfPath] = match;
+        const newUrl = new URL(request.url);
+        newUrl.pathname = `/${locale}/${restOfPath}`;
+
+        // 301 Permanent Redirect for SEO
+        return NextResponse.redirect(newUrl, 301);
+    }
+
     // Remove accept-language header to prevent browser language detection
     // This ensures only cookie (NEXT_LOCALE) and defaultLocale are used
     request.headers.set('accept-language', '');

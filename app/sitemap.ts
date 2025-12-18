@@ -13,15 +13,20 @@ const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://ecovibe-floors.web.
 export default function sitemap(): MetadataRoute.Sitemap {
     const locales = routing.locales;
     const staticRoutes = [
-        {path: '/', priority: 1.0, changeFrequency: 'daily' as const},
+        // Home page - different priorities for each locale (Bulgarian is primary market)
+        {path: '/', priority: 0.9, changeFrequency: 'daily' as const, localePriorities: {bg: 1.0, en: 0.85}},
         {path: '/collections', priority: 0.8, changeFrequency: 'weekly' as const},
         {path: '/oak', priority: 0.8, changeFrequency: 'weekly' as const},
         {path: '/custom-oak', priority: 0.8, changeFrequency: 'weekly' as const},
         {path: '/hybrid-wood', priority: 0.8, changeFrequency: 'weekly' as const},
-        {path: '/vinyl', priority: 0.8, changeFrequency: 'weekly' as const},
+        {path: '/click-vinyl', priority: 0.8, changeFrequency: 'weekly' as const},
+        {path: '/glue-down-vinyl', priority: 0.8, changeFrequency: 'weekly' as const},
         {path: '/contact', priority: 0.7, changeFrequency: 'monthly' as const},
         {path: '/blog', priority: 0.7, changeFrequency: 'weekly' as const},
         {path: '/hybrid-wood/what-is-hybrid-wood', priority: 0.6, changeFrequency: 'monthly' as const},
+        {path: '/click-vinyl/what-is-click-vinyl', priority: 0.6, changeFrequency: 'monthly' as const},
+        {path: '/glue-down-vinyl/what-is-glue-down-vinyl', priority: 0.6, changeFrequency: 'monthly' as const},
+        {path: '/oak/what-is-oak-flooring', priority: 0.6, changeFrequency: 'monthly' as const},
         // Policy pages
         {path: '/terms-of-service', priority: 0.5, changeFrequency: 'yearly' as const},
         {path: '/privacy-policy', priority: 0.5, changeFrequency: 'yearly' as const},
@@ -34,11 +39,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Generate static route entries with locale support
     staticRoutes.forEach((route) => {
         locales.forEach((locale) => {
+            // Use locale-specific priority if available, otherwise use default
+            const priority = (route as any).localePriorities?.[locale] ?? route.priority;
+
             sitemapEntries.push({
                 url: `${baseUrl}/${locale}${route.path}`,
                 lastModified: new Date(),
                 changeFrequency: route.changeFrequency,
-                priority: route.priority,
+                priority: priority,
                 alternates: {
                     languages: Object.fromEntries(
                         locales.map((l) => [l, `${baseUrl}/${l}${route.path}`])

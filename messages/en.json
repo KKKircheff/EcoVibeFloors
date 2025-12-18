@@ -4,7 +4,8 @@
         "description": "Premium oak parquet, hybrid wood and vinyl floors from the Netherlands and Germany for homes in Sofia, Plovdiv, Varna and Burgas. Up to 25-year warranty and delivery to address."
     },
     "common": {
-        "loading": "Loading..."
+        "loading": "Loading...",
+        "home": "Home"
     },
     "buttons": {
         "contactUs": "Contact Us",

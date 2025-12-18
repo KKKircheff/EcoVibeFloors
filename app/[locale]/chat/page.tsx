@@ -5,9 +5,17 @@
  */
 
 import 'server-only';
+import type {Metadata} from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { Container, Typography, Box } from '@mui/material';
 import { ChatAssistant } from '@/components/chat-ai-assistant/ChatAssistant';
+
+export const metadata: Metadata = {
+    robots: {
+        index: false,
+        follow: false,
+    },
+};
 
 interface ChatPageProps {
     params: Promise<{

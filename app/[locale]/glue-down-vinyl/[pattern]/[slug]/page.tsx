@@ -74,13 +74,20 @@ export async function generateMetadata({ params }: ProductDetailPageProps): Prom
     const ogImagePath = product.images[ogImageIndex];
     const ogImageUrl = getStorageUrl(product.collection, product.pattern, product.sku, ogImagePath).full;
 
-    // Build canonical URL
+    // Build canonical URL and hreflang alternates
     const canonicalUrl = `https://ecovibefloors.com/${locale}/glue-down-vinyl/${product.pattern}/${product.slug}`;
 
     return {
         title: localizedContent.seo.title,
         description: localizedContent.seo.description,
         keywords,
+        alternates: {
+            canonical: canonicalUrl,
+            languages: {
+                'bg': `https://ecovibefloors.com/bg/glue-down-vinyl/${product.pattern}/${product.slug}`,
+                'en': `https://ecovibefloors.com/en/glue-down-vinyl/${product.pattern}/${product.slug}`,
+            },
+        },
         openGraph: {
             title: localizedContent.seo.title,
             description: localizedContent.seo.description,
