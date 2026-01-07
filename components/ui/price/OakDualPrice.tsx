@@ -60,7 +60,8 @@ export function OakDualPrice({
                     fontFamily={'Montserrat'}
                     textAlign={'right'}
                 >
-                    {p('priceFinished')}: €{finishedPrice.toFixed(2)}{' '}
+                    {/* {p('priceFinished')}: €{finishedPrice.toFixed(2)}{' '} */}
+                    {p('priceFinished')}: €{unfinishedPrice.toFixed(2)}{' '}
                 </Typography>
 
                 {/* Unfinished Price - Only for unfinished products */}

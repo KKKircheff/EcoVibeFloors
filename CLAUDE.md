@@ -122,6 +122,33 @@ To create a visually compelling, high-quality website with strong design and eng
 - **Avoid**: Static utility classes (e.g., `export class AuthService { static signIn() {} }`)
 - **Example**: See `lib/firebase/auth.ts` for functional approach to Firebase authentication utilities
 
+### Code Comments Policy
+- **Comments for concepts only**: Comments should describe general concepts, architecture, or non-obvious business logic - NOT individual functions
+- **Self-descriptive naming**: Use clear, descriptive variable and function names instead of comments to explain what code does
+- **Why over what**: When comments are necessary, explain WHY something is done, not WHAT the code does (the code shows what)
+- **Avoid redundant comments**: Do not add comments that simply restate what the code already clearly expresses
+
+**Examples:**
+```tsx
+// ❌ Avoid - Redundant function comments
+// This function calculates the total price
+function calculateTotalPrice(items: Item[]) { ... }
+
+// ✅ Prefer - Self-descriptive name, no comment needed
+function calculateTotalPrice(items: Item[]) { ... }
+
+// ❌ Avoid - Commenting obvious code
+const isLoggedIn = user !== null; // Check if user is logged in
+
+// ✅ Prefer - Self-descriptive variable name
+const isUserAuthenticated = user !== null;
+
+// ✅ Good - Concept/architecture comment
+// Firebase Auth state is managed globally via context to avoid
+// re-authentication on every page navigation
+export const AuthProvider = ({ children }: Props) => { ... }
+```
+
 ## Product Documentation Reference
 
 ### Location & Structure
