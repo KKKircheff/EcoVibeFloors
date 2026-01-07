@@ -26,10 +26,12 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
     const t = await getTranslations({ locale, namespace: 'home' });
 
-    const ogImageUrl = `https://ecovibefloors.com/images/OG-${locale}.webp`;
-    const homeUrl = `https://ecovibefloors.com/${locale}`;
+    const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://ecovibefloors.com';
+    const ogImageUrl = `${baseUrl}/images/OG-${locale}.webp`;
+    const homeUrl = `${baseUrl}/${locale}`;
 
     return {
+        metadataBase: new URL(baseUrl),
         title: t('metadata.title'),
         description: t('metadata.description'),
         openGraph: {
