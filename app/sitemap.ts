@@ -1,37 +1,64 @@
 import type {MetadataRoute} from 'next';
+import {execSync} from 'child_process';
 import {getAllProducts} from '@/utils/products';
 import {routing} from '@/i18n/routing';
 
 /**
  * Dynamic sitemap generator for EcoVibeFloors
- * Automatically includes all static and dynamic routes with locale support
- * Generated at build time and included in Firebase deployment
+ * Follows Google 2025/2026 best practices:
+ * - Excludes priority and changefreq (Google ignores these)
+ * - Uses accurate lastmod dates based on Git commit history
+ * - Generated at build time and included in Firebase deployment
  */
 
-const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://ecovibe-floors.web.app';
+const baseUrl = process.env.NEXT_PUBLIC_BASE_URL || 'https://ecovibefloors.com';
+
+// Get last modified date from Git for sitemap.ts or fallback to recent commit
+function getLastModifiedDate(): Date {
+    try {
+        // Get the last commit date for the sitemap file
+        const gitDate = execSync('git log -1 --format=%cI app/sitemap.ts', {encoding: 'utf-8'}).toString().trim();
+        return gitDate ? new Date(gitDate) : new Date();
+    } catch {
+        // Fallback to current date if Git is not available
+        return new Date();
+    }
+}
+
+// Get product collection last modified dates from their JSON files
+function getCollectionLastModified(collection: string): Date {
+    try {
+        const gitDate = execSync(`git log -1 --format=%cI collections/${collection}.json`, {
+            encoding: 'utf-8',
+        }).toString().trim();
+        return gitDate ? new Date(gitDate) : new Date();
+    } catch {
+        return new Date();
+    }
+}
+
+const sitemapLastMod = getLastModifiedDate();
 
 export default function sitemap(): MetadataRoute.Sitemap {
     const locales = routing.locales;
     const staticRoutes = [
-        // Home page - different priorities for each locale (Bulgarian is primary market)
-        {path: '/', priority: 0.9, changeFrequency: 'daily' as const, localePriorities: {bg: 1.0, en: 0.85}},
-        {path: '/collections', priority: 0.8, changeFrequency: 'weekly' as const},
-        {path: '/oak', priority: 0.8, changeFrequency: 'weekly' as const},
-        {path: '/custom-oak', priority: 0.8, changeFrequency: 'weekly' as const},
-        {path: '/hybrid-wood', priority: 0.8, changeFrequency: 'weekly' as const},
-        {path: '/click-vinyl', priority: 0.8, changeFrequency: 'weekly' as const},
-        {path: '/glue-down-vinyl', priority: 0.8, changeFrequency: 'weekly' as const},
-        {path: '/contact', priority: 0.7, changeFrequency: 'monthly' as const},
-        {path: '/blog', priority: 0.7, changeFrequency: 'weekly' as const},
-        {path: '/hybrid-wood/what-is-hybrid-wood', priority: 0.6, changeFrequency: 'monthly' as const},
-        {path: '/click-vinyl/what-is-click-vinyl', priority: 0.6, changeFrequency: 'monthly' as const},
-        {path: '/glue-down-vinyl/what-is-glue-down-vinyl', priority: 0.6, changeFrequency: 'monthly' as const},
-        {path: '/oak/what-is-oak-flooring', priority: 0.6, changeFrequency: 'monthly' as const},
-        // Policy pages
-        {path: '/terms-of-service', priority: 0.5, changeFrequency: 'yearly' as const},
-        {path: '/privacy-policy', priority: 0.5, changeFrequency: 'yearly' as const},
-        {path: '/gdpr', priority: 0.5, changeFrequency: 'yearly' as const},
-        {path: '/accessibility', priority: 0.5, changeFrequency: 'yearly' as const},
+        {path: '/'},
+        {path: '/collections'},
+        {path: '/oak'},
+        {path: '/custom-oak'},
+        {path: '/hybrid-wood'},
+        {path: '/click-vinyl'},
+        {path: '/glue-down-vinyl'},
+        {path: '/contact'},
+        {path: '/blog'},
+        {path: '/hybrid-wood/what-is-hybrid-wood'},
+        {path: '/click-vinyl/what-is-click-vinyl'},
+        {path: '/glue-down-vinyl/what-is-glue-down-vinyl'},
+        {path: '/oak/what-is-oak-flooring'},
+        {path: '/terms-of-service'},
+        {path: '/privacy-policy'},
+        {path: '/gdpr'},
+        {path: '/accessibility'},
     ];
 
     const sitemapEntries: MetadataRoute.Sitemap = [];
@@ -39,14 +66,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Generate static route entries with locale support
     staticRoutes.forEach((route) => {
         locales.forEach((locale) => {
-            // Use locale-specific priority if available, otherwise use default
-            const priority = (route as any).localePriorities?.[locale] ?? route.priority;
-
             sitemapEntries.push({
                 url: `${baseUrl}/${locale}${route.path}`,
-                lastModified: new Date(),
-                changeFrequency: route.changeFrequency,
-                priority: priority,
+                lastModified: sitemapLastMod,
                 alternates: {
                     languages: Object.fromEntries(
                         locales.map((l) => [l, `${baseUrl}/${l}${route.path}`])
@@ -61,6 +83,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Each collection has its own route structure (e.g., /hybrid-wood/[pattern]/[slug])
     try {
         const allProducts = getAllProducts();
+        const collectionLastModCache = new Map<string, Date>();
 
         allProducts.forEach((product) => {
             // Use collection-specific routes instead of /collections/
@@ -68,13 +91,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
             const productPath = `/${product.collection}/${product.pattern}/${product.slug}`;
             const patternPath = `/${product.collection}/${product.pattern}`;
 
+            // Get or cache the collection's last modified date
+            if (!collectionLastModCache.has(product.collection)) {
+                collectionLastModCache.set(product.collection, getCollectionLastModified(product.collection));
+            }
+            const productLastMod = collectionLastModCache.get(product.collection)!;
+
             locales.forEach((locale) => {
                 // Individual product page
                 sitemapEntries.push({
                     url: `${baseUrl}/${locale}${productPath}`,
-                    lastModified: new Date(),
-                    changeFrequency: 'weekly',
-                    priority: 0.7,
+                    lastModified: productLastMod,
                     alternates: {
                         languages: Object.fromEntries(
                             locales.map((l) => [l, `${baseUrl}/${l}${productPath}`])
@@ -91,9 +118,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 if (!exists) {
                     sitemapEntries.push({
                         url: patternUrl,
-                        lastModified: new Date(),
-                        changeFrequency: 'weekly',
-                        priority: 0.75,
+                        lastModified: productLastMod,
                         alternates: {
                             languages: Object.fromEntries(
                                 locales.map((l) => [l, `${baseUrl}/${l}${patternPath}`])
@@ -103,7 +128,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 }
             });
         });
-
     } catch (error) {
         console.error('Error generating dynamic sitemap entries:', error);
     }

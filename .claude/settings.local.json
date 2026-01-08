@@ -29,7 +29,8 @@
       "WebFetch(domain:ai-sdk.dev)",
       "Bash(git -C \"C:/myProjects/EcoVibeFloors\" log --oneline)",
       "Bash(curl:*)",
-      "Bash(grep:*)"
+      "Bash(grep:*)",
+      "Bash(cat:*)"
     ],
     "deny": [],
     "ask": []
