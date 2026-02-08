@@ -11,6 +11,7 @@ import ProductImageGallery from '@/components/products/product-image-gallery/Pro
 import ProductActions from '@/components/products/product-actions/ProductActions.component';
 import { ProductSpecs, SpecCategory } from '@/components/ui/sections/product/ProductSpecs';
 import { OakDualPrice } from '@/components/ui/price/OakDualPrice';
+import { ProductJsonLd } from '@/components/seo/ProductJsonLd';
 import { isValidPattern, ProductPattern, Product } from '@/types/products';
 import { getOakProductsByPattern } from '@/utils/products/oak';
 import { routing } from '@/i18n/routing';
@@ -259,8 +260,20 @@ export default async function OakProductPage({ params }: ProductPageProps) {
         }
     }
 
+    const canonicalUrl = `https://ecovibefloors.com/${locale}/oak/${pattern}/${sku}`;
+
     return (
         <Stack>
+            <ProductJsonLd
+                name={localizedContent.name}
+                description={localizedContent.description || localizedContent.seo.description}
+                sku={product.sku}
+                gtin={product.gtin}
+                price={product.price}
+                imageUrl={imageUrls[0]}
+                url={canonicalUrl}
+                brand="Ter Hürne"
+            />
             {/* Product Details */}
             <PageLayoutContainer bgcolor="background.paper" py={{ xs: 4, md: 8 }}>
                 <Breadcrumb items={breadcrumbItems} />

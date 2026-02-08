@@ -32,9 +32,10 @@ export function OakDualPrice({
         router.push('/auth');
     };
 
-    // Calculate prices
+    // For pre-finished products, basePrice is already the final price.
+    // For unfinished products, basePrice is the unfinished price and finishing costs extra.
     const unfinishedPrice = basePrice;
-    const finishedPrice = basePrice + FINISHING_COST;
+    const finishedPrice = isFinished ? basePrice : basePrice + FINISHING_COST;
 
     // Show skeleton during auth check
     if (loading) {
@@ -60,8 +61,7 @@ export function OakDualPrice({
                     fontFamily={'Montserrat'}
                     textAlign={'right'}
                 >
-                    {/* {p('priceFinished')}: €{finishedPrice.toFixed(2)}{' '} */}
-                    {p('priceFinished')}: €{unfinishedPrice.toFixed(2)}{' '}
+                    {p('priceFinished')}: €{finishedPrice.toFixed(2)}{' '}
                 </Typography>
 
                 {/* Unfinished Price - Only for unfinished products */}

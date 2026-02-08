@@ -11,6 +11,7 @@ import ProductImageGallery from '@/components/products/product-image-gallery/Pro
 import ProductActions from '@/components/products/product-actions/ProductActions.component';
 import { ProductSpecs, SpecCategory } from '@/components/ui/sections/product/ProductSpecs';
 import { AuthenticatedPrice } from '@/components/ui/price/AuthenticatedPrice';
+import { ProductJsonLd } from '@/components/seo/ProductJsonLd';
 import { isValidPattern } from '@/types/products';
 import { getGlueDownVinylProductBySlug, getGlueDownVinylProducts } from '@/utils/products/glue-down-vinyl';
 import { routing } from '@/i18n/routing';
@@ -286,8 +287,20 @@ export default async function GlueDownVinylProductPage({ params }: ProductDetail
         }
     }
 
+    const canonicalUrl = `https://ecovibefloors.com/${locale}/glue-down-vinyl/${product.pattern}/${product.slug}`;
+
     return (
         <Stack>
+            <ProductJsonLd
+                name={localizedContent.name}
+                description={localizedContent.description || localizedContent.seo.description}
+                sku={product.sku}
+                gtin={product.gtin}
+                price={product.price}
+                imageUrl={imageUrls[0]}
+                url={canonicalUrl}
+                brand="Ter Hürne"
+            />
             {/* Product Details */}
             <PageLayoutContainer bgcolor="background.paper" py={{ xs: 4, md: 8 }}>
                 <Breadcrumb items={breadcrumbItems} />

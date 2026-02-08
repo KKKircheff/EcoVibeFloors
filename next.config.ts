@@ -33,6 +33,94 @@ const nextConfig: NextConfig = {
         removeConsole: process.env.NODE_ENV === 'production',
         reactRemoveProperties: process.env.NODE_ENV === 'production',
     },
+    // SEO: Redirect legacy URLs to current structure
+    // Fixes 287+ 404 errors from old URL patterns in Google Search Console
+    redirects: async () => [
+        // Old /collections/ prefix URLs -> remove /collections/ segment
+        {
+            source: '/:locale(en|bg)/collections/hybrid-wood/:pattern/:slug',
+            destination: '/:locale/hybrid-wood/:pattern/:slug',
+            permanent: true,
+        },
+        {
+            source: '/:locale(en|bg)/collections/click-vinyl/:pattern/:slug',
+            destination: '/:locale/click-vinyl/:pattern/:slug',
+            permanent: true,
+        },
+        {
+            source: '/:locale(en|bg)/collections/glue-down-vinyl/:pattern/:slug',
+            destination: '/:locale/glue-down-vinyl/:pattern/:slug',
+            permanent: true,
+        },
+        {
+            source: '/:locale(en|bg)/collections/oak/:pattern/:slug',
+            destination: '/:locale/oak/:pattern/:slug',
+            permanent: true,
+        },
+        // Old pattern collection pages (without product slug)
+        {
+            source: '/:locale(en|bg)/collections/hybrid-wood/:pattern',
+            destination: '/:locale/hybrid-wood/:pattern',
+            permanent: true,
+        },
+        {
+            source: '/:locale(en|bg)/collections/click-vinyl/:pattern',
+            destination: '/:locale/click-vinyl/:pattern',
+            permanent: true,
+        },
+        {
+            source: '/:locale(en|bg)/collections/glue-down-vinyl/:pattern',
+            destination: '/:locale/glue-down-vinyl/:pattern',
+            permanent: true,
+        },
+        {
+            source: '/:locale(en|bg)/collections/oak/:pattern',
+            destination: '/:locale/oak/:pattern',
+            permanent: true,
+        },
+        // Old pattern names (fishbone, plank) -> collection landing page
+        {
+            source: '/:locale(en|bg)/hybrid-wood/fishbone/:slug',
+            destination: '/:locale/hybrid-wood',
+            permanent: true,
+        },
+        {
+            source: '/:locale(en|bg)/hybrid-wood/plank/:slug',
+            destination: '/:locale/hybrid-wood',
+            permanent: true,
+        },
+        {
+            source: '/:locale(en|bg)/hybrid-wood/fishbone',
+            destination: '/:locale/hybrid-wood',
+            permanent: true,
+        },
+        {
+            source: '/:locale(en|bg)/hybrid-wood/plank',
+            destination: '/:locale/hybrid-wood',
+            permanent: true,
+        },
+        // URLs without locale prefix -> add /en/ prefix
+        {
+            source: '/hybrid-wood/:pattern/:slug',
+            destination: '/en/hybrid-wood/:pattern/:slug',
+            permanent: true,
+        },
+        {
+            source: '/click-vinyl/:pattern/:slug',
+            destination: '/en/click-vinyl/:pattern/:slug',
+            permanent: true,
+        },
+        {
+            source: '/glue-down-vinyl/:pattern/:slug',
+            destination: '/en/glue-down-vinyl/:pattern/:slug',
+            permanent: true,
+        },
+        {
+            source: '/oak/:pattern/:slug',
+            destination: '/en/oak/:pattern/:slug',
+            permanent: true,
+        },
+    ],
     // Cache optimization for Firebase App Hosting
     headers: async () => [
         {

@@ -1,6 +1,7 @@
 import type {MetadataRoute} from 'next';
 import {execSync} from 'child_process';
 import {getAllProducts} from '@/utils/products';
+import {getAllTreatments} from '@/utils/treatments';
 import {routing} from '@/i18n/routing';
 
 /**
@@ -55,6 +56,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
         {path: '/click-vinyl/what-is-click-vinyl'},
         {path: '/glue-down-vinyl/what-is-glue-down-vinyl'},
         {path: '/oak/what-is-oak-flooring'},
+        {path: '/oak/treatments'},
         {path: '/terms-of-service'},
         {path: '/privacy-policy'},
         {path: '/gdpr'},
@@ -130,6 +132,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
         });
     } catch (error) {
         console.error('Error generating dynamic sitemap entries:', error);
+    }
+
+    // Generate treatment detail page entries
+    try {
+        const treatments = getAllTreatments();
+        const treatmentsLastMod = getCollectionLastModified('dig-oak-treatments');
+
+        treatments.forEach((treatment) => {
+            const treatmentPath = `/oak/treatments/${treatment.slug}`;
+
+            locales.forEach((locale) => {
+                sitemapEntries.push({
+                    url: `${baseUrl}/${locale}${treatmentPath}`,
+                    lastModified: treatmentsLastMod,
+                    alternates: {
+                        languages: Object.fromEntries(
+                            locales.map((l) => [l, `${baseUrl}/${l}${treatmentPath}`])
+                        ),
+                    },
+                });
+            });
+        });
+    } catch (error) {
+        console.error('Error generating treatment sitemap entries:', error);
     }
 
     return sitemapEntries;
