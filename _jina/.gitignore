@@ -1,0 +1,4 @@
+# Ignore all fetched content — not for committing
+*
+# But keep this .gitignore itself so the folder stays tracked in git
+!.gitignore
