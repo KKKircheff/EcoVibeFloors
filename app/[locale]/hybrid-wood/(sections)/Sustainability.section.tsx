@@ -3,8 +3,8 @@ import { Stack, Typography, Box, Container } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
 import hybridWoodImage from '../../../../public/images/other/sustainable.webp';
-import { BlogTitle } from '@/components/ui/typography/BlogTitle';
-import { BlogContent } from '@/components/ui/typography/BlogContent';
+import { BlogTitle } from '@/components/atoms/typography/BlogTitle';
+import { BlogContent } from '@/components/atoms/typography/BlogContent';
 
 export async function Sustainability() {
     const t = await getTranslations('whatIsHybridWood.sustainability');

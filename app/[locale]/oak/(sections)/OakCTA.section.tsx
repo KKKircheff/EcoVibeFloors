@@ -1,9 +1,9 @@
 import 'server-only';
 import { Stack, Container } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
-import { BlogTitle } from '@/components/ui/typography/BlogTitle';
-import { BlogContent } from '@/components/ui/typography/BlogContent';
-import { HeroButton } from '@/components/ui/buttons/HeroButton';
+import { BlogTitle } from '@/components/atoms/typography/BlogTitle';
+import { BlogContent } from '@/components/atoms/typography/BlogContent';
+import { HeroButton } from '@/components/atoms/buttons/HeroButton';
 
 export async function OakCTA() {
     const t = await getTranslations('oak.cta');

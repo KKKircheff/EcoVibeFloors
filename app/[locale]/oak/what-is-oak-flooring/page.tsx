@@ -2,15 +2,15 @@ import 'server-only';
 import { Stack } from '@mui/material';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
-import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
+import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
 import { OakHero } from '../(sections)/OakHero.section';
 import { OakConstruction } from '../(sections)/OakConstruction.section';
 import { OakOilTreatment } from '../(sections)/OakOilTreatment.section';
 import { OakStyles } from '../(sections)/OakStyles.section';
 import { OakSpecs } from '../(sections)/OakSpecs.section';
 import { OakSustainability } from '../(sections)/OakSustainability.section';
-import Footer from '@/components/layout/footer/Footer.component';
+import Footer from '@/components/organisms/footer/Footer';
 import { OakFeatures } from '../(sections)/OakFeatures.section';
 import { OakCTA } from '../(sections)/OakCTA.section';
 

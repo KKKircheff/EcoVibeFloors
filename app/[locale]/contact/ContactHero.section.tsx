@@ -1,8 +1,8 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
 import Image from 'next/image';
-import { HeroWrapper } from '@/components/ui/sections/hero/HeroWrapper';
-import { HeroContent } from '@/components/ui/sections/hero/HeroContent';
+import { HeroWrapper } from '@/components/organisms/hero/HeroWrapper';
+import { HeroContent } from '@/components/organisms/hero/HeroContent';
 import heroImage from '../../../public/images/home-page/hero-b.webp';
 
 export async function ContactHero() {

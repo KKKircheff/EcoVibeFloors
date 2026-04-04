@@ -1,11 +1,11 @@
 import 'server-only';
 import { Grid } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
-import { FeatureIconCard } from '@/components/ui/card/FeatureIconCard';
-import { TreeIcon } from '@/components/icons/TreeIcon';
-import { WaterResistantIcon } from '@/components/icons/WaterResistantIcon';
-import { ScratchIcon } from '@/components/icons/ScratchIcon';
-import { HeatingIcon } from '@/components/icons/HeatingIcon';
+import { FeatureIconCard } from '@/components/organisms/cards/FeatureIconCard';
+import { TreeIcon } from '@/components/atoms/icons/TreeIcon';
+import { WaterResistantIcon } from '@/components/atoms/icons/WaterResistantIcon';
+import { ScratchIcon } from '@/components/atoms/icons/ScratchIcon';
+import { HeatingIcon } from '@/components/atoms/icons/HeatingIcon';
 import { GoShieldCheck } from "react-icons/go";
 import { SlLayers } from "react-icons/sl";
 import { TbHours24 } from "react-icons/tb";

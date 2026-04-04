@@ -8,7 +8,7 @@ import 'server-only';
 import type {Metadata} from 'next';
 import { setRequestLocale } from 'next-intl/server';
 import { Container, Typography, Box } from '@mui/material';
-import { ChatAssistant } from '@/components/chat-ai-assistant/ChatAssistant';
+import { ChatAssistant } from '@/components/organisms/chat/ChatAssistant';
 
 export const metadata: Metadata = {
     robots: {

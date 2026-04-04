@@ -2,9 +2,9 @@ import 'server-only';
 import { Stack, Typography } from '@mui/material';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import { CustomOakHero } from './CustomOakHero.section';
-import Footer from '@/components/layout/footer/Footer.component';
+import Footer from '@/components/organisms/footer/Footer';
 
 // Force static generation
 export const dynamic = 'error';

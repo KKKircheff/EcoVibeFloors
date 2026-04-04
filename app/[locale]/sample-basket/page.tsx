@@ -1,8 +1,8 @@
 import 'server-only';
 import type {Metadata} from 'next';
 import { Stack } from '@mui/material';
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
-import Footer from '@/components/layout/footer/Footer.component';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
+import Footer from '@/components/organisms/footer/Footer';
 import SampleBasketContent from './SampleBasketContent.section';
 
 export const metadata: Metadata = {

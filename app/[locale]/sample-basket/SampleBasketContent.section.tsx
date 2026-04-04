@@ -6,9 +6,9 @@ import { useForm } from 'react-hook-form';
 import { useTranslations } from 'next-intl';
 import { useSampleBasket } from '@/lib/contexts/SampleBasketContext';
 import { useToast } from '@/lib/contexts/ToastContext';
-import SampleBasketItem from '@/components/samples/SampleBasketItem.component';
-import EmptyBasket from '@/components/samples/EmptyBasket.component';
-import ContactFormTextField from '@/components/ui/input/ContactFormTextField.component';
+import SampleBasketItem from '@/components/molecules/samples/SampleBasketItem';
+import EmptyBasket from '@/components/organisms/basket/EmptyBasket';
+import ContactFormTextField from '@/components/atoms/inputs/ContactFormTextField';
 import { useRouter } from '@/i18n/navigation';
 
 export type SampleOrderInfo = {

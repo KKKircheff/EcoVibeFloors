@@ -3,14 +3,14 @@ import { Stack } from '@mui/material';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
-import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
+import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
 import { OakHero } from './OakHero.section';
 import { OakOverview } from './(sections)/OakOverview.section';
 import { OakFeatures } from './(sections)/OakFeatures.section';
 import { OakPatterns } from './(sections)/OakPatterns.section';
 import { OakCTA } from './(sections)/OakCTA.section';
-import Footer from '@/components/layout/footer/Footer.component';
+import Footer from '@/components/organisms/footer/Footer';
 
 export const dynamic = 'error';
 

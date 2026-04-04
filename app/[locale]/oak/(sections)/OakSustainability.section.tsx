@@ -4,9 +4,9 @@ import { getTranslations } from 'next-intl/server';
 import { FaCheck } from 'react-icons/fa';
 import Image from 'next/image';
 import sustainableImage from '../../../../public/images/other/sustainable.webp'
-import { BlogTitle } from '@/components/ui/typography/BlogTitle';
-import { BlogSubtitle } from '@/components/ui/typography/BlogSubtitle';
-import { BlogContent } from '@/components/ui/typography/BlogContent';
+import { BlogTitle } from '@/components/atoms/typography/BlogTitle';
+import { BlogSubtitle } from '@/components/atoms/typography/BlogSubtitle';
+import { BlogContent } from '@/components/atoms/typography/BlogContent';
 
 export async function OakSustainability() {
     const t = await getTranslations('oakFlooring.sustainability');

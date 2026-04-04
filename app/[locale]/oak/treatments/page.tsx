@@ -3,10 +3,10 @@ import { Stack, Typography } from '@mui/material';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
-import Footer from '@/components/layout/footer/Footer.component';
-import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
-import { TreatmentGrid } from '@/components/ui/treatment/TreatmentGrid';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
+import Footer from '@/components/organisms/footer/Footer';
+import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
+import { TreatmentGrid } from '@/components/organisms/grids/TreatmentGrid';
 import { getAllTreatments } from '@/utils/treatments';
 import { routing } from '@/i18n/routing';
 

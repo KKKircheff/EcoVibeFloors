@@ -1,8 +1,8 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
 import { Stack } from '@mui/material';
-import { BlogContent } from '@/components/ui/typography/BlogContent';
-import { ProductCollectionGrid } from '@/components/ui/product/ProductCollectionGrid';
+import { BlogContent } from '@/components/atoms/typography/BlogContent';
+import { ProductCollectionGrid } from '@/components/organisms/grids/ProductCollectionGrid';
 
 export async function OakStyles() {
     const t = await getTranslations('oakFlooring.styles');

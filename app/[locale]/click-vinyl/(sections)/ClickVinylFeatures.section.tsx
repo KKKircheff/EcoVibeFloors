@@ -1,13 +1,13 @@
 import 'server-only';
 import { Grid } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
-import { FeatureIconCard } from '@/components/ui/card/FeatureIconCard';
+import { FeatureIconCard } from '@/components/organisms/cards/FeatureIconCard';
 import { TbDropletCheck } from "react-icons/tb";
 import { GoShieldCheck } from 'react-icons/go';
-import { TreeIcon } from '@/components/icons/TreeIcon';
+import { TreeIcon } from '@/components/atoms/icons/TreeIcon';
 import { BsSoundwave } from "react-icons/bs";
-import { ClickIcon } from '@/components/icons/ClickIcon';
-import { ScratchIcon } from '@/components/icons/ScratchIcon';
+import { ClickIcon } from '@/components/atoms/icons/ClickIcon';
+import { ScratchIcon } from '@/components/atoms/icons/ScratchIcon';
 
 export async function ClickVinylFeatures() {
     const t = await getTranslations('clickVinyl');

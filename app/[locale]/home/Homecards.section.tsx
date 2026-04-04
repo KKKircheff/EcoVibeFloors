@@ -1,5 +1,5 @@
 import 'server-only'
-import { ImageTextGrid } from '@/components/ui/grid/ImageTextGrid'
+import { ImageTextGrid } from '@/components/organisms/grids/ImageTextGrid'
 import { Stack } from '@mui/material'
 import { getTranslations } from 'next-intl/server'
 import React from 'react'

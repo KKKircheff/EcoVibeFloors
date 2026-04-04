@@ -1,13 +1,13 @@
 import 'server-only';
 import { Grid } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
-import { FeatureIconCard } from '@/components/ui/card/FeatureIconCard';
+import { FeatureIconCard } from '@/components/organisms/cards/FeatureIconCard';
 import { TbDropletCheck } from "react-icons/tb";
 import { GoShieldCheck } from 'react-icons/go';
-import { TreeIcon } from '@/components/icons/TreeIcon';
+import { TreeIcon } from '@/components/atoms/icons/TreeIcon';
 import { BsSoundwave } from "react-icons/bs";
 import { PiGpsFix } from "react-icons/pi";
-import { ScratchIcon } from '@/components/icons/ScratchIcon';
+import { ScratchIcon } from '@/components/atoms/icons/ScratchIcon';
 
 export async function GlueDownVinylFeatures() {
     const t = await getTranslations('glueDownVinyl');

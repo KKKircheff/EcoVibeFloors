@@ -1,0 +1,21 @@
+import { Typography } from '@mui/material';
+import { ReactNode } from 'react';
+
+interface HeroSubtitleProps {
+    children: string;
+}
+
+export function HeroSubtitle({ children }: HeroSubtitleProps) {
+    return (
+        <Typography
+            variant="h5"
+            component="p"
+            color='#fff'
+        // sx={{
+        //     textShadow: '2px 2px 4px rgba(0,0,0,0.4)',
+        // }}
+        >
+            {children}
+        </Typography>
+    );
+}

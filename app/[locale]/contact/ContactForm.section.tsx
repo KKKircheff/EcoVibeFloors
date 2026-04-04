@@ -3,7 +3,7 @@ import { Stack, Button, Box } from '@mui/material';
 import { useState } from "react";
 import { useForm } from 'react-hook-form';
 import { useTranslations } from 'next-intl';
-import ContactFormTextField from '../../../components/ui/input/ContactFormTextField.component';
+import ContactFormTextField from '@/components/atoms/inputs/ContactFormTextField';
 
 export type ContactInfo = {
     name: string

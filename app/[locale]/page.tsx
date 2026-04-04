@@ -5,14 +5,14 @@ import { alpha, Stack, Box, Skeleton } from '@mui/material';
 import { setRequestLocale } from 'next-intl/server';
 
 import { HomeHero } from './home/HomeHero.section';
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import { palette } from '@/lib/styles/pallete';
 
 const HomeFeatures = dynamicImport(() => import('./home/HomeFeatures.section').then(mod => ({ default: mod.HomeFeatures })));
 const QuotesSection = dynamicImport(() => import('./home/Quotes.section'));
 const HomecardsSection = dynamicImport(() => import('./home/Homecards.section'));
 const HomeFAQ = dynamicImport(() => import('./home/HomeFAQ.section').then(mod => ({ default: mod.HomeFAQ })));
-const Footer = dynamicImport(() => import('@/components/layout/footer/Footer.component'));
+const Footer = dynamicImport(() => import('@/components/organisms/footer/Footer'));
 
 // Force static generation
 export const dynamic = 'error';

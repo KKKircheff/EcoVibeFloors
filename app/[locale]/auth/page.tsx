@@ -22,7 +22,7 @@ import Image from 'next/image';
 import { useTranslations, useLocale } from 'next-intl';
 import { useRouter } from '@/i18n/navigation';
 import { useAuth } from '@/hooks';
-import PrimaryActionButton from '@/components/ui/buttons/PrimaryActionButton';
+import PrimaryActionButton from '@/components/atoms/buttons/PrimaryActionButton';
 import { getAuthErrorTranslationKey, handleRedirectResult } from '@/lib/firebase/auth';
 import googleIcon from '../../../public/images/icons/google.png';
 

@@ -3,7 +3,7 @@
 import {useTranslations} from 'next-intl';
 import {useRouter} from '@/i18n/navigation';
 import {Box, Typography, Container} from '@mui/material';
-import PrimaryActionButton from '@/components/ui/buttons/PrimaryActionButton';
+import PrimaryActionButton from '@/components/atoms/buttons/PrimaryActionButton';
 import NotFoundLayout from './not-found-layout';
 
 export default function NotFound() {

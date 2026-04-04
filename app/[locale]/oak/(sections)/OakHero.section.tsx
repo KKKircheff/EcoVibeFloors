@@ -1,9 +1,9 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
-import { CollectionHero } from '@/components/ui/sections/hero/CollectionHero.section';
+import { CollectionHero } from '@/components/organisms/hero/CollectionHero';
 import Image from 'next/image';
-import { HeroContent } from '@/components/ui/sections/hero/HeroContent';
-import { HeroWrapper } from '@/components/ui/sections/hero/HeroWrapper';
+import { HeroContent } from '@/components/organisms/hero/HeroContent';
+import { HeroWrapper } from '@/components/organisms/hero/HeroWrapper';
 import heroImage from '../../../../public/images/home-page/hero-c.webp';
 
 export async function OakHero() {

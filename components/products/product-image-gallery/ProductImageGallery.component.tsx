@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import Image from 'next/image';
 import { Stack, Box, Skeleton } from '@mui/material';
-import ImageModal from '@/components/products/image-modal/ImageModal.component';
+import ImageModal from '@/components/organisms/product-detail/ImageModal';
 
 interface ProductImageGalleryProps {
     images: string[];

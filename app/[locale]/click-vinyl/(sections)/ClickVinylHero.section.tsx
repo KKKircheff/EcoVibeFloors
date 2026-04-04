@@ -1,6 +1,6 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
-import { CollectionHero } from '@/components/ui/sections/hero/CollectionHero.section';
+import { CollectionHero } from '@/components/organisms/hero/CollectionHero';
 
 export async function ClickVinylHero() {
     const t = await getTranslations('clickVinyl.hero');

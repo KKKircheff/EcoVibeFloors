@@ -1,4 +1,4 @@
-import Quote from '@/components/ui/typography/Quote'
+import Quote from '@/components/atoms/typography/Quote'
 import { Stack, StackProps } from '@mui/material'
 import { getTranslations } from 'next-intl/server'
 import React from 'react'

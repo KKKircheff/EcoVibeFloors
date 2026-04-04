@@ -3,10 +3,10 @@ import { Stack } from '@mui/material';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import { CollectionsHero } from './CollectionsHero.section';
 import { CollectionsGrid } from './CollectionsGrid.section';
-import Footer from '@/components/layout/footer/Footer.component';
+import Footer from '@/components/organisms/footer/Footer';
 import { palette } from '@/lib/styles/pallete';
 
 // Force static generation

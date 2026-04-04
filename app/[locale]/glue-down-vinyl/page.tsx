@@ -2,12 +2,12 @@ import 'server-only';
 import { Stack } from '@mui/material';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
-import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
+import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
 import { GlueDownVinylHero } from './(sections)/GlueDownVinylHero.section';
 import { GlueDownVinylCollections } from './(sections)/GlueDownVinylCollections.section';
 import { GlueDownVinylFeatures } from './(sections)/GlueDownVinylFeatures.section';
-import Footer from '@/components/layout/footer/Footer.component';
+import Footer from '@/components/organisms/footer/Footer';
 import { GlueDownVinylCTA } from './(sections)/GlueDownVinylCTA.section';
 
 // Force static generation

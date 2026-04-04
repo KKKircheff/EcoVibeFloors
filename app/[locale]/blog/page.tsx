@@ -3,8 +3,8 @@ import { Stack, Typography } from '@mui/material';
 import { setRequestLocale } from 'next-intl/server';
 
 import { BlogHero } from './BlogHero.section';
-import Footer from '@/components/layout/footer/Footer.component';
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
+import Footer from '@/components/organisms/footer/Footer';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 
 // Force static generation
 export const dynamic = 'error';

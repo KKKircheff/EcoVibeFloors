@@ -1,9 +1,9 @@
 import 'server-only';
 import { Stack, Container } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
-import { BlogTitle } from '@/components/ui/typography/BlogTitle';
-import { BlogSubtitle } from '@/components/ui/typography/BlogSubtitle';
-import { BlogContent } from '@/components/ui/typography/BlogContent';
+import { BlogTitle } from '@/components/atoms/typography/BlogTitle';
+import { BlogSubtitle } from '@/components/atoms/typography/BlogSubtitle';
+import { BlogContent } from '@/components/atoms/typography/BlogContent';
 
 export async function DrybackTechnology() {
     const t = await getTranslations('whatIsGlueDownVinyl.technology');

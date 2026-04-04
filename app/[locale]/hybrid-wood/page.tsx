@@ -2,13 +2,13 @@ import 'server-only';
 import { Stack } from '@mui/material';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
-import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
+import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
 import { HybridWoodHero } from './(sections)/HybridWoodHero.section';
 import { HybridWoodFeatures } from './(sections)/HybridWoodFeatures.section';
 import { HybridWoodSpecs } from './(sections)/HybridWoodSpecs.section';
 import { HybridWoodStyles } from './(sections)/HybridWoodStyles.section';
-import Footer from '@/components/layout/footer/Footer.component';
+import Footer from '@/components/organisms/footer/Footer';
 import { Sustainability } from './(sections)/Sustainability.section';
 import { HybridWoodCTA } from './(sections)/HybridWoodCTA.section';
 

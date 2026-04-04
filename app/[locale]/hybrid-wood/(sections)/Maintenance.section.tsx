@@ -1,9 +1,9 @@
 import 'server-only';
 import { Stack, Typography, Box, Container } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
-import { BlogTitle } from '@/components/ui/typography/BlogTitle';
-import { BlogContent } from '@/components/ui/typography/BlogContent';
-import { BlogSubtitle } from '@/components/ui/typography/BlogSubtitle';
+import { BlogTitle } from '@/components/atoms/typography/BlogTitle';
+import { BlogContent } from '@/components/atoms/typography/BlogContent';
+import { BlogSubtitle } from '@/components/atoms/typography/BlogSubtitle';
 
 export async function Maintenance() {
     const t = await getTranslations('whatIsHybridWood.maintenance');

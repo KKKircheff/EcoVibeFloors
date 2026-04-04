@@ -2,9 +2,9 @@ import { Stack, Grid } from '@mui/material';
 
 import { getAllCollections } from '@/utils/products';
 import { getProductCountByCollection } from '@/utils/products';
-import { CollectionCard } from '@/components/ui/card/CollectionCard';
+import { CollectionCard } from '@/components/organisms/cards/CollectionCard';
 import { getCollectionCardImages } from '@/lib/utils/getCollectionCardImages';
-import { CollectionHero } from '@/components/ui/sections/hero/CollectionHero.section';
+import { CollectionHero } from '@/components/organisms/hero/CollectionHero';
 
 interface CollectionsGridProps {
     title: string;

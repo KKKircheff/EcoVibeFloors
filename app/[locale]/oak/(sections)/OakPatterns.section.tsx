@@ -1,7 +1,7 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
 import { getStyleCardImages } from '@/lib/utils/getStyleCardImages';
-import { ProductCollectionGrid } from '@/components/ui/product/ProductCollectionGrid';
+import { ProductCollectionGrid } from '@/components/organisms/grids/ProductCollectionGrid';
 
 export async function OakPatterns() {
     const t = await getTranslations('oak.patterns');

@@ -9,8 +9,8 @@ import { Features } from '../(sections)/Features.section';
 import { Sustainability } from '../(sections)/Sustainability.section';
 import { Installation } from '../(sections)/Installation.section';
 import { Maintenance } from '../(sections)/Maintenance.section';
-import Footer from '@/components/layout/footer/Footer.component';
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
+import Footer from '@/components/organisms/footer/Footer';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import { HybridWoodCTA } from '../(sections)/HybridWoodCTA.section';
 
 // Force static generation

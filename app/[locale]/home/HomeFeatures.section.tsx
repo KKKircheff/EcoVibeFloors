@@ -1,7 +1,7 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
 import { Grid } from '@mui/material';
-import { FeatureImageCard } from '@/components/ui/card/FeatureImageCard';
+import { FeatureImageCard } from '@/components/organisms/cards/FeatureImageCard';
 
 export async function HomeFeatures() {
     const t = await getTranslations('home');

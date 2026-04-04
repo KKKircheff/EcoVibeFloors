@@ -4,19 +4,19 @@ import { Stack, Typography, Box, Chip, Grid, Divider } from '@mui/material';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
-import Footer from '@/components/layout/footer/Footer.component';
-import Breadcrumb from '@/components/ui/navigation/Breadcrumb.component';
-import ProductImageGallery from '@/components/products/product-image-gallery/ProductImageGallery.component';
-import ProductActions from '@/components/products/product-actions/ProductActions.component';
-import { ProductSpecs, SpecCategory } from '@/components/ui/sections/product/ProductSpecs';
-import { OakDualPrice } from '@/components/ui/price/OakDualPrice';
-import { ProductJsonLd } from '@/components/seo/ProductJsonLd';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
+import Footer from '@/components/organisms/footer/Footer';
+import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
+import ProductImageGallery from '@/components/organisms/product-detail/ProductImageGallery';
+import ProductActions from '@/components/organisms/product-detail/ProductActions';
+import { ProductSpecs, SpecCategory } from '@/components/organisms/product-sections/ProductSpecs';
+import { OakDualPrice } from '@/components/atoms/price/OakDualPrice';
+import { ProductJsonLd } from '@/components/atoms/seo/ProductJsonLd';
 import { isValidPattern, ProductPattern, Product } from '@/types/products';
 import { getOakProductsByPattern } from '@/utils/products/oak';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
-import { TreatmentSwatchGallery } from '@/components/ui/treatment/TreatmentSwatchGallery';
+import { TreatmentSwatchGallery } from '@/components/organisms/grids/TreatmentSwatchGallery';
 import { getAllTreatments } from '@/utils/treatments';
 import { getStorageUrl } from '@/lib/utils/getStorageUrl';
 

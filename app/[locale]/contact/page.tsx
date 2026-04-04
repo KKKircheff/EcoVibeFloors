@@ -3,9 +3,9 @@ import { Stack } from '@mui/material';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
-import PageLayoutContainer from '@/components/layout/page-container/PageLayoutContainer.component';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import { ContactHero } from './ContactHero.section';
-import Footer from '@/components/layout/footer/Footer.component';
+import Footer from '@/components/organisms/footer/Footer';
 import ContactForm from './ContactForm.section';
 
 interface ContactPageProps {
