@@ -1,6 +1,6 @@
 import 'server-only';
 import { getTranslations } from 'next-intl/server';
-import { ProductSpecs } from '@/components/ui/sections/product';
+import { ProductSpecs } from '@/components/organisms/product-sections/ProductSpecs';
 
 export async function OakSpecs() {
     const t = await getTranslations('oakFlooring.specifications');

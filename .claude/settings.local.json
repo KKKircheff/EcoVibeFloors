@@ -63,7 +63,9 @@
       "Bash(rm -f components/layout/index.ts)",
       "Bash(rm -f components/features/index.ts)",
       "Bash(rm -rf components/features/)",
-      "Skill(claude-md-management:revise-claude-md)"
+      "Skill(claude-md-management:revise-claude-md)",
+      "Bash(find:*)",
+      "Bash(npm run:*)"
     ],
     "deny": [],
     "ask": []

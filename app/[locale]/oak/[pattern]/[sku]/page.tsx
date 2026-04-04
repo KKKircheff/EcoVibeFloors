@@ -10,7 +10,7 @@ import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
 import ProductImageGallery from '@/components/organisms/product-detail/ProductImageGallery';
 import ProductActions from '@/components/organisms/product-detail/ProductActions';
 import { ProductSpecs, SpecCategory } from '@/components/organisms/product-sections/ProductSpecs';
-import { OakDualPrice } from '@/components/atoms/price/OakDualPrice';
+import { OakDualPrice } from '@/components/molecules/price/OakDualPrice';
 import { ProductJsonLd } from '@/components/atoms/seo/ProductJsonLd';
 import { isValidPattern, ProductPattern, Product } from '@/types/products';
 import { getOakProductsByPattern } from '@/utils/products/oak';

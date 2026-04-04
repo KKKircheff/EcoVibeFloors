@@ -8,7 +8,7 @@ import { useRouter } from '@/i18n/navigation';
 import { borderRadius } from '@/lib/styles/borderRadius';
 import { ProductCardSkeleton } from '@/components/atoms/feedback/ProductCardSkeleton';
 import { getStorageUrl } from '@/lib/utils/getStorageUrl';
-import { AuthenticatedPrice } from '@/components/atoms/price/AuthenticatedPrice';
+import { AuthenticatedPrice } from '@/components/molecules/price/AuthenticatedPrice';
 
 export interface ProductCardProps {
     product: Product;

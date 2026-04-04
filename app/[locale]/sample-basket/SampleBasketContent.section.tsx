@@ -8,7 +8,7 @@ import { useSampleBasket } from '@/lib/contexts/SampleBasketContext';
 import { useToast } from '@/lib/contexts/ToastContext';
 import SampleBasketItem from '@/components/molecules/samples/SampleBasketItem';
 import EmptyBasket from '@/components/organisms/basket/EmptyBasket';
-import ContactFormTextField from '@/components/atoms/inputs/ContactFormTextField';
+import ContactFormTextField from '@/components/molecules/inputs/ContactFormTextField';
 import { useRouter } from '@/i18n/navigation';
 
 export type SampleOrderInfo = {

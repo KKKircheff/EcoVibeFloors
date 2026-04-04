@@ -10,7 +10,7 @@ import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
 import ProductImageGallery from '@/components/organisms/product-detail/ProductImageGallery';
 import ProductActions from '@/components/organisms/product-detail/ProductActions';
 import { ProductSpecs, SpecCategory } from '@/components/organisms/product-sections/ProductSpecs';
-import { AuthenticatedPrice } from '@/components/atoms/price/AuthenticatedPrice';
+import { AuthenticatedPrice } from '@/components/molecules/price/AuthenticatedPrice';
 import { ProductJsonLd } from '@/components/atoms/seo/ProductJsonLd';
 import { isValidPattern } from '@/types/products';
 import { getGlueDownVinylProductBySlug, getGlueDownVinylProducts } from '@/utils/products/glue-down-vinyl';

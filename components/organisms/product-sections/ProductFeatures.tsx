@@ -2,7 +2,7 @@ import 'server-only';
 import { Stack, Typography, Grid } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
 import { ReactNode } from 'react';
-import { FeatureIconCard } from '@/components/ui/card/FeatureIconCard';
+import { FeatureIconCard } from '@/components/organisms/cards/FeatureIconCard';
 
 export interface FeatureConfig {
     icon: ReactNode;
