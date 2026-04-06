@@ -18,6 +18,8 @@ import { useSampleBasket } from "@/lib/contexts/SampleBasketContext";
 import { PiBag } from "react-icons/pi";
 import { palette } from "@/lib/styles/pallete";
 import { AuthMenu } from "@/components/molecules/nav/AuthMenu";
+import { useAuth } from "@/hooks";
+import { isAdminEmail } from "@/lib/admin-config";
 
 type Props = {
     locale: Locale
@@ -29,6 +31,8 @@ export default function Navbar({ locale }: Props) {
     // const screenWidth = useScreenWidth();
     const t = useTranslations('navigation')
     const { itemCount } = useSampleBasket();
+    const { user } = useAuth();
+    const showAdminLink = isAdminEmail(user?.email);
 
     // Navbar changes on scroll
     // const isScrolled = useScrollPosition(30);
@@ -115,9 +119,10 @@ export default function Navbar({ locale }: Props) {
                     sx={{
                         display: { xs: 'none', lg: 'flex' },
                         justifyContent: 'center',
+                        alignItems: 'center',
                         paddingX: 0,
                         paddingY: 0,
-                        paddingTop: .3,
+                        paddingTop: 0.3,
                     }}
                 >
                     {navRoutes
@@ -133,6 +138,16 @@ export default function Navbar({ locale }: Props) {
                             />
                         ))
                     }
+                    {showAdminLink && (
+                        <ListMenuItem
+                            route={{ name: 'admin', path: '/admin', icon: '', visible: true }}
+                            setIsDrawerOpen={setIsDrawerOpen}
+                            isScrolled={isScrolled}
+                            openSubmenu={openSubmenu}
+                            setOpenSubmenu={setOpenSubmenu}
+                        />
+                    )}
+
                     <Stack display={{ xs: 'none', lg: 'flex' }} direction="row" alignItems="flex-start" spacing={2} pt={.5}>
                         <AuthMenu isScrolled={isScrolled} />
                         <IconButton

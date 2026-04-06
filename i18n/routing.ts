@@ -10,7 +10,8 @@ export type PathNames =
     | '/hybrid-wood'
     | '/vinyl'
     | '/click-vinyl'
-    | '/glue-down-vinyl';
+    | '/glue-down-vinyl'
+    | '/admin';
 
 export type NavRoute = {
     name: string;

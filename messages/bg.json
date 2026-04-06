@@ -135,6 +135,7 @@
         "All_Collections": "Всички колекции",
         "blog": "Блог",
         "Blog": "Блог",
+        "admin": "Админ",
         "contact": "Контакти",
         "Contact": "Контакти",
         "language": "Език",
@@ -1762,6 +1763,150 @@
         "section3": {
             "title": "Обратна връзка и контакт",
             "content": "Приветстваме вашата обратна връзка относно достъпността на EcoVibeFloors. Ако срещнете някакви бариери за достъпност, моля свържете се с нас на contact@ecovibefloors.com"
+        }
+    },
+    "admin": {
+        "title": "EcoVibe Админ",
+        "managementPanel": "Панел за управление",
+        "sidebar": {
+            "dashboard": "Табло",
+            "products": "Продукти",
+            "blog": "Блог",
+            "crm": "CRM",
+            "comingSoon": "Очаквайте скоро",
+            "backToSite": "Към сайта"
+        },
+        "header": {
+            "signOut": "Изход"
+        },
+        "guard": {
+            "redirecting": "Пренасочване..."
+        },
+        "login": {
+            "title": "EcoVibe Админ",
+            "subtitle": "Влезте с вашия Google акаунт",
+            "unauthorizedError": "Вашият акаунт няма администраторски достъп.",
+            "signInFailed": "Неуспешно влизане. Моля, опитайте отново.",
+            "signingIn": "Влизане...",
+            "continueWithGoogle": "Продължете с Google"
+        },
+        "products": {
+            "title": "Продукти",
+            "addProduct": "Добави продукт",
+            "searchPlaceholder": "Търсене по име или SKU…",
+            "collection": "Колекция",
+            "allCollections": "Всички колекции",
+            "productCount": "{filtered} / {total} продукта",
+            "noProducts": "Няма намерени продукти",
+            "edit": "Редактирай",
+            "delete": "Изтрий",
+            "deleteConfirmTitle": "Изтриване на продукт?",
+            "deleteConfirmText": "Сигурни ли сте, че искате да изтриете {sku} — {name}? Това действие е необратимо.",
+            "deleting": "Изтриване…",
+            "cancel": "Отказ",
+            "backToProducts": "Обратно към продукти",
+            "newProduct": "Нов продукт",
+            "editProduct": "Редакция: {name}",
+            "productNotFound": "Продуктът не е намерен",
+            "productNotFoundError": "Продукт \"{sku}\" не е намерен",
+            "saving": "Запазване…",
+            "saveChanges": "Запази промените",
+            "createProduct": "Създай продукт",
+            "savedSuccess": "Продуктът е запазен успешно.",
+            "tableHeaders": {
+                "sku": "SKU",
+                "name": "Име (BG)",
+                "collection": "Колекция",
+                "pattern": "Модел",
+                "price": "Цена (лв)",
+                "status": "Статус",
+                "images": "Снимки",
+                "actions": "Действия"
+            }
+        },
+        "form": {
+            "basicInfo": "Основна информация",
+            "sku": "SKU",
+            "skuRequired": "SKU е задължително",
+            "slug": "Slug",
+            "slugRequired": "Slug е задължително",
+            "collection": "Колекция",
+            "collectionRequired": "Колекцията е задължителна",
+            "pattern": "Модел",
+            "patternRequired": "Моделът е задължителен",
+            "installationSystem": "Система за монтаж",
+            "price": "Цена (лв за м²)",
+            "priceRequired": "Цената е задължителна",
+            "pricePositive": "Цената трябва да е положителна",
+            "status": "Статус",
+            "collections": {
+                "oak": "Дъб",
+                "hyWood": "Hy-Wood",
+                "clickVinyl": "Click Vinyl",
+                "glueDownVinyl": "Glue-Down Vinyl"
+            },
+            "installationSystems": {
+                "click": "Click",
+                "glue": "Лепило",
+                "glueDown": "Glue-Down"
+            },
+            "statuses": {
+                "published": "Публикуван",
+                "draft": "Чернова",
+                "archived": "Архивиран"
+            },
+            "content": "Съдържание",
+            "tabBulgarian": "Български (BG)",
+            "tabEnglish": "Английски (EN)",
+            "name": "Име",
+            "nameRequired": "{locale} името е задължително",
+            "description": "Описание",
+            "features": "Характеристики (по една на ред)",
+            "featuresHelp": "Въведете всяка характеристика на нов ред",
+            "seo": "SEO",
+            "seoTitle": "SEO Заглавие",
+            "seoDescription": "SEO Описание",
+            "seoKeywords": "SEO Ключови думи (разделени със запетая)",
+            "specifications": "Спецификации",
+            "dimensions": "Размери",
+            "length": "Дължина (мм)",
+            "width": "Ширина (мм)",
+            "thickness": "Дебелина (мм)",
+            "appearance": "Външен вид",
+            "colorCode": "Код на цвят",
+            "gradeCode": "Код на клас",
+            "finishCode": "Код на покритие",
+            "structureCode": "Код на структура",
+            "materialCode": "Код на материал",
+            "installation": "Монтаж",
+            "methodCode": "Код на метод",
+            "vGroove": "V-фуга",
+            "clickSystem": "Click система",
+            "coveragePerPack": "Покритие на пакет",
+            "performance": "Характеристики",
+            "underfloorHeating": "Подово отопление",
+            "waterResistance": "Водоустойчивост",
+            "thermalResistance": "Термично съпротивление",
+            "certifications": "Сертификати",
+            "qualityMark": "Знак за качество",
+            "country": "Държава",
+            "emissions": "Емисии",
+            "environmental": "Околна среда",
+            "safety": "Безопасност"
+        },
+        "images": {
+            "title": "Снимки",
+            "indexHint": "Индекс 0 = снимка за каталог · Индекс 1 = снимка при hover в колекцията",
+            "noImages": "Няма снимки все още. Качете по-долу.",
+            "galleryCard": "Каталожна снимка",
+            "hoverImage": "Hover снимка",
+            "imageOf": "Снимка {index} от {total}",
+            "moveUp": "Премести нагоре",
+            "moveDown": "Премести надолу",
+            "removeImage": "Премахни снимка",
+            "uploading": "Качване… {progress}%",
+            "skuRequired": "Запазете продукта със SKU преди да качвате снимки.",
+            "uploadImages": "Качи снимки"
         }
     }
 }

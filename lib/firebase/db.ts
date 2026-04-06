@@ -411,6 +411,7 @@ export const ProductsDB = {
   getAll: (options?: QueryOptions) => FirebaseDB.getAll(COLLECTIONS.PRODUCTS, options),
   getById: (id: string) => FirebaseDB.getById(COLLECTIONS.PRODUCTS, id),
   create: (data: Omit<Product, 'id' | 'createdAt' | 'updatedAt'>) => FirebaseDB.create(COLLECTIONS.PRODUCTS, data),
+  createWithId: (id: string, data: Omit<Product, 'id' | 'createdAt' | 'updatedAt'>) => FirebaseDB.createWithId(COLLECTIONS.PRODUCTS, id, data),
   update: (id: string, data: Partial<Product>) => FirebaseDB.update(COLLECTIONS.PRODUCTS, id, data),
   delete: (id: string) => FirebaseDB.delete(COLLECTIONS.PRODUCTS, id),
   

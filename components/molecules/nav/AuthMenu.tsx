@@ -14,7 +14,6 @@ import { AccountCircleOutlined as PersonIcon, Logout as LogoutIcon } from '@mui/
 import { useTranslations } from 'next-intl';
 import { useRouter } from '@/i18n/navigation';
 import { useAuth } from '@/hooks';
-import { palette } from '@/lib/styles/pallete';
 
 interface AuthMenuProps {
     isScrolled: boolean;
@@ -43,10 +42,6 @@ export function AuthMenu({ isScrolled, onNavigate }: AuthMenuProps) {
 
     const handleSignInClick = () => {
         onNavigate?.();
-        router.push('/auth');
-    };
-
-    const handleSignUpClick = () => {
         router.push('/auth');
     };
 

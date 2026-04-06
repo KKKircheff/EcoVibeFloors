@@ -4,13 +4,10 @@ import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server
 import { notFound } from 'next/navigation';
 import { routing, Locale } from '@/i18n/routing';
 import ClientThemeProvider from '@/components/providers/theme-provider';
-import Navbar from '@/components/organisms/navbar/Navbar';
 import '../globals.css';
-import UnderNavBar from "@/components/organisms/navbar/UnderNavBar";
-import { SampleBasketProvider } from '@/lib/contexts/SampleBasketContext';
 import { ToastProvider } from '@/lib/contexts/ToastContext';
 import { AuthProvider } from '@/lib/contexts/AuthContext';
-import { FloatingChatButton } from '@/components/organisms/chat/FloatingChatButton';
+import { PublicChrome } from '@/components/layout/PublicChrome';
 
 export function generateStaticParams() {
     return routing.locales.map((locale) => ({ locale }));
@@ -97,12 +94,9 @@ export default async function LocaleLayout(props: Props) {
                     <ClientThemeProvider>
                         <ToastProvider>
                             <AuthProvider>
-                                <SampleBasketProvider>
-                                    <Navbar locale={locale} />
-                                    <UnderNavBar />
+                                <PublicChrome locale={locale}>
                                     {children}
-                                    <FloatingChatButton />
-                                </SampleBasketProvider>
+                                </PublicChrome>
                             </AuthProvider>
                         </ToastProvider>
                     </ClientThemeProvider>

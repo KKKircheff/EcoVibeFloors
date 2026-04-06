@@ -10,10 +10,11 @@ import { LanguageSelector } from '@/components/molecules/nav/LanguageSelector';
 import { caveat } from '@/lib/styles/theme';
 import { useSampleBasket } from '@/lib/contexts/SampleBasketContext';
 import { useRouter } from '@/i18n/navigation';
-import ShoppingBagOutlinedIcon from '@mui/icons-material/ShoppingBagOutlined';
 import { palette } from '@/lib/styles/pallete';
 import { PiBag } from 'react-icons/pi';
 import { AuthMenu } from '@/components/molecules/nav/AuthMenu';
+import { useAuth } from '@/hooks';
+import { isAdminEmail } from '@/lib/admin-config';
 
 type Props = {
     routes: NavRoute[],
@@ -33,6 +34,8 @@ const SideDrawer = ({
 
     const { itemCount } = useSampleBasket();
     const router = useRouter();
+    const { user } = useAuth();
+    const showAdminLink = isAdminEmail(user?.email);
     const [viewportHeight, setViewportHeight] = React.useState(typeof window !== 'undefined' ? window.innerHeight : 800);
 
     const navigateToBasket = () => {
@@ -160,6 +163,12 @@ const SideDrawer = ({
                             />
                         ))
                     }
+                    {showAdminLink && (
+                        <MobileListMenuItem
+                            route={{ name: 'admin', path: '/admin', icon: '', visible: true }}
+                            setIsDrawerOpen={setIsDrawerOpen}
+                        />
+                    )}
                 </List>
 
             </Stack>

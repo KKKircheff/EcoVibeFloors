@@ -133,6 +133,7 @@
         "All_Collections": "All Collections",
         "blog": "Blog",
         "Blog": "Blog",
+        "admin": "Admin",
         "contact": "Contact",
         "Contact": "Contact",
         "language": "Language",
@@ -1806,6 +1807,150 @@
         "section3": {
             "title": "Feedback and Contact",
             "content": "We welcome your feedback on the accessibility of EcoVibeFloors. If you encounter any accessibility barriers, please contact us at contact@ecovibefloors.com"
+        }
+    },
+    "admin": {
+        "title": "EcoVibe Admin",
+        "managementPanel": "Management Panel",
+        "sidebar": {
+            "dashboard": "Dashboard",
+            "products": "Products",
+            "blog": "Blog",
+            "crm": "CRM",
+            "comingSoon": "Coming soon",
+            "backToSite": "Back to site"
+        },
+        "header": {
+            "signOut": "Sign out"
+        },
+        "guard": {
+            "redirecting": "Redirecting..."
+        },
+        "login": {
+            "title": "EcoVibe Admin",
+            "subtitle": "Sign in with your Google account",
+            "unauthorizedError": "Your account does not have admin access.",
+            "signInFailed": "Sign-in failed. Please try again.",
+            "signingIn": "Signing in...",
+            "continueWithGoogle": "Continue with Google"
+        },
+        "products": {
+            "title": "Products",
+            "addProduct": "Add Product",
+            "searchPlaceholder": "Search by name or SKU…",
+            "collection": "Collection",
+            "allCollections": "All collections",
+            "productCount": "{filtered} / {total} products",
+            "noProducts": "No products found",
+            "edit": "Edit",
+            "delete": "Delete",
+            "deleteConfirmTitle": "Delete product?",
+            "deleteConfirmText": "Are you sure you want to delete {sku} — {name}? This cannot be undone.",
+            "deleting": "Deleting…",
+            "cancel": "Cancel",
+            "backToProducts": "Back to products",
+            "newProduct": "New Product",
+            "editProduct": "Edit: {name}",
+            "productNotFound": "Product not found",
+            "productNotFoundError": "Product \"{sku}\" not found",
+            "saving": "Saving…",
+            "saveChanges": "Save changes",
+            "createProduct": "Create product",
+            "savedSuccess": "Product saved successfully.",
+            "tableHeaders": {
+                "sku": "SKU",
+                "name": "Name (BG)",
+                "collection": "Collection",
+                "pattern": "Pattern",
+                "price": "Price (BGN)",
+                "status": "Status",
+                "images": "Imgs",
+                "actions": "Actions"
+            }
+        },
+        "form": {
+            "basicInfo": "Basic Information",
+            "sku": "SKU",
+            "skuRequired": "SKU is required",
+            "slug": "Slug",
+            "slugRequired": "Slug is required",
+            "collection": "Collection",
+            "collectionRequired": "Collection is required",
+            "pattern": "Pattern",
+            "patternRequired": "Pattern is required",
+            "installationSystem": "Installation System",
+            "price": "Price (BGN per m²)",
+            "priceRequired": "Price is required",
+            "pricePositive": "Price must be positive",
+            "status": "Status",
+            "collections": {
+                "oak": "Oak",
+                "hyWood": "Hy-Wood",
+                "clickVinyl": "Click Vinyl",
+                "glueDownVinyl": "Glue-Down Vinyl"
+            },
+            "installationSystems": {
+                "click": "Click",
+                "glue": "Glue",
+                "glueDown": "Glue-Down"
+            },
+            "statuses": {
+                "published": "Published",
+                "draft": "Draft",
+                "archived": "Archived"
+            },
+            "content": "Content",
+            "tabBulgarian": "Bulgarian (BG)",
+            "tabEnglish": "English (EN)",
+            "name": "Name",
+            "nameRequired": "{locale} name is required",
+            "description": "Description",
+            "features": "Features (one per line)",
+            "featuresHelp": "Enter each feature on a new line",
+            "seo": "SEO",
+            "seoTitle": "SEO Title",
+            "seoDescription": "SEO Description",
+            "seoKeywords": "SEO Keywords (comma-separated)",
+            "specifications": "Specifications",
+            "dimensions": "Dimensions",
+            "length": "Length (mm)",
+            "width": "Width (mm)",
+            "thickness": "Thickness (mm)",
+            "appearance": "Appearance",
+            "colorCode": "Color Code",
+            "gradeCode": "Grade Code",
+            "finishCode": "Finish Code",
+            "structureCode": "Structure Code",
+            "materialCode": "Material Code",
+            "installation": "Installation",
+            "methodCode": "Method Code",
+            "vGroove": "V-Groove",
+            "clickSystem": "Click System",
+            "coveragePerPack": "Coverage per Pack",
+            "performance": "Performance",
+            "underfloorHeating": "Underfloor Heating",
+            "waterResistance": "Water Resistance",
+            "thermalResistance": "Thermal Resistance",
+            "certifications": "Certifications",
+            "qualityMark": "Quality Mark",
+            "country": "Country",
+            "emissions": "Emissions",
+            "environmental": "Environmental",
+            "safety": "Safety"
+        },
+        "images": {
+            "title": "Images",
+            "indexHint": "Index 0 = gallery card image · Index 1 = hover image on collection page",
+            "noImages": "No images yet. Upload below.",
+            "galleryCard": "Gallery card",
+            "hoverImage": "Hover image",
+            "imageOf": "Image {index} of {total}",
+            "moveUp": "Move up",
+            "moveDown": "Move down",
+            "removeImage": "Remove image",
+            "uploading": "Uploading… {progress}%",
+            "skuRequired": "Save the product with a SKU first before uploading images.",
+            "uploadImages": "Upload images"
         }
     }
 }
