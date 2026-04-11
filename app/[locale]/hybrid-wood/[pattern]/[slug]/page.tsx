@@ -85,8 +85,9 @@ export async function generateMetadata({ params }: ProductDetailPageProps): Prom
         alternates: {
             canonical: canonicalUrl,
             languages: {
-                'bg': `https://ecovibefloors.com/bg/hybrid-wood/${product.pattern}/${product.slug}`,
-                'en': `https://ecovibefloors.com/en/hybrid-wood/${product.pattern}/${product.slug}`,
+                'bg':        `https://ecovibefloors.com/bg/hybrid-wood/${product.pattern}/${product.slug}`,
+                'en':        `https://ecovibefloors.com/en/hybrid-wood/${product.pattern}/${product.slug}`,
+                'x-default': `https://ecovibefloors.com/bg/hybrid-wood/${product.pattern}/${product.slug}`,
             },
         },
         openGraph: {

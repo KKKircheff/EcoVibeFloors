@@ -99,27 +99,8 @@ const nextConfig: NextConfig = {
             destination: '/:locale/hybrid-wood',
             permanent: true,
         },
-        // URLs without locale prefix -> add /en/ prefix
-        {
-            source: '/hybrid-wood/:pattern/:slug',
-            destination: '/en/hybrid-wood/:pattern/:slug',
-            permanent: true,
-        },
-        {
-            source: '/click-vinyl/:pattern/:slug',
-            destination: '/en/click-vinyl/:pattern/:slug',
-            permanent: true,
-        },
-        {
-            source: '/glue-down-vinyl/:pattern/:slug',
-            destination: '/en/glue-down-vinyl/:pattern/:slug',
-            permanent: true,
-        },
-        {
-            source: '/oak/:pattern/:slug',
-            destination: '/en/oak/:pattern/:slug',
-            permanent: true,
-        },
+        // No-locale-prefix URLs are handled by the next-intl middleware,
+        // which redirects to the user's NEXT_LOCALE cookie preference or bg (defaultLocale).
     ],
     // Cache optimization for Firebase App Hosting
     headers: async () => [

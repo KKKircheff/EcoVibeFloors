@@ -79,8 +79,9 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
         alternates: {
             canonical: canonicalUrl,
             languages: {
-                'bg': `https://ecovibefloors.com/bg/oak/${pattern}/${sku}`,
-                'en': `https://ecovibefloors.com/en/oak/${pattern}/${sku}`,
+                'bg':        `https://ecovibefloors.com/bg/oak/${pattern}/${sku}`,
+                'en':        `https://ecovibefloors.com/en/oak/${pattern}/${sku}`,
+                'x-default': `https://ecovibefloors.com/bg/oak/${pattern}/${sku}`,
             },
         },
     };

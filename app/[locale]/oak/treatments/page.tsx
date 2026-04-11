@@ -9,6 +9,7 @@ import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
 import { TreatmentGrid } from '@/components/organisms/grids/TreatmentGrid';
 import { getAllTreatments } from '@/utils/treatments';
 import { routing } from '@/i18n/routing';
+import { buildAlternates } from '@/lib/seo';
 
 // Force static generation
 export const dynamic = 'error';
@@ -39,6 +40,7 @@ export async function generateMetadata({ params }: TreatmentsPageProps): Promise
     return {
         title: t('pageTitle'),
         description: t('pageDescription'),
+        alternates: buildAlternates(locale, '/oak/treatments'),
     };
 }
 

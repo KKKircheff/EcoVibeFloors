@@ -72,9 +72,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
                 url: `${baseUrl}/${locale}${route.path}`,
                 lastModified: sitemapLastMod,
                 alternates: {
-                    languages: Object.fromEntries(
-                        locales.map((l) => [l, `${baseUrl}/${l}${route.path}`])
-                    ),
+                    languages: {
+                        ...Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}${route.path}`])),
+                        'x-default': `${baseUrl}/bg${route.path}`,
+                    },
                 },
             });
         });
@@ -105,9 +106,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
                     url: `${baseUrl}/${locale}${productPath}`,
                     lastModified: productLastMod,
                     alternates: {
-                        languages: Object.fromEntries(
-                            locales.map((l) => [l, `${baseUrl}/${l}${productPath}`])
-                        ),
+                        languages: {
+                            ...Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}${productPath}`])),
+                            'x-default': `${baseUrl}/bg${productPath}`,
+                        },
                     },
                 });
             });
@@ -122,9 +124,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
                         url: patternUrl,
                         lastModified: productLastMod,
                         alternates: {
-                            languages: Object.fromEntries(
-                                locales.map((l) => [l, `${baseUrl}/${l}${patternPath}`])
-                            ),
+                            languages: {
+                                ...Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}${patternPath}`])),
+                                'x-default': `${baseUrl}/bg${patternPath}`,
+                            },
                         },
                     });
                 }
@@ -147,9 +150,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
                     url: `${baseUrl}/${locale}${treatmentPath}`,
                     lastModified: treatmentsLastMod,
                     alternates: {
-                        languages: Object.fromEntries(
-                            locales.map((l) => [l, `${baseUrl}/${l}${treatmentPath}`])
-                        ),
+                        languages: {
+                            ...Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}${treatmentPath}`])),
+                            'x-default': `${baseUrl}/bg${treatmentPath}`,
+                        },
                     },
                 });
             });

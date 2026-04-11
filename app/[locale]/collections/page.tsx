@@ -3,6 +3,7 @@ import { Stack } from '@mui/material';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
 import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import { CollectionsHero } from './CollectionsHero.section';
 import { CollectionsGrid } from './CollectionsGrid.section';
@@ -49,6 +50,7 @@ export async function generateMetadata({ params }: CollectionsPageProps): Promis
             description: t('metadata.description'),
             images: [ogImageUrl],
         },
+        alternates: buildAlternates(locale, '/collections'),
     };
 }
 

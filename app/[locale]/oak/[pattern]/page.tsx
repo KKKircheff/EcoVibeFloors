@@ -12,6 +12,7 @@ import { getOakProductsByPattern } from '@/utils/products/oak';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { ProductGrid } from '@/components/organisms/grids/ProductGrid';
+import { buildAlternates } from '@/lib/seo';
 
 // Force static generation
 export const dynamic = 'error';
@@ -58,6 +59,7 @@ export async function generateMetadata({ params }: PatternPageProps): Promise<Me
         description: tPatterns(patternDescKey, {
             defaultValue: `Browse our Oak collection in ${patternName} pattern.`
         }),
+        alternates: buildAlternates(locale, `/oak/${pattern}`),
     };
 }
 

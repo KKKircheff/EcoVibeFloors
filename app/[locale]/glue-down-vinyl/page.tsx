@@ -1,7 +1,9 @@
 import 'server-only';
 import { Stack } from '@mui/material';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
+import type { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
 import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
 import { GlueDownVinylHero } from './(sections)/GlueDownVinylHero.section';
@@ -17,6 +19,11 @@ interface GlueDownVinylPageProps {
     params: Promise<{
         locale: string;
     }>;
+}
+
+export async function generateMetadata({ params }: GlueDownVinylPageProps): Promise<Metadata> {
+    const { locale } = await params;
+    return { alternates: buildAlternates(locale, '/glue-down-vinyl') };
 }
 
 export default async function GlueDownVinylPage({ params }: GlueDownVinylPageProps) {

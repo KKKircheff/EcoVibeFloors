@@ -75,7 +75,9 @@
       "Bash(cp -r hybrid-wood \"\\(public\\)/hybrid-wood\")",
       "Bash(cp -r oak \"\\(public\\)/oak\")",
       "Bash(rm:*)",
-      "Bash(npx tsx:*)"
+      "Bash(npx tsx:*)",
+      "mcp__plugin_playwright_playwright__browser_take_screenshot",
+      "mcp__plugin_playwright_playwright__browser_snapshot"
     ],
     "deny": [],
     "ask": []

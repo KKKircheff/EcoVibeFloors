@@ -2,6 +2,7 @@ import 'server-only';
 import { Stack } from '@mui/material';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 
+import { buildAlternates } from '@/lib/seo';
 import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
 import { OakHero } from '../(sections)/OakHero.section';
@@ -29,7 +30,8 @@ export async function generateMetadata({ params }: OakFlooringPageProps) {
 
     return {
         title: t('pageTitle'),
-        description: t('hero.subtitle')
+        description: t('hero.subtitle'),
+        alternates: buildAlternates(locale, '/oak/what-is-oak-flooring'),
     };
 }
 

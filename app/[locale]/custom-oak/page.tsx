@@ -1,7 +1,9 @@
 import 'server-only';
 import { Stack, Typography } from '@mui/material';
 import { getTranslations, setRequestLocale } from 'next-intl/server';
+import type { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
 import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import { CustomOakHero } from './CustomOakHero.section';
 import Footer from '@/components/organisms/footer/Footer';
@@ -13,6 +15,11 @@ interface CustomOakPageProps {
     params: Promise<{
         locale: string;
     }>;
+}
+
+export async function generateMetadata({ params }: CustomOakPageProps): Promise<Metadata> {
+    const { locale } = await params;
+    return { alternates: buildAlternates(locale, '/custom-oak') };
 }
 
 export default async function CustomOakPage({ params }: CustomOakPageProps) {

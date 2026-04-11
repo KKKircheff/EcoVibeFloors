@@ -3,6 +3,7 @@ import { Stack } from '@mui/material';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
+import { buildAlternates } from '@/lib/seo';
 import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import { ContactHero } from './ContactHero.section';
 import Footer from '@/components/organisms/footer/Footer';
@@ -45,6 +46,7 @@ export async function generateMetadata({ params }: ContactPageProps): Promise<Me
             description: t('metadata.description'),
             images: [ogImageUrl],
         },
+        alternates: buildAlternates(locale, '/contact'),
     };
 }
 

@@ -3,6 +3,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages, getTranslations, setRequestLocale } from 'next-intl/server';
 import { notFound } from 'next/navigation';
 import { routing, Locale } from '@/i18n/routing';
+import { buildAlternates } from '@/lib/seo';
 import ClientThemeProvider from '@/components/providers/theme-provider';
 import '../globals.css';
 import { ToastProvider } from '@/lib/contexts/ToastContext';
@@ -31,6 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
         metadataBase: new URL(baseUrl),
         title: t('metadata.title'),
         description: t('metadata.description'),
+        alternates: buildAlternates(locale, ''),
         openGraph: {
             title: t('metadata.title'),
             description: t('metadata.description'),

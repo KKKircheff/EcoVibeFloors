@@ -3,6 +3,7 @@ import { Stack } from '@mui/material';
 import { setRequestLocale, getTranslations } from 'next-intl/server';
 import type { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
 import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
 import { OakHero } from './OakHero.section';
@@ -29,7 +30,8 @@ export async function generateMetadata({ params }: OakPageProps): Promise<Metada
             : 'Колекция натурален дъбов паркет | Премиум холандски дъб',
         description: locale === 'en'
             ? 'Discover our Natural Oak Parquet collection featuring premium engineered oak flooring with customizable finishing options. Dutch quality with 10-year warranty.'
-            : 'Открийте нашата колекция натурален дъбов паркет с премиум ламелен дъбов паркет и персонализируеми опции за довършителни работи. Холандско качество с 10-годишна гаранция.'
+            : 'Открийте нашата колекция натурален дъбов паркет с премиум ламелен дъбов паркет и персонализируеми опции за довършителни работи. Холандско качество с 10-годишна гаранция.',
+        alternates: buildAlternates(locale, '/oak'),
     };
 }
 

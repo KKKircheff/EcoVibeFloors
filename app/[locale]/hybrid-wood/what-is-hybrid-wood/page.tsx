@@ -1,7 +1,9 @@
 import 'server-only';
 import { Stack } from '@mui/material';
 import { setRequestLocale } from 'next-intl/server';
+import type { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
 import { WhatIsHybridWoodHero } from './WhatIsHybridWoodHero.section';
 import { Introduction } from '../(sections)/Introduction.section';
 import { KeyInnovation } from '../(sections)/KeyInnovation.section';
@@ -20,6 +22,11 @@ interface WhatIsHybridWoodPageProps {
     params: Promise<{
         locale: string;
     }>;
+}
+
+export async function generateMetadata({ params }: WhatIsHybridWoodPageProps): Promise<Metadata> {
+    const { locale } = await params;
+    return { alternates: buildAlternates(locale, '/hybrid-wood/what-is-hybrid-wood') };
 }
 
 export default async function WhatIsHybridWoodPage({ params }: WhatIsHybridWoodPageProps) {

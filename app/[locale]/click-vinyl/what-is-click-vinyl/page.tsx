@@ -1,7 +1,9 @@
 import 'server-only';
 import { Stack } from '@mui/material';
 import { setRequestLocale } from 'next-intl/server';
+import type { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
 import { WhatIsClickVinylHero } from './WhatIsClickVinylHero.section';
 import { Introduction } from '../(sections)/Introduction.section';
 import { ClickTechnology } from '../(sections)/ClickTechnology.section';
@@ -19,6 +21,11 @@ interface WhatIsClickVinylPageProps {
     params: Promise<{
         locale: string;
     }>;
+}
+
+export async function generateMetadata({ params }: WhatIsClickVinylPageProps): Promise<Metadata> {
+    const { locale } = await params;
+    return { alternates: buildAlternates(locale, '/click-vinyl/what-is-click-vinyl') };
 }
 
 export default async function WhatIsClickVinylPage({ params }: WhatIsClickVinylPageProps) {

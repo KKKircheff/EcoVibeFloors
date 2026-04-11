@@ -13,6 +13,7 @@ import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { ProductGrid } from '@/components/organisms/grids/ProductGrid';
 import { toCamelCase } from '@/lib/utils/toCamelCase';
+import { buildAlternates } from '@/lib/seo';
 
 // Force static generation
 export const dynamic = 'error';
@@ -59,6 +60,7 @@ export async function generateMetadata({ params }: PatternPageProps): Promise<Me
         description: tPatterns(patternDescKey, {
             defaultValue: `Browse our Glue-Down Vinyl collection in ${patternName} pattern.`
         }),
+        alternates: buildAlternates(locale, `/glue-down-vinyl/${pattern}`),
     };
 }
 

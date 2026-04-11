@@ -1,7 +1,9 @@
 import 'server-only';
 import { Stack, Typography } from '@mui/material';
 import { setRequestLocale } from 'next-intl/server';
+import type { Metadata } from 'next';
 
+import { buildAlternates } from '@/lib/seo';
 import { BlogHero } from './BlogHero.section';
 import Footer from '@/components/organisms/footer/Footer';
 import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
@@ -13,6 +15,11 @@ interface BlogPageProps {
     params: Promise<{
         locale: string;
     }>;
+}
+
+export async function generateMetadata({ params }: BlogPageProps): Promise<Metadata> {
+    const { locale } = await params;
+    return { alternates: buildAlternates(locale, '/blog') };
 }
 
 export default async function BlogPage({ params }: BlogPageProps) {
