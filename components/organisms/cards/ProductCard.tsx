@@ -24,8 +24,9 @@ export function ProductCard({ product }: ProductCardProps) {
 
     const localizedContent = product.i18n[locale as keyof typeof product.i18n];
 
+    // Index 0 = gallery card, index 1 = hover. Matches the admin ProductImageManager labels.
     const mainImageIndex = product.displayImages?.[0] ?? 0;
-    const hoverImageIndex = product.displayImages?.[1] ?? product.images.length - 1;
+    const hoverImageIndex = product.displayImages?.[1] ?? 1;
 
     const mainImage = product.images[mainImageIndex];
     const hoverImage = product.images[hoverImageIndex] || mainImage;

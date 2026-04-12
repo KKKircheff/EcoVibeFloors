@@ -71,6 +71,7 @@ export interface ProductFormValues {
     };
 
     images: string[];
+    displayImages: [number, number];
 }
 
 function productToFormValues(product: Product): ProductFormValues {
@@ -152,6 +153,7 @@ function productToFormValues(product: Product): ProductFormValues {
             },
         },
         images: product.images ?? [],
+        displayImages: (product.displayImages as [number, number]) ?? [0, 1],
     };
 }
 
@@ -204,6 +206,7 @@ function formValuesToProduct(values: ProductFormValues): Omit<Product, 'id' | 'c
             certifications: trimObj(s.certifications),
         },
         images: values.images,
+        displayImages: values.displayImages,
         metadata: {
             totalImages: values.images.length,
             imageSizes: ['thumbnail', 'full'],
@@ -233,14 +236,15 @@ const defaultValues: ProductFormValues = {
         certifications: { qualityMark: '', countryCode: '', emissions: '', environmental: '', safety: '' },
     },
     images: [],
+    displayImages: [0, 1],
 };
 
 interface ProductFormProps {
-    // Pass existing product to edit; omit for create
     initialProduct?: Product;
+    onSaveSuccess?: () => void;
 }
 
-export function ProductForm({ initialProduct }: ProductFormProps) {
+export function ProductForm({ initialProduct, onSaveSuccess }: ProductFormProps) {
     const router = useRouter();
     const t = useTranslations('admin.products');
     const isEdit = !!initialProduct;
@@ -262,6 +266,7 @@ export function ProductForm({ initialProduct }: ProductFormProps) {
     const watchedCollection = watch('collection');
     const watchedPattern = watch('pattern');
     const watchedImages = watch('images');
+    const watchedDisplayImages = watch('displayImages');
 
     const onSubmit: SubmitHandler<ProductFormValues> = async (values) => {
         setSaving(true);
@@ -288,6 +293,8 @@ export function ProductForm({ initialProduct }: ProductFormProps) {
             await revalidateProduct(values.collection, values.pattern, values.slug);
             if (!isEdit) {
                 router.push(`/admin/products/${values.slug}/edit`);
+            } else {
+                onSaveSuccess?.();
             }
         }
     };
@@ -320,6 +327,8 @@ export function ProductForm({ initialProduct }: ProductFormProps) {
                 sku={watchedSku}
                 images={watchedImages}
                 onChange={(imgs) => setValue('images', imgs)}
+                displayImages={watchedDisplayImages}
+                onDisplayImagesChange={(di) => setValue('displayImages', di)}
             />
 
             <Stack direction="row" spacing={2} pt={1}>

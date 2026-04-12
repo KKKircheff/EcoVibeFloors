@@ -18,7 +18,10 @@ import {
     DeleteOutlined as DeleteIcon,
     ArrowUpwardOutlined as MoveUpIcon,
     ArrowDownwardOutlined as MoveDownIcon,
+    CropOriginalOutlined as GalleryCardIcon,
+    VisibilityOutlined as HoverIcon,
 } from '@mui/icons-material';
+import Tooltip from '@mui/material/Tooltip';
 import { ref, uploadBytesResumable, getDownloadURL, deleteObject } from 'firebase/storage';
 import { useTranslations } from 'next-intl';
 import { storage } from '@/lib/firebase';
@@ -33,13 +36,14 @@ function toStoragePath(collection: string) {
 }
 
 interface ProductImageManagerProps {
-    // Collection, pattern, and sku used to build the Storage path
     collection: string;
     pattern: string;
     sku: string;
-    // Current image filenames (flat array — index 0 = gallery card, index 1 = hover)
     images: string[];
     onChange: (images: string[]) => void;
+    // Which indices in images[] are used as gallery card [0] and hover [1] on the website
+    displayImages: [number, number];
+    onDisplayImagesChange: (di: [number, number]) => void;
 }
 
 export function ProductImageManager({
@@ -48,12 +52,21 @@ export function ProductImageManager({
     sku,
     images,
     onChange,
+    displayImages,
+    onDisplayImagesChange,
 }: ProductImageManagerProps) {
     const t = useTranslations('admin.images');
 
+    function imageRole(index: number): 'gallery' | 'hover' | null {
+        if (index === displayImages[0]) return 'gallery';
+        if (index === displayImages[1]) return 'hover';
+        return null;
+    }
+
     function imageLabel(index: number, total: number): string {
-        if (index === 0) return t('galleryCard');
-        if (index === 1) return t('hoverImage');
+        const role = imageRole(index);
+        if (role === 'gallery') return t('galleryCard');
+        if (role === 'hover') return t('hoverImage');
         return t('imageOf', { index: index + 1, total });
     }
 
@@ -170,13 +183,37 @@ export function ProductImageManager({
                                         <Chip
                                             label={imageLabel(index, images.length)}
                                             size="small"
-                                            color={index === 0 ? 'primary' : index === 1 ? 'secondary' : 'default'}
-                                            variant={index < 2 ? 'filled' : 'outlined'}
+                                            color={imageRole(index) === 'gallery' ? 'primary' : imageRole(index) === 'hover' ? 'secondary' : 'default'}
+                                            variant={imageRole(index) !== null ? 'filled' : 'outlined'}
                                         />
                                         <Typography variant="caption" color="text.secondary" noWrap>
                                             {filename}
                                         </Typography>
                                     </Stack>
+                                </Stack>
+
+                                {/* Set-role + reorder + delete controls */}
+                                <Stack direction="row" spacing={0}>
+                                    {imageRole(index) !== 'gallery' && (
+                                        <Tooltip title={t('setAsGalleryCard')}>
+                                            <IconButton
+                                                size="small"
+                                                onClick={() => onDisplayImagesChange([index, displayImages[1]])}
+                                            >
+                                                <GalleryCardIcon fontSize="small" />
+                                            </IconButton>
+                                        </Tooltip>
+                                    )}
+                                    {imageRole(index) !== 'hover' && (
+                                        <Tooltip title={t('setAsHoverImage')}>
+                                            <IconButton
+                                                size="small"
+                                                onClick={() => onDisplayImagesChange([displayImages[0], index])}
+                                            >
+                                                <HoverIcon fontSize="small" />
+                                            </IconButton>
+                                        </Tooltip>
+                                    )}
                                 </Stack>
 
                                 {/* Reorder + delete controls */}

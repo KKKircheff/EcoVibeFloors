@@ -1862,7 +1862,7 @@
                 "name": "Name (BG)",
                 "collection": "Collection",
                 "pattern": "Pattern",
-                "price": "Price (BGN)",
+                "price": "Price (Euro)",
                 "status": "Status",
                 "images": "Imgs",
                 "actions": "Actions"
@@ -1940,11 +1940,13 @@
         },
         "images": {
             "title": "Images",
-            "indexHint": "Index 0 = gallery card image · Index 1 = hover image on collection page",
+            "indexHint": "Use the icons on each row to assign which image is the gallery card and which is the hover image on collection pages.",
             "noImages": "No images yet. Upload below.",
             "galleryCard": "Gallery card",
             "hoverImage": "Hover image",
             "imageOf": "Image {index} of {total}",
+            "setAsGalleryCard": "Set as gallery card",
+            "setAsHoverImage": "Set as hover image",
             "moveUp": "Move up",
             "moveDown": "Move down",
             "removeImage": "Remove image",

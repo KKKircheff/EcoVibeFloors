@@ -46,6 +46,8 @@ export function AdminHeader({ title }: AdminHeaderProps) {
                 bgcolor: palette.primary[500],
                 borderBottom: 'none',
                 color: 'white',
+                // Stay below the main navbar's dropdown menus (zIndex.modal = 1300)
+                zIndex: (theme) => theme.zIndex.appBar - 1,
             }}
         >
             <Toolbar>

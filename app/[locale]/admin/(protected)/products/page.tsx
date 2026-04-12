@@ -26,6 +26,14 @@ export default function AdminProductsPage() {
         setProducts((prev) => prev.filter((p) => p.slug !== slug));
     };
 
+    const handleProductUpdated = () => {
+        ProductsDB.getAll().then((result) => {
+            if (result.success && result.data) {
+                setProducts(result.data as unknown as Product[]);
+            }
+        });
+    };
+
     if (loading) {
         return (
             <Box display="flex" justifyContent="center" pt={6}>
@@ -38,5 +46,5 @@ export default function AdminProductsPage() {
         return <Alert severity="error">{error}</Alert>;
     }
 
-    return <ProductsTable products={products} onProductDeleted={handleProductDeleted} />;
+    return <ProductsTable products={products} onProductDeleted={handleProductDeleted} onProductUpdated={handleProductUpdated} />;
 }

@@ -22,7 +22,7 @@ export function ProductFormBasicSection({ control }: Props) {
 
     const COLLECTIONS = [
         { value: 'oak', label: t('collections.oak') },
-        { value: 'hy-wood', label: t('collections.hyWood') },
+        { value: 'hybrid-wood', label: t('collections.hyWood') },
         { value: 'click-vinyl', label: t('collections.clickVinyl') },
         { value: 'glue-down-vinyl', label: t('collections.glueDownVinyl') },
     ];

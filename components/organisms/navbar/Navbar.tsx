@@ -62,7 +62,7 @@ export default function Navbar({ locale }: Props) {
         <Box
             position='fixed' width='100%'
             left={0} top={0}
-            zIndex='10' >
+            zIndex={1000} >
             <Stack
                 component="nav" aria-label="EcoVibeFloors.com"
                 direction='row' justifyContent='space-between'

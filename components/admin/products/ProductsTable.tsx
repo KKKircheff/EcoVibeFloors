@@ -17,6 +17,7 @@ import {
     TableContainer,
     TableHead,
     TableRow,
+    TableSortLabel,
     Paper,
     Chip,
     IconButton,
@@ -31,23 +32,27 @@ import {
     EditOutlined as EditIcon,
     DeleteOutlined as DeleteIcon,
     AddOutlined as AddIcon,
+    CloseOutlined as CloseIcon,
 } from '@mui/icons-material';
 import { useRouter } from '@/i18n/navigation';
 import { useTranslations, useLocale } from 'next-intl';
 import { Product } from '@/types/products';
 import { ProductsDB } from '@/lib/firebase/db';
 import { getStorageUrl } from '@/lib/utils/getStorageUrl';
+import { ProductForm } from './ProductForm';
 import Image from 'next/image';
 
 interface ProductsTableProps {
     products: Product[];
-    onProductDeleted: (sku: string) => void;
+    onProductDeleted: (slug: string) => void;
+    onProductUpdated: () => void;
 }
 
 function productImageUrl(product: Product): string | null {
     if (!product.images?.length) return null;
-    // Use full-size image — thumbnails may not exist for all products
-    return getStorageUrl(product.collection, product.pattern, product.sku, product.images[0]).full;
+    const cardIndex = product.displayImages?.[0] ?? 0;
+    const filename = product.images[cardIndex] ?? product.images[0];
+    return getStorageUrl(product.collection, product.pattern, product.sku, filename).full;
 }
 
 const COLLECTION_LABELS: Record<string, string> = {
@@ -63,14 +68,50 @@ const STATUS_COLORS: Record<string, 'success' | 'warning' | 'default'> = {
     archived: 'default',
 };
 
-export function ProductsTable({ products, onProductDeleted }: ProductsTableProps) {
+type SortField = 'sku' | 'name' | 'collection' | 'pattern' | 'price';
+type SortDir = 'asc' | 'desc';
+
+function sortProducts(products: Product[], field: SortField, dir: SortDir, locale: 'en' | 'bg'): Product[] {
+    return [...products].sort((a, b) => {
+        let aVal: string | number = '';
+        let bVal: string | number = '';
+        if (field === 'sku') { aVal = a.sku; bVal = b.sku; }
+        else if (field === 'name') {
+            aVal = a.i18n?.[locale]?.name ?? a.i18n?.bg?.name ?? '';
+            bVal = b.i18n?.[locale]?.name ?? b.i18n?.bg?.name ?? '';
+        }
+        else if (field === 'collection') { aVal = a.collection; bVal = b.collection; }
+        else if (field === 'pattern') { aVal = a.pattern; bVal = b.pattern; }
+        else if (field === 'price') { aVal = a.price ?? 0; bVal = b.price ?? 0; }
+
+        if (aVal < bVal) return dir === 'asc' ? -1 : 1;
+        if (aVal > bVal) return dir === 'asc' ? 1 : -1;
+        return 0;
+    });
+}
+
+export function ProductsTable({ products, onProductDeleted, onProductUpdated }: ProductsTableProps) {
     const router = useRouter();
     const t = useTranslations('admin.products');
     const locale = useLocale() as 'en' | 'bg';
+
     const [search, setSearch] = useState('');
     const [collectionFilter, setCollectionFilter] = useState('all');
+    const [sortField, setSortField] = useState<SortField>('name');
+    const [sortDir, setSortDir] = useState<SortDir>('asc');
+
     const [deleteTarget, setDeleteTarget] = useState<Product | null>(null);
     const [deleting, setDeleting] = useState(false);
+    const [editProduct, setEditProduct] = useState<Product | null>(null);
+
+    const handleSortClick = (field: SortField) => {
+        if (sortField === field) {
+            setSortDir((d) => (d === 'asc' ? 'desc' : 'asc'));
+        } else {
+            setSortField(field);
+            setSortDir('asc');
+        }
+    };
 
     const filtered = products.filter((p) => {
         const matchesSearch =
@@ -83,6 +124,8 @@ export function ProductsTable({ products, onProductDeleted }: ProductsTableProps
         return matchesSearch && matchesCollection;
     });
 
+    const sorted = sortProducts(filtered, sortField, sortDir, locale);
+
     const handleDelete = async () => {
         if (!deleteTarget) return;
         setDeleting(true);
@@ -91,6 +134,16 @@ export function ProductsTable({ products, onProductDeleted }: ProductsTableProps
         setDeleting(false);
         setDeleteTarget(null);
     };
+
+    const SortableHeader = ({ field, label }: { field: SortField; label: string }) => (
+        <TableSortLabel
+            active={sortField === field}
+            direction={sortField === field ? sortDir : 'asc'}
+            onClick={() => handleSortClick(field)}
+        >
+            <Typography variant="caption" fontWeight={600}>{label}</Typography>
+        </TableSortLabel>
+    );
 
     return (
         <Box>
@@ -136,18 +189,18 @@ export function ProductsTable({ products, onProductDeleted }: ProductsTableProps
                     <TableHead>
                         <TableRow sx={{ bgcolor: 'grey.50' }}>
                             <TableCell sx={{ width: 64 }} />
-                            <TableCell><Typography variant="caption" fontWeight={600}>{t('tableHeaders.sku')}</Typography></TableCell>
-                            <TableCell><Typography variant="caption" fontWeight={600}>{t('tableHeaders.name')}</Typography></TableCell>
-                            <TableCell><Typography variant="caption" fontWeight={600}>{t('tableHeaders.collection')}</Typography></TableCell>
-                            <TableCell><Typography variant="caption" fontWeight={600}>{t('tableHeaders.pattern')}</Typography></TableCell>
-                            <TableCell><Typography variant="caption" fontWeight={600}>{t('tableHeaders.price')}</Typography></TableCell>
+                            <TableCell><SortableHeader field="sku" label={t('tableHeaders.sku')} /></TableCell>
+                            <TableCell><SortableHeader field="name" label={t('tableHeaders.name')} /></TableCell>
+                            <TableCell><SortableHeader field="collection" label={t('tableHeaders.collection')} /></TableCell>
+                            <TableCell><SortableHeader field="pattern" label={t('tableHeaders.pattern')} /></TableCell>
+                            <TableCell><SortableHeader field="price" label={t('tableHeaders.price')} /></TableCell>
                             <TableCell><Typography variant="caption" fontWeight={600}>{t('tableHeaders.status')}</Typography></TableCell>
                             <TableCell><Typography variant="caption" fontWeight={600}>{t('tableHeaders.images')}</Typography></TableCell>
                             <TableCell align="right"><Typography variant="caption" fontWeight={600}>{t('tableHeaders.actions')}</Typography></TableCell>
                         </TableRow>
                     </TableHead>
                     <TableBody>
-                        {filtered.length === 0 ? (
+                        {sorted.length === 0 ? (
                             <TableRow>
                                 <TableCell colSpan={9} align="center" sx={{ py: 4 }}>
                                     <Typography variant="body2" color="text.secondary">
@@ -156,85 +209,122 @@ export function ProductsTable({ products, onProductDeleted }: ProductsTableProps
                                 </TableCell>
                             </TableRow>
                         ) : (
-                            filtered.map((product) => {
+                            sorted.map((product) => {
                                 const thumb = productImageUrl(product);
                                 return (
-                                <TableRow key={product.sku} hover>
-                                    <TableCell sx={{ p: 0.5 }}>
-                                        <Box sx={{ width: 56, height: 42, bgcolor: 'grey.200', borderRadius: 1, overflow: 'hidden', flexShrink: 0, position: 'relative' }}>
-                                            {thumb && (
-                                                <Image
-                                                    src={thumb}
-                                                    alt={product.i18n?.[locale]?.name ?? product.i18n?.bg?.name ?? product.sku}
-                                                    fill
-                                                    sizes="56px"
-                                                    style={{ objectFit: 'cover' }}
-                                                />
-                                            )}
-                                        </Box>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Typography variant="body2" fontFamily="monospace">
-                                            {product.sku}
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Typography variant="body2" noWrap sx={{ maxWidth: 200 }}>
-                                            {product.i18n?.[locale]?.name ?? product.i18n?.bg?.name ?? '—'}
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Typography variant="body2">
-                                            {COLLECTION_LABELS[product.collection] ?? product.collection}
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Typography variant="body2">{product.pattern}</Typography>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Typography variant="body2">
-                                            {product.price ? `${product.price} лв` : '—'}
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell>
-                                        <Chip
-                                            label={product.metadata?.status ?? 'published'}
-                                            color={STATUS_COLORS[product.metadata?.status ?? 'published'] ?? 'default'}
-                                            size="small"
-                                            variant="outlined"
-                                        />
-                                    </TableCell>
-                                    <TableCell>
-                                        <Typography variant="body2" color="text.secondary">
-                                            {product.images?.length ?? 0}
-                                        </Typography>
-                                    </TableCell>
-                                    <TableCell align="right">
-                                        <Stack direction="row" justifyContent="flex-end" spacing={0.5}>
-                                            <IconButton
+                                    <TableRow
+                                        key={product.sku}
+                                        hover
+                                        onClick={() => setEditProduct(product)}
+                                        sx={{ cursor: 'pointer' }}
+                                    >
+                                        <TableCell sx={{ p: 0.5 }}>
+                                            <Box sx={{ width: 56, height: 42, bgcolor: 'grey.200', borderRadius: 1, overflow: 'hidden', flexShrink: 0, position: 'relative' }}>
+                                                {thumb && (
+                                                    <Image
+                                                        src={thumb}
+                                                        alt={product.i18n?.[locale]?.name ?? product.i18n?.bg?.name ?? product.sku}
+                                                        fill
+                                                        sizes="56px"
+                                                        style={{ objectFit: 'cover' }}
+                                                    />
+                                                )}
+                                            </Box>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Typography variant="body2" fontFamily="monospace">
+                                                {product.sku}
+                                            </Typography>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Typography variant="body2" noWrap sx={{ maxWidth: 200 }}>
+                                                {product.i18n?.[locale]?.name ?? product.i18n?.bg?.name ?? '—'}
+                                            </Typography>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Typography variant="body2">
+                                                {COLLECTION_LABELS[product.collection] ?? product.collection}
+                                            </Typography>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Typography variant="body2">{product.pattern}</Typography>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Typography variant="body2">
+                                                {product.price ? `€${product.price}` : '—'}
+                                            </Typography>
+                                        </TableCell>
+                                        <TableCell>
+                                            <Chip
+                                                label={product.metadata?.status ?? 'published'}
+                                                color={STATUS_COLORS[product.metadata?.status ?? 'published'] ?? 'default'}
                                                 size="small"
-                                                onClick={() => router.push(`/admin/products/${product.slug}/edit`)}
-                                                title={t('edit')}
-                                            >
-                                                <EditIcon fontSize="small" />
-                                            </IconButton>
-                                            <IconButton
-                                                size="small"
-                                                color="error"
-                                                onClick={() => setDeleteTarget(product)}
-                                                title={t('delete')}
-                                            >
-                                                <DeleteIcon fontSize="small" />
-                                            </IconButton>
-                                        </Stack>
-                                    </TableCell>
-                                </TableRow>
+                                                variant="outlined"
+                                            />
+                                        </TableCell>
+                                        <TableCell>
+                                            <Typography variant="body2" color="text.secondary">
+                                                {product.images?.length ?? 0}
+                                            </Typography>
+                                        </TableCell>
+                                        <TableCell align="right">
+                                            <Stack direction="row" justifyContent="flex-end" spacing={0.5}>
+                                                <IconButton
+                                                    size="small"
+                                                    onClick={(e) => { e.stopPropagation(); setEditProduct(product); }}
+                                                    title={t('edit')}
+                                                >
+                                                    <EditIcon fontSize="small" />
+                                                </IconButton>
+                                                <IconButton
+                                                    size="small"
+                                                    color="error"
+                                                    onClick={(e) => { e.stopPropagation(); setDeleteTarget(product); }}
+                                                    title={t('delete')}
+                                                >
+                                                    <DeleteIcon fontSize="small" />
+                                                </IconButton>
+                                            </Stack>
+                                        </TableCell>
+                                    </TableRow>
                                 );
                             })
                         )}
                     </TableBody>
                 </Table>
             </TableContainer>
+
+            {/* Edit dialog — keeps table filter/sort state intact */}
+            <Dialog
+                open={!!editProduct}
+                onClose={() => setEditProduct(null)}
+                maxWidth="lg"
+                fullWidth
+                scroll="paper"
+            >
+                <DialogTitle>
+                    <Stack direction="row" justifyContent="space-between" alignItems="center">
+                        <Typography variant="h6" fontWeight={600}>
+                            {t('editProduct', { name: editProduct?.i18n?.[locale]?.name ?? editProduct?.i18n?.bg?.name ?? editProduct?.sku ?? '' })}
+                        </Typography>
+                        <IconButton size="small" onClick={() => setEditProduct(null)}>
+                            <CloseIcon />
+                        </IconButton>
+                    </Stack>
+                </DialogTitle>
+                <DialogContent dividers>
+                    {editProduct && (
+                        <ProductForm
+                            key={editProduct.slug}
+                            initialProduct={editProduct}
+                            onSaveSuccess={() => {
+                                setEditProduct(null);
+                                onProductUpdated();
+                            }}
+                        />
+                    )}
+                </DialogContent>
+            </Dialog>
 
             {/* Delete confirmation dialog */}
             <Dialog open={!!deleteTarget} onClose={() => setDeleteTarget(null)} maxWidth="xs" fullWidth>
