@@ -5,30 +5,32 @@ import { useParams } from 'next/navigation';
 import { Box, CircularProgress, Alert, Typography, Button } from '@mui/material';
 import { ArrowBackOutlined as BackIcon } from '@mui/icons-material';
 import { useRouter } from '@/i18n/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { ProductsDB } from '@/lib/firebase/db';
 import { Product } from '@/types/products';
 import { ProductForm } from '@/components/admin/products/ProductForm';
 
 export default function EditProductPage() {
-    const { sku } = useParams<{ sku: string }>();
+    const { slug } = useParams<{ slug: string }>();
     const router = useRouter();
     const t = useTranslations('admin.products');
+    const locale = useLocale() as 'en' | 'bg';
     const [product, setProduct] = useState<Product | null>(null);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState<string | null>(null);
 
     useEffect(() => {
-        if (!sku) return;
-        ProductsDB.getById(sku).then((result) => {
+        if (!slug) return;
+        // Firestore doc ID = slug (not SKU)
+        ProductsDB.getById(slug).then((result) => {
             if (result.success && result.data) {
                 setProduct(result.data as unknown as Product);
             } else {
-                setError(t('productNotFoundError', { sku }));
+                setError(t('productNotFoundError', { sku: slug }));
             }
             setLoading(false);
         });
-    }, [sku]);
+    }, [slug]);
 
     if (loading) {
         return (
@@ -59,7 +61,7 @@ export default function EditProductPage() {
                 {t('backToProducts')}
             </Button>
             <Typography variant="h5" fontWeight={600} mb={3}>
-                {t('editProduct', { name: product.i18n?.bg?.name ?? product.sku })}
+                {t('editProduct', { name: product.i18n?.[locale]?.name ?? product.i18n?.bg?.name ?? product.sku })}
             </Typography>
             <ProductForm initialProduct={product} />
         </Box>

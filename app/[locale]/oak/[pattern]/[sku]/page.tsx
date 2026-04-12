@@ -12,16 +12,16 @@ import ProductActions from '@/components/organisms/product-detail/ProductActions
 import { ProductSpecs, SpecCategory } from '@/components/organisms/product-sections/ProductSpecs';
 import { OakDualPrice } from '@/components/molecules/price/OakDualPrice';
 import { ProductJsonLd } from '@/components/atoms/seo/ProductJsonLd';
-import { isValidPattern, ProductPattern, Product } from '@/types/products';
-import { getOakProductsByPattern } from '@/utils/products/oak';
+import { isValidPattern } from '@/types/products';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { TreatmentSwatchGallery } from '@/components/organisms/grids/TreatmentSwatchGallery';
 import { getAllTreatments } from '@/utils/treatments';
 import { getStorageUrl } from '@/lib/utils/getStorageUrl';
+import { getAllProducts, getProductBySlug } from '@/lib/firebase/admin-products';
 
-// Force static generation
-export const dynamic = 'error';
+// Allow new products added to Firestore to generate their pages on first visit
+export const dynamicParams = true;
 
 interface ProductPageProps {
     params: Promise<{
@@ -32,23 +32,16 @@ interface ProductPageProps {
 }
 
 export async function generateStaticParams() {
-    const patterns: ProductPattern[] = ['plank', 'herringbone'];
-    const params = [];
+    const products = await getAllProducts();
+    const oakProducts = products.filter((p) => p.collection === 'oak');
 
-    for (const pattern of patterns) {
-        const products = getOakProductsByPattern(pattern);
-        for (const product of products) {
-            for (const locale of routing.locales) {
-                params.push({
-                    locale,
-                    pattern,
-                    sku: product.slug,
-                });
-            }
-        }
-    }
-
-    return params;
+    return oakProducts.flatMap((product) =>
+        routing.locales.map((locale) => ({
+            locale,
+            pattern: product.pattern,
+            sku: product.slug,
+        }))
+    );
 }
 
 export async function generateMetadata({ params }: ProductPageProps): Promise<Metadata> {
@@ -58,8 +51,7 @@ export async function generateMetadata({ params }: ProductPageProps): Promise<Me
         return {};
     }
 
-    const products = getOakProductsByPattern(pattern as ProductPattern);
-    const product = products.find((p) => p.slug === sku);
+    const product = await getProductBySlug(sku);
 
     if (!product) {
         return {};
@@ -98,8 +90,7 @@ export default async function OakProductPage({ params }: ProductPageProps) {
         notFound();
     }
 
-    const products = getOakProductsByPattern(pattern as ProductPattern);
-    const product = products.find((p) => p.slug === sku);
+    const product = await getProductBySlug(sku);
 
     if (!product) {
         notFound();

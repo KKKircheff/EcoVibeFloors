@@ -3,8 +3,8 @@
  * Provides functions to filter and retrieve products from the Ter Hürne Hy-Wood collection
  */
 
-import { Product, ProductPattern } from '@/types/products';
-import { hyWoodCollection } from '@/collections/hy-wood';
+import {Product, ProductPattern} from '@/types/products';
+import {hyWoodCollection} from '@/collections/hy-wood';
 
 /**
  * Get all products from the Hy-Wood collection
@@ -30,10 +30,7 @@ export function getHyWoodProductBySlug(slug: string): Product | undefined {
 /**
  * Get a single Hy-Wood product by pattern and slug
  */
-export function getHyWoodProductByPatternSlug(
-    pattern: ProductPattern,
-    slug: string
-): Product | undefined {
+export function getHyWoodProductByPatternSlug(pattern: ProductPattern, slug: string): Product | undefined {
     const products = getHyWoodProductsByPattern(pattern);
     return products.find((product) => product.slug === slug);
 }

@@ -4,7 +4,7 @@ import {NextRequest, NextResponse} from 'next/server';
 
 const intlMiddleware = createMiddleware(routing);
 
-export default function middleware(request: NextRequest) {
+export default function proxy(request: NextRequest) {
     const {pathname, hostname} = request.nextUrl;
 
     // Redirect from Firebase default domain to custom domain (if Google OAuth redirects to wrong domain)

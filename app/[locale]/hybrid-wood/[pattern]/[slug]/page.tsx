@@ -16,10 +16,9 @@ import { isValidPattern } from '@/types/products';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { getStorageUrl } from '@/lib/utils/getStorageUrl';
-import { getHyWoodProductBySlug, getHyWoodProducts } from '@/utils/products/hy-wood';
+import { getAllProducts, getProductBySlug } from '@/lib/firebase/admin-products';
 
-// Force static generation
-export const dynamic = 'error';
+export const dynamicParams = true;
 
 interface ProductDetailPageProps {
     params: Promise<{
@@ -29,29 +28,24 @@ interface ProductDetailPageProps {
     }>;
 }
 
-// Generate static params for all hybrid-wood products
 export async function generateStaticParams() {
-    const products = getHyWoodProducts();
+    const products = await getAllProducts();
+    const hwProducts = products.filter((p) => p.collection === 'hybrid-wood');
 
-    const params = [];
-    for (const product of products) {
-        for (const locale of routing.locales) {
-            params.push({
-                locale,
-                pattern: product.pattern,
-                slug: product.slug,
-            });
-        }
-    }
-
-    return params;
+    return hwProducts.flatMap((product) =>
+        routing.locales.map((locale) => ({
+            locale,
+            pattern: product.pattern,
+            slug: product.slug,
+        }))
+    );
 }
 
 // Generate metadata for SEO using product data
 export async function generateMetadata({ params }: ProductDetailPageProps): Promise<Metadata> {
     const { slug, locale } = await params;
 
-    const product = getHyWoodProductBySlug(slug);
+    const product = await getProductBySlug(slug);
 
     if (!product) {
         return {};
@@ -122,7 +116,7 @@ export default async function HybridWoodProductPage({ params }: ProductDetailPag
         notFound();
     }
 
-    const product = getHyWoodProductBySlug(slug);
+    const product = await getProductBySlug(slug);
 
     if (!product || product.pattern !== pattern) {
         notFound();

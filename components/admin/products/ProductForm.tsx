@@ -11,6 +11,7 @@ import { ProductFormSpecsSection } from './ProductFormSpecsSection';
 import { ProductImageManager } from './ProductImageManager';
 import { Product } from '@/types/products';
 import { ProductsDB } from '@/lib/firebase/db';
+import { revalidateProduct } from '@/app/[locale]/admin/(protected)/actions';
 import { useState } from 'react';
 
 // Flat form shape — avoids deeply nested react-hook-form issues with optional objects
@@ -269,11 +270,12 @@ export function ProductForm({ initialProduct }: ProductFormProps) {
 
         const productData = formValuesToProduct(values);
 
+        // Document ID = slug for O(1) public page lookups
         let result;
         if (isEdit) {
-            result = await ProductsDB.update(values.sku, productData);
+            result = await ProductsDB.update(values.slug, productData);
         } else {
-            result = await ProductsDB.createWithId(values.sku, productData);
+            result = await ProductsDB.createWithId(values.slug, productData);
         }
 
         setSaving(false);
@@ -282,8 +284,10 @@ export function ProductForm({ initialProduct }: ProductFormProps) {
             setSaveError(result.error ?? 'Failed to save product');
         } else {
             setSaveSuccess(true);
+            // Purge cached public pages so visitors see the updated product
+            await revalidateProduct(values.collection, values.pattern, values.slug);
             if (!isEdit) {
-                router.push(`/admin/products/${values.sku}/edit`);
+                router.push(`/admin/products/${values.slug}/edit`);
             }
         }
     };

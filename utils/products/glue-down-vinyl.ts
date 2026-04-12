@@ -3,8 +3,8 @@
  * Provides functions to filter and retrieve products from the Glue-Down Vinyl collection
  */
 
-import { Product, ProductPattern } from '@/types/products';
-import { glueDownVinylCollection } from '@/collections/glue-down-vinyl';
+import {Product, ProductPattern} from '@/types/products';
+import {glueDownVinylCollection} from '@/collections/glue-down-vinyl';
 
 /**
  * Get all products from the Glue-Down Vinyl collection
@@ -30,10 +30,7 @@ export function getGlueDownVinylProductBySlug(slug: string): Product | undefined
 /**
  * Get a single Glue-Down Vinyl product by pattern and slug
  */
-export function getGlueDownVinylProductByPatternSlug(
-    pattern: ProductPattern,
-    slug: string
-): Product | undefined {
+export function getGlueDownVinylProductByPatternSlug(pattern: ProductPattern, slug: string): Product | undefined {
     const products = getGlueDownVinylProductsByPattern(pattern);
     return products.find((product) => product.slug === slug);
 }

@@ -3,8 +3,8 @@
  * Provides functions to filter and retrieve products from the Oak collection
  */
 
-import { Product, ProductPattern } from '@/types/products';
-import { oakCollection } from '@/collections/oak';
+import {Product, ProductPattern} from '@/types/products';
+import {oakCollection} from '@/collections/oak';
 
 /**
  * Get all products from the Oak collection
@@ -30,10 +30,7 @@ export function getOakProductBySlug(slug: string): Product | undefined {
 /**
  * Get a single Oak product by pattern and slug
  */
-export function getOakProductByPatternSlug(
-    pattern: ProductPattern,
-    slug: string
-): Product | undefined {
+export function getOakProductByPatternSlug(pattern: ProductPattern, slug: string): Product | undefined {
     const products = getOakProductsByPattern(pattern);
     return products.find((product) => product.slug === slug);
 }

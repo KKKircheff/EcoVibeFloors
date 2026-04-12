@@ -18,6 +18,8 @@ EcoVibeFloors is a luxury flooring import platform helping Bulgarian homeowners 
 - `npm start` — Start production server
 
 ### Utilities
+- `npm run seed:dry` — Preview what would be seeded to Firestore (no writes)
+- `npm run seed` — Seed all product collections from TypeScript constants to Firestore
 - `node utils/sort-products-by-sku.js [collection-name]` — Sort products by SKU after adding new products
 - `node utils/polish-translations.js --namespace=X --dry-run` — Polish Bulgarian translations (Mistral AI)
 - `node utils/polish-collection-translations.js --collection=X --dry-run` — Polish product translations
@@ -28,17 +30,19 @@ EcoVibeFloors is a luxury flooring import platform helping Bulgarian homeowners 
 - Add `MISTRAL_API_KEY` to `.env` for translation scripts
 
 ## Tech Stack
-- **Next.js 15** / React 19 / App Router / TypeScript (strict)
-- **next-intl 4.x** — i18n with `en`/`bg` locales, `app/[locale]/` routing
-- **Material UI v7** — custom luxury theme at `lib/theme.ts`
-- **Firebase 12** — Firestore, Storage, Auth (`lib/firebase.ts`)
+- **Next.js 16.2.3** / React 19 / App Router / TypeScript (strict)
+- **next-intl 4.9.1** — i18n with `en`/`bg` locales, `app/[locale]/` routing
+- **Material UI 7.3** + `@mui/material-nextjs 9.0` — custom luxury theme at `lib/theme.ts`
+- **Firebase 12** (client) + **firebase-admin 13** (server/SSR) — Firestore, Storage, Auth
+- **Middleware**: `proxy.ts` (renamed from `middleware.ts` in Next.js 16)
 
 ## File Structure
 - `app/[locale]/` — all pages and layouts
 - `lib/` — Firebase, theme, shared utilities
 - `i18n/` — routing and request configuration
 - `messages/` — `en.json` and `bg.json` translation files
-- `collections/` — product JSON data files
+- `collections/` — TypeScript product source files (seed source of truth, not used at runtime)
+- `collections/` — treatment JSON data (`dig-oak-treatments.json`)
 - `docs/` — reference documentation (products, translation context, deployment)
 
 ## Component Architecture (Atomic Design)
@@ -75,6 +79,7 @@ Read these before working in the relevant area:
 | Task | Reference |
 |---|---|
 | Writing pages/layouts or using next-intl | `docs/claude/nextjs-patterns.md` |
+| Product data architecture (Firestore, seed, revalidation) | `docs/claude/firebase-products.md` |
 | MUI components, comments, imports, coding style | `docs/claude/coding-standards.md` |
 | Bulgarian translations (rules, tools, workflow) | `docs/claude/translation-system.md` |
 | Translation terminology & market context | `docs/translation-context/` |
@@ -83,4 +88,4 @@ Read these before working in the relevant area:
 
 ## Package Management
 
-This project uses cutting-edge versions (Next.js 15, React 19, MUI v7). When unsure about API syntax, use web search or context7 MCP to check current documentation before implementing.
+This project uses cutting-edge versions (Next.js 16, React 19, MUI v7). When unsure about API syntax for any of these, use web search or context7 MCP to check current documentation — avoid assuming older API patterns still apply. See `docs/claude/nextjs-patterns.md` for the full version table and known breaking changes.

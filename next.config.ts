@@ -103,17 +103,8 @@ const nextConfig: NextConfig = {
         // which redirects to the user's NEXT_LOCALE cookie preference or bg (defaultLocale).
     ],
     // Cache optimization for Firebase App Hosting
+    // Note: /_next/static is already handled automatically by Next.js (content-hashed, immutable)
     headers: async () => [
-        {
-            // Cache static assets aggressively
-            source: '/_next/static/:path*',
-            headers: [
-                {
-                    key: 'Cache-Control',
-                    value: 'public, max-age=31536000, s-maxage=31536000, immutable',
-                },
-            ],
-        },
         {
             // Cache images for 1 year
             source: '/images/:path*',

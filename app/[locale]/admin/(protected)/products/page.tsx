@@ -22,8 +22,8 @@ export default function AdminProductsPage() {
         });
     }, []);
 
-    const handleProductDeleted = (sku: string) => {
-        setProducts((prev) => prev.filter((p) => p.sku !== sku));
+    const handleProductDeleted = (slug: string) => {
+        setProducts((prev) => prev.filter((p) => p.slug !== slug));
     };
 
     if (loading) {

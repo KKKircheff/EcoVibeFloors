@@ -74,7 +74,7 @@ export function getProductCountByCollectionAndPattern(collection: CollectionType
 export function getProductByCollectionPatternSlug(
     collection: CollectionType,
     pattern: ProductPattern,
-    slug: string
+    slug: string,
 ): Product | undefined {
     const products = getProductsByCollectionAndPattern(collection, pattern);
     return products.find((product) => product.slug === slug);

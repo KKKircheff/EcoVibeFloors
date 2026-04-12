@@ -11,11 +11,10 @@ import { isValidPattern, ProductPattern } from '@/types/products';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { ProductGrid } from '@/components/organisms/grids/ProductGrid';
-import { getHyWoodProductsByPattern } from '@/utils/products/hy-wood';
+import { getProductsByCollectionAndPattern } from '@/lib/firebase/admin-products';
 import { buildAlternates } from '@/lib/seo';
 
-// Force static generation
-export const dynamic = 'error';
+export const dynamicParams = true;
 
 interface PatternPageProps {
     params: Promise<{
@@ -87,7 +86,7 @@ export default async function HybridWoodPatternPage({ params }: PatternPageProps
     const tBreadcrumb = await getTranslations('breadcrumb');
     const tNavigation = await getTranslations('navigation');
 
-    const products = getHyWoodProductsByPattern(pattern as ProductPattern);
+    const products = await getProductsByCollectionAndPattern('hybrid-wood', pattern);
 
     const patternKey = pattern as keyof Messages['patterns'];
     const patternDescKey = `${pattern}Description` as keyof Messages['patterns'];

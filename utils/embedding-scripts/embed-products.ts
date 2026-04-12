@@ -20,13 +20,7 @@ import 'dotenv/config'; // Load environment variables
 import {initializeFirebaseAdmin, getFirestoreAdmin} from '@/lib/firebase/firebase-admin';
 import {getAzureEmbeddings} from '@/lib/azure/azure-ai';
 import type {ChunkMetadata} from '@/lib/chat-ai-assistant/types';
-import {
-    parseCommonArgs,
-    printScriptHeader,
-    printSummary,
-    uploadChunk,
-    sleep,
-} from './shared/embedding-utils';
+import {parseCommonArgs, printScriptHeader, printSummary, uploadChunk, sleep} from './shared/embedding-utils';
 import {getStorageUrl} from '@/lib/utils/getStorageUrl';
 
 // Import product collections
@@ -182,7 +176,7 @@ async function main() {
                 enChunk,
                 totalChunks + 1,
                 commonArgs.isDryRun,
-                commonArgs.skipExisting
+                commonArgs.skipExisting,
             );
             totalChunks++;
             if (enUploaded) uploadedCount++;
@@ -194,7 +188,7 @@ async function main() {
                 bgChunk,
                 totalChunks + 1,
                 commonArgs.isDryRun,
-                commonArgs.skipExisting
+                commonArgs.skipExisting,
             );
             totalChunks++;
             if (bgUploaded) uploadedCount++;

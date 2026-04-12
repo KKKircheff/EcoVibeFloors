@@ -13,13 +13,12 @@ import { ProductSpecs, SpecCategory } from '@/components/organisms/product-secti
 import { AuthenticatedPrice } from '@/components/molecules/price/AuthenticatedPrice';
 import { ProductJsonLd } from '@/components/atoms/seo/ProductJsonLd';
 import { isValidPattern } from '@/types/products';
-import { getClickVinylProductBySlug, getClickVinylProducts } from '@/utils/products/click-vinyl';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { getStorageUrl } from '@/lib/utils/getStorageUrl';
+import { getAllProducts, getProductBySlug } from '@/lib/firebase/admin-products';
 
-// Force static generation
-export const dynamic = 'error';
+export const dynamicParams = true;
 
 interface ProductDetailPageProps {
     params: Promise<{
@@ -29,29 +28,24 @@ interface ProductDetailPageProps {
     }>;
 }
 
-// Generate static params for all click-vinyl products
 export async function generateStaticParams() {
-    const products = getClickVinylProducts();
+    const products = await getAllProducts();
+    const cvProducts = products.filter((p) => p.collection === 'click-vinyl');
 
-    const params = [];
-    for (const product of products) {
-        for (const locale of routing.locales) {
-            params.push({
-                locale,
-                pattern: product.pattern,
-                slug: product.slug,
-            });
-        }
-    }
-
-    return params;
+    return cvProducts.flatMap((product) =>
+        routing.locales.map((locale) => ({
+            locale,
+            pattern: product.pattern,
+            slug: product.slug,
+        }))
+    );
 }
 
 // Generate metadata for SEO using product data
 export async function generateMetadata({ params }: ProductDetailPageProps): Promise<Metadata> {
     const { slug, locale } = await params;
 
-    const product = getClickVinylProductBySlug(slug);
+    const product = await getProductBySlug(slug);
 
     if (!product) {
         return {};
@@ -122,7 +116,7 @@ export default async function ClickVinylProductPage({ params }: ProductDetailPag
         notFound();
     }
 
-    const product = getClickVinylProductBySlug(slug);
+    const product = await getProductBySlug(slug);
 
     if (!product || product.pattern !== pattern) {
         notFound();

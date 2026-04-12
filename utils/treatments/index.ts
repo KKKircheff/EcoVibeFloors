@@ -3,7 +3,7 @@
  * Functions for retrieving and filtering oak color treatments
  */
 
-import { OakTreatment, TreatmentCategory, TreatmentCollection } from '@/types/treatments';
+import {OakTreatment, TreatmentCategory, TreatmentCollection} from '@/types/treatments';
 import treatmentData from '@/collections/dig-oak-treatments.json';
 
 /**
@@ -18,7 +18,7 @@ export function getAllTreatments(): OakTreatment[] {
  */
 export function getTreatmentBySlug(slug: string): OakTreatment | null {
     const treatments = getAllTreatments();
-    return treatments.find(treatment => treatment.slug === slug) || null;
+    return treatments.find((treatment) => treatment.slug === slug) || null;
 }
 
 /**
@@ -26,7 +26,7 @@ export function getTreatmentBySlug(slug: string): OakTreatment | null {
  */
 export function getTreatmentsByCategory(category: TreatmentCategory): OakTreatment[] {
     const treatments = getAllTreatments();
-    return treatments.filter(treatment => treatment.category === category);
+    return treatments.filter((treatment) => treatment.category === category);
 }
 
 /**
@@ -48,7 +48,7 @@ export function getTreatmentMetadata() {
  */
 export function getTreatmentCategories(): TreatmentCategory[] {
     const treatments = getAllTreatments();
-    const categories = treatments.map(t => t.category);
+    const categories = treatments.map((t) => t.category);
     return Array.from(new Set(categories));
 }
 

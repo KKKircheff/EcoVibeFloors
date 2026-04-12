@@ -8,14 +8,13 @@ import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import Footer from '@/components/organisms/footer/Footer';
 import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
 import { isValidPattern, ProductPattern } from '@/types/products';
-import { getOakProductsByPattern } from '@/utils/products/oak';
 import { routing } from '@/i18n/routing';
 import { Messages } from '@/global';
 import { ProductGrid } from '@/components/organisms/grids/ProductGrid';
 import { buildAlternates } from '@/lib/seo';
+import { getProductsByCollectionAndPattern } from '@/lib/firebase/admin-products';
 
-// Force static generation
-export const dynamic = 'error';
+export const dynamicParams = true;
 
 interface PatternPageProps {
     params: Promise<{
@@ -80,7 +79,7 @@ export default async function OakPatternPage({ params }: PatternPageProps) {
     const tBreadcrumb = await getTranslations('breadcrumb');
     const tNavigation = await getTranslations('navigation');
 
-    const products = getOakProductsByPattern(pattern as ProductPattern);
+    const products = await getProductsByCollectionAndPattern('oak', pattern);
 
     const patternKey = pattern as keyof Messages['patterns'];
     const patternDescKey = `${pattern}Description` as keyof Messages['patterns'];

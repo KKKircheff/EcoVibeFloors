@@ -3,8 +3,8 @@
  * Provides functions to filter and retrieve products from the Click Vinyl collection
  */
 
-import { Product, ProductPattern } from '@/types/products';
-import { clickVinylCollection } from '@/collections/click-vinyl';
+import {Product, ProductPattern} from '@/types/products';
+import {clickVinylCollection} from '@/collections/click-vinyl';
 
 /**
  * Get all products from the Click Vinyl collection
@@ -30,10 +30,7 @@ export function getClickVinylProductBySlug(slug: string): Product | undefined {
 /**
  * Get a single Click Vinyl product by pattern and slug
  */
-export function getClickVinylProductByPatternSlug(
-    pattern: ProductPattern,
-    slug: string
-): Product | undefined {
+export function getClickVinylProductByPatternSlug(pattern: ProductPattern, slug: string): Product | undefined {
     const products = getClickVinylProductsByPattern(pattern);
     return products.find((product) => product.slug === slug);
 }

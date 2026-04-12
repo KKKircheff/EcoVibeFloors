@@ -33,7 +33,7 @@ import {
     AddOutlined as AddIcon,
 } from '@mui/icons-material';
 import { useRouter } from '@/i18n/navigation';
-import { useTranslations } from 'next-intl';
+import { useTranslations, useLocale } from 'next-intl';
 import { Product } from '@/types/products';
 import { ProductsDB } from '@/lib/firebase/db';
 import { getStorageUrl } from '@/lib/utils/getStorageUrl';
@@ -66,6 +66,7 @@ const STATUS_COLORS: Record<string, 'success' | 'warning' | 'default'> = {
 export function ProductsTable({ products, onProductDeleted }: ProductsTableProps) {
     const router = useRouter();
     const t = useTranslations('admin.products');
+    const locale = useLocale() as 'en' | 'bg';
     const [search, setSearch] = useState('');
     const [collectionFilter, setCollectionFilter] = useState('all');
     const [deleteTarget, setDeleteTarget] = useState<Product | null>(null);
@@ -85,8 +86,8 @@ export function ProductsTable({ products, onProductDeleted }: ProductsTableProps
     const handleDelete = async () => {
         if (!deleteTarget) return;
         setDeleting(true);
-        await ProductsDB.delete(deleteTarget.sku);
-        onProductDeleted(deleteTarget.sku);
+        await ProductsDB.delete(deleteTarget.slug);
+        onProductDeleted(deleteTarget.slug);
         setDeleting(false);
         setDeleteTarget(null);
     };
@@ -164,7 +165,7 @@ export function ProductsTable({ products, onProductDeleted }: ProductsTableProps
                                             {thumb && (
                                                 <Image
                                                     src={thumb}
-                                                    alt={product.i18n?.bg?.name ?? product.sku}
+                                                    alt={product.i18n?.[locale]?.name ?? product.i18n?.bg?.name ?? product.sku}
                                                     fill
                                                     sizes="56px"
                                                     style={{ objectFit: 'cover' }}
@@ -179,7 +180,7 @@ export function ProductsTable({ products, onProductDeleted }: ProductsTableProps
                                     </TableCell>
                                     <TableCell>
                                         <Typography variant="body2" noWrap sx={{ maxWidth: 200 }}>
-                                            {product.i18n?.bg?.name ?? '—'}
+                                            {product.i18n?.[locale]?.name ?? product.i18n?.bg?.name ?? '—'}
                                         </Typography>
                                     </TableCell>
                                     <TableCell>
@@ -212,7 +213,7 @@ export function ProductsTable({ products, onProductDeleted }: ProductsTableProps
                                         <Stack direction="row" justifyContent="flex-end" spacing={0.5}>
                                             <IconButton
                                                 size="small"
-                                                onClick={() => router.push(`/admin/products/${product.sku}/edit`)}
+                                                onClick={() => router.push(`/admin/products/${product.slug}/edit`)}
                                                 title={t('edit')}
                                             >
                                                 <EditIcon fontSize="small" />
@@ -240,7 +241,7 @@ export function ProductsTable({ products, onProductDeleted }: ProductsTableProps
                 <DialogTitle>{t('deleteConfirmTitle')}</DialogTitle>
                 <DialogContent>
                     <DialogContentText>
-                        {t('deleteConfirmText', { sku: deleteTarget?.sku ?? '', name: deleteTarget?.i18n?.bg?.name ?? '' })}
+                        {t('deleteConfirmText', { sku: deleteTarget?.sku ?? '', name: deleteTarget?.i18n?.[locale]?.name ?? deleteTarget?.i18n?.bg?.name ?? '' })}
                     </DialogContentText>
                 </DialogContent>
                 <DialogActions>

@@ -8,15 +8,14 @@ import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import Footer from '@/components/organisms/footer/Footer';
 import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
 import { isValidPattern, ProductPattern } from '@/types/products';
-import { getClickVinylProductsByPattern } from '@/utils/products/click-vinyl';
 import { routing } from '@/i18n/routing';
+import { getProductsByCollectionAndPattern } from '@/lib/firebase/admin-products';
 import { Messages } from '@/global';
 import { ProductGrid } from '@/components/organisms/grids/ProductGrid';
 import { toCamelCase } from '@/lib/utils/toCamelCase';
 import { buildAlternates } from '@/lib/seo';
 
-// Force static generation
-export const dynamic = 'error';
+export const dynamicParams = true;
 
 interface PatternPageProps {
     params: Promise<{
@@ -81,7 +80,7 @@ export default async function ClickVinylPatternPage({ params }: PatternPageProps
     const tBreadcrumb = await getTranslations('breadcrumb');
     const tNavigation = await getTranslations('navigation');
 
-    const products = getClickVinylProductsByPattern(pattern as ProductPattern);
+    const products = await getProductsByCollectionAndPattern('click-vinyl', pattern);
 
     const patternKey = pattern as keyof Messages['patterns'];
     const patternDescKey = `${toCamelCase(pattern)}Description` as keyof Messages['patterns'];

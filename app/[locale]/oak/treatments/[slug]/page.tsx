@@ -14,8 +14,7 @@ import { Messages } from '@/global';
 import { useRouter } from '@/i18n/navigation';
 import { borderRadius } from '@/lib/styles/borderRadius';
 
-// Force static generation
-export const dynamic = 'error';
+export const dynamicParams = true;
 
 interface TreatmentDetailPageProps {
     params: Promise<{

@@ -8,7 +8,9 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "analyze": "ANALYZE=true npm run build"
+    "analyze": "ANALYZE=true npm run build",
+    "seed": "npx tsx utils/seed-firestore.ts",
+    "seed:dry": "npx tsx utils/seed-firestore.ts --dry-run"
   },
   "dependencies": {
     "@ai-sdk/azure": "^2.0.66",
@@ -20,15 +22,16 @@
     "@langchain/textsplitters": "^1.0.0",
     "@mui/icons-material": "^7.3.1",
     "@mui/material": "^7.3.1",
-    "@mui/material-nextjs": "^7.3.0",
+    "@mui/material-nextjs": "^9.0.0",
     "ai": "^5.0.89",
     "firebase": "^12.2.1",
+    "firebase-admin": "^13.8.0",
     "marked": "^17.0.0",
-    "next": "^15.5.9",
-    "next-intl": "^4.3.5",
-    "react": "^19.2.3",
+    "next": "16.2.3",
+    "next-intl": "^4.9.1",
+    "react": "19.2.5",
     "react-device-detect": "^2.2.3",
-    "react-dom": "^19.2.3",
+    "react-dom": "19.2.5",
     "react-hook-form": "^7.62.0",
     "react-icons": "^5.5.0",
     "react-markdown": "^10.1.0",
@@ -39,15 +42,14 @@
     "@eslint/eslintrc": "^3",
     "@google/generative-ai": "^0.24.1",
     "@mistralai/mistralai": "^1.10.0",
-    "@next/bundle-analyzer": "^16.0.1",
+    "@next/bundle-analyzer": "16.2.3",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3",
     "@types/react-syntax-highlighter": "^15.5.13",
     "dotenv": "^17.2.3",
     "eslint": "^9",
-    "eslint-config-next": "^15.5.9",
-    "firebase-admin": "^13.6.0",
+    "eslint-config-next": "16.2.3",
     "pdf-parse": "^2.4.5",
     "tsx": "^4.20.6",
     "typescript": "^5",
@@ -56,5 +58,9 @@
   "browserslist": [
     "defaults and supports es6-module",
     "maintained node versions"
-  ]
+  ],
+  "overrides": {
+    "@types/react": "19.2.14",
+    "@types/react-dom": "19.2.3"
+  }
 }

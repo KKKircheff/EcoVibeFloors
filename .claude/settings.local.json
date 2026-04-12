@@ -77,7 +77,10 @@
       "Bash(rm:*)",
       "Bash(npx tsx:*)",
       "mcp__plugin_playwright_playwright__browser_take_screenshot",
-      "mcp__plugin_playwright_playwright__browser_snapshot"
+      "mcp__plugin_playwright_playwright__browser_snapshot",
+      "mcp__plugin_playwright_playwright__browser_type",
+      "Bash(wc -l C:/myProjects/EcoVibeFloors/collections/*.ts)",
+      "Bash(npm install:*)"
     ],
     "deny": [],
     "ask": []
