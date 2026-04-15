@@ -18,6 +18,7 @@
         "delete": "Delete",
         "edit": "Edit",
         "exploreCollection": "Explore Collections",
+        "viewCollections": "View Collections",
         "sendInquiry": "Send Inquiry",
         "backHome": "Back to Home",
         "contactNow": "Contact Now",
@@ -597,6 +598,27 @@
         "hero": {
             "title": "Blog",
             "subtitle": "Insights and inspiration for your flooring journey"
+        },
+        "noPosts": "No articles published yet. Check back soon!",
+        "card": {
+            "readMore": "Read article"
+        },
+        "sidebar": {
+            "category": "Category",
+            "published": "Published",
+            "tags": "Tags",
+            "exploreCollection": "Explore Collection"
+        },
+        "cta": {
+            "title": "Ready to find your perfect floor?",
+            "subtitle": "Explore our collection of premium European flooring. Quality engineered parquet, hybrid, and SPC options for every room."
+        },
+        "categories": {
+            "engineered-parquet": "Engineered Parquet",
+            "hybrid": "Hybrid Flooring",
+            "spc-lvt": "SPC / LVT Flooring",
+            "comparison": "Comparison",
+            "brand": "Brand Stories"
         }
     },
     "notFound": {
@@ -1879,7 +1901,7 @@
             "pattern": "Pattern",
             "patternRequired": "Pattern is required",
             "installationSystem": "Installation System",
-            "price": "Price (BGN per m²)",
+            "price": "Price (EUR per m²)",
             "priceRequired": "Price is required",
             "pricePositive": "Price must be positive",
             "status": "Status",

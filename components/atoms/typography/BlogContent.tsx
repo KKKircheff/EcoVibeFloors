@@ -9,6 +9,10 @@ export function BlogContent({ children, ...props }: BlogContentProps) {
         <Typography
             variant="subtitle2"
             {...props}
+            sx={{
+                whiteSpace: 'pre-line',
+                ...props.sx
+            }}
         >
             {children}
         </Typography>

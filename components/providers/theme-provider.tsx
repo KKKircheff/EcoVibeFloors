@@ -12,6 +12,7 @@ export default function ClientThemeProvider({ children }: Props) {
     return (
         <AppRouterCacheProvider>
             <GlobalStyles styles="@layer base,mui,components,utilities;" />
+            <GlobalStyles styles={{ html: { scrollBehavior: 'smooth' } }} />
             <ThemeProvider theme={luxuryTheme}>
                 <CssBaseline />
                 {children}
