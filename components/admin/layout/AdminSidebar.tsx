@@ -33,7 +33,7 @@ export function AdminSidebar() {
     const navItems = [
         { label: t('sidebar.dashboard'), icon: <DashboardIcon />, href: '/admin' as const, exact: true },
         { label: t('sidebar.products'), icon: <ProductsIcon />, href: '/admin/products' },
-        { label: t('sidebar.blog'), icon: <BlogIcon />, href: '/admin/blog', disabled: true },
+        { label: t('sidebar.blog'), icon: <BlogIcon />, href: '/admin/blog' },
         { label: t('sidebar.crm'), icon: <CrmIcon />, href: '/admin/crm', disabled: true },
     ];
 

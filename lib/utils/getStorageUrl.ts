@@ -1,6 +1,15 @@
 import { FIREBASE_STORAGE_BUCKET } from '@/lib/firebase';
 
 /**
+ * Generates Firebase Storage URL from a raw Storage path.
+ * Use this for blog hero images or any path stored directly in Firestore.
+ */
+export function getFirebaseStorageUrl(path: string): string {
+    const encodedPath = encodeURIComponent(path);
+    return `https://firebasestorage.googleapis.com/v0/b/${FIREBASE_STORAGE_BUCKET}/o/${encodedPath}?alt=media`;
+}
+
+/**
  * Generates Firebase Storage URLs for product images
  * @param collection - Product collection name
  * @param pattern - Product pattern name

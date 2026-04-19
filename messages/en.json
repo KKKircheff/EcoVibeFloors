@@ -597,7 +597,7 @@
     "blog": {
         "hero": {
             "title": "Blog",
-            "subtitle": "Insights and inspiration for your flooring journey"
+            "subtitle": "Insights and inspiration for your journey in the flooring world"
         },
         "noPosts": "No articles published yet. Check back soon!",
         "card": {
@@ -607,7 +607,17 @@
             "category": "Category",
             "published": "Published",
             "tags": "Tags",
-            "exploreCollection": "Explore Collection"
+            "exploreCollection": "Explore Collection",
+            "share": "Share",
+            "contents": "Contents",
+            "relatedPosts": "Related Posts",
+            "relatedProducts": "Related Products",
+            "newsletter": {
+                "title": "Stay Updated",
+                "subtitle": "Get our latest articles and flooring tips delivered to you.",
+                "placeholder": "Your email",
+                "button": "Subscribe"
+            }
         },
         "cta": {
             "title": "Ready to find your perfect floor?",
@@ -1975,6 +1985,120 @@
             "uploading": "Uploading… {progress}%",
             "skuRequired": "Save the product with a SKU first before uploading images.",
             "uploadImages": "Upload images"
+        },
+        "blog": {
+            "title": "Blog Posts",
+            "addPost": "New Post",
+            "searchPlaceholder": "Search by title or slug…",
+            "category": "Category",
+            "allCategories": "All categories",
+            "status": "Status",
+            "allStatuses": "All statuses",
+            "postCount": "{filtered} / {total} posts",
+            "noPosts": "No blog posts found",
+            "browseImages": "Browse Images",
+            "imagePicker": {
+                "title": "Browse Product Images",
+                "collection": "Collection",
+                "pattern": "Pattern",
+                "sku": "Product (SKU)",
+                "selectCollection": "Select collection",
+                "selectPattern": "Select pattern",
+                "selectSku": "Select product",
+                "noProducts": "No products found",
+                "loadingProducts": "Loading products…",
+                "storagePath": "Storage Path",
+                "fullUrl": "Full URL",
+                "copied": "Copied!"
+            },
+            "edit": "Edit",
+            "delete": "Delete",
+            "deleteConfirmTitle": "Delete blog post?",
+            "deleteConfirmText": "Are you sure you want to delete \"{title}\"? This cannot be undone.",
+            "deleting": "Deleting…",
+            "cancel": "Cancel",
+            "editPost": "Edit: {title}",
+            "saving": "Saving…",
+            "saveChanges": "Save changes",
+            "createPost": "Create post",
+            "savedSuccess": "Blog post saved successfully.",
+            "tableHeaders": {
+                "slug": "Slug",
+                "title": "Title (BG)",
+                "category": "Category",
+                "postType": "Type",
+                "statusBg": "BG",
+                "statusEn": "EN",
+                "date": "Date",
+                "actions": "Actions"
+            },
+            "form": {
+                "basicInfo": "Basic Information",
+                "slug": "Slug (URL)",
+                "slugRequired": "Slug is required",
+                "strategyId": "Strategy ID",
+                "postType": "Post Type",
+                "category": "Category",
+                "categoryRequired": "Category is required",
+                "schemaType": "Schema Type",
+                "heroImage": "Hero Image Path",
+                "relationships": "Internal Linking",
+                "isPartOf": "Part of (parent slug)",
+                "hasPart": "Has parts (slugs, comma-separated)",
+                "linksTo": "Links to (slugs, comma-separated)",
+                "relatedPostSlugs": "Related posts (slugs, comma-separated)",
+                "featuredProducts": "Featured Products",
+                "addFeaturedProduct": "Add product",
+                "featuredProductName": "Name",
+                "featuredProductBrand": "Brand",
+                "featuredProductSlug": "Slug",
+                "mentions": "Mentions",
+                "addMention": "Add mention",
+                "mentionType": "Type",
+                "mentionName": "Name",
+                "content": "Localized Content",
+                "tabBulgarian": "Bulgarian (BG)",
+                "tabEnglish": "English (EN)",
+                "title": "Title",
+                "titleRequired": "{locale} title is required",
+                "metaDescription": "Meta Description",
+                "primaryKeyword": "Primary Keyword",
+                "tags": "Tags (comma-separated)",
+                "contentMarkdown": "Content (Markdown)",
+                "markdownPreview": "Preview",
+                "wordCount": "Words",
+                "readingTime": "Reading time (min)",
+                "status": "Status",
+                "datePublished": "Published Date",
+                "autoCalculated": "Auto-calculated",
+                "statuses": {
+                    "draft": "Draft",
+                    "published": "Published",
+                    "archived": "Archived"
+                },
+                "postTypes": {
+                    "pillar": "Pillar",
+                    "cluster": "Cluster",
+                    "cross-pillar": "Cross-Pillar",
+                    "brand": "Brand"
+                },
+                "categories": {
+                    "engineered-parquet": "Engineered Parquet",
+                    "hybrid": "Hybrid",
+                    "spc-lvt": "SPC / LVT",
+                    "comparison": "Comparison",
+                    "brand": "Brand"
+                },
+                "schemaTypes": {
+                    "Article": "Article",
+                    "HowTo": "How-To",
+                    "FAQPage": "FAQ"
+                },
+                "mentionTypes": {
+                    "Brand": "Brand",
+                    "Product": "Product"
+                }
+            }
         }
     }
 }

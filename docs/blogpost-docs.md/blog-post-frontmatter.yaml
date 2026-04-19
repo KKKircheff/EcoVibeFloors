@@ -1,0 +1,52 @@
+# Blog Post Frontmatter Template — EcoVibe Floors
+#
+# Copy this block exactly. Fill in every field. Do not remove any lines.
+# Required fields (marked REQ) will block publish if missing.
+# Optional fields (marked OPT) produce warnings if missing.
+#
+# Auto-generated from scripts/blog-post-schema.js — do not edit manually.
+# Run: node scripts/generate-frontmatter-template.js
+# ─────────────────────────────────────────────────────────────────────────────
+
+---
+
+# ── Shared fields — written to top-level of blogPosts/{slug} ──
+slug: ""                              # English canonical slug — Latin + hyphens only, shared by BG and EN drafts  [REQ]
+strategyId: ""                        # e.g. P1, P1-C2, UFH-1  [REQ]
+postType: pillar                      # pillar | cluster | cross-pillar | brand  [OPT]
+phase:                                # 1–5 — content pillar phase  [OPT]
+category: engineered-parquet          # engineered-parquet | hybrid | spc-lvt | comparison | brand  [REQ]
+schemaType: Article                   # Article | HowTo | FAQPage  — JSON-LD schema.org type  [OPT]
+heroImage: ""                         # Firebase Storage path — products/{collection}/{subcollection}/{sku}/full/{filename}.webp  [REQ]
+isPartOf: null                        # Strategy ID of parent pillar (for clusters); null for pillars  [OPT]
+hasPart: []                           # Array of cluster strategy IDs (for pillars); [] for clusters  [OPT]
+linksTo: []                           # Strategy IDs this post links to internally  [OPT]
+relatedPostSlugs: []                  # Strategy IDs of related posts shown in sidebar/footer  [OPT]
+featuredProducts:
+  - name:
+    brand:
+    slug:
+mentions:
+  - type:
+    name:
+dateModified:                         # YYYY-MM-DD — converted to Firestore Timestamp on publish  [OPT]
+
+# ── Translation fields — written under translations.{lang} ──
+inLanguage: bg                        # bg | en  [REQ]
+title: ""                             # [REQ]
+metaDescription: ""                   # 150–155 chars recommended; include primary keyword  [REQ]
+primaryKeyword: ""                    # [REQ]
+tags: []                              # [REQ]
+status: draft                         # draft | published | archived  [REQ]
+wordCount:                            # [OPT]
+readingTimeMinutes:                   # [OPT]
+sources: []                           # [OPT]
+
+# ── Internal fields — present in draft files, skipped in Firestore ──
+project: 04-ecovibe-floors            # Internal — identifies the project folder  [OPT]
+platform: blog                        # Internal — always "blog"  [OPT]
+robotsMeta: "max-snippet:-1, max-image-preview:large" # Internal — set in Next.js page metadata, not in Firestore  [OPT]
+speakable: ".key-takeaway-box"        # Internal — CSS selector hint for TTS, handled by frontend  [OPT]
+sourcePdf: none                       # Internal — reference to source PDF used during research  [OPT]
+sourceNotes:                          # Internal — free-text drafting notes  [OPT]
+---

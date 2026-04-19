@@ -12,7 +12,8 @@ export {
   ProductsDB,
   UsersDB,
   OrdersDB,
-  ConsultationsDB
+  ConsultationsDB,
+  BlogPostsDB
 } from './db';
 
 // Authentication utilities

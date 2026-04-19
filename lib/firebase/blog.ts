@@ -65,6 +65,33 @@ export async function getPublishedBlogPosts(locale: string): Promise<BlogPost[]>
     });
 }
 
+export interface MinimalBlogPost {
+    slug: string;
+    title: string;
+    heroImageUrl: string;
+    date: string;
+}
+
+/** Fetch minimal data for related posts to display in the sidebar (max 3). */
+export async function getRelatedBlogPosts(slugs: string[], locale: string): Promise<MinimalBlogPost[]> {
+    const limited = slugs.slice(0, 3);
+    const results = await Promise.all(limited.map((slug) => getBlogPostBySlug(slug)));
+    const bucket = process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET || 'ecovibe-floors.firebasestorage.app';
+
+    return results
+        .filter((post): post is NonNullable<typeof post> => post !== null)
+        .map((post) => {
+            const translation = post.translations[locale as 'bg' | 'en'];
+            const encodedPath = encodeURIComponent(post.heroImage);
+            return {
+                slug: post.slug,
+                title: translation?.title ?? post.slug,
+                heroImageUrl: `https://firebasestorage.googleapis.com/v0/b/${bucket}/o/${encodedPath}?alt=media`,
+                date: post.datePublished ? new Date(post.datePublished as unknown as string).toLocaleDateString(locale === 'bg' ? 'bg-BG' : 'en-GB', { year: 'numeric', month: 'short', day: 'numeric' }) : '',
+            };
+        });
+}
+
 /** Generate static params for all blog posts across all locales. */
 export async function getBlogStaticParams() {
     const posts = await getAllBlogPosts();

@@ -34,3 +34,13 @@ export async function revalidateTreatment(slug: string): Promise<void> {
         revalidatePath(`/${locale}/oak/treatments/${slug}`);
     }
 }
+
+/**
+ * Purge cached pages for a blog post across all locales.
+ */
+export async function revalidateBlogPost(slug: string): Promise<void> {
+    for (const locale of routing.locales) {
+        revalidatePath(`/${locale}/blog/${slug}`);
+        revalidatePath(`/${locale}/blog`);
+    }
+}

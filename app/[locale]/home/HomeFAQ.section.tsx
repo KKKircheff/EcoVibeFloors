@@ -87,6 +87,7 @@ export async function HomeFAQ() {
                             <Accordion
                                 elevation={0}
                                 disableGutters
+                                defaultExpanded
                                 sx={{
                                     bgcolor: 'transparent',
                                     '&:before': {
@@ -113,7 +114,6 @@ export async function HomeFAQ() {
                                         color: 'primary.contrastText',
                                         px: 3,
                                         py: 2,
-                                        minHeight: 'auto',
                                         borderRadius: 0,
                                         transition: 'all 0.3s',
                                         '&:hover': {
@@ -159,7 +159,7 @@ export async function HomeFAQ() {
                                         borderBottom: '1px solid',
                                         borderColor: 'primary.100',
                                         borderBottomLeftRadius: 2,
-                                        borderBottomRightRadius: 2
+                                        borderBottomRightRadius: 2,
                                     }}
                                 >
                                     <Typography

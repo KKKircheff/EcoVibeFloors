@@ -23,7 +23,7 @@ export function BlogPostGrid({ posts, locale }: BlogPostGridProps) {
     }
 
     return (
-        <Stack spacing={3}>
+        <Stack spacing={3} alignItems={'center'}>
             {posts.map((post) => (
                 <BlogPostCard key={post.slug} post={post} locale={locale} />
             ))}

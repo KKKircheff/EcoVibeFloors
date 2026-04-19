@@ -594,7 +594,7 @@
     "blog": {
         "hero": {
             "title": "Блог",
-            "subtitle": "Прозрения и вдъхновение за вашето пътуване с подови настилки"
+            "subtitle": "Прозрения и вдъхновение за вашето пътуване в света на подовите настилки"
         },
         "noPosts": "Все още няма публикувани статии. Проверете скоро!",
         "card": {
@@ -604,7 +604,17 @@
             "category": "Категория",
             "published": "Публикувано",
             "tags": "Етикети",
-            "exploreCollection": "Разгледайте колекцията"
+            "exploreCollection": "Разгледайте колекцията",
+            "share": "Сподели",
+            "contents": "Съдържание",
+            "relatedPosts": "Подобни статии",
+            "relatedProducts": "Свързани продукти",
+            "newsletter": {
+                "title": "Абонирайте се",
+                "subtitle": "Получавайте нашите последни статии и съвети за подови настилки.",
+                "placeholder": "Вашият имейл",
+                "button": "Абониране"
+            }
         },
         "cta": {
             "title": "Готови ли сте да намерите перфектната настилка?",
@@ -1931,6 +1941,120 @@
             "uploading": "Качване… {progress}%",
             "skuRequired": "Запазете продукта със SKU преди да качвате снимки.",
             "uploadImages": "Качи снимки"
+        },
+        "blog": {
+            "title": "Блог публикации",
+            "addPost": "Нова публикация",
+            "searchPlaceholder": "Търси по заглавие или slug…",
+            "category": "Категория",
+            "allCategories": "Всички категории",
+            "status": "Статус",
+            "allStatuses": "Всички статуси",
+            "postCount": "{filtered} / {total} публикации",
+            "noPosts": "Няма намерени блог публикации",
+            "browseImages": "Разгледай снимки",
+            "imagePicker": {
+                "title": "Разгледай снимки на продукти",
+                "collection": "Колекция",
+                "pattern": "Модел",
+                "sku": "Продукт (SKU)",
+                "selectCollection": "Избери колекция",
+                "selectPattern": "Избери модел",
+                "selectSku": "Избери продукт",
+                "noProducts": "Няма намерени продукти",
+                "loadingProducts": "Зареждане на продукти…",
+                "storagePath": "Път в хранилището",
+                "fullUrl": "Пълен URL",
+                "copied": "Копирано!"
+            },
+            "edit": "Редактирай",
+            "delete": "Изтрий",
+            "deleteConfirmTitle": "Изтриване на публикация?",
+            "deleteConfirmText": "Сигурни ли сте, че искате да изтриете \"{title}\"? Това не може да бъде отменено.",
+            "deleting": "Изтриване…",
+            "cancel": "Отказ",
+            "editPost": "Редактиране: {title}",
+            "saving": "Запазване…",
+            "saveChanges": "Запази промените",
+            "createPost": "Създай публикация",
+            "savedSuccess": "Публикацията е запазена успешно.",
+            "tableHeaders": {
+                "slug": "Slug",
+                "title": "Заглавие (BG)",
+                "category": "Категория",
+                "postType": "Тип",
+                "statusBg": "BG",
+                "statusEn": "EN",
+                "date": "Дата",
+                "actions": "Действия"
+            },
+            "form": {
+                "basicInfo": "Основна информация",
+                "slug": "Slug (URL)",
+                "slugRequired": "Slug е задължителен",
+                "strategyId": "Стратегия ID",
+                "postType": "Тип публикация",
+                "category": "Категория",
+                "categoryRequired": "Категорията е задължителна",
+                "schemaType": "Тип схема",
+                "heroImage": "Път до героична снимка",
+                "relationships": "Вътрешни връзки",
+                "isPartOf": "Част от (родителски slug)",
+                "hasPart": "Има части (slugs, разделени със запетая)",
+                "linksTo": "Връзки към (slugs, разделени със запетая)",
+                "relatedPostSlugs": "Свързани публикации (slugs, разделени със запетая)",
+                "featuredProducts": "Препоръчителни продукти",
+                "addFeaturedProduct": "Добави продукт",
+                "featuredProductName": "Име",
+                "featuredProductBrand": "Марка",
+                "featuredProductSlug": "Slug",
+                "mentions": "Споменавания",
+                "addMention": "Добави споменаване",
+                "mentionType": "Тип",
+                "mentionName": "Име",
+                "content": "Локализирано съдържание",
+                "tabBulgarian": "Български (BG)",
+                "tabEnglish": "Английски (EN)",
+                "title": "Заглавие",
+                "titleRequired": "Заглавието на {locale} е задължително",
+                "metaDescription": "Мета описание",
+                "primaryKeyword": "Основна ключова дума",
+                "tags": "Тагове (разделени със запетая)",
+                "contentMarkdown": "Съдържание (Markdown)",
+                "markdownPreview": "Преглед",
+                "wordCount": "Думи",
+                "readingTime": "Време за четене (мин)",
+                "status": "Статус",
+                "datePublished": "Дата на публикуване",
+                "autoCalculated": "Автоматично изчислено",
+                "statuses": {
+                    "draft": "Чернова",
+                    "published": "Публикувана",
+                    "archived": "Архивирана"
+                },
+                "postTypes": {
+                    "pillar": "Стълб",
+                    "cluster": "Клъстер",
+                    "cross-pillar": "Крос-стълб",
+                    "brand": "Марка"
+                },
+                "categories": {
+                    "engineered-parquet": "Паркет",
+                    "hybrid": "Хибриден",
+                    "spc-lvt": "SPC / LVT",
+                    "comparison": "Сравнение",
+                    "brand": "Марка"
+                },
+                "schemaTypes": {
+                    "Article": "Статия",
+                    "HowTo": "Ръководство",
+                    "FAQPage": "ЧЗВ"
+                },
+                "mentionTypes": {
+                    "Brand": "Марка",
+                    "Product": "Продукт"
+                }
+            }
         }
     }
 }

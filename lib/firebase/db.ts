@@ -33,6 +33,7 @@ import {
   COLLECTIONS 
 } from './types';
 import { User, Product, Order, ConsultationRequest } from '../../types';
+import { BlogPost } from '@/lib/types/blog';
 
 // Generic CRUD operations
 export class FirebaseDB {
@@ -428,6 +429,21 @@ export const ProductsDB = {
     ]
   }),
   
+  getByCollection: (collection: string) =>
+    FirebaseDB.getAll(COLLECTIONS.PRODUCTS, {
+      where: [
+        { field: 'collection', operator: '==', value: collection },
+      ],
+    }),
+
+  getByCollectionAndPattern: (collection: string, pattern: string) =>
+    FirebaseDB.getAll(COLLECTIONS.PRODUCTS, {
+      where: [
+        { field: 'collection', operator: '==', value: collection },
+        { field: 'pattern', operator: '==', value: pattern },
+      ],
+    }),
+
   search: (searchTerm: string, options?: QueryOptions) => {
     // Note: For full-text search, consider using Algolia or similar service
     // This is a basic implementation
@@ -486,4 +502,14 @@ export const ConsultationsDB = {
     where: [{ field: 'status', operator: '==', value: 'requested' }],
     orderBy: { field: 'createdAt', direction: 'asc' }
   })
+};
+
+export const BlogPostsDB = {
+  getAll: (options?: QueryOptions) => FirebaseDB.getAll(COLLECTIONS.BLOG_POSTS, options),
+  getById: (id: string) => FirebaseDB.getById(COLLECTIONS.BLOG_POSTS, id),
+  createWithId: (id: string, data: Omit<BlogPost, 'id' | 'createdAt' | 'updatedAt'>) =>
+    FirebaseDB.createWithId(COLLECTIONS.BLOG_POSTS, id, data as any),
+  update: (id: string, data: Partial<BlogPost>) =>
+    FirebaseDB.update(COLLECTIONS.BLOG_POSTS, id, data as any),
+  delete: (id: string) => FirebaseDB.delete(COLLECTIONS.BLOG_POSTS, id),
 };

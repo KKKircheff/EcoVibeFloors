@@ -7,7 +7,7 @@
 import { unified } from 'unified';
 import remarkParse from 'remark-parse';
 import remarkGfm from 'remark-gfm';
-import type { Root, Paragraph, Heading, List, ListItem, Blockquote, Image, Text } from 'mdast';
+import type { Root, Paragraph, Heading, List, ListItem, Blockquote, Image, Text, Table, TableRow, TableCell } from 'mdast';
 import type { Node, Parent } from 'mdast';
 
 export type ContentBlock =
@@ -16,18 +16,21 @@ export type ContentBlock =
     | { type: 'image'; src: string; alt: string }
     | { type: 'list'; ordered: boolean; items: string[] }
     | { type: 'toc'; items: { text: string; anchor: string }[] }
-    | { type: 'blockquote'; text: string };
+    | { type: 'blockquote'; text: string }
+    | { type: 'table'; headers: string[]; rows: string[][] };
 
 export type InlineSegment =
     | { type: 'text'; value: string }
+    | { type: 'bold'; value: string }
+    | { type: 'italic'; value: string }
     | { type: 'link'; text: string; url: string; draft?: boolean };
 
-/** Parse inline markdown links from a string into structured segments.
+/** Parse inline markdown (bold, italic, links) from a string into structured segments.
  *  Links marked with {draft} (e.g. `[text](/url){draft}`) are parsed as draft links. */
 export function parseInlineLinks(text: string): InlineSegment[] {
     const segments: InlineSegment[] = [];
-    // Matches [text](url) optionally followed by {draft}
-    const pattern = /\[([^\]]+)\]\(([^)]+)\)(\{draft\})?/g;
+    // Order matters: **bold** before _italic_ before [link](url)
+    const pattern = /\*\*([^*]+)\*\*|_([^_]+)_|\[([^\]]+)\]\(([^)]+)\)(\{draft\})?/g;
     let lastIndex = 0;
     let match;
 
@@ -35,8 +38,13 @@ export function parseInlineLinks(text: string): InlineSegment[] {
         if (match.index > lastIndex) {
             segments.push({ type: 'text', value: text.slice(lastIndex, match.index) });
         }
-        const draft = !!match[3];
-        segments.push({ type: 'link', text: match[1], url: match[2], draft });
+        if (match[1] !== undefined) {
+            segments.push({ type: 'bold', value: match[1] });
+        } else if (match[2] !== undefined) {
+            segments.push({ type: 'italic', value: match[2] });
+        } else {
+            segments.push({ type: 'link', text: match[3], url: match[4], draft: !!match[5] });
+        }
         lastIndex = pattern.lastIndex;
     }
 
@@ -53,11 +61,11 @@ function getText(node: Node): string {
             return normalizeDashes((node as Text).value);
         case 'strong': {
             const strong = node as { type: 'strong'; children: Node[] };
-            return strong.children.map(getText).join('');
+            return `**${strong.children.map(getText).join('')}**`;
         }
         case 'emphasis': {
             const em = node as { type: 'emphasis'; children: Node[] };
-            return em.children.map(getText).join('');
+            return `_${em.children.map(getText).join('')}_`;
         }
         case 'link': {
             const link = node as { type: 'link'; url: string; children: Node[] };
@@ -151,6 +159,16 @@ function processNode(node: Node): ContentBlock[] {
             return [{ type: 'blockquote', text }];
         }
 
+        case 'table': {
+            const table = node as Table;
+            const rows = table.children.map(row =>
+                (row as TableRow).children.map(cell => getText(cell as TableCell))
+            );
+            const headers = rows[0] ?? [];
+            const body = rows.slice(1);
+            return [{ type: 'table', headers, rows: body }];
+        }
+
         default:
             return [];
     }
@@ -173,4 +191,24 @@ export function parseBlocks(markdown: string): ContentBlock[] {
     }
 
     return rawBlocks;
+}
+
+/** Extract all non-TOC blocks before the first H2 (intro paragraphs + Накратко blockquote etc.) */
+export function extractPreH2Blocks(blocks: ContentBlock[]): Exclude<ContentBlock, { type: 'heading' | 'toc' }>[] {
+    const result: Exclude<ContentBlock, { type: 'heading' | 'toc' }>[] = [];
+    for (const block of blocks) {
+        if (block.type === 'heading' && block.level === 2) break;
+        if (block.type !== 'heading' && block.type !== 'toc') {
+            result.push(block as Exclude<ContentBlock, { type: 'heading' | 'toc' }>);
+        }
+    }
+    return result;
+}
+
+/** Extract the first TOC block found anywhere in the parsed content */
+export function extractTocBlock(blocks: ContentBlock[]): { text: string; anchor: string }[] | null {
+    for (const block of blocks) {
+        if (block.type === 'toc') return block.items;
+    }
+    return null;
 }

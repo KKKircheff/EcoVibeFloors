@@ -49,8 +49,7 @@ export default async function BlogIndexPage({ params }: BlogIndexPageProps) {
     return (
         <Stack>
             <BlogIndexHero />
-
-            <PageLayoutContainer bgcolor="background.paper" py={{ xs: 6, md: 10 }}>
+            <PageLayoutContainer bgcolor="background.paper" py={{ xs: 6, md: 10 }} >
                 <BlogPostGrid posts={posts} locale={locale as 'bg' | 'en'} />
             </PageLayoutContainer>
 

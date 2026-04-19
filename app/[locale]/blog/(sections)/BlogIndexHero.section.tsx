@@ -9,7 +9,7 @@ export async function BlogIndexHero() {
     const t = await getTranslations('blog.hero');
 
     return (
-        <HeroWrapper minHeight={{ xs: '60vh', md: '45vh' }}>
+        <HeroWrapper minHeight={{ xs: '60vh', md: '55vh' }}>
             <Image
                 src={heroImage}
                 alt="EcoVibe Floors Blog"

@@ -1,22 +1,30 @@
 import 'server-only';
 import { notFound } from 'next/navigation';
-import { Stack } from '@mui/material';
+import { alpha, Box, Stack, Typography } from '@mui/material';
 import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 
-import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import Footer from '@/components/organisms/footer/Footer';
-import { BlogPostHero } from './(sections)/BlogPostHero.section';
-import { BlogSectionRenderer, extractIntroBlocks } from '@/components/organisms/blog/BlogSectionRenderer';
+import { BlogSectionRenderer, InlineContent } from '@/components/organisms/blog/BlogSectionRenderer';
 import { BlogPostCTA } from './(sections)/BlogPostCTA.section';
 import { BlogJsonLd } from '@/components/atoms/seo/BlogJsonLd';
-import { BlogIntroSection } from './(sections)/BlogIntroSection.section';
-import { BlogPostTags } from './(sections)/BlogPostTags.section';
+import { BlogPostHeader } from './(sections)/BlogPostHeader.section';
+import { BlogHeroImage } from './(sections)/BlogHeroImage.section';
+import { BlogSidebar } from './(sections)/BlogSidebar.section';
 import { buildAlternates } from '@/lib/seo';
-import { getBlogPostBySlug, getBlogStaticParams } from '@/lib/firebase/blog';
-import { parseBlocks } from '@/lib/markdown/parse-blocks';
+import { getBlogPostBySlug, getBlogStaticParams, getRelatedBlogPosts } from '@/lib/firebase/blog';
+import { parseBlocks, extractTocBlock, extractPreH2Blocks } from '@/lib/markdown/parse-blocks';
+import { getFirebaseStorageUrl } from '@/lib/utils/getStorageUrl';
+import { palette } from '@/lib/styles/pallete';
+import { layoutPaddings } from '@/lib/styles/layoutPaddings';
+import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 
-// Allow new blog posts to generate their pages on first visit
+import { BlogCategoryBadge } from '@/components/atoms/blog/BlogCategoryBadge';
+import { BlogContent } from '@/components/atoms/typography/BlogContent';
+import { borderRadius } from '@/lib/styles/borderRadius';
+import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
+
 export const dynamicParams = true;
 
 interface BlogPostPageProps {
@@ -26,14 +34,10 @@ interface BlogPostPageProps {
     }>;
 }
 
+const bgcolor = alpha(palette.info[50], .4)
+
 export async function generateStaticParams() {
     return getBlogStaticParams();
-}
-
-function getFirebaseStorageUrl(path: string): string {
-    const bucket = process.env.NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET || 'ecovibe-floors.firebasestorage.app';
-    const encodedPath = encodeURIComponent(path);
-    return `https://firebasestorage.googleapis.com/v0/b/${bucket}/o/${encodedPath}?alt=media`;
 }
 
 function toDate(value: unknown): Date {
@@ -47,13 +51,10 @@ function toDate(value: unknown): Date {
 
 export async function generateMetadata({ params }: BlogPostPageProps): Promise<Metadata> {
     const { locale, slug } = await params;
-
     const post = await getBlogPostBySlug(slug);
     if (!post) return {};
-
     const translation = post.translations[locale as 'bg' | 'en'];
     if (!translation) return {};
-
     return {
         title: `${translation.title} | EcoVibe Floors Blog`,
         description: translation.metaDescription,
@@ -64,18 +65,13 @@ export async function generateMetadata({ params }: BlogPostPageProps): Promise<M
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {
     const { locale, slug } = await params;
-
     setRequestLocale(locale);
 
     const post = await getBlogPostBySlug(slug);
-    if (!post) {
-        notFound();
-    }
+    if (!post) notFound();
 
     const translation = post.translations[locale as 'bg' | 'en'];
-    if (!translation) {
-        notFound();
-    }
+    if (!translation) notFound();
 
     const heroImageUrl = getFirebaseStorageUrl(post.heroImage);
     const datePublished = toDate(translation.datePublished || post.datePublished);
@@ -87,12 +83,16 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         day: 'numeric',
     });
 
-    // Extract intro paragraphs (content before the first H2)
     const allBlocks = parseBlocks(translation.contentMarkdown);
-    const introParagraphs = extractIntroBlocks(allBlocks);
+    const introBlocks = extractPreH2Blocks(allBlocks);
+    const tocItems = extractTocBlock(allBlocks);
+
+    const relatedPosts = post.relatedPostSlugs?.length
+        ? await getRelatedBlogPosts(post.relatedPostSlugs, locale)
+        : [];
 
     return (
-        <Stack>
+        <Stack width={{ xs: '100%', xl: '90vw' }} mx={'auto'}>
             <BlogJsonLd
                 title={translation.title}
                 description={translation.metaDescription}
@@ -104,38 +104,123 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 locale={locale}
             />
 
-            <BlogPostHero
+            {/* A: Header — breadcrumb + title + meta strip */}
+            <BlogPostHeader
                 title={translation.title}
-                heroImageUrl={heroImageUrl}
+                category={post.category}
+                date={formattedDate}
+                readingTime={translation.readingTimeMinutes || 5}
+                locale={locale}
             />
 
-            {/* Intro section: meta strip + opening paragraphs */}
-            <PageLayoutContainer py={0} justifyContent={'center'} alignItems={'center'}>
-                <BlogIntroSection
-                    category={post.category}
-                    date={formattedDate}
-                    readingTime={translation.readingTimeMinutes || 5}
-                    introParagraphs={introParagraphs}
-                />
+            {/* B+C: Two-column body — left white, right grey */}
+            <PageLayoutContainer
+                direction={{ xs: 'column', lg: 'row' }}
+                pb={{ xs: 8, md: 20 }}
+                width='100%'
+                spacing={6}
+            >
+                {/* Left column — hero image + article (white) */}
+                <Stack
+                    sx={{
+                        width: { xs: '100%', lg: '65%' },
+                        py: { xs: 5, md: 0 },
+                    }}
+                >
+                    <Stack component="article" spacing={3}>
+                        <Stack direction="row" justifyContent="flex-start" flexWrap="wrap" spacing={2}>
+                            <BlogCategoryBadge category={post.category} />
+                            <Stack direction="row" spacing={0.5} alignItems="center">
+                                <CalendarTodayIcon sx={{ fontSize: 15, color: 'info.400' }} />
+                                <Typography variant="body2" color="info.400">
+                                    {formattedDate}
+                                </Typography>
+                            </Stack>
+
+                            <Stack direction="row" spacing={0.5} alignItems="center">
+                                <AccessTimeIcon sx={{ fontSize: 15, color: 'info.400' }} />
+                                <Typography variant="body2" color="info.400">
+                                    {translation.readingTimeMinutes || 5} min
+                                </Typography>
+                            </Stack>
+                        </Stack>
+
+                        {/* Hero image with tags overlay */}
+                        <BlogHeroImage
+                            src={heroImageUrl}
+                            alt={translation.title}
+                            tags={translation.tags}
+                        />
+
+                        {/* Intro blocks: paragraphs + Накратко blockquote */}
+                        <Stack spacing={1.5}>
+                            {introBlocks.map((block, i) => {
+                                if (block.type === 'paragraph') {
+                                    return block.items.map((text: string, j: number) => (
+                                        <BlogContent key={`${i}-${j}`}>
+                                            <InlineContent text={text} />
+                                        </BlogContent>
+                                    ));
+                                }
+                                if (block.type === 'blockquote') {
+                                    return (
+                                        <Stack
+                                            key={i}
+                                            component="blockquote"
+                                            sx={{
+                                                borderLeft: '4px solid',
+                                                borderColor: 'primary.main',
+                                                borderRadius: '0 8px 8px 0',
+                                                pl: 4, pr: 3, py: 3, my: 0,
+                                                bgcolor: 'primary.50',
+                                            }}
+                                        >
+                                            <BlogContent><InlineContent text={block.text} /></BlogContent>
+                                        </Stack>
+                                    );
+                                }
+                                return null;
+                            })}
+                        </Stack>
+
+                        {/* Article body sections */}
+                        <BlogSectionRenderer content={translation.contentMarkdown} />
+                    </Stack>
+                </Stack>
+
+                {/* Right column — sidebar (warm grey) */}
+                <Box
+                    pt={1}
+                    sx={{
+                        width: { xs: '100%', lg: '35%' },
+                    }}>
+                    <Stack
+                        bgcolor={bgcolor}
+                        borderRadius={borderRadius.lg}
+                        p={5}
+
+                    >
+                        <BlogSidebar
+                            title={translation.title}
+                            category={post.category}
+                            tocItems={tocItems}
+                            relatedPosts={relatedPosts}
+                            heroImageUrl={heroImageUrl}
+                            locale={locale}
+                        />
+                    </Stack>
+                </Box>
             </PageLayoutContainer>
 
-            {/* Article body: grouped into 2–3 full-width sections */}
-            <BlogSectionRenderer content={translation.contentMarkdown} />
-
-            {/* Tags section */}
-            {translation.tags && translation.tags.length > 0 && (
-                <PageLayoutContainer bgcolor="InfoBackground" py={{ xs: 4, md: 6 }}>
-                    <BlogPostTags tags={translation.tags} />
-                </PageLayoutContainer>
-            )}
-
+            {/* D: CTA */}
             <PageLayoutContainer bgcolor="primary.main" py={{ xs: 4, md: 8 }}>
                 <BlogPostCTA />
             </PageLayoutContainer>
 
-            <PageLayoutContainer pt={10} bgcolor="info.800">
+            {/* E: Footer */}
+            {/* <PageLayoutContainer pt={10} bgcolor="info.800">
                 <Footer />
-            </PageLayoutContainer>
+            </PageLayoutContainer> */}
         </Stack>
     );
 }

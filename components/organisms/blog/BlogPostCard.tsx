@@ -52,6 +52,7 @@ export function BlogPostCard({ post, locale }: BlogPostCardProps) {
             onClick={handleClick}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
+            maxWidth={'lg'}
             sx={{
                 cursor: 'pointer',
                 borderRadius: borderRadius.md,

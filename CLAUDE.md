@@ -16,6 +16,7 @@ EcoVibeFloors is a luxury flooring import platform helping Bulgarian homeowners 
 - `npm run dev` — Start dev server with Turbopack (http://localhost:3000)
 - `npm run build` — Build production application
 - `npm start` — Start production server
+- `npx tsc --noEmit` — Typecheck without emitting files
 
 ### Utilities
 - `npm run seed:dry` — Preview what would be seeded to Firestore (no writes)
@@ -38,11 +39,12 @@ EcoVibeFloors is a luxury flooring import platform helping Bulgarian homeowners 
 
 ## File Structure
 - `app/[locale]/` — all pages and layouts
+- `app/[locale]/blog/` — public blog (listing + `[slug]` article pages)
+- `app/[locale]/admin/(protected)/` — admin panel: products, blog CRUD
 - `lib/` — Firebase, theme, shared utilities
 - `i18n/` — routing and request configuration
 - `messages/` — `en.json` and `bg.json` translation files
-- `collections/` — TypeScript product source files (seed source of truth, not used at runtime)
-- `collections/` — treatment JSON data (`dig-oak-treatments.json`)
+- `collections/` — TypeScript product source files + treatment JSON (seed source, not used at runtime)
 - `docs/` — reference documentation (products, translation context, deployment)
 
 ## Component Architecture (Atomic Design)
@@ -50,8 +52,10 @@ EcoVibeFloors is a luxury flooring import platform helping Bulgarian homeowners 
 Components follow a strict **Atoms → Molecules → Organisms** hierarchy:
 
 - `components/atoms/` — Primitives: buttons, typography, icons, inputs, price displays, skeletons, SEO
+- `components/atoms/blog/` — Blog-specific atoms: `BlogCardTitle`, `BlogMeta`, `BlogTag`, `BlogCategoryBadge`
 - `components/molecules/` — Atom combos: nav items, hero button group, breadcrumb, footer groups, links, basket item
 - `components/organisms/` — Complex UI: cards, grids, hero sections, product sections, navbar, footer, chat
+- `components/admin/` — Admin-only components: `blog/` (form, table, markdown editor), `layout/`, `products/`
 - `components/layout/` — Page-level wrappers: `PageLayoutContainer`
 - `components/providers/` — Context providers
 
@@ -60,12 +64,12 @@ Components follow a strict **Atoms → Molecules → Organisms** hierarchy:
 - `heroTextsbackground` and other shared style tokens live in `lib/styles/colors.ts`, not in components
 - Page-scoped `.section.tsx` files in `app/[locale]/*/` stay there — they are not shared components
 - Old paths under `components/ui/`, `components/icons/`, etc. are re-export shims — prefer new paths
-- Barrel exports (`index.ts`) must be rendering-mode-segregated in Next.js 15: never mix `server-only` and `'use client'` exports in the same barrel
+- Barrel exports (`index.ts`) must be rendering-mode-segregated: never mix `server-only` and `'use client'` exports in the same barrel
 
 ## Key Rules
 
 - **Imports**: Always use `@/` alias. Exception: images from `public/` use relative paths from page directories
-- **Server**: Never start the dev server — run it manually. Never run lint for testing. Use Playwright MCP for UI testing
+- **Server**: Never start the dev server — run it manually. Never run lint for testing. Use Playwright CLI for UI testing (see below)
 - **Functions over classes**: Export standalone functions, not static utility classes
 - **MUI Stack**: Use `Stack` instead of `Box display="flex"` for flexbox layouts
 - **MUI Grid**: Import `Grid` from `@mui/material` (never `Grid2`); use `size={{ xs, md }}` prop syntax
@@ -85,6 +89,22 @@ Read these before working in the relevant area:
 | Translation terminology & market context | `docs/translation-context/` |
 | Product specs and content | `docs/floer/`, `docs/DIG/` |
 | Firebase Storage, deployment | `docs/deployment/` |
+
+## Browser Testing — Playwright CLI
+
+Playwright CLI is installed globally (`playwright` v1.59.1). Use it for all UI testing — do NOT use Playwright MCP.
+
+```bash
+playwright test                        # Run all tests
+playwright test tests/foo.spec.ts      # Run specific file
+playwright test --headed               # Visible browser
+playwright test --ui                   # Interactive UI mode
+playwright screenshot --browser chromium http://localhost:3000 shot.png
+playwright codegen http://localhost:3000  # Record actions into test code
+playwright show-report                 # Open last HTML report
+```
+
+Test files use `.spec.ts` extension and import from `@playwright/test`.
 
 ## Package Management
 

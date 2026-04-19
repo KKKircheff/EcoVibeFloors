@@ -23,6 +23,14 @@
   // ]
   "indexes": [
     {
+      "collectionGroup": "products",
+      "queryScope": "COLLECTION",
+      "fields": [
+        { "fieldPath": "collection", "order": "ASCENDING" },
+        { "fieldPath": "pattern", "order": "ASCENDING" }
+      ]
+    },
+    {
       "collectionGroup": "project-knowledge",
       "queryScope": "COLLECTION",
       "fields": [

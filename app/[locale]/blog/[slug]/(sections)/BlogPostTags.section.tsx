@@ -12,7 +12,7 @@ export async function BlogPostTags({ tags }: BlogPostTagsProps) {
 
     return (
         <Stack spacing={2}>
-            <Typography variant="caption" color="primary.100" sx={{ textTransform: 'uppercase', letterSpacing: '0.08em' }}>
+            <Typography variant="caption" color="text.secondary" sx={{ textTransform: 'uppercase', letterSpacing: '0.08em', fontWeight: 600 }}>
                 {t('tags')}
             </Typography>
             <Stack direction="row" flexWrap="wrap" gap={1}>
