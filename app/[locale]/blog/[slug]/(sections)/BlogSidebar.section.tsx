@@ -51,7 +51,6 @@ export async function BlogSidebar({
         <Stack
             component="aside"
             spacing={4}
-            sx={{ position: { md: 'sticky' }, top: { md: 90 } }}
         >
             {/* Share */}
             <BlogShareCard title={title} label={t('share')} />

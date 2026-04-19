@@ -13,7 +13,8 @@
 html,
 body {
   max-width: 100vw;
-  overflow-x: hidden;
+  /* clip prevents horizontal scroll without creating a new scroll container, which allows position:sticky to work */
+  overflow-x: clip;
 }
 
 body {

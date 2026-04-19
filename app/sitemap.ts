@@ -26,16 +26,30 @@ function getLastModifiedDate(): Date {
     }
 }
 
-// Get product collection last modified dates from their JSON files
+// Get product collection last modified dates from their source files
 function getCollectionLastModified(collection: string): Date {
-    try {
-        const gitDate = execSync(`git log -1 --format=%cI collections/${collection}.json`, {
-            encoding: 'utf-8',
-        }).toString().trim();
-        return gitDate ? new Date(gitDate) : new Date();
-    } catch {
-        return new Date();
+    // Map collection route names to their source filenames in collections/
+    const fileMap: Record<string, string> = {
+        'hybrid-wood': 'hy-wood',
+        'oak': 'oak',
+        'click-vinyl': 'click-vinyl',
+        'glue-down-vinyl': 'glue-down-vinyl',
+        'dig-oak-treatments': 'dig-oak-treatments',
+    };
+    const filename = fileMap[collection] ?? collection;
+    // Try .ts first (current format), fall back to .json
+    const candidates = [`collections/${filename}.ts`, `collections/${filename}.json`];
+    for (const candidate of candidates) {
+        try {
+            const gitDate = execSync(`git log -1 --format=%cI -- ${candidate}`, {
+                encoding: 'utf-8',
+            }).toString().trim();
+            if (gitDate) return new Date(gitDate);
+        } catch {
+            // continue to next candidate
+        }
     }
+    return new Date();
 }
 
 const sitemapLastMod = getLastModifiedDate();

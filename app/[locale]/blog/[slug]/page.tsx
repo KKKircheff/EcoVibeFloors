@@ -114,113 +114,116 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             />
 
             {/* B+C: Two-column body — left white, right grey */}
-            <PageLayoutContainer
-                direction={{ xs: 'column', lg: 'row' }}
-                pb={{ xs: 8, md: 20 }}
-                width='100%'
-                spacing={6}
-            >
-                {/* Left column — hero image + article (white) */}
-                <Stack
-                    sx={{
-                        width: { xs: '100%', lg: '65%' },
-                        py: { xs: 5, md: 0 },
-                    }}
-                >
-                    <Stack component="article" spacing={3}>
-                        <Stack direction="row" justifyContent="flex-start" flexWrap="wrap" spacing={2}>
-                            <BlogCategoryBadge category={post.category} />
-                            <Stack direction="row" spacing={0.5} alignItems="center">
-                                <CalendarTodayIcon sx={{ fontSize: 15, color: 'info.400' }} />
-                                <Typography variant="body2" color="info.400">
-                                    {formattedDate}
-                                </Typography>
+            <PageLayoutContainer pb={{ xs: 8, lg: 12 }} width='100%' spacing={6} >
+                <Stack direction={{ xs: 'column', lg: 'row' }} spacing={6} >
+                    {/* Left column — hero image + article (white) */}
+                    <Stack
+                        sx={{
+                            width: { xs: '100%', lg: '65%' },
+                            py: { xs: 5, md: 0 },
+                        }}
+                    >
+                        <Stack component="article" spacing={3}>
+                            <Stack direction="row" justifyContent="flex-start" flexWrap="wrap" spacing={2}>
+                                <BlogCategoryBadge category={post.category} />
+                                <Stack direction="row" spacing={0.5} alignItems="center">
+                                    <CalendarTodayIcon sx={{ fontSize: 15, color: 'info.400' }} />
+                                    <Typography variant="body2" color="info.400">
+                                        {formattedDate}
+                                    </Typography>
+                                </Stack>
+
+                                <Stack direction="row" spacing={0.5} alignItems="center">
+                                    <AccessTimeIcon sx={{ fontSize: 15, color: 'info.400' }} />
+                                    <Typography variant="body2" color="info.400">
+                                        {translation.readingTimeMinutes || 5} min
+                                    </Typography>
+                                </Stack>
                             </Stack>
 
-                            <Stack direction="row" spacing={0.5} alignItems="center">
-                                <AccessTimeIcon sx={{ fontSize: 15, color: 'info.400' }} />
-                                <Typography variant="body2" color="info.400">
-                                    {translation.readingTimeMinutes || 5} min
-                                </Typography>
+                            {/* Hero image with tags overlay */}
+                            <BlogHeroImage
+                                src={heroImageUrl}
+                                alt={translation.title}
+                                tags={translation.tags}
+                            />
+
+                            {/* Intro blocks: paragraphs + Накратко blockquote */}
+                            <Stack spacing={1.5}>
+                                {introBlocks.map((block, i) => {
+                                    if (block.type === 'paragraph') {
+                                        return block.items.map((text: string, j: number) => (
+                                            <BlogContent key={`${i}-${j}`}>
+                                                <InlineContent text={text} />
+                                            </BlogContent>
+                                        ));
+                                    }
+                                    if (block.type === 'blockquote') {
+                                        return (
+                                            <Stack key={i} pt={6} pb={4}>
+                                                <Stack
+                                                    component="blockquote"
+                                                    sx={{
+                                                        borderLeft: '4px solid',
+                                                        borderColor: 'primary.main',
+                                                        borderRadius: '0 8px 8px 0',
+                                                        pl: 4, pr: 3, py: 3,
+                                                        my: '16px !importan',
+                                                        bgcolor: 'primary.50',
+                                                    }}
+                                                >
+                                                    <BlogContent><InlineContent text={block.text} /></BlogContent>
+                                                </Stack>
+                                            </Stack>
+                                        );
+                                    }
+                                    return null;
+                                })}
                             </Stack>
+
+                            {/* Article body sections */}
+                            <BlogSectionRenderer content={translation.contentMarkdown} />
                         </Stack>
-
-                        {/* Hero image with tags overlay */}
-                        <BlogHeroImage
-                            src={heroImageUrl}
-                            alt={translation.title}
-                            tags={translation.tags}
-                        />
-
-                        {/* Intro blocks: paragraphs + Накратко blockquote */}
-                        <Stack spacing={1.5}>
-                            {introBlocks.map((block, i) => {
-                                if (block.type === 'paragraph') {
-                                    return block.items.map((text: string, j: number) => (
-                                        <BlogContent key={`${i}-${j}`}>
-                                            <InlineContent text={text} />
-                                        </BlogContent>
-                                    ));
-                                }
-                                if (block.type === 'blockquote') {
-                                    return (
-                                        <Stack
-                                            key={i}
-                                            component="blockquote"
-                                            sx={{
-                                                borderLeft: '4px solid',
-                                                borderColor: 'primary.main',
-                                                borderRadius: '0 8px 8px 0',
-                                                pl: 4, pr: 3, py: 3, my: 0,
-                                                bgcolor: 'primary.50',
-                                            }}
-                                        >
-                                            <BlogContent><InlineContent text={block.text} /></BlogContent>
-                                        </Stack>
-                                    );
-                                }
-                                return null;
-                            })}
-                        </Stack>
-
-                        {/* Article body sections */}
-                        <BlogSectionRenderer content={translation.contentMarkdown} />
                     </Stack>
+
+                    {/* Right column — sidebar (warm grey) */}
+                    <Box
+                        pt={1}
+                        sx={{
+                            width: { xs: '100%', lg: '35%' },
+                        }}>
+                        {/* Sticky wrapper: position:sticky must be separate from the overflow:auto scroll container */}
+                        <Box sx={{ position: { lg: 'sticky' }, top: { lg: '80px' } }}>
+                        <Stack
+                            bgcolor={bgcolor}
+                            borderRadius={borderRadius.lg}
+                            p={5}
+                            sx={{
+                                maxHeight: { lg: 'calc(100vh - 96px)' },
+                                overflowY: { lg: 'auto' },
+                                scrollbarWidth: 'none',
+                                '&::-webkit-scrollbar': { display: 'none' },
+                            }}
+                        >
+                            <BlogSidebar
+                                title={translation.title}
+                                category={post.category}
+                                tocItems={tocItems}
+                                relatedPosts={relatedPosts}
+                                heroImageUrl={heroImageUrl}
+                                locale={locale}
+                            />
+                        </Stack>
+                        </Box>
+                    </Box>
                 </Stack>
 
-                {/* Right column — sidebar (warm grey) */}
-                <Box
-                    pt={1}
-                    sx={{
-                        width: { xs: '100%', lg: '35%' },
-                    }}>
-                    <Stack
-                        bgcolor={bgcolor}
-                        borderRadius={borderRadius.lg}
-                        p={5}
-
-                    >
-                        <BlogSidebar
-                            title={translation.title}
-                            category={post.category}
-                            tocItems={tocItems}
-                            relatedPosts={relatedPosts}
-                            heroImageUrl={heroImageUrl}
-                            locale={locale}
-                        />
-                    </Stack>
-                </Box>
+                {/* D: CTA */}
+                <PageLayoutContainer bgcolor="primary.main" py={{ xs: 4, md: 8 }}>
+                    <BlogPostCTA />
+                </PageLayoutContainer>
             </PageLayoutContainer>
 
-            {/* D: CTA */}
-            <PageLayoutContainer bgcolor="primary.main" py={{ xs: 4, md: 8 }}>
-                <BlogPostCTA />
-            </PageLayoutContainer>
-
-            {/* E: Footer */}
-            {/* <PageLayoutContainer pt={10} bgcolor="info.800">
-                <Footer />
-            </PageLayoutContainer> */}
         </Stack>
     );
 }
