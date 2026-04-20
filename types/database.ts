@@ -17,7 +17,8 @@ export const COLLECTIONS = {
   REVIEWS: 'reviews',
   CATEGORIES: 'categories',
   SUPPLIERS: 'suppliers',
-  BLOG_POSTS: 'blogPosts'
+  BLOG_POSTS: 'blogPosts',
+  NEWSLETTERS: 'newsletters'
 } as const;
 
 // Firebase operation result types

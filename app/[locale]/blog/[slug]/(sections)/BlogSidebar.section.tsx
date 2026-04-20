@@ -8,17 +8,19 @@ import {
     CardContent,
     Divider,
     Stack,
-    TextField,
     Typography,
 } from '@mui/material';
 import { getTranslations } from 'next-intl/server';
 import type { BlogCategory } from '@/lib/types/blog';
 import type { MinimalBlogPost } from '@/lib/firebase/blog';
-import { BlogTocCard } from './BlogTocCard';
-import { BlogShareCard } from './BlogShareCard';
+import type { CollectionType } from '@/types/products';
+import { getCollectionMetadata } from '@/utils/products/getCollections';
+import { getCollectionCardImages } from '@/lib/utils/getCollectionCardImages';
+import { BlogTocCard } from './BlogTocCard.section';
+import { BlogShareCard } from './BlogShareCard.section';
+import { NewsletterCard } from './NewsletterCard.section';
 
 interface BlogSidebarProps {
-    title: string;
     category: BlogCategory;
     tocItems: { text: string; anchor: string }[] | null;
     relatedPosts: MinimalBlogPost[];
@@ -34,8 +36,13 @@ const categoryRouteMap: Record<BlogCategory, string> = {
     brand: '/collections',
 };
 
+const categoryCollectionMap: Partial<Record<BlogCategory, CollectionType>> = {
+    'engineered-parquet': 'oak',
+    hybrid: 'hybrid-wood',
+    'spc-lvt': 'click-vinyl',
+};
+
 export async function BlogSidebar({
-    title,
     category,
     tocItems,
     relatedPosts,
@@ -47,13 +54,19 @@ export async function BlogSidebar({
     const collectionRoute = `/${locale}${categoryRouteMap[category]}`;
     const collectionName = tCategories(category);
 
+    const collectionId = categoryCollectionMap[category];
+    const collectionMeta = collectionId ? getCollectionMetadata(collectionId) : null;
+    const collectionImage = collectionMeta?.cardImages
+        ? getCollectionCardImages(collectionId!, collectionMeta.cardImages.main, collectionMeta.cardImages.hover).mainImage
+        : heroImageUrl;
+
     return (
         <Stack
             component="aside"
             spacing={4}
         >
             {/* Share */}
-            <BlogShareCard title={title} label={t('share')} />
+            <BlogShareCard label={t('share')} />
 
             {/* Table of Contents */}
             {tocItems && tocItems.length > 0 && (
@@ -140,9 +153,9 @@ export async function BlogSidebar({
                         '&:hover .collection-btn': { bgcolor: 'primary.dark' },
                     }}
                 >
-                    <Box position="relative" sx={{ height: 150 }}>
+                    <Box position="relative" sx={{ height: 250 }}>
                         <Image
-                            src={heroImageUrl}
+                            src={collectionImage}
                             alt={collectionName}
                             fill
                             sizes="350px"
@@ -191,31 +204,15 @@ export async function BlogSidebar({
             </Link>
 
             {/* Newsletter */}
-            <Card
-                variant="outlined"
-                sx={{ borderRadius: 2, borderColor: 'primary.light', bgcolor: 'primary.50' }}
-            >
-                <CardContent sx={{ p: 3, '&:last-child': { pb: 3 } }}>
-                    <Typography variant="subtitle2" color="primary.dark" fontWeight={600}>
-                        {t('newsletter.title')}
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary" sx={{ mt: 0.75, mb: 2 }}>
-                        {t('newsletter.subtitle')}
-                    </Typography>
-                    <Stack spacing={1.5}>
-                        <TextField
-                            size="small"
-                            placeholder={t('newsletter.placeholder')}
-                            fullWidth
-                            disabled
-                            sx={{ '& .MuiOutlinedInput-root': { bgcolor: 'white', borderRadius: 1 } }}
-                        />
-                        <Button variant="contained" color="primary" size="small" fullWidth disabled sx={{ borderRadius: 1 }}>
-                            {t('newsletter.button')}
-                        </Button>
-                    </Stack>
-                </CardContent>
-            </Card>
+            <NewsletterCard
+                locale={locale}
+                title={t('newsletter.title')}
+                subtitle={t('newsletter.subtitle')}
+                placeholder={t('newsletter.placeholder')}
+                buttonLabel={t('newsletter.button')}
+                loggedInInfo={t('newsletter.loggedInInfo')}
+                successMessage={t('newsletter.success')}
+            />
         </Stack>
     );
 }

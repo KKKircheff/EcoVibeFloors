@@ -75,6 +75,7 @@ Components follow a strict **Atoms → Molecules → Organisms** hierarchy:
 - **MUI Grid**: Import `Grid` from `@mui/material` (never `Grid2`); use `size={{ xs, md }}` prop syntax
 - **MUI Buttons**: Never use `component={Link}` — use `PrimaryActionButton`/`HeroButton` with `useRouter` from `@/i18n/navigation`
 - **Code comments**: Explain WHY (concepts, architecture), not WHAT (the code already shows that)
+- **Server Actions**: Place in a route-co-located `actions.ts` (e.g. `app/[locale]/blog/actions.ts`). Always use `adminDb` (Admin SDK, `lib/firebase-admin.ts`) for Firestore writes — never the client SDK. Verify the `origin` header via `headers()` from `next/headers`. **Never trust the frontend** — always re-validate all inputs (type, format, length) server-side regardless of any client-side checks already in place.
 
 ## Reference Docs
 

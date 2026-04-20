@@ -1,29 +1,21 @@
 import 'server-only';
 import { notFound } from 'next/navigation';
-import { alpha, Box, Stack, Typography } from '@mui/material';
+import { alpha, Box, Stack } from '@mui/material';
 import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 
-import Footer from '@/components/organisms/footer/Footer';
-import { BlogSectionRenderer, InlineContent } from '@/components/organisms/blog/BlogSectionRenderer';
 import { BlogPostCTA } from './(sections)/BlogPostCTA.section';
 import { BlogJsonLd } from '@/components/atoms/seo/BlogJsonLd';
 import { BlogPostHeader } from './(sections)/BlogPostHeader.section';
-import { BlogHeroImage } from './(sections)/BlogHeroImage.section';
 import { BlogSidebar } from './(sections)/BlogSidebar.section';
+import { BlogArticleBody } from './(sections)/BlogArticleBody.section';
 import { buildAlternates } from '@/lib/seo';
 import { getBlogPostBySlug, getBlogStaticParams, getRelatedBlogPosts } from '@/lib/firebase/blog';
 import { parseBlocks, extractTocBlock, extractPreH2Blocks } from '@/lib/markdown/parse-blocks';
 import { getFirebaseStorageUrl } from '@/lib/utils/getStorageUrl';
 import { palette } from '@/lib/styles/pallete';
-import { layoutPaddings } from '@/lib/styles/layoutPaddings';
 import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
-
-import { BlogCategoryBadge } from '@/components/atoms/blog/BlogCategoryBadge';
-import { BlogContent } from '@/components/atoms/typography/BlogContent';
 import { borderRadius } from '@/lib/styles/borderRadius';
-import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
-import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
 export const dynamicParams = true;
 
@@ -113,107 +105,53 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 locale={locale}
             />
 
-            {/* B+C: Two-column body — left white, right grey */}
-            <PageLayoutContainer pb={{ xs: 8, lg: 12 }} width='100%' spacing={6} >
-                <Stack direction={{ xs: 'column', lg: 'row' }} spacing={6} >
-                    {/* Left column — hero image + article (white) */}
+            {/* B+C: Two-column body — left article, right sidebar */}
+            <PageLayoutContainer pb={{ xs: 8, lg: 12 }} width='100%' spacing={6}>
+                <Stack direction={{ xs: 'column', lg: 'row' }} spacing={6}>
+                    {/* Left column — article */}
                     <Stack
                         sx={{
                             width: { xs: '100%', lg: '65%' },
                             py: { xs: 5, md: 0 },
                         }}
                     >
-                        <Stack component="article" spacing={3}>
-                            <Stack direction="row" justifyContent="flex-start" flexWrap="wrap" spacing={2}>
-                                <BlogCategoryBadge category={post.category} />
-                                <Stack direction="row" spacing={0.5} alignItems="center">
-                                    <CalendarTodayIcon sx={{ fontSize: 15, color: 'info.400' }} />
-                                    <Typography variant="body2" color="info.400">
-                                        {formattedDate}
-                                    </Typography>
-                                </Stack>
-
-                                <Stack direction="row" spacing={0.5} alignItems="center">
-                                    <AccessTimeIcon sx={{ fontSize: 15, color: 'info.400' }} />
-                                    <Typography variant="body2" color="info.400">
-                                        {translation.readingTimeMinutes || 5} min
-                                    </Typography>
-                                </Stack>
-                            </Stack>
-
-                            {/* Hero image with tags overlay */}
-                            <BlogHeroImage
-                                src={heroImageUrl}
-                                alt={translation.title}
-                                tags={translation.tags}
-                            />
-
-                            {/* Intro blocks: paragraphs + Накратко blockquote */}
-                            <Stack spacing={1.5}>
-                                {introBlocks.map((block, i) => {
-                                    if (block.type === 'paragraph') {
-                                        return block.items.map((text: string, j: number) => (
-                                            <BlogContent key={`${i}-${j}`}>
-                                                <InlineContent text={text} />
-                                            </BlogContent>
-                                        ));
-                                    }
-                                    if (block.type === 'blockquote') {
-                                        return (
-                                            <Stack key={i} pt={6} pb={4}>
-                                                <Stack
-                                                    component="blockquote"
-                                                    sx={{
-                                                        borderLeft: '4px solid',
-                                                        borderColor: 'primary.main',
-                                                        borderRadius: '0 8px 8px 0',
-                                                        pl: 4, pr: 3, py: 3,
-                                                        my: '16px !importan',
-                                                        bgcolor: 'primary.50',
-                                                    }}
-                                                >
-                                                    <BlogContent><InlineContent text={block.text} /></BlogContent>
-                                                </Stack>
-                                            </Stack>
-                                        );
-                                    }
-                                    return null;
-                                })}
-                            </Stack>
-
-                            {/* Article body sections */}
-                            <BlogSectionRenderer content={translation.contentMarkdown} />
-                        </Stack>
+                        <BlogArticleBody
+                            contentMarkdown={translation.contentMarkdown}
+                            heroImageUrl={heroImageUrl}
+                            alt={translation.title}
+                            tags={translation.tags}
+                            formattedDate={formattedDate}
+                            readingTimeMinutes={translation.readingTimeMinutes || 5}
+                            category={post.category}
+                            introBlocks={introBlocks}
+                        />
                     </Stack>
 
-                    {/* Right column — sidebar (warm grey) */}
+                    {/* Right column — sticky sidebar */}
                     <Box
                         pt={1}
-                        sx={{
-                            width: { xs: '100%', lg: '35%' },
-                        }}>
-                        {/* Sticky wrapper: position:sticky must be separate from the overflow:auto scroll container */}
+                        sx={{ width: { xs: '100%', lg: '35%' } }}
+                    >
                         <Box sx={{ position: { lg: 'sticky' }, top: { lg: '80px' } }}>
-                        <Stack
-                            bgcolor={bgcolor}
-                            borderRadius={borderRadius.lg}
-                            p={5}
-                            sx={{
-                                maxHeight: { lg: 'calc(100vh - 96px)' },
-                                overflowY: { lg: 'auto' },
-                                scrollbarWidth: 'none',
-                                '&::-webkit-scrollbar': { display: 'none' },
-                            }}
-                        >
-                            <BlogSidebar
-                                title={translation.title}
-                                category={post.category}
-                                tocItems={tocItems}
-                                relatedPosts={relatedPosts}
-                                heroImageUrl={heroImageUrl}
-                                locale={locale}
-                            />
-                        </Stack>
+                            <Stack
+                                bgcolor={bgcolor}
+                                borderRadius={borderRadius.lg}
+                                p={{ xs: 1, lg: 5 }}
+                                sx={{
+                                    // maxHeight: { lg: 'calc(100vh - 96px)' },
+                                    overflowY: { lg: 'auto' },
+                                    scrollbarWidth: 'none',
+                                    '&::-webkit-scrollbar': { display: 'none' },
+                                }}
+                            >
+                                <BlogSidebar
+                                    category={post.category}
+                                    tocItems={tocItems}
+                                    relatedPosts={relatedPosts}
+                                    heroImageUrl={heroImageUrl}
+                                    locale={locale}
+                                />
+                            </Stack>
                         </Box>
                     </Box>
                 </Stack>
@@ -223,7 +161,6 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                     <BlogPostCTA />
                 </PageLayoutContainer>
             </PageLayoutContainer>
-
         </Stack>
     );
 }

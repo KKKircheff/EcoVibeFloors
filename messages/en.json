@@ -616,7 +616,9 @@
                 "title": "Stay Updated",
                 "subtitle": "Get our latest articles and flooring tips delivered to you.",
                 "placeholder": "Your email",
-                "button": "Subscribe"
+                "button": "Subscribe",
+                "loggedInInfo": "We'll use your account email.",
+                "success": "You're subscribed! We'll keep you updated."
             }
         },
         "cta": {

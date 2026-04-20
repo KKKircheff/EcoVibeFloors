@@ -4,15 +4,15 @@ import { useState } from 'react';
 import { Card, CardContent, Divider, IconButton, Stack, Tooltip, Typography } from '@mui/material';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkIcon from '@mui/icons-material/Link';
 import CheckIcon from '@mui/icons-material/Check';
 
 interface BlogShareCardProps {
-    title: string;
     label: string;
 }
 
-export function BlogShareCard({ title, label }: BlogShareCardProps) {
+export function BlogShareCard({ label }: BlogShareCardProps) {
     const [copied, setCopied] = useState(false);
 
     const getUrl = () => (typeof window !== 'undefined' ? window.location.href : '');
@@ -30,24 +30,20 @@ export function BlogShareCard({ title, label }: BlogShareCardProps) {
     const shareLinks = [
         {
             label: 'Facebook',
-            icon: <FacebookIcon fontSize="small" />,
+            icon: <FacebookIcon sx={{ fontSize: '2.5rem' }} />,
             href: () => `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(getUrl())}`,
         },
         {
             label: 'LinkedIn',
-            icon: <LinkedInIcon fontSize="small" />,
+            icon: <LinkedInIcon sx={{ fontSize: '2.5rem' }} />,
             href: () =>
                 `https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(getUrl())}`,
         },
         {
-            label: 'X (Twitter)',
-            icon: (
-                <Typography component="span" fontWeight={700} fontSize="0.85rem" lineHeight={1}>
-                    𝕏
-                </Typography>
-            ),
-            href: () =>
-                `https://twitter.com/intent/tweet?url=${encodeURIComponent(getUrl())}&text=${encodeURIComponent(title)}`,
+            label: 'Instagram',
+            icon: <InstagramIcon sx={{ fontSize: '2.3rem' }} />,
+            // TODO: replace with your actual Instagram profile URL
+            href: () => 'https://www.instagram.com/ecovibe_floors',
         },
     ];
 
@@ -70,7 +66,7 @@ export function BlogShareCard({ title, label }: BlogShareCardProps) {
                                 href={link.href()}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                size="small"
+                                size="medium"
                                 sx={{
                                     color: 'text.secondary',
                                     '&:hover': { color: 'primary.main', bgcolor: 'primary.50' },
@@ -84,7 +80,7 @@ export function BlogShareCard({ title, label }: BlogShareCardProps) {
 
                     <Tooltip title={copied ? 'Copied!' : 'Copy link'} placement="top">
                         <IconButton
-                            size="small"
+                            size="medium"
                             onClick={handleCopy}
                             sx={{
                                 color: copied ? 'primary.main' : 'text.secondary',
@@ -92,7 +88,7 @@ export function BlogShareCard({ title, label }: BlogShareCardProps) {
                                 transition: 'all 0.2s ease',
                             }}
                         >
-                            {copied ? <CheckIcon fontSize="small" /> : <LinkIcon fontSize="small" />}
+                            {copied ? <CheckIcon sx={{ fontSize: '2.5rem' }} /> : <LinkIcon sx={{ fontSize: '2.5rem' }} />}
                         </IconButton>
                     </Tooltip>
                 </Stack>

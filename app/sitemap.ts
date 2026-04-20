@@ -2,6 +2,7 @@ import type {MetadataRoute} from 'next';
 import {execSync} from 'child_process';
 import {getAllProducts} from '@/utils/products';
 import {getAllTreatments} from '@/utils/treatments';
+import {getAllBlogPosts} from '@/lib/firebase/blog';
 import {routing} from '@/i18n/routing';
 
 /**
@@ -54,13 +55,18 @@ function getCollectionLastModified(collection: string): Date {
 
 const sitemapLastMod = getLastModifiedDate();
 
-export default function sitemap(): MetadataRoute.Sitemap {
+// Build a locale-prefixed URL. Root path emits /bg and /en with no trailing slash
+// so home URLs are consistent with the rest of the sitemap.
+function buildUrl(locale: string, path: string): string {
+    return path === '/' ? `${baseUrl}/${locale}` : `${baseUrl}/${locale}${path}`;
+}
+
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     const locales = routing.locales;
     const staticRoutes = [
         {path: '/'},
         {path: '/collections'},
         {path: '/oak'},
-        {path: '/custom-oak'},
         {path: '/hybrid-wood'},
         {path: '/click-vinyl'},
         {path: '/glue-down-vinyl'},
@@ -83,12 +89,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     staticRoutes.forEach((route) => {
         locales.forEach((locale) => {
             sitemapEntries.push({
-                url: `${baseUrl}/${locale}${route.path}`,
+                url: buildUrl(locale, route.path),
                 lastModified: sitemapLastMod,
                 alternates: {
                     languages: {
-                        ...Object.fromEntries(locales.map((l) => [l, `${baseUrl}/${l}${route.path}`])),
-                        'x-default': `${baseUrl}/bg${route.path}`,
+                        ...Object.fromEntries(locales.map((l) => [l, buildUrl(l, route.path)])),
+                        'x-default': buildUrl('bg', route.path),
                     },
                 },
             });
@@ -174,6 +180,46 @@ export default function sitemap(): MetadataRoute.Sitemap {
         });
     } catch (error) {
         console.error('Error generating treatment sitemap entries:', error);
+    }
+
+    // Generate blog post entries. Each post may be published in bg, en, or both
+    // (translations.{locale}.status === 'published'). Alternates only list locales
+    // where that post is actually published, so we never point Google at a draft.
+    try {
+        const allPosts = await getAllBlogPosts();
+
+        allPosts.forEach((post) => {
+            const publishedLocales = locales.filter(
+                (l) => post.translations[l as 'bg' | 'en']?.status === 'published',
+            );
+            if (publishedLocales.length === 0) return;
+
+            const lastMod = post.dateModified
+                ? new Date(post.dateModified as unknown as string)
+                : post.datePublished
+                  ? new Date(post.datePublished as unknown as string)
+                  : new Date();
+
+            const blogPath = `/blog/${post.slug}`;
+            const languages = Object.fromEntries(
+                publishedLocales.map((l) => [l, `${baseUrl}/${l}${blogPath}`]),
+            );
+            const xDefault = publishedLocales.includes('bg')
+                ? `${baseUrl}/bg${blogPath}`
+                : `${baseUrl}/en${blogPath}`;
+
+            publishedLocales.forEach((locale) => {
+                sitemapEntries.push({
+                    url: `${baseUrl}/${locale}${blogPath}`,
+                    lastModified: lastMod,
+                    alternates: {
+                        languages: {...languages, 'x-default': xDefault},
+                    },
+                });
+            });
+        });
+    } catch (error) {
+        console.error('Error generating blog sitemap entries:', error);
     }
 
     return sitemapEntries;

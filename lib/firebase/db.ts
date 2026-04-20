@@ -504,6 +504,23 @@ export const ConsultationsDB = {
   })
 };
 
+export interface NewsletterSubscription {
+  email: string;
+  language: 'en' | 'bg';
+  source: 'blog';
+  userId?: string;
+}
+
+export const NewslettersDB = {
+  subscribe: (email: string, data: Omit<NewsletterSubscription, 'email'>) =>
+    FirebaseDB.createWithId(COLLECTIONS.NEWSLETTERS, email.toLowerCase(), {
+      email: email.toLowerCase(),
+      ...data,
+    }),
+  getByEmail: (email: string) =>
+    FirebaseDB.getById(COLLECTIONS.NEWSLETTERS, email.toLowerCase()),
+};
+
 export const BlogPostsDB = {
   getAll: (options?: QueryOptions) => FirebaseDB.getAll(COLLECTIONS.BLOG_POSTS, options),
   getById: (id: string) => FirebaseDB.getById(COLLECTIONS.BLOG_POSTS, id),

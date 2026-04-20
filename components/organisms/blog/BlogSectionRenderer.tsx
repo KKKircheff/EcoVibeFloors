@@ -1,4 +1,8 @@
+import React from 'react';
 import { Box, Stack, Typography } from '@mui/material';
+import CheckIcon from '@mui/icons-material/Check';
+import WarningAmberIcon from '@mui/icons-material/WarningAmber';
+import CloseIcon from '@mui/icons-material/Close';
 import Image from 'next/image';
 import Link from 'next/link';
 import { parseBlocks, parseInlineLinks, type ContentBlock } from '@/lib/markdown/parse-blocks';
@@ -169,23 +173,23 @@ function BlockRenderer({ block }: { block: Exclude<ContentBlock, { type: 'headin
 
         case 'table':
             return (
-                <Box sx={{ overflowX: 'auto', borderRadius: 2, border: '1px solid', borderColor: 'divider' }}>
+                <Box sx={{ overflowX: 'auto', borderRadius: 2, border: '1px solid', borderColor: 'primary.100' }}>
                     <Box
                         component="table"
                         sx={{
                             width: '100%',
                             borderCollapse: 'collapse',
                             '& th': {
-                                bgcolor: 'primary.50',
-                                color: 'info.700',
+                                bgcolor: 'primary.600',
+                                color: 'primary.contrastText',
                                 fontWeight: 700,
                                 fontSize: '0.75rem',
                                 textTransform: 'uppercase',
                                 letterSpacing: '0.06em',
                                 px: 2.5,
-                                py: 1.5,
+                                py: 1.75,
                                 borderBottom: '2px solid',
-                                borderColor: 'primary.100',
+                                borderColor: 'primary.700',
                                 textAlign: 'left',
                                 whiteSpace: 'nowrap',
                             },
@@ -195,18 +199,19 @@ function BlockRenderer({ block }: { block: Exclude<ContentBlock, { type: 'headin
                                 px: 2.5,
                                 py: 1.5,
                                 borderBottom: '1px solid',
-                                borderColor: 'divider',
+                                borderColor: 'primary.100',
                                 verticalAlign: 'top',
                             },
                             '& tbody tr:last-child td': { borderBottom: 'none' },
-                            '& tbody tr:hover td': { bgcolor: 'primary.50' },
+                            '& tbody tr:nth-of-type(even) td': { bgcolor: 'primary.50' },
+                            '& tbody tr:hover td': { bgcolor: 'primary.100' },
                         }}
                     >
                         <Box component="thead">
                             <Box component="tr">
                                 {block.headers.map((header, i) => (
                                     <Box key={i} component="th">
-                                        <InlineContent text={header} />
+                                        <TableCellContent text={header} />
                                     </Box>
                                 ))}
                             </Box>
@@ -216,7 +221,7 @@ function BlockRenderer({ block }: { block: Exclude<ContentBlock, { type: 'headin
                                 <Box key={ri} component="tr">
                                     {row.map((cell, ci) => (
                                         <Box key={ci} component="td">
-                                            <InlineContent text={cell} />
+                                            <TableCellContent text={cell} />
                                         </Box>
                                     ))}
                                 </Box>
@@ -229,6 +234,18 @@ function BlockRenderer({ block }: { block: Exclude<ContentBlock, { type: 'headin
         default:
             return null;
     }
+}
+
+const STATUS_ICONS: Record<string, React.ReactNode> = {
+    '✓': <CheckIcon sx={{ color: 'success.main', fontSize: '1.25rem', ml: 2 }} />,
+    '⚠': <WarningAmberIcon sx={{ color: 'warning.main', fontSize: '1.25rem', ml: 2 }} />,
+    '✗': <CloseIcon sx={{ color: 'error.main', fontSize: '1.25rem', ml: 2 }} />,
+};
+
+function TableCellContent({ text }: { text: string }) {
+    const trimmed = text.trim();
+    if (STATUS_ICONS[trimmed]) return <>{STATUS_ICONS[trimmed]}</>;
+    return <InlineContent text={text} />;
 }
 
 export function InlineContent({ text }: { text: string }) {

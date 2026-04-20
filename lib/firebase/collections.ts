@@ -282,8 +282,14 @@ service cloud.firestore {
     
     match /suppliers/{supplierId} {
       allow read: if true;
-      allow write: if request.auth != null && 
+      allow write: if request.auth != null &&
         get(/databases/$(database)/documents/users/$(request.auth.uid)).data.role == 'admin';
+    }
+
+    // Newsletter subscriptions — server-side only via Admin SDK (server actions)
+    // The Admin SDK bypasses these rules; denying here blocks any direct client writes
+    match /newsletters/{email} {
+      allow read, write: if false;
     }
   }
 }
