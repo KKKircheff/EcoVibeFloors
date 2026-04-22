@@ -1,3 +1,5 @@
+import type { AuthorSlug } from '@/lib/authors/authors';
+
 export type BlogCategory =
     | 'engineered-parquet'
     | 'hybrid'
@@ -10,6 +12,20 @@ export type BlogSchemaType = 'Article' | 'HowTo' | 'FAQPage';
 /** Date is used for both Firestore Timestamp (client) and serialized server dates */
 export type DateValue = Date | null;
 
+export interface BlogFaqItem {
+    question: string;
+    answer: string;
+    anchor?: string;
+}
+
+export type BlogSourceType = 'product-doc' | 'standard' | 'article' | 'research';
+
+export interface BlogSource {
+    label: string;
+    url?: string;
+    type?: BlogSourceType;
+}
+
 export interface BlogTranslation {
     title: string;
     metaDescription: string;
@@ -21,6 +37,9 @@ export interface BlogTranslation {
     inLanguage: 'bg' | 'en';
     status: 'draft' | 'published' | 'archived';
     datePublished?: DateValue;
+    heroImageAlt?: string;
+    sources?: BlogSource[];
+    faq?: BlogFaqItem[];
 }
 
 export interface BlogFeaturedProduct {
@@ -42,6 +61,7 @@ export interface BlogPost {
     category: BlogCategory;
     schemaType?: BlogSchemaType;
     heroImage: string;
+    author?: AuthorSlug;
     isPartOf?: string | null;
     hasPart?: string[];
     linksTo?: string[];

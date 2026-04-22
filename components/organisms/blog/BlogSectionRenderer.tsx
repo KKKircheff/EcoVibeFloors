@@ -150,10 +150,12 @@ function BlockRenderer({ block }: { block: Exclude<ContentBlock, { type: 'headin
             // TOC is rendered in the sidebar — suppress inline rendering
             return null;
 
-        case 'blockquote':
+        case 'blockquote': {
+            const isKeyTakeaway = /^\s*\*?\*?(Накратко|In brief|In Brief)[:\s]/.test(block.text);
             return (
                 <Stack
                     component="blockquote"
+                    className={isKeyTakeaway ? 'key-takeaway-box' : undefined}
                     sx={{
                         borderLeft: '4px solid',
                         borderColor: 'primary.main',
@@ -170,6 +172,7 @@ function BlockRenderer({ block }: { block: Exclude<ContentBlock, { type: 'headin
                     </BlogContent>
                 </Stack>
             );
+        }
 
         case 'table':
             return (

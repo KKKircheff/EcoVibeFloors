@@ -1,0 +1,46 @@
+# Dependencies & build output
+node_modules/
+.next/
+out/
+build/
+.git/
+
+# Graphify output (avoid circular indexing)
+graphify-out/
+
+# Playwright / testing
+.playwright-mcp/
+coverage/
+
+# Static assets & media
+public/
+*.webp
+*.png
+*.jpg
+*.jpeg
+*.svg
+*.ico
+*.woff
+*.woff2
+*.ttf
+*.pem
+
+# Config & generated files
+.env*
+.vercel/
+*.tsbuildinfo
+next-env.d.ts
+serviceAccountKey.json
+
+# Logs
+*.log
+*.stackdump
+
+# External / non-code content
+_jina/
+docs/
+messages/
+
+# Data-only files (no logic to graph)
+*.json
+*.md

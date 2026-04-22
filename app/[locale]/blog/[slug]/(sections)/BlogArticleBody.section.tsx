@@ -4,10 +4,11 @@ import CalendarTodayIcon from '@mui/icons-material/CalendarToday';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import { BlogSectionRenderer, InlineContent } from '@/components/organisms/blog/BlogSectionRenderer';
 import { BlogHeroImage } from './BlogHeroImage.section';
+import { BlogSources } from '@/components/molecules/blog/BlogSources';
 import { BlogCategoryBadge } from '@/components/atoms/blog/BlogCategoryBadge';
 import { BlogContent } from '@/components/atoms/typography/BlogContent';
 import { borderRadius } from '@/lib/styles/borderRadius';
-import type { BlogCategory } from '@/lib/types/blog';
+import type { BlogCategory, BlogSource } from '@/lib/types/blog';
 import type { extractPreH2Blocks } from '@/lib/markdown/parse-blocks';
 
 interface BlogArticleBodyProps {
@@ -19,6 +20,8 @@ interface BlogArticleBodyProps {
     readingTimeMinutes: number;
     category: BlogCategory;
     introBlocks: ReturnType<typeof extractPreH2Blocks>;
+    sources?: BlogSource[];
+    locale: string;
 }
 
 export function BlogArticleBody({
@@ -30,6 +33,8 @@ export function BlogArticleBody({
     readingTimeMinutes,
     category,
     introBlocks,
+    sources,
+    locale,
 }: BlogArticleBodyProps) {
     return (
         <Stack component="article" spacing={3}>
@@ -68,10 +73,12 @@ export function BlogArticleBody({
                         ));
                     }
                     if (block.type === 'blockquote') {
+                        const isKeyTakeaway = /^\s*\*?\*?(Накратко|In brief|In Brief)[:\s]/.test(block.text);
                         return (
                             <Stack key={i} pt={6} pb={4}>
                                 <Stack
                                     component="blockquote"
+                                    className={isKeyTakeaway ? 'key-takeaway-box' : undefined}
                                     sx={{
                                         borderLeft: '4px solid',
                                         borderColor: 'primary.main',
@@ -92,6 +99,11 @@ export function BlogArticleBody({
 
             {/* Full article body */}
             <BlogSectionRenderer content={contentMarkdown} />
+
+            {/* Sources — structured citations */}
+            {sources && sources.length > 0 && (
+                <BlogSources sources={sources} locale={locale} />
+            )}
         </Stack>
     );
 }

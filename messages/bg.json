@@ -628,7 +628,23 @@
             "spc-lvt": "SPC / LVT настилки",
             "comparison": "Сравнение",
             "brand": "Истории за марките"
+        },
+        "byline": {
+            "writtenBy": "Автор",
+            "aboutAuthor": "За автора"
+        },
+        "sources": {
+            "title": "Източници"
         }
+    },
+    "author": {
+        "jobTitle": "Длъжност",
+        "experience": "Опит",
+        "yearsOfExperience": "{years} години опит",
+        "specialties": "Специализации",
+        "linkedin": "LinkedIn",
+        "postsByAuthor": "Статии от този автор",
+        "backToBlog": "Към блога"
     },
     "notFound": {
         "title": "Страницата не е намерена",

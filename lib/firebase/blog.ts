@@ -92,6 +92,12 @@ export async function getRelatedBlogPosts(slugs: string[], locale: string): Prom
         });
 }
 
+/** Fetch posts authored by `authorSlug` that are published in the given locale. */
+export async function getBlogPostsByAuthor(authorSlug: string, locale: string): Promise<BlogPost[]> {
+    const all = await getPublishedBlogPosts(locale);
+    return all.filter((post) => (post.author ?? 'gancho-georgiev') === authorSlug);
+}
+
 /** Generate static params for all blog posts across all locales. */
 export async function getBlogStaticParams() {
     const posts = await getAllBlogPosts();

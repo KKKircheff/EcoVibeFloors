@@ -10,6 +10,7 @@ import { BlogPostHeader } from './(sections)/BlogPostHeader.section';
 import { BlogSidebar } from './(sections)/BlogSidebar.section';
 import { BlogArticleBody } from './(sections)/BlogArticleBody.section';
 import { buildAlternates } from '@/lib/seo';
+import { getAuthor } from '@/lib/authors/authors';
 import { getBlogPostBySlug, getBlogStaticParams, getRelatedBlogPosts } from '@/lib/firebase/blog';
 import { parseBlocks, extractTocBlock, extractPreH2Blocks } from '@/lib/markdown/parse-blocks';
 import { getFirebaseStorageUrl } from '@/lib/utils/getStorageUrl';
@@ -68,6 +69,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
     const heroImageUrl = getFirebaseStorageUrl(post.heroImage);
     const datePublished = toDate(translation.datePublished || post.datePublished);
     const dateModified = toDate(post.dateModified);
+    const author = getAuthor(post.author);
 
     const formattedDate = datePublished.toLocaleDateString(locale === 'bg' ? 'bg-BG' : 'en-GB', {
         year: 'numeric',
@@ -94,6 +96,9 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 dateModified={dateModified}
                 schemaType={post.schemaType}
                 locale={locale}
+                author={author}
+                faq={translation.faq}
+                sources={translation.sources}
             />
 
             {/* A: Header — breadcrumb + title + meta strip */}
@@ -103,6 +108,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                 date={formattedDate}
                 readingTime={translation.readingTimeMinutes || 5}
                 locale={locale}
+                author={author}
             />
 
             {/* B+C: Two-column body — left article, right sidebar */}
@@ -118,12 +124,14 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                         <BlogArticleBody
                             contentMarkdown={translation.contentMarkdown}
                             heroImageUrl={heroImageUrl}
-                            alt={translation.title}
+                            alt={translation.heroImageAlt || translation.title}
                             tags={translation.tags}
                             formattedDate={formattedDate}
                             readingTimeMinutes={translation.readingTimeMinutes || 5}
                             category={post.category}
                             introBlocks={introBlocks}
+                            sources={translation.sources}
+                            locale={locale}
                         />
                     </Stack>
 
@@ -138,7 +146,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
                                 borderRadius={borderRadius.lg}
                                 p={{ xs: 1, lg: 5 }}
                                 sx={{
-                                    // maxHeight: { lg: 'calc(100vh - 96px)' },
+                                    maxHeight: { lg: 'calc(100vh - 96px)' },
                                     overflowY: { lg: 'auto' },
                                     scrollbarWidth: 'none',
                                     '&::-webkit-scrollbar': { display: 'none' },

@@ -3,6 +3,7 @@ import {execSync} from 'child_process';
 import {getAllProducts} from '@/utils/products';
 import {getAllTreatments} from '@/utils/treatments';
 import {getAllBlogPosts} from '@/lib/firebase/blog';
+import {getAllAuthorSlugs} from '@/lib/authors/authors';
 import {routing} from '@/i18n/routing';
 
 /**
@@ -221,6 +222,23 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
     } catch (error) {
         console.error('Error generating blog sitemap entries:', error);
     }
+
+    // Author bio pages — one per author slug, localized
+    getAllAuthorSlugs().forEach((slug) => {
+        const authorPath = `/author/${slug}`;
+        locales.forEach((locale) => {
+            sitemapEntries.push({
+                url: buildUrl(locale, authorPath),
+                lastModified: sitemapLastMod,
+                alternates: {
+                    languages: {
+                        ...Object.fromEntries(locales.map((l) => [l, buildUrl(l, authorPath)])),
+                        'x-default': buildUrl('bg', authorPath),
+                    },
+                },
+            });
+        });
+    });
 
     return sitemapEntries;
 }

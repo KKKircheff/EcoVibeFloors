@@ -3,8 +3,10 @@ import { Stack, Typography } from '@mui/material';
 
 import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
+import { AuthorByline } from '@/components/molecules/blog/AuthorByline';
 
 import type { BlogCategory } from '@/lib/types/blog';
+import type { Author } from '@/lib/authors/authors';
 
 interface BlogPostHeaderProps {
     title: string;
@@ -12,9 +14,10 @@ interface BlogPostHeaderProps {
     date: string;
     readingTime: number;
     locale: string;
+    author: Author;
 }
 
-export function BlogPostHeader({ title, category, date, readingTime, locale }: BlogPostHeaderProps) {
+export function BlogPostHeader({ title, category, date, readingTime, locale, author }: BlogPostHeaderProps) {
     const breadcrumbItems = [
         { label: locale === 'bg' ? 'Начало' : 'Home', href: '/' },
         { label: locale === 'bg' ? 'Блог' : 'Blog', href: '/blog' },
@@ -34,10 +37,14 @@ export function BlogPostHeader({ title, category, date, readingTime, locale }: B
                     fontWeight={600}
                     color="info.main"
                     pt={0}
-                    pb={6}
+                    pb={2}
                 >
                     {title}
                 </Typography>
+
+                <Stack alignItems="center" pb={4}>
+                    <AuthorByline author={author} locale={locale} />
+                </Stack>
 
             </Stack>
         </PageLayoutContainer>

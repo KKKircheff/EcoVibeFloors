@@ -87,7 +87,14 @@
       "mcp__plugin_chrome-devtools-mcp_chrome-devtools__resize_page",
       "mcp__plugin_chrome-devtools-mcp_chrome-devtools__list_console_messages",
       "Bash(playwright screenshot *)",
-      "Bash(npx playwright *)"
+      "Bash(npx playwright *)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "Bash(graphify --help)",
+      "Bash(graphify . --help)",
+      "Bash(env)",
+      "Read(//usr/**)",
+      "Read(//usr/local/**)",
+      "Bash(command -v py)"
     ],
     "deny": [],
     "ask": []

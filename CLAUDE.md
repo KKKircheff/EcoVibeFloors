@@ -110,3 +110,13 @@ Test files use `.spec.ts` extension and import from `@playwright/test`.
 ## Package Management
 
 This project uses cutting-edge versions (Next.js 16, React 19, MUI v7). When unsure about API syntax for any of these, use web search or context7 MCP to check current documentation — avoid assuming older API patterns still apply. See `docs/claude/nextjs-patterns.md` for the full version table and known breaking changes.
+
+## graphify
+
+This project has a graphify knowledge graph at graphify-out/.
+
+Rules:
+- Before answering architecture or codebase questions, read graphify-out/GRAPH_REPORT.md for god nodes and community structure
+- If graphify-out/wiki/index.md exists, navigate it instead of reading raw files
+- For cross-module "how does X relate to Y" questions, prefer `graphify query "<question>"`, `graphify path "<A>" "<B>"`, or `graphify explain "<concept>"` over grep — these traverse the graph's EXTRACTED + INFERRED edges instead of scanning files
+- After modifying code files in this session, run `graphify update .` to keep the graph current (AST-only, no API cost)

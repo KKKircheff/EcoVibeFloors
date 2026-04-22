@@ -631,7 +631,23 @@
             "spc-lvt": "SPC / LVT Flooring",
             "comparison": "Comparison",
             "brand": "Brand Stories"
+        },
+        "byline": {
+            "writtenBy": "By",
+            "aboutAuthor": "About the author"
+        },
+        "sources": {
+            "title": "Sources"
         }
+    },
+    "author": {
+        "jobTitle": "Role",
+        "experience": "Experience",
+        "yearsOfExperience": "{years} years of experience",
+        "specialties": "Specialties",
+        "linkedin": "LinkedIn",
+        "postsByAuthor": "Posts by this author",
+        "backToBlog": "Back to blog"
     },
     "notFound": {
         "title": "Page Not Found",
