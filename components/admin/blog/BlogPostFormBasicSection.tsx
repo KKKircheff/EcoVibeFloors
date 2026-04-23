@@ -8,6 +8,7 @@ import { DeleteOutlined as DeleteIcon, AddOutlined as AddIcon } from '@mui/icons
 import { getFirebaseStorageUrl } from '@/lib/utils/getStorageUrl';
 import Image from 'next/image';
 import { BlogPostFormValues } from './BlogPostForm';
+import { getAllAuthorSlugs } from '@/lib/authors/authors';
 
 interface Props {
     control: Control<BlogPostFormValues>;
@@ -73,6 +74,8 @@ export function BlogPostFormBasicSection({ control }: Props) {
         { value: 'Brand', label: t('mentionTypes.Brand') },
         { value: 'Product', label: t('mentionTypes.Product') },
     ];
+
+    const AUTHOR_OPTIONS = getAllAuthorSlugs().map((slug) => ({ value: slug, label: slug }));
 
     const { fields: fpFields, append: fpAppend, remove: fpRemove } = useFieldArray({ control, name: 'featuredProducts' });
     const { fields: mFields, append: mAppend, remove: mRemove } = useFieldArray({ control, name: 'mentions' });
@@ -182,6 +185,25 @@ export function BlogPostFormBasicSection({ control }: Props) {
                         />
                         <HeroImagePreview path={field.value} />
                     </Stack>
+                )}
+            />
+
+            <Controller
+                name="author"
+                control={control}
+                render={({ field }) => (
+                    <TextField
+                        {...field}
+                        select
+                        label={t('author')}
+                        size="small"
+                        sx={{ maxWidth: 300 }}
+                    >
+                        <MenuItem value="">{t('authorNone')}</MenuItem>
+                        {AUTHOR_OPTIONS.map((o) => (
+                            <MenuItem key={o.value} value={o.value}>{o.value}</MenuItem>
+                        ))}
+                    </TextField>
                 )}
             />
 

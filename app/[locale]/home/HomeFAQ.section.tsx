@@ -9,8 +9,8 @@ export async function HomeFAQ() {
 
     // FAQ questions configuration
     const faqKeys: (keyof Messages['home']['faq']['questions'])[] = [
-        'hybridVsOakParquet',
         'dutchGermanQuality',
+        'hybridVsOakParquet',
         'woodInKitchenBathroom',
         'differenceSpcLvt',
         'underfloorHeatingCompatibility',
@@ -87,7 +87,7 @@ export async function HomeFAQ() {
                             <Accordion
                                 elevation={0}
                                 disableGutters
-                                defaultExpanded
+                                defaultExpanded={index === 0}
                                 sx={{
                                     bgcolor: 'transparent',
                                     '&:before': {

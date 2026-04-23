@@ -1,6 +1,6 @@
 import 'server-only';
 import { notFound } from 'next/navigation';
-import { Stack } from '@mui/material';
+import { alpha, Stack } from '@mui/material';
 import { setRequestLocale } from 'next-intl/server';
 import type { Metadata } from 'next';
 
@@ -11,6 +11,7 @@ import { BlogPostGrid } from './(sections)/BlogPostGrid.section';
 import { buildAlternates } from '@/lib/seo';
 import { getPublishedBlogPosts } from '@/lib/firebase/blog';
 import { routing } from '@/i18n/routing';
+import { palette } from '@/lib/styles/pallete';
 
 // Allow new blog posts to generate their pages on first visit
 export const dynamicParams = true;
@@ -45,11 +46,11 @@ export default async function BlogIndexPage({ params }: BlogIndexPageProps) {
     setRequestLocale(locale);
 
     const posts = await getPublishedBlogPosts(locale);
-
+    const bgcolor = alpha(palette.info[50], .4)
     return (
-        <Stack>
+        <Stack >
             <BlogIndexHero />
-            <PageLayoutContainer bgcolor="background.paper" py={{ xs: 6, md: 10 }} >
+            <PageLayoutContainer bgcolor={bgcolor} py={{ xs: 6, md: 10 }} >
                 <BlogPostGrid posts={posts} locale={locale as 'bg' | 'en'} />
             </PageLayoutContainer>
         </Stack>

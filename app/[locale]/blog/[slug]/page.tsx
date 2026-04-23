@@ -104,6 +104,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
             {/* A: Header — breadcrumb + title + meta strip */}
             <BlogPostHeader
                 title={translation.title}
+                subtitle={translation.metaDescription}
                 category={post.category}
                 date={formattedDate}
                 readingTime={translation.readingTimeMinutes || 5}

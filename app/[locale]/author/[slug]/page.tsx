@@ -140,7 +140,7 @@ export default async function AuthorPage({ params }: AuthorPageProps) {
                         </Typography>
                         <Stack direction={{ xs: 'column', md: 'row' }} flexWrap="wrap" gap={3}>
                             {posts.map((post) => (
-                                <Box key={post.slug} sx={{ width: { xs: '100%', md: 'calc(50% - 12px)', lg: 'calc(33.333% - 16px)' } }}>
+                                <Box key={post.slug} sx={{ width: { xs: '100%', md: 'calc(50% - 12px)' } }}>
                                     <BlogPostCard post={post} locale={locale === 'en' ? 'en' : 'bg'} />
                                 </Box>
                             ))}

@@ -70,7 +70,6 @@ export interface BlogPost {
     mentions?: BlogMention[];
     datePublished?: DateValue;
     dateModified?: DateValue;
-    publishedLanguages?: ('bg' | 'en')[];
     translations: {
         bg?: BlogTranslation;
         en?: BlogTranslation;

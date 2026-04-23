@@ -57,9 +57,9 @@ export function BlogPostCard({ post, locale }: BlogPostCardProps) {
                 cursor: 'pointer',
                 borderRadius: borderRadius.md,
                 overflow: 'hidden',
-                bgcolor: 'background.paper',
+                bgcolor: '#ffffff',
                 transition: 'box-shadow 0.3s ease, transform 0.2s ease',
-                boxShadow: isHovered ? '0 4px 20px rgba(0,0,0,0.12)' : '0 1px 4px rgba(0,0,0,0.06)',
+                boxShadow: isHovered ? '0 4px 20px rgba(0,0,0,0.12)' : '0 2px 8px rgba(0,0,0,0.09)',
                 transform: isHovered ? 'translateY(-2px)' : 'translateY(0)',
                 display: 'flex',
                 flexDirection: { xs: 'column', md: 'row' },
@@ -90,11 +90,21 @@ export function BlogPostCard({ post, locale }: BlogPostCardProps) {
                         opacity: imageLoaded ? 1 : 0,
                     }}
                 />
-                {/* Category badge */}
+                {/* Gradient for badge readability */}
                 <Box
                     sx={{
                         position: 'absolute',
-                        top: { xs: 12, md: 16 },
+                        inset: 0,
+                        background: 'linear-gradient(to top, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.1) 35%, transparent 60%)',
+                        pointerEvents: 'none',
+                    }}
+                />
+
+                {/* Category badge — bottom-left, matching hero image style */}
+                <Box
+                    sx={{
+                        position: 'absolute',
+                        bottom: { xs: 12, md: 16 },
                         left: { xs: 12, md: 16 },
                     }}
                 >

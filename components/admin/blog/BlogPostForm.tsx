@@ -6,7 +6,8 @@ import { Stack, Button, Alert, CircularProgress, Divider } from '@mui/material';
 import { useTranslations } from 'next-intl';
 import { BlogPostFormBasicSection } from './BlogPostFormBasicSection';
 import { BlogPostFormLocalizedSection } from './BlogPostFormLocalizedSection';
-import { BlogPost, BlogFeaturedProduct, BlogMention } from '@/lib/types/blog';
+import type { BlogPost, BlogFeaturedProduct, BlogMention, BlogSource, BlogFaqItem } from '@/lib/types/blog';
+import type { AuthorSlug } from '@/lib/authors/authors';
 import { BlogPostsDB } from '@/lib/firebase/db';
 import { revalidateBlogPost } from '@/app/[locale]/admin/(protected)/actions';
 
@@ -17,6 +18,7 @@ export interface BlogPostFormValues {
     category: BlogPost['category'];
     schemaType: 'Article' | 'HowTo' | 'FAQPage';
     heroImage: string;
+    author: AuthorSlug | '';
 
     // Relationships — stored as comma-separated strings in the form
     isPartOf: string;
@@ -43,6 +45,9 @@ export interface BlogTranslationFormValues {
     readingTimeMinutes: number;
     status: 'draft' | 'published' | 'archived';
     datePublished: string; // ISO datetime string
+    heroImageAlt: string;
+    sources: BlogSource[];
+    faq: BlogFaqItem[];
 }
 
 /** Safely convert Firestore Timestamp / Date / null to ISO string for the form */
@@ -56,6 +61,20 @@ function toISOStr(v: unknown): string {
 }
 
 function blogPostToFormValues(post: BlogPost): BlogPostFormValues {
+    const mapTranslation = (t: BlogPost['translations']['bg']): BlogTranslationFormValues => ({
+        title: t?.title ?? '',
+        metaDescription: t?.metaDescription ?? '',
+        primaryKeyword: t?.primaryKeyword ?? '',
+        tags: t?.tags?.join(', ') ?? '',
+        contentMarkdown: t?.contentMarkdown ?? '',
+        wordCount: t?.wordCount ?? 0,
+        readingTimeMinutes: t?.readingTimeMinutes ?? 0,
+        status: t?.status ?? 'draft',
+        datePublished: toISOStr(t?.datePublished),
+        heroImageAlt: t?.heroImageAlt ?? '',
+        sources: t?.sources ?? [],
+        faq: t?.faq ?? [],
+    });
     return {
         slug: post.slug ?? '',
         strategyId: post.strategyId ?? '',
@@ -63,6 +82,7 @@ function blogPostToFormValues(post: BlogPost): BlogPostFormValues {
         category: post.category ?? 'engineered-parquet',
         schemaType: post.schemaType ?? 'Article',
         heroImage: post.heroImage ?? '',
+        author: post.author ?? '',
         isPartOf: post.isPartOf ?? '',
         hasPart: post.hasPart?.join(', ') ?? '',
         linksTo: post.linksTo?.join(', ') ?? '',
@@ -70,28 +90,8 @@ function blogPostToFormValues(post: BlogPost): BlogPostFormValues {
         featuredProducts: post.featuredProducts ?? [],
         mentions: post.mentions ?? [],
         translations: {
-            bg: {
-                title: post.translations?.bg?.title ?? '',
-                metaDescription: post.translations?.bg?.metaDescription ?? '',
-                primaryKeyword: post.translations?.bg?.primaryKeyword ?? '',
-                tags: post.translations?.bg?.tags?.join(', ') ?? '',
-                contentMarkdown: post.translations?.bg?.contentMarkdown ?? '',
-                wordCount: post.translations?.bg?.wordCount ?? 0,
-                readingTimeMinutes: post.translations?.bg?.readingTimeMinutes ?? 0,
-                status: post.translations?.bg?.status ?? 'draft',
-                datePublished: toISOStr(post.translations?.bg?.datePublished),
-            },
-            en: {
-                title: post.translations?.en?.title ?? '',
-                metaDescription: post.translations?.en?.metaDescription ?? '',
-                primaryKeyword: post.translations?.en?.primaryKeyword ?? '',
-                tags: post.translations?.en?.tags?.join(', ') ?? '',
-                contentMarkdown: post.translations?.en?.contentMarkdown ?? '',
-                wordCount: post.translations?.en?.wordCount ?? 0,
-                readingTimeMinutes: post.translations?.en?.readingTimeMinutes ?? 0,
-                status: post.translations?.en?.status ?? 'draft',
-                datePublished: toISOStr(post.translations?.en?.datePublished),
-            },
+            bg: mapTranslation(post.translations?.bg),
+            en: mapTranslation(post.translations?.en),
         },
     };
 }
@@ -113,6 +113,9 @@ function formValuesToBlogPost(values: BlogPostFormValues): Omit<BlogPost, 'id' |
             inLanguage: locale,
             status: t.status,
             datePublished: t.datePublished ? new Date(t.datePublished) : null,
+            heroImageAlt: t.heroImageAlt || undefined,
+            sources: t.sources.length ? t.sources : undefined,
+            faq: t.faq.length ? t.faq : undefined,
         };
     };
 
@@ -127,6 +130,7 @@ function formValuesToBlogPost(values: BlogPostFormValues): Omit<BlogPost, 'id' |
         category: values.category,
         schemaType: values.schemaType,
         heroImage: values.heroImage,
+        author: values.author || undefined,
         isPartOf: values.isPartOf || null,
         hasPart: commaToArr(values.hasPart),
         linksTo: commaToArr(values.linksTo),
@@ -144,6 +148,7 @@ const defaultValues: BlogPostFormValues = {
     category: 'engineered-parquet',
     schemaType: 'Article',
     heroImage: '',
+    author: '',
     isPartOf: '',
     hasPart: '',
     linksTo: '',
@@ -151,8 +156,8 @@ const defaultValues: BlogPostFormValues = {
     featuredProducts: [],
     mentions: [],
     translations: {
-        bg: { title: '', metaDescription: '', primaryKeyword: '', tags: '', contentMarkdown: '', wordCount: 0, readingTimeMinutes: 0, status: 'draft', datePublished: '' },
-        en: { title: '', metaDescription: '', primaryKeyword: '', tags: '', contentMarkdown: '', wordCount: 0, readingTimeMinutes: 0, status: 'draft', datePublished: '' },
+        bg: { title: '', metaDescription: '', primaryKeyword: '', tags: '', contentMarkdown: '', wordCount: 0, readingTimeMinutes: 0, status: 'draft', datePublished: '', heroImageAlt: '', sources: [], faq: [] },
+        en: { title: '', metaDescription: '', primaryKeyword: '', tags: '', contentMarkdown: '', wordCount: 0, readingTimeMinutes: 0, status: 'draft', datePublished: '', heroImageAlt: '', sources: [], faq: [] },
     },
 };
 

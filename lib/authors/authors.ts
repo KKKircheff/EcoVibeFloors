@@ -16,14 +16,14 @@ export type AuthorSlug = 'gancho-georgiev';
 
 export interface Author {
     slug: AuthorSlug;
-    name: { bg: string; en: string };
-    jobTitle: { bg: string; en: string };
+    name: {bg: string; en: string};
+    jobTitle: {bg: string; en: string};
     /** 1-sentence byline shown under the blog post title. */
-    shortBio: { bg: string; en: string };
+    shortBio: {bg: string; en: string};
     /** 2-3 paragraphs shown on the author bio page. */
-    bio: { bg: string; en: string };
+    bio: {bg: string; en: string};
     experienceYears: number;
-    specialties: { bg: string[]; en: string[] };
+    specialties: {bg: string[]; en: string[]};
     /** Firebase Storage path: authors/{slug}/photo.webp */
     photo: string;
     socialLinks: {
@@ -39,16 +39,16 @@ export const AUTHORS: Record<AuthorSlug, Author> = {
             en: 'Gancho Georgiev',
         },
         jobTitle: {
-            bg: 'Специалист подови настилки и строителни материали',
-            en: 'Flooring & Construction Materials Specialist',
+            bg: 'Специалист подови настилки, приложни конструкции и инженерни решения',
+            en: 'Specialist in Flooring, Applied Structures, and Engineering Solutions',
         },
         shortBio: {
-            bg: '6 години опит в строителството, подовите настилки и металните изделия.',
-            en: '6 years of experience in construction, flooring, and metal products.',
+            bg: '6 години опит в подовите настилки, инженерни решения и металните изделия.',
+            en: '6 years of experience in flooring, engineering sollutions and metal products.',
         },
         bio: {
-            bg: '[TBD — draft with Kiril and Ганчо]',
-            en: '[TBD — draft with Kiril and Ганчо]',
+            bg: 'Запознайте се с Ганчо Георгиев - Експерт по подови настилки и Съосновател на Ecovibefloors\n\nГанчо Георгиев не просто познава подовите настилки - това е негова страст. Като съосновател на Ecovibefloors, той е посветил усилията си на това да помага на хората да открият идеалната настилка за своите домове. С шест години практически опит и партньорства с някои от най-добрите европейски марки, Ганчо знае какво прави една настилка красива, издръжлива и готова за реалния живот. Деца, домашни любимци, подово отопление - той ще помогне. В този блог той не използва объркващи термини и ви предлага прости, честни съвети, на които можете да се доверите. Когато не мисли за настилки, ще го намерите за риба, да гледа футбол и да почива със семейството.',
+            en: "Meet Gancho Georgiev: Flooring Expert & Co-Founder of Ecovibefloors\n\nGancho Georgiev doesn't just know floors—he's passionate about them. As the co-founder of Ecovibefloors, he's made it his mission to help people find the perfect flooring for their homes. With six years of hands-on experience and partnerships with some of Europe's top flooring brands, Gancho understands what makes a floor beautiful, durable, and ready for real life. Kids, pets, floor heating - he'll help. On this blog, he cuts through the jargon to give you straightforward, honest advice you can trust. When he's not thinking about floors, you'll find him fishing or enjoying a football game and time with his family.",
         },
         experienceYears: 6,
         specialties: {

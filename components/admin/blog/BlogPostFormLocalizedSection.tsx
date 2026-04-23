@@ -1,9 +1,10 @@
 'use client';
 
-import { Stack, TextField, MenuItem, Typography, Divider, Box, Tabs, Tab } from '@mui/material';
-import { Control, Controller, UseFormWatch } from 'react-hook-form';
+import { Stack, TextField, MenuItem, Typography, Divider, Box, Tabs, Tab, IconButton, Button } from '@mui/material';
+import { Control, Controller, UseFormWatch, useFieldArray } from 'react-hook-form';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
+import { DeleteOutlined as DeleteIcon, AddOutlined as AddIcon } from '@mui/icons-material';
 import { BlogPostFormValues } from './BlogPostForm';
 import { BlogMarkdownEditor } from './BlogMarkdownEditor';
 
@@ -32,6 +33,17 @@ function LocalePanel({
 
     const wordCount = watch(`${prefix}.wordCount`);
     const readingTime = watch(`${prefix}.readingTimeMinutes`);
+
+    const { fields: srcFields, append: srcAppend, remove: srcRemove } = useFieldArray({ control, name: `${prefix}.sources` as 'translations.bg.sources' });
+    const { fields: faqFields, append: faqAppend, remove: faqRemove } = useFieldArray({ control, name: `${prefix}.faq` as 'translations.bg.faq' });
+
+    const SOURCE_TYPE_OPTIONS = [
+        { value: '', label: t('sourceTypeNone') },
+        { value: 'product-doc', label: t('sourceTypes.product-doc') },
+        { value: 'standard', label: t('sourceTypes.standard') },
+        { value: 'article', label: t('sourceTypes.article') },
+        { value: 'research', label: t('sourceTypes.research') },
+    ];
 
     return (
         <Stack spacing={3} pt={2}>
@@ -146,6 +158,100 @@ function LocalePanel({
                     sx={{ maxWidth: 150 }}
                 />
             </Stack>
+
+            {/* Hero image alt text */}
+            <Controller
+                name={`${prefix}.heroImageAlt`}
+                control={control}
+                render={({ field }) => (
+                    <TextField
+                        {...field}
+                        label={t('heroImageAlt')}
+                        size="small"
+                        fullWidth
+                    />
+                )}
+            />
+
+            {/* Sources */}
+            <Typography variant="subtitle2" fontWeight={600}>{t('sources')}</Typography>
+            {srcFields.map((item, index) => (
+                <Stack key={item.id} direction={{ xs: 'column', md: 'row' }} spacing={1} alignItems="center">
+                    <Controller
+                        name={`${prefix}.sources.${index}.label` as 'translations.bg.sources.0.label'}
+                        control={control}
+                        render={({ field }) => (
+                            <TextField {...field} label={t('sourceLabel')} size="small" fullWidth />
+                        )}
+                    />
+                    <Controller
+                        name={`${prefix}.sources.${index}.url` as 'translations.bg.sources.0.url'}
+                        control={control}
+                        render={({ field }) => (
+                            <TextField {...field} label={t('sourceUrl')} size="small" fullWidth />
+                        )}
+                    />
+                    <Controller
+                        name={`${prefix}.sources.${index}.type` as 'translations.bg.sources.0.type'}
+                        control={control}
+                        render={({ field }) => (
+                            <TextField
+                                {...field}
+                                select
+                                label={t('sourceType')}
+                                size="small"
+                                sx={{ minWidth: 150 }}
+                            >
+                                {SOURCE_TYPE_OPTIONS.map((o) => (
+                                    <MenuItem key={o.value} value={o.value}>{o.label}</MenuItem>
+                                ))}
+                            </TextField>
+                        )}
+                    />
+                    <IconButton size="small" onClick={() => srcRemove(index)} color="error">
+                        <DeleteIcon fontSize="small" />
+                    </IconButton>
+                </Stack>
+            ))}
+            <Button size="small" startIcon={<AddIcon />} onClick={() => srcAppend({ label: '', url: '', type: undefined })}>
+                {t('addSource')}
+            </Button>
+
+            {/* FAQ items */}
+            <Typography variant="subtitle2" fontWeight={600}>{t('faq')}</Typography>
+            {faqFields.map((item, index) => (
+                <Stack key={item.id} spacing={1}>
+                    <Stack direction={{ xs: 'column', md: 'row' }} spacing={1} alignItems="flex-start">
+                        <Controller
+                            name={`${prefix}.faq.${index}.question` as 'translations.bg.faq.0.question'}
+                            control={control}
+                            render={({ field }) => (
+                                <TextField {...field} label={t('faqQuestion')} size="small" fullWidth />
+                            )}
+                        />
+                        <Controller
+                            name={`${prefix}.faq.${index}.anchor` as 'translations.bg.faq.0.anchor'}
+                            control={control}
+                            render={({ field }) => (
+                                <TextField {...field} label={t('faqAnchor')} size="small" sx={{ minWidth: 160 }} />
+                            )}
+                        />
+                        <IconButton size="small" onClick={() => faqRemove(index)} color="error">
+                            <DeleteIcon fontSize="small" />
+                        </IconButton>
+                    </Stack>
+                    <Controller
+                        name={`${prefix}.faq.${index}.answer` as 'translations.bg.faq.0.answer'}
+                        control={control}
+                        render={({ field }) => (
+                            <TextField {...field} label={t('faqAnswer')} size="small" fullWidth multiline minRows={2} />
+                        )}
+                    />
+                </Stack>
+            ))}
+            <Button size="small" startIcon={<AddIcon />} onClick={() => faqAppend({ question: '', answer: '', anchor: '' })}>
+                {t('addFaqItem')}
+            </Button>
 
             <Divider />
 

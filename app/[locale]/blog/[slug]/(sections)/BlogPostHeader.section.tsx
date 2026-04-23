@@ -1,5 +1,5 @@
 import 'server-only';
-import { Stack, Typography } from '@mui/material';
+import { Divider, Stack, Typography } from '@mui/material';
 
 import PageLayoutContainer from '@/components/layout/PageLayoutContainer';
 import Breadcrumb from '@/components/molecules/breadcrumb/Breadcrumb';
@@ -10,6 +10,7 @@ import type { Author } from '@/lib/authors/authors';
 
 interface BlogPostHeaderProps {
     title: string;
+    subtitle: string;
     category: BlogCategory;
     date: string;
     readingTime: number;
@@ -17,7 +18,7 @@ interface BlogPostHeaderProps {
     author: Author;
 }
 
-export function BlogPostHeader({ title, category, date, readingTime, locale, author }: BlogPostHeaderProps) {
+export function BlogPostHeader({ title, subtitle, date, locale, author }: BlogPostHeaderProps) {
     const breadcrumbItems = [
         { label: locale === 'bg' ? 'Начало' : 'Home', href: '/' },
         { label: locale === 'bg' ? 'Блог' : 'Blog', href: '/blog' },
@@ -25,27 +26,40 @@ export function BlogPostHeader({ title, category, date, readingTime, locale, aut
     ];
 
     return (
-        <PageLayoutContainer bgcolor="grey.50" py={{ xs: 4, lg: 2 }}>
-            <Stack spacing={3} alignItems="center" textAlign="center">
-                {/* Breadcrumb stays left-aligned inside the centered stack */}
-                <Stack alignSelf="flex-start">
-                    <Breadcrumb items={breadcrumbItems} />
+        <PageLayoutContainer bgcolor="grey.50" py={{ xs: 4, lg: 3 }}>
+            <Stack spacing={0}>
+                <Breadcrumb items={breadcrumbItems} />
+                <Stack alignItems={'center'}>
+                    <Typography
+                        variant="h1"
+                        fontWeight={600}
+                        color="info.main"
+                        pt={2}
+                        pb={1.5}
+                        textAlign={'center'}
+                        maxWidth={'72ch'}
+                    >
+                        {title}
+                    </Typography>
+
+                    <Typography
+                        variant="body1"
+                        color="text.secondary"
+                        pb={3}
+                        textAlign={'center'}
+                        sx={{ maxWidth: '100ch', lineHeight: 1.7 }}
+                    >
+                        {subtitle}
+                    </Typography>
                 </Stack>
 
-                <Typography
-                    variant="h1"
-                    fontWeight={600}
-                    color="info.main"
-                    pt={0}
-                    pb={2}
-                >
-                    {title}
-                </Typography>
+                <Divider />
 
-                <Stack alignItems="center" pb={4}>
-                    <AuthorByline author={author} locale={locale} />
+                <Stack py={2}>
+                    <AuthorByline author={author} locale={locale} compact date={date} />
                 </Stack>
 
+                <Divider />
             </Stack>
         </PageLayoutContainer>
     );
