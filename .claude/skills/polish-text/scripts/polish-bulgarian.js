@@ -8,8 +8,8 @@
 import {
     loadTranslationContext,
     buildTranslationSystemPrompt,
-    callAzureGPTWithRetry
-} from '../../shared/azure-translate.js';
+    callGeminiWithRetry,
+} from '../../shared/ai-translate.js';
 
 /**
  * Polish Bulgarian text using Azure GPT-5
@@ -53,9 +53,8 @@ Focus on:
 
 Return JSON response following the specified format.`;
 
-        // Call Azure API
-        if (verbose) console.log('🤖 Calling Azure GPT-5 API...');
-        const responseContent = await callAzureGPTWithRetry(
+        if (verbose) console.log('🤖 Calling Gemini API...');
+        const responseContent = await callGeminiWithRetry(
             systemPrompt,
             userPrompt,
             {
@@ -119,8 +118,7 @@ Examples:
   node polish-bulgarian.js --verbose --text="Премиум настилки"
 
 Environment Variables:
-  AZURE_API_KEY      Azure GPT-5 API key (required)
-  TARGET_URL         Azure GPT-5 endpoint URL (required)
+  GOOGLE_GENERATIVE_AI_API_KEY   Google Gemini API key (required)
 `);
         process.exit(0);
     }

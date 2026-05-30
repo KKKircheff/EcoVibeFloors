@@ -41,7 +41,6 @@
 
 import 'dotenv/config';
 import {initializeFirebaseAdmin, getFirestoreAdmin} from '@/lib/firebase/firebase-admin';
-import {getAzureEmbeddings} from '@/lib/azure/azure-ai';
 import {RecursiveCharacterTextSplitter} from '@langchain/textsplitters';
 import {Document} from '@langchain/core/documents';
 import type {ChunkMetadata} from '@/lib/chat-ai-assistant/types';
@@ -70,8 +69,6 @@ if (!commonArgs.isDryRun) {
     db = getFirestoreAdmin();
 }
 
-// Initialize Azure OpenAI embeddings (1536 dimensions)
-const embeddings = getAzureEmbeddings();
 
 // Initialize text splitter (same config as pages)
 const textSplitter = new RecursiveCharacterTextSplitter({
@@ -271,7 +268,7 @@ async function findDocuments(): Promise<string[]> {
  * Main execution
  */
 async function main() {
-    printScriptHeader('Document Embedding Generation', embeddings, commonArgs, {
+    printScriptHeader('Document Embedding Generation', commonArgs, {
         'File pattern': filePattern || 'N/A',
         'Locale': localeOverride || 'auto-detect',
         'Docs directory': DOCS_DIR,
@@ -301,7 +298,6 @@ async function main() {
         for (const chunk of chunks) {
             const uploaded = await uploadChunk(
                 db,
-                embeddings,
                 chunk,
                 totalChunks + 1,
                 commonArgs.isDryRun,

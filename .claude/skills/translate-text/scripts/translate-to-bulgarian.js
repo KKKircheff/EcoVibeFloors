@@ -8,8 +8,8 @@
 import {
     loadTranslationContext,
     buildTranslationSystemPrompt,
-    callAzureGPTWithRetry
-} from '../../shared/azure-translate.js';
+    callGeminiWithRetry,
+} from '../../shared/ai-translate.js';
 
 /**
  * Detect content type (text, markdown, or JSON)
@@ -125,9 +125,8 @@ Return JSON with:
 - seo_terms_used: Bulgarian keywords included`;
         }
 
-        // Call Azure API
-        if (verbose) console.log('🤖 Calling Azure GPT-5 API...');
-        const responseContent = await callAzureGPTWithRetry(
+        if (verbose) console.log('🤖 Calling Gemini API...');
+        const responseContent = await callGeminiWithRetry(
             systemPrompt,
             userPrompt,
             {
@@ -201,8 +200,7 @@ Examples:
   node translate-to-bulgarian.js --type=json --text='{"title":"Oak Flooring"}'
 
 Environment Variables:
-  AZURE_API_KEY      Azure GPT-5 API key (required)
-  TARGET_URL         Azure GPT-5 endpoint URL (required)
+  GOOGLE_GENERATIVE_AI_API_KEY   Google Gemini API key (required)
 `);
         process.exit(0);
     }

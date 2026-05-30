@@ -1,12 +1,10 @@
-import {streamText} from 'ai';
+import {streamText, convertToModelMessages} from 'ai';
 import {getFirestoreAdmin} from '@/lib/firebase/firebase-admin';
-import {getAzureAI, getAzureEmbeddings, AZURE_MODELS} from '@/lib/azure/azure-ai';
+import {chatModel, embedText} from '@/lib/ai/config';
 import type {VectorSearchResult} from '@/lib/chat-ai-assistant/types';
 import {validateMessage} from '@/lib/security/input-validator';
 
 const db = getFirestoreAdmin();
-const embeddings = getAzureEmbeddings();
-const azure = getAzureAI();
 
 // Translations for API responses (hardcoded since next-intl doesn't work in API routes)
 // These match the translations in messages/en.json and messages/bg.json under api.chat namespace
@@ -137,7 +135,7 @@ export async function POST(req: Request) {
         // Use sanitized input for further processing
         userMessage = validationResult.sanitizedInput!;
 
-        const questionEmbedding = await embeddings.embedQuery(userMessage);
+        const questionEmbedding = await embedText(userMessage);
 
         const results = await searchKnowledge(questionEmbedding, locale, 5);
 
@@ -203,42 +201,23 @@ IMPORTANT:
 - Use icons in the interface only when they are strictly necessary for clarity, functionality
 - Remember: You are an information assistant, not a service that can send materials or perform external actions`;
 
-        // 5. Convert UIMessages to ModelMessages (AI SDK v5.0)
-        // UIMessages have parts array, ModelMessages have content string
-        const modelMessages = messages.map((msg: any, index: number) => {
-            let content: string;
+        const modelMessages = convertToModelMessages(messages);
 
-            // Handle both old format (content) and new format (parts)
-            if (typeof msg.content === 'string') {
-                content = msg.content;
-            } else if (msg.parts) {
-                // Extract text from parts array
-                const textParts = msg.parts
-                    .filter((part: any) => part.type === 'text')
-                    .map((part: any) => part.text)
-                    .join('');
-                content = textParts;
-            } else {
-                content = '';
-            }
+        // Replace last user message content with sanitized input
+        const lastMsg = modelMessages[modelMessages.length - 1];
+        if (lastMsg?.role === 'user') {
+            lastMsg.content = userMessage!;
+        }
 
-            // Use sanitized content for the last user message
-            if (index === messages.length - 1 && msg.role === 'user') {
-                content = userMessage;
-            }
-
-            return {
-                role: msg.role,
-                content,
-            };
-        });
-
-        // 6. Stream response with Vercel AI SDK and Azure GPT-5-chat
         const result = streamText({
-            model: azure(AZURE_MODELS.CHAT),
+            model: chatModel,
             system: systemPrompt,
             messages: modelMessages,
-            maxOutputTokens: 600,
+            maxOutputTokens: 2048,
+            // Disable thinking — not needed for a customer service assistant
+            providerOptions: {
+                google: {thinkingConfig: {thinkingBudget: 0}},
+            },
         });
 
         return result.toUIMessageStreamResponse();

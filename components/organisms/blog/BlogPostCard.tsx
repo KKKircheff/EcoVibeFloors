@@ -54,6 +54,7 @@ export function BlogPostCard({ post, locale }: BlogPostCardProps) {
             onMouseLeave={() => setIsHovered(false)}
             maxWidth={'lg'}
             sx={{
+                width: '100%',
                 cursor: 'pointer',
                 borderRadius: borderRadius.md,
                 overflow: 'hidden',
@@ -132,6 +133,8 @@ export function BlogPostCard({ post, locale }: BlogPostCardProps) {
                         WebkitBoxOrient: 'vertical',
                         overflow: 'hidden',
                         lineHeight: 1.3,
+                        // Reserve space for exactly 2 lines so short titles don't shrink the card
+                        minHeight: 'calc(2 * 1.3em)',
                     }}
                 >
                     {translation.title}
@@ -146,6 +149,8 @@ export function BlogPostCard({ post, locale }: BlogPostCardProps) {
                         WebkitBoxOrient: 'vertical',
                         overflow: 'hidden',
                         lineHeight: 1.6,
+                        // Reserve space for max clamped lines so card height stays consistent
+                        minHeight: { xs: 'calc(2 * 1.6em)', md: 'calc(3 * 1.6em)' },
                     }}
                 >
                     {translation.metaDescription}

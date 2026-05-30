@@ -52,6 +52,8 @@ next-env.d.ts
 # scripts (development only - Firebase upload utilities)
 /scripts
 
+/tmp/
+
 # MCP configuration (project-specific)
 .mcp.json
 

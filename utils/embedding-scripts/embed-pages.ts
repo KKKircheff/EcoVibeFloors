@@ -16,7 +16,6 @@
 
 import 'dotenv/config'; // Load environment variables
 import {initializeFirebaseAdmin, getFirestoreAdmin} from '@/lib/firebase/firebase-admin';
-import {getAzureEmbeddings} from '@/lib/azure/azure-ai';
 import {RecursiveCharacterTextSplitter} from '@langchain/textsplitters';
 import type {ChunkMetadata, PageToScrape} from '@/lib/chat-ai-assistant/types';
 import {PAGES_TO_SCRAPE} from './pages-to-scrape';
@@ -39,8 +38,6 @@ if (!commonArgs.isDryRun) {
     db = getFirestoreAdmin();
 }
 
-// Initialize Azure OpenAI embeddings (1536 dimensions)
-const embeddings = getAzureEmbeddings();
 
 // Initialize text splitter for pages
 const textSplitter = new RecursiveCharacterTextSplitter({
@@ -121,7 +118,7 @@ async function scrapeAndChunkPage(page: PageToScrape, maxRetries = 3): Promise<C
  * Main execution
  */
 async function main() {
-    printScriptHeader('Website Page Embedding Generation', embeddings, commonArgs, {
+    printScriptHeader('Website Page Embedding Generation', commonArgs, {
         'Pages to process': PAGES_TO_SCRAPE.length.toString(),
     });
 
@@ -137,7 +134,6 @@ async function main() {
         for (const chunk of chunks) {
             const uploaded = await uploadChunk(
                 db,
-                embeddings,
                 chunk,
                 totalChunks + 1,
                 commonArgs.isDryRun,

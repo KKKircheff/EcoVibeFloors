@@ -18,7 +18,6 @@
 
 import 'dotenv/config'; // Load environment variables
 import {initializeFirebaseAdmin, getFirestoreAdmin} from '@/lib/firebase/firebase-admin';
-import {getAzureEmbeddings} from '@/lib/azure/azure-ai';
 import type {ChunkMetadata} from '@/lib/chat-ai-assistant/types';
 import {parseCommonArgs, printScriptHeader, printSummary, uploadChunk, sleep} from './shared/embedding-utils';
 import {getStorageUrl} from '@/lib/utils/getStorageUrl';
@@ -41,8 +40,6 @@ if (!commonArgs.isDryRun) {
     db = getFirestoreAdmin();
 }
 
-// Initialize Azure OpenAI embeddings (1536 dimensions)
-const embeddings = getAzureEmbeddings();
 
 /**
  * Convert product to natural language description for embedding
@@ -139,7 +136,7 @@ function createProductChunk(product: any, locale: 'en' | 'bg'): ChunkMetadata {
  * Main execution
  */
 async function main() {
-    printScriptHeader('Product Embedding Generation', embeddings, commonArgs, {
+    printScriptHeader('Product Embedding Generation', commonArgs, {
         'Collection filter': collectionFilter || 'ALL',
     });
 
@@ -172,7 +169,6 @@ async function main() {
             // Upload both language versions
             const enUploaded = await uploadChunk(
                 db,
-                embeddings,
                 enChunk,
                 totalChunks + 1,
                 commonArgs.isDryRun,
@@ -184,7 +180,6 @@ async function main() {
 
             const bgUploaded = await uploadChunk(
                 db,
-                embeddings,
                 bgChunk,
                 totalChunks + 1,
                 commonArgs.isDryRun,

@@ -7,7 +7,7 @@ import { Timestamp } from 'firebase-admin/firestore';
 export interface KnowledgeChunk {
   id: string;
   text: string;
-  embedding: number[]; // 1536-dimensional vector from Azure OpenAI
+  embedding: number[]; // 1536-dimensional vector
 
   // Metadata for filtering
   locale: 'en' | 'bg';

@@ -113,9 +113,23 @@ function formValuesToBlogPost(values: BlogPostFormValues): Omit<BlogPost, 'id' |
             inLanguage: locale,
             status: t.status,
             datePublished: t.datePublished ? new Date(t.datePublished) : null,
-            heroImageAlt: t.heroImageAlt || undefined,
-            sources: t.sources.length ? t.sources : undefined,
-            faq: t.faq.length ? t.faq : undefined,
+            // Omit optional fields entirely when empty — Firestore rejects undefined values
+            ...(t.heroImageAlt ? { heroImageAlt: t.heroImageAlt } : {}),
+            // Strip undefined sub-fields from nested objects (BlogSource.url, .type; BlogFaqItem.anchor)
+            ...(t.sources.length ? {
+                sources: t.sources.map(s => ({
+                    label: s.label,
+                    ...(s.url ? { url: s.url } : {}),
+                    ...(s.type ? { type: s.type } : {}),
+                }))
+            } : {}),
+            ...(t.faq.length ? {
+                faq: t.faq.map(f => ({
+                    question: f.question,
+                    answer: f.answer,
+                    ...(f.anchor ? { anchor: f.anchor } : {}),
+                }))
+            } : {}),
         };
     };
 
@@ -130,7 +144,8 @@ function formValuesToBlogPost(values: BlogPostFormValues): Omit<BlogPost, 'id' |
         category: values.category,
         schemaType: values.schemaType,
         heroImage: values.heroImage,
-        author: values.author || undefined,
+        // Omit optional fields when empty — Firestore rejects undefined values
+        ...(values.author ? { author: values.author } : {}),
         isPartOf: values.isPartOf || null,
         hasPart: commaToArr(values.hasPart),
         linksTo: commaToArr(values.linksTo),

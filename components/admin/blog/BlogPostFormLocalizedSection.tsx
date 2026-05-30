@@ -213,7 +213,7 @@ function LocalePanel({
                     </IconButton>
                 </Stack>
             ))}
-            <Button size="small" startIcon={<AddIcon />} onClick={() => srcAppend({ label: '', url: '', type: undefined })}>
+            <Button size="small" startIcon={<AddIcon />} onClick={() => srcAppend({ label: '', url: '' })}>
                 {t('addSource')}
             </Button>
 
